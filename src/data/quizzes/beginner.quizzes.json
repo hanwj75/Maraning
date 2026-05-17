@@ -1,0 +1,782 @@
+[
+  {
+    "id": "beginner.quiz.001",
+    "stageId": "beginner.stage.001",
+    "difficulty": "beginner",
+    "type": "image_select",
+    "learningTargetId": "beginner.target.student",
+    "targetKey": "student_intro",
+    "prompt": "\"학생\"는 영어로 무엇일까요?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "student"
+      },
+      {
+        "id": "b",
+        "text": "artist"
+      },
+      {
+        "id": "c",
+        "text": "doctor"
+      },
+      {
+        "id": "d",
+        "text": "nurse"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학생는 student입니다.",
+    "question": "\"학생\"는 영어로 무엇일까요?"
+  },
+  {
+    "id": "beginner.quiz.002",
+    "stageId": "beginner.stage.001",
+    "difficulty": "beginner",
+    "type": "matching",
+    "learningTargetId": "beginner.target.student",
+    "targetKey": "student_intro",
+    "prompt": "영어와 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "student",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "학생",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "artist",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "예술가",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "doctor",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "의사",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "핵심 단어와 뜻을 함께 익혀요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "beginner.quiz.003",
+    "stageId": "beginner.stage.001",
+    "difficulty": "beginner",
+    "type": "word_order",
+    "learningTargetId": "beginner.target.student",
+    "targetKey": "student_intro",
+    "prompt": "문장을 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "student"
+      },
+      {
+        "id": "t2",
+        "text": "I"
+      },
+      {
+        "id": "t3",
+        "text": "am"
+      },
+      {
+        "id": "t4",
+        "text": "a"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "I",
+        "am",
+        "a",
+        "student"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "beginner.quiz.004",
+    "stageId": "beginner.stage.001",
+    "difficulty": "beginner",
+    "type": "blank_fill",
+    "learningTargetId": "beginner.target.student",
+    "targetKey": "student_intro",
+    "prompt": "I am a ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "student"
+      },
+      {
+        "id": "b",
+        "text": "artist"
+      },
+      {
+        "id": "c",
+        "text": "doctor"
+      },
+      {
+        "id": "d",
+        "text": "nurse"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "student"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "beginner.quiz.005",
+    "stageId": "beginner.stage.001",
+    "difficulty": "beginner",
+    "type": "image_select",
+    "learningTargetId": "beginner.target.student",
+    "targetKey": "student_intro",
+    "prompt": "\"나는 학생입니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I am a student"
+      },
+      {
+        "id": "b",
+        "text": "I am a doctor"
+      },
+      {
+        "id": "c",
+        "text": "I am a teacher"
+      },
+      {
+        "id": "d",
+        "text": "I am an artist"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"나는 학생입니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "beginner.quiz.006",
+    "stageId": "beginner.stage.001",
+    "difficulty": "beginner",
+    "type": "matching",
+    "learningTargetId": "beginner.target.student",
+    "targetKey": "student_intro",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "I am a student",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "나는 학생입니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "I am a doctor",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "나는 의사입니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "I am a teacher",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "나는 선생님입니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "beginner.quiz.007",
+    "stageId": "beginner.stage.001",
+    "difficulty": "beginner",
+    "type": "word_order",
+    "learningTargetId": "beginner.target.student",
+    "targetKey": "student_intro",
+    "prompt": "같은 문장을 다시 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "student"
+      },
+      {
+        "id": "t2",
+        "text": "I"
+      },
+      {
+        "id": "t3",
+        "text": "am"
+      },
+      {
+        "id": "t4",
+        "text": "a"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "I",
+        "am",
+        "a",
+        "student"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "beginner.quiz.008",
+    "stageId": "beginner.stage.001",
+    "difficulty": "beginner",
+    "type": "blank_fill",
+    "learningTargetId": "beginner.target.student",
+    "targetKey": "student_intro",
+    "prompt": "I am a ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "student"
+      },
+      {
+        "id": "b",
+        "text": "artist"
+      },
+      {
+        "id": "c",
+        "text": "doctor"
+      },
+      {
+        "id": "d",
+        "text": "nurse"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "student"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "beginner.quiz.009",
+    "stageId": "beginner.stage.001",
+    "difficulty": "beginner",
+    "type": "image_select",
+    "learningTargetId": "beginner.target.student",
+    "targetKey": "student_intro",
+    "prompt": "\"나는 학생입니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I am a student"
+      },
+      {
+        "id": "b",
+        "text": "I am a doctor"
+      },
+      {
+        "id": "c",
+        "text": "I am a teacher"
+      },
+      {
+        "id": "d",
+        "text": "I am an artist"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"나는 학생입니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "beginner.quiz.010",
+    "stageId": "beginner.stage.001",
+    "difficulty": "beginner",
+    "type": "blank_fill",
+    "learningTargetId": "beginner.target.student",
+    "targetKey": "student_intro",
+    "prompt": "I am a ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "student"
+      },
+      {
+        "id": "b",
+        "text": "artist"
+      },
+      {
+        "id": "c",
+        "text": "doctor"
+      },
+      {
+        "id": "d",
+        "text": "nurse"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "student"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "beginner.quiz.011",
+    "stageId": "beginner.stage.002",
+    "difficulty": "beginner",
+    "type": "image_select",
+    "learningTargetId": "beginner.target.teacher",
+    "targetKey": "teacher_intro",
+    "prompt": "\"선생님\"는 영어로 무엇일까요?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "teacher"
+      },
+      {
+        "id": "b",
+        "text": "artist"
+      },
+      {
+        "id": "c",
+        "text": "doctor"
+      },
+      {
+        "id": "d",
+        "text": "nurse"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "선생님는 teacher입니다.",
+    "question": "\"선생님\"는 영어로 무엇일까요?"
+  },
+  {
+    "id": "beginner.quiz.012",
+    "stageId": "beginner.stage.002",
+    "difficulty": "beginner",
+    "type": "matching",
+    "learningTargetId": "beginner.target.teacher",
+    "targetKey": "teacher_intro",
+    "prompt": "영어와 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "teacher",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "선생님",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "artist",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "예술가",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "doctor",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "의사",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "핵심 단어와 뜻을 함께 익혀요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "beginner.quiz.013",
+    "stageId": "beginner.stage.002",
+    "difficulty": "beginner",
+    "type": "word_order",
+    "learningTargetId": "beginner.target.teacher",
+    "targetKey": "teacher_intro",
+    "prompt": "문장을 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "teacher"
+      },
+      {
+        "id": "t2",
+        "text": "I"
+      },
+      {
+        "id": "t3",
+        "text": "am"
+      },
+      {
+        "id": "t4",
+        "text": "a"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "I",
+        "am",
+        "a",
+        "teacher"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "beginner.quiz.014",
+    "stageId": "beginner.stage.002",
+    "difficulty": "beginner",
+    "type": "blank_fill",
+    "learningTargetId": "beginner.target.teacher",
+    "targetKey": "teacher_intro",
+    "prompt": "I am a ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "teacher"
+      },
+      {
+        "id": "b",
+        "text": "artist"
+      },
+      {
+        "id": "c",
+        "text": "doctor"
+      },
+      {
+        "id": "d",
+        "text": "nurse"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "teacher"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "beginner.quiz.015",
+    "stageId": "beginner.stage.002",
+    "difficulty": "beginner",
+    "type": "image_select",
+    "learningTargetId": "beginner.target.teacher",
+    "targetKey": "teacher_intro",
+    "prompt": "\"나는 선생님입니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I am a teacher"
+      },
+      {
+        "id": "b",
+        "text": "I am a doctor"
+      },
+      {
+        "id": "c",
+        "text": "I am a student"
+      },
+      {
+        "id": "d",
+        "text": "I am an artist"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"나는 선생님입니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "beginner.quiz.016",
+    "stageId": "beginner.stage.002",
+    "difficulty": "beginner",
+    "type": "matching",
+    "learningTargetId": "beginner.target.teacher",
+    "targetKey": "teacher_intro",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "I am a teacher",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "나는 선생님입니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "I am a doctor",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "나는 의사입니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "I am a student",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "나는 학생입니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "beginner.quiz.017",
+    "stageId": "beginner.stage.002",
+    "difficulty": "beginner",
+    "type": "word_order",
+    "learningTargetId": "beginner.target.teacher",
+    "targetKey": "teacher_intro",
+    "prompt": "같은 문장을 다시 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "teacher"
+      },
+      {
+        "id": "t2",
+        "text": "I"
+      },
+      {
+        "id": "t3",
+        "text": "am"
+      },
+      {
+        "id": "t4",
+        "text": "a"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "I",
+        "am",
+        "a",
+        "teacher"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "beginner.quiz.018",
+    "stageId": "beginner.stage.002",
+    "difficulty": "beginner",
+    "type": "blank_fill",
+    "learningTargetId": "beginner.target.teacher",
+    "targetKey": "teacher_intro",
+    "prompt": "I am a ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "teacher"
+      },
+      {
+        "id": "b",
+        "text": "artist"
+      },
+      {
+        "id": "c",
+        "text": "doctor"
+      },
+      {
+        "id": "d",
+        "text": "nurse"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "teacher"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "beginner.quiz.019",
+    "stageId": "beginner.stage.002",
+    "difficulty": "beginner",
+    "type": "image_select",
+    "learningTargetId": "beginner.target.teacher",
+    "targetKey": "teacher_intro",
+    "prompt": "\"나는 선생님입니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I am a teacher"
+      },
+      {
+        "id": "b",
+        "text": "I am a doctor"
+      },
+      {
+        "id": "c",
+        "text": "I am a student"
+      },
+      {
+        "id": "d",
+        "text": "I am an artist"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"나는 선생님입니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "beginner.quiz.020",
+    "stageId": "beginner.stage.002",
+    "difficulty": "beginner",
+    "type": "blank_fill",
+    "learningTargetId": "beginner.target.teacher",
+    "targetKey": "teacher_intro",
+    "prompt": "I am a ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "teacher"
+      },
+      {
+        "id": "b",
+        "text": "artist"
+      },
+      {
+        "id": "c",
+        "text": "doctor"
+      },
+      {
+        "id": "d",
+        "text": "nurse"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "teacher"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  }
+]

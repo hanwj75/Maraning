@@ -1,0 +1,56 @@
+[
+  {
+    "id": "advanced.stage.001",
+    "difficulty": "advanced",
+    "order": 1,
+    "title": "아침 영어 공부",
+    "description": "아침에 영어를 공부하는 긴 문장을 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.study-morning",
+      "ko": "저는 보통 아침에 영어를 공부합니다",
+      "en": "I usually study English in the morning",
+      "sentenceKo": "저는 보통 아침에 영어를 공부합니다",
+      "sentenceEn": "I usually study English in the morning"
+    },
+    "quizIds": [
+      "advanced.quiz.001",
+      "advanced.quiz.002",
+      "advanced.quiz.003",
+      "advanced.quiz.004",
+      "advanced.quiz.005",
+      "advanced.quiz.006",
+      "advanced.quiz.007",
+      "advanced.quiz.008",
+      "advanced.quiz.009",
+      "advanced.quiz.010"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "advanced.stage.002",
+    "difficulty": "advanced",
+    "order": 2,
+    "title": "저녁 책 읽기",
+    "description": "저녁에 책을 읽는 긴 문장을 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.read-evening",
+      "ko": "저는 보통 저녁에 책을 읽습니다",
+      "en": "I usually read books in the evening",
+      "sentenceKo": "저는 보통 저녁에 책을 읽습니다",
+      "sentenceEn": "I usually read books in the evening"
+    },
+    "quizIds": [
+      "advanced.quiz.011",
+      "advanced.quiz.012",
+      "advanced.quiz.013",
+      "advanced.quiz.014",
+      "advanced.quiz.015",
+      "advanced.quiz.016",
+      "advanced.quiz.017",
+      "advanced.quiz.018",
+      "advanced.quiz.019",
+      "advanced.quiz.020"
+    ],
+    "requiredStageId": "advanced.stage.001"
+  }
+]

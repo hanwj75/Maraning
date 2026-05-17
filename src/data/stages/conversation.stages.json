@@ -1,0 +1,56 @@
+[
+  {
+    "id": "conversation.stage.001",
+    "difficulty": "conversation",
+    "order": 1,
+    "title": "안부 묻기",
+    "description": "How are you 와 기본 응답을 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.how-are-you",
+      "ko": "잘 지내?",
+      "en": "How are you?",
+      "sentenceKo": "저는 잘 지내요",
+      "sentenceEn": "I'm good"
+    },
+    "quizIds": [
+      "conversation.quiz.001",
+      "conversation.quiz.002",
+      "conversation.quiz.003",
+      "conversation.quiz.004",
+      "conversation.quiz.005",
+      "conversation.quiz.006",
+      "conversation.quiz.007",
+      "conversation.quiz.008",
+      "conversation.quiz.009",
+      "conversation.quiz.010"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "conversation.stage.002",
+    "difficulty": "conversation",
+    "order": 2,
+    "title": "감사 말하기",
+    "description": "Thank you 와 기본 응답을 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.thank-you",
+      "ko": "감사합니다",
+      "en": "Thank you",
+      "sentenceKo": "천만에요",
+      "sentenceEn": "You're welcome"
+    },
+    "quizIds": [
+      "conversation.quiz.011",
+      "conversation.quiz.012",
+      "conversation.quiz.013",
+      "conversation.quiz.014",
+      "conversation.quiz.015",
+      "conversation.quiz.016",
+      "conversation.quiz.017",
+      "conversation.quiz.018",
+      "conversation.quiz.019",
+      "conversation.quiz.020"
+    ],
+    "requiredStageId": "conversation.stage.001"
+  }
+]

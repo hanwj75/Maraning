@@ -1,0 +1,852 @@
+[
+  {
+    "id": "toeic.quiz.001",
+    "stageId": "toeic.stage.001",
+    "difficulty": "toeic",
+    "type": "image_select",
+    "learningTargetId": "toeic.target.meeting",
+    "targetKey": "meeting_notice",
+    "prompt": "\"회의는 오전 아홉시에 시작됩니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "The meeting starts at nine in the morning"
+      },
+      {
+        "id": "b",
+        "text": "Customers should sign the form"
+      },
+      {
+        "id": "c",
+        "text": "The office opens at eight"
+      },
+      {
+        "id": "d",
+        "text": "The report must be submitted by Friday"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"회의는 오전 아홉시에 시작됩니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "toeic.quiz.002",
+    "stageId": "toeic.stage.001",
+    "difficulty": "toeic",
+    "type": "matching",
+    "learningTargetId": "toeic.target.meeting",
+    "targetKey": "meeting_notice",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "The meeting starts at nine in the morning",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "회의는 오전 아홉시에 시작됩니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "Customers should sign the form",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "고객은 양식에 서명해야 합니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "The office opens at eight",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "사무실은 여덟시에 엽니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "toeic.quiz.003",
+    "stageId": "toeic.stage.001",
+    "difficulty": "toeic",
+    "type": "word_order",
+    "learningTargetId": "toeic.target.meeting",
+    "targetKey": "meeting_notice",
+    "prompt": "문장을 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "morning"
+      },
+      {
+        "id": "t2",
+        "text": "The"
+      },
+      {
+        "id": "t3",
+        "text": "meeting"
+      },
+      {
+        "id": "t4",
+        "text": "starts"
+      },
+      {
+        "id": "t5",
+        "text": "at"
+      },
+      {
+        "id": "t6",
+        "text": "nine"
+      },
+      {
+        "id": "t7",
+        "text": "in"
+      },
+      {
+        "id": "t8",
+        "text": "the"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "The",
+        "meeting",
+        "starts",
+        "at",
+        "nine",
+        "in",
+        "the",
+        "morning"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "toeic.quiz.004",
+    "stageId": "toeic.stage.001",
+    "difficulty": "toeic",
+    "type": "blank_fill",
+    "learningTargetId": "toeic.target.meeting",
+    "targetKey": "meeting_notice",
+    "prompt": "The meeting starts at nine in the ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "morning"
+      },
+      {
+        "id": "b",
+        "text": "form"
+      },
+      {
+        "id": "c",
+        "text": "eight"
+      },
+      {
+        "id": "d",
+        "text": "Friday"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "morning"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "toeic.quiz.005",
+    "stageId": "toeic.stage.001",
+    "difficulty": "toeic",
+    "type": "image_select",
+    "learningTargetId": "toeic.target.meeting",
+    "targetKey": "meeting_notice",
+    "prompt": "\"회의는 오전 아홉시에 시작됩니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "The meeting starts at nine in the morning"
+      },
+      {
+        "id": "b",
+        "text": "Customers should sign the form"
+      },
+      {
+        "id": "c",
+        "text": "The office opens at eight"
+      },
+      {
+        "id": "d",
+        "text": "The report must be submitted by Friday"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"회의는 오전 아홉시에 시작됩니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "toeic.quiz.006",
+    "stageId": "toeic.stage.001",
+    "difficulty": "toeic",
+    "type": "matching",
+    "learningTargetId": "toeic.target.meeting",
+    "targetKey": "meeting_notice",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "The meeting starts at nine in the morning",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "회의는 오전 아홉시에 시작됩니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "Customers should sign the form",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "고객은 양식에 서명해야 합니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "The office opens at eight",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "사무실은 여덟시에 엽니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "toeic.quiz.007",
+    "stageId": "toeic.stage.001",
+    "difficulty": "toeic",
+    "type": "word_order",
+    "learningTargetId": "toeic.target.meeting",
+    "targetKey": "meeting_notice",
+    "prompt": "같은 문장을 다시 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "morning"
+      },
+      {
+        "id": "t2",
+        "text": "The"
+      },
+      {
+        "id": "t3",
+        "text": "meeting"
+      },
+      {
+        "id": "t4",
+        "text": "starts"
+      },
+      {
+        "id": "t5",
+        "text": "at"
+      },
+      {
+        "id": "t6",
+        "text": "nine"
+      },
+      {
+        "id": "t7",
+        "text": "in"
+      },
+      {
+        "id": "t8",
+        "text": "the"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "The",
+        "meeting",
+        "starts",
+        "at",
+        "nine",
+        "in",
+        "the",
+        "morning"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "toeic.quiz.008",
+    "stageId": "toeic.stage.001",
+    "difficulty": "toeic",
+    "type": "blank_fill",
+    "learningTargetId": "toeic.target.meeting",
+    "targetKey": "meeting_notice",
+    "prompt": "The meeting starts at nine in the ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "morning"
+      },
+      {
+        "id": "b",
+        "text": "form"
+      },
+      {
+        "id": "c",
+        "text": "eight"
+      },
+      {
+        "id": "d",
+        "text": "Friday"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "morning"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "toeic.quiz.009",
+    "stageId": "toeic.stage.001",
+    "difficulty": "toeic",
+    "type": "image_select",
+    "learningTargetId": "toeic.target.meeting",
+    "targetKey": "meeting_notice",
+    "prompt": "\"회의는 오전 아홉시에 시작됩니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "The meeting starts at nine in the morning"
+      },
+      {
+        "id": "b",
+        "text": "Customers should sign the form"
+      },
+      {
+        "id": "c",
+        "text": "The office opens at eight"
+      },
+      {
+        "id": "d",
+        "text": "The report must be submitted by Friday"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"회의는 오전 아홉시에 시작됩니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "toeic.quiz.010",
+    "stageId": "toeic.stage.001",
+    "difficulty": "toeic",
+    "type": "blank_fill",
+    "learningTargetId": "toeic.target.meeting",
+    "targetKey": "meeting_notice",
+    "prompt": "The meeting starts at nine in the ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "morning"
+      },
+      {
+        "id": "b",
+        "text": "form"
+      },
+      {
+        "id": "c",
+        "text": "eight"
+      },
+      {
+        "id": "d",
+        "text": "Friday"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "morning"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "toeic.quiz.011",
+    "stageId": "toeic.stage.002",
+    "difficulty": "toeic",
+    "type": "image_select",
+    "learningTargetId": "toeic.target.report",
+    "targetKey": "report_submit",
+    "prompt": "\"보고서는 금요일까지 제출해야 합니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "The report must be submitted by Friday"
+      },
+      {
+        "id": "b",
+        "text": "Customers should sign the form"
+      },
+      {
+        "id": "c",
+        "text": "The meeting starts at nine in the morning"
+      },
+      {
+        "id": "d",
+        "text": "The office opens at eight"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"보고서는 금요일까지 제출해야 합니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "toeic.quiz.012",
+    "stageId": "toeic.stage.002",
+    "difficulty": "toeic",
+    "type": "matching",
+    "learningTargetId": "toeic.target.report",
+    "targetKey": "report_submit",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "The report must be submitted by Friday",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "보고서는 금요일까지 제출해야 합니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "Customers should sign the form",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "고객은 양식에 서명해야 합니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "The meeting starts at nine in the morning",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "회의는 오전 아홉시에 시작됩니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "toeic.quiz.013",
+    "stageId": "toeic.stage.002",
+    "difficulty": "toeic",
+    "type": "word_order",
+    "learningTargetId": "toeic.target.report",
+    "targetKey": "report_submit",
+    "prompt": "문장을 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "Friday"
+      },
+      {
+        "id": "t2",
+        "text": "The"
+      },
+      {
+        "id": "t3",
+        "text": "report"
+      },
+      {
+        "id": "t4",
+        "text": "must"
+      },
+      {
+        "id": "t5",
+        "text": "be"
+      },
+      {
+        "id": "t6",
+        "text": "submitted"
+      },
+      {
+        "id": "t7",
+        "text": "by"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "The",
+        "report",
+        "must",
+        "be",
+        "submitted",
+        "by",
+        "Friday"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "toeic.quiz.014",
+    "stageId": "toeic.stage.002",
+    "difficulty": "toeic",
+    "type": "blank_fill",
+    "learningTargetId": "toeic.target.report",
+    "targetKey": "report_submit",
+    "prompt": "The report must be submitted by ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Friday"
+      },
+      {
+        "id": "b",
+        "text": "form"
+      },
+      {
+        "id": "c",
+        "text": "morning"
+      },
+      {
+        "id": "d",
+        "text": "eight"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "Friday"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "toeic.quiz.015",
+    "stageId": "toeic.stage.002",
+    "difficulty": "toeic",
+    "type": "image_select",
+    "learningTargetId": "toeic.target.report",
+    "targetKey": "report_submit",
+    "prompt": "\"보고서는 금요일까지 제출해야 합니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "The report must be submitted by Friday"
+      },
+      {
+        "id": "b",
+        "text": "Customers should sign the form"
+      },
+      {
+        "id": "c",
+        "text": "The meeting starts at nine in the morning"
+      },
+      {
+        "id": "d",
+        "text": "The office opens at eight"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"보고서는 금요일까지 제출해야 합니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "toeic.quiz.016",
+    "stageId": "toeic.stage.002",
+    "difficulty": "toeic",
+    "type": "matching",
+    "learningTargetId": "toeic.target.report",
+    "targetKey": "report_submit",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "The report must be submitted by Friday",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "보고서는 금요일까지 제출해야 합니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "Customers should sign the form",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "고객은 양식에 서명해야 합니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "The meeting starts at nine in the morning",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "회의는 오전 아홉시에 시작됩니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "toeic.quiz.017",
+    "stageId": "toeic.stage.002",
+    "difficulty": "toeic",
+    "type": "word_order",
+    "learningTargetId": "toeic.target.report",
+    "targetKey": "report_submit",
+    "prompt": "같은 문장을 다시 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "Friday"
+      },
+      {
+        "id": "t2",
+        "text": "The"
+      },
+      {
+        "id": "t3",
+        "text": "report"
+      },
+      {
+        "id": "t4",
+        "text": "must"
+      },
+      {
+        "id": "t5",
+        "text": "be"
+      },
+      {
+        "id": "t6",
+        "text": "submitted"
+      },
+      {
+        "id": "t7",
+        "text": "by"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "The",
+        "report",
+        "must",
+        "be",
+        "submitted",
+        "by",
+        "Friday"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "toeic.quiz.018",
+    "stageId": "toeic.stage.002",
+    "difficulty": "toeic",
+    "type": "blank_fill",
+    "learningTargetId": "toeic.target.report",
+    "targetKey": "report_submit",
+    "prompt": "The report must be submitted by ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Friday"
+      },
+      {
+        "id": "b",
+        "text": "form"
+      },
+      {
+        "id": "c",
+        "text": "morning"
+      },
+      {
+        "id": "d",
+        "text": "eight"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "Friday"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "toeic.quiz.019",
+    "stageId": "toeic.stage.002",
+    "difficulty": "toeic",
+    "type": "image_select",
+    "learningTargetId": "toeic.target.report",
+    "targetKey": "report_submit",
+    "prompt": "\"보고서는 금요일까지 제출해야 합니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "The report must be submitted by Friday"
+      },
+      {
+        "id": "b",
+        "text": "Customers should sign the form"
+      },
+      {
+        "id": "c",
+        "text": "The meeting starts at nine in the morning"
+      },
+      {
+        "id": "d",
+        "text": "The office opens at eight"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"보고서는 금요일까지 제출해야 합니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "toeic.quiz.020",
+    "stageId": "toeic.stage.002",
+    "difficulty": "toeic",
+    "type": "blank_fill",
+    "learningTargetId": "toeic.target.report",
+    "targetKey": "report_submit",
+    "prompt": "The report must be submitted by ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Friday"
+      },
+      {
+        "id": "b",
+        "text": "form"
+      },
+      {
+        "id": "c",
+        "text": "morning"
+      },
+      {
+        "id": "d",
+        "text": "eight"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "Friday"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  }
+]

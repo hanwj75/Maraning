@@ -1,0 +1,56 @@
+[
+  {
+    "id": "beginner.stage.001",
+    "difficulty": "beginner",
+    "order": 1,
+    "title": "학생 소개",
+    "description": "나는 학생입니다 문장을 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.student",
+      "ko": "학생",
+      "en": "student",
+      "sentenceKo": "나는 학생입니다",
+      "sentenceEn": "I am a student"
+    },
+    "quizIds": [
+      "beginner.quiz.001",
+      "beginner.quiz.002",
+      "beginner.quiz.003",
+      "beginner.quiz.004",
+      "beginner.quiz.005",
+      "beginner.quiz.006",
+      "beginner.quiz.007",
+      "beginner.quiz.008",
+      "beginner.quiz.009",
+      "beginner.quiz.010"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "beginner.stage.002",
+    "difficulty": "beginner",
+    "order": 2,
+    "title": "교사 소개",
+    "description": "나는 선생님입니다 문장을 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.teacher",
+      "ko": "선생님",
+      "en": "teacher",
+      "sentenceKo": "나는 선생님입니다",
+      "sentenceEn": "I am a teacher"
+    },
+    "quizIds": [
+      "beginner.quiz.011",
+      "beginner.quiz.012",
+      "beginner.quiz.013",
+      "beginner.quiz.014",
+      "beginner.quiz.015",
+      "beginner.quiz.016",
+      "beginner.quiz.017",
+      "beginner.quiz.018",
+      "beginner.quiz.019",
+      "beginner.quiz.020"
+    ],
+    "requiredStageId": "beginner.stage.001"
+  }
+]

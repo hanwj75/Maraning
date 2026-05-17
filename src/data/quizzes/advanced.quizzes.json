@@ -1,0 +1,842 @@
+[
+  {
+    "id": "advanced.quiz.001",
+    "stageId": "advanced.stage.001",
+    "difficulty": "advanced",
+    "type": "image_select",
+    "learningTargetId": "advanced.target.study-morning",
+    "targetKey": "study_morning",
+    "prompt": "\"저는 보통 아침에 영어를 공부합니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I usually study English in the morning"
+      },
+      {
+        "id": "b",
+        "text": "I usually exercise at night"
+      },
+      {
+        "id": "c",
+        "text": "I usually read books in the evening"
+      },
+      {
+        "id": "d",
+        "text": "I usually watch movies on weekends"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"저는 보통 아침에 영어를 공부합니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "advanced.quiz.002",
+    "stageId": "advanced.stage.001",
+    "difficulty": "advanced",
+    "type": "matching",
+    "learningTargetId": "advanced.target.study-morning",
+    "targetKey": "study_morning",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "I usually study English in the morning",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "저는 보통 아침에 영어를 공부합니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "I usually exercise at night",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "저는 보통 밤에 운동합니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "I usually read books in the evening",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "저는 보통 저녁에 책을 읽습니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "advanced.quiz.003",
+    "stageId": "advanced.stage.001",
+    "difficulty": "advanced",
+    "type": "word_order",
+    "learningTargetId": "advanced.target.study-morning",
+    "targetKey": "study_morning",
+    "prompt": "문장을 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "morning"
+      },
+      {
+        "id": "t2",
+        "text": "I"
+      },
+      {
+        "id": "t3",
+        "text": "usually"
+      },
+      {
+        "id": "t4",
+        "text": "study"
+      },
+      {
+        "id": "t5",
+        "text": "English"
+      },
+      {
+        "id": "t6",
+        "text": "in"
+      },
+      {
+        "id": "t7",
+        "text": "the"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "I",
+        "usually",
+        "study",
+        "English",
+        "in",
+        "the",
+        "morning"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "advanced.quiz.004",
+    "stageId": "advanced.stage.001",
+    "difficulty": "advanced",
+    "type": "blank_fill",
+    "learningTargetId": "advanced.target.study-morning",
+    "targetKey": "study_morning",
+    "prompt": "I usually study English in the ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "morning"
+      },
+      {
+        "id": "b",
+        "text": "night"
+      },
+      {
+        "id": "c",
+        "text": "evening"
+      },
+      {
+        "id": "d",
+        "text": "weekends"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "morning"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "advanced.quiz.005",
+    "stageId": "advanced.stage.001",
+    "difficulty": "advanced",
+    "type": "image_select",
+    "learningTargetId": "advanced.target.study-morning",
+    "targetKey": "study_morning",
+    "prompt": "\"저는 보통 아침에 영어를 공부합니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I usually study English in the morning"
+      },
+      {
+        "id": "b",
+        "text": "I usually exercise at night"
+      },
+      {
+        "id": "c",
+        "text": "I usually read books in the evening"
+      },
+      {
+        "id": "d",
+        "text": "I usually watch movies on weekends"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"저는 보통 아침에 영어를 공부합니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "advanced.quiz.006",
+    "stageId": "advanced.stage.001",
+    "difficulty": "advanced",
+    "type": "matching",
+    "learningTargetId": "advanced.target.study-morning",
+    "targetKey": "study_morning",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "I usually study English in the morning",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "저는 보통 아침에 영어를 공부합니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "I usually exercise at night",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "저는 보통 밤에 운동합니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "I usually read books in the evening",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "저는 보통 저녁에 책을 읽습니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "advanced.quiz.007",
+    "stageId": "advanced.stage.001",
+    "difficulty": "advanced",
+    "type": "word_order",
+    "learningTargetId": "advanced.target.study-morning",
+    "targetKey": "study_morning",
+    "prompt": "같은 문장을 다시 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "morning"
+      },
+      {
+        "id": "t2",
+        "text": "I"
+      },
+      {
+        "id": "t3",
+        "text": "usually"
+      },
+      {
+        "id": "t4",
+        "text": "study"
+      },
+      {
+        "id": "t5",
+        "text": "English"
+      },
+      {
+        "id": "t6",
+        "text": "in"
+      },
+      {
+        "id": "t7",
+        "text": "the"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "I",
+        "usually",
+        "study",
+        "English",
+        "in",
+        "the",
+        "morning"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "advanced.quiz.008",
+    "stageId": "advanced.stage.001",
+    "difficulty": "advanced",
+    "type": "blank_fill",
+    "learningTargetId": "advanced.target.study-morning",
+    "targetKey": "study_morning",
+    "prompt": "I usually study English in the ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "morning"
+      },
+      {
+        "id": "b",
+        "text": "night"
+      },
+      {
+        "id": "c",
+        "text": "evening"
+      },
+      {
+        "id": "d",
+        "text": "weekends"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "morning"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "advanced.quiz.009",
+    "stageId": "advanced.stage.001",
+    "difficulty": "advanced",
+    "type": "image_select",
+    "learningTargetId": "advanced.target.study-morning",
+    "targetKey": "study_morning",
+    "prompt": "\"저는 보통 아침에 영어를 공부합니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I usually study English in the morning"
+      },
+      {
+        "id": "b",
+        "text": "I usually exercise at night"
+      },
+      {
+        "id": "c",
+        "text": "I usually read books in the evening"
+      },
+      {
+        "id": "d",
+        "text": "I usually watch movies on weekends"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"저는 보통 아침에 영어를 공부합니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "advanced.quiz.010",
+    "stageId": "advanced.stage.001",
+    "difficulty": "advanced",
+    "type": "blank_fill",
+    "learningTargetId": "advanced.target.study-morning",
+    "targetKey": "study_morning",
+    "prompt": "I usually study English in the ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "morning"
+      },
+      {
+        "id": "b",
+        "text": "night"
+      },
+      {
+        "id": "c",
+        "text": "evening"
+      },
+      {
+        "id": "d",
+        "text": "weekends"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "morning"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "advanced.quiz.011",
+    "stageId": "advanced.stage.002",
+    "difficulty": "advanced",
+    "type": "image_select",
+    "learningTargetId": "advanced.target.read-evening",
+    "targetKey": "read_evening",
+    "prompt": "\"저는 보통 저녁에 책을 읽습니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I usually read books in the evening"
+      },
+      {
+        "id": "b",
+        "text": "I usually exercise at night"
+      },
+      {
+        "id": "c",
+        "text": "I usually study English in the morning"
+      },
+      {
+        "id": "d",
+        "text": "I usually watch movies on weekends"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"저는 보통 저녁에 책을 읽습니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "advanced.quiz.012",
+    "stageId": "advanced.stage.002",
+    "difficulty": "advanced",
+    "type": "matching",
+    "learningTargetId": "advanced.target.read-evening",
+    "targetKey": "read_evening",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "I usually read books in the evening",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "저는 보통 저녁에 책을 읽습니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "I usually exercise at night",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "저는 보통 밤에 운동합니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "I usually study English in the morning",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "저는 보통 아침에 영어를 공부합니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "advanced.quiz.013",
+    "stageId": "advanced.stage.002",
+    "difficulty": "advanced",
+    "type": "word_order",
+    "learningTargetId": "advanced.target.read-evening",
+    "targetKey": "read_evening",
+    "prompt": "문장을 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "evening"
+      },
+      {
+        "id": "t2",
+        "text": "I"
+      },
+      {
+        "id": "t3",
+        "text": "usually"
+      },
+      {
+        "id": "t4",
+        "text": "read"
+      },
+      {
+        "id": "t5",
+        "text": "books"
+      },
+      {
+        "id": "t6",
+        "text": "in"
+      },
+      {
+        "id": "t7",
+        "text": "the"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "I",
+        "usually",
+        "read",
+        "books",
+        "in",
+        "the",
+        "evening"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "advanced.quiz.014",
+    "stageId": "advanced.stage.002",
+    "difficulty": "advanced",
+    "type": "blank_fill",
+    "learningTargetId": "advanced.target.read-evening",
+    "targetKey": "read_evening",
+    "prompt": "I usually read books in the ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "evening"
+      },
+      {
+        "id": "b",
+        "text": "night"
+      },
+      {
+        "id": "c",
+        "text": "morning"
+      },
+      {
+        "id": "d",
+        "text": "weekends"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "evening"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "advanced.quiz.015",
+    "stageId": "advanced.stage.002",
+    "difficulty": "advanced",
+    "type": "image_select",
+    "learningTargetId": "advanced.target.read-evening",
+    "targetKey": "read_evening",
+    "prompt": "\"저는 보통 저녁에 책을 읽습니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I usually read books in the evening"
+      },
+      {
+        "id": "b",
+        "text": "I usually exercise at night"
+      },
+      {
+        "id": "c",
+        "text": "I usually study English in the morning"
+      },
+      {
+        "id": "d",
+        "text": "I usually watch movies on weekends"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"저는 보통 저녁에 책을 읽습니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "advanced.quiz.016",
+    "stageId": "advanced.stage.002",
+    "difficulty": "advanced",
+    "type": "matching",
+    "learningTargetId": "advanced.target.read-evening",
+    "targetKey": "read_evening",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "I usually read books in the evening",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "저는 보통 저녁에 책을 읽습니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "I usually exercise at night",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "저는 보통 밤에 운동합니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "I usually study English in the morning",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "저는 보통 아침에 영어를 공부합니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "advanced.quiz.017",
+    "stageId": "advanced.stage.002",
+    "difficulty": "advanced",
+    "type": "word_order",
+    "learningTargetId": "advanced.target.read-evening",
+    "targetKey": "read_evening",
+    "prompt": "같은 문장을 다시 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "evening"
+      },
+      {
+        "id": "t2",
+        "text": "I"
+      },
+      {
+        "id": "t3",
+        "text": "usually"
+      },
+      {
+        "id": "t4",
+        "text": "read"
+      },
+      {
+        "id": "t5",
+        "text": "books"
+      },
+      {
+        "id": "t6",
+        "text": "in"
+      },
+      {
+        "id": "t7",
+        "text": "the"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "I",
+        "usually",
+        "read",
+        "books",
+        "in",
+        "the",
+        "evening"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "advanced.quiz.018",
+    "stageId": "advanced.stage.002",
+    "difficulty": "advanced",
+    "type": "blank_fill",
+    "learningTargetId": "advanced.target.read-evening",
+    "targetKey": "read_evening",
+    "prompt": "I usually read books in the ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "evening"
+      },
+      {
+        "id": "b",
+        "text": "night"
+      },
+      {
+        "id": "c",
+        "text": "morning"
+      },
+      {
+        "id": "d",
+        "text": "weekends"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "evening"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "advanced.quiz.019",
+    "stageId": "advanced.stage.002",
+    "difficulty": "advanced",
+    "type": "image_select",
+    "learningTargetId": "advanced.target.read-evening",
+    "targetKey": "read_evening",
+    "prompt": "\"저는 보통 저녁에 책을 읽습니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I usually read books in the evening"
+      },
+      {
+        "id": "b",
+        "text": "I usually exercise at night"
+      },
+      {
+        "id": "c",
+        "text": "I usually study English in the morning"
+      },
+      {
+        "id": "d",
+        "text": "I usually watch movies on weekends"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"저는 보통 저녁에 책을 읽습니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "advanced.quiz.020",
+    "stageId": "advanced.stage.002",
+    "difficulty": "advanced",
+    "type": "blank_fill",
+    "learningTargetId": "advanced.target.read-evening",
+    "targetKey": "read_evening",
+    "prompt": "I usually read books in the ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "evening"
+      },
+      {
+        "id": "b",
+        "text": "night"
+      },
+      {
+        "id": "c",
+        "text": "morning"
+      },
+      {
+        "id": "d",
+        "text": "weekends"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "evening"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  }
+]

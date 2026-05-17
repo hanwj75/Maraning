@@ -1,0 +1,40 @@
+import { AnimatePresence, motion } from 'framer-motion'
+import { Route, Routes, useLocation } from 'react-router-dom'
+import { DifficultySelectPage } from '../pages/DifficultySelectPage'
+import { HomePage } from '../pages/HomePage'
+import { QuizPage } from '../pages/QuizPage'
+import { ResultPage } from '../pages/ResultPage'
+import { RewardPage } from '../pages/RewardPage'
+import { SplashPage } from '../pages/SplashPage'
+import { StageMapPage } from '../pages/StageMapPage'
+
+const pageTransition = {
+  initial: { opacity: 0, y: 12 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -12 },
+  transition: { duration: 0.22, ease: [0.22, 1, 0.36, 1] as const },
+}
+
+function AnimatedRoutes() {
+  const location = useLocation()
+
+  return (
+    <AnimatePresence mode="wait">
+      <motion.div key={location.pathname} {...pageTransition} className="min-h-dvh">
+        <Routes location={location}>
+          <Route path="/" element={<SplashPage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/difficulty" element={<DifficultySelectPage />} />
+          <Route path="/stages" element={<StageMapPage />} />
+          <Route path="/quiz" element={<QuizPage />} />
+          <Route path="/result" element={<ResultPage />} />
+          <Route path="/reward" element={<RewardPage />} />
+        </Routes>
+      </motion.div>
+    </AnimatePresence>
+  )
+}
+
+export function AppRouter() {
+  return <AnimatedRoutes />
+}

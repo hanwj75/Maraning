@@ -1,0 +1,56 @@
+[
+  {
+    "id": "intermediate.stage.001",
+    "difficulty": "intermediate",
+    "order": 1,
+    "title": "사과 좋아하기",
+    "description": "나는 사과를 좋아합니다 문장을 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.like-apples",
+      "ko": "나는 사과를 좋아합니다",
+      "en": "I like apples",
+      "sentenceKo": "나는 사과를 좋아합니다",
+      "sentenceEn": "I like apples"
+    },
+    "quizIds": [
+      "intermediate.quiz.001",
+      "intermediate.quiz.002",
+      "intermediate.quiz.003",
+      "intermediate.quiz.004",
+      "intermediate.quiz.005",
+      "intermediate.quiz.006",
+      "intermediate.quiz.007",
+      "intermediate.quiz.008",
+      "intermediate.quiz.009",
+      "intermediate.quiz.010"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "intermediate.stage.002",
+    "difficulty": "intermediate",
+    "order": 2,
+    "title": "축구 좋아하기",
+    "description": "나는 축구를 좋아합니다 문장을 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.like-soccer",
+      "ko": "나는 축구를 좋아합니다",
+      "en": "I like soccer",
+      "sentenceKo": "나는 축구를 좋아합니다",
+      "sentenceEn": "I like soccer"
+    },
+    "quizIds": [
+      "intermediate.quiz.011",
+      "intermediate.quiz.012",
+      "intermediate.quiz.013",
+      "intermediate.quiz.014",
+      "intermediate.quiz.015",
+      "intermediate.quiz.016",
+      "intermediate.quiz.017",
+      "intermediate.quiz.018",
+      "intermediate.quiz.019",
+      "intermediate.quiz.020"
+    ],
+    "requiredStageId": "intermediate.stage.001"
+  }
+]

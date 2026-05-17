@@ -1,0 +1,83 @@
+[
+  {
+    "id": "absolute-beginner.stage.001",
+    "difficulty": "absolute_beginner",
+    "order": 1,
+    "title": "사과 익히기",
+    "description": "사과 단어와 기본 문장을 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.apple",
+      "ko": "사과",
+      "en": "apple",
+      "sentenceKo": "이것은 사과입니다",
+      "sentenceEn": "This is an apple"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.001",
+      "absolute-beginner.quiz.002",
+      "absolute-beginner.quiz.003",
+      "absolute-beginner.quiz.004",
+      "absolute-beginner.quiz.005",
+      "absolute-beginner.quiz.006",
+      "absolute-beginner.quiz.007",
+      "absolute-beginner.quiz.008",
+      "absolute-beginner.quiz.009",
+      "absolute-beginner.quiz.010"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "absolute-beginner.stage.002",
+    "difficulty": "absolute_beginner",
+    "order": 2,
+    "title": "고양이 익히기",
+    "description": "고양이 단어와 기본 문장을 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.cat",
+      "ko": "고양이",
+      "en": "cat",
+      "sentenceKo": "이것은 고양이입니다",
+      "sentenceEn": "This is a cat"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.011",
+      "absolute-beginner.quiz.012",
+      "absolute-beginner.quiz.013",
+      "absolute-beginner.quiz.014",
+      "absolute-beginner.quiz.015",
+      "absolute-beginner.quiz.016",
+      "absolute-beginner.quiz.017",
+      "absolute-beginner.quiz.018",
+      "absolute-beginner.quiz.019",
+      "absolute-beginner.quiz.020"
+    ],
+    "requiredStageId": "absolute-beginner.stage.001"
+  },
+  {
+    "id": "absolute-beginner.stage.003",
+    "difficulty": "absolute_beginner",
+    "order": 3,
+    "title": "강아지 익히기",
+    "description": "강아지 단어와 기본 문장을 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.dog",
+      "ko": "강아지",
+      "en": "dog",
+      "sentenceKo": "이것은 강아지입니다",
+      "sentenceEn": "This is a dog"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.021",
+      "absolute-beginner.quiz.022",
+      "absolute-beginner.quiz.023",
+      "absolute-beginner.quiz.024",
+      "absolute-beginner.quiz.025",
+      "absolute-beginner.quiz.026",
+      "absolute-beginner.quiz.027",
+      "absolute-beginner.quiz.028",
+      "absolute-beginner.quiz.029",
+      "absolute-beginner.quiz.030"
+    ],
+    "requiredStageId": "absolute-beginner.stage.002"
+  }
+]

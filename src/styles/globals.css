@@ -1,0 +1,279 @@
+@import "tailwindcss";
+
+:root {
+  color: #0f172a;
+  background:
+    radial-gradient(circle at top, #fff8d8 0%, #ffe8d0 38%, #f5d7bc 100%);
+  font-family: "Trebuchet MS", "Segoe UI", "Malgun Gothic", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.52), transparent 18%),
+    radial-gradient(circle at 80% 0%, rgba(255, 248, 203, 0.82), transparent 22%),
+    linear-gradient(180deg, #f7e4cc 0%, #e8c6a7 100%);
+}
+
+button,
+a {
+  touch-action: manipulation;
+}
+
+button {
+  border: 0;
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+.game-screen-shell {
+  min-height: 100dvh;
+  padding: 0;
+}
+
+.game-phone {
+  position: relative;
+  width: min(100%, 430px);
+  min-height: 100dvh;
+  margin: 0 auto;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 20% 12%, rgba(255, 255, 255, 0.46), transparent 14%),
+    radial-gradient(circle at 84% 18%, rgba(255, 243, 215, 0.62), transparent 18%),
+    linear-gradient(180deg, #f5e2ca 0%, #e6c09b 100%);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.48),
+    0 30px 80px rgba(145, 92, 44, 0.2);
+}
+
+.game-phone--scroll {
+  overflow-y: auto;
+}
+
+.game-phone::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 16% 28%, rgba(255, 255, 255, 0.24), transparent 0 10px, rgba(255, 255, 255, 0.14) 10px, transparent 18px),
+    radial-gradient(circle at 79% 34%, rgba(255, 255, 255, 0.2), transparent 0 8px, rgba(255, 255, 255, 0.12) 8px, transparent 14px),
+    radial-gradient(circle at 64% 64%, rgba(255, 255, 255, 0.18), transparent 0 6px, rgba(255, 255, 255, 0.08) 6px, transparent 12px);
+  opacity: 0.8;
+}
+
+.game-phone-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 100dvh;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem 7.5rem;
+}
+
+.game-plain-topbar {
+  border-radius: 1.6rem;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow:
+    inset 0 -4px 0 rgba(231, 214, 198, 0.66),
+    0 14px 26px rgba(191, 137, 93, 0.16);
+}
+
+.stage-reference-shell {
+  background:
+    linear-gradient(180deg, rgba(255, 248, 235, 0.12), rgba(237, 197, 158, 0.25)),
+    url("/assets/ui/stage-map-reference.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.game-stage-map-shell {
+  height: 100dvh;
+  background:
+    radial-gradient(circle at top, rgba(255, 244, 216, 0.9), transparent 20%),
+    linear-gradient(180deg, #efd4b3 0%, #ddb187 100%);
+}
+
+.stage-map-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.16rem;
+  border-radius: 999px;
+  padding: 0.15rem 0.2rem;
+  background: transparent;
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.game-currency-text {
+  color: #fff;
+  text-shadow:
+    -1px 0 #000,
+    1px 0 #000,
+    0 -1px #000,
+    0 1px #000,
+    -1px -1px #000,
+    1px -1px #000,
+    -1px 1px #000,
+    1px 1px #000;
+}
+
+.stage-map-counter span {
+  color: #fff;
+  text-shadow:
+    -1px 0 #000,
+    1px 0 #000,
+    0 -1px #000,
+    0 1px #000,
+    -1px -1px #000,
+    1px -1px #000,
+    -1px 1px #000,
+    1px 1px #000;
+}
+
+.stage-map-reference-wrapper {
+  position: relative;
+  min-height: 100dvh;
+}
+
+.stage-map-reference-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hotspot-link,
+.hotspot-button {
+  position: absolute;
+  display: block;
+  border-radius: 999px;
+  background: transparent;
+  outline: none;
+}
+
+.hotspot-link:focus-visible,
+.hotspot-button:focus-visible {
+  box-shadow:
+    0 0 0 4px rgba(255, 255, 255, 0.95),
+    0 0 0 8px rgba(53, 157, 255, 0.65);
+}
+
+.hotspot-link:active,
+.hotspot-button:active {
+  transform: scale(0.97);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.game-card {
+  border-radius: 1.8rem;
+  box-shadow:
+    0 16px 34px rgba(190, 134, 88, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.game-blue-pill {
+  border-radius: 1.6rem;
+  background: linear-gradient(180deg, #4fb7ff 0%, #2d92eb 100%);
+  box-shadow:
+    inset 0 -5px 0 rgba(27, 99, 183, 0.42),
+    0 16px 28px rgba(79, 154, 223, 0.24);
+}
+
+.game-primary-button,
+.game-secondary-button {
+  display: inline-flex;
+  min-height: 3.6rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.95rem 1.25rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  transition: transform 0.1s ease;
+}
+
+.game-primary-button:active,
+.game-secondary-button:active {
+  transform: scale(0.96);
+}
+
+.game-primary-button {
+  color: white;
+  background: linear-gradient(180deg, #ff9fb8 0%, #ff719f 100%);
+  box-shadow:
+    inset 0 -5px 0 rgba(208, 68, 116, 0.4),
+    0 16px 28px rgba(233, 122, 154, 0.28);
+}
+
+.game-secondary-button {
+  color: #7b4d32;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow:
+    inset 0 -4px 0 rgba(230, 213, 195, 0.64),
+    0 14px 26px rgba(191, 137, 93, 0.16);
+}
+
+.game-bottom-nav {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.35rem;
+  border-radius: 1.9rem;
+  background: rgba(255, 244, 227, 0.88);
+  padding: 0.65rem;
+  box-shadow:
+    0 16px 30px rgba(186, 132, 87, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+}
+
+.game-bottom-nav--flow {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  margin-top: 1rem;
+}

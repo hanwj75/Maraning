@@ -1,0 +1,762 @@
+[
+  {
+    "id": "intermediate.quiz.001",
+    "stageId": "intermediate.stage.001",
+    "difficulty": "intermediate",
+    "type": "image_select",
+    "learningTargetId": "intermediate.target.like-apples",
+    "targetKey": "like_apples",
+    "prompt": "\"나는 사과를 좋아합니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I like apples"
+      },
+      {
+        "id": "b",
+        "text": "I like books"
+      },
+      {
+        "id": "c",
+        "text": "I like music"
+      },
+      {
+        "id": "d",
+        "text": "I like soccer"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"나는 사과를 좋아합니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "intermediate.quiz.002",
+    "stageId": "intermediate.stage.001",
+    "difficulty": "intermediate",
+    "type": "matching",
+    "learningTargetId": "intermediate.target.like-apples",
+    "targetKey": "like_apples",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "I like apples",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "나는 사과를 좋아합니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "I like books",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "나는 책을 좋아합니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "I like music",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "나는 음악을 좋아합니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "intermediate.quiz.003",
+    "stageId": "intermediate.stage.001",
+    "difficulty": "intermediate",
+    "type": "word_order",
+    "learningTargetId": "intermediate.target.like-apples",
+    "targetKey": "like_apples",
+    "prompt": "문장을 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "apples"
+      },
+      {
+        "id": "t2",
+        "text": "I"
+      },
+      {
+        "id": "t3",
+        "text": "like"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "I",
+        "like",
+        "apples"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "intermediate.quiz.004",
+    "stageId": "intermediate.stage.001",
+    "difficulty": "intermediate",
+    "type": "blank_fill",
+    "learningTargetId": "intermediate.target.like-apples",
+    "targetKey": "like_apples",
+    "prompt": "I like ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "apples"
+      },
+      {
+        "id": "b",
+        "text": "books"
+      },
+      {
+        "id": "c",
+        "text": "music"
+      },
+      {
+        "id": "d",
+        "text": "soccer"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "apples"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "intermediate.quiz.005",
+    "stageId": "intermediate.stage.001",
+    "difficulty": "intermediate",
+    "type": "image_select",
+    "learningTargetId": "intermediate.target.like-apples",
+    "targetKey": "like_apples",
+    "prompt": "\"나는 사과를 좋아합니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I like apples"
+      },
+      {
+        "id": "b",
+        "text": "I like books"
+      },
+      {
+        "id": "c",
+        "text": "I like music"
+      },
+      {
+        "id": "d",
+        "text": "I like soccer"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"나는 사과를 좋아합니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "intermediate.quiz.006",
+    "stageId": "intermediate.stage.001",
+    "difficulty": "intermediate",
+    "type": "matching",
+    "learningTargetId": "intermediate.target.like-apples",
+    "targetKey": "like_apples",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "I like apples",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "나는 사과를 좋아합니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "I like books",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "나는 책을 좋아합니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "I like music",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "나는 음악을 좋아합니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "intermediate.quiz.007",
+    "stageId": "intermediate.stage.001",
+    "difficulty": "intermediate",
+    "type": "word_order",
+    "learningTargetId": "intermediate.target.like-apples",
+    "targetKey": "like_apples",
+    "prompt": "같은 문장을 다시 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "apples"
+      },
+      {
+        "id": "t2",
+        "text": "I"
+      },
+      {
+        "id": "t3",
+        "text": "like"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "I",
+        "like",
+        "apples"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "intermediate.quiz.008",
+    "stageId": "intermediate.stage.001",
+    "difficulty": "intermediate",
+    "type": "blank_fill",
+    "learningTargetId": "intermediate.target.like-apples",
+    "targetKey": "like_apples",
+    "prompt": "I like ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "apples"
+      },
+      {
+        "id": "b",
+        "text": "books"
+      },
+      {
+        "id": "c",
+        "text": "music"
+      },
+      {
+        "id": "d",
+        "text": "soccer"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "apples"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "intermediate.quiz.009",
+    "stageId": "intermediate.stage.001",
+    "difficulty": "intermediate",
+    "type": "image_select",
+    "learningTargetId": "intermediate.target.like-apples",
+    "targetKey": "like_apples",
+    "prompt": "\"나는 사과를 좋아합니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I like apples"
+      },
+      {
+        "id": "b",
+        "text": "I like books"
+      },
+      {
+        "id": "c",
+        "text": "I like music"
+      },
+      {
+        "id": "d",
+        "text": "I like soccer"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"나는 사과를 좋아합니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "intermediate.quiz.010",
+    "stageId": "intermediate.stage.001",
+    "difficulty": "intermediate",
+    "type": "blank_fill",
+    "learningTargetId": "intermediate.target.like-apples",
+    "targetKey": "like_apples",
+    "prompt": "I like ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "apples"
+      },
+      {
+        "id": "b",
+        "text": "books"
+      },
+      {
+        "id": "c",
+        "text": "music"
+      },
+      {
+        "id": "d",
+        "text": "soccer"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "apples"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "intermediate.quiz.011",
+    "stageId": "intermediate.stage.002",
+    "difficulty": "intermediate",
+    "type": "image_select",
+    "learningTargetId": "intermediate.target.like-soccer",
+    "targetKey": "like_soccer",
+    "prompt": "\"나는 축구를 좋아합니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I like soccer"
+      },
+      {
+        "id": "b",
+        "text": "I like apples"
+      },
+      {
+        "id": "c",
+        "text": "I like books"
+      },
+      {
+        "id": "d",
+        "text": "I like music"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"나는 축구를 좋아합니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "intermediate.quiz.012",
+    "stageId": "intermediate.stage.002",
+    "difficulty": "intermediate",
+    "type": "matching",
+    "learningTargetId": "intermediate.target.like-soccer",
+    "targetKey": "like_soccer",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "I like soccer",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "나는 축구를 좋아합니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "I like apples",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "나는 사과를 좋아합니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "I like books",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "나는 책을 좋아합니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "intermediate.quiz.013",
+    "stageId": "intermediate.stage.002",
+    "difficulty": "intermediate",
+    "type": "word_order",
+    "learningTargetId": "intermediate.target.like-soccer",
+    "targetKey": "like_soccer",
+    "prompt": "문장을 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "soccer"
+      },
+      {
+        "id": "t2",
+        "text": "I"
+      },
+      {
+        "id": "t3",
+        "text": "like"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "I",
+        "like",
+        "soccer"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "intermediate.quiz.014",
+    "stageId": "intermediate.stage.002",
+    "difficulty": "intermediate",
+    "type": "blank_fill",
+    "learningTargetId": "intermediate.target.like-soccer",
+    "targetKey": "like_soccer",
+    "prompt": "I like ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "soccer"
+      },
+      {
+        "id": "b",
+        "text": "apples"
+      },
+      {
+        "id": "c",
+        "text": "books"
+      },
+      {
+        "id": "d",
+        "text": "music"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "soccer"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "intermediate.quiz.015",
+    "stageId": "intermediate.stage.002",
+    "difficulty": "intermediate",
+    "type": "image_select",
+    "learningTargetId": "intermediate.target.like-soccer",
+    "targetKey": "like_soccer",
+    "prompt": "\"나는 축구를 좋아합니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I like soccer"
+      },
+      {
+        "id": "b",
+        "text": "I like apples"
+      },
+      {
+        "id": "c",
+        "text": "I like books"
+      },
+      {
+        "id": "d",
+        "text": "I like music"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"나는 축구를 좋아합니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "intermediate.quiz.016",
+    "stageId": "intermediate.stage.002",
+    "difficulty": "intermediate",
+    "type": "matching",
+    "learningTargetId": "intermediate.target.like-soccer",
+    "targetKey": "like_soccer",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "I like soccer",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "나는 축구를 좋아합니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "I like apples",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "나는 사과를 좋아합니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "I like books",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "나는 책을 좋아합니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "intermediate.quiz.017",
+    "stageId": "intermediate.stage.002",
+    "difficulty": "intermediate",
+    "type": "word_order",
+    "learningTargetId": "intermediate.target.like-soccer",
+    "targetKey": "like_soccer",
+    "prompt": "같은 문장을 다시 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "soccer"
+      },
+      {
+        "id": "t2",
+        "text": "I"
+      },
+      {
+        "id": "t3",
+        "text": "like"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "I",
+        "like",
+        "soccer"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "intermediate.quiz.018",
+    "stageId": "intermediate.stage.002",
+    "difficulty": "intermediate",
+    "type": "blank_fill",
+    "learningTargetId": "intermediate.target.like-soccer",
+    "targetKey": "like_soccer",
+    "prompt": "I like ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "soccer"
+      },
+      {
+        "id": "b",
+        "text": "apples"
+      },
+      {
+        "id": "c",
+        "text": "books"
+      },
+      {
+        "id": "d",
+        "text": "music"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "soccer"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "intermediate.quiz.019",
+    "stageId": "intermediate.stage.002",
+    "difficulty": "intermediate",
+    "type": "image_select",
+    "learningTargetId": "intermediate.target.like-soccer",
+    "targetKey": "like_soccer",
+    "prompt": "\"나는 축구를 좋아합니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I like soccer"
+      },
+      {
+        "id": "b",
+        "text": "I like apples"
+      },
+      {
+        "id": "c",
+        "text": "I like books"
+      },
+      {
+        "id": "d",
+        "text": "I like music"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"나는 축구를 좋아합니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "intermediate.quiz.020",
+    "stageId": "intermediate.stage.002",
+    "difficulty": "intermediate",
+    "type": "blank_fill",
+    "learningTargetId": "intermediate.target.like-soccer",
+    "targetKey": "like_soccer",
+    "prompt": "I like ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "soccer"
+      },
+      {
+        "id": "b",
+        "text": "apples"
+      },
+      {
+        "id": "c",
+        "text": "books"
+      },
+      {
+        "id": "d",
+        "text": "music"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "soccer"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  }
+]

@@ -1,0 +1,1172 @@
+[
+  {
+    "id": "absolute-beginner.quiz.001",
+    "stageId": "absolute-beginner.stage.001",
+    "difficulty": "absolute_beginner",
+    "type": "image_select",
+    "learningTargetId": "absolute-beginner.target.apple",
+    "targetKey": "apple_basic",
+    "prompt": "\"사과\"는 영어로 무엇일까요?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "apple"
+      },
+      {
+        "id": "b",
+        "text": "ball"
+      },
+      {
+        "id": "c",
+        "text": "book"
+      },
+      {
+        "id": "d",
+        "text": "cat"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "사과는 apple입니다.",
+    "question": "\"사과\"는 영어로 무엇일까요?"
+  },
+  {
+    "id": "absolute-beginner.quiz.002",
+    "stageId": "absolute-beginner.stage.001",
+    "difficulty": "absolute_beginner",
+    "type": "matching",
+    "learningTargetId": "absolute-beginner.target.apple",
+    "targetKey": "apple_basic",
+    "prompt": "영어와 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "apple",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "사과",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "ball",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "공",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "book",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "책",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "핵심 단어와 뜻을 함께 익혀요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.003",
+    "stageId": "absolute-beginner.stage.001",
+    "difficulty": "absolute_beginner",
+    "type": "blank_fill",
+    "learningTargetId": "absolute-beginner.target.apple",
+    "targetKey": "apple_basic",
+    "prompt": "This is an ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "apple"
+      },
+      {
+        "id": "b",
+        "text": "ball"
+      },
+      {
+        "id": "c",
+        "text": "book"
+      },
+      {
+        "id": "d",
+        "text": "cat"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "apple"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.004",
+    "stageId": "absolute-beginner.stage.001",
+    "difficulty": "absolute_beginner",
+    "type": "word_order",
+    "learningTargetId": "absolute-beginner.target.apple",
+    "targetKey": "apple_basic",
+    "prompt": "문장을 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "apple"
+      },
+      {
+        "id": "t2",
+        "text": "This"
+      },
+      {
+        "id": "t3",
+        "text": "is"
+      },
+      {
+        "id": "t4",
+        "text": "an"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "This",
+        "is",
+        "an",
+        "apple"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.005",
+    "stageId": "absolute-beginner.stage.001",
+    "difficulty": "absolute_beginner",
+    "type": "image_select",
+    "learningTargetId": "absolute-beginner.target.apple",
+    "targetKey": "apple_basic",
+    "prompt": "\"이것은 사과입니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "This is an apple"
+      },
+      {
+        "id": "b",
+        "text": "This is a book"
+      },
+      {
+        "id": "c",
+        "text": "This is a cat"
+      },
+      {
+        "id": "d",
+        "text": "This is a dog"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"이것은 사과입니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.006",
+    "stageId": "absolute-beginner.stage.001",
+    "difficulty": "absolute_beginner",
+    "type": "matching",
+    "learningTargetId": "absolute-beginner.target.apple",
+    "targetKey": "apple_basic",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "This is an apple",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "이것은 사과입니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "This is a book",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "이것은 책입니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "This is a cat",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "이것은 고양이입니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.007",
+    "stageId": "absolute-beginner.stage.001",
+    "difficulty": "absolute_beginner",
+    "type": "blank_fill",
+    "learningTargetId": "absolute-beginner.target.apple",
+    "targetKey": "apple_basic",
+    "prompt": "This is an ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "apple"
+      },
+      {
+        "id": "b",
+        "text": "ball"
+      },
+      {
+        "id": "c",
+        "text": "book"
+      },
+      {
+        "id": "d",
+        "text": "cat"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "apple"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.008",
+    "stageId": "absolute-beginner.stage.001",
+    "difficulty": "absolute_beginner",
+    "type": "word_order",
+    "learningTargetId": "absolute-beginner.target.apple",
+    "targetKey": "apple_basic",
+    "prompt": "같은 문장을 다시 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "apple"
+      },
+      {
+        "id": "t2",
+        "text": "This"
+      },
+      {
+        "id": "t3",
+        "text": "is"
+      },
+      {
+        "id": "t4",
+        "text": "an"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "This",
+        "is",
+        "an",
+        "apple"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.009",
+    "stageId": "absolute-beginner.stage.001",
+    "difficulty": "absolute_beginner",
+    "type": "image_select",
+    "learningTargetId": "absolute-beginner.target.apple",
+    "targetKey": "apple_basic",
+    "prompt": "\"이것은 사과입니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "This is an apple"
+      },
+      {
+        "id": "b",
+        "text": "This is a book"
+      },
+      {
+        "id": "c",
+        "text": "This is a cat"
+      },
+      {
+        "id": "d",
+        "text": "This is a dog"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"이것은 사과입니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.010",
+    "stageId": "absolute-beginner.stage.001",
+    "difficulty": "absolute_beginner",
+    "type": "blank_fill",
+    "learningTargetId": "absolute-beginner.target.apple",
+    "targetKey": "apple_basic",
+    "prompt": "This is an ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "apple"
+      },
+      {
+        "id": "b",
+        "text": "ball"
+      },
+      {
+        "id": "c",
+        "text": "book"
+      },
+      {
+        "id": "d",
+        "text": "cat"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "apple"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.011",
+    "stageId": "absolute-beginner.stage.002",
+    "difficulty": "absolute_beginner",
+    "type": "image_select",
+    "learningTargetId": "absolute-beginner.target.cat",
+    "targetKey": "cat_basic",
+    "prompt": "\"고양이\"는 영어로 무엇일까요?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "cat"
+      },
+      {
+        "id": "b",
+        "text": "apple"
+      },
+      {
+        "id": "c",
+        "text": "ball"
+      },
+      {
+        "id": "d",
+        "text": "book"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "고양이는 cat입니다.",
+    "question": "\"고양이\"는 영어로 무엇일까요?"
+  },
+  {
+    "id": "absolute-beginner.quiz.012",
+    "stageId": "absolute-beginner.stage.002",
+    "difficulty": "absolute_beginner",
+    "type": "matching",
+    "learningTargetId": "absolute-beginner.target.cat",
+    "targetKey": "cat_basic",
+    "prompt": "영어와 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "cat",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "고양이",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "apple",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "사과",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "ball",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "공",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "핵심 단어와 뜻을 함께 익혀요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.013",
+    "stageId": "absolute-beginner.stage.002",
+    "difficulty": "absolute_beginner",
+    "type": "blank_fill",
+    "learningTargetId": "absolute-beginner.target.cat",
+    "targetKey": "cat_basic",
+    "prompt": "This is a ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "cat"
+      },
+      {
+        "id": "b",
+        "text": "apple"
+      },
+      {
+        "id": "c",
+        "text": "ball"
+      },
+      {
+        "id": "d",
+        "text": "book"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "cat"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.014",
+    "stageId": "absolute-beginner.stage.002",
+    "difficulty": "absolute_beginner",
+    "type": "word_order",
+    "learningTargetId": "absolute-beginner.target.cat",
+    "targetKey": "cat_basic",
+    "prompt": "문장을 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "cat"
+      },
+      {
+        "id": "t2",
+        "text": "This"
+      },
+      {
+        "id": "t3",
+        "text": "is"
+      },
+      {
+        "id": "t4",
+        "text": "a"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "This",
+        "is",
+        "a",
+        "cat"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.015",
+    "stageId": "absolute-beginner.stage.002",
+    "difficulty": "absolute_beginner",
+    "type": "image_select",
+    "learningTargetId": "absolute-beginner.target.cat",
+    "targetKey": "cat_basic",
+    "prompt": "\"이것은 고양이입니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "This is a cat"
+      },
+      {
+        "id": "b",
+        "text": "This is a book"
+      },
+      {
+        "id": "c",
+        "text": "This is a dog"
+      },
+      {
+        "id": "d",
+        "text": "This is an apple"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"이것은 고양이입니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.016",
+    "stageId": "absolute-beginner.stage.002",
+    "difficulty": "absolute_beginner",
+    "type": "matching",
+    "learningTargetId": "absolute-beginner.target.cat",
+    "targetKey": "cat_basic",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "This is a cat",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "이것은 고양이입니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "This is a book",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "이것은 책입니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "This is a dog",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "이것은 강아지입니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.017",
+    "stageId": "absolute-beginner.stage.002",
+    "difficulty": "absolute_beginner",
+    "type": "blank_fill",
+    "learningTargetId": "absolute-beginner.target.cat",
+    "targetKey": "cat_basic",
+    "prompt": "This is a ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "cat"
+      },
+      {
+        "id": "b",
+        "text": "apple"
+      },
+      {
+        "id": "c",
+        "text": "ball"
+      },
+      {
+        "id": "d",
+        "text": "book"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "cat"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.018",
+    "stageId": "absolute-beginner.stage.002",
+    "difficulty": "absolute_beginner",
+    "type": "word_order",
+    "learningTargetId": "absolute-beginner.target.cat",
+    "targetKey": "cat_basic",
+    "prompt": "같은 문장을 다시 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "cat"
+      },
+      {
+        "id": "t2",
+        "text": "This"
+      },
+      {
+        "id": "t3",
+        "text": "is"
+      },
+      {
+        "id": "t4",
+        "text": "a"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "This",
+        "is",
+        "a",
+        "cat"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.019",
+    "stageId": "absolute-beginner.stage.002",
+    "difficulty": "absolute_beginner",
+    "type": "image_select",
+    "learningTargetId": "absolute-beginner.target.cat",
+    "targetKey": "cat_basic",
+    "prompt": "\"이것은 고양이입니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "This is a cat"
+      },
+      {
+        "id": "b",
+        "text": "This is a book"
+      },
+      {
+        "id": "c",
+        "text": "This is a dog"
+      },
+      {
+        "id": "d",
+        "text": "This is an apple"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"이것은 고양이입니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.020",
+    "stageId": "absolute-beginner.stage.002",
+    "difficulty": "absolute_beginner",
+    "type": "blank_fill",
+    "learningTargetId": "absolute-beginner.target.cat",
+    "targetKey": "cat_basic",
+    "prompt": "This is a ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "cat"
+      },
+      {
+        "id": "b",
+        "text": "apple"
+      },
+      {
+        "id": "c",
+        "text": "ball"
+      },
+      {
+        "id": "d",
+        "text": "book"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "cat"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.021",
+    "stageId": "absolute-beginner.stage.003",
+    "difficulty": "absolute_beginner",
+    "type": "image_select",
+    "learningTargetId": "absolute-beginner.target.dog",
+    "targetKey": "dog_basic",
+    "prompt": "\"강아지\"는 영어로 무엇일까요?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "dog"
+      },
+      {
+        "id": "b",
+        "text": "apple"
+      },
+      {
+        "id": "c",
+        "text": "ball"
+      },
+      {
+        "id": "d",
+        "text": "book"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "강아지는 dog입니다.",
+    "question": "\"강아지\"는 영어로 무엇일까요?"
+  },
+  {
+    "id": "absolute-beginner.quiz.022",
+    "stageId": "absolute-beginner.stage.003",
+    "difficulty": "absolute_beginner",
+    "type": "matching",
+    "learningTargetId": "absolute-beginner.target.dog",
+    "targetKey": "dog_basic",
+    "prompt": "영어와 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "dog",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "강아지",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "apple",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "사과",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "ball",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "공",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "핵심 단어와 뜻을 함께 익혀요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.023",
+    "stageId": "absolute-beginner.stage.003",
+    "difficulty": "absolute_beginner",
+    "type": "blank_fill",
+    "learningTargetId": "absolute-beginner.target.dog",
+    "targetKey": "dog_basic",
+    "prompt": "This is a ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "dog"
+      },
+      {
+        "id": "b",
+        "text": "apple"
+      },
+      {
+        "id": "c",
+        "text": "ball"
+      },
+      {
+        "id": "d",
+        "text": "book"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "dog"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.024",
+    "stageId": "absolute-beginner.stage.003",
+    "difficulty": "absolute_beginner",
+    "type": "word_order",
+    "learningTargetId": "absolute-beginner.target.dog",
+    "targetKey": "dog_basic",
+    "prompt": "문장을 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "dog"
+      },
+      {
+        "id": "t2",
+        "text": "This"
+      },
+      {
+        "id": "t3",
+        "text": "is"
+      },
+      {
+        "id": "t4",
+        "text": "a"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "This",
+        "is",
+        "a",
+        "dog"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.025",
+    "stageId": "absolute-beginner.stage.003",
+    "difficulty": "absolute_beginner",
+    "type": "image_select",
+    "learningTargetId": "absolute-beginner.target.dog",
+    "targetKey": "dog_basic",
+    "prompt": "\"이것은 강아지입니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "This is a dog"
+      },
+      {
+        "id": "b",
+        "text": "This is a book"
+      },
+      {
+        "id": "c",
+        "text": "This is a cat"
+      },
+      {
+        "id": "d",
+        "text": "This is an apple"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"이것은 강아지입니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.026",
+    "stageId": "absolute-beginner.stage.003",
+    "difficulty": "absolute_beginner",
+    "type": "matching",
+    "learningTargetId": "absolute-beginner.target.dog",
+    "targetKey": "dog_basic",
+    "prompt": "문장과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "This is a dog",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "이것은 강아지입니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "This is a book",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "이것은 책입니다",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "This is a cat",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "이것은 고양이입니다",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "학습 문장을 뜻과 함께 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.027",
+    "stageId": "absolute-beginner.stage.003",
+    "difficulty": "absolute_beginner",
+    "type": "blank_fill",
+    "learningTargetId": "absolute-beginner.target.dog",
+    "targetKey": "dog_basic",
+    "prompt": "This is a ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "dog"
+      },
+      {
+        "id": "b",
+        "text": "apple"
+      },
+      {
+        "id": "c",
+        "text": "ball"
+      },
+      {
+        "id": "d",
+        "text": "book"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "dog"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.028",
+    "stageId": "absolute-beginner.stage.003",
+    "difficulty": "absolute_beginner",
+    "type": "word_order",
+    "learningTargetId": "absolute-beginner.target.dog",
+    "targetKey": "dog_basic",
+    "prompt": "같은 문장을 다시 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "dog"
+      },
+      {
+        "id": "t2",
+        "text": "This"
+      },
+      {
+        "id": "t3",
+        "text": "is"
+      },
+      {
+        "id": "t4",
+        "text": "a"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "This",
+        "is",
+        "a",
+        "dog"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.029",
+    "stageId": "absolute-beginner.stage.003",
+    "difficulty": "absolute_beginner",
+    "type": "image_select",
+    "learningTargetId": "absolute-beginner.target.dog",
+    "targetKey": "dog_basic",
+    "prompt": "\"이것은 강아지입니다\"에 맞는 영어 문장을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "This is a dog"
+      },
+      {
+        "id": "b",
+        "text": "This is a book"
+      },
+      {
+        "id": "c",
+        "text": "This is a cat"
+      },
+      {
+        "id": "d",
+        "text": "This is an apple"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "학습 문장을 영어로 다시 확인해요.",
+    "question": "\"이것은 강아지입니다\"에 맞는 영어 문장을 고르세요."
+  },
+  {
+    "id": "absolute-beginner.quiz.030",
+    "stageId": "absolute-beginner.stage.003",
+    "difficulty": "absolute_beginner",
+    "type": "blank_fill",
+    "learningTargetId": "absolute-beginner.target.dog",
+    "targetKey": "dog_basic",
+    "prompt": "This is a ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "dog"
+      },
+      {
+        "id": "b",
+        "text": "apple"
+      },
+      {
+        "id": "c",
+        "text": "ball"
+      },
+      {
+        "id": "d",
+        "text": "book"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "dog"
+      ]
+    },
+    "explanation": "영어 문장의 빈칸을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  }
+]

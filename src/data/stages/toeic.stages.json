@@ -1,0 +1,56 @@
+[
+  {
+    "id": "toeic.stage.001",
+    "difficulty": "toeic",
+    "order": 1,
+    "title": "회의 일정 공지",
+    "description": "회의 시작 시간 표현을 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.meeting",
+      "ko": "회의는 오전 아홉시에 시작됩니다",
+      "en": "The meeting starts at nine in the morning",
+      "sentenceKo": "회의는 오전 아홉시에 시작됩니다",
+      "sentenceEn": "The meeting starts at nine in the morning"
+    },
+    "quizIds": [
+      "toeic.quiz.001",
+      "toeic.quiz.002",
+      "toeic.quiz.003",
+      "toeic.quiz.004",
+      "toeic.quiz.005",
+      "toeic.quiz.006",
+      "toeic.quiz.007",
+      "toeic.quiz.008",
+      "toeic.quiz.009",
+      "toeic.quiz.010"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "toeic.stage.002",
+    "difficulty": "toeic",
+    "order": 2,
+    "title": "보고서 제출 공지",
+    "description": "보고서 제출 표현을 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.report",
+      "ko": "보고서는 금요일까지 제출해야 합니다",
+      "en": "The report must be submitted by Friday",
+      "sentenceKo": "보고서는 금요일까지 제출해야 합니다",
+      "sentenceEn": "The report must be submitted by Friday"
+    },
+    "quizIds": [
+      "toeic.quiz.011",
+      "toeic.quiz.012",
+      "toeic.quiz.013",
+      "toeic.quiz.014",
+      "toeic.quiz.015",
+      "toeic.quiz.016",
+      "toeic.quiz.017",
+      "toeic.quiz.018",
+      "toeic.quiz.019",
+      "toeic.quiz.020"
+    ],
+    "requiredStageId": "toeic.stage.001"
+  }
+]

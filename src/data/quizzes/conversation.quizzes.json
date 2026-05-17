@@ -1,0 +1,747 @@
+[
+  {
+    "id": "conversation.quiz.001",
+    "stageId": "conversation.stage.001",
+    "difficulty": "conversation",
+    "type": "image_select",
+    "learningTargetId": "conversation.target.how-are-you",
+    "targetKey": "how_are_you",
+    "prompt": "\"잘 지내?\"에 맞는 영어 표현을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "How are you?"
+      },
+      {
+        "id": "b",
+        "text": "Good morning"
+      },
+      {
+        "id": "c",
+        "text": "See you later"
+      },
+      {
+        "id": "d",
+        "text": "Thank you"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "대화 시작 표현을 다시 확인해요.",
+    "question": "\"잘 지내?\"에 맞는 영어 표현을 고르세요."
+  },
+  {
+    "id": "conversation.quiz.002",
+    "stageId": "conversation.stage.001",
+    "difficulty": "conversation",
+    "type": "matching",
+    "learningTargetId": "conversation.target.how-are-you",
+    "targetKey": "how_are_you",
+    "prompt": "영어와 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "How are you?",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "잘 지내?",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "Good morning",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "좋은 아침이에요",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "See you later",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "나중에 봐요",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "질문 표현을 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "conversation.quiz.003",
+    "stageId": "conversation.stage.001",
+    "difficulty": "conversation",
+    "type": "word_order",
+    "learningTargetId": "conversation.target.how-are-you",
+    "targetKey": "how_are_you",
+    "prompt": "문장을 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "you?"
+      },
+      {
+        "id": "t2",
+        "text": "How"
+      },
+      {
+        "id": "t3",
+        "text": "are"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "How",
+        "are",
+        "you?"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "conversation.quiz.004",
+    "stageId": "conversation.stage.001",
+    "difficulty": "conversation",
+    "type": "blank_fill",
+    "learningTargetId": "conversation.target.how-are-you",
+    "targetKey": "how_are_you",
+    "prompt": "How are ___?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "you"
+      },
+      {
+        "id": "b",
+        "text": "morning"
+      },
+      {
+        "id": "c",
+        "text": "later"
+      },
+      {
+        "id": "d",
+        "text": "welcome"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "you"
+      ]
+    },
+    "explanation": "대화 시작 표현의 핵심 단어를 넣어요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "conversation.quiz.005",
+    "stageId": "conversation.stage.001",
+    "difficulty": "conversation",
+    "type": "image_select",
+    "learningTargetId": "conversation.target.how-are-you",
+    "targetKey": "how_are_you",
+    "prompt": "알맞은 응답을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I'm good"
+      },
+      {
+        "id": "b",
+        "text": "You're welcome"
+      },
+      {
+        "id": "c",
+        "text": "See you later"
+      },
+      {
+        "id": "d",
+        "text": "Good morning"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "대화 흐름에 맞는 응답을 고릅니다.",
+    "question": "알맞은 응답을 고르세요."
+  },
+  {
+    "id": "conversation.quiz.006",
+    "stageId": "conversation.stage.001",
+    "difficulty": "conversation",
+    "type": "matching",
+    "learningTargetId": "conversation.target.how-are-you",
+    "targetKey": "how_are_you",
+    "prompt": "응답과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "I'm good",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "저는 잘 지내요",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "You're welcome",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "천만에요",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "See you later",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "나중에 봐요",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "응답 표현을 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "conversation.quiz.007",
+    "stageId": "conversation.stage.001",
+    "difficulty": "conversation",
+    "type": "word_order",
+    "learningTargetId": "conversation.target.how-are-you",
+    "targetKey": "how_are_you",
+    "prompt": "같은 문장을 다시 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "good"
+      },
+      {
+        "id": "t2",
+        "text": "I'm"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "I'm",
+        "good"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "conversation.quiz.008",
+    "stageId": "conversation.stage.001",
+    "difficulty": "conversation",
+    "type": "blank_fill",
+    "learningTargetId": "conversation.target.how-are-you",
+    "targetKey": "how_are_you",
+    "prompt": "I'm ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "good"
+      },
+      {
+        "id": "b",
+        "text": "welcome"
+      },
+      {
+        "id": "c",
+        "text": "later"
+      },
+      {
+        "id": "d",
+        "text": "morning"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "good"
+      ]
+    },
+    "explanation": "응답 문장을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "conversation.quiz.009",
+    "stageId": "conversation.stage.001",
+    "difficulty": "conversation",
+    "type": "image_select",
+    "learningTargetId": "conversation.target.how-are-you",
+    "targetKey": "how_are_you",
+    "prompt": "\"잘 지내?\"에 맞는 영어 표현을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "How are you?"
+      },
+      {
+        "id": "b",
+        "text": "Good morning"
+      },
+      {
+        "id": "c",
+        "text": "See you later"
+      },
+      {
+        "id": "d",
+        "text": "Thank you"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "대화 시작 표현을 다시 확인해요.",
+    "question": "\"잘 지내?\"에 맞는 영어 표현을 고르세요."
+  },
+  {
+    "id": "conversation.quiz.010",
+    "stageId": "conversation.stage.001",
+    "difficulty": "conversation",
+    "type": "blank_fill",
+    "learningTargetId": "conversation.target.how-are-you",
+    "targetKey": "how_are_you",
+    "prompt": "I'm ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "good"
+      },
+      {
+        "id": "b",
+        "text": "welcome"
+      },
+      {
+        "id": "c",
+        "text": "later"
+      },
+      {
+        "id": "d",
+        "text": "morning"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "good"
+      ]
+    },
+    "explanation": "응답 문장을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "conversation.quiz.011",
+    "stageId": "conversation.stage.002",
+    "difficulty": "conversation",
+    "type": "image_select",
+    "learningTargetId": "conversation.target.thank-you",
+    "targetKey": "thank_you",
+    "prompt": "\"감사합니다\"에 맞는 영어 표현을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Thank you"
+      },
+      {
+        "id": "b",
+        "text": "Good morning"
+      },
+      {
+        "id": "c",
+        "text": "How are you?"
+      },
+      {
+        "id": "d",
+        "text": "See you later"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "대화 시작 표현을 다시 확인해요.",
+    "question": "\"감사합니다\"에 맞는 영어 표현을 고르세요."
+  },
+  {
+    "id": "conversation.quiz.012",
+    "stageId": "conversation.stage.002",
+    "difficulty": "conversation",
+    "type": "matching",
+    "learningTargetId": "conversation.target.thank-you",
+    "targetKey": "thank_you",
+    "prompt": "영어와 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "Thank you",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "감사합니다",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "Good morning",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "좋은 아침이에요",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "How are you?",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "잘 지내?",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "질문 표현을 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "conversation.quiz.013",
+    "stageId": "conversation.stage.002",
+    "difficulty": "conversation",
+    "type": "word_order",
+    "learningTargetId": "conversation.target.thank-you",
+    "targetKey": "thank_you",
+    "prompt": "문장을 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "you"
+      },
+      {
+        "id": "t2",
+        "text": "Thank"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "Thank",
+        "you"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "conversation.quiz.014",
+    "stageId": "conversation.stage.002",
+    "difficulty": "conversation",
+    "type": "blank_fill",
+    "learningTargetId": "conversation.target.thank-you",
+    "targetKey": "thank_you",
+    "prompt": "Thank ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "you"
+      },
+      {
+        "id": "b",
+        "text": "morning"
+      },
+      {
+        "id": "c",
+        "text": "later"
+      },
+      {
+        "id": "d",
+        "text": "welcome"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "you"
+      ]
+    },
+    "explanation": "대화 시작 표현의 핵심 단어를 넣어요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "conversation.quiz.015",
+    "stageId": "conversation.stage.002",
+    "difficulty": "conversation",
+    "type": "image_select",
+    "learningTargetId": "conversation.target.thank-you",
+    "targetKey": "thank_you",
+    "prompt": "알맞은 응답을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "You're welcome"
+      },
+      {
+        "id": "b",
+        "text": "I'm good"
+      },
+      {
+        "id": "c",
+        "text": "See you later"
+      },
+      {
+        "id": "d",
+        "text": "Good morning"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "대화 흐름에 맞는 응답을 고릅니다.",
+    "question": "알맞은 응답을 고르세요."
+  },
+  {
+    "id": "conversation.quiz.016",
+    "stageId": "conversation.stage.002",
+    "difficulty": "conversation",
+    "type": "matching",
+    "learningTargetId": "conversation.target.thank-you",
+    "targetKey": "thank_you",
+    "prompt": "응답과 뜻을 연결해주세요.",
+    "choices": [
+      {
+        "id": "l1",
+        "text": "You're welcome",
+        "matchKey": "m1"
+      },
+      {
+        "id": "r1",
+        "text": "천만에요",
+        "matchKey": "m1"
+      },
+      {
+        "id": "l2",
+        "text": "I'm good",
+        "matchKey": "m2"
+      },
+      {
+        "id": "r2",
+        "text": "저는 잘 지내요",
+        "matchKey": "m2"
+      },
+      {
+        "id": "l3",
+        "text": "See you later",
+        "matchKey": "m3"
+      },
+      {
+        "id": "r3",
+        "text": "나중에 봐요",
+        "matchKey": "m3"
+      }
+    ],
+    "answer": {
+      "pairs": [
+        {
+          "leftId": "l1",
+          "rightId": "r1"
+        },
+        {
+          "leftId": "l2",
+          "rightId": "r2"
+        },
+        {
+          "leftId": "l3",
+          "rightId": "r3"
+        }
+      ]
+    },
+    "explanation": "응답 표현을 연결해요.",
+    "question": "영어 카드와 한국어 카드를 알맞게 연결해 주세요."
+  },
+  {
+    "id": "conversation.quiz.017",
+    "stageId": "conversation.stage.002",
+    "difficulty": "conversation",
+    "type": "word_order",
+    "learningTargetId": "conversation.target.thank-you",
+    "targetKey": "thank_you",
+    "prompt": "같은 문장을 다시 배열해주세요.",
+    "choices": [
+      {
+        "id": "t1",
+        "text": "welcome"
+      },
+      {
+        "id": "t2",
+        "text": "You're"
+      }
+    ],
+    "answer": {
+      "orderedTokens": [
+        "You're",
+        "welcome"
+      ]
+    },
+    "explanation": "문장 어순을 반복 연습해요.",
+    "question": "단어를 올바른 순서로 배열해 주세요."
+  },
+  {
+    "id": "conversation.quiz.018",
+    "stageId": "conversation.stage.002",
+    "difficulty": "conversation",
+    "type": "blank_fill",
+    "learningTargetId": "conversation.target.thank-you",
+    "targetKey": "thank_you",
+    "prompt": "You're ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "welcome"
+      },
+      {
+        "id": "b",
+        "text": "good"
+      },
+      {
+        "id": "c",
+        "text": "later"
+      },
+      {
+        "id": "d",
+        "text": "morning"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "welcome"
+      ]
+    },
+    "explanation": "응답 문장을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  },
+  {
+    "id": "conversation.quiz.019",
+    "stageId": "conversation.stage.002",
+    "difficulty": "conversation",
+    "type": "image_select",
+    "learningTargetId": "conversation.target.thank-you",
+    "targetKey": "thank_you",
+    "prompt": "\"감사합니다\"에 맞는 영어 표현을 고르세요.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Thank you"
+      },
+      {
+        "id": "b",
+        "text": "Good morning"
+      },
+      {
+        "id": "c",
+        "text": "How are you?"
+      },
+      {
+        "id": "d",
+        "text": "See you later"
+      }
+    ],
+    "answer": {
+      "correctChoiceId": "a"
+    },
+    "explanation": "대화 시작 표현을 다시 확인해요.",
+    "question": "\"감사합니다\"에 맞는 영어 표현을 고르세요."
+  },
+  {
+    "id": "conversation.quiz.020",
+    "stageId": "conversation.stage.002",
+    "difficulty": "conversation",
+    "type": "blank_fill",
+    "learningTargetId": "conversation.target.thank-you",
+    "targetKey": "thank_you",
+    "prompt": "You're ___",
+    "choices": [
+      {
+        "id": "a",
+        "text": "welcome"
+      },
+      {
+        "id": "b",
+        "text": "good"
+      },
+      {
+        "id": "c",
+        "text": "later"
+      },
+      {
+        "id": "d",
+        "text": "morning"
+      }
+    ],
+    "answer": {
+      "acceptedAnswers": [
+        "welcome"
+      ]
+    },
+    "explanation": "응답 문장을 완성해요.",
+    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+  }
+]
