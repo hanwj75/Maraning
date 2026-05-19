@@ -63,7 +63,7 @@ export function RewardPage() {
       </section>
 
       <div className="flex gap-3">
-        <Link to="/stages" state={{ playCharacterAnimation: true }} className="game-primary-button flex-1">
+        <Link to="/stages" className="game-primary-button flex-1">
           스테이지로
         </Link>
         <Link to="/home" className="game-secondary-button flex-1">

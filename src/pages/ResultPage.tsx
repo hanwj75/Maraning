@@ -1,11 +1,13 @@
+import { useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
-import { CharacterPanel } from '../shared/components/CharacterPanel'
 import { CuteTopBar } from '../shared/components/CuteTopBar'
 import { PageFrame } from '../shared/components/PageFrame'
+import { StageHamster } from '../shared/components/StageHamster'
 import { useQuizStore } from '../stores/quizStore'
 
 export function ResultPage() {
   const result = useQuizStore((state) => state.result)
+  const [animationToken, setAnimationToken] = useState(0)
 
   if (!result) {
     return <Navigate to="/stages" replace />
@@ -23,18 +25,21 @@ export function ResultPage() {
         </p>
       </section>
 
-      <section className="grid grid-cols-[1.15fr_0.85fr] gap-4">
-        <div className="game-card flex items-center justify-between bg-white/78 px-5 py-4">
-          <div>
-            <p className="text-sm font-black text-[#f09d8d]">짧은 피드백</p>
-            <p className="mt-1 text-xl font-black text-[#7b4d32]">총 {result.answers.length}개 답안을 저장했어요</p>
-          </div>
-          <div className="text-5xl">👍</div>
-        </div>
-        <CharacterPanel title="말랑이 칭찬" subtitle="정말 잘했어요! 다음 화면에서 보상을 확인해요." />
-      </section>
+      <button
+        type="button"
+        onClick={() => setAnimationToken((value) => value + 1)}
+        className="game-card result-animation-shell flex min-h-[21rem] flex-1 items-center justify-center overflow-hidden px-4 py-4"
+        aria-label="캐릭터 애니메이션 다시 재생"
+      >
+        <StageHamster
+          shouldAnimate
+          holdLastFrame
+          animationToken={animationToken}
+          className="h-[18rem] w-[13.5rem] max-w-full drop-shadow-[0_18px_24px_rgba(145,92,44,0.18)]"
+        />
+      </button>
 
-      <Link to="/reward" className="game-primary-button">
+      <Link to="/reward" className="game-primary-button mt-auto">
         보상 받기
       </Link>
     </PageFrame>

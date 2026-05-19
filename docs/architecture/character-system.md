@@ -27,6 +27,11 @@
 
 - 오답이나 실패 상황에서 부정적 압박 없이 짧게 반응한다.
 - 학습 지속 의지를 꺾지 않는 톤이어야 한다.
+- `Quiz` 화면에서는 `failLife` 감소 결과값을 기준으로 단계별 실패 반응을 사용한다.
+  `nextLife === 2` 면 `hamster_fail_life_state2` 애니메이션 뒤 `hamster_char_fail1` 정적 이미지를 유지한다.
+  `nextLife === 1` 면 `hamster_fail_life_state1` 애니메이션 뒤 `hamster_char_fail2` 정적 이미지를 유지한다.
+- 실패 애니메이션은 전체 이미지를 슬라이드시키지 않고 각 시트의 실제 프레임 구성을 사용해야 한다.
+  `hamster_fail_life_state1` 은 `5 x 2 / 10프레임`, `hamster_fail_life_state2` 는 `4 x 2 / 8프레임` 기준으로 좌상단부터 우하단 순서로 한 프레임씩 보여줘야 한다.
 
 ### reward
 

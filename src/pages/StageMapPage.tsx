@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { BottomNav } from '../shared/components/BottomNav'
 import { ConfirmDialog } from '../shared/components/ConfirmDialog'
 import { JellyBadge } from '../shared/components/JellyBadge'
-import { StageHamster } from '../shared/components/StageHamster'
 import { StagePawNode } from '../shared/components/StagePawNode'
 import { difficultyLabelMap } from '../shared/difficulty'
 import { getStageState, getStagesByDifficulty } from '../features/stage/stage.utils'
@@ -46,12 +45,10 @@ const stageContentHeight =
   CONTENT_BOTTOM_MARGIN
 
 export function StageMapPage() {
-  const location = useLocation()
   const navigate = useNavigate()
   const { selectedDifficulty } = useUiStore()
   const stages = getStagesByDifficulty(selectedDifficulty)
   const difficultyLabel = difficultyLabelMap[selectedDifficulty]
-  const [shouldAnimateHamster, setShouldAnimateHamster] = useState(false)
   const [jellyMessage, setJellyMessage] = useState<string | null>(null)
   const [showAdDialog, setShowAdDialog] = useState(false)
   const progress = useProgressStore((state) => state.progressByDifficulty[selectedDifficulty])
@@ -70,25 +67,6 @@ export function StageMapPage() {
   useEffect(() => {
     syncDailyJelly()
   }, [syncDailyJelly])
-
-  useEffect(() => {
-    const playCharacterAnimation = Boolean(
-      (location.state as { playCharacterAnimation?: boolean } | null)?.playCharacterAnimation,
-    )
-
-    if (!playCharacterAnimation) {
-      return
-    }
-
-    setShouldAnimateHamster(true)
-
-    const resetAnimationFlag = window.setTimeout(() => {
-      setShouldAnimateHamster(false)
-      navigate(location.pathname, { replace: true, state: null })
-    }, 120 * maraningAssets.hamsterFrames.length + 80)
-
-    return () => window.clearTimeout(resetAnimationFlag)
-  }, [location.pathname, location.state, navigate])
 
   return (
     <main className="game-screen-shell">
@@ -209,8 +187,10 @@ export function StageMapPage() {
                     top: `${TOP_OVERLAY_SPACE + hamsterPosition.top}px`,
                   }}
                 >
-                  <StageHamster
-                    shouldAnimate={shouldAnimateHamster}
+                  <img
+                    src={maraningAssets.hamster}
+                    alt=""
+                    aria-hidden="true"
                     className="h-28 w-28 object-contain drop-shadow-[0_18px_24px_rgba(145,92,44,0.18)]"
                   />
                 </div>

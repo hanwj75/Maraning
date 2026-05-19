@@ -2,16 +2,11 @@ export const maraningAssets = {
   adButton: '/assets/maraning/ad_button.png',
   feedstuff: '/assets/maraning/feedstuff.png',
   hamster: '/assets/maraning/hamster_char.png',
-  hamsterFrames: [
-    '/assets/maraning_char/hamster_char1.png',
-    '/assets/maraning_char/hamster_char2.png',
-    '/assets/maraning_char/hamster_char3.png',
-    '/assets/maraning_char/hamster_char4.png',
-    '/assets/maraning_char/hamster_char5.png',
-    '/assets/maraning_char/hamster_char6.png',
-    '/assets/maraning_char/hamster_char7.png',
-    '/assets/maraning_char/hamster_char8.png',
-  ],
+  hamsterFail1: '/assets/maraning_char/hamster_char_fail1.png',
+  hamsterFail2: '/assets/maraning_char/hamster_char_fail2.png',
+  hamsterFailLifeState1Sprite: '/assets/maraning_char/hamster_fail_life_state1.png',
+  hamsterFailLifeState2Sprite: '/assets/maraning_char/hamster_fail_life_state2.png',
+  hamsterStageClearSprite: '/assets/maraning_char/hamster_stage_clear.png',
   homeButton: '/assets/maraning/home_button.png',
   learningHp: '/assets/maraning/learning_hp.png',
   menuButton: '/assets/maraning/menu_button_clean.png',
@@ -21,4 +16,25 @@ export const maraningAssets = {
   shareButton: '/assets/maraning/share_button.png',
   topbar: '/assets/maraning/topbar.png',
   numberOfDaysConnected: '/assets/maraning/Number_of_days connected.png',
+} as const
+
+export const hamsterStageClearAnimation = {
+  columns: 4,
+  rows: 2,
+  frameCount: 8,
+  frameDurationMs: 120,
+} as const
+
+export const hamsterFailLifeState1Animation = {
+  columns: 5,
+  rows: 2,
+  frameCount: 10,
+  frameDurationMs: 120,
+} as const
+
+export const hamsterFailLifeState2Animation = {
+  columns: 4,
+  rows: 2,
+  frameCount: 8,
+  frameDurationMs: 120,
 } as const

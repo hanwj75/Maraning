@@ -1,67 +1,73 @@
 import { useEffect, useRef, useState } from 'react'
-import { maraningAssets } from '../maraning-assets'
+import { hamsterStageClearAnimation, maraningAssets } from '../maraning-assets'
 
 type StageHamsterProps = {
   shouldAnimate: boolean
+  holdLastFrame?: boolean
+  animationToken?: number
   className?: string
 }
 
-const FRAME_INTERVAL_MS = 120
+const STAGE_CLEAR_DURATION_MS =
+  hamsterStageClearAnimation.frameCount * hamsterStageClearAnimation.frameDurationMs
 
-export function StageHamster({ shouldAnimate, className = '' }: StageHamsterProps) {
-  const [currentSrc, setCurrentSrc] = useState<string>(maraningAssets.hamster)
-  const intervalRef = useRef<number | null>(null)
+export function StageHamster({
+  shouldAnimate,
+  holdLastFrame = false,
+  animationToken = 0,
+  className = '',
+}: StageHamsterProps) {
+  const [showSpriteAnimation, setShowSpriteAnimation] = useState(false)
+  const [showLastSpriteFrame, setShowLastSpriteFrame] = useState(false)
   const timeoutRef = useRef<number | null>(null)
 
   useEffect(() => {
-    const clearRunningTimers = () => {
-      if (intervalRef.current !== null) {
-        window.clearInterval(intervalRef.current)
-        intervalRef.current = null
-      }
-
+    const clearRunningTimer = () => {
       if (timeoutRef.current !== null) {
         window.clearTimeout(timeoutRef.current)
         timeoutRef.current = null
       }
     }
 
-    clearRunningTimers()
+    clearRunningTimer()
 
     if (!shouldAnimate) {
-      setCurrentSrc(maraningAssets.hamster)
-      return clearRunningTimers
+      setShowSpriteAnimation(false)
+      setShowLastSpriteFrame(false)
+      return clearRunningTimer
     }
 
-    let frameIndex = 0
-    setCurrentSrc(maraningAssets.hamsterFrames[frameIndex])
-
-    intervalRef.current = window.setInterval(() => {
-      frameIndex += 1
-
-      if (frameIndex >= maraningAssets.hamsterFrames.length) {
-        clearRunningTimers()
-        setCurrentSrc(maraningAssets.hamster)
-        return
-      }
-
-      setCurrentSrc(maraningAssets.hamsterFrames[frameIndex])
-    }, FRAME_INTERVAL_MS)
+    setShowSpriteAnimation(true)
+    setShowLastSpriteFrame(false)
 
     timeoutRef.current = window.setTimeout(() => {
-      clearRunningTimers()
-      setCurrentSrc(maraningAssets.hamster)
-    }, FRAME_INTERVAL_MS * maraningAssets.hamsterFrames.length + 20)
+      clearRunningTimer()
+      setShowSpriteAnimation(false)
+      setShowLastSpriteFrame(holdLastFrame)
+    }, STAGE_CLEAR_DURATION_MS + 20)
 
-    return clearRunningTimers
-  }, [shouldAnimate])
+    return clearRunningTimer
+  }, [animationToken, holdLastFrame, shouldAnimate])
 
-  return (
-    <img
-      src={currentSrc}
-      alt=""
-      aria-hidden="true"
-      className={className}
-    />
-  )
+  if (showSpriteAnimation) {
+    return (
+      <div
+        aria-hidden="true"
+        className={`game-stage-hamster-sprite ${className}`}
+        style={{ backgroundImage: `url(${maraningAssets.hamsterStageClearSprite})` }}
+      />
+    )
+  }
+
+  if (showLastSpriteFrame) {
+    return (
+      <div
+        aria-hidden="true"
+        className={`game-stage-hamster-sprite game-stage-hamster-sprite--last ${className}`}
+        style={{ backgroundImage: `url(${maraningAssets.hamsterStageClearSprite})` }}
+      />
+    )
+  }
+
+  return <img src={maraningAssets.hamster} alt="" aria-hidden="true" className={className} />
 }

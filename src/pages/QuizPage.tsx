@@ -7,10 +7,16 @@ import { PageFrame } from '../shared/components/PageFrame'
 import { getQuizzesByDifficulty } from '../features/quiz/quiz.data'
 import { buildQuizSessionAnswer, getOrderedQuizzesByIds, getQuizProgressLabel } from '../features/quiz/quiz.utils'
 import { getStageById, getStagesByDifficulty } from '../features/stage/stage.utils'
-import { maraningAssets } from '../shared/maraning-assets'
+import {
+  hamsterFailLifeState1Animation,
+  hamsterFailLifeState2Animation,
+  maraningAssets,
+} from '../shared/maraning-assets'
 import { useJellyStore } from '../stores/jellyStore'
 import { useProgressStore } from '../stores/progressStore'
 import { useQuizStore } from '../stores/quizStore'
+
+type QuizHamsterAnimation = 'fail-life-state1' | 'fail-life-state2' | null
 
 export function QuizPage() {
   const navigate = useNavigate()
@@ -29,8 +35,12 @@ export function QuizPage() {
   const [pendingLeftId, setPendingLeftId] = useState<string | null>(null)
   const [feedbackMessage, setFeedbackMessage] = useState<string | null>(null)
   const [showJellyRecoveryDialog, setShowJellyRecoveryDialog] = useState(false)
+  const [currentHamsterSrc, setCurrentHamsterSrc] = useState<string>(maraningAssets.hamster)
+  const [activeHamsterAnimation, setActiveHamsterAnimation] = useState<QuizHamsterAnimation>(null)
+  const [hamsterAnimationToken, setHamsterAnimationToken] = useState(0)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const feedbackTimerRef = useRef<number | null>(null)
+  const hamsterAnimationTimerRef = useRef<number | null>(null)
   const shouldClearSessionOnUnmountRef = useRef(false)
   const sessionDifficulty = session?.difficulty ?? 'absolute_beginner'
   const sessionStageId = session?.stageId ?? ''
@@ -70,6 +80,47 @@ export function QuizPage() {
     setPendingLeftId(null)
   }
 
+  const clearHamsterAnimationTimer = () => {
+    if (hamsterAnimationTimerRef.current !== null) {
+      window.clearTimeout(hamsterAnimationTimerRef.current)
+      hamsterAnimationTimerRef.current = null
+    }
+  }
+
+  const resetHamsterState = () => {
+    clearHamsterAnimationTimer()
+    setActiveHamsterAnimation(null)
+    setCurrentHamsterSrc(maraningAssets.hamster)
+  }
+
+  const runFailLifeHamsterState = (nextLife: number) => {
+    clearHamsterAnimationTimer()
+
+    if (nextLife === 2) {
+      setCurrentHamsterSrc(maraningAssets.hamsterFail1)
+      setActiveHamsterAnimation('fail-life-state2')
+      setHamsterAnimationToken((value) => value + 1)
+      hamsterAnimationTimerRef.current = window.setTimeout(() => {
+        setActiveHamsterAnimation(null)
+        hamsterAnimationTimerRef.current = null
+      }, hamsterFailLifeState2Animation.frameCount * hamsterFailLifeState2Animation.frameDurationMs + 20)
+      return
+    }
+
+    if (nextLife === 1) {
+      setCurrentHamsterSrc(maraningAssets.hamsterFail2)
+      setActiveHamsterAnimation('fail-life-state1')
+      setHamsterAnimationToken((value) => value + 1)
+      hamsterAnimationTimerRef.current = window.setTimeout(() => {
+        setActiveHamsterAnimation(null)
+        hamsterAnimationTimerRef.current = null
+      }, hamsterFailLifeState1Animation.frameCount * hamsterFailLifeState1Animation.frameDurationMs + 20)
+      return
+    }
+
+    setActiveHamsterAnimation(null)
+  }
+
   useEffect(() => {
     syncDailyJelly()
   }, [syncDailyJelly])
@@ -79,6 +130,8 @@ export function QuizPage() {
       if (feedbackTimerRef.current !== null) {
         window.clearTimeout(feedbackTimerRef.current)
       }
+
+      resetHamsterState()
 
       if (shouldClearSessionOnUnmountRef.current) {
         clearSession()
@@ -123,12 +176,14 @@ export function QuizPage() {
       resetLocalState()
 
       if (status === 'finished') {
+        resetHamsterState()
         shouldClearSessionOnUnmountRef.current = true
         navigate('/result', { replace: true })
         return
       }
 
       if (status === 'failed') {
+        resetHamsterState()
         shouldClearSessionOnUnmountRef.current = true
         navigate('/stages', { replace: true })
       }
@@ -179,6 +234,10 @@ export function QuizPage() {
         completeStage(session.difficulty, session.stageId, stages)
       }
 
+      if (!answer.isCorrect) {
+        runFailLifeHamsterState(remainingFailLife)
+      }
+
       finalizeSubmission({
         isCorrect: answer.isCorrect,
         status: outcome.status,
@@ -217,6 +276,10 @@ export function QuizPage() {
         completeStage(session.difficulty, session.stageId, stages)
       }
 
+      if (!answer.isCorrect) {
+        runFailLifeHamsterState(remainingFailLife)
+      }
+
       finalizeSubmission({
         isCorrect: answer.isCorrect,
         status: outcome.status,
@@ -249,6 +312,10 @@ export function QuizPage() {
 
     if (outcome.status === 'finished') {
       completeStage(session.difficulty, session.stageId, stages)
+    }
+
+    if (!answer.isCorrect) {
+      runFailLifeHamsterState(remainingFailLife)
     }
 
     finalizeSubmission({
@@ -449,11 +516,32 @@ export function QuizPage() {
           <div className="heart-row pointer-events-none absolute inset-x-0 top-0 z-10 flex justify-center">
             <span className="text-2xl font-black tracking-tight text-[#d96973]">{failLifeLabel}</span>
           </div>
-          <img
-            src={maraningAssets.hamster}
-            alt="말랑이 캐릭터"
-            className="h-28 w-28 object-contain drop-shadow-[0_14px_24px_rgba(189,128,82,0.18)]"
-          />
+          {activeHamsterAnimation ? (
+            <div
+              aria-hidden="true"
+              key={`${activeHamsterAnimation}-${hamsterAnimationToken}`}
+              className={`quiz-hamster-sprite ${
+                activeHamsterAnimation === 'fail-life-state2'
+                  ? 'quiz-hamster-sprite--fail-life-state2'
+                  : 'quiz-hamster-sprite--fail-life-state1'
+              } ${
+                activeHamsterAnimation === 'fail-life-state1' ? 'h-28 w-[4.25rem]' : 'h-28 w-28'
+              } drop-shadow-[0_14px_24px_rgba(189,128,82,0.18)]`}
+              style={{
+                backgroundImage: `url(${
+                  activeHamsterAnimation === 'fail-life-state2'
+                    ? maraningAssets.hamsterFailLifeState2Sprite
+                    : maraningAssets.hamsterFailLifeState1Sprite
+                })`,
+              }}
+            />
+          ) : (
+            <img
+              src={currentHamsterSrc}
+              alt="말랑이 캐릭터"
+              className="h-28 w-28 object-contain drop-shadow-[0_14px_24px_rgba(189,128,82,0.18)]"
+            />
+          )}
         </div>
       </section>
 
