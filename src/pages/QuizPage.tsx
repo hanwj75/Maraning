@@ -7,8 +7,16 @@ import { CuteTopBar } from '../shared/components/CuteTopBar'
 import { JellyBadge } from '../shared/components/JellyBadge'
 import { PageFrame } from '../shared/components/PageFrame'
 import { getQuizzesByDifficulty } from '../features/quiz/quiz.data'
-import { buildQuizSessionAnswer, getOrderedQuizzesByIds, getQuizProgressLabel } from '../features/quiz/quiz.utils'
-import { getStageById, getStagesByDifficulty, getChaptersByDifficulty } from '../features/stage/stage.utils'
+import {
+  buildQuizSessionAnswer,
+  getOrderedQuizzesByIds,
+  getQuizProgressLabel,
+} from '../features/quiz/quiz.utils'
+import {
+  getStageById,
+  getStagesByDifficulty,
+  getChaptersByDifficulty,
+} from '../features/stage/stage.utils'
 import {
   hamsterFailLifeState1Animation,
   hamsterFailLifeState2Animation,
@@ -30,25 +38,39 @@ export function QuizPage() {
   const currentJelly = useJellyStore((state) => state.current)
   const syncDailyJelly = useJellyStore((state) => state.syncDailyJelly)
   const mockRewardJelly = useJellyStore((state) => state.mockRewardJelly)
-  const tryConsumeForSubmission = useJellyStore((state) => state.tryConsumeForSubmission)
-  const grantCleanSolveReward = useJellyStore((state) => state.grantCleanSolveReward)
+  const tryConsumeForSubmission = useJellyStore(
+    (state) => state.tryConsumeForSubmission,
+  )
+  const grantCleanSolveReward = useJellyStore(
+    (state) => state.grantCleanSolveReward,
+  )
   const [selectedChoiceId, setSelectedChoiceId] = useState<string | null>(null)
   const [orderedChoiceIds, setOrderedChoiceIds] = useState<string[]>([])
-  const [matchingPairs, setMatchingPairs] = useState<Array<{ leftId: string; rightId: string }>>([])
+  const [matchingPairs, setMatchingPairs] = useState<
+    Array<{ leftId: string; rightId: string }>
+  >([])
   const [pendingLeftId, setPendingLeftId] = useState<string | null>(null)
-  const [feedbackMessage, setFeedbackMessage] = useState<string | null>(null)
   const [showJellyRecoveryDialog, setShowJellyRecoveryDialog] = useState(false)
-  const [currentHamsterSrc, setCurrentHamsterSrc] = useState<string>(maraningAssets.hamster)
-  const [activeHamsterAnimation, setActiveHamsterAnimation] = useState<QuizHamsterAnimation>(null)
+  const [showCorrectOverlay, setShowCorrectOverlay] = useState(false)
+  const [currentHamsterSrc, setCurrentHamsterSrc] = useState<string>(
+    maraningAssets.hamster,
+  )
+  const [activeHamsterAnimation, setActiveHamsterAnimation] =
+    useState<QuizHamsterAnimation>(null)
   const [hamsterAnimationToken, setHamsterAnimationToken] = useState(0)
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const feedbackTimerRef = useRef<number | null>(null)
+  const correctOverlayTimerRef = useRef<number | null>(null)
   const hamsterAnimationTimerRef = useRef<number | null>(null)
   const shouldClearSessionOnUnmountRef = useRef(false)
-  const routeDifficulty = difficultyId && isDifficultyKey(difficultyId) ? difficultyId : null
-  const sessionDifficulty = session?.difficulty ?? routeDifficulty ?? 'absolute_beginner'
+  const routeDifficulty =
+    difficultyId && isDifficultyKey(difficultyId) ? difficultyId : null
+  const sessionDifficulty =
+    session?.difficulty ?? routeDifficulty ?? 'absolute_beginner'
   const sessionStageId = session?.stageId ?? stageId ?? ''
-  const stageMapPath = routeDifficulty && chapterId ? buildStageMapPath(routeDifficulty, chapterId) : '/difficulty'
+  const stageMapPath =
+    routeDifficulty && chapterId
+      ? buildStageMapPath(routeDifficulty, chapterId)
+      : '/difficulty'
   const failLifeLabel = Array.from({ length: 3 }, (_, index) =>
     index < (session?.failLife ?? 0) ? '❤️' : '♡',
   ).join('')
@@ -56,26 +78,39 @@ export function QuizPage() {
     () =>
       session
         ? getOrderedQuizzesByIds(
-            getQuizzesByDifficulty(sessionDifficulty).filter((quiz) => quiz.stageId === sessionStageId),
+            getQuizzesByDifficulty(sessionDifficulty).filter(
+              (quiz) => quiz.stageId === sessionStageId,
+            ),
             session.quizIds,
           )
         : [],
     [session, sessionDifficulty, sessionStageId],
   )
-  const chapters = useMemo(() => getChaptersByDifficulty(sessionDifficulty), [sessionDifficulty])
-  const allStages = useMemo(() => getStagesByDifficulty(sessionDifficulty), [sessionDifficulty])
+  const chapters = useMemo(
+    () => getChaptersByDifficulty(sessionDifficulty),
+    [sessionDifficulty],
+  )
+  const allStages = useMemo(
+    () => getStagesByDifficulty(sessionDifficulty),
+    [sessionDifficulty],
+  )
   const stage = useMemo(
-    () => (session ? getStageById(sessionDifficulty, sessionStageId) : undefined),
+    () =>
+      session ? getStageById(sessionDifficulty, sessionStageId) : undefined,
     [session, sessionDifficulty, sessionStageId],
   )
   const currentQuiz = session ? quizzes[session.currentQuizIndex] : undefined
-  const progressLabel = session ? getQuizProgressLabel(session.currentQuizIndex, quizzes.length) : '0 / 10'
+  const progressLabel = session
+    ? getQuizProgressLabel(session.currentQuizIndex, quizzes.length)
+    : '0 / 10'
   const leftChoices = useMemo(
-    () => currentQuiz?.choices.filter((choice) => choice.id.startsWith('l')) ?? [],
+    () =>
+      currentQuiz?.choices.filter((choice) => choice.id.startsWith('l')) ?? [],
     [currentQuiz],
   )
   const rightChoices = useMemo(
-    () => currentQuiz?.choices.filter((choice) => choice.id.startsWith('r')) ?? [],
+    () =>
+      currentQuiz?.choices.filter((choice) => choice.id.startsWith('r')) ?? [],
     [currentQuiz],
   )
 
@@ -106,10 +141,15 @@ export function QuizPage() {
       setCurrentHamsterSrc(maraningAssets.hamsterFail1)
       setActiveHamsterAnimation('fail-life-state2')
       setHamsterAnimationToken((value) => value + 1)
-      hamsterAnimationTimerRef.current = window.setTimeout(() => {
-        setActiveHamsterAnimation(null)
-        hamsterAnimationTimerRef.current = null
-      }, hamsterFailLifeState2Animation.frameCount * hamsterFailLifeState2Animation.frameDurationMs + 20)
+      hamsterAnimationTimerRef.current = window.setTimeout(
+        () => {
+          setActiveHamsterAnimation(null)
+          hamsterAnimationTimerRef.current = null
+        },
+        hamsterFailLifeState2Animation.frameCount *
+          hamsterFailLifeState2Animation.frameDurationMs +
+          20,
+      )
       return
     }
 
@@ -117,10 +157,15 @@ export function QuizPage() {
       setCurrentHamsterSrc(maraningAssets.hamsterFail2)
       setActiveHamsterAnimation('fail-life-state1')
       setHamsterAnimationToken((value) => value + 1)
-      hamsterAnimationTimerRef.current = window.setTimeout(() => {
-        setActiveHamsterAnimation(null)
-        hamsterAnimationTimerRef.current = null
-      }, hamsterFailLifeState1Animation.frameCount * hamsterFailLifeState1Animation.frameDurationMs + 20)
+      hamsterAnimationTimerRef.current = window.setTimeout(
+        () => {
+          setActiveHamsterAnimation(null)
+          hamsterAnimationTimerRef.current = null
+        },
+        hamsterFailLifeState1Animation.frameCount *
+          hamsterFailLifeState1Animation.frameDurationMs +
+          20,
+      )
       return
     }
 
@@ -133,8 +178,8 @@ export function QuizPage() {
 
   useEffect(() => {
     return () => {
-      if (feedbackTimerRef.current !== null) {
-        window.clearTimeout(feedbackTimerRef.current)
+      if (correctOverlayTimerRef.current !== null) {
+        window.clearTimeout(correctOverlayTimerRef.current)
       }
 
       resetHamsterState()
@@ -165,27 +210,26 @@ export function QuizPage() {
     isCorrect: boolean
     status: 'next' | 'finished' | 'retry' | 'failed'
     remainingFailLife: number
-    cleanSolveRewardAmount?: number
-    reason?: 'failed-life' | 'jelly-empty'
   }) => {
-    const { isCorrect, status, remainingFailLife, cleanSolveRewardAmount, reason } = params
-    let message = `오답이에요. 하트가 1개 줄었어요. (${remainingFailLife}/3)`
+    const { isCorrect, status } = params
 
-    if (reason === 'jelly-empty') {
-      message = '젤리가 부족해요. 스테이지 맵으로 돌아가요.'
-    } else if (status === 'failed') {
-      message = '스테이지 실패! 스테이지 맵으로 돌아가요.'
-    } else if (cleanSolveRewardAmount && isCorrect) {
-      message = `완벽해요! 젤리 ${cleanSolveRewardAmount}개를 받았어요!`
-    } else if (isCorrect) {
-      message = '정답이에요!'
+    if (!isCorrect) {
+      resetLocalState()
+
+      if (status === 'failed') {
+        resetHamsterState()
+        shouldClearSessionOnUnmountRef.current = true
+        navigate(stageMapPath, { replace: true })
+      }
+
+      return
     }
 
-    setFeedbackMessage(message)
     setIsSubmitting(true)
+    setShowCorrectOverlay(true)
 
-    feedbackTimerRef.current = window.setTimeout(() => {
-      setFeedbackMessage(null)
+    correctOverlayTimerRef.current = window.setTimeout(() => {
+      setShowCorrectOverlay(false)
       setIsSubmitting(false)
       resetLocalState()
 
@@ -193,15 +237,10 @@ export function QuizPage() {
         resetHamsterState()
         shouldClearSessionOnUnmountRef.current = true
         navigate('/result', { replace: true })
-        return
       }
 
-      if (status === 'failed') {
-        resetHamsterState()
-        shouldClearSessionOnUnmountRef.current = true
-        navigate(stageMapPath, { replace: true })
-      }
-    }, 850)
+      correctOverlayTimerRef.current = null
+    }, 700)
   }
 
   const handleSubmit = () => {
@@ -221,8 +260,13 @@ export function QuizPage() {
       return false
     }
 
-    if (currentQuiz.type === 'image_select' || currentQuiz.type === 'blank_fill') {
-      const selectedChoice = currentQuiz.choices.find((choice) => choice.id === selectedChoiceId)
+    if (
+      currentQuiz.type === 'image_select' ||
+      currentQuiz.type === 'blank_fill'
+    ) {
+      const selectedChoice = currentQuiz.choices.find(
+        (choice) => choice.id === selectedChoiceId,
+      )
 
       if (!selectedChoiceId || !selectedChoice) {
         return
@@ -238,11 +282,12 @@ export function QuizPage() {
         value: selectedChoice.text,
       })
       const outcome = submitQuizAnswer(answer)
-      const remainingFailLife = answer.isCorrect ? session.failLife : Math.max(session.failLife - 1, 0)
-      const cleanSolveRewardAmount =
-        answer.isCorrect && outcome.awardedCleanSolveBonus
-          ? grantCleanSolveReward().rewarded
-          : undefined
+      const remainingFailLife = answer.isCorrect
+        ? session.failLife
+        : Math.max(session.failLife - 1, 0)
+      if (answer.isCorrect && outcome.awardedCleanSolveBonus) {
+        grantCleanSolveReward()
+      }
 
       if (outcome.status === 'finished') {
         completeStage(session.difficulty, session.stageId, chapters, allStages)
@@ -256,8 +301,6 @@ export function QuizPage() {
         isCorrect: answer.isCorrect,
         status: outcome.status,
         remainingFailLife,
-        cleanSolveRewardAmount,
-        reason: outcome.status === 'failed' ? 'failed-life' : undefined,
       })
 
       return
@@ -272,19 +315,23 @@ export function QuizPage() {
         return
       }
 
-      const orderedValues = orderedChoiceIds
-        .map((choiceId) => currentQuiz.choices.find((choice) => choice.id === choiceId)?.text ?? '')
+      const orderedValues = orderedChoiceIds.map(
+        (choiceId) =>
+          currentQuiz.choices.find((choice) => choice.id === choiceId)?.text ??
+          '',
+      )
 
       const answer = buildQuizSessionAnswer(currentQuiz, {
         type: 'word_order',
         orderedValues,
       })
       const outcome = submitQuizAnswer(answer)
-      const remainingFailLife = answer.isCorrect ? session.failLife : Math.max(session.failLife - 1, 0)
-      const cleanSolveRewardAmount =
-        answer.isCorrect && outcome.awardedCleanSolveBonus
-          ? grantCleanSolveReward().rewarded
-          : undefined
+      const remainingFailLife = answer.isCorrect
+        ? session.failLife
+        : Math.max(session.failLife - 1, 0)
+      if (answer.isCorrect && outcome.awardedCleanSolveBonus) {
+        grantCleanSolveReward()
+      }
 
       if (outcome.status === 'finished') {
         completeStage(session.difficulty, session.stageId, chapters, allStages)
@@ -298,14 +345,15 @@ export function QuizPage() {
         isCorrect: answer.isCorrect,
         status: outcome.status,
         remainingFailLife,
-        cleanSolveRewardAmount,
-        reason: outcome.status === 'failed' ? 'failed-life' : undefined,
       })
 
       return
     }
 
-    if (matchingPairs.length !== leftChoices.length || leftChoices.length !== rightChoices.length) {
+    if (
+      matchingPairs.length !== leftChoices.length ||
+      leftChoices.length !== rightChoices.length
+    ) {
       return
     }
 
@@ -318,11 +366,12 @@ export function QuizPage() {
       pairs: matchingPairs,
     })
     const outcome = submitQuizAnswer(answer)
-    const remainingFailLife = answer.isCorrect ? session.failLife : Math.max(session.failLife - 1, 0)
-    const cleanSolveRewardAmount =
-      answer.isCorrect && outcome.awardedCleanSolveBonus
-        ? grantCleanSolveReward().rewarded
-        : undefined
+    const remainingFailLife = answer.isCorrect
+      ? session.failLife
+      : Math.max(session.failLife - 1, 0)
+    if (answer.isCorrect && outcome.awardedCleanSolveBonus) {
+      grantCleanSolveReward()
+    }
 
     if (outcome.status === 'finished') {
       completeStage(session.difficulty, session.stageId, chapters, allStages)
@@ -336,8 +385,6 @@ export function QuizPage() {
       isCorrect: answer.isCorrect,
       status: outcome.status,
       remainingFailLife,
-      cleanSolveRewardAmount,
-      reason: outcome.status === 'failed' ? 'failed-life' : undefined,
     })
   }
 
@@ -345,13 +392,19 @@ export function QuizPage() {
     <PageFrame contentClassName="gap-5">
       <section className="flex items-center justify-between gap-3">
         <div className="min-w-0 flex-1">
-          <CuteTopBar title={stage.title} backTo={stageMapPath} variant="plain" />
+          <CuteTopBar
+            title={stage.title}
+            backTo={stageMapPath}
+            variant="plain"
+          />
         </div>
         <JellyBadge count={currentJelly} className="max-w-[8.5rem] shrink-0" />
       </section>
 
       <section className="game-card bg-gradient-to-br from-[#fff2db] to-[#fff9ef] px-5 py-5">
-        <p className="text-sm font-black text-[#ed9b8f]">진행 상태 {progressLabel}</p>
+        <p className="text-sm font-black text-[#ed9b8f]">
+          진행 상태 {progressLabel}
+        </p>
         <h1 className="mt-2 text-2xl font-black leading-tight tracking-tight text-[#7b4d32]">
           {currentQuiz.question}
         </h1>
@@ -360,15 +413,11 @@ export function QuizPage() {
             {currentQuiz.prompt}
           </p>
         ) : null}
-        {feedbackMessage ? (
-          <p className="mt-3 rounded-full bg-white/72 px-4 py-2 text-sm font-black text-[#7b4d32]">
-            {feedbackMessage}
-          </p>
-        ) : null}
       </section>
 
       <section className="space-y-4">
-        {(currentQuiz.type === 'image_select' || currentQuiz.type === 'blank_fill') && (
+        {(currentQuiz.type === 'image_select' ||
+          currentQuiz.type === 'blank_fill') && (
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {currentQuiz.choices.map((choice) => {
               const selected = selectedChoiceId === choice.id
@@ -380,11 +429,17 @@ export function QuizPage() {
                   disabled={isSubmitting}
                   onClick={() => setSelectedChoiceId(choice.id)}
                   className={`rounded-[1.9rem] px-5 py-6 text-left text-lg font-black shadow-[0_14px_26px_rgba(194,141,93,0.16)] transition-transform duration-100 active:scale-95 ${
-                    selected ? 'bg-[#ffd7e1] text-[#7b4d32]' : 'bg-white/82 text-[#7b4d32]'
+                    selected
+                      ? 'bg-[#ffd7e1] text-[#7b4d32]'
+                      : 'bg-white/82 text-[#7b4d32]'
                   }`}
                 >
-                  <span className="block text-sm font-black text-[#ef9a8f]">선택지</span>
-                  <span className="mt-2 block text-base leading-7 font-semibold text-[#9b6c4a]">{choice.text}</span>
+                  <span className="block text-sm font-black text-[#ef9a8f]">
+                    선택지
+                  </span>
+                  <span className="mt-2 block text-base leading-7 font-semibold text-[#9b6c4a]">
+                    {choice.text}
+                  </span>
                 </button>
               )
             })}
@@ -397,17 +452,23 @@ export function QuizPage() {
               <p className="text-sm font-black text-[#ed9b8f]">현재 순서</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {orderedChoiceIds.length === 0 ? (
-                  <span className="text-sm font-semibold text-[#9b6c4a]">토큰을 순서대로 눌러주세요.</span>
+                  <span className="text-sm font-semibold text-[#9b6c4a]">
+                    토큰을 순서대로 눌러주세요.
+                  </span>
                 ) : (
                   orderedChoiceIds.map((choiceId) => {
-                    const choice = currentQuiz.choices.find((item) => item.id === choiceId)
+                    const choice = currentQuiz.choices.find(
+                      (item) => item.id === choiceId,
+                    )
                     return (
                       <button
                         key={choiceId}
                         type="button"
                         disabled={isSubmitting}
                         onClick={() =>
-                          setOrderedChoiceIds((prev) => prev.filter((item) => item !== choiceId))
+                          setOrderedChoiceIds((prev) =>
+                            prev.filter((item) => item !== choiceId),
+                          )
                         }
                         className="rounded-full bg-[#ffd7e1] px-3 py-2 text-sm font-black text-[#7b4d32]"
                       >
@@ -426,7 +487,9 @@ export function QuizPage() {
                     key={choice.id}
                     type="button"
                     disabled={alreadySelected || isSubmitting}
-                    onClick={() => setOrderedChoiceIds((prev) => [...prev, choice.id])}
+                    onClick={() =>
+                      setOrderedChoiceIds((prev) => [...prev, choice.id])
+                    }
                     className={`rounded-[1.7rem] px-4 py-5 text-left text-base font-black shadow-[0_14px_26px_rgba(194,141,93,0.16)] ${
                       alreadySelected
                         ? 'bg-[#f2e4d6] text-[#bc9b7f]'
@@ -447,13 +510,22 @@ export function QuizPage() {
               <p className="text-sm font-black text-[#ed9b8f]">연결된 쌍</p>
               <div className="mt-3 space-y-2">
                 {matchingPairs.length === 0 ? (
-                  <span className="text-sm font-semibold text-[#9b6c4a]">왼쪽 카드와 오른쪽 카드를 차례대로 눌러 연결하세요.</span>
+                  <span className="text-sm font-semibold text-[#9b6c4a]">
+                    왼쪽 카드와 오른쪽 카드를 차례대로 눌러 연결하세요.
+                  </span>
                 ) : (
                   matchingPairs.map((pair) => {
-                    const left = currentQuiz.choices.find((choice) => choice.id === pair.leftId)
-                    const right = currentQuiz.choices.find((choice) => choice.id === pair.rightId)
+                    const left = currentQuiz.choices.find(
+                      (choice) => choice.id === pair.leftId,
+                    )
+                    const right = currentQuiz.choices.find(
+                      (choice) => choice.id === pair.rightId,
+                    )
                     return (
-                      <div key={`${pair.leftId}-${pair.rightId}`} className="rounded-2xl bg-[#fff2db] px-3 py-2 text-sm font-black text-[#7b4d32]">
+                      <div
+                        key={`${pair.leftId}-${pair.rightId}`}
+                        className="rounded-2xl bg-[#fff2db] px-3 py-2 text-sm font-black text-[#7b4d32]"
+                      >
                         {left?.text} ↔ {right?.text}
                       </div>
                     )
@@ -464,7 +536,9 @@ export function QuizPage() {
             <div className="grid grid-cols-2 gap-3">
               <div className="space-y-3">
                 {leftChoices.map((choice) => {
-                  const used = matchingPairs.some((pair) => pair.leftId === choice.id)
+                  const used = matchingPairs.some(
+                    (pair) => pair.leftId === choice.id,
+                  )
                   const selected = pendingLeftId === choice.id
                   return (
                     <button
@@ -487,7 +561,9 @@ export function QuizPage() {
               </div>
               <div className="space-y-3">
                 {rightChoices.map((choice) => {
-                  const used = matchingPairs.some((pair) => pair.rightId === choice.id)
+                  const used = matchingPairs.some(
+                    (pair) => pair.rightId === choice.id,
+                  )
                   return (
                     <button
                       key={choice.id}
@@ -497,7 +573,10 @@ export function QuizPage() {
                         if (!pendingLeftId) {
                           return
                         }
-                        setMatchingPairs((prev) => [...prev, { leftId: pendingLeftId, rightId: choice.id }])
+                        setMatchingPairs((prev) => [
+                          ...prev,
+                          { leftId: pendingLeftId, rightId: choice.id },
+                        ])
                         setPendingLeftId(null)
                       }}
                       className={`w-full rounded-[1.6rem] px-4 py-4 text-left text-base font-black ${
@@ -528,7 +607,9 @@ export function QuizPage() {
       <section className="pb-2">
         <div className="character-area relative mx-auto flex w-full max-w-[11rem] justify-center pt-7">
           <div className="heart-row pointer-events-none absolute inset-x-0 top-0 z-10 flex justify-center">
-            <span className="text-2xl font-black tracking-tight text-[#d96973]">{failLifeLabel}</span>
+            <span className="text-2xl font-black tracking-tight text-[#d96973]">
+              {failLifeLabel}
+            </span>
           </div>
           {activeHamsterAnimation ? (
             <div
@@ -539,7 +620,9 @@ export function QuizPage() {
                   ? 'quiz-hamster-sprite--fail-life-state2'
                   : 'quiz-hamster-sprite--fail-life-state1'
               } ${
-                activeHamsterAnimation === 'fail-life-state1' ? 'h-28 w-[4.25rem]' : 'h-28 w-28'
+                activeHamsterAnimation === 'fail-life-state1'
+                  ? 'h-28 w-[4.25rem]'
+                  : 'h-28 w-28'
               } drop-shadow-[0_14px_24px_rgba(189,128,82,0.18)]`}
               style={{
                 backgroundImage: `url(${
@@ -563,8 +646,7 @@ export function QuizPage() {
         open={showJellyRecoveryDialog}
         message="광고를 보면 젤리5개를 드려요!"
         onConfirm={() => {
-          const rewardResult = mockRewardJelly(5)
-          setFeedbackMessage(`젤리 ${rewardResult.added}개를 받았어요!`)
+          mockRewardJelly(5)
           setShowJellyRecoveryDialog(false)
         }}
         onCancel={() => {
@@ -573,6 +655,16 @@ export function QuizPage() {
           navigate(stageMapPath, { replace: true })
         }}
       />
+
+      {showCorrectOverlay ? (
+        <div className="pointer-events-none fixed inset-0 z-[80] flex items-center justify-center bg-[#6b4d36]/26 px-6">
+          <div className="rounded-[2rem] bg-white/92 px-8 py-7 text-center shadow-[0_20px_40px_rgba(120,76,41,0.22)]">
+            <p className="text-[1.65rem] font-black tracking-tight text-[#7b4d32]">
+              정답이야!
+            </p>
+          </div>
+        </div>
+      ) : null}
     </PageFrame>
   )
 }

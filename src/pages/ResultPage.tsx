@@ -1,17 +1,26 @@
 import { useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
-import { buildStageMapPath } from '../features/stage/stage.routes'
+import { buildChapterMapPath, buildStageMapPath } from '../features/stage/stage.routes'
 import { CuteTopBar } from '../shared/components/CuteTopBar'
 import { PageFrame } from '../shared/components/PageFrame'
 import { StageHamster } from '../shared/components/StageHamster'
+import { useProgressStore } from '../stores/progressStore'
 import { useQuizStore } from '../stores/quizStore'
+import { useUiStore } from '../stores/ui-store'
 
 export function ResultPage() {
   const result = useQuizStore((state) => state.result)
+  const selectedDifficulty = useUiStore((state) => state.selectedDifficulty)
+  const currentChapterId = useProgressStore(
+    (state) => state.progressByDifficulty[selectedDifficulty]?.currentChapterId ?? null,
+  )
   const [animationToken, setAnimationToken] = useState(0)
+  const fallbackPath = currentChapterId
+    ? buildStageMapPath(selectedDifficulty, currentChapterId)
+    : buildChapterMapPath(selectedDifficulty)
 
   if (!result) {
-    return <Navigate to="/difficulty" replace />
+    return <Navigate to={fallbackPath} replace />
   }
 
   const stageMapPath = buildStageMapPath(result.difficulty, result.chapterId)

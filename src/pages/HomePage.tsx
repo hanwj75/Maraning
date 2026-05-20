@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { CharacterPanel } from '../shared/components/CharacterPanel'
 import { JellyBadge } from '../shared/components/JellyBadge'
 import { PageFrame } from '../shared/components/PageFrame'
 import { maraningAssets } from '../shared/maraning-assets'
@@ -23,7 +22,7 @@ export function HomePage() {
         <JellyBadge count={currentJelly} />
       </section>
 
-      <section className="game-card bg-gradient-to-br from-[#fff4dd] via-[#fff7ec] to-[#ffd8cb] px-5 py-6">
+      <section className="game-card flex min-h-[30rem] flex-col bg-gradient-to-br from-[#fff4dd] via-[#fff7ec] to-[#ffd8cb] px-5 py-6">
         <div className="flex items-start justify-between gap-4">
           <div className="space-y-3">
             <p className="text-sm font-black text-[#f09a8d]">햄찌 영어 탐험</p>
@@ -46,26 +45,11 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="mt-6 flex flex-col gap-3">
+        <div className="mt-auto flex flex-col gap-3 pb-[15px]">
           <Link to="/difficulty" className="game-primary-button">
             난이도 선택하기
           </Link>
-          <Link to="/difficulty" className="game-secondary-button">
-            학습 시작
-          </Link>
         </div>
-      </section>
-
-      <section className="grid grid-cols-[1.25fr_0.95fr] gap-4">
-        <div className="game-card bg-white/82 px-4 py-5">
-          <p className="text-sm font-black text-[#ef9a8f]">오늘의 한마디</p>
-          <p className="mt-3 text-lg font-black leading-8 text-[#7b4d32]">
-            젤리 {currentJelly}개로
-            <br />
-            발바닥 코스를 출발!
-          </p>
-        </div>
-        <CharacterPanel title="말랑이 응원단" subtitle="짧게 배우고 말랑하게 칭찬 받아요!" />
       </section>
     </PageFrame>
   )

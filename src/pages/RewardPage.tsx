@@ -1,19 +1,25 @@
 import { useEffect } from 'react'
 import { Link, Navigate } from 'react-router-dom'
-import { buildStageMapPath } from '../features/stage/stage.routes'
+import { buildChapterMapPath, buildStageMapPath } from '../features/stage/stage.routes'
 import { CharacterPanel } from '../shared/components/CharacterPanel'
 import { CuteTopBar } from '../shared/components/CuteTopBar'
 import { PageFrame } from '../shared/components/PageFrame'
 import { JellyBadge } from '../shared/components/JellyBadge'
 import { maraningAssets } from '../shared/maraning-assets'
 import { useJellyStore } from '../stores/jellyStore'
+import { useProgressStore } from '../stores/progressStore'
 import { useQuizStore } from '../stores/quizStore'
+import { useUiStore } from '../stores/ui-store'
 
 export function RewardPage() {
   const currentJelly = useJellyStore((state) => state.current)
   const syncDailyJelly = useJellyStore((state) => state.syncDailyJelly)
   const result = useQuizStore((state) => state.result)
   const clearResult = useQuizStore((state) => state.clearResult)
+  const selectedDifficulty = useUiStore((state) => state.selectedDifficulty)
+  const currentChapterId = useProgressStore(
+    (state) => state.progressByDifficulty[selectedDifficulty]?.currentChapterId ?? null,
+  )
 
   useEffect(() => {
     syncDailyJelly()
@@ -25,10 +31,13 @@ export function RewardPage() {
     }
   }, [clearResult])
 
-  const stageMapPath = result ? buildStageMapPath(result.difficulty, result.chapterId) : '/difficulty'
+  const fallbackPath = currentChapterId
+    ? buildStageMapPath(selectedDifficulty, currentChapterId)
+    : buildChapterMapPath(selectedDifficulty)
+  const stageMapPath = result ? buildStageMapPath(result.difficulty, result.chapterId) : fallbackPath
 
   if (!result) {
-    return <Navigate to="/difficulty" replace />
+    return <Navigate to={fallbackPath} replace />
   }
 
   return (

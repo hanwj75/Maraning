@@ -38,6 +38,11 @@
 
 ## Entries
 
+- 2026-05-21 | scope: quiz-correct-overlay-feedback | type: ui | `QuizPage` 에서 정답/오답 inline feedback를 제거하고 정답일 때만 레이아웃에 영향을 주지 않는 전체 overlay `정답입니다!`를 잠깐 보여준 뒤 자동으로 다음 문제 또는 결과 화면으로 이동하도록 바꿨으며, 오답은 별도 텍스트 없이 기존 `failLife` 감소와 재도전 흐름만 유지하도록 정리했다 | docs/tests updated: docs/quality/changelog.md, src/pages/QuizPage.tsx
+- 2026-05-20 | scope: home-button-bottom-offset | type: ui | 메인페이지 `난이도 선택하기` 버튼 묶음을 카드 하단 정렬로 바꾸고 바닥에서 약 `15px` 위에 오도록 하단 여백을 조정했다 | docs/tests updated: docs/quality/changelog.md, src/pages/HomePage.tsx
+- 2026-05-20 | scope: home-duplicate-start-button-removal | type: ui | 메인페이지에서 `난이도 선택하기`와 동일 라우팅을 하던 `학습 시작` 버튼을 제거하고, 남은 `난이도 선택하기` 버튼을 더 아래로 내려 메인 카드 안 여백을 다시 맞췄다 | docs/tests updated: docs/quality/changelog.md, src/pages/HomePage.tsx
+- 2026-05-20 | scope: result-reward-chapter-stage-return | type: fix | Stage 클리어 후 `Result` 와 `Reward` 화면의 fallback 이동 경로가 더 이상 `DifficultySelect` 로 떨어지지 않도록 수정하고, 우선 `result` 의 `difficulty/chapterId` 로 현재 Chapter `StageMap` 으로 복귀시키며 해당 정보가 없을 때만 `progressStore` 의 현재 Chapter 또는 `ChapterMap` 으로 안전 복귀하도록 정리했다 | docs/tests updated: docs/quality/changelog.md, src/pages/ResultPage.tsx, src/pages/RewardPage.tsx
+- 2026-05-20 | scope: home-hero-expansion | type: ui | 메인페이지에서 `오늘의 한마디` 카드와 캐릭터 보조 영역을 제거하고 `햄찌 영어 탐험` 메인 카드가 해당 공간까지 사용하도록 높이와 레이아웃을 확장했다 | docs/tests updated: docs/quality/changelog.md, src/pages/HomePage.tsx
 - 2026-05-20 | scope: chapter-map-title-above-line-layout | type: ui | `ChapterMapPage` 에서 `chapter_hurdle` 사용을 제거하고 각 chapter row의 제목을 `chapter_line` 위쪽 절대 배치로 옮겨 긴 제목이 줄바꿈되더라도 line 위치를 밀지 않게 조정했으며, `finish_line` 은 마지막 chapter row 아래에만 보이도록 정리했다 | docs/tests updated: docs/quality/changelog.md, src/pages/ChapterMapPage.tsx
 - 2026-05-20 | scope: chapter-row-click-target | type: ui | `ChapterMapPage` 에서 챕터 제목 캡슐과 `chapter_line` 을 하나의 버튼 영역으로 묶어 unlocked/completed 챕터는 row 전체를 눌렀을 때 해당 `StageMap` 으로 이동하도록 클릭 범위를 확장했다 | docs/tests updated: docs/quality/changelog.md, src/pages/ChapterMapPage.tsx
 - 2026-05-20 | scope: chapter-map-header-and-width-cleanup | type: ui | `ChapterMapPage` 에서 상단 안내 카드를 제거하고 상단 제목을 `{난이도명} 챕터` 형식으로 변경했으며, 모든 챕터 제목 캡슐 폭을 1번 카드 기준으로 고정해 locked 챕터를 포함한 모든 카드가 중앙 트랙 안에서만 보이도록 정리했다 | docs/tests updated: docs/quality/changelog.md, src/pages/ChapterMapPage.tsx
