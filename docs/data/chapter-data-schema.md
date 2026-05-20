@@ -17,10 +17,7 @@
   "order": 1,
   "title": "기본 단어 배우기",
   "description": "가장 쉬운 단어부터 시작해요.",
-  "stageIds": [
-    "absolute-beginner.stage.001",
-    "absolute-beginner.stage.002"
-  ],
+  "stageIds": ["absolute-beginner.stage.001", "absolute-beginner.stage.002"],
   "requiredChapterId": null
 }
 ```

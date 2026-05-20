@@ -6,9 +6,13 @@ type ChapterLineSliceProps = {
   className?: string
 }
 
-export function ChapterLineSlice({ index, className = '' }: ChapterLineSliceProps) {
+export function ChapterLineSlice({
+  index,
+  className = '',
+}: ChapterLineSliceProps) {
   const safeIndex = Math.min(Math.max(index, 1), CHAPTER_LINE_ROW_COUNT)
-  const backgroundOffsetPercent = ((safeIndex - 1) / (CHAPTER_LINE_ROW_COUNT - 1)) * 100
+  const backgroundOffsetPercent =
+    ((safeIndex - 1) / (CHAPTER_LINE_ROW_COUNT - 1)) * 100
 
   return (
     <div aria-hidden="true" className={`overflow-hidden ${className}`}>
@@ -18,7 +22,7 @@ export function ChapterLineSlice({ index, className = '' }: ChapterLineSliceProp
           backgroundImage: `url(${chapterLineAsset})`,
           backgroundPosition: `center ${backgroundOffsetPercent}%`,
           backgroundRepeat: 'no-repeat',
-          backgroundSize: `100% ${CHAPTER_LINE_ROW_COUNT * 100}%`,
+          backgroundSize: `90% ${CHAPTER_LINE_ROW_COUNT * 100}%`,
         }}
       />
     </div>

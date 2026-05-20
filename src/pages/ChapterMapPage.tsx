@@ -5,24 +5,40 @@ import { PageFrame } from '../shared/components/PageFrame'
 import { difficultyLabelMap } from '../shared/difficulty'
 import { isDifficultyKey } from '../data/difficulties'
 import { buildStageMapPath } from '../features/stage/stage.routes'
-import { getChapterState, getChaptersByDifficulty, getStagesByDifficulty } from '../features/stage/stage.utils'
+import {
+  getChapterState,
+  getChaptersByDifficulty,
+  getStagesByDifficulty,
+} from '../features/stage/stage.utils'
 import { useProgressStore } from '../stores/progressStore'
 import { useUiStore } from '../stores/ui-store'
 import { ChapterLineSlice } from './ChapterLineSlice'
 
 const chapterBackgroundAsset = '/assets/maraning/chapter_background.png'
 const finishLineAsset = '/assets/maraning/finish_line.png'
+const chapterCapsuleMaxWidth = '14.75rem'
 
 export function ChapterMapPage() {
   const navigate = useNavigate()
   const { difficultyId } = useParams()
-  const setSelectedDifficulty = useUiStore((state) => state.setSelectedDifficulty)
-  const resolvedDifficulty = difficultyId && isDifficultyKey(difficultyId) ? difficultyId : 'absolute_beginner'
-  const isValidDifficulty = Boolean(difficultyId && isDifficultyKey(difficultyId))
+  const setSelectedDifficulty = useUiStore(
+    (state) => state.setSelectedDifficulty,
+  )
+  const resolvedDifficulty =
+    difficultyId && isDifficultyKey(difficultyId)
+      ? difficultyId
+      : 'absolute_beginner'
+  const isValidDifficulty = Boolean(
+    difficultyId && isDifficultyKey(difficultyId),
+  )
   const chapters = getChaptersByDifficulty(resolvedDifficulty)
   const stages = getStagesByDifficulty(resolvedDifficulty)
-  const progress = useProgressStore((state) => state.progressByDifficulty[resolvedDifficulty])
-  const ensureDifficultyProgress = useProgressStore((state) => state.ensureDifficultyProgress)
+  const progress = useProgressStore(
+    (state) => state.progressByDifficulty[resolvedDifficulty],
+  )
+  const ensureDifficultyProgress = useProgressStore(
+    (state) => state.ensureDifficultyProgress,
+  )
 
   useEffect(() => {
     if (!isValidDifficulty) {
@@ -31,13 +47,22 @@ export function ChapterMapPage() {
 
     setSelectedDifficulty(resolvedDifficulty)
     ensureDifficultyProgress(resolvedDifficulty, chapters, stages)
-  }, [chapters, ensureDifficultyProgress, isValidDifficulty, resolvedDifficulty, setSelectedDifficulty, stages])
+  }, [
+    chapters,
+    ensureDifficultyProgress,
+    isValidDifficulty,
+    resolvedDifficulty,
+    setSelectedDifficulty,
+    stages,
+  ])
 
   if (!isValidDifficulty) {
     return <Navigate to="/difficulty" replace />
   }
 
-  const safeProgress = progress ?? useProgressStore.getState().progressByDifficulty[resolvedDifficulty]
+  const safeProgress =
+    progress ??
+    useProgressStore.getState().progressByDifficulty[resolvedDifficulty]
 
   if (!safeProgress) {
     return null
@@ -50,7 +75,7 @@ export function ChapterMapPage() {
       return {
         key: `placeholder-chapter-${index + 1}`,
         order: index + 1,
-        title: '준비 중인 큰 스테이지',
+        title: '준비 중인 챕터',
         state: 'locked' as const,
         locked: true,
         chapterId: null,
@@ -85,13 +110,25 @@ export function ChapterMapPage() {
           backgroundSize: 'cover, 100% auto',
         }}
       >
-        <div className="pt-4">
-          <CuteTopBar title={`${difficultyLabelMap[resolvedDifficulty]} 챕터`} backTo="/difficulty" variant="plain" />
+        <div
+          className="mx-auto pt-4"
+          style={{ maxWidth: chapterCapsuleMaxWidth }}
+        >
+          <CuteTopBar
+            title={`${difficultyLabelMap[resolvedDifficulty]} 챕터`}
+            backTo="/difficulty"
+            variant="plain"
+          />
         </div>
 
         <section className="relative mt-6 pb-10">
           {chapterRows.map((row) => {
-            const statusLabel = row.state === 'completed' ? '완료' : row.state === 'locked' ? '잠금' : '진행 가능'
+            const statusLabel =
+              row.state === 'completed'
+                ? '완료'
+                : row.state === 'locked'
+                  ? '잠금'
+                  : '진행 가능'
             const statusTone =
               row.state === 'completed'
                 ? 'bg-[#e6f7eb] text-[#2d7a4f]'
@@ -100,10 +137,10 @@ export function ChapterMapPage() {
                   : 'bg-[#fff0df] text-[#c26b48]'
             const helperText =
               row.state === 'completed'
-                ? '완료한 큰 스테이지예요. 다시 들어갈 수 있어요.'
+                ? '완료한 챕터야! 다시 들어갈 수 있어!.'
                 : row.state === 'locked'
-                  ? '이전 큰 스테이지를 클리어하면 열려요'
-                  : '지금 바로 들어갈 수 있어요'
+                  ? '이전 챕터를 클리어하면 열릴꺼야!'
+                  : '지금 바로 들어갈 수 있어!'
 
             return (
               <div
@@ -119,14 +156,23 @@ export function ChapterMapPage() {
                     }
 
                     setSelectedDifficulty(resolvedDifficulty)
-                    navigate(buildStageMapPath(resolvedDifficulty, row.chapterId))
+                    navigate(
+                      buildStageMapPath(resolvedDifficulty, row.chapterId),
+                    )
                   }}
                   className={`relative w-full ${row.locked ? 'cursor-not-allowed opacity-70 saturate-50' : 'active:scale-[0.985]'} transition-transform duration-100`}
                   aria-label={`${row.order}. ${row.title}`}
                 >
-                  <div className="relative z-10 mx-auto mb-3 flex min-h-[5.8rem] w-[15.5rem] max-w-[15.5rem] flex-col items-center text-center">
-                    <span className={`rounded-full px-3 py-1 text-xs font-black tracking-tight shadow-[0_8px_16px_rgba(171,120,72,0.14)] ${statusTone}`}>
-                      {row.state === 'locked' ? `🔒 ${statusLabel}` : statusLabel}
+                  <div
+                    className="relative z-10 mx-auto mb-3 flex min-h-[5.8rem] w-full flex-col items-center text-center"
+                    style={{ maxWidth: chapterCapsuleMaxWidth }}
+                  >
+                    <span
+                      className={`rounded-full px-3 py-1 text-xs font-black tracking-tight shadow-[0_8px_16px_rgba(171,120,72,0.14)] ${statusTone}`}
+                    >
+                      {row.state === 'locked'
+                        ? `🔒 ${statusLabel}`
+                        : statusLabel}
                     </span>
                     <div className="mt-2 w-full rounded-[1.25rem] bg-white/88 px-4 py-3 shadow-[0_12px_26px_rgba(171,120,72,0.16)] backdrop-blur-[2px]">
                       <h2 className="text-[1.1rem] font-black leading-snug tracking-tight text-[#6c4025]">
@@ -164,7 +210,9 @@ export function ChapterMapPage() {
               aria-hidden="true"
               className="h-auto w-full max-w-[14rem] object-contain drop-shadow-[0_14px_24px_rgba(130,90,58,0.2)]"
             />
-            <p className="text-sm font-black text-[#7b4d32]">이 난이도의 마지막 도착선</p>
+            <p className="text-sm font-black text-[#7b4d32]">
+              여기만 통과하면 완주!
+            </p>
           </div>
         </section>
 
@@ -172,13 +220,13 @@ export function ChapterMapPage() {
           <Link
             to={
               safeProgress.currentChapterId
-                ? buildStageMapPath(resolvedDifficulty, safeProgress.currentChapterId)
+                ? buildStageMapPath(
+                    resolvedDifficulty,
+                    safeProgress.currentChapterId,
+                  )
                 : '/difficulty'
             }
-            className="game-secondary-button"
-          >
-            현재 큰 스테이지로 이동
-          </Link>
+          ></Link>
         </div>
       </div>
     </PageFrame>

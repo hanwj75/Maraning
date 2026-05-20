@@ -38,6 +38,7 @@
 - `locked`, `unlocked`, `completed` 상태를 표시해야 한다.
 - `locked Chapter` 는 클릭 불가여야 한다.
 - 선택 후 해당 `Chapter` 의 `StageMap` 으로 이동한다.
+- 각 챕터 제목 캡슐은 배경 양쪽 흰색 세로 라인 영역을 침범하면 안 되며, `chapter_line` 기준 좌우 각각 최소 `3px` 안쪽에 들어오도록 동일 규칙을 모든 챕터에 적용해야 한다.
 
 ### StageMap
 
