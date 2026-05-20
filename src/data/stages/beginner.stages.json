@@ -2,6 +2,7 @@
   {
     "id": "beginner.stage.001",
     "difficulty": "beginner",
+    "chapterId": "beginner_chapter_001",
     "order": 1,
     "title": "학생 소개",
     "description": "나는 학생입니다 문장을 10문제로 반복 학습한다",
@@ -29,6 +30,7 @@
   {
     "id": "beginner.stage.002",
     "difficulty": "beginner",
+    "chapterId": "beginner_chapter_001",
     "order": 2,
     "title": "교사 소개",
     "description": "나는 선생님입니다 문장을 10문제로 반복 학습한다",

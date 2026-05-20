@@ -1,12 +1,14 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
-import { Navigate, useNavigate } from 'react-router-dom'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { Navigate, useNavigate, useParams } from 'react-router-dom'
+import { isDifficultyKey } from '../data/difficulties'
+import { buildStageMapPath } from '../features/stage/stage.routes'
 import { ConfirmDialog } from '../shared/components/ConfirmDialog'
 import { CuteTopBar } from '../shared/components/CuteTopBar'
 import { JellyBadge } from '../shared/components/JellyBadge'
 import { PageFrame } from '../shared/components/PageFrame'
 import { getQuizzesByDifficulty } from '../features/quiz/quiz.data'
 import { buildQuizSessionAnswer, getOrderedQuizzesByIds, getQuizProgressLabel } from '../features/quiz/quiz.utils'
-import { getStageById, getStagesByDifficulty } from '../features/stage/stage.utils'
+import { getStageById, getStagesByDifficulty, getChaptersByDifficulty } from '../features/stage/stage.utils'
 import {
   hamsterFailLifeState1Animation,
   hamsterFailLifeState2Animation,
@@ -20,6 +22,7 @@ type QuizHamsterAnimation = 'fail-life-state1' | 'fail-life-state2' | null
 
 export function QuizPage() {
   const navigate = useNavigate()
+  const { difficultyId, chapterId, stageId } = useParams()
   const session = useQuizStore((state) => state.session)
   const submitQuizAnswer = useQuizStore((state) => state.submitQuizAnswer)
   const clearSession = useQuizStore((state) => state.clearSession)
@@ -42,8 +45,10 @@ export function QuizPage() {
   const feedbackTimerRef = useRef<number | null>(null)
   const hamsterAnimationTimerRef = useRef<number | null>(null)
   const shouldClearSessionOnUnmountRef = useRef(false)
-  const sessionDifficulty = session?.difficulty ?? 'absolute_beginner'
-  const sessionStageId = session?.stageId ?? ''
+  const routeDifficulty = difficultyId && isDifficultyKey(difficultyId) ? difficultyId : null
+  const sessionDifficulty = session?.difficulty ?? routeDifficulty ?? 'absolute_beginner'
+  const sessionStageId = session?.stageId ?? stageId ?? ''
+  const stageMapPath = routeDifficulty && chapterId ? buildStageMapPath(routeDifficulty, chapterId) : '/difficulty'
   const failLifeLabel = Array.from({ length: 3 }, (_, index) =>
     index < (session?.failLife ?? 0) ? '❤️' : '♡',
   ).join('')
@@ -57,7 +62,8 @@ export function QuizPage() {
         : [],
     [session, sessionDifficulty, sessionStageId],
   )
-  const stages = useMemo(() => getStagesByDifficulty(sessionDifficulty), [sessionDifficulty])
+  const chapters = useMemo(() => getChaptersByDifficulty(sessionDifficulty), [sessionDifficulty])
+  const allStages = useMemo(() => getStagesByDifficulty(sessionDifficulty), [sessionDifficulty])
   const stage = useMemo(
     () => (session ? getStageById(sessionDifficulty, sessionStageId) : undefined),
     [session, sessionDifficulty, sessionStageId],
@@ -80,18 +86,18 @@ export function QuizPage() {
     setPendingLeftId(null)
   }
 
-  const clearHamsterAnimationTimer = () => {
+  const clearHamsterAnimationTimer = useCallback(() => {
     if (hamsterAnimationTimerRef.current !== null) {
       window.clearTimeout(hamsterAnimationTimerRef.current)
       hamsterAnimationTimerRef.current = null
     }
-  }
+  }, [])
 
-  const resetHamsterState = () => {
+  const resetHamsterState = useCallback(() => {
     clearHamsterAnimationTimer()
     setActiveHamsterAnimation(null)
     setCurrentHamsterSrc(maraningAssets.hamster)
-  }
+  }, [clearHamsterAnimationTimer])
 
   const runFailLifeHamsterState = (nextLife: number) => {
     clearHamsterAnimationTimer()
@@ -137,14 +143,22 @@ export function QuizPage() {
         clearSession()
       }
     }
-  }, [clearSession])
+  }, [clearSession, resetHamsterState])
+
+  if (!routeDifficulty || !chapterId || !stageId) {
+    return <Navigate to="/difficulty" replace />
+  }
 
   if (!session) {
-    return <Navigate to="/stages" replace />
+    return <Navigate to={stageMapPath} replace />
   }
 
   if (!stage || !currentQuiz || quizzes.length !== 10) {
-    return <Navigate to="/stages" replace />
+    return <Navigate to={stageMapPath} replace />
+  }
+
+  if (stage.chapterId !== chapterId) {
+    return <Navigate to={stageMapPath} replace />
   }
 
   const finalizeSubmission = (params: {
@@ -185,7 +199,7 @@ export function QuizPage() {
       if (status === 'failed') {
         resetHamsterState()
         shouldClearSessionOnUnmountRef.current = true
-        navigate('/stages', { replace: true })
+        navigate(stageMapPath, { replace: true })
       }
     }, 850)
   }
@@ -231,7 +245,7 @@ export function QuizPage() {
           : undefined
 
       if (outcome.status === 'finished') {
-        completeStage(session.difficulty, session.stageId, stages)
+        completeStage(session.difficulty, session.stageId, chapters, allStages)
       }
 
       if (!answer.isCorrect) {
@@ -273,7 +287,7 @@ export function QuizPage() {
           : undefined
 
       if (outcome.status === 'finished') {
-        completeStage(session.difficulty, session.stageId, stages)
+        completeStage(session.difficulty, session.stageId, chapters, allStages)
       }
 
       if (!answer.isCorrect) {
@@ -311,7 +325,7 @@ export function QuizPage() {
         : undefined
 
     if (outcome.status === 'finished') {
-      completeStage(session.difficulty, session.stageId, stages)
+      completeStage(session.difficulty, session.stageId, chapters, allStages)
     }
 
     if (!answer.isCorrect) {
@@ -331,7 +345,7 @@ export function QuizPage() {
     <PageFrame contentClassName="gap-5">
       <section className="flex items-center justify-between gap-3">
         <div className="min-w-0 flex-1">
-          <CuteTopBar title={stage.title} backTo="/stages" variant="plain" />
+          <CuteTopBar title={stage.title} backTo={stageMapPath} variant="plain" />
         </div>
         <JellyBadge count={currentJelly} className="max-w-[8.5rem] shrink-0" />
       </section>
@@ -556,7 +570,7 @@ export function QuizPage() {
         onCancel={() => {
           setShowJellyRecoveryDialog(false)
           shouldClearSessionOnUnmountRef.current = true
-          navigate('/stages', { replace: true })
+          navigate(stageMapPath, { replace: true })
         }}
       />
     </PageFrame>

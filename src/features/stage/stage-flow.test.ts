@@ -4,31 +4,42 @@ import { getOrderedQuizzesByIds } from '../quiz/quiz.utils'
 import { applyStageCompletion, createInitialDifficultyProgress } from '../../stores/progressStore'
 import { consumeJellyForSubmission, createInitialJellyState } from '../../stores/jellyStore'
 import { applyQuizSubmission, createQuizSession } from '../../stores/quizStore'
-import { getStageState, getStagesByDifficulty } from './stage.utils'
+import { getChapterState, getChaptersByDifficulty, getStageState, getStagesByChapter, getStagesByDifficulty } from './stage.utils'
 
 describe('stage and quiz core flow', () => {
-  it('starts from the first unlocked stage and blocks later locked stages', () => {
+  it('starts from the first unlocked chapter and first unlocked stage, and blocks later locked stages', () => {
+    const chapters = getChaptersByDifficulty('absolute_beginner')
     const stages = getStagesByDifficulty('absolute_beginner')
-    const progress = createInitialDifficultyProgress(stages)
+    const chapterStages = getStagesByChapter('absolute_beginner', chapters[0].id)
+    const progress = createInitialDifficultyProgress(chapters, stages)
 
     expect(
-      getStageState({
-        stage: stages[0],
-        clearedStageIds: progress.clearedStageIds,
-        unlockedStageIds: progress.unlockedStageIds,
+      getChapterState({
+        chapter: chapters[0],
+        completedChapterIds: progress.completedChapterIds,
+        unlockedChapterIds: progress.unlockedChapterIds,
       }),
     ).toBe('unlocked')
 
     expect(
       getStageState({
-        stage: stages[1],
-        clearedStageIds: progress.clearedStageIds,
-        unlockedStageIds: progress.unlockedStageIds,
+        stage: chapterStages[0],
+        completedStageIds: progress.completedStageIdsByChapter[chapters[0].id] ?? [],
+        unlockedStageIds: progress.unlockedStageIdsByChapter[chapters[0].id] ?? [],
+      }),
+    ).toBe('unlocked')
+
+    expect(
+      getStageState({
+        stage: chapterStages[1],
+        completedStageIds: progress.completedStageIdsByChapter[chapters[0].id] ?? [],
+        unlockedStageIds: progress.unlockedStageIdsByChapter[chapters[0].id] ?? [],
       }),
     ).toBe('locked')
   })
 
   it('keeps stage entry free, consumes jelly on submit, completes the stage after 10 quizzes, and unlocks the next stage', () => {
+    const chapters = getChaptersByDifficulty('absolute_beginner')
     const stages = getStagesByDifficulty('absolute_beginner')
     const quizzes = getQuizzesByDifficulty('absolute_beginner')
     const jelly = createInitialJellyState(new Date('2026-05-17T09:00:00+09:00'))
@@ -40,7 +51,8 @@ describe('stage and quiz core flow', () => {
       stage.quizIds,
     )
     const nextProgress = applyStageCompletion({
-      progress: createInitialDifficultyProgress(stages),
+      progress: createInitialDifficultyProgress(chapters, stages),
+      chapters,
       stages,
       stageId: stage.id,
     })
@@ -48,43 +60,48 @@ describe('stage and quiz core flow', () => {
     expect(jellyResult.consumed).toBe(true)
     expect(jellyResult.nextState.current).toBe(19)
     expect(orderedQuizzes).toHaveLength(10)
-    expect(nextProgress.clearedStageIds).toContain(stage.id)
-    expect(nextProgress.unlockedStageIds).toContain(stages[1].id)
+    expect(nextProgress.completedStageIdsByChapter[stage.chapterId]).toContain(stage.id)
+    expect(nextProgress.unlockedStageIdsByChapter[stage.chapterId]).toContain(stages[1].id)
   })
 
   it('allows replay of a completed stage while keeping other difficulties independent', () => {
+    const absoluteBeginnerChapters = getChaptersByDifficulty('absolute_beginner')
+    const beginnerChapters = getChaptersByDifficulty('beginner')
     const absoluteBeginnerStages = getStagesByDifficulty('absolute_beginner')
     const beginnerStages = getStagesByDifficulty('beginner')
     const completedProgress = applyStageCompletion({
-      progress: createInitialDifficultyProgress(absoluteBeginnerStages),
+      progress: createInitialDifficultyProgress(absoluteBeginnerChapters, absoluteBeginnerStages),
+      chapters: absoluteBeginnerChapters,
       stages: absoluteBeginnerStages,
       stageId: absoluteBeginnerStages[0].id,
     })
-    const beginnerProgress = createInitialDifficultyProgress(beginnerStages)
+    const beginnerProgress = createInitialDifficultyProgress(beginnerChapters, beginnerStages)
 
     expect(
       getStageState({
         stage: absoluteBeginnerStages[0],
-        clearedStageIds: completedProgress.clearedStageIds,
-        unlockedStageIds: completedProgress.unlockedStageIds,
+        completedStageIds: completedProgress.completedStageIdsByChapter[absoluteBeginnerStages[0].chapterId] ?? [],
+        unlockedStageIds: completedProgress.unlockedStageIdsByChapter[absoluteBeginnerStages[0].chapterId] ?? [],
       }),
     ).toBe('completed')
 
     expect(
       getStageState({
         stage: beginnerStages[1],
-        clearedStageIds: beginnerProgress.clearedStageIds,
-        unlockedStageIds: beginnerProgress.unlockedStageIds,
+        completedStageIds: beginnerProgress.completedStageIdsByChapter[beginnerStages[1].chapterId] ?? [],
+        unlockedStageIds: beginnerProgress.unlockedStageIdsByChapter[beginnerStages[1].chapterId] ?? [],
       }),
     ).toBe('locked')
   })
 
   it('does not complete or unlock a stage when the session fails', () => {
+    const chapters = getChaptersByDifficulty('absolute_beginner')
     const stages = getStagesByDifficulty('absolute_beginner')
-    const progress = createInitialDifficultyProgress(stages)
+    const progress = createInitialDifficultyProgress(chapters, stages)
     const failedSession = applyQuizSubmission({
       session: {
         ...createQuizSession({
+          chapterId: stages[0].chapterId,
           stageId: stages[0].id,
           difficulty: 'absolute_beginner',
           quizIds: stages[0].quizIds,
@@ -104,7 +121,24 @@ describe('stage and quiz core flow', () => {
     })
 
     expect(failedSession.status).toBe('failed')
-    expect(progress.clearedStageIds).toEqual([])
-    expect(progress.unlockedStageIds).toEqual(['absolute-beginner.stage.001'])
+    expect(progress.completedStageIdsByChapter[stages[0].chapterId] ?? []).toEqual([])
+    expect(progress.unlockedStageIdsByChapter[stages[0].chapterId]).toEqual(['absolute-beginner.stage.001'])
+  })
+
+  it('marks the current chapter completed after all stages in the chapter are completed', () => {
+    const chapters = getChaptersByDifficulty('absolute_beginner')
+    const stages = getStagesByDifficulty('absolute_beginner')
+    const finalProgress = stages.reduce(
+      (progress, stage) =>
+        applyStageCompletion({
+          progress,
+          chapters,
+          stages,
+          stageId: stage.id,
+        }),
+      createInitialDifficultyProgress(chapters, stages),
+    )
+
+    expect(finalProgress.completedChapterIds).toContain(chapters[0].id)
   })
 })

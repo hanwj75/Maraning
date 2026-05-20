@@ -1,16 +1,24 @@
 import { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
 import { BottomNav } from '../shared/components/BottomNav'
 import { ConfirmDialog } from '../shared/components/ConfirmDialog'
 import { JellyBadge } from '../shared/components/JellyBadge'
-import { StagePawNode } from '../shared/components/StagePawNode'
 import { difficultyLabelMap } from '../shared/difficulty'
-import { getStageState, getStagesByDifficulty } from '../features/stage/stage.utils'
+import { isDifficultyKey } from '../data/difficulties'
+import { buildChapterMapPath, buildQuizPath } from '../features/stage/stage.routes'
+import {
+  getChapterById,
+  getStageState,
+  getStagesByChapter,
+  getStagesByDifficulty,
+  getChaptersByDifficulty,
+} from '../features/stage/stage.utils'
 import { maraningAssets } from '../shared/maraning-assets'
 import { useJellyStore } from '../stores/jellyStore'
 import { useProgressStore } from '../stores/progressStore'
 import { useQuizStore } from '../stores/quizStore'
 import { useUiStore } from '../stores/ui-store'
+import { StagePawNode } from '../shared/components/StagePawNode'
 
 const TOP_OVERLAY_SPACE = 152
 const BOTTOM_NAV_SPACE = 116
@@ -46,27 +54,60 @@ const stageContentHeight =
 
 export function StageMapPage() {
   const navigate = useNavigate()
-  const { selectedDifficulty } = useUiStore()
-  const stages = getStagesByDifficulty(selectedDifficulty)
-  const difficultyLabel = difficultyLabelMap[selectedDifficulty]
+  const { difficultyId, chapterId } = useParams()
+  const setSelectedDifficulty = useUiStore((state) => state.setSelectedDifficulty)
   const [jellyMessage, setJellyMessage] = useState<string | null>(null)
   const [showAdDialog, setShowAdDialog] = useState(false)
-  const progress = useProgressStore((state) => state.progressByDifficulty[selectedDifficulty])
-  const ensureDifficultyProgress = useProgressStore((state) => state.ensureDifficultyProgress)
   const startSession = useQuizStore((state) => state.startSession)
   const currentJelly = useJellyStore((state) => state.current)
   const syncDailyJelly = useJellyStore((state) => state.syncDailyJelly)
   const mockRewardJelly = useJellyStore((state) => state.mockRewardJelly)
-  const currentStageLabel =
-    stages.find((stage) => stage.id === progress?.currentStageId)?.title ?? stages[0]?.title ?? '스테이지'
+  const resolvedDifficulty = difficultyId && isDifficultyKey(difficultyId) ? difficultyId : 'absolute_beginner'
+  const isValidRoute = Boolean(chapterId) && Boolean(difficultyId && isDifficultyKey(difficultyId))
+  const chapters = getChaptersByDifficulty(resolvedDifficulty)
+  const allStages = getStagesByDifficulty(resolvedDifficulty)
+  const chapter = chapterId ? getChapterById(resolvedDifficulty, chapterId) : undefined
+  const stages = chapterId ? getStagesByChapter(resolvedDifficulty, chapterId) : []
+  const progress = useProgressStore((state) => state.progressByDifficulty[resolvedDifficulty])
+  const ensureDifficultyProgress = useProgressStore((state) => state.ensureDifficultyProgress)
 
   useEffect(() => {
-    ensureDifficultyProgress(selectedDifficulty, stages)
-  }, [ensureDifficultyProgress, selectedDifficulty, stages])
+    if (!isValidRoute) {
+      return
+    }
+
+    setSelectedDifficulty(resolvedDifficulty)
+    ensureDifficultyProgress(resolvedDifficulty, chapters, allStages)
+  }, [allStages, chapters, ensureDifficultyProgress, isValidRoute, resolvedDifficulty, setSelectedDifficulty])
 
   useEffect(() => {
     syncDailyJelly()
   }, [syncDailyJelly])
+
+  if (!isValidRoute || !chapterId) {
+    return <Navigate to="/difficulty" replace />
+  }
+
+  const safeProgress = progress ?? useProgressStore.getState().progressByDifficulty[resolvedDifficulty]
+
+  if (!chapter) {
+    return <Navigate to={buildChapterMapPath(resolvedDifficulty)} replace />
+  }
+
+  if (!safeProgress) {
+    return null
+  }
+
+  const unlockedChapterIds = safeProgress.unlockedChapterIds
+
+  if (!unlockedChapterIds.includes(chapter.id)) {
+    return <Navigate to={buildChapterMapPath(resolvedDifficulty)} replace />
+  }
+
+  const completedStageIds = safeProgress.completedStageIdsByChapter[chapter.id] ?? []
+  const unlockedStageIds = safeProgress.unlockedStageIdsByChapter[chapter.id] ?? []
+  const currentStageLabel =
+    stages.find((stage) => stage.id === safeProgress.currentStageId)?.title ?? stages[0]?.title ?? '스테이지'
 
   return (
     <main className="game-screen-shell">
@@ -111,13 +152,13 @@ export function StageMapPage() {
                 className="absolute inset-0 h-full w-full object-fill"
               />
               <Link
-                to="/difficulty"
+                to={buildChapterMapPath(resolvedDifficulty)}
                 aria-label="뒤로가기"
                 className="absolute left-[3.5%] top-1/2 z-10 block h-10 w-10 -translate-y-1/2 rounded-full transition-transform duration-100 active:scale-95"
               />
               <div className="absolute inset-0 overflow-hidden text-white">
-                <span className="absolute inset-0 flex items-center justify-center overflow-hidden px-[5.1rem] text-center text-[1rem] font-black leading-none tracking-tight text-ellipsis whitespace-nowrap">
-                  {difficultyLabel} · {currentStageLabel}
+                <span className="absolute inset-0 flex items-center justify-center overflow-hidden px-[4.4rem] text-center text-[0.95rem] font-black leading-none tracking-tight text-ellipsis whitespace-nowrap">
+                  {difficultyLabelMap[resolvedDifficulty]} · {chapter.title} · {currentStageLabel}
                 </span>
               </div>
             </div>
@@ -126,10 +167,7 @@ export function StageMapPage() {
 
         <div className="pointer-events-none absolute inset-x-0 bottom-0 z-30 px-4 pb-4">
           <div className="pointer-events-auto">
-            <BottomNav
-              inFlow
-              onAdClick={() => setShowAdDialog(true)}
-            />
+            <BottomNav inFlow onAdClick={() => setShowAdDialog(true)} />
           </div>
         </div>
 
@@ -141,14 +179,14 @@ export function StageMapPage() {
                 {stages.slice(0, nodePositions.length).map((stage, index) => {
                   const position = nodePositions[index]
 
-                  if (!position || !progress) {
+                  if (!position) {
                     return null
                   }
 
                   const state = getStageState({
                     stage,
-                    clearedStageIds: progress.clearedStageIds,
-                    unlockedStageIds: progress.unlockedStageIds,
+                    completedStageIds,
+                    unlockedStageIds,
                   })
 
                   return (
@@ -156,7 +194,7 @@ export function StageMapPage() {
                       key={stage.id}
                       stageNumber={stage.order}
                       state={state}
-                      to="/quiz"
+                      to={buildQuizPath(resolvedDifficulty, chapter.id, stage.id)}
                       className="absolute"
                       style={{
                         left: position.left,
@@ -169,11 +207,12 @@ export function StageMapPage() {
                           : () => {
                               setJellyMessage(null)
                               startSession({
+                                chapterId: chapter.id,
                                 stageId: stage.id,
-                                difficulty: selectedDifficulty,
+                                difficulty: resolvedDifficulty,
                                 quizIds: stage.quizIds,
                               })
-                              navigate('/quiz')
+                              navigate(buildQuizPath(resolvedDifficulty, chapter.id, stage.id))
                             }
                       }
                     />

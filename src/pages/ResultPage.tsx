@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
+import { buildStageMapPath } from '../features/stage/stage.routes'
 import { CuteTopBar } from '../shared/components/CuteTopBar'
 import { PageFrame } from '../shared/components/PageFrame'
 import { StageHamster } from '../shared/components/StageHamster'
@@ -10,12 +11,14 @@ export function ResultPage() {
   const [animationToken, setAnimationToken] = useState(0)
 
   if (!result) {
-    return <Navigate to="/stages" replace />
+    return <Navigate to="/difficulty" replace />
   }
+
+  const stageMapPath = buildStageMapPath(result.difficulty, result.chapterId)
 
   return (
     <PageFrame contentClassName="gap-5">
-      <CuteTopBar title="정답 확인" backTo="/quiz" variant="plain" />
+      <CuteTopBar title="정답 확인" backTo={stageMapPath} variant="plain" />
 
       <section className="game-card bg-gradient-to-br from-[#ddfff0] to-[#f7ffef] px-5 py-6 text-center">
         <p className="text-sm font-black text-[#55b486]">스테이지 클리어</p>

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "granite dev",
     "build": "ait build",
+    "test": "jest",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "ait deploy"

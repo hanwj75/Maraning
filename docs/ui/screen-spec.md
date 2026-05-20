@@ -5,6 +5,7 @@
 - `Splash`
 - `Home`
 - `DifficultySelect`
+- `ChapterMap`
 - `StageMap`
 - `Quiz`
 - `Result`
@@ -28,11 +29,20 @@
 
 - 사용자가 난이도 트랙을 고르는 화면이다.
 - 각 난이도는 독립 진행이라는 점이 시각적으로 드러나야 한다.
-- 선택 후 해당 난이도 `StageMap` 으로 이동한다.
+- 선택 후 해당 난이도 `ChapterMap` 으로 이동한다.
+
+### ChapterMap
+
+- 사용자가 현재 난이도 안의 큰 스테이지를 고르는 화면이다.
+- `Chapter = 큰 스테이지`, `Stage = 작은 스테이지` 용어가 일관되게 보여야 한다.
+- `locked`, `unlocked`, `completed` 상태를 표시해야 한다.
+- `locked Chapter` 는 클릭 불가여야 한다.
+- 선택 후 해당 `Chapter` 의 `StageMap` 으로 이동한다.
 
 ### StageMap
 
-- 현재 난이도의 Stage 진행 구조를 보여준다.
+- 현재 난이도의 현재 `Chapter` 안 Stage 진행 구조만 보여준다.
+- 전체 난이도의 모든 `Stage` 를 한 화면에 섞어 보여주면 안 된다.
 - 각 Stage 의 `locked`, `unlocked`, `completed` 상태를 명확히 구분한다.
 - 사용자는 여기서 Stage 시작, replay, `jelly` 상태 확인을 한다.
 
@@ -61,10 +71,13 @@
 
 ## Navigation Rules
 
-- 기본 축은 `Splash -> Home -> DifficultySelect -> StageMap -> Quiz -> Result -> Reward` 다.
+- 기본 축은 `Splash -> Home -> DifficultySelect -> ChapterMap -> StageMap -> Quiz -> Result -> Reward` 다.
 - `Result` 는 짧은 중간 판정 계층이며, 필요 시 `Quiz` 내부 오버레이 또는 별도 화면으로 해석할 수 있다.
 - `Reward` 이후에는 동일 난이도 `StageMap` 으로 돌아가는 흐름을 기본값으로 둔다.
+- `Reward` 이후에는 방금 플레이한 `Chapter` 의 `StageMap` 으로 돌아가는 흐름을 기본값으로 둔다.
+- `DifficultySelect -> ChapterMap -> StageMap` 사이에서 현재 난이도와 `Chapter` 문맥이 유지되어야 한다.
 - `locked` Stage 는 `StageMap` 에서 보이더라도 진입할 수 없다.
+- `locked` Chapter 는 `ChapterMap` 에서 보이더라도 진입할 수 없다.
 - `completed` Stage 는 replay 가능해야 한다.
 
 ## Role Rules
@@ -79,7 +92,7 @@
 
 ## Edge States
 
-- `jelly` 부족 시 `StageMap` 에서 Stage 시작 불가 상태를 명확히 보여준다.
+- `jelly` 부족 시 `Quiz` 제출 차단과 회복 CTA 를 명확히 보여준다.
 - SDK 준비 실패가 있더라도 `Home` 진입과 로컬 학습 흐름은 가능한 범위에서 유지한다.
 - 데이터 로드 중에는 `Splash` 또는 경량 로딩 상태를 사용한다.
 - 긴 설명 모달로 문제를 해결하려 하지 않는다.

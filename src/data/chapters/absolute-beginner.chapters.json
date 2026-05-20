@@ -1,0 +1,15 @@
+[
+  {
+    "id": "absolute_beginner_chapter_001",
+    "difficulty": "absolute_beginner",
+    "order": 1,
+    "title": "기본 단어 배우기",
+    "description": "왕초보 단어 스테이지를 차근차근 시작해요.",
+    "stageIds": [
+      "absolute-beginner.stage.001",
+      "absolute-beginner.stage.002",
+      "absolute-beginner.stage.003"
+    ],
+    "requiredChapterId": null
+  }
+]

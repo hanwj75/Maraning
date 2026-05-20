@@ -1,0 +1,14 @@
+[
+  {
+    "id": "beginner_chapter_001",
+    "difficulty": "beginner",
+    "order": 1,
+    "title": "기본 소개 배우기",
+    "description": "초보 난이도의 기본 소개 문장을 익혀요.",
+    "stageIds": [
+      "beginner.stage.001",
+      "beginner.stage.002"
+    ],
+    "requiredChapterId": null
+  }
+]

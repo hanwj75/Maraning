@@ -1,0 +1,14 @@
+[
+  {
+    "id": "conversation_chapter_001",
+    "difficulty": "conversation",
+    "order": 1,
+    "title": "기본 회화 시작",
+    "description": "실전 회화의 기본 표현을 먼저 익혀요.",
+    "stageIds": [
+      "conversation.stage.001",
+      "conversation.stage.002"
+    ],
+    "requiredChapterId": null
+  }
+]

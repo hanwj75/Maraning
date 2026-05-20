@@ -4,7 +4,9 @@ import { getQuizzesByDifficulty } from '../quiz/quiz.data'
 import { areQuizIdsUnique, getQuizzesForStage, validateQuizData } from '../quiz/quiz.utils'
 import {
   STAGE_QUIZ_COUNT,
+  getChaptersByDifficulty,
   getStageById,
+  validateChapterData,
   getStagesByDifficulty,
   validateStageData,
   validateStageQuizCount,
@@ -13,10 +15,12 @@ import {
 describe('stage.utils data validation', () => {
   it('keeps every difficulty data set valid', () => {
     for (const difficulty of difficultyKeys) {
+      const chapters = getChaptersByDifficulty(difficulty)
       const stages = getStagesByDifficulty(difficulty)
       const quizzes = getQuizzesByDifficulty(difficulty)
 
-      expect(validateStageData(stages, quizzes)).toEqual([])
+      expect(validateChapterData(chapters, stages)).toEqual([])
+      expect(validateStageData(stages, quizzes, chapters)).toEqual([])
       expect(validateQuizData(quizzes)).toEqual([])
       expect(areQuizIdsUnique(quizzes)).toBe(true)
     }
@@ -30,6 +34,7 @@ describe('stage.utils data validation', () => {
       for (const stage of stages) {
         expect(validateStageQuizCount(stage)).toEqual([])
         expect(stage.quizIds).toHaveLength(STAGE_QUIZ_COUNT)
+        expect(stage.chapterId).toBeTruthy()
 
         const stageQuizzes = getQuizzesForStage(quizzes, stage.id)
 
@@ -45,5 +50,13 @@ describe('stage.utils data validation', () => {
 
     expect(absoluteBeginnerStage?.difficulty).toBe('absolute_beginner')
     expect(beginnerStage).toBeUndefined()
+  })
+
+  it('keeps chapter ids isolated by difficulty', () => {
+    const absoluteBeginnerChapter = getChaptersByDifficulty('absolute_beginner')[0]
+    const beginnerChapter = getChaptersByDifficulty('beginner')[0]
+
+    expect(absoluteBeginnerChapter.difficulty).toBe('absolute_beginner')
+    expect(beginnerChapter.id).not.toBe(absoluteBeginnerChapter.id)
   })
 })

@@ -17,8 +17,7 @@ export function StageHamster({
   animationToken = 0,
   className = '',
 }: StageHamsterProps) {
-  const [showSpriteAnimation, setShowSpriteAnimation] = useState(false)
-  const [showLastSpriteFrame, setShowLastSpriteFrame] = useState(false)
+  const [finishedAnimationToken, setFinishedAnimationToken] = useState<number | null>(null)
   const timeoutRef = useRef<number | null>(null)
 
   useEffect(() => {
@@ -32,22 +31,20 @@ export function StageHamster({
     clearRunningTimer()
 
     if (!shouldAnimate) {
-      setShowSpriteAnimation(false)
-      setShowLastSpriteFrame(false)
       return clearRunningTimer
     }
 
-    setShowSpriteAnimation(true)
-    setShowLastSpriteFrame(false)
-
     timeoutRef.current = window.setTimeout(() => {
       clearRunningTimer()
-      setShowSpriteAnimation(false)
-      setShowLastSpriteFrame(holdLastFrame)
+      setFinishedAnimationToken(animationToken)
     }, STAGE_CLEAR_DURATION_MS + 20)
 
     return clearRunningTimer
-  }, [animationToken, holdLastFrame, shouldAnimate])
+  }, [animationToken, shouldAnimate])
+
+  const showSpriteAnimation = shouldAnimate && finishedAnimationToken !== animationToken
+  const showLastSpriteFrame =
+    shouldAnimate && holdLastFrame && finishedAnimationToken === animationToken
 
   if (showSpriteAnimation) {
     return (

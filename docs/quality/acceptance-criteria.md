@@ -2,9 +2,11 @@
 
 ## Product Acceptance
 
-- 사용자는 `Home -> DifficultySelect -> StageMap -> Quiz -> Reward` 흐름을 끊김 없이 진행할 수 있어야 한다.
+- 사용자는 `Home -> DifficultySelect -> ChapterMap -> StageMap -> Quiz -> Reward` 흐름을 끊김 없이 진행할 수 있어야 한다.
 - 난이도는 `absolute_beginner`, `beginner`, `intermediate`, `advanced`, `conversation`, `toeic` 으로 분리되어야 한다.
-- 각 난이도는 독립적인 StageMap progress 를 가져야 한다.
+- 각 난이도는 독립적인 `ChapterMap` / `StageMap` progress 를 가져야 한다.
+- 난이도별 `Chapter` 는 최종 목표 기준 `10`개, `Chapter` 별 `Stage` 는 최종 목표 기준 `10`개, `Stage` 별 `Quiz` 는 정확히 `10`개라는 구조가 문서화되어야 한다.
+- 현재 seed 데이터가 최소 개수여도 타입과 규칙은 `Difficulty -> Chapter -> Stage -> Quiz` 구조를 따라야 한다.
 - `jelly` 는 전역 공통 자원으로 동작해야 한다.
 - Stage 시작만으로는 `jelly` 가 감소하지 않아야 한다.
 - 문제 제출 `1`회마다 `jelly` `1` 감소가 적용되어야 한다.
@@ -21,6 +23,10 @@
 - 각 화면의 핵심 행동은 빠르게 이해 가능해야 한다.
 - 긴 설명 없이도 다음 행동을 알 수 있어야 한다.
 - `locked`, `unlocked`, `completed` 상태가 시각적으로 구분되어야 한다.
+- `ChapterMap` 에서 `locked Chapter` 는 클릭 불가, `unlocked` 와 `completed Chapter` 는 클릭 가능해야 한다.
+- 각 난이도는 `Chapter 1`만 기본 `unlocked`, `Chapter 2~10`은 기본 `locked` 여야 한다.
+- 이전 `Chapter` 의 모든 `Stage` 완료 전에는 다음 `Chapter` 로 들어갈 수 없어야 한다.
+- 한 `Chapter` 완료 시 바로 다음 `Chapter` `1`개만 열려야 하며 그 이후 `Chapter` 는 계속 `locked` 여야 한다.
 - 귀여운 UX 는 존재하되 학습 흐름을 방해하지 않아야 한다.
 - 버튼은 충분히 크고 탭 가능해야 한다.
 - Quiz 화면에서 캐릭터와 하트는 제출 버튼 아래에 위치하고 보기 영역을 가리지 않아야 한다.
@@ -30,9 +36,12 @@
 ## Data Acceptance
 
 - difficulty, stage, quiz JSON 구조가 문서화된 스키마와 일치해야 한다.
+- chapter JSON 구조가 문서화된 스키마와 일치해야 한다.
 - 퀴즈 판정은 `deterministic validation` 이어야 한다.
 - `LLM validation` 은 사용되지 않아야 한다.
 - `requiredStageId` 기반 Stage 해금이 정상 동작해야 한다.
+- `requiredChapterId` 기반 Chapter 해금이 정상 동작해야 한다.
+- `locked Chapter` 를 URL 로 직접 열어도 `StageMap` 진입이 차단되어야 한다.
 - 난이도 간 progress 오염이 없어야 한다.
 
 ## Technical Acceptance

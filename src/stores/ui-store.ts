@@ -1,12 +1,5 @@
 import { create } from 'zustand'
-
-type DifficultyKey =
-  | 'absolute_beginner'
-  | 'beginner'
-  | 'intermediate'
-  | 'advanced'
-  | 'conversation'
-  | 'toeic'
+import type { DifficultyKey } from '../data/difficulties'
 
 type UiStore = {
   selectedDifficulty: DifficultyKey

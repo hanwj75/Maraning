@@ -12,11 +12,13 @@ export const INITIAL_FAIL_LIFE = 3
 export type QuizSubmitStatus = 'next' | 'finished' | 'retry' | 'failed'
 
 export function createQuizSession(params: {
+  chapterId: string
   stageId: string
   difficulty: DifficultyKey
   quizIds: string[]
 }): QuizSession {
   return {
+    chapterId: params.chapterId,
     stageId: params.stageId,
     difficulty: params.difficulty,
     quizIds: params.quizIds,
@@ -74,8 +76,9 @@ export function applyQuizSubmission(params: {
   const resetNoFailStreak = awardedCleanSolveBonus ? 0 : nextNoFailStreak
 
   const nextResult: QuizSessionResult = {
-    stageId: session.stageId,
-    difficulty: session.difficulty,
+      stageId: session.stageId,
+      chapterId: session.chapterId,
+      difficulty: session.difficulty,
     totalCount,
     correctCount: nextAnswers.filter((item) => item?.isCorrect).length,
     answers: nextAnswers,
@@ -110,7 +113,7 @@ export function applyQuizSubmission(params: {
 type QuizStore = {
   session: QuizSession | null
   result: QuizSessionResult | null
-  startSession: (params: { stageId: string; difficulty: DifficultyKey; quizIds: string[] }) => void
+  startSession: (params: { chapterId: string; stageId: string; difficulty: DifficultyKey; quizIds: string[] }) => void
   submitQuizAnswer: (answer: QuizSessionAnswer) => QuizSubmitOutcome
   clearSession: () => void
   clearResult: () => void
@@ -119,9 +122,10 @@ type QuizStore = {
 export const useQuizStore = create<QuizStore>((set, get) => ({
   session: null,
   result: null,
-  startSession: ({ stageId, difficulty, quizIds }) =>
+  startSession: ({ chapterId, stageId, difficulty, quizIds }) =>
     set({
       session: createQuizSession({
+        chapterId,
         stageId,
         difficulty,
         quizIds,

@@ -25,6 +25,7 @@ const incorrectAnswer: QuizSessionAnswer = {
 describe('quizStore helpers', () => {
   it('starts every stage session with failLife 3', () => {
     const session = createQuizSession({
+      chapterId: 'absolute_beginner_chapter_001',
       stageId: 'absolute-beginner.stage.001',
       difficulty: 'absolute_beginner',
       quizIds: Array.from({ length: 10 }, (_, index) => `quiz.${index + 1}`),
@@ -37,6 +38,7 @@ describe('quizStore helpers', () => {
   it('reduces failLife by 1 and keeps the same quiz index on an incorrect answer', () => {
     const nextState = applyQuizSubmission({
       session: createQuizSession({
+        chapterId: 'absolute_beginner_chapter_001',
         stageId: 'absolute-beginner.stage.001',
         difficulty: 'absolute_beginner',
         quizIds: Array.from({ length: 10 }, (_, index) => `quiz.${index + 1}`),
@@ -55,6 +57,7 @@ describe('quizStore helpers', () => {
   it('moves to the next quiz only when the answer is correct', () => {
     const nextState = applyQuizSubmission({
       session: createQuizSession({
+        chapterId: 'absolute_beginner_chapter_001',
         stageId: 'absolute-beginner.stage.001',
         difficulty: 'absolute_beginner',
         quizIds: Array.from({ length: 10 }, (_, index) => `quiz.${index + 1}`),
@@ -73,6 +76,7 @@ describe('quizStore helpers', () => {
   it('fails the stage when failLife reaches 0', () => {
     const session = {
       ...createQuizSession({
+        chapterId: 'absolute_beginner_chapter_001',
         stageId: 'absolute-beginner.stage.001',
         difficulty: 'absolute_beginner',
         quizIds: Array.from({ length: 10 }, (_, index) => `quiz.${index + 1}`),
@@ -96,6 +100,7 @@ describe('quizStore helpers', () => {
   it('awards a clean solve bonus trigger on every 5th correct answer without failures', () => {
     const session = {
       ...createQuizSession({
+        chapterId: 'absolute_beginner_chapter_001',
         stageId: 'absolute-beginner.stage.001',
         difficulty: 'absolute_beginner',
         quizIds: Array.from({ length: 10 }, (_, index) => `quiz.${index + 1}`),
@@ -108,6 +113,7 @@ describe('quizStore helpers', () => {
       session,
       result: {
         stageId: session.stageId,
+        chapterId: session.chapterId,
         difficulty: session.difficulty,
         totalCount: 10,
         correctCount: 4,
@@ -132,6 +138,7 @@ describe('quizStore helpers', () => {
   it('keeps the session alive until result navigation after the 10th correct answer', () => {
     const session = {
       ...createQuizSession({
+        chapterId: 'absolute_beginner_chapter_001',
         stageId: 'absolute-beginner.stage.001',
         difficulty: 'absolute_beginner',
         quizIds: Array.from({ length: 10 }, (_, index) => `quiz.${index + 1}`),
@@ -143,6 +150,7 @@ describe('quizStore helpers', () => {
       session,
       result: {
         stageId: session.stageId,
+        chapterId: session.chapterId,
         difficulty: session.difficulty,
         totalCount: 10,
         correctCount: 9,

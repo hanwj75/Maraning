@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { DifficultySelectPage } from '../pages/DifficultySelectPage'
+import { ChapterMapPage } from '../pages/ChapterMapPage'
 import { HomePage } from '../pages/HomePage'
 import { QuizPage } from '../pages/QuizPage'
 import { ResultPage } from '../pages/ResultPage'
@@ -25,8 +26,9 @@ function AnimatedRoutes() {
           <Route path="/" element={<SplashPage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/difficulty" element={<DifficultySelectPage />} />
-          <Route path="/stages" element={<StageMapPage />} />
-          <Route path="/quiz" element={<QuizPage />} />
+          <Route path="/chapters/:difficultyId" element={<ChapterMapPage />} />
+          <Route path="/stages/:difficultyId/:chapterId" element={<StageMapPage />} />
+          <Route path="/quiz/:difficultyId/:chapterId/:stageId" element={<QuizPage />} />
           <Route path="/result" element={<ResultPage />} />
           <Route path="/reward" element={<RewardPage />} />
         </Routes>

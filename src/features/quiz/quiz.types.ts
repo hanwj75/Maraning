@@ -52,6 +52,7 @@ export type Quiz = {
 }
 
 export type QuizSession = {
+  chapterId: string
   stageId: string
   difficulty: DifficultyKey
   quizIds: string[]
@@ -67,6 +68,7 @@ export type QuizSessionAnswer = {
 }
 
 export type QuizSessionResult = {
+  chapterId: string
   stageId: string
   difficulty: DifficultyKey
   totalCount: number

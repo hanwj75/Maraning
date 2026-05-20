@@ -2,6 +2,7 @@
   {
     "id": "toeic.stage.001",
     "difficulty": "toeic",
+    "chapterId": "toeic_chapter_001",
     "order": 1,
     "title": "회의 일정 공지",
     "description": "회의 시작 시간 표현을 10문제로 반복 학습한다",
@@ -29,6 +30,7 @@
   {
     "id": "toeic.stage.002",
     "difficulty": "toeic",
+    "chapterId": "toeic_chapter_001",
     "order": 2,
     "title": "보고서 제출 공지",
     "description": "보고서 제출 표현을 10문제로 반복 학습한다",

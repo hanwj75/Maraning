@@ -1,0 +1,14 @@
+[
+  {
+    "id": "advanced_chapter_001",
+    "difficulty": "advanced",
+    "order": 1,
+    "title": "고급 문장 익히기",
+    "description": "고수 난이도의 긴 문장을 단계별로 익혀요.",
+    "stageIds": [
+      "advanced.stage.001",
+      "advanced.stage.002"
+    ],
+    "requiredChapterId": null
+  }
+]

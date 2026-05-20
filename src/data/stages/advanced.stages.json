@@ -2,6 +2,7 @@
   {
     "id": "advanced.stage.001",
     "difficulty": "advanced",
+    "chapterId": "advanced_chapter_001",
     "order": 1,
     "title": "아침 영어 공부",
     "description": "아침에 영어를 공부하는 긴 문장을 10문제로 반복 학습한다",
@@ -29,6 +30,7 @@
   {
     "id": "advanced.stage.002",
     "difficulty": "advanced",
+    "chapterId": "advanced_chapter_001",
     "order": 2,
     "title": "저녁 책 읽기",
     "description": "저녁에 책을 읽는 긴 문장을 10문제로 반복 학습한다",

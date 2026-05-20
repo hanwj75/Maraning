@@ -3,6 +3,7 @@
 ## Purpose
 
 - 이 스키마는 `Stage` 정의와 Stage 진행 상태 계산에 필요한 필드를 규정한다.
+- `Stage` 는 `Chapter` 내부의 작은 스테이지다.
 - 해금 규칙은 데이터 기반으로 해석 가능해야 한다.
 - 기본 모델은 `linear progression` 과 `requiredStageId` 기반 해금이다.
 
@@ -11,8 +12,9 @@
 ```json
 {
   "$schema": "https://example.com/schemas/stage.schema.json",
-  "id": "ab.stage.002",
+  "id": "absolute-beginner.stage.002",
   "difficulty": "absolute_beginner",
+  "chapterId": "absolute_beginner_chapter_001",
   "order": 2,
   "title": "사과 익히기",
   "description": "사과라는 단어와 기본 문장을 10문제로 반복 학습한다",
@@ -43,6 +45,7 @@
 
 - `id`: Stage 고유 식별자다.
 - `difficulty`: 이 Stage 가 속한 난이도다.
+- `chapterId`: 이 Stage 가 속한 `Chapter` 식별자다.
 - `order`: 같은 난이도 StageMap 안에서의 순서다.
 - `title`: 사용자에게 보여줄 Stage 이름이다.
 - `description`: Stage 의 짧은 학습 설명이다.
@@ -95,6 +98,7 @@
 
 - `id` 는 같은 난이도 트랙 안에서 유일해야 한다.
 - `difficulty` 는 상위 난이도 JSON 의 `difficulty` 와 일치해야 한다.
+- `chapterId` 는 같은 난이도 안의 유효한 `Chapter` 를 가리켜야 한다.
 - `order` 는 양의 정수이며 중복되면 안 된다.
 - `title` 과 `description` 은 비어 있을 수 없다.
 - `learningTarget.id` 는 같은 난이도 데이터셋 안에서 참조 가능해야 한다.
@@ -110,6 +114,7 @@
 
 - Stage 상태 계산은 난이도별 `Progress` 와 연결된다.
 - `locked` 여부는 `requiredStageId` 완료 여부로 계산한다.
+- 해당 `Stage` 의 `chapterId` 가 가리키는 `Chapter` 자체가 `unlocked` 여야 Stage 해금 계산을 시작할 수 있다.
 - `completed` Stage 는 재진입 가능하지만 해금 계산상 여전히 완료 상태로 유지한다.
 - 다른 난이도의 Progress 는 현재 Stage 상태 계산에 사용하지 않는다.
 

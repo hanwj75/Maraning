@@ -32,7 +32,8 @@
 
 - `quizId`: 퀴즈 고유 식별자다.
 - `difficulty`: 퀴즈가 속한 난이도다.
-- `stageId`: 퀴즈가 속한 Stage 식별자다.
+- `stageId`: 퀴즈가 속한 `Stage` 식별자다.
+- `Chapter` 는 `Stage` 를 통해 간접 참조되며, 필요 시 `chapterId` 를 추가할 수 있지만 현재 로딩 기준은 `stageId` 다.
 - `learningTargetId`: Stage 의 학습 목표 식별자다.
 - `targetKey`: 학습 목표를 간단히 참조하는 키다.
 - `quizType`: 문제 타입이다.
@@ -53,6 +54,7 @@
 ## Stage Quiz Count Policy
 
 - Stage 하나는 정확히 `10`개의 `Quiz` 로 구성된다.
+- `Stage` 는 반드시 하나의 `Chapter` 에 속하고, `Quiz` 는 그 `Stage` 를 따라 같은 `Chapter` 컨텍스트 안에서 사용된다.
 - `Quiz` 스키마는 단건 구조를 정의하지만, Stage 레벨에서 정확히 `10`개가 묶여야 한다.
 - 그 `10`개는 같은 목표를 반복해야 하며, 여러 주제를 섞어서는 안 된다.
 

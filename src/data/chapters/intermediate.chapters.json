@@ -1,0 +1,14 @@
+[
+  {
+    "id": "intermediate_chapter_001",
+    "difficulty": "intermediate",
+    "order": 1,
+    "title": "좋아하는 것 말하기",
+    "description": "중수 난이도의 선호 표현을 반복 연습해요.",
+    "stageIds": [
+      "intermediate.stage.001",
+      "intermediate.stage.002"
+    ],
+    "requiredChapterId": null
+  }
+]

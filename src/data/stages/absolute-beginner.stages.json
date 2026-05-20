@@ -2,6 +2,7 @@
   {
     "id": "absolute-beginner.stage.001",
     "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_001",
     "order": 1,
     "title": "사과 익히기",
     "description": "사과 단어와 기본 문장을 10문제로 반복 학습한다",
@@ -29,6 +30,7 @@
   {
     "id": "absolute-beginner.stage.002",
     "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_001",
     "order": 2,
     "title": "고양이 익히기",
     "description": "고양이 단어와 기본 문장을 10문제로 반복 학습한다",
@@ -56,6 +58,7 @@
   {
     "id": "absolute-beginner.stage.003",
     "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_001",
     "order": 3,
     "title": "강아지 익히기",
     "description": "강아지 단어와 기본 문장을 10문제로 반복 학습한다",

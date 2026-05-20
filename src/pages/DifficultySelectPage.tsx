@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { buildChapterMapPath } from '../features/stage/stage.routes'
 import { CharacterPanel } from '../shared/components/CharacterPanel'
 import { CuteTopBar } from '../shared/components/CuteTopBar'
 import { PageFrame } from '../shared/components/PageFrame'
@@ -31,7 +32,7 @@ export function DifficultySelectPage() {
               type="button"
               onClick={() => {
                 setSelectedDifficulty(difficulty.id)
-                navigate('/stages')
+                navigate(buildChapterMapPath(difficulty.id))
               }}
               className={`rounded-[1.8rem] px-4 py-5 text-left shadow-[0_14px_28px_rgba(198,140,95,0.18)] transition-transform duration-100 active:scale-95 ${
                 active

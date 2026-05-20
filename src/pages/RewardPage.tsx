@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
+import { buildStageMapPath } from '../features/stage/stage.routes'
 import { CharacterPanel } from '../shared/components/CharacterPanel'
 import { CuteTopBar } from '../shared/components/CuteTopBar'
 import { PageFrame } from '../shared/components/PageFrame'
@@ -11,6 +12,7 @@ import { useQuizStore } from '../stores/quizStore'
 export function RewardPage() {
   const currentJelly = useJellyStore((state) => state.current)
   const syncDailyJelly = useJellyStore((state) => state.syncDailyJelly)
+  const result = useQuizStore((state) => state.result)
   const clearResult = useQuizStore((state) => state.clearResult)
 
   useEffect(() => {
@@ -22,6 +24,12 @@ export function RewardPage() {
       clearResult()
     }
   }, [clearResult])
+
+  const stageMapPath = result ? buildStageMapPath(result.difficulty, result.chapterId) : '/difficulty'
+
+  if (!result) {
+    return <Navigate to="/difficulty" replace />
+  }
 
   return (
     <PageFrame contentClassName="gap-5">
@@ -63,7 +71,7 @@ export function RewardPage() {
       </section>
 
       <div className="flex gap-3">
-        <Link to="/stages" className="game-primary-button flex-1">
+        <Link to={stageMapPath} className="game-primary-button flex-1">
           스테이지로
         </Link>
         <Link to="/home" className="game-secondary-button flex-1">

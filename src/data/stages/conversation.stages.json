@@ -2,6 +2,7 @@
   {
     "id": "conversation.stage.001",
     "difficulty": "conversation",
+    "chapterId": "conversation_chapter_001",
     "order": 1,
     "title": "안부 묻기",
     "description": "How are you 와 기본 응답을 10문제로 반복 학습한다",
@@ -29,6 +30,7 @@
   {
     "id": "conversation.stage.002",
     "difficulty": "conversation",
+    "chapterId": "conversation_chapter_001",
     "order": 2,
     "title": "감사 말하기",
     "description": "Thank you 와 기본 응답을 10문제로 반복 학습한다",

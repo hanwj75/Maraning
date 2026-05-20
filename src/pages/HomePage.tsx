@@ -50,7 +50,7 @@ export function HomePage() {
           <Link to="/difficulty" className="game-primary-button">
             난이도 선택하기
           </Link>
-          <Link to="/stages" className="game-secondary-button">
+          <Link to="/difficulty" className="game-secondary-button">
             학습 시작
           </Link>
         </div>

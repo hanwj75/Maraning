@@ -1,0 +1,14 @@
+[
+  {
+    "id": "toeic_chapter_001",
+    "difficulty": "toeic",
+    "order": 1,
+    "title": "토익 기초 워밍업",
+    "description": "토익 기본 어휘와 문장 감각을 가볍게 시작해요.",
+    "stageIds": [
+      "toeic.stage.001",
+      "toeic.stage.002"
+    ],
+    "requiredChapterId": null
+  }
+]

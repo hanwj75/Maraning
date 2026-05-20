@@ -9,6 +9,10 @@ export const difficultyKeys = [
 
 export type DifficultyKey = (typeof difficultyKeys)[number]
 
+export function isDifficultyKey(value: string): value is DifficultyKey {
+  return difficultyKeys.includes(value as DifficultyKey)
+}
+
 export const difficultyLabels: Record<DifficultyKey, string> = {
   absolute_beginner: '왕초보',
   beginner: '초보',
@@ -25,6 +29,15 @@ export const difficultyStageDataFiles: Record<DifficultyKey, string> = {
   advanced: 'src/data/stages/advanced.stages.json',
   conversation: 'src/data/stages/conversation.stages.json',
   toeic: 'src/data/stages/toeic.stages.json',
+}
+
+export const difficultyChapterDataFiles: Record<DifficultyKey, string> = {
+  absolute_beginner: 'src/data/chapters/absolute-beginner.chapters.json',
+  beginner: 'src/data/chapters/beginner.chapters.json',
+  intermediate: 'src/data/chapters/intermediate.chapters.json',
+  advanced: 'src/data/chapters/advanced.chapters.json',
+  conversation: 'src/data/chapters/conversation.chapters.json',
+  toeic: 'src/data/chapters/toeic.chapters.json',
 }
 
 export const difficultyQuizDataFiles: Record<DifficultyKey, string> = {
