@@ -122,7 +122,9 @@
       ]
     },
     "explanation": "영어 문장의 빈칸을 완성해요.",
-    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+    "question": "문장이 \"이것은 사과입니다\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
+    "targetKo": "이것은 사과입니다",
+    "targetEn": "apple"
   },
   {
     "id": "absolute-beginner.quiz.004",
@@ -284,7 +286,9 @@
       ]
     },
     "explanation": "영어 문장의 빈칸을 완성해요.",
-    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+    "question": "문장이 \"이것은 사과입니다\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
+    "targetKo": "이것은 사과입니다",
+    "targetEn": "apple"
   },
   {
     "id": "absolute-beginner.quiz.008",
@@ -387,7 +391,9 @@
       ]
     },
     "explanation": "영어 문장의 빈칸을 완성해요.",
-    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+    "question": "문장이 \"이것은 사과입니다\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
+    "targetKo": "이것은 사과입니다",
+    "targetEn": "apple"
   },
   {
     "id": "absolute-beginner.quiz.011",
@@ -512,7 +518,9 @@
       ]
     },
     "explanation": "영어 문장의 빈칸을 완성해요.",
-    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+    "question": "문장이 \"이것은 고양이입니다\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
+    "targetKo": "이것은 고양이입니다",
+    "targetEn": "cat"
   },
   {
     "id": "absolute-beginner.quiz.014",
@@ -674,7 +682,9 @@
       ]
     },
     "explanation": "영어 문장의 빈칸을 완성해요.",
-    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+    "question": "문장이 \"이것은 고양이입니다\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
+    "targetKo": "이것은 고양이입니다",
+    "targetEn": "cat"
   },
   {
     "id": "absolute-beginner.quiz.018",
@@ -777,7 +787,9 @@
       ]
     },
     "explanation": "영어 문장의 빈칸을 완성해요.",
-    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+    "question": "문장이 \"이것은 고양이입니다\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
+    "targetKo": "이것은 고양이입니다",
+    "targetEn": "cat"
   },
   {
     "id": "absolute-beginner.quiz.021",
@@ -902,7 +914,9 @@
       ]
     },
     "explanation": "영어 문장의 빈칸을 완성해요.",
-    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+    "question": "문장이 \"이것은 강아지입니다\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
+    "targetKo": "이것은 강아지입니다",
+    "targetEn": "dog"
   },
   {
     "id": "absolute-beginner.quiz.024",
@@ -1064,7 +1078,9 @@
       ]
     },
     "explanation": "영어 문장의 빈칸을 완성해요.",
-    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+    "question": "문장이 \"이것은 강아지입니다\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
+    "targetKo": "이것은 강아지입니다",
+    "targetEn": "dog"
   },
   {
     "id": "absolute-beginner.quiz.028",
@@ -1167,6 +1183,8 @@
       ]
     },
     "explanation": "영어 문장의 빈칸을 완성해요.",
-    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+    "question": "문장이 \"이것은 강아지입니다\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
+    "targetKo": "이것은 강아지입니다",
+    "targetEn": "dog"
   }
 ]

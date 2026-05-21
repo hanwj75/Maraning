@@ -38,6 +38,11 @@
 - difficulty, stage, quiz JSON 구조가 문서화된 스키마와 일치해야 한다.
 - chapter JSON 구조가 문서화된 스키마와 일치해야 한다.
 - 퀴즈 판정은 `deterministic validation` 이어야 한다.
+- 모든 choices 기반 문제는 화면 표시 전에 shuffle 되더라도 정답 판정이 `answer value` 기준으로 유지되어야 한다.
+- `word_order` 는 display token 카드만 shuffle 하고 `answerTokens` 원본 순서는 유지해야 한다.
+- `matching` 문제는 정답 pair 관계를 유지하고 왼쪽 한국어 카드와 오른쪽 영어 카드 표시 순서만 각각 shuffle 해야 한다.
+- 같은 `QuizSession` 안에서는 한 번 생성된 shuffle 결과가 유지되어야 한다.
+- `blank_fill` 문제는 `question` 에 목표 한국어 의미 또는 전체 문장 뜻이 포함되어, 사용자가 prompt 만 보지 않고도 무엇을 채워야 하는지 알 수 있어야 한다.
 - `LLM validation` 은 사용되지 않아야 한다.
 - `requiredStageId` 기반 Stage 해금이 정상 동작해야 한다.
 - `requiredChapterId` 기반 Chapter 해금이 정상 동작해야 한다.

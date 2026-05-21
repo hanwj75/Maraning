@@ -154,7 +154,9 @@
       ]
     },
     "explanation": "대화 시작 표현의 핵심 단어를 넣어요.",
-    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+    "question": "문장이 \"저는 잘 지내요\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
+    "targetKo": "저는 잘 지내요",
+    "targetEn": "you"
   },
   {
     "id": "conversation.quiz.005",
@@ -306,7 +308,9 @@
       ]
     },
     "explanation": "응답 문장을 완성해요.",
-    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+    "question": "문장이 \"저는 잘 지내요\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
+    "targetKo": "저는 잘 지내요",
+    "targetEn": "good"
   },
   {
     "id": "conversation.quiz.009",
@@ -372,7 +376,9 @@
       ]
     },
     "explanation": "응답 문장을 완성해요.",
-    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+    "question": "문장이 \"저는 잘 지내요\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
+    "targetKo": "저는 잘 지내요",
+    "targetEn": "good"
   },
   {
     "id": "conversation.quiz.011",
@@ -524,7 +530,9 @@
       ]
     },
     "explanation": "대화 시작 표현의 핵심 단어를 넣어요.",
-    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+    "question": "문장이 \"천만에요\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
+    "targetKo": "천만에요",
+    "targetEn": "you"
   },
   {
     "id": "conversation.quiz.015",
@@ -676,7 +684,9 @@
       ]
     },
     "explanation": "응답 문장을 완성해요.",
-    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+    "question": "문장이 \"천만에요\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
+    "targetKo": "천만에요",
+    "targetEn": "welcome"
   },
   {
     "id": "conversation.quiz.019",
@@ -742,6 +752,8 @@
       ]
     },
     "explanation": "응답 문장을 완성해요.",
-    "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요."
+    "question": "문장이 \"천만에요\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
+    "targetKo": "천만에요",
+    "targetEn": "welcome"
   }
 ]

@@ -1,6 +1,23 @@
 import { describe, expect, it } from '@jest/globals'
-import type { QuizSessionAnswer } from '../features/quiz/quiz.types'
+import type { Quiz, QuizSessionAnswer } from '../features/quiz/quiz.types'
 import { INITIAL_FAIL_LIFE, applyQuizSubmission, createQuizSession } from './quizStore'
+
+const stageQuizzes: Quiz[] = Array.from({ length: 10 }, (_, index) => ({
+  id: `quiz.${index + 1}`,
+  stageId: 'absolute-beginner.stage.001',
+  difficulty: 'absolute_beginner',
+  type: 'image_select',
+  question: `question ${index + 1}`,
+  prompt: `prompt ${index + 1}`,
+  choices: [
+    { id: 'a', text: 'apple' },
+    { id: 'b', text: 'cat' },
+    { id: 'c', text: 'dog' },
+    { id: 'd', text: 'book' },
+  ],
+  answer: { correctChoiceId: 'a' },
+  explanation: 'apple이 정답입니다.',
+}))
 
 const correctAnswer: QuizSessionAnswer = {
   quizId: 'quiz.001',
@@ -29,6 +46,7 @@ describe('quizStore helpers', () => {
       stageId: 'absolute-beginner.stage.001',
       difficulty: 'absolute_beginner',
       quizIds: Array.from({ length: 10 }, (_, index) => `quiz.${index + 1}`),
+      quizzes: stageQuizzes,
     })
 
     expect(session.failLife).toBe(INITIAL_FAIL_LIFE)
@@ -42,6 +60,7 @@ describe('quizStore helpers', () => {
         stageId: 'absolute-beginner.stage.001',
         difficulty: 'absolute_beginner',
         quizIds: Array.from({ length: 10 }, (_, index) => `quiz.${index + 1}`),
+        quizzes: stageQuizzes,
       }),
       result: null,
       answer: incorrectAnswer,
@@ -61,6 +80,7 @@ describe('quizStore helpers', () => {
         stageId: 'absolute-beginner.stage.001',
         difficulty: 'absolute_beginner',
         quizIds: Array.from({ length: 10 }, (_, index) => `quiz.${index + 1}`),
+        quizzes: stageQuizzes,
       }),
       result: null,
       answer: correctAnswer,
@@ -80,6 +100,7 @@ describe('quizStore helpers', () => {
         stageId: 'absolute-beginner.stage.001',
         difficulty: 'absolute_beginner',
         quizIds: Array.from({ length: 10 }, (_, index) => `quiz.${index + 1}`),
+        quizzes: stageQuizzes,
       }),
       failLife: 1,
     }
@@ -104,6 +125,7 @@ describe('quizStore helpers', () => {
         stageId: 'absolute-beginner.stage.001',
         difficulty: 'absolute_beginner',
         quizIds: Array.from({ length: 10 }, (_, index) => `quiz.${index + 1}`),
+        quizzes: stageQuizzes,
       }),
       currentQuizIndex: 4,
       noFailStreak: 4,
@@ -142,6 +164,7 @@ describe('quizStore helpers', () => {
         stageId: 'absolute-beginner.stage.001',
         difficulty: 'absolute_beginner',
         quizIds: Array.from({ length: 10 }, (_, index) => `quiz.${index + 1}`),
+        quizzes: stageQuizzes,
       }),
       currentQuizIndex: 9,
     }
@@ -171,5 +194,82 @@ describe('quizStore helpers', () => {
     expect(nextState.awardedCleanSolveBonus).toBe(false)
     expect(nextState.session?.currentQuizIndex).toBe(9)
     expect(nextState.result?.answers).toHaveLength(10)
+  })
+
+  it('stores display choices once per session and keeps them on retry', () => {
+    const originalRandom = Math.random
+    let callCount = 0
+    Math.random = () => {
+      callCount += 1
+      return callCount === 1 ? 0.1 : 0
+    }
+
+    try {
+      const session = createQuizSession({
+        chapterId: 'absolute_beginner_chapter_001',
+        stageId: 'absolute-beginner.stage.001',
+        difficulty: 'absolute_beginner',
+        quizIds: Array.from({ length: 10 }, (_, index) => `quiz.${index + 1}`),
+        quizzes: stageQuizzes,
+      })
+
+      const firstDisplay = session.displayChoiceIdsByQuizId['quiz.1']
+      const nextState = applyQuizSubmission({
+        session,
+        result: null,
+        answer: incorrectAnswer,
+      })
+
+      expect(firstDisplay).not.toEqual(['a', 'b', 'c', 'd'])
+      expect(nextState.session?.displayChoiceIdsByQuizId['quiz.1']).toEqual(firstDisplay)
+      expect(nextState.session?.currentQuizIndex).toBe(0)
+    } finally {
+      Math.random = originalRandom
+    }
+  })
+
+  it('stores shuffled display tokens for word_order quizzes in the session', () => {
+    const originalRandom = Math.random
+    let callCount = 0
+    Math.random = () => {
+      callCount += 1
+      return callCount === 1 ? 0.1 : 0
+    }
+
+    try {
+      const session = createQuizSession({
+        chapterId: 'absolute_beginner_chapter_001',
+        stageId: 'absolute-beginner.stage.001',
+        difficulty: 'absolute_beginner',
+        quizIds: ['quiz.word'],
+        quizzes: [
+          {
+            id: 'quiz.word',
+            stageId: 'absolute-beginner.stage.001',
+            difficulty: 'absolute_beginner',
+            type: 'word_order',
+            question: '순서를 맞추세요.',
+            prompt: '문장을 배열하세요.',
+            choices: [
+              { id: 't1', text: 'This' },
+              { id: 't2', text: 'is' },
+              { id: 't3', text: 'an' },
+              { id: 't4', text: 'apple' },
+            ],
+            answer: { orderedTokens: ['This', 'is', 'an', 'apple'] },
+            explanation: 'This is an apple이 정답입니다.',
+          },
+        ],
+      })
+
+      expect(session.displayChoiceIdsByQuizId['quiz.word']).not.toEqual([
+        't1',
+        't2',
+        't3',
+        't4',
+      ])
+    } finally {
+      Math.random = originalRandom
+    }
   })
 })

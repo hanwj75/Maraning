@@ -97,6 +97,7 @@ describe('stage and quiz core flow', () => {
   it('does not complete or unlock a stage when the session fails', () => {
     const chapters = getChaptersByDifficulty('absolute_beginner')
     const stages = getStagesByDifficulty('absolute_beginner')
+    const quizzes = getQuizzesByDifficulty('absolute_beginner')
     const progress = createInitialDifficultyProgress(chapters, stages)
     const failedSession = applyQuizSubmission({
       session: {
@@ -105,6 +106,10 @@ describe('stage and quiz core flow', () => {
           stageId: stages[0].id,
           difficulty: 'absolute_beginner',
           quizIds: stages[0].quizIds,
+          quizzes: getOrderedQuizzesByIds(
+            quizzes.filter((quiz) => quiz.stageId === stages[0].id),
+            stages[0].quizIds,
+          ),
         }),
         failLife: 1,
       },

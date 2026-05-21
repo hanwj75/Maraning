@@ -5,7 +5,9 @@ import type {
   QuizSessionAnswer,
   QuizSessionResult,
   QuizSubmitOutcome,
+  Quiz,
 } from '../features/quiz/quiz.types'
+import { createQuizDisplayState } from '../features/quiz/quiz.utils'
 
 export const INITIAL_FAIL_LIFE = 3
 
@@ -16,12 +18,17 @@ export function createQuizSession(params: {
   stageId: string
   difficulty: DifficultyKey
   quizIds: string[]
+  quizzes: readonly Quiz[]
 }): QuizSession {
+  const displayState = createQuizDisplayState(params.quizzes)
+
   return {
     chapterId: params.chapterId,
     stageId: params.stageId,
     difficulty: params.difficulty,
     quizIds: params.quizIds,
+    displayChoiceIdsByQuizId: displayState.displayChoiceIdsByQuizId,
+    matchingDisplayByQuizId: displayState.matchingDisplayByQuizId,
     currentQuizIndex: 0,
     failLife: INITIAL_FAIL_LIFE,
     noFailStreak: 0,
@@ -113,7 +120,13 @@ export function applyQuizSubmission(params: {
 type QuizStore = {
   session: QuizSession | null
   result: QuizSessionResult | null
-  startSession: (params: { chapterId: string; stageId: string; difficulty: DifficultyKey; quizIds: string[] }) => void
+  startSession: (params: {
+    chapterId: string
+    stageId: string
+    difficulty: DifficultyKey
+    quizIds: string[]
+    quizzes: readonly Quiz[]
+  }) => void
   submitQuizAnswer: (answer: QuizSessionAnswer) => QuizSubmitOutcome
   clearSession: () => void
   clearResult: () => void
@@ -122,13 +135,14 @@ type QuizStore = {
 export const useQuizStore = create<QuizStore>((set, get) => ({
   session: null,
   result: null,
-  startSession: ({ chapterId, stageId, difficulty, quizIds }) =>
+  startSession: ({ chapterId, stageId, difficulty, quizIds, quizzes }) =>
     set({
       session: createQuizSession({
         chapterId,
         stageId,
         difficulty,
         quizIds,
+        quizzes,
       }),
       result: null,
     }),

@@ -4,8 +4,10 @@ export const maraningAssets = {
   hamster: '/assets/maraning/hamster_char.png',
   hamsterFail1: '/assets/maraning_char/hamster_char_fail1.png',
   hamsterFail2: '/assets/maraning_char/hamster_char_fail2.png',
-  hamsterFailLifeState1Sprite: '/assets/maraning_char/hamster_fail_life_state1.png',
-  hamsterFailLifeState2Sprite: '/assets/maraning_char/hamster_fail_life_state2.png',
+  hamsterFailLifeState1Sprite:
+    '/assets/maraning_char/hamster_fail_life_state1.png',
+  hamsterFailLifeState2Sprite:
+    '/assets/maraning_char/hamster_fail_life_state2.png',
   hamsterStageClearSprite: '/assets/maraning_char/hamster_stage_clear.png',
   homeButton: '/assets/maraning/home_button.png',
   learningHp: '/assets/maraning/learning_hp.png',
@@ -14,7 +16,7 @@ export const maraningAssets = {
   pawActive: '/assets/maraning/paw_active_single.png',
   pawLocked: '/assets/maraning/paw_locked_single.png',
   shareButton: '/assets/maraning/share_button.png',
-  topbar: '/assets/maraning/topbar.png',
+  topbar: '/assets/maraning/stage_map_topbar.png',
   numberOfDaysConnected: '/assets/maraning/Number_of_days connected.png',
 } as const
 

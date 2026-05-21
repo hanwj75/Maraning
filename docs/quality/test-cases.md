@@ -12,6 +12,12 @@
 - 현재 Chapter 의 Stage 를 모두 완료하면 다음 Chapter 가 `unlocked` 되어야 한다.
 - `completed` Stage 는 replay 가능해야 한다.
 - `image_select`, `matching`, `word_order`, `blank_fill` 각각이 결정론적으로 채점되어야 한다.
+- 모든 choices 기반 문제는 `QuizSession` 시작 시 display 순서가 shuffle 되어야 한다.
+- 문장 선택형 문제도 display sentence card 순서가 shuffle 되어야 한다.
+- choices 기반 문제는 정답 위치가 바뀌어도 `answer value` 기준으로 정답 판정이 유지되어야 한다.
+- `word_order` 는 display token 카드가 shuffle 되어야 하고 `answerTokens` 원본 순서는 유지되어야 한다.
+- `matching` 은 원본 pair 관계를 유지한 채 왼쪽 한국어 카드와 오른쪽 영어 카드 표시 순서만 각각 shuffle 되어야 한다.
+- `blank_fill` 문제는 `question` 만 보고도 무엇을 넣어야 하는지 알 수 있도록 목표 한국어 의미나 문장 뜻을 포함해야 한다.
 - `word_order` 와 `blank_fill` 은 대소문자 무시 옵션을 지원해야 한다.
 - Stage 시작만으로는 `jelly` 감소가 발생하지 않아야 한다.
 - 문제 제출 `1`회마다 `jelly` `1` 감소가 발생해야 한다.
@@ -27,6 +33,8 @@
 ## Edge Cases
 
 - `jelly = 0` 일 때 제출이 차단되어야 한다.
+- 같은 StageSession 안에서는 오답 후 같은 문제를 다시 풀 때 보기 위치가 바뀌면 안 된다.
+- `blank_fill` 에서 `This is a ___` 같은 prompt 만으로 정답 의미가 드러나지 않으면 `question` 에서 그 의미를 직접 설명해야 한다.
 - `locked Chapter` 는 클릭할 수 없어야 한다.
 - `locked Chapter` 를 직접 URL 로 열어도 `StageMap` 진입이 차단되어야 한다.
 - 스테이지 클리어 또는 실패로 `Quiz` 화면을 벗어나면 실패 캐릭터 이미지는 기본 `hamster_char` 로 복구되고 진행 중 애니메이션 타이머는 정리되어야 한다.

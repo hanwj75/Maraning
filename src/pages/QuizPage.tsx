@@ -9,6 +9,8 @@ import { PageFrame } from '../shared/components/PageFrame'
 import { getQuizzesByDifficulty } from '../features/quiz/quiz.data'
 import {
   buildQuizSessionAnswer,
+  getDisplayChoicesForQuiz,
+  getMatchingDisplayChoicesForQuiz,
   getOrderedQuizzesByIds,
   getQuizProgressLabel,
 } from '../features/quiz/quiz.utils'
@@ -49,7 +51,7 @@ export function QuizPage() {
   const [matchingPairs, setMatchingPairs] = useState<
     Array<{ leftId: string; rightId: string }>
   >([])
-  const [pendingLeftId, setPendingLeftId] = useState<string | null>(null)
+  const [pendingLeftChoiceId, setPendingLeftChoiceId] = useState<string | null>(null)
   const [showJellyRecoveryDialog, setShowJellyRecoveryDialog] = useState(false)
   const [showCorrectOverlay, setShowCorrectOverlay] = useState(false)
   const [currentHamsterSrc, setCurrentHamsterSrc] = useState<string>(
@@ -103,22 +105,55 @@ export function QuizPage() {
   const progressLabel = session
     ? getQuizProgressLabel(session.currentQuizIndex, quizzes.length)
     : '0 / 10'
+  const displayChoices = useMemo(
+    () =>
+      currentQuiz && session
+        ? getDisplayChoicesForQuiz(currentQuiz, session.displayChoiceIdsByQuizId)
+        : [],
+    [currentQuiz, session],
+  )
+  const matchingDisplay = useMemo(
+    () =>
+      currentQuiz && session
+        ? getMatchingDisplayChoicesForQuiz(
+            currentQuiz,
+            session.matchingDisplayByQuizId,
+          )
+        : { leftChoiceIds: [], rightChoiceIds: [] },
+    [currentQuiz, session],
+  )
   const leftChoices = useMemo(
     () =>
-      currentQuiz?.choices.filter((choice) => choice.id.startsWith('l')) ?? [],
-    [currentQuiz],
+      currentQuiz
+        ? matchingDisplay.leftChoiceIds
+            .map((choiceId) =>
+              currentQuiz.choices.find((choice) => choice.id === choiceId),
+            )
+            .filter((choice): choice is (typeof currentQuiz.choices)[number] =>
+              Boolean(choice),
+            )
+        : [],
+    [currentQuiz, matchingDisplay.leftChoiceIds],
   )
   const rightChoices = useMemo(
     () =>
-      currentQuiz?.choices.filter((choice) => choice.id.startsWith('r')) ?? [],
-    [currentQuiz],
+      currentQuiz
+        ? matchingDisplay.rightChoiceIds
+            .map((choiceId) =>
+              currentQuiz.choices.find((choice) => choice.id === choiceId),
+            )
+            .filter((choice): choice is (typeof currentQuiz.choices)[number] =>
+              Boolean(choice),
+            )
+        : [],
+    [currentQuiz, matchingDisplay.rightChoiceIds],
   )
 
   const resetLocalState = () => {
     setSelectedChoiceId(null)
     setOrderedChoiceIds([])
     setMatchingPairs([])
-    setPendingLeftId(null)
+    setPendingLeftChoiceId(null)
   }
 
   const clearHamsterAnimationTimer = useCallback(() => {
@@ -262,7 +297,10 @@ export function QuizPage() {
 
     if (
       currentQuiz.type === 'image_select' ||
-      currentQuiz.type === 'blank_fill'
+      currentQuiz.type === 'blank_fill' ||
+      currentQuiz.type === 'sentence_choice' ||
+      currentQuiz.type === 'vocabulary_choice' ||
+      currentQuiz.type === 'grammar_choice'
     ) {
       const selectedChoice = currentQuiz.choices.find(
         (choice) => choice.id === selectedChoiceId,
@@ -417,9 +455,12 @@ export function QuizPage() {
 
       <section className="space-y-4">
         {(currentQuiz.type === 'image_select' ||
-          currentQuiz.type === 'blank_fill') && (
+          currentQuiz.type === 'blank_fill' ||
+          currentQuiz.type === 'sentence_choice' ||
+          currentQuiz.type === 'vocabulary_choice' ||
+          currentQuiz.type === 'grammar_choice') && (
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-            {currentQuiz.choices.map((choice) => {
+            {displayChoices.map((choice) => {
               const selected = selectedChoiceId === choice.id
 
               return (
@@ -480,7 +521,7 @@ export function QuizPage() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-3">
-              {currentQuiz.choices.map((choice) => {
+              {displayChoices.map((choice) => {
                 const alreadySelected = orderedChoiceIds.includes(choice.id)
                 return (
                   <button
@@ -511,7 +552,7 @@ export function QuizPage() {
               <div className="mt-3 space-y-2">
                 {matchingPairs.length === 0 ? (
                   <span className="text-sm font-semibold text-[#9b6c4a]">
-                    왼쪽 카드와 오른쪽 카드를 차례대로 눌러 연결하세요.
+                    왼쪽 한국어 카드와 오른쪽 영어 카드를 차례대로 눌러 연결하세요.
                   </span>
                 ) : (
                   matchingPairs.map((pair) => {
@@ -526,7 +567,7 @@ export function QuizPage() {
                         key={`${pair.leftId}-${pair.rightId}`}
                         className="rounded-2xl bg-[#fff2db] px-3 py-2 text-sm font-black text-[#7b4d32]"
                       >
-                        {left?.text} ↔ {right?.text}
+                        {right?.text} ↔ {left?.text}
                       </div>
                     )
                   })
@@ -537,15 +578,15 @@ export function QuizPage() {
               <div className="space-y-3">
                 {leftChoices.map((choice) => {
                   const used = matchingPairs.some(
-                    (pair) => pair.leftId === choice.id,
+                    (pair) => pair.rightId === choice.id,
                   )
-                  const selected = pendingLeftId === choice.id
+                  const selected = pendingLeftChoiceId === choice.id
                   return (
                     <button
                       key={choice.id}
                       type="button"
                       disabled={used || isSubmitting}
-                      onClick={() => setPendingLeftId(choice.id)}
+                      onClick={() => setPendingLeftChoiceId(choice.id)}
                       className={`w-full rounded-[1.6rem] px-4 py-4 text-left text-base font-black ${
                         used
                           ? 'bg-[#f2e4d6] text-[#bc9b7f]'
@@ -562,25 +603,25 @@ export function QuizPage() {
               <div className="space-y-3">
                 {rightChoices.map((choice) => {
                   const used = matchingPairs.some(
-                    (pair) => pair.rightId === choice.id,
+                    (pair) => pair.leftId === choice.id,
                   )
                   return (
                     <button
                       key={choice.id}
                       type="button"
-                      disabled={used || !pendingLeftId || isSubmitting}
+                      disabled={used || !pendingLeftChoiceId || isSubmitting}
                       onClick={() => {
-                        if (!pendingLeftId) {
+                        if (!pendingLeftChoiceId) {
                           return
                         }
                         setMatchingPairs((prev) => [
                           ...prev,
-                          { leftId: pendingLeftId, rightId: choice.id },
+                          { leftId: choice.id, rightId: pendingLeftChoiceId },
                         ])
-                        setPendingLeftId(null)
+                        setPendingLeftChoiceId(null)
                       }}
                       className={`w-full rounded-[1.6rem] px-4 py-4 text-left text-base font-black ${
-                        used || !pendingLeftId
+                        used || !pendingLeftChoiceId
                           ? 'bg-[#f2e4d6] text-[#bc9b7f]'
                           : 'bg-white/82 text-[#7b4d32] transition-transform duration-100 active:scale-95'
                       }`}

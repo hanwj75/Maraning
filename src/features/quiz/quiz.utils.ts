@@ -1,8 +1,19 @@
-import type { Quiz, QuizSessionAnswer, QuizSubmission } from './quiz.types'
+import { shuffleArray } from '../../shared/utils/shuffle'
+import type { MatchingDisplayOrder, Quiz, QuizSessionAnswer, QuizSubmission } from './quiz.types'
 
 export type QuizValidationError = {
   quizId: string
   reason: string
+}
+
+function isChoiceBasedQuizType(quiz: Quiz): boolean {
+  return (
+    quiz.type === 'image_select' ||
+    quiz.type === 'blank_fill' ||
+    quiz.type === 'sentence_choice' ||
+    quiz.type === 'vocabulary_choice' ||
+    quiz.type === 'grammar_choice'
+  )
 }
 
 export function indexQuizzesById(quizzes: readonly Quiz[]): Record<string, Quiz> {
@@ -33,6 +44,95 @@ export function getQuizProgressLabel(currentQuizIndex: number, totalQuizCount: n
   return `${currentQuizIndex + 1} / ${totalQuizCount}`
 }
 
+export function createQuizDisplayState(quizzes: readonly Quiz[]): {
+  displayChoiceIdsByQuizId: Record<string, string[]>
+  matchingDisplayByQuizId: Record<string, MatchingDisplayOrder>
+} {
+  return quizzes.reduce<{
+    displayChoiceIdsByQuizId: Record<string, string[]>
+    matchingDisplayByQuizId: Record<string, MatchingDisplayOrder>
+  }>(
+    (displayState, quiz) => {
+      if (quiz.type === 'matching') {
+        const answerPairs =
+          typeof quiz.answer === 'object' &&
+          quiz.answer !== null &&
+          'pairs' in quiz.answer &&
+          Array.isArray(quiz.answer.pairs)
+            ? quiz.answer.pairs
+            : []
+
+        const leftChoiceIds = shuffleArray(answerPairs.map((pair) => pair.rightId))
+        const rightChoiceIds = shuffleArray(answerPairs.map((pair) => pair.leftId))
+
+        displayState.matchingDisplayByQuizId[quiz.id] = {
+          leftChoiceIds,
+          rightChoiceIds,
+        }
+
+        return displayState
+      }
+
+      else {
+        displayState.displayChoiceIdsByQuizId[quiz.id] = shuffleArray(
+          quiz.choices.map((choice) => choice.id),
+        )
+      }
+
+      return displayState
+    },
+    {
+      displayChoiceIdsByQuizId: {},
+      matchingDisplayByQuizId: {},
+    },
+  )
+}
+
+export function getDisplayChoicesForQuiz(
+  quiz: Quiz,
+  displayChoiceIdsByQuizId: Readonly<Record<string, string[]>>,
+): Quiz['choices'] {
+  const displayChoiceIds = displayChoiceIdsByQuizId[quiz.id]
+
+  if (!displayChoiceIds || displayChoiceIds.length === 0) {
+    return quiz.choices
+  }
+
+  const choicesById = Object.fromEntries(quiz.choices.map((choice) => [choice.id, choice]))
+
+  return displayChoiceIds
+    .map((choiceId) => choicesById[choiceId])
+    .filter((choice): choice is Quiz['choices'][number] => Boolean(choice))
+}
+
+export function getMatchingDisplayChoicesForQuiz(
+  quiz: Quiz,
+  matchingDisplayByQuizId: Readonly<Record<string, MatchingDisplayOrder>>,
+): MatchingDisplayOrder {
+  const displayOrder = matchingDisplayByQuizId[quiz.id]
+
+  if (displayOrder) {
+    return displayOrder
+  }
+
+  return {
+    leftChoiceIds:
+      typeof quiz.answer === 'object' &&
+      quiz.answer !== null &&
+      'pairs' in quiz.answer &&
+      Array.isArray(quiz.answer.pairs)
+        ? quiz.answer.pairs.map((pair) => pair.rightId)
+        : [],
+    rightChoiceIds:
+      typeof quiz.answer === 'object' &&
+      quiz.answer !== null &&
+      'pairs' in quiz.answer &&
+      Array.isArray(quiz.answer.pairs)
+        ? quiz.answer.pairs.map((pair) => pair.leftId)
+        : [],
+  }
+}
+
 function normalizeText(value: string): string {
   return value.trim().toLowerCase()
 }
@@ -46,7 +146,7 @@ function hasKoreanText(value: string): boolean {
 }
 
 export function validateQuizChoiceCount(quiz: Quiz): QuizValidationError[] {
-  if (quiz.type !== 'image_select' && quiz.type !== 'blank_fill') {
+  if (!isChoiceBasedQuizType(quiz)) {
     return []
   }
 
@@ -75,8 +175,57 @@ export function validateQuizQuestion(quiz: Quiz): QuizValidationError[] {
   ]
 }
 
+const genericBlankFillQuestionPatterns = [
+  '빈칸에 알맞은 영어 단어를 입력해 주세요',
+  '빈칸에 알맞은 영어 단어를 넣어 주세요',
+  '빈칸에 알맞은 영어 단어를 넣어주세요',
+  '빈칸에 알맞은 단어를 골라주세요',
+  '알맞은 영어 단어를 고르세요',
+]
+
+export function validateBlankFillQuestion(quiz: Quiz): QuizValidationError[] {
+  if (quiz.type !== 'blank_fill') {
+    return []
+  }
+
+  const normalizedQuestion = String(quiz.question ?? '').trim()
+
+  if (normalizedQuestion.length === 0) {
+    return [
+      {
+        quizId: quiz.id,
+        reason: 'blank_fill question cannot be empty.',
+      },
+    ]
+  }
+
+  if (
+    genericBlankFillQuestionPatterns.some((pattern) =>
+      normalizedQuestion.includes(pattern),
+    )
+  ) {
+    return [
+      {
+        quizId: quiz.id,
+        reason: 'blank_fill question must include the target meaning instead of a generic filler prompt.',
+      },
+    ]
+  }
+
+  if (quiz.targetKo && !normalizedQuestion.includes(quiz.targetKo)) {
+    return [
+      {
+        quizId: quiz.id,
+        reason: 'blank_fill question must include targetKo when it exists.',
+      },
+    ]
+  }
+
+  return []
+}
+
 export function validateQuizEnglishLearningExposure(quiz: Quiz): QuizValidationError[] {
-  if (quiz.type !== 'image_select' && quiz.type !== 'blank_fill') {
+  if (!isChoiceBasedQuizType(quiz)) {
     return []
   }
 
@@ -93,7 +242,10 @@ export function validateQuizEnglishLearningExposure(quiz: Quiz): QuizValidationE
   }
 
   if (
-    quiz.type === 'blank_fill' &&
+    (quiz.type === 'blank_fill' ||
+      quiz.type === 'sentence_choice' ||
+      quiz.type === 'vocabulary_choice' ||
+      quiz.type === 'grammar_choice') &&
     (!promptHasEnglish || quiz.choices.some((choice) => !hasEnglishText(choice.text)))
   ) {
     return [
@@ -166,6 +318,7 @@ export function validateMatchingQuizPairs(quiz: Quiz): QuizValidationError[] {
 export function validateQuizData(quizzes: readonly Quiz[]): QuizValidationError[] {
   return quizzes.flatMap((quiz) => [
     ...validateQuizQuestion(quiz),
+    ...validateBlankFillQuestion(quiz),
     ...validateQuizChoiceCount(quiz),
     ...validateQuizEnglishLearningExposure(quiz),
     ...validateMatchingQuizPairs(quiz),
@@ -177,19 +330,47 @@ export function isQuizSubmissionCorrect(quiz: Quiz, submission: QuizSubmission):
     return false
   }
 
-  if (quiz.type === 'image_select') {
-    const choiceSubmission = submission as Extract<QuizSubmission, { type: 'image_select' | 'blank_fill' }>
+  if (
+    quiz.type === 'image_select' ||
+    quiz.type === 'sentence_choice' ||
+    quiz.type === 'vocabulary_choice' ||
+    quiz.type === 'grammar_choice'
+  ) {
+    const choiceSubmission = submission as Extract<
+      QuizSubmission,
+      {
+        type:
+          | 'image_select'
+          | 'blank_fill'
+          | 'sentence_choice'
+          | 'vocabulary_choice'
+          | 'grammar_choice'
+      }
+    >
+    const correctChoiceId =
+      typeof quiz.answer === 'object' && quiz.answer !== null && 'correctChoiceId' in quiz.answer
+        ? quiz.answer.correctChoiceId
+        : null
+    const correctChoiceText = quiz.choices.find((choice) => choice.id === correctChoiceId)?.text
 
     return (
-      typeof quiz.answer === 'object' &&
-      quiz.answer !== null &&
-      'correctChoiceId' in quiz.answer &&
-      quiz.answer.correctChoiceId === choiceSubmission.choiceId
+      typeof correctChoiceText === 'string' &&
+      normalizeText(correctChoiceText) === normalizeText(choiceSubmission.value)
     )
   }
 
   if (quiz.type === 'blank_fill') {
-    const choiceSubmission = submission as Extract<QuizSubmission, { type: 'image_select' | 'blank_fill' }>
+    const choiceSubmission = submission as Extract<
+      QuizSubmission,
+      {
+        type:
+          | 'image_select'
+          | 'blank_fill'
+          | 'sentence_choice'
+          | 'vocabulary_choice'
+          | 'grammar_choice'
+      }
+    >
 
     return (
       typeof quiz.answer === 'object' &&

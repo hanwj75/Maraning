@@ -1,6 +1,14 @@
 import type { DifficultyKey } from '../../data/difficulties'
 
-export const quizTypes = ['image_select', 'matching', 'word_order', 'blank_fill'] as const
+export const quizTypes = [
+  'image_select',
+  'matching',
+  'word_order',
+  'blank_fill',
+  'sentence_choice',
+  'vocabulary_choice',
+  'grammar_choice',
+] as const
 
 export type QuizType = (typeof quizTypes)[number]
 
@@ -24,7 +32,12 @@ export type QuizAnswer =
 
 export type QuizSubmission =
   | {
-      type: 'image_select' | 'blank_fill'
+      type:
+        | 'image_select'
+        | 'blank_fill'
+        | 'sentence_choice'
+        | 'vocabulary_choice'
+        | 'grammar_choice'
       choiceId: string
       value: string
     }
@@ -49,6 +62,13 @@ export type Quiz = {
   explanation: string
   learningTargetId?: string
   targetKey?: string
+  targetKo?: string
+  targetEn?: string
+}
+
+export type MatchingDisplayOrder = {
+  leftChoiceIds: string[]
+  rightChoiceIds: string[]
 }
 
 export type QuizSession = {
@@ -56,6 +76,8 @@ export type QuizSession = {
   stageId: string
   difficulty: DifficultyKey
   quizIds: string[]
+  displayChoiceIdsByQuizId: Record<string, string[]>
+  matchingDisplayByQuizId: Record<string, MatchingDisplayOrder>
   currentQuizIndex: number
   failLife: number
   noFailStreak: number

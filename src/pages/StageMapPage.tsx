@@ -5,7 +5,11 @@ import { ConfirmDialog } from '../shared/components/ConfirmDialog'
 import { JellyBadge } from '../shared/components/JellyBadge'
 import { difficultyLabelMap } from '../shared/difficulty'
 import { isDifficultyKey } from '../data/difficulties'
-import { buildChapterMapPath, buildQuizPath } from '../features/stage/stage.routes'
+import {
+  buildChapterMapPath,
+  buildQuizPath,
+} from '../features/stage/stage.routes'
+import { getQuizzesByDifficulty } from '../features/quiz/quiz.data'
 import {
   getChapterById,
   getStageState,
@@ -13,6 +17,7 @@ import {
   getStagesByDifficulty,
   getChaptersByDifficulty,
 } from '../features/stage/stage.utils'
+import { getOrderedQuizzesByIds } from '../features/quiz/quiz.utils'
 import { maraningAssets } from '../shared/maraning-assets'
 import { useJellyStore } from '../stores/jellyStore'
 import { useProgressStore } from '../stores/progressStore'
@@ -44,7 +49,9 @@ const hamsterPosition = {
   top: 316,
 } as const
 
-const lastStageBottom = Math.max(...nodePositions.map((node) => node.top + STAGE_NODE_SIZE))
+const lastStageBottom = Math.max(
+  ...nodePositions.map((node) => node.top + STAGE_NODE_SIZE),
+)
 const hamsterBottom = hamsterPosition.top + HAMSTER_SIZE
 const stageContentHeight =
   TOP_OVERLAY_SPACE +
@@ -55,21 +62,36 @@ const stageContentHeight =
 export function StageMapPage() {
   const navigate = useNavigate()
   const { difficultyId, chapterId } = useParams()
-  const setSelectedDifficulty = useUiStore((state) => state.setSelectedDifficulty)
+  const setSelectedDifficulty = useUiStore(
+    (state) => state.setSelectedDifficulty,
+  )
   const [jellyMessage, setJellyMessage] = useState<string | null>(null)
   const [showAdDialog, setShowAdDialog] = useState(false)
   const startSession = useQuizStore((state) => state.startSession)
   const currentJelly = useJellyStore((state) => state.current)
   const syncDailyJelly = useJellyStore((state) => state.syncDailyJelly)
   const mockRewardJelly = useJellyStore((state) => state.mockRewardJelly)
-  const resolvedDifficulty = difficultyId && isDifficultyKey(difficultyId) ? difficultyId : 'absolute_beginner'
-  const isValidRoute = Boolean(chapterId) && Boolean(difficultyId && isDifficultyKey(difficultyId))
+  const resolvedDifficulty =
+    difficultyId && isDifficultyKey(difficultyId)
+      ? difficultyId
+      : 'absolute_beginner'
+  const isValidRoute =
+    Boolean(chapterId) && Boolean(difficultyId && isDifficultyKey(difficultyId))
   const chapters = getChaptersByDifficulty(resolvedDifficulty)
   const allStages = getStagesByDifficulty(resolvedDifficulty)
-  const chapter = chapterId ? getChapterById(resolvedDifficulty, chapterId) : undefined
-  const stages = chapterId ? getStagesByChapter(resolvedDifficulty, chapterId) : []
-  const progress = useProgressStore((state) => state.progressByDifficulty[resolvedDifficulty])
-  const ensureDifficultyProgress = useProgressStore((state) => state.ensureDifficultyProgress)
+  const chapter = chapterId
+    ? getChapterById(resolvedDifficulty, chapterId)
+    : undefined
+  const stages = chapterId
+    ? getStagesByChapter(resolvedDifficulty, chapterId)
+    : []
+  const quizzes = getQuizzesByDifficulty(resolvedDifficulty)
+  const progress = useProgressStore(
+    (state) => state.progressByDifficulty[resolvedDifficulty],
+  )
+  const ensureDifficultyProgress = useProgressStore(
+    (state) => state.ensureDifficultyProgress,
+  )
 
   useEffect(() => {
     if (!isValidRoute) {
@@ -78,7 +100,14 @@ export function StageMapPage() {
 
     setSelectedDifficulty(resolvedDifficulty)
     ensureDifficultyProgress(resolvedDifficulty, chapters, allStages)
-  }, [allStages, chapters, ensureDifficultyProgress, isValidRoute, resolvedDifficulty, setSelectedDifficulty])
+  }, [
+    allStages,
+    chapters,
+    ensureDifficultyProgress,
+    isValidRoute,
+    resolvedDifficulty,
+    setSelectedDifficulty,
+  ])
 
   useEffect(() => {
     syncDailyJelly()
@@ -88,7 +117,9 @@ export function StageMapPage() {
     return <Navigate to="/difficulty" replace />
   }
 
-  const safeProgress = progress ?? useProgressStore.getState().progressByDifficulty[resolvedDifficulty]
+  const safeProgress =
+    progress ??
+    useProgressStore.getState().progressByDifficulty[resolvedDifficulty]
 
   if (!chapter) {
     return <Navigate to={buildChapterMapPath(resolvedDifficulty)} replace />
@@ -104,10 +135,14 @@ export function StageMapPage() {
     return <Navigate to={buildChapterMapPath(resolvedDifficulty)} replace />
   }
 
-  const completedStageIds = safeProgress.completedStageIdsByChapter[chapter.id] ?? []
-  const unlockedStageIds = safeProgress.unlockedStageIdsByChapter[chapter.id] ?? []
+  const completedStageIds =
+    safeProgress.completedStageIdsByChapter[chapter.id] ?? []
+  const unlockedStageIds =
+    safeProgress.unlockedStageIdsByChapter[chapter.id] ?? []
   const currentStageLabel =
-    stages.find((stage) => stage.id === safeProgress.currentStageId)?.title ?? stages[0]?.title ?? '스테이지'
+    stages.find((stage) => stage.id === safeProgress.currentStageId)?.title ??
+    stages[0]?.title ??
+    '스테이지'
 
   return (
     <main className="game-screen-shell">
@@ -132,7 +167,10 @@ export function StageMapPage() {
               />
               <span>630</span>
             </div>
-            <JellyBadge count={currentJelly} className="min-w-0 max-w-[8.5rem] shrink" />
+            <JellyBadge
+              count={currentJelly}
+              className="min-w-0 max-w-[8.5rem] shrink"
+            />
           </div>
 
           {jellyMessage ? (
@@ -158,7 +196,8 @@ export function StageMapPage() {
               />
               <div className="absolute inset-0 overflow-hidden text-white">
                 <span className="absolute inset-0 flex items-center justify-center overflow-hidden px-[4.4rem] text-center text-[0.95rem] font-black leading-none tracking-tight text-ellipsis whitespace-nowrap">
-                  {difficultyLabelMap[resolvedDifficulty]} · {chapter.title} · {currentStageLabel}
+                  {difficultyLabelMap[resolvedDifficulty]} · {chapter.title} ·{' '}
+                  {currentStageLabel}
                 </span>
               </div>
             </div>
@@ -175,7 +214,10 @@ export function StageMapPage() {
           <section className="relative min-h-0 flex-1 rounded-[2.2rem] bg-[linear-gradient(180deg,rgba(255,250,241,0.28),rgba(245,220,191,0.26))] shadow-[inset_0_1px_0_rgba(255,255,255,0.45)]">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.32),_transparent_38%)]" />
             <div className="relative h-full min-h-0 overflow-y-auto px-3 py-3">
-              <div className="relative" style={{ height: `${stageContentHeight}px` }}>
+              <div
+                className="relative"
+                style={{ height: `${stageContentHeight}px` }}
+              >
                 {stages.slice(0, nodePositions.length).map((stage, index) => {
                   const position = nodePositions[index]
 
@@ -194,7 +236,11 @@ export function StageMapPage() {
                       key={stage.id}
                       stageNumber={stage.order}
                       state={state}
-                      to={buildQuizPath(resolvedDifficulty, chapter.id, stage.id)}
+                      to={buildQuizPath(
+                        resolvedDifficulty,
+                        chapter.id,
+                        stage.id,
+                      )}
                       className="absolute"
                       style={{
                         left: position.left,
@@ -211,8 +257,20 @@ export function StageMapPage() {
                                 stageId: stage.id,
                                 difficulty: resolvedDifficulty,
                                 quizIds: stage.quizIds,
+                                quizzes: getOrderedQuizzesByIds(
+                                  quizzes.filter(
+                                    (quiz) => quiz.stageId === stage.id,
+                                  ),
+                                  stage.quizIds,
+                                ),
                               })
-                              navigate(buildQuizPath(resolvedDifficulty, chapter.id, stage.id))
+                              navigate(
+                                buildQuizPath(
+                                  resolvedDifficulty,
+                                  chapter.id,
+                                  stage.id,
+                                ),
+                              )
                             }
                       }
                     />

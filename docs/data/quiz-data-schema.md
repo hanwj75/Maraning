@@ -43,6 +43,10 @@
 - `content`: 화면 렌더링용 문제 데이터다.
 - `answer`: 결정론적 판정용 정답 데이터다.
 - `choices`: 선택지가 있는 문제에서 사용하는 보기 목록이다.
+- `choices` 배열의 저장 순서는 화면 표시 순서나 정답 위치를 의미하지 않는다.
+- 선택형 문제와 `word_order` token 카드 모두 `QuizSession` 시작 시 display 순서를 별도로 shuffle 할 수 있다.
+- `targetKo`: 빈칸형 문제에서 사용자가 채워야 하는 목표 한국어 의미다.
+- `targetEn`: 빈칸형 문제의 핵심 정답 영어 표현이다.
 
 ## Stage Learning Target Link
 
@@ -116,6 +120,10 @@
 }
 ```
 
+- `matching` 은 원본 `answer.pairs` 관계를 유지한 채, 화면에서는 `leftItems` 와 `rightItems` 표시 순서만 각각 shuffle 한다.
+- `matching` 화면은 왼쪽에 한국어 카드, 오른쪽에 영어 카드를 보여야 하며 양쪽 표시 순서는 각각 독립적으로 shuffle 한다.
+- `apple ↔ 사과` 같은 정답 pair 를 다른 pair 와 재조합하면 안 된다.
+
 ### word_order
 
 ```json
@@ -141,8 +149,10 @@
 ```json
 {
   "quizType": "blank_fill",
-  "question": "빈칸에 알맞은 영어 단어를 넣어 문장을 완성해 주세요.",
+  "question": "문장이 \"이것은 사과입니다\"라는 뜻이 되도록 빈칸에 알맞은 영어 단어를 골라주세요.",
   "learningTargetId": "lt.apple.basic",
+  "targetKo": "이것은 사과입니다",
+  "targetEn": "apple",
   "validation": {
     "mode": "deterministic",
     "caseInsensitive": true
@@ -161,6 +171,16 @@
   }
 }
 ```
+
+- 선택형 `blank_fill` 도 `choices` 저장 순서를 그대로 노출하지 않고, `QuizSession` 시작 시 display 순서를 shuffle 할 수 있다.
+- `blank_fill` 문제는 `question` 에 반드시 `targetKo` 또는 `sentenceKo` 기반 목표 의미를 포함해야 한다.
+- `sentenceWithBlank` 또는 `prompt` 만 보고 정답 의미를 알 수 없으면 `question` 이 그 의미를 직접 설명해야 한다.
+- `빈칸에 알맞은 단어를 넣어주세요` 같은 추상 문구만 있는 `question` 은 금지한다.
+
+### sentence_choice / vocabulary_choice / grammar_choice
+
+- 위 선택형 타입들이 추가되면 `image_select` 와 같은 display shuffle 규칙을 따른다.
+- `choices` 저장 순서는 고정 정답 위치를 의미하지 않는다.
 
 ## Validator Rules
 
@@ -190,15 +210,20 @@
 - `typing` 은 허용 값에 포함하지 않는다.
 - `question` 과 `prompt` 는 비어 있을 수 없다.
 - `image_select.answer.correctOptionId` 는 `content.options.id` 중 하나여야 한다.
+- 선택형 문제의 정답 판정은 `index` 기반이 아니라 `answer` 가 가리키는 값 기준이어야 한다.
+- `word_order` 정답 판정은 display token 위치가 아니라 사용자가 만든 최종 token 배열과 `answer.orderedTokens` 비교 기준이어야 한다.
 - `matching.answer.pairs` 는 좌우 항목 id 만 참조해야 하며 중복 pair 를 허용하지 않는다.
 - `matching.answer.pairs.length` 는 최소 `3`이어야 한다.
 - `word_order.answer.orderedTokens` 길이는 `content.tokens` 길이와 일치해야 한다.
 - `blank_fill.answer.acceptedAnswers` 는 비어 있을 수 없다.
+- `blank_fill.question` 은 비어 있을 수 없고, 일반 금지 문구만 포함하면 안 된다.
+- `blank_fill.targetKo` 가 있으면 `question` 은 그 값을 포함해야 한다.
 - `image_select.choices.length` 와 선택형 `blank_fill.choices.length` 는 `4~6` 범위여야 한다.
 - `blank_fill.prompt` 는 영어 문장이어야 한다.
 - `blank_fill.choices` 는 영어 보기여야 한다.
 - 같은 Stage 의 `10`개 `Quiz` 는 모두 동일한 `difficulty` 를 유지해야 한다.
 - 같은 Stage 의 `10`개 `Quiz` 는 모두 동일한 `learningTargetId` 또는 동일 의미의 `targetKey` 를 가져야 한다.
+- 같은 `QuizSession` 안에서는 한 번 생성된 shuffle 결과를 유지해야 하며, 오답 후 재시도 시 보기 위치가 바뀌면 안 된다.
 
 ## Versioning
 
