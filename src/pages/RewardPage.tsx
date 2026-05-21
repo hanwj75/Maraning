@@ -5,7 +5,6 @@ import { CharacterPanel } from '../shared/components/CharacterPanel'
 import { CuteTopBar } from '../shared/components/CuteTopBar'
 import { PageFrame } from '../shared/components/PageFrame'
 import { JellyBadge } from '../shared/components/JellyBadge'
-import { maraningAssets } from '../shared/maraning-assets'
 import { useJellyStore } from '../stores/jellyStore'
 import { useProgressStore } from '../stores/progressStore'
 import { useQuizStore } from '../stores/quizStore'
@@ -56,21 +55,9 @@ export function RewardPage() {
 
       <section className="grid grid-cols-[1.1fr_0.9fr] gap-4">
         <div className="grid gap-4">
-          <div className="game-card flex items-center gap-3 bg-white/78 px-4 py-5">
-            <img
-              src={maraningAssets.feedstuff}
-              alt=""
-              aria-hidden="true"
-              className="h-12 w-12 object-contain"
-            />
-            <div>
-              <p className="text-sm font-black text-[#f0a084]">보상 아이템</p>
-              <p className="text-base font-black text-[#7b4d32]">말랑 간식 받기</p>
-            </div>
-          </div>
           <div className="game-card flex items-center justify-between gap-3 bg-white/78 px-4 py-5">
             <div>
-              <p className="text-sm font-black text-[#f0a084]">체력 표시</p>
+              <p className="text-sm font-black text-[#f0a084]">젤리 상태</p>
               <p className="text-base font-black text-[#7b4d32]">다음 미션 준비 완료</p>
             </div>
             <JellyBadge count={currentJelly} />

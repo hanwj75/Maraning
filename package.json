@@ -9,7 +9,9 @@
     "test": "jest",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "ait deploy"
+    "deploy": "ait deploy",
+    "generate:curriculum": "tsc --ignoreConfig --target es2022 --module nodenext --moduleResolution nodenext --types node --outDir .generated-scripts scripts/generate-curriculum-data.ts && node .generated-scripts/generate-curriculum-data.js",
+    "validate:curriculum": "tsc --ignoreConfig --target es2022 --module nodenext --moduleResolution nodenext --types node --outDir .generated-scripts scripts/validate-curriculum-data.ts && node .generated-scripts/validate-curriculum-data.js"
   },
   "dependencies": {
     "@apps-in-toss/web-framework": "^2.5.1",

@@ -3,12 +3,200 @@
     "id": "conversation_chapter_001",
     "difficulty": "conversation",
     "order": 1,
-    "title": "기본 회화 시작",
-    "description": "실전 회화의 기본 표현을 먼저 익혀요.",
+    "title": "인사하기",
+    "description": "일상 인사 표현을 익혀요.",
     "stageIds": [
       "conversation.stage.001",
-      "conversation.stage.002"
+      "conversation.stage.002",
+      "conversation.stage.003",
+      "conversation.stage.004",
+      "conversation.stage.005",
+      "conversation.stage.006",
+      "conversation.stage.007",
+      "conversation.stage.008",
+      "conversation.stage.009",
+      "conversation.stage.010"
     ],
     "requiredChapterId": null
+  },
+  {
+    "id": "conversation_chapter_002",
+    "difficulty": "conversation",
+    "order": 2,
+    "title": "자기소개하기",
+    "description": "이름과 기본 정보를 말해요.",
+    "stageIds": [
+      "conversation.stage.011",
+      "conversation.stage.012",
+      "conversation.stage.013",
+      "conversation.stage.014",
+      "conversation.stage.015",
+      "conversation.stage.016",
+      "conversation.stage.017",
+      "conversation.stage.018",
+      "conversation.stage.019",
+      "conversation.stage.020"
+    ],
+    "requiredChapterId": "conversation_chapter_001"
+  },
+  {
+    "id": "conversation_chapter_003",
+    "difficulty": "conversation",
+    "order": 3,
+    "title": "카페 주문하기",
+    "description": "음료를 주문할 때 쓰는 표현이에요.",
+    "stageIds": [
+      "conversation.stage.021",
+      "conversation.stage.022",
+      "conversation.stage.023",
+      "conversation.stage.024",
+      "conversation.stage.025",
+      "conversation.stage.026",
+      "conversation.stage.027",
+      "conversation.stage.028",
+      "conversation.stage.029",
+      "conversation.stage.030"
+    ],
+    "requiredChapterId": "conversation_chapter_002"
+  },
+  {
+    "id": "conversation_chapter_004",
+    "difficulty": "conversation",
+    "order": 4,
+    "title": "식당에서 말하기",
+    "description": "식당에서 필요한 표현을 익혀요.",
+    "stageIds": [
+      "conversation.stage.031",
+      "conversation.stage.032",
+      "conversation.stage.033",
+      "conversation.stage.034",
+      "conversation.stage.035",
+      "conversation.stage.036",
+      "conversation.stage.037",
+      "conversation.stage.038",
+      "conversation.stage.039",
+      "conversation.stage.040"
+    ],
+    "requiredChapterId": "conversation_chapter_003"
+  },
+  {
+    "id": "conversation_chapter_005",
+    "difficulty": "conversation",
+    "order": 5,
+    "title": "길 묻기",
+    "description": "길을 물을 때 쓰는 표현을 익혀요.",
+    "stageIds": [
+      "conversation.stage.041",
+      "conversation.stage.042",
+      "conversation.stage.043",
+      "conversation.stage.044",
+      "conversation.stage.045",
+      "conversation.stage.046",
+      "conversation.stage.047",
+      "conversation.stage.048",
+      "conversation.stage.049",
+      "conversation.stage.050"
+    ],
+    "requiredChapterId": "conversation_chapter_004"
+  },
+  {
+    "id": "conversation_chapter_006",
+    "difficulty": "conversation",
+    "order": 6,
+    "title": "쇼핑하기",
+    "description": "쇼핑 상황에서 자주 쓰는 말이에요.",
+    "stageIds": [
+      "conversation.stage.051",
+      "conversation.stage.052",
+      "conversation.stage.053",
+      "conversation.stage.054",
+      "conversation.stage.055",
+      "conversation.stage.056",
+      "conversation.stage.057",
+      "conversation.stage.058",
+      "conversation.stage.059",
+      "conversation.stage.060"
+    ],
+    "requiredChapterId": "conversation_chapter_005"
+  },
+  {
+    "id": "conversation_chapter_007",
+    "difficulty": "conversation",
+    "order": 7,
+    "title": "약속 잡기",
+    "description": "만남과 일정 약속 표현을 익혀요.",
+    "stageIds": [
+      "conversation.stage.061",
+      "conversation.stage.062",
+      "conversation.stage.063",
+      "conversation.stage.064",
+      "conversation.stage.065",
+      "conversation.stage.066",
+      "conversation.stage.067",
+      "conversation.stage.068",
+      "conversation.stage.069",
+      "conversation.stage.070"
+    ],
+    "requiredChapterId": "conversation_chapter_006"
+  },
+  {
+    "id": "conversation_chapter_008",
+    "difficulty": "conversation",
+    "order": 8,
+    "title": "전화와 메시지",
+    "description": "전화와 문자 상황 표현을 익혀요.",
+    "stageIds": [
+      "conversation.stage.071",
+      "conversation.stage.072",
+      "conversation.stage.073",
+      "conversation.stage.074",
+      "conversation.stage.075",
+      "conversation.stage.076",
+      "conversation.stage.077",
+      "conversation.stage.078",
+      "conversation.stage.079",
+      "conversation.stage.080"
+    ],
+    "requiredChapterId": "conversation_chapter_007"
+  },
+  {
+    "id": "conversation_chapter_009",
+    "difficulty": "conversation",
+    "order": 9,
+    "title": "감정과 사과",
+    "description": "감정 표현과 사과 표현을 배워요.",
+    "stageIds": [
+      "conversation.stage.081",
+      "conversation.stage.082",
+      "conversation.stage.083",
+      "conversation.stage.084",
+      "conversation.stage.085",
+      "conversation.stage.086",
+      "conversation.stage.087",
+      "conversation.stage.088",
+      "conversation.stage.089",
+      "conversation.stage.090"
+    ],
+    "requiredChapterId": "conversation_chapter_008"
+  },
+  {
+    "id": "conversation_chapter_010",
+    "difficulty": "conversation",
+    "order": 10,
+    "title": "도움과 여행",
+    "description": "여행 중 도움을 요청하는 표현을 익혀요.",
+    "stageIds": [
+      "conversation.stage.091",
+      "conversation.stage.092",
+      "conversation.stage.093",
+      "conversation.stage.094",
+      "conversation.stage.095",
+      "conversation.stage.096",
+      "conversation.stage.097",
+      "conversation.stage.098",
+      "conversation.stage.099",
+      "conversation.stage.100"
+    ],
+    "requiredChapterId": "conversation_chapter_009"
   }
 ]

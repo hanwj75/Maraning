@@ -3,13 +3,200 @@
     "id": "absolute_beginner_chapter_001",
     "difficulty": "absolute_beginner",
     "order": 1,
-    "title": "기본 단어 배우기",
-    "description": "왕초보 단어 스테이지를 차근차근 시작해요.",
+    "title": "기본 과일",
+    "description": "가장 쉬운 과일 단어부터 배워요.",
     "stageIds": [
       "absolute-beginner.stage.001",
       "absolute-beginner.stage.002",
-      "absolute-beginner.stage.003"
+      "absolute-beginner.stage.003",
+      "absolute-beginner.stage.004",
+      "absolute-beginner.stage.005",
+      "absolute-beginner.stage.006",
+      "absolute-beginner.stage.007",
+      "absolute-beginner.stage.008",
+      "absolute-beginner.stage.009",
+      "absolute-beginner.stage.010"
     ],
     "requiredChapterId": null
+  },
+  {
+    "id": "absolute_beginner_chapter_002",
+    "difficulty": "absolute_beginner",
+    "order": 2,
+    "title": "기본 동물",
+    "description": "친숙한 동물 이름을 익혀요.",
+    "stageIds": [
+      "absolute-beginner.stage.011",
+      "absolute-beginner.stage.012",
+      "absolute-beginner.stage.013",
+      "absolute-beginner.stage.014",
+      "absolute-beginner.stage.015",
+      "absolute-beginner.stage.016",
+      "absolute-beginner.stage.017",
+      "absolute-beginner.stage.018",
+      "absolute-beginner.stage.019",
+      "absolute-beginner.stage.020"
+    ],
+    "requiredChapterId": "absolute_beginner_chapter_001"
+  },
+  {
+    "id": "absolute_beginner_chapter_003",
+    "difficulty": "absolute_beginner",
+    "order": 3,
+    "title": "학교 물건",
+    "description": "교실에서 자주 보는 물건을 배워요.",
+    "stageIds": [
+      "absolute-beginner.stage.021",
+      "absolute-beginner.stage.022",
+      "absolute-beginner.stage.023",
+      "absolute-beginner.stage.024",
+      "absolute-beginner.stage.025",
+      "absolute-beginner.stage.026",
+      "absolute-beginner.stage.027",
+      "absolute-beginner.stage.028",
+      "absolute-beginner.stage.029",
+      "absolute-beginner.stage.030"
+    ],
+    "requiredChapterId": "absolute_beginner_chapter_002"
+  },
+  {
+    "id": "absolute_beginner_chapter_004",
+    "difficulty": "absolute_beginner",
+    "order": 4,
+    "title": "집 안 물건",
+    "description": "집 안에서 자주 보는 물건을 배워요.",
+    "stageIds": [
+      "absolute-beginner.stage.031",
+      "absolute-beginner.stage.032",
+      "absolute-beginner.stage.033",
+      "absolute-beginner.stage.034",
+      "absolute-beginner.stage.035",
+      "absolute-beginner.stage.036",
+      "absolute-beginner.stage.037",
+      "absolute-beginner.stage.038",
+      "absolute-beginner.stage.039",
+      "absolute-beginner.stage.040"
+    ],
+    "requiredChapterId": "absolute_beginner_chapter_003"
+  },
+  {
+    "id": "absolute_beginner_chapter_005",
+    "difficulty": "absolute_beginner",
+    "order": 5,
+    "title": "기본 음식",
+    "description": "간단한 음식 단어를 익혀요.",
+    "stageIds": [
+      "absolute-beginner.stage.041",
+      "absolute-beginner.stage.042",
+      "absolute-beginner.stage.043",
+      "absolute-beginner.stage.044",
+      "absolute-beginner.stage.045",
+      "absolute-beginner.stage.046",
+      "absolute-beginner.stage.047",
+      "absolute-beginner.stage.048",
+      "absolute-beginner.stage.049",
+      "absolute-beginner.stage.050"
+    ],
+    "requiredChapterId": "absolute_beginner_chapter_004"
+  },
+  {
+    "id": "absolute_beginner_chapter_006",
+    "difficulty": "absolute_beginner",
+    "order": 6,
+    "title": "기본 음료",
+    "description": "마실 것 이름을 익혀요.",
+    "stageIds": [
+      "absolute-beginner.stage.051",
+      "absolute-beginner.stage.052",
+      "absolute-beginner.stage.053",
+      "absolute-beginner.stage.054",
+      "absolute-beginner.stage.055",
+      "absolute-beginner.stage.056",
+      "absolute-beginner.stage.057",
+      "absolute-beginner.stage.058",
+      "absolute-beginner.stage.059",
+      "absolute-beginner.stage.060"
+    ],
+    "requiredChapterId": "absolute_beginner_chapter_005"
+  },
+  {
+    "id": "absolute_beginner_chapter_007",
+    "difficulty": "absolute_beginner",
+    "order": 7,
+    "title": "기본 옷",
+    "description": "입는 물건 이름을 배워요.",
+    "stageIds": [
+      "absolute-beginner.stage.061",
+      "absolute-beginner.stage.062",
+      "absolute-beginner.stage.063",
+      "absolute-beginner.stage.064",
+      "absolute-beginner.stage.065",
+      "absolute-beginner.stage.066",
+      "absolute-beginner.stage.067",
+      "absolute-beginner.stage.068",
+      "absolute-beginner.stage.069",
+      "absolute-beginner.stage.070"
+    ],
+    "requiredChapterId": "absolute_beginner_chapter_006"
+  },
+  {
+    "id": "absolute_beginner_chapter_008",
+    "difficulty": "absolute_beginner",
+    "order": 8,
+    "title": "몸의 부분",
+    "description": "몸의 부분을 영어로 말해요.",
+    "stageIds": [
+      "absolute-beginner.stage.071",
+      "absolute-beginner.stage.072",
+      "absolute-beginner.stage.073",
+      "absolute-beginner.stage.074",
+      "absolute-beginner.stage.075",
+      "absolute-beginner.stage.076",
+      "absolute-beginner.stage.077",
+      "absolute-beginner.stage.078",
+      "absolute-beginner.stage.079",
+      "absolute-beginner.stage.080"
+    ],
+    "requiredChapterId": "absolute_beginner_chapter_007"
+  },
+  {
+    "id": "absolute_beginner_chapter_009",
+    "difficulty": "absolute_beginner",
+    "order": 9,
+    "title": "기본 장소",
+    "description": "일상 장소 단어를 배워요.",
+    "stageIds": [
+      "absolute-beginner.stage.081",
+      "absolute-beginner.stage.082",
+      "absolute-beginner.stage.083",
+      "absolute-beginner.stage.084",
+      "absolute-beginner.stage.085",
+      "absolute-beginner.stage.086",
+      "absolute-beginner.stage.087",
+      "absolute-beginner.stage.088",
+      "absolute-beginner.stage.089",
+      "absolute-beginner.stage.090"
+    ],
+    "requiredChapterId": "absolute_beginner_chapter_008"
+  },
+  {
+    "id": "absolute_beginner_chapter_010",
+    "difficulty": "absolute_beginner",
+    "order": 10,
+    "title": "교통수단",
+    "description": "탈것 이름을 영어로 배워요.",
+    "stageIds": [
+      "absolute-beginner.stage.091",
+      "absolute-beginner.stage.092",
+      "absolute-beginner.stage.093",
+      "absolute-beginner.stage.094",
+      "absolute-beginner.stage.095",
+      "absolute-beginner.stage.096",
+      "absolute-beginner.stage.097",
+      "absolute-beginner.stage.098",
+      "absolute-beginner.stage.099",
+      "absolute-beginner.stage.100"
+    ],
+    "requiredChapterId": "absolute_beginner_chapter_009"
   }
 ]

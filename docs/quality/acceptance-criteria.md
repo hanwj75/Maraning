@@ -3,6 +3,8 @@
 ## Product Acceptance
 
 - 사용자는 `Home -> DifficultySelect -> ChapterMap -> StageMap -> Quiz -> Reward` 흐름을 끊김 없이 진행할 수 있어야 한다.
+- 사용자는 하단 내비게이션을 통해 `MyPage` 로 이동할 수 있어야 한다.
+- 사용자는 하단 내비게이션의 `공유하기` 버튼으로 현재 스테이지 공유 모달을 열 수 있어야 한다.
 - 난이도는 `absolute_beginner`, `beginner`, `intermediate`, `advanced`, `conversation`, `toeic` 으로 분리되어야 한다.
 - 각 난이도는 독립적인 `ChapterMap` / `StageMap` progress 를 가져야 한다.
 - 난이도별 `Chapter` 는 최종 목표 기준 `10`개, `Chapter` 별 `Stage` 는 최종 목표 기준 `10`개, `Stage` 별 `Quiz` 는 정확히 `10`개라는 구조가 문서화되어야 한다.
@@ -22,6 +24,12 @@
 
 - 각 화면의 핵심 행동은 빠르게 이해 가능해야 한다.
 - 긴 설명 없이도 다음 행동을 알 수 있어야 한다.
+- `MyPage` 는 사용자 이름과 현재 진행 중인 스테이지만 간단히 보여야 한다.
+- `MyPage` 기본 이름은 `말랑이 친구` 여야 한다.
+- `MyPage` 에 진행 정보가 없으면 fallback 문구가 보여야 한다.
+- 공유 모달에는 기본 닉네임과 현재 스테이지가 표시되어야 한다.
+- 공유 모달에는 카카오톡, 인스타그램, 트위터 버튼이 보여야 한다.
+- 공유하기는 MVP 에서 `Web Share API` 또는 공유 문구 복사 fallback 으로 동작해야 한다.
 - `locked`, `unlocked`, `completed` 상태가 시각적으로 구분되어야 한다.
 - `ChapterMap` 에서 `locked Chapter` 는 클릭 불가, `unlocked` 와 `completed Chapter` 는 클릭 가능해야 한다.
 - 각 난이도는 `Chapter 1`만 기본 `unlocked`, `Chapter 2~10`은 기본 `locked` 여야 한다.
@@ -41,6 +49,7 @@
 - 모든 choices 기반 문제는 화면 표시 전에 shuffle 되더라도 정답 판정이 `answer value` 기준으로 유지되어야 한다.
 - `word_order` 는 display token 카드만 shuffle 하고 `answerTokens` 원본 순서는 유지해야 한다.
 - `matching` 문제는 정답 pair 관계를 유지하고 왼쪽 한국어 카드와 오른쪽 영어 카드 표시 순서만 각각 shuffle 해야 한다.
+- `matching` 문제는 제출 전까지 연결을 자유롭게 수정할 수 있어야 하며, 연결된 카드를 다시 누르면 해제되고 다른 카드와 다시 연결하면 기존 pair 가 교체되어야 한다.
 - 같은 `QuizSession` 안에서는 한 번 생성된 shuffle 결과가 유지되어야 한다.
 - `blank_fill` 문제는 `question` 에 목표 한국어 의미 또는 전체 문장 뜻이 포함되어, 사용자가 prompt 만 보지 않고도 무엇을 채워야 하는지 알 수 있어야 한다.
 - `LLM validation` 은 사용되지 않아야 한다.
@@ -53,6 +62,8 @@
 
 - 상태 관리는 `Zustand` 기반이어야 한다.
 - 핵심 progress 와 `jelly` 상태는 `localStorage fallback` 으로 유지 가능해야 한다.
+- `MyPage` 는 현재 `selectedDifficulty` 의 progress 에서 `currentChapterId`, `currentStageId` 를 안전하게 읽어와야 한다.
+- 공유 payload 도 현재 `selectedDifficulty` 의 progress 에서 `currentChapterId`, `currentStageId` 를 안전하게 읽어와야 한다.
 - React component 에서 SDK 직접 호출이 없어야 한다.
 - SDK 연동은 wrapper layer 를 통해서만 수행되어야 한다.
 

@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 import { DifficultySelectPage } from '../pages/DifficultySelectPage'
 import { ChapterMapPage } from '../pages/ChapterMapPage'
 import { HomePage } from '../pages/HomePage'
+import { MyPage } from '../pages/MyPage'
 import { QuizPage } from '../pages/QuizPage'
 import { ResultPage } from '../pages/ResultPage'
 import { RewardPage } from '../pages/RewardPage'
@@ -25,6 +26,7 @@ function AnimatedRoutes() {
         <Routes location={location}>
           <Route path="/" element={<SplashPage />} />
           <Route path="/home" element={<HomePage />} />
+          <Route path="/mypage" element={<MyPage />} />
           <Route path="/difficulty" element={<DifficultySelectPage />} />
           <Route path="/chapters/:difficultyId" element={<ChapterMapPage />} />
           <Route path="/stages/:difficultyId/:chapterId" element={<StageMapPage />} />

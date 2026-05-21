@@ -1,0 +1,3075 @@
+{
+  "difficulty": "toeic",
+  "chapters": [
+    {
+      "chapterOrder": 1,
+      "title": "회의 일정",
+      "description": "회의와 일정 관련 표현을 정리해요.",
+      "stages": [
+        {
+          "targetKey": "meeting_starts_nine",
+          "ko": "회의는 오전 아홉시에 시작됩니다.",
+          "en": "The meeting starts at nine in the morning.",
+          "sentenceKo": "회의는 오전 아홉시에 시작됩니다.",
+          "sentenceEn": "The meeting starts at nine in the morning.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "회의 일정은 월요일로 변경되었습니다.",
+              "en": "The meeting has been moved to Monday."
+            },
+            {
+              "ko": "회의는 3층 회의실에서 열립니다.",
+              "en": "The meeting will be held in the conference room on the third floor."
+            },
+            {
+              "ko": "모든 직원은 월간 회의에 참석해야 합니다.",
+              "en": "All staff members must attend the monthly meeting."
+            },
+            {
+              "ko": "회의 안건이 이메일에 첨부되어 있습니다.",
+              "en": "The meeting agenda is attached to the email."
+            },
+            {
+              "ko": "일부 직원은 온라인으로 회의에 참여할 것입니다.",
+              "en": "Some employees will join the meeting online."
+            }
+          ]
+        },
+        {
+          "targetKey": "meeting_moved_monday",
+          "ko": "회의 일정은 월요일로 변경되었습니다.",
+          "en": "The meeting has been moved to Monday.",
+          "sentenceKo": "회의 일정은 월요일로 변경되었습니다.",
+          "sentenceEn": "The meeting has been moved to Monday.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "회의는 3층 회의실에서 열립니다.",
+              "en": "The meeting will be held in the conference room on the third floor."
+            },
+            {
+              "ko": "모든 직원은 월간 회의에 참석해야 합니다.",
+              "en": "All staff members must attend the monthly meeting."
+            },
+            {
+              "ko": "회의 안건이 이메일에 첨부되어 있습니다.",
+              "en": "The meeting agenda is attached to the email."
+            },
+            {
+              "ko": "일부 직원은 온라인으로 회의에 참여할 것입니다.",
+              "en": "Some employees will join the meeting online."
+            },
+            {
+              "ko": "발표자가 늦어서 회의 시작이 지연되었습니다.",
+              "en": "The meeting was delayed because the speaker was late."
+            }
+          ]
+        },
+        {
+          "targetKey": "meeting_conference_room",
+          "ko": "회의는 3층 회의실에서 열립니다.",
+          "en": "The meeting will be held in the conference room on the third floor.",
+          "sentenceKo": "회의는 3층 회의실에서 열립니다.",
+          "sentenceEn": "The meeting will be held in the conference room on the third floor.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "모든 직원은 월간 회의에 참석해야 합니다.",
+              "en": "All staff members must attend the monthly meeting."
+            },
+            {
+              "ko": "회의 안건이 이메일에 첨부되어 있습니다.",
+              "en": "The meeting agenda is attached to the email."
+            },
+            {
+              "ko": "일부 직원은 온라인으로 회의에 참여할 것입니다.",
+              "en": "Some employees will join the meeting online."
+            },
+            {
+              "ko": "발표자가 늦어서 회의 시작이 지연되었습니다.",
+              "en": "The meeting was delayed because the speaker was late."
+            },
+            {
+              "ko": "날씨 문제로 오전 회의가 취소되었습니다.",
+              "en": "The morning meeting was canceled due to the weather."
+            }
+          ]
+        },
+        {
+          "targetKey": "meeting_all_staff",
+          "ko": "모든 직원은 월간 회의에 참석해야 합니다.",
+          "en": "All staff members must attend the monthly meeting.",
+          "sentenceKo": "모든 직원은 월간 회의에 참석해야 합니다.",
+          "sentenceEn": "All staff members must attend the monthly meeting.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "회의 안건이 이메일에 첨부되어 있습니다.",
+              "en": "The meeting agenda is attached to the email."
+            },
+            {
+              "ko": "일부 직원은 온라인으로 회의에 참여할 것입니다.",
+              "en": "Some employees will join the meeting online."
+            },
+            {
+              "ko": "발표자가 늦어서 회의 시작이 지연되었습니다.",
+              "en": "The meeting was delayed because the speaker was late."
+            },
+            {
+              "ko": "날씨 문제로 오전 회의가 취소되었습니다.",
+              "en": "The morning meeting was canceled due to the weather."
+            },
+            {
+              "ko": "다음 회의 전에 회의록을 검토해 주세요.",
+              "en": "Please review the meeting minutes before the next session."
+            }
+          ]
+        },
+        {
+          "targetKey": "meeting_agenda_attached",
+          "ko": "회의 안건이 이메일에 첨부되어 있습니다.",
+          "en": "The meeting agenda is attached to the email.",
+          "sentenceKo": "회의 안건이 이메일에 첨부되어 있습니다.",
+          "sentenceEn": "The meeting agenda is attached to the email.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "일부 직원은 온라인으로 회의에 참여할 것입니다.",
+              "en": "Some employees will join the meeting online."
+            },
+            {
+              "ko": "발표자가 늦어서 회의 시작이 지연되었습니다.",
+              "en": "The meeting was delayed because the speaker was late."
+            },
+            {
+              "ko": "날씨 문제로 오전 회의가 취소되었습니다.",
+              "en": "The morning meeting was canceled due to the weather."
+            },
+            {
+              "ko": "다음 회의 전에 회의록을 검토해 주세요.",
+              "en": "Please review the meeting minutes before the next session."
+            },
+            {
+              "ko": "질문이 있으면 회의에 가져와 주세요.",
+              "en": "Please bring any questions to the meeting."
+            }
+          ]
+        },
+        {
+          "targetKey": "meeting_join_online",
+          "ko": "일부 직원은 온라인으로 회의에 참여할 것입니다.",
+          "en": "Some employees will join the meeting online.",
+          "sentenceKo": "일부 직원은 온라인으로 회의에 참여할 것입니다.",
+          "sentenceEn": "Some employees will join the meeting online.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "발표자가 늦어서 회의 시작이 지연되었습니다.",
+              "en": "The meeting was delayed because the speaker was late."
+            },
+            {
+              "ko": "날씨 문제로 오전 회의가 취소되었습니다.",
+              "en": "The morning meeting was canceled due to the weather."
+            },
+            {
+              "ko": "다음 회의 전에 회의록을 검토해 주세요.",
+              "en": "Please review the meeting minutes before the next session."
+            },
+            {
+              "ko": "질문이 있으면 회의에 가져와 주세요.",
+              "en": "Please bring any questions to the meeting."
+            },
+            {
+              "ko": "회의는 오전 아홉시에 시작됩니다.",
+              "en": "The meeting starts at nine in the morning."
+            }
+          ]
+        },
+        {
+          "targetKey": "meeting_start_delayed",
+          "ko": "발표자가 늦어서 회의 시작이 지연되었습니다.",
+          "en": "The meeting was delayed because the speaker was late.",
+          "sentenceKo": "발표자가 늦어서 회의 시작이 지연되었습니다.",
+          "sentenceEn": "The meeting was delayed because the speaker was late.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "날씨 문제로 오전 회의가 취소되었습니다.",
+              "en": "The morning meeting was canceled due to the weather."
+            },
+            {
+              "ko": "다음 회의 전에 회의록을 검토해 주세요.",
+              "en": "Please review the meeting minutes before the next session."
+            },
+            {
+              "ko": "질문이 있으면 회의에 가져와 주세요.",
+              "en": "Please bring any questions to the meeting."
+            },
+            {
+              "ko": "회의는 오전 아홉시에 시작됩니다.",
+              "en": "The meeting starts at nine in the morning."
+            },
+            {
+              "ko": "회의 일정은 월요일로 변경되었습니다.",
+              "en": "The meeting has been moved to Monday."
+            }
+          ]
+        },
+        {
+          "targetKey": "meeting_cancelled_weather",
+          "ko": "날씨 문제로 오전 회의가 취소되었습니다.",
+          "en": "The morning meeting was canceled due to the weather.",
+          "sentenceKo": "날씨 문제로 오전 회의가 취소되었습니다.",
+          "sentenceEn": "The morning meeting was canceled due to the weather.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "다음 회의 전에 회의록을 검토해 주세요.",
+              "en": "Please review the meeting minutes before the next session."
+            },
+            {
+              "ko": "질문이 있으면 회의에 가져와 주세요.",
+              "en": "Please bring any questions to the meeting."
+            },
+            {
+              "ko": "회의는 오전 아홉시에 시작됩니다.",
+              "en": "The meeting starts at nine in the morning."
+            },
+            {
+              "ko": "회의 일정은 월요일로 변경되었습니다.",
+              "en": "The meeting has been moved to Monday."
+            },
+            {
+              "ko": "회의는 3층 회의실에서 열립니다.",
+              "en": "The meeting will be held in the conference room on the third floor."
+            }
+          ]
+        },
+        {
+          "targetKey": "meeting_review_minutes",
+          "ko": "다음 회의 전에 회의록을 검토해 주세요.",
+          "en": "Please review the meeting minutes before the next session.",
+          "sentenceKo": "다음 회의 전에 회의록을 검토해 주세요.",
+          "sentenceEn": "Please review the meeting minutes before the next session.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "질문이 있으면 회의에 가져와 주세요.",
+              "en": "Please bring any questions to the meeting."
+            },
+            {
+              "ko": "회의는 오전 아홉시에 시작됩니다.",
+              "en": "The meeting starts at nine in the morning."
+            },
+            {
+              "ko": "회의 일정은 월요일로 변경되었습니다.",
+              "en": "The meeting has been moved to Monday."
+            },
+            {
+              "ko": "회의는 3층 회의실에서 열립니다.",
+              "en": "The meeting will be held in the conference room on the third floor."
+            },
+            {
+              "ko": "모든 직원은 월간 회의에 참석해야 합니다.",
+              "en": "All staff members must attend the monthly meeting."
+            }
+          ]
+        },
+        {
+          "targetKey": "meeting_bring_questions",
+          "ko": "질문이 있으면 회의에 가져와 주세요.",
+          "en": "Please bring any questions to the meeting.",
+          "sentenceKo": "질문이 있으면 회의에 가져와 주세요.",
+          "sentenceEn": "Please bring any questions to the meeting.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "회의는 오전 아홉시에 시작됩니다.",
+              "en": "The meeting starts at nine in the morning."
+            },
+            {
+              "ko": "회의 일정은 월요일로 변경되었습니다.",
+              "en": "The meeting has been moved to Monday."
+            },
+            {
+              "ko": "회의는 3층 회의실에서 열립니다.",
+              "en": "The meeting will be held in the conference room on the third floor."
+            },
+            {
+              "ko": "모든 직원은 월간 회의에 참석해야 합니다.",
+              "en": "All staff members must attend the monthly meeting."
+            },
+            {
+              "ko": "회의 안건이 이메일에 첨부되어 있습니다.",
+              "en": "The meeting agenda is attached to the email."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 2,
+      "title": "보고서 제출",
+      "description": "보고서와 문서 제출 표현을 익혀요.",
+      "stages": [
+        {
+          "targetKey": "report_submit_friday",
+          "ko": "보고서는 금요일까지 제출해야 합니다.",
+          "en": "The report must be submitted by Friday.",
+          "sentenceKo": "보고서는 금요일까지 제출해야 합니다.",
+          "sentenceEn": "The report must be submitted by Friday.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "초안 보고서는 검토할 준비가 되었습니다.",
+              "en": "The draft report is ready for review."
+            },
+            {
+              "ko": "영업 요약은 마지막 페이지에 포함되어 있습니다.",
+              "en": "The sales summary is included on the final page."
+            },
+            {
+              "ko": "수정된 버전을 오늘 오후에 보내주세요.",
+              "en": "Please send the revised version this afternoon."
+            },
+            {
+              "ko": "차트 한 장이 최종 보고서에서 빠져 있습니다.",
+              "en": "One chart is missing from the final report."
+            },
+            {
+              "ko": "매니저가 이미 예산 보고서를 승인했습니다.",
+              "en": "The manager has already approved the budget report."
+            }
+          ]
+        },
+        {
+          "targetKey": "report_draft_ready",
+          "ko": "초안 보고서는 검토할 준비가 되었습니다.",
+          "en": "The draft report is ready for review.",
+          "sentenceKo": "초안 보고서는 검토할 준비가 되었습니다.",
+          "sentenceEn": "The draft report is ready for review.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "영업 요약은 마지막 페이지에 포함되어 있습니다.",
+              "en": "The sales summary is included on the final page."
+            },
+            {
+              "ko": "수정된 버전을 오늘 오후에 보내주세요.",
+              "en": "Please send the revised version this afternoon."
+            },
+            {
+              "ko": "차트 한 장이 최종 보고서에서 빠져 있습니다.",
+              "en": "One chart is missing from the final report."
+            },
+            {
+              "ko": "매니저가 이미 예산 보고서를 승인했습니다.",
+              "en": "The manager has already approved the budget report."
+            },
+            {
+              "ko": "분기 실적 보고서는 내일 발표될 예정입니다.",
+              "en": "The quarterly results report will be presented tomorrow."
+            }
+          ]
+        },
+        {
+          "targetKey": "report_sales_summary",
+          "ko": "영업 요약은 마지막 페이지에 포함되어 있습니다.",
+          "en": "The sales summary is included on the final page.",
+          "sentenceKo": "영업 요약은 마지막 페이지에 포함되어 있습니다.",
+          "sentenceEn": "The sales summary is included on the final page.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "수정된 버전을 오늘 오후에 보내주세요.",
+              "en": "Please send the revised version this afternoon."
+            },
+            {
+              "ko": "차트 한 장이 최종 보고서에서 빠져 있습니다.",
+              "en": "One chart is missing from the final report."
+            },
+            {
+              "ko": "매니저가 이미 예산 보고서를 승인했습니다.",
+              "en": "The manager has already approved the budget report."
+            },
+            {
+              "ko": "분기 실적 보고서는 내일 발표될 예정입니다.",
+              "en": "The quarterly results report will be presented tomorrow."
+            },
+            {
+              "ko": "모든 서류는 온라인으로 제출해야 합니다.",
+              "en": "All documents must be submitted online."
+            }
+          ]
+        },
+        {
+          "targetKey": "report_send_revision",
+          "ko": "수정된 버전을 오늘 오후에 보내주세요.",
+          "en": "Please send the revised version this afternoon.",
+          "sentenceKo": "수정된 버전을 오늘 오후에 보내주세요.",
+          "sentenceEn": "Please send the revised version this afternoon.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "차트 한 장이 최종 보고서에서 빠져 있습니다.",
+              "en": "One chart is missing from the final report."
+            },
+            {
+              "ko": "매니저가 이미 예산 보고서를 승인했습니다.",
+              "en": "The manager has already approved the budget report."
+            },
+            {
+              "ko": "분기 실적 보고서는 내일 발표될 예정입니다.",
+              "en": "The quarterly results report will be presented tomorrow."
+            },
+            {
+              "ko": "모든 서류는 온라인으로 제출해야 합니다.",
+              "en": "All documents must be submitted online."
+            },
+            {
+              "ko": "파일이 올바른 형식으로 저장되었는지 확인하세요.",
+              "en": "Make sure the file is saved in the correct format."
+            }
+          ]
+        },
+        {
+          "targetKey": "report_missing_chart",
+          "ko": "차트 한 장이 최종 보고서에서 빠져 있습니다.",
+          "en": "One chart is missing from the final report.",
+          "sentenceKo": "차트 한 장이 최종 보고서에서 빠져 있습니다.",
+          "sentenceEn": "One chart is missing from the final report.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "매니저가 이미 예산 보고서를 승인했습니다.",
+              "en": "The manager has already approved the budget report."
+            },
+            {
+              "ko": "분기 실적 보고서는 내일 발표될 예정입니다.",
+              "en": "The quarterly results report will be presented tomorrow."
+            },
+            {
+              "ko": "모든 서류는 온라인으로 제출해야 합니다.",
+              "en": "All documents must be submitted online."
+            },
+            {
+              "ko": "파일이 올바른 형식으로 저장되었는지 확인하세요.",
+              "en": "Make sure the file is saved in the correct format."
+            },
+            {
+              "ko": "수정 전에 리뷰 의견을 먼저 읽어 주세요.",
+              "en": "Please read the review comments before revising it."
+            }
+          ]
+        },
+        {
+          "targetKey": "report_manager_approved",
+          "ko": "매니저가 이미 예산 보고서를 승인했습니다.",
+          "en": "The manager has already approved the budget report.",
+          "sentenceKo": "매니저가 이미 예산 보고서를 승인했습니다.",
+          "sentenceEn": "The manager has already approved the budget report.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "분기 실적 보고서는 내일 발표될 예정입니다.",
+              "en": "The quarterly results report will be presented tomorrow."
+            },
+            {
+              "ko": "모든 서류는 온라인으로 제출해야 합니다.",
+              "en": "All documents must be submitted online."
+            },
+            {
+              "ko": "파일이 올바른 형식으로 저장되었는지 확인하세요.",
+              "en": "Make sure the file is saved in the correct format."
+            },
+            {
+              "ko": "수정 전에 리뷰 의견을 먼저 읽어 주세요.",
+              "en": "Please read the review comments before revising it."
+            },
+            {
+              "ko": "보고서는 금요일까지 제출해야 합니다.",
+              "en": "The report must be submitted by Friday."
+            }
+          ]
+        },
+        {
+          "targetKey": "report_quarterly_results",
+          "ko": "분기 실적 보고서는 내일 발표될 예정입니다.",
+          "en": "The quarterly results report will be presented tomorrow.",
+          "sentenceKo": "분기 실적 보고서는 내일 발표될 예정입니다.",
+          "sentenceEn": "The quarterly results report will be presented tomorrow.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "모든 서류는 온라인으로 제출해야 합니다.",
+              "en": "All documents must be submitted online."
+            },
+            {
+              "ko": "파일이 올바른 형식으로 저장되었는지 확인하세요.",
+              "en": "Make sure the file is saved in the correct format."
+            },
+            {
+              "ko": "수정 전에 리뷰 의견을 먼저 읽어 주세요.",
+              "en": "Please read the review comments before revising it."
+            },
+            {
+              "ko": "보고서는 금요일까지 제출해야 합니다.",
+              "en": "The report must be submitted by Friday."
+            },
+            {
+              "ko": "초안 보고서는 검토할 준비가 되었습니다.",
+              "en": "The draft report is ready for review."
+            }
+          ]
+        },
+        {
+          "targetKey": "report_submit_online",
+          "ko": "모든 서류는 온라인으로 제출해야 합니다.",
+          "en": "All documents must be submitted online.",
+          "sentenceKo": "모든 서류는 온라인으로 제출해야 합니다.",
+          "sentenceEn": "All documents must be submitted online.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "파일이 올바른 형식으로 저장되었는지 확인하세요.",
+              "en": "Make sure the file is saved in the correct format."
+            },
+            {
+              "ko": "수정 전에 리뷰 의견을 먼저 읽어 주세요.",
+              "en": "Please read the review comments before revising it."
+            },
+            {
+              "ko": "보고서는 금요일까지 제출해야 합니다.",
+              "en": "The report must be submitted by Friday."
+            },
+            {
+              "ko": "초안 보고서는 검토할 준비가 되었습니다.",
+              "en": "The draft report is ready for review."
+            },
+            {
+              "ko": "영업 요약은 마지막 페이지에 포함되어 있습니다.",
+              "en": "The sales summary is included on the final page."
+            }
+          ]
+        },
+        {
+          "targetKey": "report_correct_format",
+          "ko": "파일이 올바른 형식으로 저장되었는지 확인하세요.",
+          "en": "Make sure the file is saved in the correct format.",
+          "sentenceKo": "파일이 올바른 형식으로 저장되었는지 확인하세요.",
+          "sentenceEn": "Make sure the file is saved in the correct format.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "수정 전에 리뷰 의견을 먼저 읽어 주세요.",
+              "en": "Please read the review comments before revising it."
+            },
+            {
+              "ko": "보고서는 금요일까지 제출해야 합니다.",
+              "en": "The report must be submitted by Friday."
+            },
+            {
+              "ko": "초안 보고서는 검토할 준비가 되었습니다.",
+              "en": "The draft report is ready for review."
+            },
+            {
+              "ko": "영업 요약은 마지막 페이지에 포함되어 있습니다.",
+              "en": "The sales summary is included on the final page."
+            },
+            {
+              "ko": "수정된 버전을 오늘 오후에 보내주세요.",
+              "en": "Please send the revised version this afternoon."
+            }
+          ]
+        },
+        {
+          "targetKey": "report_review_comments",
+          "ko": "수정 전에 리뷰 의견을 먼저 읽어 주세요.",
+          "en": "Please read the review comments before revising it.",
+          "sentenceKo": "수정 전에 리뷰 의견을 먼저 읽어 주세요.",
+          "sentenceEn": "Please read the review comments before revising it.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "보고서는 금요일까지 제출해야 합니다.",
+              "en": "The report must be submitted by Friday."
+            },
+            {
+              "ko": "초안 보고서는 검토할 준비가 되었습니다.",
+              "en": "The draft report is ready for review."
+            },
+            {
+              "ko": "영업 요약은 마지막 페이지에 포함되어 있습니다.",
+              "en": "The sales summary is included on the final page."
+            },
+            {
+              "ko": "수정된 버전을 오늘 오후에 보내주세요.",
+              "en": "Please send the revised version this afternoon."
+            },
+            {
+              "ko": "차트 한 장이 최종 보고서에서 빠져 있습니다.",
+              "en": "One chart is missing from the final report."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 3,
+      "title": "이메일과 연락",
+      "description": "업무용 이메일 표현을 정리해요.",
+      "stages": [
+        {
+          "targetKey": "email_send_confirmation",
+          "ko": "고객에게 확인 이메일을 보내주세요.",
+          "en": "Please send a confirmation email to the client.",
+          "sentenceKo": "고객에게 확인 이메일을 보내주세요.",
+          "sentenceEn": "Please send a confirmation email to the client.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "필요한 경우에만 전체 회신을 사용해 주세요.",
+              "en": "Please use reply all only when necessary."
+            },
+            {
+              "ko": "제목 줄에 주문 번호를 포함해 주세요.",
+              "en": "Please include the order number in the subject line."
+            },
+            {
+              "ko": "송장을 이메일에 첨부하는 것을 잊지 마세요.",
+              "en": "Do not forget to attach the invoice to the email."
+            },
+            {
+              "ko": "답장이 없으면 다음 주에 다시 연락해 주세요.",
+              "en": "Please follow up next week if there is no response."
+            },
+            {
+              "ko": "중요한 문의에는 상사를 참조에 넣어 주세요.",
+              "en": "Please copy your supervisor on important inquiries."
+            }
+          ]
+        },
+        {
+          "targetKey": "email_reply_all",
+          "ko": "필요한 경우에만 전체 회신을 사용해 주세요.",
+          "en": "Please use reply all only when necessary.",
+          "sentenceKo": "필요한 경우에만 전체 회신을 사용해 주세요.",
+          "sentenceEn": "Please use reply all only when necessary.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "제목 줄에 주문 번호를 포함해 주세요.",
+              "en": "Please include the order number in the subject line."
+            },
+            {
+              "ko": "송장을 이메일에 첨부하는 것을 잊지 마세요.",
+              "en": "Do not forget to attach the invoice to the email."
+            },
+            {
+              "ko": "답장이 없으면 다음 주에 다시 연락해 주세요.",
+              "en": "Please follow up next week if there is no response."
+            },
+            {
+              "ko": "중요한 문의에는 상사를 참조에 넣어 주세요.",
+              "en": "Please copy your supervisor on important inquiries."
+            },
+            {
+              "ko": "초안 이메일은 공유 폴더에 저장되어 있습니다.",
+              "en": "The draft email is saved in the shared folder."
+            }
+          ]
+        },
+        {
+          "targetKey": "email_subject_line",
+          "ko": "제목 줄에 주문 번호를 포함해 주세요.",
+          "en": "Please include the order number in the subject line.",
+          "sentenceKo": "제목 줄에 주문 번호를 포함해 주세요.",
+          "sentenceEn": "Please include the order number in the subject line.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "송장을 이메일에 첨부하는 것을 잊지 마세요.",
+              "en": "Do not forget to attach the invoice to the email."
+            },
+            {
+              "ko": "답장이 없으면 다음 주에 다시 연락해 주세요.",
+              "en": "Please follow up next week if there is no response."
+            },
+            {
+              "ko": "중요한 문의에는 상사를 참조에 넣어 주세요.",
+              "en": "Please copy your supervisor on important inquiries."
+            },
+            {
+              "ko": "초안 이메일은 공유 폴더에 저장되어 있습니다.",
+              "en": "The draft email is saved in the shared folder."
+            },
+            {
+              "ko": "이 요청은 긴급하므로 오늘 처리되어야 합니다.",
+              "en": "This request is urgent and should be handled today."
+            }
+          ]
+        },
+        {
+          "targetKey": "email_attach_invoice",
+          "ko": "송장을 이메일에 첨부하는 것을 잊지 마세요.",
+          "en": "Do not forget to attach the invoice to the email.",
+          "sentenceKo": "송장을 이메일에 첨부하는 것을 잊지 마세요.",
+          "sentenceEn": "Do not forget to attach the invoice to the email.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "답장이 없으면 다음 주에 다시 연락해 주세요.",
+              "en": "Please follow up next week if there is no response."
+            },
+            {
+              "ko": "중요한 문의에는 상사를 참조에 넣어 주세요.",
+              "en": "Please copy your supervisor on important inquiries."
+            },
+            {
+              "ko": "초안 이메일은 공유 폴더에 저장되어 있습니다.",
+              "en": "The draft email is saved in the shared folder."
+            },
+            {
+              "ko": "이 요청은 긴급하므로 오늘 처리되어야 합니다.",
+              "en": "This request is urgent and should be handled today."
+            },
+            {
+              "ko": "빠른 답변에 감사드립니다.",
+              "en": "Thank you for your prompt response."
+            }
+          ]
+        },
+        {
+          "targetKey": "email_follow_up",
+          "ko": "답장이 없으면 다음 주에 다시 연락해 주세요.",
+          "en": "Please follow up next week if there is no response.",
+          "sentenceKo": "답장이 없으면 다음 주에 다시 연락해 주세요.",
+          "sentenceEn": "Please follow up next week if there is no response.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "중요한 문의에는 상사를 참조에 넣어 주세요.",
+              "en": "Please copy your supervisor on important inquiries."
+            },
+            {
+              "ko": "초안 이메일은 공유 폴더에 저장되어 있습니다.",
+              "en": "The draft email is saved in the shared folder."
+            },
+            {
+              "ko": "이 요청은 긴급하므로 오늘 처리되어야 합니다.",
+              "en": "This request is urgent and should be handled today."
+            },
+            {
+              "ko": "빠른 답변에 감사드립니다.",
+              "en": "Thank you for your prompt response."
+            },
+            {
+              "ko": "혼동을 피하기 위해 세부 내용을 명확히 해주세요.",
+              "en": "Please clarify the details to avoid confusion."
+            }
+          ]
+        },
+        {
+          "targetKey": "email_copy_supervisor",
+          "ko": "중요한 문의에는 상사를 참조에 넣어 주세요.",
+          "en": "Please copy your supervisor on important inquiries.",
+          "sentenceKo": "중요한 문의에는 상사를 참조에 넣어 주세요.",
+          "sentenceEn": "Please copy your supervisor on important inquiries.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "초안 이메일은 공유 폴더에 저장되어 있습니다.",
+              "en": "The draft email is saved in the shared folder."
+            },
+            {
+              "ko": "이 요청은 긴급하므로 오늘 처리되어야 합니다.",
+              "en": "This request is urgent and should be handled today."
+            },
+            {
+              "ko": "빠른 답변에 감사드립니다.",
+              "en": "Thank you for your prompt response."
+            },
+            {
+              "ko": "혼동을 피하기 위해 세부 내용을 명확히 해주세요.",
+              "en": "Please clarify the details to avoid confusion."
+            },
+            {
+              "ko": "고객에게 확인 이메일을 보내주세요.",
+              "en": "Please send a confirmation email to the client."
+            }
+          ]
+        },
+        {
+          "targetKey": "email_draft_saved",
+          "ko": "초안 이메일은 공유 폴더에 저장되어 있습니다.",
+          "en": "The draft email is saved in the shared folder.",
+          "sentenceKo": "초안 이메일은 공유 폴더에 저장되어 있습니다.",
+          "sentenceEn": "The draft email is saved in the shared folder.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "이 요청은 긴급하므로 오늘 처리되어야 합니다.",
+              "en": "This request is urgent and should be handled today."
+            },
+            {
+              "ko": "빠른 답변에 감사드립니다.",
+              "en": "Thank you for your prompt response."
+            },
+            {
+              "ko": "혼동을 피하기 위해 세부 내용을 명확히 해주세요.",
+              "en": "Please clarify the details to avoid confusion."
+            },
+            {
+              "ko": "고객에게 확인 이메일을 보내주세요.",
+              "en": "Please send a confirmation email to the client."
+            },
+            {
+              "ko": "필요한 경우에만 전체 회신을 사용해 주세요.",
+              "en": "Please use reply all only when necessary."
+            }
+          ]
+        },
+        {
+          "targetKey": "email_urgent_request",
+          "ko": "이 요청은 긴급하므로 오늘 처리되어야 합니다.",
+          "en": "This request is urgent and should be handled today.",
+          "sentenceKo": "이 요청은 긴급하므로 오늘 처리되어야 합니다.",
+          "sentenceEn": "This request is urgent and should be handled today.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "빠른 답변에 감사드립니다.",
+              "en": "Thank you for your prompt response."
+            },
+            {
+              "ko": "혼동을 피하기 위해 세부 내용을 명확히 해주세요.",
+              "en": "Please clarify the details to avoid confusion."
+            },
+            {
+              "ko": "고객에게 확인 이메일을 보내주세요.",
+              "en": "Please send a confirmation email to the client."
+            },
+            {
+              "ko": "필요한 경우에만 전체 회신을 사용해 주세요.",
+              "en": "Please use reply all only when necessary."
+            },
+            {
+              "ko": "제목 줄에 주문 번호를 포함해 주세요.",
+              "en": "Please include the order number in the subject line."
+            }
+          ]
+        },
+        {
+          "targetKey": "email_thank_response",
+          "ko": "빠른 답변에 감사드립니다.",
+          "en": "Thank you for your prompt response.",
+          "sentenceKo": "빠른 답변에 감사드립니다.",
+          "sentenceEn": "Thank you for your prompt response.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "혼동을 피하기 위해 세부 내용을 명확히 해주세요.",
+              "en": "Please clarify the details to avoid confusion."
+            },
+            {
+              "ko": "고객에게 확인 이메일을 보내주세요.",
+              "en": "Please send a confirmation email to the client."
+            },
+            {
+              "ko": "필요한 경우에만 전체 회신을 사용해 주세요.",
+              "en": "Please use reply all only when necessary."
+            },
+            {
+              "ko": "제목 줄에 주문 번호를 포함해 주세요.",
+              "en": "Please include the order number in the subject line."
+            },
+            {
+              "ko": "송장을 이메일에 첨부하는 것을 잊지 마세요.",
+              "en": "Do not forget to attach the invoice to the email."
+            }
+          ]
+        },
+        {
+          "targetKey": "email_clarify_details",
+          "ko": "혼동을 피하기 위해 세부 내용을 명확히 해주세요.",
+          "en": "Please clarify the details to avoid confusion.",
+          "sentenceKo": "혼동을 피하기 위해 세부 내용을 명확히 해주세요.",
+          "sentenceEn": "Please clarify the details to avoid confusion.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "고객에게 확인 이메일을 보내주세요.",
+              "en": "Please send a confirmation email to the client."
+            },
+            {
+              "ko": "필요한 경우에만 전체 회신을 사용해 주세요.",
+              "en": "Please use reply all only when necessary."
+            },
+            {
+              "ko": "제목 줄에 주문 번호를 포함해 주세요.",
+              "en": "Please include the order number in the subject line."
+            },
+            {
+              "ko": "송장을 이메일에 첨부하는 것을 잊지 마세요.",
+              "en": "Do not forget to attach the invoice to the email."
+            },
+            {
+              "ko": "답장이 없으면 다음 주에 다시 연락해 주세요.",
+              "en": "Please follow up next week if there is no response."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 4,
+      "title": "출장과 일정",
+      "description": "출장과 이동 관련 문장을 익혀요.",
+      "stages": [
+        {
+          "targetKey": "travelbiz_flight_delayed",
+          "ko": "항공편은 한 시간 지연되었습니다.",
+          "en": "The flight was delayed by one hour.",
+          "sentenceKo": "항공편은 한 시간 지연되었습니다.",
+          "sentenceEn": "The flight was delayed by one hour.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "호텔 예약은 이미 완료되었습니다.",
+              "en": "The hotel reservation has already been completed."
+            },
+            {
+              "ko": "도착 터미널은 변경될 수 있습니다.",
+              "en": "The arrival terminal may change."
+            },
+            {
+              "ko": "택시 영수증은 경비 처리에 필요합니다.",
+              "en": "A taxi receipt is required for reimbursement."
+            },
+            {
+              "ko": "탑승구 번호를 다시 확인해 주세요.",
+              "en": "Please check the boarding gate number again."
+            },
+            {
+              "ko": "지사 방문은 다음 주 화요일로 예정되어 있습니다.",
+              "en": "The branch visit is scheduled for next Tuesday."
+            }
+          ]
+        },
+        {
+          "targetKey": "travelbiz_hotel_reserved",
+          "ko": "호텔 예약은 이미 완료되었습니다.",
+          "en": "The hotel reservation has already been completed.",
+          "sentenceKo": "호텔 예약은 이미 완료되었습니다.",
+          "sentenceEn": "The hotel reservation has already been completed.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "도착 터미널은 변경될 수 있습니다.",
+              "en": "The arrival terminal may change."
+            },
+            {
+              "ko": "택시 영수증은 경비 처리에 필요합니다.",
+              "en": "A taxi receipt is required for reimbursement."
+            },
+            {
+              "ko": "탑승구 번호를 다시 확인해 주세요.",
+              "en": "Please check the boarding gate number again."
+            },
+            {
+              "ko": "지사 방문은 다음 주 화요일로 예정되어 있습니다.",
+              "en": "The branch visit is scheduled for next Tuesday."
+            },
+            {
+              "ko": "교통 파업으로 일정이 일부 변경되었습니다.",
+              "en": "The schedule has been partially changed due to the transport strike."
+            }
+          ]
+        },
+        {
+          "targetKey": "travelbiz_arrival_terminal",
+          "ko": "도착 터미널은 변경될 수 있습니다.",
+          "en": "The arrival terminal may change.",
+          "sentenceKo": "도착 터미널은 변경될 수 있습니다.",
+          "sentenceEn": "The arrival terminal may change.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "택시 영수증은 경비 처리에 필요합니다.",
+              "en": "A taxi receipt is required for reimbursement."
+            },
+            {
+              "ko": "탑승구 번호를 다시 확인해 주세요.",
+              "en": "Please check the boarding gate number again."
+            },
+            {
+              "ko": "지사 방문은 다음 주 화요일로 예정되어 있습니다.",
+              "en": "The branch visit is scheduled for next Tuesday."
+            },
+            {
+              "ko": "교통 파업으로 일정이 일부 변경되었습니다.",
+              "en": "The schedule has been partially changed due to the transport strike."
+            },
+            {
+              "ko": "회의 배지는 등록 데스크에서 받을 수 있습니다.",
+              "en": "Conference badges can be picked up at the registration desk."
+            }
+          ]
+        },
+        {
+          "targetKey": "travelbiz_taxi_receipt",
+          "ko": "택시 영수증은 경비 처리에 필요합니다.",
+          "en": "A taxi receipt is required for reimbursement.",
+          "sentenceKo": "택시 영수증은 경비 처리에 필요합니다.",
+          "sentenceEn": "A taxi receipt is required for reimbursement.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "탑승구 번호를 다시 확인해 주세요.",
+              "en": "Please check the boarding gate number again."
+            },
+            {
+              "ko": "지사 방문은 다음 주 화요일로 예정되어 있습니다.",
+              "en": "The branch visit is scheduled for next Tuesday."
+            },
+            {
+              "ko": "교통 파업으로 일정이 일부 변경되었습니다.",
+              "en": "The schedule has been partially changed due to the transport strike."
+            },
+            {
+              "ko": "회의 배지는 등록 데스크에서 받을 수 있습니다.",
+              "en": "Conference badges can be picked up at the registration desk."
+            },
+            {
+              "ko": "수하물은 잠시 후 컨베이어 벨트에 도착할 예정입니다.",
+              "en": "The luggage will arrive on the conveyor belt shortly."
+            }
+          ]
+        },
+        {
+          "targetKey": "travelbiz_boarding_gate",
+          "ko": "탑승구 번호를 다시 확인해 주세요.",
+          "en": "Please check the boarding gate number again.",
+          "sentenceKo": "탑승구 번호를 다시 확인해 주세요.",
+          "sentenceEn": "Please check the boarding gate number again.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "지사 방문은 다음 주 화요일로 예정되어 있습니다.",
+              "en": "The branch visit is scheduled for next Tuesday."
+            },
+            {
+              "ko": "교통 파업으로 일정이 일부 변경되었습니다.",
+              "en": "The schedule has been partially changed due to the transport strike."
+            },
+            {
+              "ko": "회의 배지는 등록 데스크에서 받을 수 있습니다.",
+              "en": "Conference badges can be picked up at the registration desk."
+            },
+            {
+              "ko": "수하물은 잠시 후 컨베이어 벨트에 도착할 예정입니다.",
+              "en": "The luggage will arrive on the conveyor belt shortly."
+            },
+            {
+              "ko": "출장 일정표가 팀과 공유되었습니다.",
+              "en": "The travel itinerary has been shared with the team."
+            }
+          ]
+        },
+        {
+          "targetKey": "travelbiz_visit_branch",
+          "ko": "지사 방문은 다음 주 화요일로 예정되어 있습니다.",
+          "en": "The branch visit is scheduled for next Tuesday.",
+          "sentenceKo": "지사 방문은 다음 주 화요일로 예정되어 있습니다.",
+          "sentenceEn": "The branch visit is scheduled for next Tuesday.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "교통 파업으로 일정이 일부 변경되었습니다.",
+              "en": "The schedule has been partially changed due to the transport strike."
+            },
+            {
+              "ko": "회의 배지는 등록 데스크에서 받을 수 있습니다.",
+              "en": "Conference badges can be picked up at the registration desk."
+            },
+            {
+              "ko": "수하물은 잠시 후 컨베이어 벨트에 도착할 예정입니다.",
+              "en": "The luggage will arrive on the conveyor belt shortly."
+            },
+            {
+              "ko": "출장 일정표가 팀과 공유되었습니다.",
+              "en": "The travel itinerary has been shared with the team."
+            },
+            {
+              "ko": "항공편은 한 시간 지연되었습니다.",
+              "en": "The flight was delayed by one hour."
+            }
+          ]
+        },
+        {
+          "targetKey": "travelbiz_transport_strike",
+          "ko": "교통 파업으로 일정이 일부 변경되었습니다.",
+          "en": "The schedule has been partially changed due to the transport strike.",
+          "sentenceKo": "교통 파업으로 일정이 일부 변경되었습니다.",
+          "sentenceEn": "The schedule has been partially changed due to the transport strike.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "회의 배지는 등록 데스크에서 받을 수 있습니다.",
+              "en": "Conference badges can be picked up at the registration desk."
+            },
+            {
+              "ko": "수하물은 잠시 후 컨베이어 벨트에 도착할 예정입니다.",
+              "en": "The luggage will arrive on the conveyor belt shortly."
+            },
+            {
+              "ko": "출장 일정표가 팀과 공유되었습니다.",
+              "en": "The travel itinerary has been shared with the team."
+            },
+            {
+              "ko": "항공편은 한 시간 지연되었습니다.",
+              "en": "The flight was delayed by one hour."
+            },
+            {
+              "ko": "호텔 예약은 이미 완료되었습니다.",
+              "en": "The hotel reservation has already been completed."
+            }
+          ]
+        },
+        {
+          "targetKey": "travelbiz_conference_badge",
+          "ko": "회의 배지는 등록 데스크에서 받을 수 있습니다.",
+          "en": "Conference badges can be picked up at the registration desk.",
+          "sentenceKo": "회의 배지는 등록 데스크에서 받을 수 있습니다.",
+          "sentenceEn": "Conference badges can be picked up at the registration desk.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "수하물은 잠시 후 컨베이어 벨트에 도착할 예정입니다.",
+              "en": "The luggage will arrive on the conveyor belt shortly."
+            },
+            {
+              "ko": "출장 일정표가 팀과 공유되었습니다.",
+              "en": "The travel itinerary has been shared with the team."
+            },
+            {
+              "ko": "항공편은 한 시간 지연되었습니다.",
+              "en": "The flight was delayed by one hour."
+            },
+            {
+              "ko": "호텔 예약은 이미 완료되었습니다.",
+              "en": "The hotel reservation has already been completed."
+            },
+            {
+              "ko": "도착 터미널은 변경될 수 있습니다.",
+              "en": "The arrival terminal may change."
+            }
+          ]
+        },
+        {
+          "targetKey": "travelbiz_luggage_arrival",
+          "ko": "수하물은 잠시 후 컨베이어 벨트에 도착할 예정입니다.",
+          "en": "The luggage will arrive on the conveyor belt shortly.",
+          "sentenceKo": "수하물은 잠시 후 컨베이어 벨트에 도착할 예정입니다.",
+          "sentenceEn": "The luggage will arrive on the conveyor belt shortly.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "출장 일정표가 팀과 공유되었습니다.",
+              "en": "The travel itinerary has been shared with the team."
+            },
+            {
+              "ko": "항공편은 한 시간 지연되었습니다.",
+              "en": "The flight was delayed by one hour."
+            },
+            {
+              "ko": "호텔 예약은 이미 완료되었습니다.",
+              "en": "The hotel reservation has already been completed."
+            },
+            {
+              "ko": "도착 터미널은 변경될 수 있습니다.",
+              "en": "The arrival terminal may change."
+            },
+            {
+              "ko": "택시 영수증은 경비 처리에 필요합니다.",
+              "en": "A taxi receipt is required for reimbursement."
+            }
+          ]
+        },
+        {
+          "targetKey": "travelbiz_itinerary_shared",
+          "ko": "출장 일정표가 팀과 공유되었습니다.",
+          "en": "The travel itinerary has been shared with the team.",
+          "sentenceKo": "출장 일정표가 팀과 공유되었습니다.",
+          "sentenceEn": "The travel itinerary has been shared with the team.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "항공편은 한 시간 지연되었습니다.",
+              "en": "The flight was delayed by one hour."
+            },
+            {
+              "ko": "호텔 예약은 이미 완료되었습니다.",
+              "en": "The hotel reservation has already been completed."
+            },
+            {
+              "ko": "도착 터미널은 변경될 수 있습니다.",
+              "en": "The arrival terminal may change."
+            },
+            {
+              "ko": "택시 영수증은 경비 처리에 필요합니다.",
+              "en": "A taxi receipt is required for reimbursement."
+            },
+            {
+              "ko": "탑승구 번호를 다시 확인해 주세요.",
+              "en": "Please check the boarding gate number again."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 5,
+      "title": "사무실 장비",
+      "description": "사무실 장비와 비품 관련 표현을 익혀요.",
+      "stages": [
+        {
+          "targetKey": "office_copier_broken",
+          "ko": "복사기가 다시 작동하지 않습니다.",
+          "en": "The copier is not working again.",
+          "sentenceKo": "복사기가 다시 작동하지 않습니다.",
+          "sentenceEn": "The copier is not working again.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "프린터에 용지를 보충해 주세요.",
+              "en": "Please refill the paper in the printer."
+            },
+            {
+              "ko": "모든 컴퓨터는 어젯밤에 업데이트되었습니다.",
+              "en": "All computers were updated last night."
+            },
+            {
+              "ko": "회의실 화면 연결에 문제가 있습니다.",
+              "en": "There is a problem with the meeting room display connection."
+            },
+            {
+              "ko": "이 의자는 새 것으로 교체되어야 합니다.",
+              "en": "This chair should be replaced with a new one."
+            },
+            {
+              "ko": "사무용품 주문은 오늘 마감됩니다.",
+              "en": "The office supply order closes today."
+            }
+          ]
+        },
+        {
+          "targetKey": "office_printer_paper",
+          "ko": "프린터에 용지를 보충해 주세요.",
+          "en": "Please refill the paper in the printer.",
+          "sentenceKo": "프린터에 용지를 보충해 주세요.",
+          "sentenceEn": "Please refill the paper in the printer.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "모든 컴퓨터는 어젯밤에 업데이트되었습니다.",
+              "en": "All computers were updated last night."
+            },
+            {
+              "ko": "회의실 화면 연결에 문제가 있습니다.",
+              "en": "There is a problem with the meeting room display connection."
+            },
+            {
+              "ko": "이 의자는 새 것으로 교체되어야 합니다.",
+              "en": "This chair should be replaced with a new one."
+            },
+            {
+              "ko": "사무용품 주문은 오늘 마감됩니다.",
+              "en": "The office supply order closes today."
+            },
+            {
+              "ko": "프로젝터는 발표 전에 준비되어 있어야 합니다.",
+              "en": "The projector should be ready before the presentation."
+            }
+          ]
+        },
+        {
+          "targetKey": "office_computer_updated",
+          "ko": "모든 컴퓨터는 어젯밤에 업데이트되었습니다.",
+          "en": "All computers were updated last night.",
+          "sentenceKo": "모든 컴퓨터는 어젯밤에 업데이트되었습니다.",
+          "sentenceEn": "All computers were updated last night.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "회의실 화면 연결에 문제가 있습니다.",
+              "en": "There is a problem with the meeting room display connection."
+            },
+            {
+              "ko": "이 의자는 새 것으로 교체되어야 합니다.",
+              "en": "This chair should be replaced with a new one."
+            },
+            {
+              "ko": "사무용품 주문은 오늘 마감됩니다.",
+              "en": "The office supply order closes today."
+            },
+            {
+              "ko": "프로젝터는 발표 전에 준비되어 있어야 합니다.",
+              "en": "The projector should be ready before the presentation."
+            },
+            {
+              "ko": "네트워크 비밀번호는 매달 변경됩니다.",
+              "en": "The network password is changed every month."
+            }
+          ]
+        },
+        {
+          "targetKey": "office_meeting_screen",
+          "ko": "회의실 화면 연결에 문제가 있습니다.",
+          "en": "There is a problem with the meeting room display connection.",
+          "sentenceKo": "회의실 화면 연결에 문제가 있습니다.",
+          "sentenceEn": "There is a problem with the meeting room display connection.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "이 의자는 새 것으로 교체되어야 합니다.",
+              "en": "This chair should be replaced with a new one."
+            },
+            {
+              "ko": "사무용품 주문은 오늘 마감됩니다.",
+              "en": "The office supply order closes today."
+            },
+            {
+              "ko": "프로젝터는 발표 전에 준비되어 있어야 합니다.",
+              "en": "The projector should be ready before the presentation."
+            },
+            {
+              "ko": "네트워크 비밀번호는 매달 변경됩니다.",
+              "en": "The network password is changed every month."
+            },
+            {
+              "ko": "공용 프린터는 복도 끝에 있습니다.",
+              "en": "The shared printer is at the end of the hallway."
+            }
+          ]
+        },
+        {
+          "targetKey": "office_replace_chair",
+          "ko": "이 의자는 새 것으로 교체되어야 합니다.",
+          "en": "This chair should be replaced with a new one.",
+          "sentenceKo": "이 의자는 새 것으로 교체되어야 합니다.",
+          "sentenceEn": "This chair should be replaced with a new one.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "사무용품 주문은 오늘 마감됩니다.",
+              "en": "The office supply order closes today."
+            },
+            {
+              "ko": "프로젝터는 발표 전에 준비되어 있어야 합니다.",
+              "en": "The projector should be ready before the presentation."
+            },
+            {
+              "ko": "네트워크 비밀번호는 매달 변경됩니다.",
+              "en": "The network password is changed every month."
+            },
+            {
+              "ko": "공용 프린터는 복도 끝에 있습니다.",
+              "en": "The shared printer is at the end of the hallway."
+            },
+            {
+              "ko": "문제가 계속되면 기술자를 불러 주세요.",
+              "en": "Please call a technician if the problem continues."
+            }
+          ]
+        },
+        {
+          "targetKey": "office_supply_order",
+          "ko": "사무용품 주문은 오늘 마감됩니다.",
+          "en": "The office supply order closes today.",
+          "sentenceKo": "사무용품 주문은 오늘 마감됩니다.",
+          "sentenceEn": "The office supply order closes today.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "프로젝터는 발표 전에 준비되어 있어야 합니다.",
+              "en": "The projector should be ready before the presentation."
+            },
+            {
+              "ko": "네트워크 비밀번호는 매달 변경됩니다.",
+              "en": "The network password is changed every month."
+            },
+            {
+              "ko": "공용 프린터는 복도 끝에 있습니다.",
+              "en": "The shared printer is at the end of the hallway."
+            },
+            {
+              "ko": "문제가 계속되면 기술자를 불러 주세요.",
+              "en": "Please call a technician if the problem continues."
+            },
+            {
+              "ko": "복사기가 다시 작동하지 않습니다.",
+              "en": "The copier is not working again."
+            }
+          ]
+        },
+        {
+          "targetKey": "office_projector_ready",
+          "ko": "프로젝터는 발표 전에 준비되어 있어야 합니다.",
+          "en": "The projector should be ready before the presentation.",
+          "sentenceKo": "프로젝터는 발표 전에 준비되어 있어야 합니다.",
+          "sentenceEn": "The projector should be ready before the presentation.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "네트워크 비밀번호는 매달 변경됩니다.",
+              "en": "The network password is changed every month."
+            },
+            {
+              "ko": "공용 프린터는 복도 끝에 있습니다.",
+              "en": "The shared printer is at the end of the hallway."
+            },
+            {
+              "ko": "문제가 계속되면 기술자를 불러 주세요.",
+              "en": "Please call a technician if the problem continues."
+            },
+            {
+              "ko": "복사기가 다시 작동하지 않습니다.",
+              "en": "The copier is not working again."
+            },
+            {
+              "ko": "프린터에 용지를 보충해 주세요.",
+              "en": "Please refill the paper in the printer."
+            }
+          ]
+        },
+        {
+          "targetKey": "office_network_password",
+          "ko": "네트워크 비밀번호는 매달 변경됩니다.",
+          "en": "The network password is changed every month.",
+          "sentenceKo": "네트워크 비밀번호는 매달 변경됩니다.",
+          "sentenceEn": "The network password is changed every month.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "공용 프린터는 복도 끝에 있습니다.",
+              "en": "The shared printer is at the end of the hallway."
+            },
+            {
+              "ko": "문제가 계속되면 기술자를 불러 주세요.",
+              "en": "Please call a technician if the problem continues."
+            },
+            {
+              "ko": "복사기가 다시 작동하지 않습니다.",
+              "en": "The copier is not working again."
+            },
+            {
+              "ko": "프린터에 용지를 보충해 주세요.",
+              "en": "Please refill the paper in the printer."
+            },
+            {
+              "ko": "모든 컴퓨터는 어젯밤에 업데이트되었습니다.",
+              "en": "All computers were updated last night."
+            }
+          ]
+        },
+        {
+          "targetKey": "office_shared_printer",
+          "ko": "공용 프린터는 복도 끝에 있습니다.",
+          "en": "The shared printer is at the end of the hallway.",
+          "sentenceKo": "공용 프린터는 복도 끝에 있습니다.",
+          "sentenceEn": "The shared printer is at the end of the hallway.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "문제가 계속되면 기술자를 불러 주세요.",
+              "en": "Please call a technician if the problem continues."
+            },
+            {
+              "ko": "복사기가 다시 작동하지 않습니다.",
+              "en": "The copier is not working again."
+            },
+            {
+              "ko": "프린터에 용지를 보충해 주세요.",
+              "en": "Please refill the paper in the printer."
+            },
+            {
+              "ko": "모든 컴퓨터는 어젯밤에 업데이트되었습니다.",
+              "en": "All computers were updated last night."
+            },
+            {
+              "ko": "회의실 화면 연결에 문제가 있습니다.",
+              "en": "There is a problem with the meeting room display connection."
+            }
+          ]
+        },
+        {
+          "targetKey": "office_call_technician",
+          "ko": "문제가 계속되면 기술자를 불러 주세요.",
+          "en": "Please call a technician if the problem continues.",
+          "sentenceKo": "문제가 계속되면 기술자를 불러 주세요.",
+          "sentenceEn": "Please call a technician if the problem continues.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "복사기가 다시 작동하지 않습니다.",
+              "en": "The copier is not working again."
+            },
+            {
+              "ko": "프린터에 용지를 보충해 주세요.",
+              "en": "Please refill the paper in the printer."
+            },
+            {
+              "ko": "모든 컴퓨터는 어젯밤에 업데이트되었습니다.",
+              "en": "All computers were updated last night."
+            },
+            {
+              "ko": "회의실 화면 연결에 문제가 있습니다.",
+              "en": "There is a problem with the meeting room display connection."
+            },
+            {
+              "ko": "이 의자는 새 것으로 교체되어야 합니다.",
+              "en": "This chair should be replaced with a new one."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 6,
+      "title": "인사와 교육",
+      "description": "채용, 교육, 인사 표현을 정리해요.",
+      "stages": [
+        {
+          "targetKey": "hr_training_next_week",
+          "ko": "신입 직원은 다음 주에 교육을 받습니다.",
+          "en": "New employees will receive training next week.",
+          "sentenceKo": "신입 직원은 다음 주에 교육을 받습니다.",
+          "sentenceEn": "New employees will receive training next week.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "오리엔테이션은 대회의실에서 열립니다.",
+              "en": "The orientation will take place in the main conference room."
+            },
+            {
+              "ko": "지원자는 이력서를 온라인으로 제출해야 합니다.",
+              "en": "Applicants must submit their resumes online."
+            },
+            {
+              "ko": "면접 일정은 내일 공지될 예정입니다.",
+              "en": "The interview schedule will be announced tomorrow."
+            },
+            {
+              "ko": "복지 제도는 첫 교육 시간에 설명됩니다.",
+              "en": "The benefits package is explained during the first training session."
+            },
+            {
+              "ko": "매니저는 매달 성과 피드백을 제공합니다.",
+              "en": "Managers provide performance feedback every month."
+            }
+          ]
+        },
+        {
+          "targetKey": "hr_orientation_room",
+          "ko": "오리엔테이션은 대회의실에서 열립니다.",
+          "en": "The orientation will take place in the main conference room.",
+          "sentenceKo": "오리엔테이션은 대회의실에서 열립니다.",
+          "sentenceEn": "The orientation will take place in the main conference room.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "지원자는 이력서를 온라인으로 제출해야 합니다.",
+              "en": "Applicants must submit their resumes online."
+            },
+            {
+              "ko": "면접 일정은 내일 공지될 예정입니다.",
+              "en": "The interview schedule will be announced tomorrow."
+            },
+            {
+              "ko": "복지 제도는 첫 교육 시간에 설명됩니다.",
+              "en": "The benefits package is explained during the first training session."
+            },
+            {
+              "ko": "매니저는 매달 성과 피드백을 제공합니다.",
+              "en": "Managers provide performance feedback every month."
+            },
+            {
+              "ko": "워크숍에는 전원 참석이 요구됩니다.",
+              "en": "Attendance is required for the workshop."
+            }
+          ]
+        },
+        {
+          "targetKey": "hr_submit_resume",
+          "ko": "지원자는 이력서를 온라인으로 제출해야 합니다.",
+          "en": "Applicants must submit their resumes online.",
+          "sentenceKo": "지원자는 이력서를 온라인으로 제출해야 합니다.",
+          "sentenceEn": "Applicants must submit their resumes online.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "면접 일정은 내일 공지될 예정입니다.",
+              "en": "The interview schedule will be announced tomorrow."
+            },
+            {
+              "ko": "복지 제도는 첫 교육 시간에 설명됩니다.",
+              "en": "The benefits package is explained during the first training session."
+            },
+            {
+              "ko": "매니저는 매달 성과 피드백을 제공합니다.",
+              "en": "Managers provide performance feedback every month."
+            },
+            {
+              "ko": "워크숍에는 전원 참석이 요구됩니다.",
+              "en": "Attendance is required for the workshop."
+            },
+            {
+              "ko": "승진 심사는 연말에 진행됩니다.",
+              "en": "Promotion reviews take place at the end of the year."
+            }
+          ]
+        },
+        {
+          "targetKey": "hr_interview_schedule",
+          "ko": "면접 일정은 내일 공지될 예정입니다.",
+          "en": "The interview schedule will be announced tomorrow.",
+          "sentenceKo": "면접 일정은 내일 공지될 예정입니다.",
+          "sentenceEn": "The interview schedule will be announced tomorrow.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "복지 제도는 첫 교육 시간에 설명됩니다.",
+              "en": "The benefits package is explained during the first training session."
+            },
+            {
+              "ko": "매니저는 매달 성과 피드백을 제공합니다.",
+              "en": "Managers provide performance feedback every month."
+            },
+            {
+              "ko": "워크숍에는 전원 참석이 요구됩니다.",
+              "en": "Attendance is required for the workshop."
+            },
+            {
+              "ko": "승진 심사는 연말에 진행됩니다.",
+              "en": "Promotion reviews take place at the end of the year."
+            },
+            {
+              "ko": "새로운 근무 정책이 오늘부터 적용됩니다.",
+              "en": "The updated work policy takes effect today."
+            }
+          ]
+        },
+        {
+          "targetKey": "hr_benefits_explained",
+          "ko": "복지 제도는 첫 교육 시간에 설명됩니다.",
+          "en": "The benefits package is explained during the first training session.",
+          "sentenceKo": "복지 제도는 첫 교육 시간에 설명됩니다.",
+          "sentenceEn": "The benefits package is explained during the first training session.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "매니저는 매달 성과 피드백을 제공합니다.",
+              "en": "Managers provide performance feedback every month."
+            },
+            {
+              "ko": "워크숍에는 전원 참석이 요구됩니다.",
+              "en": "Attendance is required for the workshop."
+            },
+            {
+              "ko": "승진 심사는 연말에 진행됩니다.",
+              "en": "Promotion reviews take place at the end of the year."
+            },
+            {
+              "ko": "새로운 근무 정책이 오늘부터 적용됩니다.",
+              "en": "The updated work policy takes effect today."
+            },
+            {
+              "ko": "추가 질문은 인사팀에 문의해 주세요.",
+              "en": "Please contact the HR team if you have additional questions."
+            }
+          ]
+        },
+        {
+          "targetKey": "hr_manager_feedback",
+          "ko": "매니저는 매달 성과 피드백을 제공합니다.",
+          "en": "Managers provide performance feedback every month.",
+          "sentenceKo": "매니저는 매달 성과 피드백을 제공합니다.",
+          "sentenceEn": "Managers provide performance feedback every month.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "워크숍에는 전원 참석이 요구됩니다.",
+              "en": "Attendance is required for the workshop."
+            },
+            {
+              "ko": "승진 심사는 연말에 진행됩니다.",
+              "en": "Promotion reviews take place at the end of the year."
+            },
+            {
+              "ko": "새로운 근무 정책이 오늘부터 적용됩니다.",
+              "en": "The updated work policy takes effect today."
+            },
+            {
+              "ko": "추가 질문은 인사팀에 문의해 주세요.",
+              "en": "Please contact the HR team if you have additional questions."
+            },
+            {
+              "ko": "신입 직원은 다음 주에 교육을 받습니다.",
+              "en": "New employees will receive training next week."
+            }
+          ]
+        },
+        {
+          "targetKey": "hr_attendance_required",
+          "ko": "워크숍에는 전원 참석이 요구됩니다.",
+          "en": "Attendance is required for the workshop.",
+          "sentenceKo": "워크숍에는 전원 참석이 요구됩니다.",
+          "sentenceEn": "Attendance is required for the workshop.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "승진 심사는 연말에 진행됩니다.",
+              "en": "Promotion reviews take place at the end of the year."
+            },
+            {
+              "ko": "새로운 근무 정책이 오늘부터 적용됩니다.",
+              "en": "The updated work policy takes effect today."
+            },
+            {
+              "ko": "추가 질문은 인사팀에 문의해 주세요.",
+              "en": "Please contact the HR team if you have additional questions."
+            },
+            {
+              "ko": "신입 직원은 다음 주에 교육을 받습니다.",
+              "en": "New employees will receive training next week."
+            },
+            {
+              "ko": "오리엔테이션은 대회의실에서 열립니다.",
+              "en": "The orientation will take place in the main conference room."
+            }
+          ]
+        },
+        {
+          "targetKey": "hr_promotion_review",
+          "ko": "승진 심사는 연말에 진행됩니다.",
+          "en": "Promotion reviews take place at the end of the year.",
+          "sentenceKo": "승진 심사는 연말에 진행됩니다.",
+          "sentenceEn": "Promotion reviews take place at the end of the year.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "새로운 근무 정책이 오늘부터 적용됩니다.",
+              "en": "The updated work policy takes effect today."
+            },
+            {
+              "ko": "추가 질문은 인사팀에 문의해 주세요.",
+              "en": "Please contact the HR team if you have additional questions."
+            },
+            {
+              "ko": "신입 직원은 다음 주에 교육을 받습니다.",
+              "en": "New employees will receive training next week."
+            },
+            {
+              "ko": "오리엔테이션은 대회의실에서 열립니다.",
+              "en": "The orientation will take place in the main conference room."
+            },
+            {
+              "ko": "지원자는 이력서를 온라인으로 제출해야 합니다.",
+              "en": "Applicants must submit their resumes online."
+            }
+          ]
+        },
+        {
+          "targetKey": "hr_updated_policy",
+          "ko": "새로운 근무 정책이 오늘부터 적용됩니다.",
+          "en": "The updated work policy takes effect today.",
+          "sentenceKo": "새로운 근무 정책이 오늘부터 적용됩니다.",
+          "sentenceEn": "The updated work policy takes effect today.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "추가 질문은 인사팀에 문의해 주세요.",
+              "en": "Please contact the HR team if you have additional questions."
+            },
+            {
+              "ko": "신입 직원은 다음 주에 교육을 받습니다.",
+              "en": "New employees will receive training next week."
+            },
+            {
+              "ko": "오리엔테이션은 대회의실에서 열립니다.",
+              "en": "The orientation will take place in the main conference room."
+            },
+            {
+              "ko": "지원자는 이력서를 온라인으로 제출해야 합니다.",
+              "en": "Applicants must submit their resumes online."
+            },
+            {
+              "ko": "면접 일정은 내일 공지될 예정입니다.",
+              "en": "The interview schedule will be announced tomorrow."
+            }
+          ]
+        },
+        {
+          "targetKey": "hr_contact_hr",
+          "ko": "추가 질문은 인사팀에 문의해 주세요.",
+          "en": "Please contact the HR team if you have additional questions.",
+          "sentenceKo": "추가 질문은 인사팀에 문의해 주세요.",
+          "sentenceEn": "Please contact the HR team if you have additional questions.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "신입 직원은 다음 주에 교육을 받습니다.",
+              "en": "New employees will receive training next week."
+            },
+            {
+              "ko": "오리엔테이션은 대회의실에서 열립니다.",
+              "en": "The orientation will take place in the main conference room."
+            },
+            {
+              "ko": "지원자는 이력서를 온라인으로 제출해야 합니다.",
+              "en": "Applicants must submit their resumes online."
+            },
+            {
+              "ko": "면접 일정은 내일 공지될 예정입니다.",
+              "en": "The interview schedule will be announced tomorrow."
+            },
+            {
+              "ko": "복지 제도는 첫 교육 시간에 설명됩니다.",
+              "en": "The benefits package is explained during the first training session."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 7,
+      "title": "판매와 마케팅",
+      "description": "매출과 홍보 관련 문장을 익혀요.",
+      "stages": [
+        {
+          "targetKey": "sales_higher_expected",
+          "ko": "이번 분기 판매량이 예상보다 높았습니다.",
+          "en": "Sales were higher than expected this quarter.",
+          "sentenceKo": "이번 분기 판매량이 예상보다 높았습니다.",
+          "sentenceEn": "Sales were higher than expected this quarter.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "새 마케팅 캠페인은 다음 달에 시작됩니다.",
+              "en": "The new marketing campaign starts next month."
+            },
+            {
+              "ko": "고객 수요가 최근 빠르게 증가하고 있습니다.",
+              "en": "Customer demand has been increasing rapidly lately."
+            },
+            {
+              "ko": "특별 할인 행사는 이번 주말까지 계속됩니다.",
+              "en": "The special discount offer continues through this weekend."
+            },
+            {
+              "ko": "설문 조사 결과는 제품 개선에 사용될 것입니다.",
+              "en": "The survey results will be used to improve the product."
+            },
+            {
+              "ko": "신제품 출시는 언론 보도와 함께 진행됩니다.",
+              "en": "The new product launch will be accompanied by media coverage."
+            }
+          ]
+        },
+        {
+          "targetKey": "sales_campaign_next_month",
+          "ko": "새 마케팅 캠페인은 다음 달에 시작됩니다.",
+          "en": "The new marketing campaign starts next month.",
+          "sentenceKo": "새 마케팅 캠페인은 다음 달에 시작됩니다.",
+          "sentenceEn": "The new marketing campaign starts next month.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "고객 수요가 최근 빠르게 증가하고 있습니다.",
+              "en": "Customer demand has been increasing rapidly lately."
+            },
+            {
+              "ko": "특별 할인 행사는 이번 주말까지 계속됩니다.",
+              "en": "The special discount offer continues through this weekend."
+            },
+            {
+              "ko": "설문 조사 결과는 제품 개선에 사용될 것입니다.",
+              "en": "The survey results will be used to improve the product."
+            },
+            {
+              "ko": "신제품 출시는 언론 보도와 함께 진행됩니다.",
+              "en": "The new product launch will be accompanied by media coverage."
+            },
+            {
+              "ko": "강한 브랜드 이미지는 장기적인 성장에 도움이 됩니다.",
+              "en": "A strong brand image helps long-term growth."
+            }
+          ]
+        },
+        {
+          "targetKey": "sales_customer_demand",
+          "ko": "고객 수요가 최근 빠르게 증가하고 있습니다.",
+          "en": "Customer demand has been increasing rapidly lately.",
+          "sentenceKo": "고객 수요가 최근 빠르게 증가하고 있습니다.",
+          "sentenceEn": "Customer demand has been increasing rapidly lately.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "특별 할인 행사는 이번 주말까지 계속됩니다.",
+              "en": "The special discount offer continues through this weekend."
+            },
+            {
+              "ko": "설문 조사 결과는 제품 개선에 사용될 것입니다.",
+              "en": "The survey results will be used to improve the product."
+            },
+            {
+              "ko": "신제품 출시는 언론 보도와 함께 진행됩니다.",
+              "en": "The new product launch will be accompanied by media coverage."
+            },
+            {
+              "ko": "강한 브랜드 이미지는 장기적인 성장에 도움이 됩니다.",
+              "en": "A strong brand image helps long-term growth."
+            },
+            {
+              "ko": "이 광고는 젊은 고객층을 대상으로 합니다.",
+              "en": "This advertisement targets younger customers."
+            }
+          ]
+        },
+        {
+          "targetKey": "sales_discount_offer",
+          "ko": "특별 할인 행사는 이번 주말까지 계속됩니다.",
+          "en": "The special discount offer continues through this weekend.",
+          "sentenceKo": "특별 할인 행사는 이번 주말까지 계속됩니다.",
+          "sentenceEn": "The special discount offer continues through this weekend.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "설문 조사 결과는 제품 개선에 사용될 것입니다.",
+              "en": "The survey results will be used to improve the product."
+            },
+            {
+              "ko": "신제품 출시는 언론 보도와 함께 진행됩니다.",
+              "en": "The new product launch will be accompanied by media coverage."
+            },
+            {
+              "ko": "강한 브랜드 이미지는 장기적인 성장에 도움이 됩니다.",
+              "en": "A strong brand image helps long-term growth."
+            },
+            {
+              "ko": "이 광고는 젊은 고객층을 대상으로 합니다.",
+              "en": "This advertisement targets younger customers."
+            },
+            {
+              "ko": "매출 보고서는 오전 회의 전에 준비되어야 합니다.",
+              "en": "The revenue report should be ready before the morning meeting."
+            }
+          ]
+        },
+        {
+          "targetKey": "sales_survey_results",
+          "ko": "설문 조사 결과는 제품 개선에 사용될 것입니다.",
+          "en": "The survey results will be used to improve the product.",
+          "sentenceKo": "설문 조사 결과는 제품 개선에 사용될 것입니다.",
+          "sentenceEn": "The survey results will be used to improve the product.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "신제품 출시는 언론 보도와 함께 진행됩니다.",
+              "en": "The new product launch will be accompanied by media coverage."
+            },
+            {
+              "ko": "강한 브랜드 이미지는 장기적인 성장에 도움이 됩니다.",
+              "en": "A strong brand image helps long-term growth."
+            },
+            {
+              "ko": "이 광고는 젊은 고객층을 대상으로 합니다.",
+              "en": "This advertisement targets younger customers."
+            },
+            {
+              "ko": "매출 보고서는 오전 회의 전에 준비되어야 합니다.",
+              "en": "The revenue report should be ready before the morning meeting."
+            },
+            {
+              "ko": "고객 피드백은 다음 전략 수립에 중요합니다.",
+              "en": "Client feedback is important for planning the next strategy."
+            }
+          ]
+        },
+        {
+          "targetKey": "sales_new_launch",
+          "ko": "신제품 출시는 언론 보도와 함께 진행됩니다.",
+          "en": "The new product launch will be accompanied by media coverage.",
+          "sentenceKo": "신제품 출시는 언론 보도와 함께 진행됩니다.",
+          "sentenceEn": "The new product launch will be accompanied by media coverage.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "강한 브랜드 이미지는 장기적인 성장에 도움이 됩니다.",
+              "en": "A strong brand image helps long-term growth."
+            },
+            {
+              "ko": "이 광고는 젊은 고객층을 대상으로 합니다.",
+              "en": "This advertisement targets younger customers."
+            },
+            {
+              "ko": "매출 보고서는 오전 회의 전에 준비되어야 합니다.",
+              "en": "The revenue report should be ready before the morning meeting."
+            },
+            {
+              "ko": "고객 피드백은 다음 전략 수립에 중요합니다.",
+              "en": "Client feedback is important for planning the next strategy."
+            },
+            {
+              "ko": "이번 분기 판매량이 예상보다 높았습니다.",
+              "en": "Sales were higher than expected this quarter."
+            }
+          ]
+        },
+        {
+          "targetKey": "sales_strong_brand",
+          "ko": "강한 브랜드 이미지는 장기적인 성장에 도움이 됩니다.",
+          "en": "A strong brand image helps long-term growth.",
+          "sentenceKo": "강한 브랜드 이미지는 장기적인 성장에 도움이 됩니다.",
+          "sentenceEn": "A strong brand image helps long-term growth.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "이 광고는 젊은 고객층을 대상으로 합니다.",
+              "en": "This advertisement targets younger customers."
+            },
+            {
+              "ko": "매출 보고서는 오전 회의 전에 준비되어야 합니다.",
+              "en": "The revenue report should be ready before the morning meeting."
+            },
+            {
+              "ko": "고객 피드백은 다음 전략 수립에 중요합니다.",
+              "en": "Client feedback is important for planning the next strategy."
+            },
+            {
+              "ko": "이번 분기 판매량이 예상보다 높았습니다.",
+              "en": "Sales were higher than expected this quarter."
+            },
+            {
+              "ko": "새 마케팅 캠페인은 다음 달에 시작됩니다.",
+              "en": "The new marketing campaign starts next month."
+            }
+          ]
+        },
+        {
+          "targetKey": "sales_target_market",
+          "ko": "이 광고는 젊은 고객층을 대상으로 합니다.",
+          "en": "This advertisement targets younger customers.",
+          "sentenceKo": "이 광고는 젊은 고객층을 대상으로 합니다.",
+          "sentenceEn": "This advertisement targets younger customers.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "매출 보고서는 오전 회의 전에 준비되어야 합니다.",
+              "en": "The revenue report should be ready before the morning meeting."
+            },
+            {
+              "ko": "고객 피드백은 다음 전략 수립에 중요합니다.",
+              "en": "Client feedback is important for planning the next strategy."
+            },
+            {
+              "ko": "이번 분기 판매량이 예상보다 높았습니다.",
+              "en": "Sales were higher than expected this quarter."
+            },
+            {
+              "ko": "새 마케팅 캠페인은 다음 달에 시작됩니다.",
+              "en": "The new marketing campaign starts next month."
+            },
+            {
+              "ko": "고객 수요가 최근 빠르게 증가하고 있습니다.",
+              "en": "Customer demand has been increasing rapidly lately."
+            }
+          ]
+        },
+        {
+          "targetKey": "sales_revenue_report",
+          "ko": "매출 보고서는 오전 회의 전에 준비되어야 합니다.",
+          "en": "The revenue report should be ready before the morning meeting.",
+          "sentenceKo": "매출 보고서는 오전 회의 전에 준비되어야 합니다.",
+          "sentenceEn": "The revenue report should be ready before the morning meeting.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "고객 피드백은 다음 전략 수립에 중요합니다.",
+              "en": "Client feedback is important for planning the next strategy."
+            },
+            {
+              "ko": "이번 분기 판매량이 예상보다 높았습니다.",
+              "en": "Sales were higher than expected this quarter."
+            },
+            {
+              "ko": "새 마케팅 캠페인은 다음 달에 시작됩니다.",
+              "en": "The new marketing campaign starts next month."
+            },
+            {
+              "ko": "고객 수요가 최근 빠르게 증가하고 있습니다.",
+              "en": "Customer demand has been increasing rapidly lately."
+            },
+            {
+              "ko": "특별 할인 행사는 이번 주말까지 계속됩니다.",
+              "en": "The special discount offer continues through this weekend."
+            }
+          ]
+        },
+        {
+          "targetKey": "sales_client_feedback",
+          "ko": "고객 피드백은 다음 전략 수립에 중요합니다.",
+          "en": "Client feedback is important for planning the next strategy.",
+          "sentenceKo": "고객 피드백은 다음 전략 수립에 중요합니다.",
+          "sentenceEn": "Client feedback is important for planning the next strategy.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "이번 분기 판매량이 예상보다 높았습니다.",
+              "en": "Sales were higher than expected this quarter."
+            },
+            {
+              "ko": "새 마케팅 캠페인은 다음 달에 시작됩니다.",
+              "en": "The new marketing campaign starts next month."
+            },
+            {
+              "ko": "고객 수요가 최근 빠르게 증가하고 있습니다.",
+              "en": "Customer demand has been increasing rapidly lately."
+            },
+            {
+              "ko": "특별 할인 행사는 이번 주말까지 계속됩니다.",
+              "en": "The special discount offer continues through this weekend."
+            },
+            {
+              "ko": "설문 조사 결과는 제품 개선에 사용될 것입니다.",
+              "en": "The survey results will be used to improve the product."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 8,
+      "title": "배송과 물류",
+      "description": "주문과 배송 관련 문장을 연습해요.",
+      "stages": [
+        {
+          "targetKey": "logistics_shipped_today",
+          "ko": "주문 상품은 오늘 발송될 예정입니다.",
+          "en": "The order will be shipped today.",
+          "sentenceKo": "주문 상품은 오늘 발송될 예정입니다.",
+          "sentenceEn": "The order will be shipped today.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "창고가 가득 차서 추가 공간이 필요합니다.",
+              "en": "The warehouse is full, so additional space is needed."
+            },
+            {
+              "ko": "추적 번호는 발송 후 이메일로 보내집니다.",
+              "en": "The tracking number is sent by email after shipment."
+            },
+            {
+              "ko": "기상 악화로 배송이 지연되고 있습니다.",
+              "en": "Deliveries are being delayed because of bad weather."
+            },
+            {
+              "ko": "도착한 상자 중 하나가 손상되어 있었습니다.",
+              "en": "One of the delivered boxes was damaged."
+            },
+            {
+              "ko": "발송 전에 배송 주소를 다시 확인해 주세요.",
+              "en": "Please confirm the shipping address before dispatch."
+            }
+          ]
+        },
+        {
+          "targetKey": "logistics_warehouse_full",
+          "ko": "창고가 가득 차서 추가 공간이 필요합니다.",
+          "en": "The warehouse is full, so additional space is needed.",
+          "sentenceKo": "창고가 가득 차서 추가 공간이 필요합니다.",
+          "sentenceEn": "The warehouse is full, so additional space is needed.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "추적 번호는 발송 후 이메일로 보내집니다.",
+              "en": "The tracking number is sent by email after shipment."
+            },
+            {
+              "ko": "기상 악화로 배송이 지연되고 있습니다.",
+              "en": "Deliveries are being delayed because of bad weather."
+            },
+            {
+              "ko": "도착한 상자 중 하나가 손상되어 있었습니다.",
+              "en": "One of the delivered boxes was damaged."
+            },
+            {
+              "ko": "발송 전에 배송 주소를 다시 확인해 주세요.",
+              "en": "Please confirm the shipping address before dispatch."
+            },
+            {
+              "ko": "일부 부품의 재고가 부족합니다.",
+              "en": "The inventory for some parts is running low."
+            }
+          ]
+        },
+        {
+          "targetKey": "logistics_tracking_number",
+          "ko": "추적 번호는 발송 후 이메일로 보내집니다.",
+          "en": "The tracking number is sent by email after shipment.",
+          "sentenceKo": "추적 번호는 발송 후 이메일로 보내집니다.",
+          "sentenceEn": "The tracking number is sent by email after shipment.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "기상 악화로 배송이 지연되고 있습니다.",
+              "en": "Deliveries are being delayed because of bad weather."
+            },
+            {
+              "ko": "도착한 상자 중 하나가 손상되어 있었습니다.",
+              "en": "One of the delivered boxes was damaged."
+            },
+            {
+              "ko": "발송 전에 배송 주소를 다시 확인해 주세요.",
+              "en": "Please confirm the shipping address before dispatch."
+            },
+            {
+              "ko": "일부 부품의 재고가 부족합니다.",
+              "en": "The inventory for some parts is running low."
+            },
+            {
+              "ko": "적재 구역은 건물 뒤편에 있습니다.",
+              "en": "The loading area is behind the building."
+            }
+          ]
+        },
+        {
+          "targetKey": "logistics_delivery_delay",
+          "ko": "기상 악화로 배송이 지연되고 있습니다.",
+          "en": "Deliveries are being delayed because of bad weather.",
+          "sentenceKo": "기상 악화로 배송이 지연되고 있습니다.",
+          "sentenceEn": "Deliveries are being delayed because of bad weather.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "도착한 상자 중 하나가 손상되어 있었습니다.",
+              "en": "One of the delivered boxes was damaged."
+            },
+            {
+              "ko": "발송 전에 배송 주소를 다시 확인해 주세요.",
+              "en": "Please confirm the shipping address before dispatch."
+            },
+            {
+              "ko": "일부 부품의 재고가 부족합니다.",
+              "en": "The inventory for some parts is running low."
+            },
+            {
+              "ko": "적재 구역은 건물 뒤편에 있습니다.",
+              "en": "The loading area is behind the building."
+            },
+            {
+              "ko": "긴급 주문에는 빠른 배송 서비스가 사용됩니다.",
+              "en": "Express service is used for urgent orders."
+            }
+          ]
+        },
+        {
+          "targetKey": "logistics_package_damaged",
+          "ko": "도착한 상자 중 하나가 손상되어 있었습니다.",
+          "en": "One of the delivered boxes was damaged.",
+          "sentenceKo": "도착한 상자 중 하나가 손상되어 있었습니다.",
+          "sentenceEn": "One of the delivered boxes was damaged.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "발송 전에 배송 주소를 다시 확인해 주세요.",
+              "en": "Please confirm the shipping address before dispatch."
+            },
+            {
+              "ko": "일부 부품의 재고가 부족합니다.",
+              "en": "The inventory for some parts is running low."
+            },
+            {
+              "ko": "적재 구역은 건물 뒤편에 있습니다.",
+              "en": "The loading area is behind the building."
+            },
+            {
+              "ko": "긴급 주문에는 빠른 배송 서비스가 사용됩니다.",
+              "en": "Express service is used for urgent orders."
+            },
+            {
+              "ko": "고객이 배송 완료를 확인했습니다.",
+              "en": "The customer confirmed the delivery."
+            }
+          ]
+        },
+        {
+          "targetKey": "logistics_confirm_address2",
+          "ko": "발송 전에 배송 주소를 다시 확인해 주세요.",
+          "en": "Please confirm the shipping address before dispatch.",
+          "sentenceKo": "발송 전에 배송 주소를 다시 확인해 주세요.",
+          "sentenceEn": "Please confirm the shipping address before dispatch.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "일부 부품의 재고가 부족합니다.",
+              "en": "The inventory for some parts is running low."
+            },
+            {
+              "ko": "적재 구역은 건물 뒤편에 있습니다.",
+              "en": "The loading area is behind the building."
+            },
+            {
+              "ko": "긴급 주문에는 빠른 배송 서비스가 사용됩니다.",
+              "en": "Express service is used for urgent orders."
+            },
+            {
+              "ko": "고객이 배송 완료를 확인했습니다.",
+              "en": "The customer confirmed the delivery."
+            },
+            {
+              "ko": "주문 상품은 오늘 발송될 예정입니다.",
+              "en": "The order will be shipped today."
+            }
+          ]
+        },
+        {
+          "targetKey": "logistics_inventory_low",
+          "ko": "일부 부품의 재고가 부족합니다.",
+          "en": "The inventory for some parts is running low.",
+          "sentenceKo": "일부 부품의 재고가 부족합니다.",
+          "sentenceEn": "The inventory for some parts is running low.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "적재 구역은 건물 뒤편에 있습니다.",
+              "en": "The loading area is behind the building."
+            },
+            {
+              "ko": "긴급 주문에는 빠른 배송 서비스가 사용됩니다.",
+              "en": "Express service is used for urgent orders."
+            },
+            {
+              "ko": "고객이 배송 완료를 확인했습니다.",
+              "en": "The customer confirmed the delivery."
+            },
+            {
+              "ko": "주문 상품은 오늘 발송될 예정입니다.",
+              "en": "The order will be shipped today."
+            },
+            {
+              "ko": "창고가 가득 차서 추가 공간이 필요합니다.",
+              "en": "The warehouse is full, so additional space is needed."
+            }
+          ]
+        },
+        {
+          "targetKey": "logistics_loading_area",
+          "ko": "적재 구역은 건물 뒤편에 있습니다.",
+          "en": "The loading area is behind the building.",
+          "sentenceKo": "적재 구역은 건물 뒤편에 있습니다.",
+          "sentenceEn": "The loading area is behind the building.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "긴급 주문에는 빠른 배송 서비스가 사용됩니다.",
+              "en": "Express service is used for urgent orders."
+            },
+            {
+              "ko": "고객이 배송 완료를 확인했습니다.",
+              "en": "The customer confirmed the delivery."
+            },
+            {
+              "ko": "주문 상품은 오늘 발송될 예정입니다.",
+              "en": "The order will be shipped today."
+            },
+            {
+              "ko": "창고가 가득 차서 추가 공간이 필요합니다.",
+              "en": "The warehouse is full, so additional space is needed."
+            },
+            {
+              "ko": "추적 번호는 발송 후 이메일로 보내집니다.",
+              "en": "The tracking number is sent by email after shipment."
+            }
+          ]
+        },
+        {
+          "targetKey": "logistics_express_service",
+          "ko": "긴급 주문에는 빠른 배송 서비스가 사용됩니다.",
+          "en": "Express service is used for urgent orders.",
+          "sentenceKo": "긴급 주문에는 빠른 배송 서비스가 사용됩니다.",
+          "sentenceEn": "Express service is used for urgent orders.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "고객이 배송 완료를 확인했습니다.",
+              "en": "The customer confirmed the delivery."
+            },
+            {
+              "ko": "주문 상품은 오늘 발송될 예정입니다.",
+              "en": "The order will be shipped today."
+            },
+            {
+              "ko": "창고가 가득 차서 추가 공간이 필요합니다.",
+              "en": "The warehouse is full, so additional space is needed."
+            },
+            {
+              "ko": "추적 번호는 발송 후 이메일로 보내집니다.",
+              "en": "The tracking number is sent by email after shipment."
+            },
+            {
+              "ko": "기상 악화로 배송이 지연되고 있습니다.",
+              "en": "Deliveries are being delayed because of bad weather."
+            }
+          ]
+        },
+        {
+          "targetKey": "logistics_delivery_confirmed",
+          "ko": "고객이 배송 완료를 확인했습니다.",
+          "en": "The customer confirmed the delivery.",
+          "sentenceKo": "고객이 배송 완료를 확인했습니다.",
+          "sentenceEn": "The customer confirmed the delivery.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "주문 상품은 오늘 발송될 예정입니다.",
+              "en": "The order will be shipped today."
+            },
+            {
+              "ko": "창고가 가득 차서 추가 공간이 필요합니다.",
+              "en": "The warehouse is full, so additional space is needed."
+            },
+            {
+              "ko": "추적 번호는 발송 후 이메일로 보내집니다.",
+              "en": "The tracking number is sent by email after shipment."
+            },
+            {
+              "ko": "기상 악화로 배송이 지연되고 있습니다.",
+              "en": "Deliveries are being delayed because of bad weather."
+            },
+            {
+              "ko": "도착한 상자 중 하나가 손상되어 있었습니다.",
+              "en": "One of the delivered boxes was damaged."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 9,
+      "title": "고객 응대",
+      "description": "고객 서비스 표현을 익혀요.",
+      "stages": [
+        {
+          "targetKey": "service_complaints_immediately",
+          "ko": "고객 불만은 즉시 처리되어야 합니다.",
+          "en": "Customer complaints must be handled immediately.",
+          "sentenceKo": "고객 불만은 즉시 처리되어야 합니다.",
+          "sentenceEn": "Customer complaints must be handled immediately.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "배송 지연에 대해 사과드립니다.",
+              "en": "We apologize for the delivery delay."
+            },
+            {
+              "ko": "환불 요청은 이미 처리되었습니다.",
+              "en": "The refund request has already been processed."
+            },
+            {
+              "ko": "교환을 위해서는 영수증이 필요합니다.",
+              "en": "A receipt is required for an exchange."
+            },
+            {
+              "ko": "지원 팀은 평일 내내 이용 가능합니다.",
+              "en": "The support team is available throughout the workweek."
+            },
+            {
+              "ko": "해결 방법은 이메일로 안내드리겠습니다.",
+              "en": "We will provide the solution by email."
+            }
+          ]
+        },
+        {
+          "targetKey": "service_apology_delay",
+          "ko": "배송 지연에 대해 사과드립니다.",
+          "en": "We apologize for the delivery delay.",
+          "sentenceKo": "배송 지연에 대해 사과드립니다.",
+          "sentenceEn": "We apologize for the delivery delay.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "환불 요청은 이미 처리되었습니다.",
+              "en": "The refund request has already been processed."
+            },
+            {
+              "ko": "교환을 위해서는 영수증이 필요합니다.",
+              "en": "A receipt is required for an exchange."
+            },
+            {
+              "ko": "지원 팀은 평일 내내 이용 가능합니다.",
+              "en": "The support team is available throughout the workweek."
+            },
+            {
+              "ko": "해결 방법은 이메일로 안내드리겠습니다.",
+              "en": "We will provide the solution by email."
+            },
+            {
+              "ko": "주문 상태를 먼저 확인해 보겠습니다.",
+              "en": "Let me check the order status first."
+            }
+          ]
+        },
+        {
+          "targetKey": "service_refund_processed",
+          "ko": "환불 요청은 이미 처리되었습니다.",
+          "en": "The refund request has already been processed.",
+          "sentenceKo": "환불 요청은 이미 처리되었습니다.",
+          "sentenceEn": "The refund request has already been processed.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "교환을 위해서는 영수증이 필요합니다.",
+              "en": "A receipt is required for an exchange."
+            },
+            {
+              "ko": "지원 팀은 평일 내내 이용 가능합니다.",
+              "en": "The support team is available throughout the workweek."
+            },
+            {
+              "ko": "해결 방법은 이메일로 안내드리겠습니다.",
+              "en": "We will provide the solution by email."
+            },
+            {
+              "ko": "주문 상태를 먼저 확인해 보겠습니다.",
+              "en": "Let me check the order status first."
+            },
+            {
+              "ko": "기다려 주셔서 감사합니다.",
+              "en": "Thank you for your patience."
+            }
+          ]
+        },
+        {
+          "targetKey": "service_need_receipt",
+          "ko": "교환을 위해서는 영수증이 필요합니다.",
+          "en": "A receipt is required for an exchange.",
+          "sentenceKo": "교환을 위해서는 영수증이 필요합니다.",
+          "sentenceEn": "A receipt is required for an exchange.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "지원 팀은 평일 내내 이용 가능합니다.",
+              "en": "The support team is available throughout the workweek."
+            },
+            {
+              "ko": "해결 방법은 이메일로 안내드리겠습니다.",
+              "en": "We will provide the solution by email."
+            },
+            {
+              "ko": "주문 상태를 먼저 확인해 보겠습니다.",
+              "en": "Let me check the order status first."
+            },
+            {
+              "ko": "기다려 주셔서 감사합니다.",
+              "en": "Thank you for your patience."
+            },
+            {
+              "ko": "잘못된 상품이 배송된 것 같습니다.",
+              "en": "It seems the wrong item was delivered."
+            }
+          ]
+        },
+        {
+          "targetKey": "service_support_available",
+          "ko": "지원 팀은 평일 내내 이용 가능합니다.",
+          "en": "The support team is available throughout the workweek.",
+          "sentenceKo": "지원 팀은 평일 내내 이용 가능합니다.",
+          "sentenceEn": "The support team is available throughout the workweek.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "해결 방법은 이메일로 안내드리겠습니다.",
+              "en": "We will provide the solution by email."
+            },
+            {
+              "ko": "주문 상태를 먼저 확인해 보겠습니다.",
+              "en": "Let me check the order status first."
+            },
+            {
+              "ko": "기다려 주셔서 감사합니다.",
+              "en": "Thank you for your patience."
+            },
+            {
+              "ko": "잘못된 상품이 배송된 것 같습니다.",
+              "en": "It seems the wrong item was delivered."
+            },
+            {
+              "ko": "가능한 한 빨리 문제를 해결하겠습니다.",
+              "en": "We will resolve the issue as quickly as possible."
+            }
+          ]
+        },
+        {
+          "targetKey": "service_solution_email",
+          "ko": "해결 방법은 이메일로 안내드리겠습니다.",
+          "en": "We will provide the solution by email.",
+          "sentenceKo": "해결 방법은 이메일로 안내드리겠습니다.",
+          "sentenceEn": "We will provide the solution by email.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "주문 상태를 먼저 확인해 보겠습니다.",
+              "en": "Let me check the order status first."
+            },
+            {
+              "ko": "기다려 주셔서 감사합니다.",
+              "en": "Thank you for your patience."
+            },
+            {
+              "ko": "잘못된 상품이 배송된 것 같습니다.",
+              "en": "It seems the wrong item was delivered."
+            },
+            {
+              "ko": "가능한 한 빨리 문제를 해결하겠습니다.",
+              "en": "We will resolve the issue as quickly as possible."
+            },
+            {
+              "ko": "고객 불만은 즉시 처리되어야 합니다.",
+              "en": "Customer complaints must be handled immediately."
+            }
+          ]
+        },
+        {
+          "targetKey": "service_check_order_status",
+          "ko": "주문 상태를 먼저 확인해 보겠습니다.",
+          "en": "Let me check the order status first.",
+          "sentenceKo": "주문 상태를 먼저 확인해 보겠습니다.",
+          "sentenceEn": "Let me check the order status first.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "기다려 주셔서 감사합니다.",
+              "en": "Thank you for your patience."
+            },
+            {
+              "ko": "잘못된 상품이 배송된 것 같습니다.",
+              "en": "It seems the wrong item was delivered."
+            },
+            {
+              "ko": "가능한 한 빨리 문제를 해결하겠습니다.",
+              "en": "We will resolve the issue as quickly as possible."
+            },
+            {
+              "ko": "고객 불만은 즉시 처리되어야 합니다.",
+              "en": "Customer complaints must be handled immediately."
+            },
+            {
+              "ko": "배송 지연에 대해 사과드립니다.",
+              "en": "We apologize for the delivery delay."
+            }
+          ]
+        },
+        {
+          "targetKey": "service_thank_patience",
+          "ko": "기다려 주셔서 감사합니다.",
+          "en": "Thank you for your patience.",
+          "sentenceKo": "기다려 주셔서 감사합니다.",
+          "sentenceEn": "Thank you for your patience.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "잘못된 상품이 배송된 것 같습니다.",
+              "en": "It seems the wrong item was delivered."
+            },
+            {
+              "ko": "가능한 한 빨리 문제를 해결하겠습니다.",
+              "en": "We will resolve the issue as quickly as possible."
+            },
+            {
+              "ko": "고객 불만은 즉시 처리되어야 합니다.",
+              "en": "Customer complaints must be handled immediately."
+            },
+            {
+              "ko": "배송 지연에 대해 사과드립니다.",
+              "en": "We apologize for the delivery delay."
+            },
+            {
+              "ko": "환불 요청은 이미 처리되었습니다.",
+              "en": "The refund request has already been processed."
+            }
+          ]
+        },
+        {
+          "targetKey": "service_incorrect_item",
+          "ko": "잘못된 상품이 배송된 것 같습니다.",
+          "en": "It seems the wrong item was delivered.",
+          "sentenceKo": "잘못된 상품이 배송된 것 같습니다.",
+          "sentenceEn": "It seems the wrong item was delivered.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "가능한 한 빨리 문제를 해결하겠습니다.",
+              "en": "We will resolve the issue as quickly as possible."
+            },
+            {
+              "ko": "고객 불만은 즉시 처리되어야 합니다.",
+              "en": "Customer complaints must be handled immediately."
+            },
+            {
+              "ko": "배송 지연에 대해 사과드립니다.",
+              "en": "We apologize for the delivery delay."
+            },
+            {
+              "ko": "환불 요청은 이미 처리되었습니다.",
+              "en": "The refund request has already been processed."
+            },
+            {
+              "ko": "교환을 위해서는 영수증이 필요합니다.",
+              "en": "A receipt is required for an exchange."
+            }
+          ]
+        },
+        {
+          "targetKey": "service_resolve_issue",
+          "ko": "가능한 한 빨리 문제를 해결하겠습니다.",
+          "en": "We will resolve the issue as quickly as possible.",
+          "sentenceKo": "가능한 한 빨리 문제를 해결하겠습니다.",
+          "sentenceEn": "We will resolve the issue as quickly as possible.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "고객 불만은 즉시 처리되어야 합니다.",
+              "en": "Customer complaints must be handled immediately."
+            },
+            {
+              "ko": "배송 지연에 대해 사과드립니다.",
+              "en": "We apologize for the delivery delay."
+            },
+            {
+              "ko": "환불 요청은 이미 처리되었습니다.",
+              "en": "The refund request has already been processed."
+            },
+            {
+              "ko": "교환을 위해서는 영수증이 필요합니다.",
+              "en": "A receipt is required for an exchange."
+            },
+            {
+              "ko": "지원 팀은 평일 내내 이용 가능합니다.",
+              "en": "The support team is available throughout the workweek."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 10,
+      "title": "계약과 재무",
+      "description": "계약, 비용, 예산 관련 문장을 익혀요.",
+      "stages": [
+        {
+          "targetKey": "finance_contract_reviewed",
+          "ko": "계약서는 월말 전에 검토되어야 합니다.",
+          "en": "The contract should be reviewed before the end of the month.",
+          "sentenceKo": "계약서는 월말 전에 검토되어야 합니다.",
+          "sentenceEn": "The contract should be reviewed before the end of the month.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "내년도 예산안이 승인되었습니다.",
+              "en": "The budget proposal for next year has been approved."
+            },
+            {
+              "ko": "지불 기한은 이번 주 목요일입니다.",
+              "en": "The payment is due this Thursday."
+            },
+            {
+              "ko": "청구서는 오늘 아침에 발송되었습니다.",
+              "en": "The invoice was sent this morning."
+            },
+            {
+              "ko": "새 시스템 도입 후 비용이 줄었습니다.",
+              "en": "Costs were reduced after the new system was introduced."
+            },
+            {
+              "ko": "출장비 청구서는 다음 주까지 제출해야 합니다.",
+              "en": "Expense claims must be submitted by next week."
+            }
+          ]
+        },
+        {
+          "targetKey": "finance_budget_approved",
+          "ko": "내년도 예산안이 승인되었습니다.",
+          "en": "The budget proposal for next year has been approved.",
+          "sentenceKo": "내년도 예산안이 승인되었습니다.",
+          "sentenceEn": "The budget proposal for next year has been approved.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "지불 기한은 이번 주 목요일입니다.",
+              "en": "The payment is due this Thursday."
+            },
+            {
+              "ko": "청구서는 오늘 아침에 발송되었습니다.",
+              "en": "The invoice was sent this morning."
+            },
+            {
+              "ko": "새 시스템 도입 후 비용이 줄었습니다.",
+              "en": "Costs were reduced after the new system was introduced."
+            },
+            {
+              "ko": "출장비 청구서는 다음 주까지 제출해야 합니다.",
+              "en": "Expense claims must be submitted by next week."
+            },
+            {
+              "ko": "연간 수수료는 계약서에 명시되어 있습니다.",
+              "en": "The annual fee is stated in the contract."
+            }
+          ]
+        },
+        {
+          "targetKey": "finance_payment_due",
+          "ko": "지불 기한은 이번 주 목요일입니다.",
+          "en": "The payment is due this Thursday.",
+          "sentenceKo": "지불 기한은 이번 주 목요일입니다.",
+          "sentenceEn": "The payment is due this Thursday.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "청구서는 오늘 아침에 발송되었습니다.",
+              "en": "The invoice was sent this morning."
+            },
+            {
+              "ko": "새 시스템 도입 후 비용이 줄었습니다.",
+              "en": "Costs were reduced after the new system was introduced."
+            },
+            {
+              "ko": "출장비 청구서는 다음 주까지 제출해야 합니다.",
+              "en": "Expense claims must be submitted by next week."
+            },
+            {
+              "ko": "연간 수수료는 계약서에 명시되어 있습니다.",
+              "en": "The annual fee is stated in the contract."
+            },
+            {
+              "ko": "원자재 가격 상승으로 단가가 조정되었습니다.",
+              "en": "The unit price was adjusted because of higher material costs."
+            }
+          ]
+        },
+        {
+          "targetKey": "finance_invoice_sent",
+          "ko": "청구서는 오늘 아침에 발송되었습니다.",
+          "en": "The invoice was sent this morning.",
+          "sentenceKo": "청구서는 오늘 아침에 발송되었습니다.",
+          "sentenceEn": "The invoice was sent this morning.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "새 시스템 도입 후 비용이 줄었습니다.",
+              "en": "Costs were reduced after the new system was introduced."
+            },
+            {
+              "ko": "출장비 청구서는 다음 주까지 제출해야 합니다.",
+              "en": "Expense claims must be submitted by next week."
+            },
+            {
+              "ko": "연간 수수료는 계약서에 명시되어 있습니다.",
+              "en": "The annual fee is stated in the contract."
+            },
+            {
+              "ko": "원자재 가격 상승으로 단가가 조정되었습니다.",
+              "en": "The unit price was adjusted because of higher material costs."
+            },
+            {
+              "ko": "재무제표는 외부 감사를 위해 준비되고 있습니다.",
+              "en": "The financial statements are being prepared for an external audit."
+            }
+          ]
+        },
+        {
+          "targetKey": "finance_cost_reduced",
+          "ko": "새 시스템 도입 후 비용이 줄었습니다.",
+          "en": "Costs were reduced after the new system was introduced.",
+          "sentenceKo": "새 시스템 도입 후 비용이 줄었습니다.",
+          "sentenceEn": "Costs were reduced after the new system was introduced.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "출장비 청구서는 다음 주까지 제출해야 합니다.",
+              "en": "Expense claims must be submitted by next week."
+            },
+            {
+              "ko": "연간 수수료는 계약서에 명시되어 있습니다.",
+              "en": "The annual fee is stated in the contract."
+            },
+            {
+              "ko": "원자재 가격 상승으로 단가가 조정되었습니다.",
+              "en": "The unit price was adjusted because of higher material costs."
+            },
+            {
+              "ko": "재무제표는 외부 감사를 위해 준비되고 있습니다.",
+              "en": "The financial statements are being prepared for an external audit."
+            },
+            {
+              "ko": "검토가 끝난 후에 서명해 주세요.",
+              "en": "Please sign it after the review is complete."
+            }
+          ]
+        },
+        {
+          "targetKey": "finance_expense_claim",
+          "ko": "출장비 청구서는 다음 주까지 제출해야 합니다.",
+          "en": "Expense claims must be submitted by next week.",
+          "sentenceKo": "출장비 청구서는 다음 주까지 제출해야 합니다.",
+          "sentenceEn": "Expense claims must be submitted by next week.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "연간 수수료는 계약서에 명시되어 있습니다.",
+              "en": "The annual fee is stated in the contract."
+            },
+            {
+              "ko": "원자재 가격 상승으로 단가가 조정되었습니다.",
+              "en": "The unit price was adjusted because of higher material costs."
+            },
+            {
+              "ko": "재무제표는 외부 감사를 위해 준비되고 있습니다.",
+              "en": "The financial statements are being prepared for an external audit."
+            },
+            {
+              "ko": "검토가 끝난 후에 서명해 주세요.",
+              "en": "Please sign it after the review is complete."
+            },
+            {
+              "ko": "계약서는 월말 전에 검토되어야 합니다.",
+              "en": "The contract should be reviewed before the end of the month."
+            }
+          ]
+        },
+        {
+          "targetKey": "finance_annual_fee",
+          "ko": "연간 수수료는 계약서에 명시되어 있습니다.",
+          "en": "The annual fee is stated in the contract.",
+          "sentenceKo": "연간 수수료는 계약서에 명시되어 있습니다.",
+          "sentenceEn": "The annual fee is stated in the contract.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "원자재 가격 상승으로 단가가 조정되었습니다.",
+              "en": "The unit price was adjusted because of higher material costs."
+            },
+            {
+              "ko": "재무제표는 외부 감사를 위해 준비되고 있습니다.",
+              "en": "The financial statements are being prepared for an external audit."
+            },
+            {
+              "ko": "검토가 끝난 후에 서명해 주세요.",
+              "en": "Please sign it after the review is complete."
+            },
+            {
+              "ko": "계약서는 월말 전에 검토되어야 합니다.",
+              "en": "The contract should be reviewed before the end of the month."
+            },
+            {
+              "ko": "내년도 예산안이 승인되었습니다.",
+              "en": "The budget proposal for next year has been approved."
+            }
+          ]
+        },
+        {
+          "targetKey": "finance_price_increase",
+          "ko": "원자재 가격 상승으로 단가가 조정되었습니다.",
+          "en": "The unit price was adjusted because of higher material costs.",
+          "sentenceKo": "원자재 가격 상승으로 단가가 조정되었습니다.",
+          "sentenceEn": "The unit price was adjusted because of higher material costs.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "재무제표는 외부 감사를 위해 준비되고 있습니다.",
+              "en": "The financial statements are being prepared for an external audit."
+            },
+            {
+              "ko": "검토가 끝난 후에 서명해 주세요.",
+              "en": "Please sign it after the review is complete."
+            },
+            {
+              "ko": "계약서는 월말 전에 검토되어야 합니다.",
+              "en": "The contract should be reviewed before the end of the month."
+            },
+            {
+              "ko": "내년도 예산안이 승인되었습니다.",
+              "en": "The budget proposal for next year has been approved."
+            },
+            {
+              "ko": "지불 기한은 이번 주 목요일입니다.",
+              "en": "The payment is due this Thursday."
+            }
+          ]
+        },
+        {
+          "targetKey": "finance_financial_statement",
+          "ko": "재무제표는 외부 감사를 위해 준비되고 있습니다.",
+          "en": "The financial statements are being prepared for an external audit.",
+          "sentenceKo": "재무제표는 외부 감사를 위해 준비되고 있습니다.",
+          "sentenceEn": "The financial statements are being prepared for an external audit.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "검토가 끝난 후에 서명해 주세요.",
+              "en": "Please sign it after the review is complete."
+            },
+            {
+              "ko": "계약서는 월말 전에 검토되어야 합니다.",
+              "en": "The contract should be reviewed before the end of the month."
+            },
+            {
+              "ko": "내년도 예산안이 승인되었습니다.",
+              "en": "The budget proposal for next year has been approved."
+            },
+            {
+              "ko": "지불 기한은 이번 주 목요일입니다.",
+              "en": "The payment is due this Thursday."
+            },
+            {
+              "ko": "청구서는 오늘 아침에 발송되었습니다.",
+              "en": "The invoice was sent this morning."
+            }
+          ]
+        },
+        {
+          "targetKey": "finance_sign_after_review",
+          "ko": "검토가 끝난 후에 서명해 주세요.",
+          "en": "Please sign it after the review is complete.",
+          "sentenceKo": "검토가 끝난 후에 서명해 주세요.",
+          "sentenceEn": "Please sign it after the review is complete.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "계약서는 월말 전에 검토되어야 합니다.",
+              "en": "The contract should be reviewed before the end of the month."
+            },
+            {
+              "ko": "내년도 예산안이 승인되었습니다.",
+              "en": "The budget proposal for next year has been approved."
+            },
+            {
+              "ko": "지불 기한은 이번 주 목요일입니다.",
+              "en": "The payment is due this Thursday."
+            },
+            {
+              "ko": "청구서는 오늘 아침에 발송되었습니다.",
+              "en": "The invoice was sent this morning."
+            },
+            {
+              "ko": "새 시스템 도입 후 비용이 줄었습니다.",
+              "en": "Costs were reduced after the new system was introduced."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

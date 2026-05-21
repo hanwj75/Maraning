@@ -149,24 +149,6 @@ export function StageMapPage() {
       <div className="game-phone game-stage-map-shell">
         <div className="absolute inset-x-0 top-0 z-30 px-4 pt-4">
           <div className="flex items-center justify-end gap-1 px-1 pb-3">
-            <div className="stage-map-counter">
-              <img
-                src={maraningAssets.numberOfDaysConnected}
-                alt=""
-                aria-hidden="true"
-                className="h-7 w-6 object-contain"
-              />
-              <span>0</span>
-            </div>
-            <div className="stage-map-counter">
-              <img
-                src={maraningAssets.feedstuff}
-                alt=""
-                aria-hidden="true"
-                className="h-7 w-7 object-contain"
-              />
-              <span>630</span>
-            </div>
             <JellyBadge
               count={currentJelly}
               className="min-w-0 max-w-[8.5rem] shrink"

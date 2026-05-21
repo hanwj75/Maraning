@@ -3,12 +3,200 @@
     "id": "advanced_chapter_001",
     "difficulty": "advanced",
     "order": 1,
-    "title": "고급 문장 익히기",
-    "description": "고수 난이도의 긴 문장을 단계별로 익혀요.",
+    "title": "긴 일상 설명",
+    "description": "아침과 하루 일과를 길게 설명해요.",
     "stageIds": [
       "advanced.stage.001",
-      "advanced.stage.002"
+      "advanced.stage.002",
+      "advanced.stage.003",
+      "advanced.stage.004",
+      "advanced.stage.005",
+      "advanced.stage.006",
+      "advanced.stage.007",
+      "advanced.stage.008",
+      "advanced.stage.009",
+      "advanced.stage.010"
     ],
     "requiredChapterId": null
+  },
+  {
+    "id": "advanced_chapter_002",
+    "difficulty": "advanced",
+    "order": 2,
+    "title": "의견과 이유",
+    "description": "이유를 덧붙여 자연스럽게 의견을 말해요.",
+    "stageIds": [
+      "advanced.stage.011",
+      "advanced.stage.012",
+      "advanced.stage.013",
+      "advanced.stage.014",
+      "advanced.stage.015",
+      "advanced.stage.016",
+      "advanced.stage.017",
+      "advanced.stage.018",
+      "advanced.stage.019",
+      "advanced.stage.020"
+    ],
+    "requiredChapterId": "advanced_chapter_001"
+  },
+  {
+    "id": "advanced_chapter_003",
+    "difficulty": "advanced",
+    "order": 3,
+    "title": "조건 표현",
+    "description": "if 와 unless 같은 조건 표현을 써요.",
+    "stageIds": [
+      "advanced.stage.021",
+      "advanced.stage.022",
+      "advanced.stage.023",
+      "advanced.stage.024",
+      "advanced.stage.025",
+      "advanced.stage.026",
+      "advanced.stage.027",
+      "advanced.stage.028",
+      "advanced.stage.029",
+      "advanced.stage.030"
+    ],
+    "requiredChapterId": "advanced_chapter_002"
+  },
+  {
+    "id": "advanced_chapter_004",
+    "difficulty": "advanced",
+    "order": 4,
+    "title": "비교와 선택",
+    "description": "비교, 선호, 더 나은 선택을 말해요.",
+    "stageIds": [
+      "advanced.stage.031",
+      "advanced.stage.032",
+      "advanced.stage.033",
+      "advanced.stage.034",
+      "advanced.stage.035",
+      "advanced.stage.036",
+      "advanced.stage.037",
+      "advanced.stage.038",
+      "advanced.stage.039",
+      "advanced.stage.040"
+    ],
+    "requiredChapterId": "advanced_chapter_003"
+  },
+  {
+    "id": "advanced_chapter_005",
+    "difficulty": "advanced",
+    "order": 5,
+    "title": "경험과 완료",
+    "description": "이미 했던 일과 경험을 설명해요.",
+    "stageIds": [
+      "advanced.stage.041",
+      "advanced.stage.042",
+      "advanced.stage.043",
+      "advanced.stage.044",
+      "advanced.stage.045",
+      "advanced.stage.046",
+      "advanced.stage.047",
+      "advanced.stage.048",
+      "advanced.stage.049",
+      "advanced.stage.050"
+    ],
+    "requiredChapterId": "advanced_chapter_004"
+  },
+  {
+    "id": "advanced_chapter_006",
+    "difficulty": "advanced",
+    "order": 6,
+    "title": "일정과 계획",
+    "description": "조금 긴 일정 문장을 말해요.",
+    "stageIds": [
+      "advanced.stage.051",
+      "advanced.stage.052",
+      "advanced.stage.053",
+      "advanced.stage.054",
+      "advanced.stage.055",
+      "advanced.stage.056",
+      "advanced.stage.057",
+      "advanced.stage.058",
+      "advanced.stage.059",
+      "advanced.stage.060"
+    ],
+    "requiredChapterId": "advanced_chapter_005"
+  },
+  {
+    "id": "advanced_chapter_007",
+    "difficulty": "advanced",
+    "order": 7,
+    "title": "문제와 해결",
+    "description": "문제 상황과 해결 방법을 설명해요.",
+    "stageIds": [
+      "advanced.stage.061",
+      "advanced.stage.062",
+      "advanced.stage.063",
+      "advanced.stage.064",
+      "advanced.stage.065",
+      "advanced.stage.066",
+      "advanced.stage.067",
+      "advanced.stage.068",
+      "advanced.stage.069",
+      "advanced.stage.070"
+    ],
+    "requiredChapterId": "advanced_chapter_006"
+  },
+  {
+    "id": "advanced_chapter_008",
+    "difficulty": "advanced",
+    "order": 8,
+    "title": "선호와 선택",
+    "description": "would rather 같은 자연스러운 선호 표현을 써요.",
+    "stageIds": [
+      "advanced.stage.071",
+      "advanced.stage.072",
+      "advanced.stage.073",
+      "advanced.stage.074",
+      "advanced.stage.075",
+      "advanced.stage.076",
+      "advanced.stage.077",
+      "advanced.stage.078",
+      "advanced.stage.079",
+      "advanced.stage.080"
+    ],
+    "requiredChapterId": "advanced_chapter_007"
+  },
+  {
+    "id": "advanced_chapter_009",
+    "difficulty": "advanced",
+    "order": 9,
+    "title": "조언과 제안",
+    "description": "should 와 had better 로 조언해요.",
+    "stageIds": [
+      "advanced.stage.081",
+      "advanced.stage.082",
+      "advanced.stage.083",
+      "advanced.stage.084",
+      "advanced.stage.085",
+      "advanced.stage.086",
+      "advanced.stage.087",
+      "advanced.stage.088",
+      "advanced.stage.089",
+      "advanced.stage.090"
+    ],
+    "requiredChapterId": "advanced_chapter_008"
+  },
+  {
+    "id": "advanced_chapter_010",
+    "difficulty": "advanced",
+    "order": 10,
+    "title": "감정과 결과",
+    "description": "상황 뒤의 감정과 결과를 자연스럽게 말해요.",
+    "stageIds": [
+      "advanced.stage.091",
+      "advanced.stage.092",
+      "advanced.stage.093",
+      "advanced.stage.094",
+      "advanced.stage.095",
+      "advanced.stage.096",
+      "advanced.stage.097",
+      "advanced.stage.098",
+      "advanced.stage.099",
+      "advanced.stage.100"
+    ],
+    "requiredChapterId": "advanced_chapter_009"
   }
 ]

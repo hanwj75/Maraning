@@ -15,6 +15,7 @@ export const maraningAssets = {
   mypageButton: '/assets/maraning/mypage_button.png',
   pawActive: '/assets/maraning/paw_active_single.png',
   pawLocked: '/assets/maraning/paw_locked_single.png',
+  shareChar: '/assets/maraning_char/share_char.png',
   shareButton: '/assets/maraning/share_button.png',
   topbar: '/assets/maraning/stage_map_topbar.png',
   numberOfDaysConnected: '/assets/maraning/Number_of_days connected.png',

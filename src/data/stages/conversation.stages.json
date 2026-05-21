@@ -4,26 +4,26 @@
     "difficulty": "conversation",
     "chapterId": "conversation_chapter_001",
     "order": 1,
-    "title": "안부 묻기",
-    "description": "How are you 와 기본 응답을 10문제로 반복 학습한다",
+    "title": "안녕하세요 익히기",
+    "description": "안녕하세요 학습 목표를 10문제로 반복 학습한다",
     "learningTarget": {
-      "id": "conversation.target.how-are-you",
-      "ko": "잘 지내?",
-      "en": "How are you?",
-      "sentenceKo": "저는 잘 지내요",
-      "sentenceEn": "I'm good"
+      "id": "conversation.target.greet_hello",
+      "ko": "안녕하세요.",
+      "en": "Hello.",
+      "sentenceKo": "안녕하세요",
+      "sentenceEn": "Hello"
     },
     "quizIds": [
-      "conversation.quiz.001",
-      "conversation.quiz.002",
-      "conversation.quiz.003",
-      "conversation.quiz.004",
-      "conversation.quiz.005",
-      "conversation.quiz.006",
-      "conversation.quiz.007",
-      "conversation.quiz.008",
-      "conversation.quiz.009",
-      "conversation.quiz.010"
+      "conversation.quiz.0001",
+      "conversation.quiz.0002",
+      "conversation.quiz.0003",
+      "conversation.quiz.0004",
+      "conversation.quiz.0005",
+      "conversation.quiz.0006",
+      "conversation.quiz.0007",
+      "conversation.quiz.0008",
+      "conversation.quiz.0009",
+      "conversation.quiz.0010"
     ],
     "requiredStageId": null
   },
@@ -32,27 +32,2771 @@
     "difficulty": "conversation",
     "chapterId": "conversation_chapter_001",
     "order": 2,
-    "title": "감사 말하기",
-    "description": "Thank you 와 기본 응답을 10문제로 반복 학습한다",
+    "title": "오늘 어떻게 지내세요 익히기",
+    "description": "오늘 어떻게 지내세요 학습 목표를 10문제로 반복 학습한다",
     "learningTarget": {
-      "id": "conversation.target.thank-you",
-      "ko": "감사합니다",
-      "en": "Thank you",
-      "sentenceKo": "천만에요",
-      "sentenceEn": "You're welcome"
+      "id": "conversation.target.greet_how_are_you",
+      "ko": "오늘 어떻게 지내세요?",
+      "en": "How are you today?",
+      "sentenceKo": "오늘 어떻게 지내세요",
+      "sentenceEn": "How are you today"
     },
     "quizIds": [
-      "conversation.quiz.011",
-      "conversation.quiz.012",
-      "conversation.quiz.013",
-      "conversation.quiz.014",
-      "conversation.quiz.015",
-      "conversation.quiz.016",
-      "conversation.quiz.017",
-      "conversation.quiz.018",
-      "conversation.quiz.019",
-      "conversation.quiz.020"
+      "conversation.quiz.0011",
+      "conversation.quiz.0012",
+      "conversation.quiz.0013",
+      "conversation.quiz.0014",
+      "conversation.quiz.0015",
+      "conversation.quiz.0016",
+      "conversation.quiz.0017",
+      "conversation.quiz.0018",
+      "conversation.quiz.0019",
+      "conversation.quiz.0020"
     ],
     "requiredStageId": "conversation.stage.001"
+  },
+  {
+    "id": "conversation.stage.003",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_001",
+    "order": 3,
+    "title": "좋은 아침이에요 익히기",
+    "description": "좋은 아침이에요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.greet_good_morning",
+      "ko": "좋은 아침이에요.",
+      "en": "Good morning.",
+      "sentenceKo": "좋은 아침이에요",
+      "sentenceEn": "Good morning"
+    },
+    "quizIds": [
+      "conversation.quiz.0021",
+      "conversation.quiz.0022",
+      "conversation.quiz.0023",
+      "conversation.quiz.0024",
+      "conversation.quiz.0025",
+      "conversation.quiz.0026",
+      "conversation.quiz.0027",
+      "conversation.quiz.0028",
+      "conversation.quiz.0029",
+      "conversation.quiz.0030"
+    ],
+    "requiredStageId": "conversation.stage.002"
+  },
+  {
+    "id": "conversation.stage.004",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_001",
+    "order": 4,
+    "title": "좋은 저녁이에요 익히기",
+    "description": "좋은 저녁이에요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.greet_good_evening",
+      "ko": "좋은 저녁이에요.",
+      "en": "Good evening.",
+      "sentenceKo": "좋은 저녁이에요",
+      "sentenceEn": "Good evening"
+    },
+    "quizIds": [
+      "conversation.quiz.0031",
+      "conversation.quiz.0032",
+      "conversation.quiz.0033",
+      "conversation.quiz.0034",
+      "conversation.quiz.0035",
+      "conversation.quiz.0036",
+      "conversation.quiz.0037",
+      "conversation.quiz.0038",
+      "conversation.quiz.0039",
+      "conversation.quiz.0040"
+    ],
+    "requiredStageId": "conversation.stage.003"
+  },
+  {
+    "id": "conversation.stage.005",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_001",
+    "order": 5,
+    "title": "만나서 반가워요 익히기",
+    "description": "만나서 반가워요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.greet_nice_meet",
+      "ko": "만나서 반가워요.",
+      "en": "Nice to meet you.",
+      "sentenceKo": "만나서 반가워요",
+      "sentenceEn": "Nice to meet you"
+    },
+    "quizIds": [
+      "conversation.quiz.0041",
+      "conversation.quiz.0042",
+      "conversation.quiz.0043",
+      "conversation.quiz.0044",
+      "conversation.quiz.0045",
+      "conversation.quiz.0046",
+      "conversation.quiz.0047",
+      "conversation.quiz.0048",
+      "conversation.quiz.0049",
+      "conversation.quiz.0050"
+    ],
+    "requiredStageId": "conversation.stage.004"
+  },
+  {
+    "id": "conversation.stage.006",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_001",
+    "order": 6,
+    "title": "오랜만이에요 익히기",
+    "description": "오랜만이에요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.greet_long_time",
+      "ko": "오랜만이에요.",
+      "en": "Long time no see.",
+      "sentenceKo": "오랜만이에요",
+      "sentenceEn": "Long time no see"
+    },
+    "quizIds": [
+      "conversation.quiz.0051",
+      "conversation.quiz.0052",
+      "conversation.quiz.0053",
+      "conversation.quiz.0054",
+      "conversation.quiz.0055",
+      "conversation.quiz.0056",
+      "conversation.quiz.0057",
+      "conversation.quiz.0058",
+      "conversation.quiz.0059",
+      "conversation.quiz.0060"
+    ],
+    "requiredStageId": "conversation.stage.005"
+  },
+  {
+    "id": "conversation.stage.007",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_001",
+    "order": 7,
+    "title": "저는 잘 지내요 익히기",
+    "description": "저는 잘 지내요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.greet_im_fine",
+      "ko": "저는 잘 지내요.",
+      "en": "I am doing well.",
+      "sentenceKo": "저는 잘 지내요",
+      "sentenceEn": "I am doing well"
+    },
+    "quizIds": [
+      "conversation.quiz.0061",
+      "conversation.quiz.0062",
+      "conversation.quiz.0063",
+      "conversation.quiz.0064",
+      "conversation.quiz.0065",
+      "conversation.quiz.0066",
+      "conversation.quiz.0067",
+      "conversation.quiz.0068",
+      "conversation.quiz.0069",
+      "conversation.quiz.0070"
+    ],
+    "requiredStageId": "conversation.stage.006"
+  },
+  {
+    "id": "conversation.stage.008",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_001",
+    "order": 8,
+    "title": "당신은요 익히기",
+    "description": "당신은요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.greet_and_you",
+      "ko": "당신은요?",
+      "en": "How about you?",
+      "sentenceKo": "당신은요",
+      "sentenceEn": "How about you"
+    },
+    "quizIds": [
+      "conversation.quiz.0071",
+      "conversation.quiz.0072",
+      "conversation.quiz.0073",
+      "conversation.quiz.0074",
+      "conversation.quiz.0075",
+      "conversation.quiz.0076",
+      "conversation.quiz.0077",
+      "conversation.quiz.0078",
+      "conversation.quiz.0079",
+      "conversation.quiz.0080"
+    ],
+    "requiredStageId": "conversation.stage.007"
+  },
+  {
+    "id": "conversation.stage.009",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_001",
+    "order": 9,
+    "title": "곧 봬요 익히기",
+    "description": "곧 봬요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.greet_see_soon",
+      "ko": "곧 봬요.",
+      "en": "See you soon.",
+      "sentenceKo": "곧 봬요",
+      "sentenceEn": "See you soon"
+    },
+    "quizIds": [
+      "conversation.quiz.0081",
+      "conversation.quiz.0082",
+      "conversation.quiz.0083",
+      "conversation.quiz.0084",
+      "conversation.quiz.0085",
+      "conversation.quiz.0086",
+      "conversation.quiz.0087",
+      "conversation.quiz.0088",
+      "conversation.quiz.0089",
+      "conversation.quiz.0090"
+    ],
+    "requiredStageId": "conversation.stage.008"
+  },
+  {
+    "id": "conversation.stage.010",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_001",
+    "order": 10,
+    "title": "몸조심하세요 익히기",
+    "description": "몸조심하세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.greet_take_care",
+      "ko": "몸조심하세요.",
+      "en": "Take care.",
+      "sentenceKo": "몸조심하세요",
+      "sentenceEn": "Take care"
+    },
+    "quizIds": [
+      "conversation.quiz.0091",
+      "conversation.quiz.0092",
+      "conversation.quiz.0093",
+      "conversation.quiz.0094",
+      "conversation.quiz.0095",
+      "conversation.quiz.0096",
+      "conversation.quiz.0097",
+      "conversation.quiz.0098",
+      "conversation.quiz.0099",
+      "conversation.quiz.0100"
+    ],
+    "requiredStageId": "conversation.stage.009"
+  },
+  {
+    "id": "conversation.stage.011",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_002",
+    "order": 1,
+    "title": "제 이름은 민지예요 익히기",
+    "description": "제 이름은 민지예요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.intro2_my_name",
+      "ko": "제 이름은 민지예요.",
+      "en": "My name is Minji.",
+      "sentenceKo": "제 이름은 민지예요",
+      "sentenceEn": "My name is Minji"
+    },
+    "quizIds": [
+      "conversation.quiz.0101",
+      "conversation.quiz.0102",
+      "conversation.quiz.0103",
+      "conversation.quiz.0104",
+      "conversation.quiz.0105",
+      "conversation.quiz.0106",
+      "conversation.quiz.0107",
+      "conversation.quiz.0108",
+      "conversation.quiz.0109",
+      "conversation.quiz.0110"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "conversation.stage.012",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_002",
+    "order": 2,
+    "title": "저는 한국에서 왔어요 익히기",
+    "description": "저는 한국에서 왔어요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.intro2_im_from",
+      "ko": "저는 한국에서 왔어요.",
+      "en": "I am from Korea.",
+      "sentenceKo": "저는 한국에서 왔어요",
+      "sentenceEn": "I am from Korea"
+    },
+    "quizIds": [
+      "conversation.quiz.0111",
+      "conversation.quiz.0112",
+      "conversation.quiz.0113",
+      "conversation.quiz.0114",
+      "conversation.quiz.0115",
+      "conversation.quiz.0116",
+      "conversation.quiz.0117",
+      "conversation.quiz.0118",
+      "conversation.quiz.0119",
+      "conversation.quiz.0120"
+    ],
+    "requiredStageId": "conversation.stage.011"
+  },
+  {
+    "id": "conversation.stage.013",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_002",
+    "order": 3,
+    "title": "저는 마케팅 팀에서 일해요 익히기",
+    "description": "저는 마케팅 팀에서 일해요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.intro2_i_work",
+      "ko": "저는 마케팅 팀에서 일해요.",
+      "en": "I work on the marketing team.",
+      "sentenceKo": "저는 마케팅 팀에서 일해요",
+      "sentenceEn": "I work on the marketing team"
+    },
+    "quizIds": [
+      "conversation.quiz.0121",
+      "conversation.quiz.0122",
+      "conversation.quiz.0123",
+      "conversation.quiz.0124",
+      "conversation.quiz.0125",
+      "conversation.quiz.0126",
+      "conversation.quiz.0127",
+      "conversation.quiz.0128",
+      "conversation.quiz.0129",
+      "conversation.quiz.0130"
+    ],
+    "requiredStageId": "conversation.stage.012"
+  },
+  {
+    "id": "conversation.stage.014",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_002",
+    "order": 4,
+    "title": "자기소개하기 04",
+    "description": "저는 대학에서 공부하고 있어요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.intro2_i_study",
+      "ko": "저는 대학에서 공부하고 있어요.",
+      "en": "I am studying at a university.",
+      "sentenceKo": "저는 대학에서 공부하고 있어요",
+      "sentenceEn": "I am studying at a university"
+    },
+    "quizIds": [
+      "conversation.quiz.0131",
+      "conversation.quiz.0132",
+      "conversation.quiz.0133",
+      "conversation.quiz.0134",
+      "conversation.quiz.0135",
+      "conversation.quiz.0136",
+      "conversation.quiz.0137",
+      "conversation.quiz.0138",
+      "conversation.quiz.0139",
+      "conversation.quiz.0140"
+    ],
+    "requiredStageId": "conversation.stage.013"
+  },
+  {
+    "id": "conversation.stage.015",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_002",
+    "order": 5,
+    "title": "제 취미는 사진 찍기예요 익히기",
+    "description": "제 취미는 사진 찍기예요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.intro2_my_hobby",
+      "ko": "제 취미는 사진 찍기예요.",
+      "en": "My hobby is taking pictures.",
+      "sentenceKo": "제 취미는 사진 찍기예요",
+      "sentenceEn": "My hobby is taking pictures"
+    },
+    "quizIds": [
+      "conversation.quiz.0141",
+      "conversation.quiz.0142",
+      "conversation.quiz.0143",
+      "conversation.quiz.0144",
+      "conversation.quiz.0145",
+      "conversation.quiz.0146",
+      "conversation.quiz.0147",
+      "conversation.quiz.0148",
+      "conversation.quiz.0149",
+      "conversation.quiz.0150"
+    ],
+    "requiredStageId": "conversation.stage.014"
+  },
+  {
+    "id": "conversation.stage.016",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_002",
+    "order": 6,
+    "title": "저는 서울에 살아요 익히기",
+    "description": "저는 서울에 살아요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.intro2_i_live",
+      "ko": "저는 서울에 살아요.",
+      "en": "I live in Seoul.",
+      "sentenceKo": "저는 서울에 살아요",
+      "sentenceEn": "I live in Seoul"
+    },
+    "quizIds": [
+      "conversation.quiz.0151",
+      "conversation.quiz.0152",
+      "conversation.quiz.0153",
+      "conversation.quiz.0154",
+      "conversation.quiz.0155",
+      "conversation.quiz.0156",
+      "conversation.quiz.0157",
+      "conversation.quiz.0158",
+      "conversation.quiz.0159",
+      "conversation.quiz.0160"
+    ],
+    "requiredStageId": "conversation.stage.015"
+  },
+  {
+    "id": "conversation.stage.017",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_002",
+    "order": 7,
+    "title": "저는 커피를 좋아해요 익히기",
+    "description": "저는 커피를 좋아해요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.intro2_i_like",
+      "ko": "저는 커피를 좋아해요.",
+      "en": "I like coffee.",
+      "sentenceKo": "저는 커피를 좋아해요",
+      "sentenceEn": "I like coffee"
+    },
+    "quizIds": [
+      "conversation.quiz.0161",
+      "conversation.quiz.0162",
+      "conversation.quiz.0163",
+      "conversation.quiz.0164",
+      "conversation.quiz.0165",
+      "conversation.quiz.0166",
+      "conversation.quiz.0167",
+      "conversation.quiz.0168",
+      "conversation.quiz.0169",
+      "conversation.quiz.0170"
+    ],
+    "requiredStageId": "conversation.stage.016"
+  },
+  {
+    "id": "conversation.stage.018",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_002",
+    "order": 8,
+    "title": "이곳은 처음이에요 익히기",
+    "description": "이곳은 처음이에요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.intro2_first_time",
+      "ko": "이곳은 처음이에요.",
+      "en": "It is my first time here.",
+      "sentenceKo": "이곳은 처음이에요",
+      "sentenceEn": "It is my first time here"
+    },
+    "quizIds": [
+      "conversation.quiz.0171",
+      "conversation.quiz.0172",
+      "conversation.quiz.0173",
+      "conversation.quiz.0174",
+      "conversation.quiz.0175",
+      "conversation.quiz.0176",
+      "conversation.quiz.0177",
+      "conversation.quiz.0178",
+      "conversation.quiz.0179",
+      "conversation.quiz.0180"
+    ],
+    "requiredStageId": "conversation.stage.017"
+  },
+  {
+    "id": "conversation.stage.019",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_002",
+    "order": 9,
+    "title": "저를 민지라고 불러 주세요 익히기",
+    "description": "저를 민지라고 불러 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.intro2_call_me",
+      "ko": "저를 민지라고 불러 주세요.",
+      "en": "Please call me Minji.",
+      "sentenceKo": "저를 민지라고 불러 주세요",
+      "sentenceEn": "Please call me Minji"
+    },
+    "quizIds": [
+      "conversation.quiz.0181",
+      "conversation.quiz.0182",
+      "conversation.quiz.0183",
+      "conversation.quiz.0184",
+      "conversation.quiz.0185",
+      "conversation.quiz.0186",
+      "conversation.quiz.0187",
+      "conversation.quiz.0188",
+      "conversation.quiz.0189",
+      "conversation.quiz.0190"
+    ],
+    "requiredStageId": "conversation.stage.018"
+  },
+  {
+    "id": "conversation.stage.020",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_002",
+    "order": 10,
+    "title": "여러분을 만나서 기뻐요 익히기",
+    "description": "여러분을 만나서 기뻐요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.intro2_glad_meet",
+      "ko": "여러분을 만나서 기뻐요.",
+      "en": "I am glad to meet you all.",
+      "sentenceKo": "여러분을 만나서 기뻐요",
+      "sentenceEn": "I am glad to meet you all"
+    },
+    "quizIds": [
+      "conversation.quiz.0191",
+      "conversation.quiz.0192",
+      "conversation.quiz.0193",
+      "conversation.quiz.0194",
+      "conversation.quiz.0195",
+      "conversation.quiz.0196",
+      "conversation.quiz.0197",
+      "conversation.quiz.0198",
+      "conversation.quiz.0199",
+      "conversation.quiz.0200"
+    ],
+    "requiredStageId": "conversation.stage.019"
+  },
+  {
+    "id": "conversation.stage.021",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_003",
+    "order": 1,
+    "title": "아메리카노 한 잔 주세요 익히기",
+    "description": "아메리카노 한 잔 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.cafe_americano",
+      "ko": "아메리카노 한 잔 주세요.",
+      "en": "I'd like an Americano, please.",
+      "sentenceKo": "아메리카노 한 잔 주세요",
+      "sentenceEn": "I'd like an Americano, please"
+    },
+    "quizIds": [
+      "conversation.quiz.0201",
+      "conversation.quiz.0202",
+      "conversation.quiz.0203",
+      "conversation.quiz.0204",
+      "conversation.quiz.0205",
+      "conversation.quiz.0206",
+      "conversation.quiz.0207",
+      "conversation.quiz.0208",
+      "conversation.quiz.0209",
+      "conversation.quiz.0210"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "conversation.stage.022",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_003",
+    "order": 2,
+    "title": "따뜻한 라테로 주세요 익히기",
+    "description": "따뜻한 라테로 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.cafe_latte_hot",
+      "ko": "따뜻한 라테로 주세요.",
+      "en": "Can I get a hot latte?",
+      "sentenceKo": "따뜻한 라테로 주세요",
+      "sentenceEn": "Can I get a hot latte"
+    },
+    "quizIds": [
+      "conversation.quiz.0211",
+      "conversation.quiz.0212",
+      "conversation.quiz.0213",
+      "conversation.quiz.0214",
+      "conversation.quiz.0215",
+      "conversation.quiz.0216",
+      "conversation.quiz.0217",
+      "conversation.quiz.0218",
+      "conversation.quiz.0219",
+      "conversation.quiz.0220"
+    ],
+    "requiredStageId": "conversation.stage.021"
+  },
+  {
+    "id": "conversation.stage.023",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_003",
+    "order": 3,
+    "title": "라지 사이즈로 부탁드려요 익히기",
+    "description": "라지 사이즈로 부탁드려요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.cafe_size_large",
+      "ko": "라지 사이즈로 부탁드려요.",
+      "en": "Could I have a large size?",
+      "sentenceKo": "라지 사이즈로 부탁드려요",
+      "sentenceEn": "Could I have a large size"
+    },
+    "quizIds": [
+      "conversation.quiz.0221",
+      "conversation.quiz.0222",
+      "conversation.quiz.0223",
+      "conversation.quiz.0224",
+      "conversation.quiz.0225",
+      "conversation.quiz.0226",
+      "conversation.quiz.0227",
+      "conversation.quiz.0228",
+      "conversation.quiz.0229",
+      "conversation.quiz.0230"
+    ],
+    "requiredStageId": "conversation.stage.022"
+  },
+  {
+    "id": "conversation.stage.024",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_003",
+    "order": 4,
+    "title": "포장해 주세요 익히기",
+    "description": "포장해 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.cafe_takeout",
+      "ko": "포장해 주세요.",
+      "en": "To go, please.",
+      "sentenceKo": "포장해 주세요",
+      "sentenceEn": "To go, please"
+    },
+    "quizIds": [
+      "conversation.quiz.0231",
+      "conversation.quiz.0232",
+      "conversation.quiz.0233",
+      "conversation.quiz.0234",
+      "conversation.quiz.0235",
+      "conversation.quiz.0236",
+      "conversation.quiz.0237",
+      "conversation.quiz.0238",
+      "conversation.quiz.0239",
+      "conversation.quiz.0240"
+    ],
+    "requiredStageId": "conversation.stage.023"
+  },
+  {
+    "id": "conversation.stage.025",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_003",
+    "order": 5,
+    "title": "샷 하나 추가해 주세요 익히기",
+    "description": "샷 하나 추가해 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.cafe_extra_shot",
+      "ko": "샷 하나 추가해 주세요.",
+      "en": "Please add an extra shot.",
+      "sentenceKo": "샷 하나 추가해 주세요",
+      "sentenceEn": "Please add an extra shot"
+    },
+    "quizIds": [
+      "conversation.quiz.0241",
+      "conversation.quiz.0242",
+      "conversation.quiz.0243",
+      "conversation.quiz.0244",
+      "conversation.quiz.0245",
+      "conversation.quiz.0246",
+      "conversation.quiz.0247",
+      "conversation.quiz.0248",
+      "conversation.quiz.0249",
+      "conversation.quiz.0250"
+    ],
+    "requiredStageId": "conversation.stage.024"
+  },
+  {
+    "id": "conversation.stage.026",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_003",
+    "order": 6,
+    "title": "얼음은 적게 넣어 주세요 익히기",
+    "description": "얼음은 적게 넣어 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.cafe_less_ice",
+      "ko": "얼음은 적게 넣어 주세요.",
+      "en": "Please put in less ice.",
+      "sentenceKo": "얼음은 적게 넣어 주세요",
+      "sentenceEn": "Please put in less ice"
+    },
+    "quizIds": [
+      "conversation.quiz.0251",
+      "conversation.quiz.0252",
+      "conversation.quiz.0253",
+      "conversation.quiz.0254",
+      "conversation.quiz.0255",
+      "conversation.quiz.0256",
+      "conversation.quiz.0257",
+      "conversation.quiz.0258",
+      "conversation.quiz.0259",
+      "conversation.quiz.0260"
+    ],
+    "requiredStageId": "conversation.stage.025"
+  },
+  {
+    "id": "conversation.stage.027",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_003",
+    "order": 7,
+    "title": "카페 주문하기 07",
+    "description": "우유 대신 두유로 바꿔 주실 수 있나요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.cafe_non_dairy",
+      "ko": "우유 대신 두유로 바꿔 주실 수 있나요?",
+      "en": "Could you change the milk to soy milk?",
+      "sentenceKo": "우유 대신 두유로 바꿔 주실 수 있나요",
+      "sentenceEn": "Could you change the milk to soy milk"
+    },
+    "quizIds": [
+      "conversation.quiz.0261",
+      "conversation.quiz.0262",
+      "conversation.quiz.0263",
+      "conversation.quiz.0264",
+      "conversation.quiz.0265",
+      "conversation.quiz.0266",
+      "conversation.quiz.0267",
+      "conversation.quiz.0268",
+      "conversation.quiz.0269",
+      "conversation.quiz.0270"
+    ],
+    "requiredStageId": "conversation.stage.026"
+  },
+  {
+    "id": "conversation.stage.028",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_003",
+    "order": 8,
+    "title": "얼마인가요 익히기",
+    "description": "얼마인가요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.cafe_how_much",
+      "ko": "얼마인가요?",
+      "en": "How much is it?",
+      "sentenceKo": "얼마인가요",
+      "sentenceEn": "How much is it"
+    },
+    "quizIds": [
+      "conversation.quiz.0271",
+      "conversation.quiz.0272",
+      "conversation.quiz.0273",
+      "conversation.quiz.0274",
+      "conversation.quiz.0275",
+      "conversation.quiz.0276",
+      "conversation.quiz.0277",
+      "conversation.quiz.0278",
+      "conversation.quiz.0279",
+      "conversation.quiz.0280"
+    ],
+    "requiredStageId": "conversation.stage.027"
+  },
+  {
+    "id": "conversation.stage.029",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_003",
+    "order": 9,
+    "title": "영수증도 부탁드려요 익히기",
+    "description": "영수증도 부탁드려요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.cafe_receipt",
+      "ko": "영수증도 부탁드려요.",
+      "en": "Could I get the receipt as well?",
+      "sentenceKo": "영수증도 부탁드려요",
+      "sentenceEn": "Could I get the receipt as well"
+    },
+    "quizIds": [
+      "conversation.quiz.0281",
+      "conversation.quiz.0282",
+      "conversation.quiz.0283",
+      "conversation.quiz.0284",
+      "conversation.quiz.0285",
+      "conversation.quiz.0286",
+      "conversation.quiz.0287",
+      "conversation.quiz.0288",
+      "conversation.quiz.0289",
+      "conversation.quiz.0290"
+    ],
+    "requiredStageId": "conversation.stage.028"
+  },
+  {
+    "id": "conversation.stage.030",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_003",
+    "order": 10,
+    "title": "카페 주문하기 10",
+    "description": "감사합니다. 좋은 하루 보내세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.cafe_thank_you",
+      "ko": "감사합니다. 좋은 하루 보내세요.",
+      "en": "Thank you. Have a nice day.",
+      "sentenceKo": "감사합니다. 좋은 하루 보내세요",
+      "sentenceEn": "Thank you. Have a nice day"
+    },
+    "quizIds": [
+      "conversation.quiz.0291",
+      "conversation.quiz.0292",
+      "conversation.quiz.0293",
+      "conversation.quiz.0294",
+      "conversation.quiz.0295",
+      "conversation.quiz.0296",
+      "conversation.quiz.0297",
+      "conversation.quiz.0298",
+      "conversation.quiz.0299",
+      "conversation.quiz.0300"
+    ],
+    "requiredStageId": "conversation.stage.029"
+  },
+  {
+    "id": "conversation.stage.031",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_004",
+    "order": 1,
+    "title": "메뉴 좀 보여주세요 익히기",
+    "description": "메뉴 좀 보여주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.restaurant_see_menu",
+      "ko": "메뉴 좀 보여주세요.",
+      "en": "Could I see the menu?",
+      "sentenceKo": "메뉴 좀 보여주세요",
+      "sentenceEn": "Could I see the menu"
+    },
+    "quizIds": [
+      "conversation.quiz.0301",
+      "conversation.quiz.0302",
+      "conversation.quiz.0303",
+      "conversation.quiz.0304",
+      "conversation.quiz.0305",
+      "conversation.quiz.0306",
+      "conversation.quiz.0307",
+      "conversation.quiz.0308",
+      "conversation.quiz.0309",
+      "conversation.quiz.0310"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "conversation.stage.032",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_004",
+    "order": 2,
+    "title": "두 명 자리 있나요 익히기",
+    "description": "두 명 자리 있나요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.restaurant_table_two",
+      "ko": "두 명 자리 있나요?",
+      "en": "Do you have a table for two?",
+      "sentenceKo": "두 명 자리 있나요",
+      "sentenceEn": "Do you have a table for two"
+    },
+    "quizIds": [
+      "conversation.quiz.0311",
+      "conversation.quiz.0312",
+      "conversation.quiz.0313",
+      "conversation.quiz.0314",
+      "conversation.quiz.0315",
+      "conversation.quiz.0316",
+      "conversation.quiz.0317",
+      "conversation.quiz.0318",
+      "conversation.quiz.0319",
+      "conversation.quiz.0320"
+    ],
+    "requiredStageId": "conversation.stage.031"
+  },
+  {
+    "id": "conversation.stage.033",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_004",
+    "order": 3,
+    "title": "추천 메뉴가 무엇인가요 익히기",
+    "description": "추천 메뉴가 무엇인가요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.restaurant_recommend",
+      "ko": "추천 메뉴가 무엇인가요?",
+      "en": "What do you recommend?",
+      "sentenceKo": "추천 메뉴가 무엇인가요",
+      "sentenceEn": "What do you recommend"
+    },
+    "quizIds": [
+      "conversation.quiz.0321",
+      "conversation.quiz.0322",
+      "conversation.quiz.0323",
+      "conversation.quiz.0324",
+      "conversation.quiz.0325",
+      "conversation.quiz.0326",
+      "conversation.quiz.0327",
+      "conversation.quiz.0328",
+      "conversation.quiz.0329",
+      "conversation.quiz.0330"
+    ],
+    "requiredStageId": "conversation.stage.032"
+  },
+  {
+    "id": "conversation.stage.034",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_004",
+    "order": 4,
+    "title": "식당에서 말하기 04",
+    "description": "맵지 않은 음식으로 부탁드려요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.restaurant_no_spicy",
+      "ko": "맵지 않은 음식으로 부탁드려요.",
+      "en": "I'd like something not spicy.",
+      "sentenceKo": "맵지 않은 음식으로 부탁드려요",
+      "sentenceEn": "I'd like something not spicy"
+    },
+    "quizIds": [
+      "conversation.quiz.0331",
+      "conversation.quiz.0332",
+      "conversation.quiz.0333",
+      "conversation.quiz.0334",
+      "conversation.quiz.0335",
+      "conversation.quiz.0336",
+      "conversation.quiz.0337",
+      "conversation.quiz.0338",
+      "conversation.quiz.0339",
+      "conversation.quiz.0340"
+    ],
+    "requiredStageId": "conversation.stage.033"
+  },
+  {
+    "id": "conversation.stage.035",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_004",
+    "order": 5,
+    "title": "물 좀 주세요 익히기",
+    "description": "물 좀 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.restaurant_water_please",
+      "ko": "물 좀 주세요.",
+      "en": "Could I have some water?",
+      "sentenceKo": "물 좀 주세요",
+      "sentenceEn": "Could I have some water"
+    },
+    "quizIds": [
+      "conversation.quiz.0341",
+      "conversation.quiz.0342",
+      "conversation.quiz.0343",
+      "conversation.quiz.0344",
+      "conversation.quiz.0345",
+      "conversation.quiz.0346",
+      "conversation.quiz.0347",
+      "conversation.quiz.0348",
+      "conversation.quiz.0349",
+      "conversation.quiz.0350"
+    ],
+    "requiredStageId": "conversation.stage.034"
+  },
+  {
+    "id": "conversation.stage.036",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_004",
+    "order": 6,
+    "title": "주문할게요 익히기",
+    "description": "주문할게요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.restaurant_ready_order",
+      "ko": "주문할게요.",
+      "en": "We are ready to order.",
+      "sentenceKo": "주문할게요",
+      "sentenceEn": "We are ready to order"
+    },
+    "quizIds": [
+      "conversation.quiz.0351",
+      "conversation.quiz.0352",
+      "conversation.quiz.0353",
+      "conversation.quiz.0354",
+      "conversation.quiz.0355",
+      "conversation.quiz.0356",
+      "conversation.quiz.0357",
+      "conversation.quiz.0358",
+      "conversation.quiz.0359",
+      "conversation.quiz.0360"
+    ],
+    "requiredStageId": "conversation.stage.035"
+  },
+  {
+    "id": "conversation.stage.037",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_004",
+    "order": 7,
+    "title": "계산서 주세요 익히기",
+    "description": "계산서 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.restaurant_bill_please",
+      "ko": "계산서 주세요.",
+      "en": "Could I have the bill, please?",
+      "sentenceKo": "계산서 주세요",
+      "sentenceEn": "Could I have the bill, please"
+    },
+    "quizIds": [
+      "conversation.quiz.0361",
+      "conversation.quiz.0362",
+      "conversation.quiz.0363",
+      "conversation.quiz.0364",
+      "conversation.quiz.0365",
+      "conversation.quiz.0366",
+      "conversation.quiz.0367",
+      "conversation.quiz.0368",
+      "conversation.quiz.0369",
+      "conversation.quiz.0370"
+    ],
+    "requiredStageId": "conversation.stage.036"
+  },
+  {
+    "id": "conversation.stage.038",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_004",
+    "order": 8,
+    "title": "따로 계산할 수 있을까요 익히기",
+    "description": "따로 계산할 수 있을까요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.restaurant_split_bill",
+      "ko": "따로 계산할 수 있을까요?",
+      "en": "Could we split the bill?",
+      "sentenceKo": "따로 계산할 수 있을까요",
+      "sentenceEn": "Could we split the bill"
+    },
+    "quizIds": [
+      "conversation.quiz.0371",
+      "conversation.quiz.0372",
+      "conversation.quiz.0373",
+      "conversation.quiz.0374",
+      "conversation.quiz.0375",
+      "conversation.quiz.0376",
+      "conversation.quiz.0377",
+      "conversation.quiz.0378",
+      "conversation.quiz.0379",
+      "conversation.quiz.0380"
+    ],
+    "requiredStageId": "conversation.stage.037"
+  },
+  {
+    "id": "conversation.stage.039",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_004",
+    "order": 9,
+    "title": "조금 짠 것 같아요 익히기",
+    "description": "조금 짠 것 같아요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.restaurant_too_salty",
+      "ko": "조금 짠 것 같아요.",
+      "en": "It tastes a little salty.",
+      "sentenceKo": "조금 짠 것 같아요",
+      "sentenceEn": "It tastes a little salty"
+    },
+    "quizIds": [
+      "conversation.quiz.0381",
+      "conversation.quiz.0382",
+      "conversation.quiz.0383",
+      "conversation.quiz.0384",
+      "conversation.quiz.0385",
+      "conversation.quiz.0386",
+      "conversation.quiz.0387",
+      "conversation.quiz.0388",
+      "conversation.quiz.0389",
+      "conversation.quiz.0390"
+    ],
+    "requiredStageId": "conversation.stage.038"
+  },
+  {
+    "id": "conversation.stage.040",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_004",
+    "order": 10,
+    "title": "정말 맛있었어요 익히기",
+    "description": "정말 맛있었어요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.restaurant_was_delicious",
+      "ko": "정말 맛있었어요.",
+      "en": "It was really delicious.",
+      "sentenceKo": "정말 맛있었어요",
+      "sentenceEn": "It was really delicious"
+    },
+    "quizIds": [
+      "conversation.quiz.0391",
+      "conversation.quiz.0392",
+      "conversation.quiz.0393",
+      "conversation.quiz.0394",
+      "conversation.quiz.0395",
+      "conversation.quiz.0396",
+      "conversation.quiz.0397",
+      "conversation.quiz.0398",
+      "conversation.quiz.0399",
+      "conversation.quiz.0400"
+    ],
+    "requiredStageId": "conversation.stage.039"
+  },
+  {
+    "id": "conversation.stage.041",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_005",
+    "order": 1,
+    "title": "지하철역이 어디에 있나요 익히기",
+    "description": "지하철역이 어디에 있나요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.direction_where_subway",
+      "ko": "지하철역이 어디에 있나요?",
+      "en": "Where is the subway station?",
+      "sentenceKo": "지하철역이 어디에 있나요",
+      "sentenceEn": "Where is the subway station"
+    },
+    "quizIds": [
+      "conversation.quiz.0401",
+      "conversation.quiz.0402",
+      "conversation.quiz.0403",
+      "conversation.quiz.0404",
+      "conversation.quiz.0405",
+      "conversation.quiz.0406",
+      "conversation.quiz.0407",
+      "conversation.quiz.0408",
+      "conversation.quiz.0409",
+      "conversation.quiz.0410"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "conversation.stage.042",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_005",
+    "order": 2,
+    "title": "은행에 어떻게 가나요 익히기",
+    "description": "은행에 어떻게 가나요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.direction_how_get_bank",
+      "ko": "은행에 어떻게 가나요?",
+      "en": "How do I get to the bank?",
+      "sentenceKo": "은행에 어떻게 가나요",
+      "sentenceEn": "How do I get to the bank"
+    },
+    "quizIds": [
+      "conversation.quiz.0411",
+      "conversation.quiz.0412",
+      "conversation.quiz.0413",
+      "conversation.quiz.0414",
+      "conversation.quiz.0415",
+      "conversation.quiz.0416",
+      "conversation.quiz.0417",
+      "conversation.quiz.0418",
+      "conversation.quiz.0419",
+      "conversation.quiz.0420"
+    ],
+    "requiredStageId": "conversation.stage.041"
+  },
+  {
+    "id": "conversation.stage.043",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_005",
+    "order": 3,
+    "title": "여기서 먼가요 익히기",
+    "description": "여기서 먼가요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.direction_is_it_far",
+      "ko": "여기서 먼가요?",
+      "en": "Is it far from here?",
+      "sentenceKo": "여기서 먼가요",
+      "sentenceEn": "Is it far from here"
+    },
+    "quizIds": [
+      "conversation.quiz.0421",
+      "conversation.quiz.0422",
+      "conversation.quiz.0423",
+      "conversation.quiz.0424",
+      "conversation.quiz.0425",
+      "conversation.quiz.0426",
+      "conversation.quiz.0427",
+      "conversation.quiz.0428",
+      "conversation.quiz.0429",
+      "conversation.quiz.0430"
+    ],
+    "requiredStageId": "conversation.stage.042"
+  },
+  {
+    "id": "conversation.stage.044",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_005",
+    "order": 4,
+    "title": "저기에서 왼쪽으로 도세요 익히기",
+    "description": "저기에서 왼쪽으로 도세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.direction_turn_left",
+      "ko": "저기에서 왼쪽으로 도세요.",
+      "en": "Turn left over there.",
+      "sentenceKo": "저기에서 왼쪽으로 도세요",
+      "sentenceEn": "Turn left over there"
+    },
+    "quizIds": [
+      "conversation.quiz.0431",
+      "conversation.quiz.0432",
+      "conversation.quiz.0433",
+      "conversation.quiz.0434",
+      "conversation.quiz.0435",
+      "conversation.quiz.0436",
+      "conversation.quiz.0437",
+      "conversation.quiz.0438",
+      "conversation.quiz.0439",
+      "conversation.quiz.0440"
+    ],
+    "requiredStageId": "conversation.stage.043"
+  },
+  {
+    "id": "conversation.stage.045",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_005",
+    "order": 5,
+    "title": "쭉 가시면 됩니다 익히기",
+    "description": "쭉 가시면 됩니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.direction_go_straight",
+      "ko": "쭉 가시면 됩니다.",
+      "en": "Just go straight.",
+      "sentenceKo": "쭉 가시면 됩니다",
+      "sentenceEn": "Just go straight"
+    },
+    "quizIds": [
+      "conversation.quiz.0441",
+      "conversation.quiz.0442",
+      "conversation.quiz.0443",
+      "conversation.quiz.0444",
+      "conversation.quiz.0445",
+      "conversation.quiz.0446",
+      "conversation.quiz.0447",
+      "conversation.quiz.0448",
+      "conversation.quiz.0449",
+      "conversation.quiz.0450"
+    ],
+    "requiredStageId": "conversation.stage.044"
+  },
+  {
+    "id": "conversation.stage.046",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_005",
+    "order": 6,
+    "title": "약국은 우체국 옆에 있어요 익히기",
+    "description": "약국은 우체국 옆에 있어요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.direction_next_to",
+      "ko": "약국은 우체국 옆에 있어요.",
+      "en": "The pharmacy is next to the post office.",
+      "sentenceKo": "약국은 우체국 옆에 있어요",
+      "sentenceEn": "The pharmacy is next to the post office"
+    },
+    "quizIds": [
+      "conversation.quiz.0451",
+      "conversation.quiz.0452",
+      "conversation.quiz.0453",
+      "conversation.quiz.0454",
+      "conversation.quiz.0455",
+      "conversation.quiz.0456",
+      "conversation.quiz.0457",
+      "conversation.quiz.0458",
+      "conversation.quiz.0459",
+      "conversation.quiz.0460"
+    ],
+    "requiredStageId": "conversation.stage.045"
+  },
+  {
+    "id": "conversation.stage.047",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_005",
+    "order": 7,
+    "title": "길 묻기 07",
+    "description": "호텔은 공원 맞은편에 있어요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.direction_across_from",
+      "ko": "호텔은 공원 맞은편에 있어요.",
+      "en": "The hotel is across from the park.",
+      "sentenceKo": "호텔은 공원 맞은편에 있어요",
+      "sentenceEn": "The hotel is across from the park"
+    },
+    "quizIds": [
+      "conversation.quiz.0461",
+      "conversation.quiz.0462",
+      "conversation.quiz.0463",
+      "conversation.quiz.0464",
+      "conversation.quiz.0465",
+      "conversation.quiz.0466",
+      "conversation.quiz.0467",
+      "conversation.quiz.0468",
+      "conversation.quiz.0469",
+      "conversation.quiz.0470"
+    ],
+    "requiredStageId": "conversation.stage.046"
+  },
+  {
+    "id": "conversation.stage.048",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_005",
+    "order": 8,
+    "title": "어느 버스를 타야 하나요 익히기",
+    "description": "어느 버스를 타야 하나요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.direction_which_bus",
+      "ko": "어느 버스를 타야 하나요?",
+      "en": "Which bus should I take?",
+      "sentenceKo": "어느 버스를 타야 하나요",
+      "sentenceEn": "Which bus should I take"
+    },
+    "quizIds": [
+      "conversation.quiz.0471",
+      "conversation.quiz.0472",
+      "conversation.quiz.0473",
+      "conversation.quiz.0474",
+      "conversation.quiz.0475",
+      "conversation.quiz.0476",
+      "conversation.quiz.0477",
+      "conversation.quiz.0478",
+      "conversation.quiz.0479",
+      "conversation.quiz.0480"
+    ],
+    "requiredStageId": "conversation.stage.047"
+  },
+  {
+    "id": "conversation.stage.049",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_005",
+    "order": 9,
+    "title": "길 묻기 09",
+    "description": "제가 길을 잘못 든 것 같아요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.direction_missed_turn",
+      "ko": "제가 길을 잘못 든 것 같아요.",
+      "en": "I think I missed the turn.",
+      "sentenceKo": "제가 길을 잘못 든 것 같아요",
+      "sentenceEn": "I think I missed the turn"
+    },
+    "quizIds": [
+      "conversation.quiz.0481",
+      "conversation.quiz.0482",
+      "conversation.quiz.0483",
+      "conversation.quiz.0484",
+      "conversation.quiz.0485",
+      "conversation.quiz.0486",
+      "conversation.quiz.0487",
+      "conversation.quiz.0488",
+      "conversation.quiz.0489",
+      "conversation.quiz.0490"
+    ],
+    "requiredStageId": "conversation.stage.048"
+  },
+  {
+    "id": "conversation.stage.050",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_005",
+    "order": 10,
+    "title": "도와주셔서 감사합니다 익히기",
+    "description": "도와주셔서 감사합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.direction_thank_for_help",
+      "ko": "도와주셔서 감사합니다.",
+      "en": "Thank you for your help.",
+      "sentenceKo": "도와주셔서 감사합니다",
+      "sentenceEn": "Thank you for your help"
+    },
+    "quizIds": [
+      "conversation.quiz.0491",
+      "conversation.quiz.0492",
+      "conversation.quiz.0493",
+      "conversation.quiz.0494",
+      "conversation.quiz.0495",
+      "conversation.quiz.0496",
+      "conversation.quiz.0497",
+      "conversation.quiz.0498",
+      "conversation.quiz.0499",
+      "conversation.quiz.0500"
+    ],
+    "requiredStageId": "conversation.stage.049"
+  },
+  {
+    "id": "conversation.stage.051",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_006",
+    "order": 1,
+    "title": "쇼핑하기 01",
+    "description": "이거 더 작은 사이즈 있나요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.shopping_smaller_size",
+      "ko": "이거 더 작은 사이즈 있나요?",
+      "en": "Do you have this in a smaller size?",
+      "sentenceKo": "이거 더 작은 사이즈 있나요",
+      "sentenceEn": "Do you have this in a smaller size"
+    },
+    "quizIds": [
+      "conversation.quiz.0501",
+      "conversation.quiz.0502",
+      "conversation.quiz.0503",
+      "conversation.quiz.0504",
+      "conversation.quiz.0505",
+      "conversation.quiz.0506",
+      "conversation.quiz.0507",
+      "conversation.quiz.0508",
+      "conversation.quiz.0509",
+      "conversation.quiz.0510"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "conversation.stage.052",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_006",
+    "order": 2,
+    "title": "다른 색도 있나요 익히기",
+    "description": "다른 색도 있나요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.shopping_different_color",
+      "ko": "다른 색도 있나요?",
+      "en": "Do you have this in another color?",
+      "sentenceKo": "다른 색도 있나요",
+      "sentenceEn": "Do you have this in another color"
+    },
+    "quizIds": [
+      "conversation.quiz.0511",
+      "conversation.quiz.0512",
+      "conversation.quiz.0513",
+      "conversation.quiz.0514",
+      "conversation.quiz.0515",
+      "conversation.quiz.0516",
+      "conversation.quiz.0517",
+      "conversation.quiz.0518",
+      "conversation.quiz.0519",
+      "conversation.quiz.0520"
+    ],
+    "requiredStageId": "conversation.stage.051"
+  },
+  {
+    "id": "conversation.stage.053",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_006",
+    "order": 3,
+    "title": "입어봐도 될까요 익히기",
+    "description": "입어봐도 될까요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.shopping_can_try",
+      "ko": "입어봐도 될까요?",
+      "en": "May I try this on?",
+      "sentenceKo": "입어봐도 될까요",
+      "sentenceEn": "May I try this on"
+    },
+    "quizIds": [
+      "conversation.quiz.0521",
+      "conversation.quiz.0522",
+      "conversation.quiz.0523",
+      "conversation.quiz.0524",
+      "conversation.quiz.0525",
+      "conversation.quiz.0526",
+      "conversation.quiz.0527",
+      "conversation.quiz.0528",
+      "conversation.quiz.0529",
+      "conversation.quiz.0530"
+    ],
+    "requiredStageId": "conversation.stage.052"
+  },
+  {
+    "id": "conversation.stage.054",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_006",
+    "order": 4,
+    "title": "이거 얼마예요 익히기",
+    "description": "이거 얼마예요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.shopping_how_much2",
+      "ko": "이거 얼마예요?",
+      "en": "How much is this?",
+      "sentenceKo": "이거 얼마예요",
+      "sentenceEn": "How much is this"
+    },
+    "quizIds": [
+      "conversation.quiz.0531",
+      "conversation.quiz.0532",
+      "conversation.quiz.0533",
+      "conversation.quiz.0534",
+      "conversation.quiz.0535",
+      "conversation.quiz.0536",
+      "conversation.quiz.0537",
+      "conversation.quiz.0538",
+      "conversation.quiz.0539",
+      "conversation.quiz.0540"
+    ],
+    "requiredStageId": "conversation.stage.053"
+  },
+  {
+    "id": "conversation.stage.055",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_006",
+    "order": 5,
+    "title": "할인 중인가요 익히기",
+    "description": "할인 중인가요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.shopping_discount",
+      "ko": "할인 중인가요?",
+      "en": "Is this on sale?",
+      "sentenceKo": "할인 중인가요",
+      "sentenceEn": "Is this on sale"
+    },
+    "quizIds": [
+      "conversation.quiz.0541",
+      "conversation.quiz.0542",
+      "conversation.quiz.0543",
+      "conversation.quiz.0544",
+      "conversation.quiz.0545",
+      "conversation.quiz.0546",
+      "conversation.quiz.0547",
+      "conversation.quiz.0548",
+      "conversation.quiz.0549",
+      "conversation.quiz.0550"
+    ],
+    "requiredStageId": "conversation.stage.054"
+  },
+  {
+    "id": "conversation.stage.056",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_006",
+    "order": 6,
+    "title": "카드로 계산할게요 익히기",
+    "description": "카드로 계산할게요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.shopping_pay_card",
+      "ko": "카드로 계산할게요.",
+      "en": "I'll pay by card.",
+      "sentenceKo": "카드로 계산할게요",
+      "sentenceEn": "I'll pay by card"
+    },
+    "quizIds": [
+      "conversation.quiz.0551",
+      "conversation.quiz.0552",
+      "conversation.quiz.0553",
+      "conversation.quiz.0554",
+      "conversation.quiz.0555",
+      "conversation.quiz.0556",
+      "conversation.quiz.0557",
+      "conversation.quiz.0558",
+      "conversation.quiz.0559",
+      "conversation.quiz.0560"
+    ],
+    "requiredStageId": "conversation.stage.055"
+  },
+  {
+    "id": "conversation.stage.057",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_006",
+    "order": 7,
+    "title": "그냥 둘러보고 있어요 익히기",
+    "description": "그냥 둘러보고 있어요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.shopping_just_looking",
+      "ko": "그냥 둘러보고 있어요.",
+      "en": "I'm just looking around.",
+      "sentenceKo": "그냥 둘러보고 있어요",
+      "sentenceEn": "I'm just looking around"
+    },
+    "quizIds": [
+      "conversation.quiz.0561",
+      "conversation.quiz.0562",
+      "conversation.quiz.0563",
+      "conversation.quiz.0564",
+      "conversation.quiz.0565",
+      "conversation.quiz.0566",
+      "conversation.quiz.0567",
+      "conversation.quiz.0568",
+      "conversation.quiz.0569",
+      "conversation.quiz.0570"
+    ],
+    "requiredStageId": "conversation.stage.056"
+  },
+  {
+    "id": "conversation.stage.058",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_006",
+    "order": 8,
+    "title": "교환이나 환불이 가능한가요 익히기",
+    "description": "교환이나 환불이 가능한가요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.shopping_return_policy",
+      "ko": "교환이나 환불이 가능한가요?",
+      "en": "Can I exchange or return it?",
+      "sentenceKo": "교환이나 환불이 가능한가요",
+      "sentenceEn": "Can I exchange or return it"
+    },
+    "quizIds": [
+      "conversation.quiz.0571",
+      "conversation.quiz.0572",
+      "conversation.quiz.0573",
+      "conversation.quiz.0574",
+      "conversation.quiz.0575",
+      "conversation.quiz.0576",
+      "conversation.quiz.0577",
+      "conversation.quiz.0578",
+      "conversation.quiz.0579",
+      "conversation.quiz.0580"
+    ],
+    "requiredStageId": "conversation.stage.057"
+  },
+  {
+    "id": "conversation.stage.059",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_006",
+    "order": 9,
+    "title": "쇼핑하기 09",
+    "description": "선물 포장해 주실 수 있나요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.shopping_pack_gift",
+      "ko": "선물 포장해 주실 수 있나요?",
+      "en": "Could you gift-wrap it?",
+      "sentenceKo": "선물 포장해 주실 수 있나요",
+      "sentenceEn": "Could you gift-wrap it"
+    },
+    "quizIds": [
+      "conversation.quiz.0581",
+      "conversation.quiz.0582",
+      "conversation.quiz.0583",
+      "conversation.quiz.0584",
+      "conversation.quiz.0585",
+      "conversation.quiz.0586",
+      "conversation.quiz.0587",
+      "conversation.quiz.0588",
+      "conversation.quiz.0589",
+      "conversation.quiz.0590"
+    ],
+    "requiredStageId": "conversation.stage.058"
+  },
+  {
+    "id": "conversation.stage.060",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_006",
+    "order": 10,
+    "title": "이걸로 할게요 익히기",
+    "description": "이걸로 할게요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.shopping_take_it",
+      "ko": "이걸로 할게요.",
+      "en": "I'll take this one.",
+      "sentenceKo": "이걸로 할게요",
+      "sentenceEn": "I'll take this one"
+    },
+    "quizIds": [
+      "conversation.quiz.0591",
+      "conversation.quiz.0592",
+      "conversation.quiz.0593",
+      "conversation.quiz.0594",
+      "conversation.quiz.0595",
+      "conversation.quiz.0596",
+      "conversation.quiz.0597",
+      "conversation.quiz.0598",
+      "conversation.quiz.0599",
+      "conversation.quiz.0600"
+    ],
+    "requiredStageId": "conversation.stage.059"
+  },
+  {
+    "id": "conversation.stage.061",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_007",
+    "order": 1,
+    "title": "이번 주말에 시간 있으세요 익히기",
+    "description": "이번 주말에 시간 있으세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.plan2_free_weekend",
+      "ko": "이번 주말에 시간 있으세요?",
+      "en": "Are you free this weekend?",
+      "sentenceKo": "이번 주말에 시간 있으세요",
+      "sentenceEn": "Are you free this weekend"
+    },
+    "quizIds": [
+      "conversation.quiz.0601",
+      "conversation.quiz.0602",
+      "conversation.quiz.0603",
+      "conversation.quiz.0604",
+      "conversation.quiz.0605",
+      "conversation.quiz.0606",
+      "conversation.quiz.0607",
+      "conversation.quiz.0608",
+      "conversation.quiz.0609",
+      "conversation.quiz.0610"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "conversation.stage.062",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_007",
+    "order": 2,
+    "title": "여섯 시에 만날까요 익히기",
+    "description": "여섯 시에 만날까요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.plan2_meet_six",
+      "ko": "여섯 시에 만날까요?",
+      "en": "Shall we meet at six?",
+      "sentenceKo": "여섯 시에 만날까요",
+      "sentenceEn": "Shall we meet at six"
+    },
+    "quizIds": [
+      "conversation.quiz.0611",
+      "conversation.quiz.0612",
+      "conversation.quiz.0613",
+      "conversation.quiz.0614",
+      "conversation.quiz.0615",
+      "conversation.quiz.0616",
+      "conversation.quiz.0617",
+      "conversation.quiz.0618",
+      "conversation.quiz.0619",
+      "conversation.quiz.0620"
+    ],
+    "requiredStageId": "conversation.stage.061"
+  },
+  {
+    "id": "conversation.stage.063",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_007",
+    "order": 3,
+    "title": "약속 잡기 03",
+    "description": "시간을 조금 바꿀 수 있을까요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.plan2_change_time",
+      "ko": "시간을 조금 바꿀 수 있을까요?",
+      "en": "Could we change the time a little?",
+      "sentenceKo": "시간을 조금 바꿀 수 있을까요",
+      "sentenceEn": "Could we change the time a little"
+    },
+    "quizIds": [
+      "conversation.quiz.0621",
+      "conversation.quiz.0622",
+      "conversation.quiz.0623",
+      "conversation.quiz.0624",
+      "conversation.quiz.0625",
+      "conversation.quiz.0626",
+      "conversation.quiz.0627",
+      "conversation.quiz.0628",
+      "conversation.quiz.0629",
+      "conversation.quiz.0630"
+    ],
+    "requiredStageId": "conversation.stage.062"
+  },
+  {
+    "id": "conversation.stage.064",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_007",
+    "order": 4,
+    "title": "제가 조금 늦을 것 같아요 익히기",
+    "description": "제가 조금 늦을 것 같아요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.plan2_running_late",
+      "ko": "제가 조금 늦을 것 같아요.",
+      "en": "I think I will be a little late.",
+      "sentenceKo": "제가 조금 늦을 것 같아요",
+      "sentenceEn": "I think I will be a little late"
+    },
+    "quizIds": [
+      "conversation.quiz.0631",
+      "conversation.quiz.0632",
+      "conversation.quiz.0633",
+      "conversation.quiz.0634",
+      "conversation.quiz.0635",
+      "conversation.quiz.0636",
+      "conversation.quiz.0637",
+      "conversation.quiz.0638",
+      "conversation.quiz.0639",
+      "conversation.quiz.0640"
+    ],
+    "requiredStageId": "conversation.stage.063"
+  },
+  {
+    "id": "conversation.stage.065",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_007",
+    "order": 5,
+    "title": "그럼 내일 봬요 익히기",
+    "description": "그럼 내일 봬요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.plan2_see_tomorrow",
+      "ko": "그럼 내일 봬요.",
+      "en": "See you tomorrow, then.",
+      "sentenceKo": "그럼 내일 봬요",
+      "sentenceEn": "See you tomorrow, then"
+    },
+    "quizIds": [
+      "conversation.quiz.0641",
+      "conversation.quiz.0642",
+      "conversation.quiz.0643",
+      "conversation.quiz.0644",
+      "conversation.quiz.0645",
+      "conversation.quiz.0646",
+      "conversation.quiz.0647",
+      "conversation.quiz.0648",
+      "conversation.quiz.0649",
+      "conversation.quiz.0650"
+    ],
+    "requiredStageId": "conversation.stage.064"
+  },
+  {
+    "id": "conversation.stage.066",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_007",
+    "order": 6,
+    "title": "저는 그 시간이 괜찮아요 익히기",
+    "description": "저는 그 시간이 괜찮아요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.plan2_works_for_me",
+      "ko": "저는 그 시간이 괜찮아요.",
+      "en": "That time works for me.",
+      "sentenceKo": "저는 그 시간이 괜찮아요",
+      "sentenceEn": "That time works for me"
+    },
+    "quizIds": [
+      "conversation.quiz.0651",
+      "conversation.quiz.0652",
+      "conversation.quiz.0653",
+      "conversation.quiz.0654",
+      "conversation.quiz.0655",
+      "conversation.quiz.0656",
+      "conversation.quiz.0657",
+      "conversation.quiz.0658",
+      "conversation.quiz.0659",
+      "conversation.quiz.0660"
+    ],
+    "requiredStageId": "conversation.stage.065"
+  },
+  {
+    "id": "conversation.stage.067",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_007",
+    "order": 7,
+    "title": "저는 오전에는 바빠요 익히기",
+    "description": "저는 오전에는 바빠요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.plan2_busy_morning",
+      "ko": "저는 오전에는 바빠요.",
+      "en": "I am busy in the morning.",
+      "sentenceKo": "저는 오전에는 바빠요",
+      "sentenceEn": "I am busy in the morning"
+    },
+    "quizIds": [
+      "conversation.quiz.0661",
+      "conversation.quiz.0662",
+      "conversation.quiz.0663",
+      "conversation.quiz.0664",
+      "conversation.quiz.0665",
+      "conversation.quiz.0666",
+      "conversation.quiz.0667",
+      "conversation.quiz.0668",
+      "conversation.quiz.0669",
+      "conversation.quiz.0670"
+    ],
+    "requiredStageId": "conversation.stage.066"
+  },
+  {
+    "id": "conversation.stage.068",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_007",
+    "order": 8,
+    "title": "약속 잡기 08",
+    "description": "장소를 다시 확인해 주실래요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.plan2_confirm_place",
+      "ko": "장소를 다시 확인해 주실래요?",
+      "en": "Could you confirm the place again?",
+      "sentenceKo": "장소를 다시 확인해 주실래요",
+      "sentenceEn": "Could you confirm the place again"
+    },
+    "quizIds": [
+      "conversation.quiz.0671",
+      "conversation.quiz.0672",
+      "conversation.quiz.0673",
+      "conversation.quiz.0674",
+      "conversation.quiz.0675",
+      "conversation.quiz.0676",
+      "conversation.quiz.0677",
+      "conversation.quiz.0678",
+      "conversation.quiz.0679",
+      "conversation.quiz.0680"
+    ],
+    "requiredStageId": "conversation.stage.067"
+  },
+  {
+    "id": "conversation.stage.069",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_007",
+    "order": 9,
+    "title": "약속 잡기 09",
+    "description": "죄송하지만 오늘은 취소해야 할 것 같아요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.plan2_cancel_sorry",
+      "ko": "죄송하지만 오늘은 취소해야 할 것 같아요.",
+      "en": "I'm sorry, but I think I need to cancel today.",
+      "sentenceKo": "죄송하지만 오늘은 취소해야 할 것 같아요",
+      "sentenceEn": "I'm sorry, but I think I need to cancel today"
+    },
+    "quizIds": [
+      "conversation.quiz.0681",
+      "conversation.quiz.0682",
+      "conversation.quiz.0683",
+      "conversation.quiz.0684",
+      "conversation.quiz.0685",
+      "conversation.quiz.0686",
+      "conversation.quiz.0687",
+      "conversation.quiz.0688",
+      "conversation.quiz.0689",
+      "conversation.quiz.0690"
+    ],
+    "requiredStageId": "conversation.stage.068"
+  },
+  {
+    "id": "conversation.stage.070",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_007",
+    "order": 10,
+    "title": "그럼 다음에 다시 만나요 익히기",
+    "description": "그럼 다음에 다시 만나요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.plan2_next_time",
+      "ko": "그럼 다음에 다시 만나요.",
+      "en": "Let's meet another time, then.",
+      "sentenceKo": "그럼 다음에 다시 만나요",
+      "sentenceEn": "Let's meet another time, then"
+    },
+    "quizIds": [
+      "conversation.quiz.0691",
+      "conversation.quiz.0692",
+      "conversation.quiz.0693",
+      "conversation.quiz.0694",
+      "conversation.quiz.0695",
+      "conversation.quiz.0696",
+      "conversation.quiz.0697",
+      "conversation.quiz.0698",
+      "conversation.quiz.0699",
+      "conversation.quiz.0700"
+    ],
+    "requiredStageId": "conversation.stage.069"
+  },
+  {
+    "id": "conversation.stage.071",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_008",
+    "order": 1,
+    "title": "나중에 다시 전화드릴게요 익히기",
+    "description": "나중에 다시 전화드릴게요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.phone_call_back",
+      "ko": "나중에 다시 전화드릴게요.",
+      "en": "I'll call you back later.",
+      "sentenceKo": "나중에 다시 전화드릴게요",
+      "sentenceEn": "I'll call you back later"
+    },
+    "quizIds": [
+      "conversation.quiz.0701",
+      "conversation.quiz.0702",
+      "conversation.quiz.0703",
+      "conversation.quiz.0704",
+      "conversation.quiz.0705",
+      "conversation.quiz.0706",
+      "conversation.quiz.0707",
+      "conversation.quiz.0708",
+      "conversation.quiz.0709",
+      "conversation.quiz.0710"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "conversation.stage.072",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_008",
+    "order": 2,
+    "title": "메시지를 남겨도 될까요 익히기",
+    "description": "메시지를 남겨도 될까요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.phone_leave_message",
+      "ko": "메시지를 남겨도 될까요?",
+      "en": "May I leave a message?",
+      "sentenceKo": "메시지를 남겨도 될까요",
+      "sentenceEn": "May I leave a message"
+    },
+    "quizIds": [
+      "conversation.quiz.0711",
+      "conversation.quiz.0712",
+      "conversation.quiz.0713",
+      "conversation.quiz.0714",
+      "conversation.quiz.0715",
+      "conversation.quiz.0716",
+      "conversation.quiz.0717",
+      "conversation.quiz.0718",
+      "conversation.quiz.0719",
+      "conversation.quiz.0720"
+    ],
+    "requiredStageId": "conversation.stage.071"
+  },
+  {
+    "id": "conversation.stage.073",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_008",
+    "order": 3,
+    "title": "잘 안 들려요 익히기",
+    "description": "잘 안 들려요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.phone_cant_hear",
+      "ko": "잘 안 들려요.",
+      "en": "I can't hear you well.",
+      "sentenceKo": "잘 안 들려요",
+      "sentenceEn": "I can't hear you well"
+    },
+    "quizIds": [
+      "conversation.quiz.0721",
+      "conversation.quiz.0722",
+      "conversation.quiz.0723",
+      "conversation.quiz.0724",
+      "conversation.quiz.0725",
+      "conversation.quiz.0726",
+      "conversation.quiz.0727",
+      "conversation.quiz.0728",
+      "conversation.quiz.0729",
+      "conversation.quiz.0730"
+    ],
+    "requiredStageId": "conversation.stage.072"
+  },
+  {
+    "id": "conversation.stage.074",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_008",
+    "order": 4,
+    "title": "전화와 메시지 04",
+    "description": "조금 천천히 말씀해 주시겠어요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.phone_speak_slowly",
+      "ko": "조금 천천히 말씀해 주시겠어요?",
+      "en": "Could you speak a little more slowly?",
+      "sentenceKo": "조금 천천히 말씀해 주시겠어요",
+      "sentenceEn": "Could you speak a little more slowly"
+    },
+    "quizIds": [
+      "conversation.quiz.0731",
+      "conversation.quiz.0732",
+      "conversation.quiz.0733",
+      "conversation.quiz.0734",
+      "conversation.quiz.0735",
+      "conversation.quiz.0736",
+      "conversation.quiz.0737",
+      "conversation.quiz.0738",
+      "conversation.quiz.0739",
+      "conversation.quiz.0740"
+    ],
+    "requiredStageId": "conversation.stage.073"
+  },
+  {
+    "id": "conversation.stage.075",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_008",
+    "order": 5,
+    "title": "문자로 보내주실 수 있나요 익히기",
+    "description": "문자로 보내주실 수 있나요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.phone_send_text",
+      "ko": "문자로 보내주실 수 있나요?",
+      "en": "Could you send it by text?",
+      "sentenceKo": "문자로 보내주실 수 있나요",
+      "sentenceEn": "Could you send it by text"
+    },
+    "quizIds": [
+      "conversation.quiz.0741",
+      "conversation.quiz.0742",
+      "conversation.quiz.0743",
+      "conversation.quiz.0744",
+      "conversation.quiz.0745",
+      "conversation.quiz.0746",
+      "conversation.quiz.0747",
+      "conversation.quiz.0748",
+      "conversation.quiz.0749",
+      "conversation.quiz.0750"
+    ],
+    "requiredStageId": "conversation.stage.074"
+  },
+  {
+    "id": "conversation.stage.076",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_008",
+    "order": 6,
+    "title": "지금 가는 중이에요 익히기",
+    "description": "지금 가는 중이에요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.phone_on_way",
+      "ko": "지금 가는 중이에요.",
+      "en": "I'm on my way now.",
+      "sentenceKo": "지금 가는 중이에요",
+      "sentenceEn": "I'm on my way now"
+    },
+    "quizIds": [
+      "conversation.quiz.0751",
+      "conversation.quiz.0752",
+      "conversation.quiz.0753",
+      "conversation.quiz.0754",
+      "conversation.quiz.0755",
+      "conversation.quiz.0756",
+      "conversation.quiz.0757",
+      "conversation.quiz.0758",
+      "conversation.quiz.0759",
+      "conversation.quiz.0760"
+    ],
+    "requiredStageId": "conversation.stage.075"
+  },
+  {
+    "id": "conversation.stage.077",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_008",
+    "order": 7,
+    "title": "방금 도착했어요 익히기",
+    "description": "방금 도착했어요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.phone_arrived",
+      "ko": "방금 도착했어요.",
+      "en": "I just arrived.",
+      "sentenceKo": "방금 도착했어요",
+      "sentenceEn": "I just arrived"
+    },
+    "quizIds": [
+      "conversation.quiz.0761",
+      "conversation.quiz.0762",
+      "conversation.quiz.0763",
+      "conversation.quiz.0764",
+      "conversation.quiz.0765",
+      "conversation.quiz.0766",
+      "conversation.quiz.0767",
+      "conversation.quiz.0768",
+      "conversation.quiz.0769",
+      "conversation.quiz.0770"
+    ],
+    "requiredStageId": "conversation.stage.076"
+  },
+  {
+    "id": "conversation.stage.078",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_008",
+    "order": 8,
+    "title": "배터리가 거의 없어요 익히기",
+    "description": "배터리가 거의 없어요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.phone_battery_low",
+      "ko": "배터리가 거의 없어요.",
+      "en": "My battery is almost dead.",
+      "sentenceKo": "배터리가 거의 없어요",
+      "sentenceEn": "My battery is almost dead"
+    },
+    "quizIds": [
+      "conversation.quiz.0771",
+      "conversation.quiz.0772",
+      "conversation.quiz.0773",
+      "conversation.quiz.0774",
+      "conversation.quiz.0775",
+      "conversation.quiz.0776",
+      "conversation.quiz.0777",
+      "conversation.quiz.0778",
+      "conversation.quiz.0779",
+      "conversation.quiz.0780"
+    ],
+    "requiredStageId": "conversation.stage.077"
+  },
+  {
+    "id": "conversation.stage.079",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_008",
+    "order": 9,
+    "title": "죄송하지만 잘못 거셨어요 익히기",
+    "description": "죄송하지만 잘못 거셨어요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.phone_wrong_number",
+      "ko": "죄송하지만 잘못 거셨어요.",
+      "en": "I'm sorry, but you have the wrong number.",
+      "sentenceKo": "죄송하지만 잘못 거셨어요",
+      "sentenceEn": "I'm sorry, but you have the wrong number"
+    },
+    "quizIds": [
+      "conversation.quiz.0781",
+      "conversation.quiz.0782",
+      "conversation.quiz.0783",
+      "conversation.quiz.0784",
+      "conversation.quiz.0785",
+      "conversation.quiz.0786",
+      "conversation.quiz.0787",
+      "conversation.quiz.0788",
+      "conversation.quiz.0789",
+      "conversation.quiz.0790"
+    ],
+    "requiredStageId": "conversation.stage.078"
+  },
+  {
+    "id": "conversation.stage.080",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_008",
+    "order": 10,
+    "title": "메시지 확인해 주세요 익히기",
+    "description": "메시지 확인해 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.phone_check_message",
+      "ko": "메시지 확인해 주세요.",
+      "en": "Please check your message.",
+      "sentenceKo": "메시지 확인해 주세요",
+      "sentenceEn": "Please check your message"
+    },
+    "quizIds": [
+      "conversation.quiz.0791",
+      "conversation.quiz.0792",
+      "conversation.quiz.0793",
+      "conversation.quiz.0794",
+      "conversation.quiz.0795",
+      "conversation.quiz.0796",
+      "conversation.quiz.0797",
+      "conversation.quiz.0798",
+      "conversation.quiz.0799",
+      "conversation.quiz.0800"
+    ],
+    "requiredStageId": "conversation.stage.079"
+  },
+  {
+    "id": "conversation.stage.081",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_009",
+    "order": 1,
+    "title": "늦어서 죄송해요 익히기",
+    "description": "늦어서 죄송해요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.emotion2_sorry_late",
+      "ko": "늦어서 죄송해요.",
+      "en": "I'm sorry I'm late.",
+      "sentenceKo": "늦어서 죄송해요",
+      "sentenceEn": "I'm sorry I'm late"
+    },
+    "quizIds": [
+      "conversation.quiz.0801",
+      "conversation.quiz.0802",
+      "conversation.quiz.0803",
+      "conversation.quiz.0804",
+      "conversation.quiz.0805",
+      "conversation.quiz.0806",
+      "conversation.quiz.0807",
+      "conversation.quiz.0808",
+      "conversation.quiz.0809",
+      "conversation.quiz.0810"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "conversation.stage.082",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_009",
+    "order": 2,
+    "title": "감정과 사과 02",
+    "description": "친절하게 도와주셔서 감사합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.emotion2_thank_kindness",
+      "ko": "친절하게 도와주셔서 감사합니다.",
+      "en": "Thank you for your kindness.",
+      "sentenceKo": "친절하게 도와주셔서 감사합니다",
+      "sentenceEn": "Thank you for your kindness"
+    },
+    "quizIds": [
+      "conversation.quiz.0811",
+      "conversation.quiz.0812",
+      "conversation.quiz.0813",
+      "conversation.quiz.0814",
+      "conversation.quiz.0815",
+      "conversation.quiz.0816",
+      "conversation.quiz.0817",
+      "conversation.quiz.0818",
+      "conversation.quiz.0819",
+      "conversation.quiz.0820"
+    ],
+    "requiredStageId": "conversation.stage.081"
+  },
+  {
+    "id": "conversation.stage.083",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_009",
+    "order": 3,
+    "title": "지금 조금 긴장돼요 익히기",
+    "description": "지금 조금 긴장돼요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.emotion2_nervous_now",
+      "ko": "지금 조금 긴장돼요.",
+      "en": "I'm a little nervous right now.",
+      "sentenceKo": "지금 조금 긴장돼요",
+      "sentenceEn": "I'm a little nervous right now"
+    },
+    "quizIds": [
+      "conversation.quiz.0821",
+      "conversation.quiz.0822",
+      "conversation.quiz.0823",
+      "conversation.quiz.0824",
+      "conversation.quiz.0825",
+      "conversation.quiz.0826",
+      "conversation.quiz.0827",
+      "conversation.quiz.0828",
+      "conversation.quiz.0829",
+      "conversation.quiz.0830"
+    ],
+    "requiredStageId": "conversation.stage.082"
+  },
+  {
+    "id": "conversation.stage.084",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_009",
+    "order": 4,
+    "title": "좋은 소식을 들어서 기뻐요 익히기",
+    "description": "좋은 소식을 들어서 기뻐요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.emotion2_happy_news",
+      "ko": "좋은 소식을 들어서 기뻐요.",
+      "en": "I'm happy to hear the good news.",
+      "sentenceKo": "좋은 소식을 들어서 기뻐요",
+      "sentenceEn": "I'm happy to hear the good news"
+    },
+    "quizIds": [
+      "conversation.quiz.0831",
+      "conversation.quiz.0832",
+      "conversation.quiz.0833",
+      "conversation.quiz.0834",
+      "conversation.quiz.0835",
+      "conversation.quiz.0836",
+      "conversation.quiz.0837",
+      "conversation.quiz.0838",
+      "conversation.quiz.0839",
+      "conversation.quiz.0840"
+    ],
+    "requiredStageId": "conversation.stage.083"
+  },
+  {
+    "id": "conversation.stage.085",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_009",
+    "order": 5,
+    "title": "날씨 때문에 조금 걱정돼요 익히기",
+    "description": "날씨 때문에 조금 걱정돼요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.emotion2_worried_weather",
+      "ko": "날씨 때문에 조금 걱정돼요.",
+      "en": "I'm a little worried about the weather.",
+      "sentenceKo": "날씨 때문에 조금 걱정돼요",
+      "sentenceEn": "I'm a little worried about the weather"
+    },
+    "quizIds": [
+      "conversation.quiz.0841",
+      "conversation.quiz.0842",
+      "conversation.quiz.0843",
+      "conversation.quiz.0844",
+      "conversation.quiz.0845",
+      "conversation.quiz.0846",
+      "conversation.quiz.0847",
+      "conversation.quiz.0848",
+      "conversation.quiz.0849",
+      "conversation.quiz.0850"
+    ],
+    "requiredStageId": "conversation.stage.084"
+  },
+  {
+    "id": "conversation.stage.086",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_009",
+    "order": 6,
+    "title": "감정과 사과 06",
+    "description": "여행 생각을 하니 신이 나요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.emotion2_excited_trip2",
+      "ko": "여행 생각을 하니 신이 나요.",
+      "en": "I'm excited when I think about the trip.",
+      "sentenceKo": "여행 생각을 하니 신이 나요",
+      "sentenceEn": "I'm excited when I think about the trip"
+    },
+    "quizIds": [
+      "conversation.quiz.0851",
+      "conversation.quiz.0852",
+      "conversation.quiz.0853",
+      "conversation.quiz.0854",
+      "conversation.quiz.0855",
+      "conversation.quiz.0856",
+      "conversation.quiz.0857",
+      "conversation.quiz.0858",
+      "conversation.quiz.0859",
+      "conversation.quiz.0860"
+    ],
+    "requiredStageId": "conversation.stage.085"
+  },
+  {
+    "id": "conversation.stage.087",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_009",
+    "order": 7,
+    "title": "실수해서 민망했어요 익히기",
+    "description": "실수해서 민망했어요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.emotion2_embarrassed_mistake2",
+      "ko": "실수해서 민망했어요.",
+      "en": "I felt embarrassed because I made a mistake.",
+      "sentenceKo": "실수해서 민망했어요",
+      "sentenceEn": "I felt embarrassed because I made a mistake"
+    },
+    "quizIds": [
+      "conversation.quiz.0861",
+      "conversation.quiz.0862",
+      "conversation.quiz.0863",
+      "conversation.quiz.0864",
+      "conversation.quiz.0865",
+      "conversation.quiz.0866",
+      "conversation.quiz.0867",
+      "conversation.quiz.0868",
+      "conversation.quiz.0869",
+      "conversation.quiz.0870"
+    ],
+    "requiredStageId": "conversation.stage.086"
+  },
+  {
+    "id": "conversation.stage.088",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_009",
+    "order": 8,
+    "title": "감정과 사과 08",
+    "description": "괜찮아요. 신경 쓰지 마세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.emotion2_its_okay",
+      "ko": "괜찮아요. 신경 쓰지 마세요.",
+      "en": "It's okay. Don't worry about it.",
+      "sentenceKo": "괜찮아요. 신경 쓰지 마세요",
+      "sentenceEn": "It's okay. Don't worry about it"
+    },
+    "quizIds": [
+      "conversation.quiz.0871",
+      "conversation.quiz.0872",
+      "conversation.quiz.0873",
+      "conversation.quiz.0874",
+      "conversation.quiz.0875",
+      "conversation.quiz.0876",
+      "conversation.quiz.0877",
+      "conversation.quiz.0878",
+      "conversation.quiz.0879",
+      "conversation.quiz.0880"
+    ],
+    "requiredStageId": "conversation.stage.087"
+  },
+  {
+    "id": "conversation.stage.089",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_009",
+    "order": 9,
+    "title": "정말 감사해요 익히기",
+    "description": "정말 감사해요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.emotion2_really_grateful",
+      "ko": "정말 감사해요.",
+      "en": "I'm really grateful.",
+      "sentenceKo": "정말 감사해요",
+      "sentenceEn": "I'm really grateful"
+    },
+    "quizIds": [
+      "conversation.quiz.0881",
+      "conversation.quiz.0882",
+      "conversation.quiz.0883",
+      "conversation.quiz.0884",
+      "conversation.quiz.0885",
+      "conversation.quiz.0886",
+      "conversation.quiz.0887",
+      "conversation.quiz.0888",
+      "conversation.quiz.0889",
+      "conversation.quiz.0890"
+    ],
+    "requiredStageId": "conversation.stage.088"
+  },
+  {
+    "id": "conversation.stage.090",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_009",
+    "order": 10,
+    "title": "문제없어요 익히기",
+    "description": "문제없어요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.emotion2_no_problem",
+      "ko": "문제없어요.",
+      "en": "No problem.",
+      "sentenceKo": "문제없어요",
+      "sentenceEn": "No problem"
+    },
+    "quizIds": [
+      "conversation.quiz.0891",
+      "conversation.quiz.0892",
+      "conversation.quiz.0893",
+      "conversation.quiz.0894",
+      "conversation.quiz.0895",
+      "conversation.quiz.0896",
+      "conversation.quiz.0897",
+      "conversation.quiz.0898",
+      "conversation.quiz.0899",
+      "conversation.quiz.0900"
+    ],
+    "requiredStageId": "conversation.stage.089"
+  },
+  {
+    "id": "conversation.stage.091",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_010",
+    "order": 1,
+    "title": "도움과 여행 01",
+    "description": "사진 좀 찍어주실 수 있나요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.travel_take_picture",
+      "ko": "사진 좀 찍어주실 수 있나요?",
+      "en": "Could you take a picture for me?",
+      "sentenceKo": "사진 좀 찍어주실 수 있나요",
+      "sentenceEn": "Could you take a picture for me"
+    },
+    "quizIds": [
+      "conversation.quiz.0901",
+      "conversation.quiz.0902",
+      "conversation.quiz.0903",
+      "conversation.quiz.0904",
+      "conversation.quiz.0905",
+      "conversation.quiz.0906",
+      "conversation.quiz.0907",
+      "conversation.quiz.0908",
+      "conversation.quiz.0909",
+      "conversation.quiz.0910"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "conversation.stage.092",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_010",
+    "order": 2,
+    "title": "짐 좀 들어주실 수 있나요 익히기",
+    "description": "짐 좀 들어주실 수 있나요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.travel_help_luggage",
+      "ko": "짐 좀 들어주실 수 있나요?",
+      "en": "Could you help me with my luggage?",
+      "sentenceKo": "짐 좀 들어주실 수 있나요",
+      "sentenceEn": "Could you help me with my luggage"
+    },
+    "quizIds": [
+      "conversation.quiz.0911",
+      "conversation.quiz.0912",
+      "conversation.quiz.0913",
+      "conversation.quiz.0914",
+      "conversation.quiz.0915",
+      "conversation.quiz.0916",
+      "conversation.quiz.0917",
+      "conversation.quiz.0918",
+      "conversation.quiz.0919",
+      "conversation.quiz.0920"
+    ],
+    "requiredStageId": "conversation.stage.091"
+  },
+  {
+    "id": "conversation.stage.093",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_010",
+    "order": 3,
+    "title": "도움과 여행 03",
+    "description": "몇 번 승강장인지 알려주실래요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.travel_where_platform",
+      "ko": "몇 번 승강장인지 알려주실래요?",
+      "en": "Could you tell me which platform it is?",
+      "sentenceKo": "몇 번 승강장인지 알려주실래요",
+      "sentenceEn": "Could you tell me which platform it is"
+    },
+    "quizIds": [
+      "conversation.quiz.0921",
+      "conversation.quiz.0922",
+      "conversation.quiz.0923",
+      "conversation.quiz.0924",
+      "conversation.quiz.0925",
+      "conversation.quiz.0926",
+      "conversation.quiz.0927",
+      "conversation.quiz.0928",
+      "conversation.quiz.0929",
+      "conversation.quiz.0930"
+    ],
+    "requiredStageId": "conversation.stage.092"
+  },
+  {
+    "id": "conversation.stage.094",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_010",
+    "order": 4,
+    "title": "지도가 필요해요 익히기",
+    "description": "지도가 필요해요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.travel_need_map",
+      "ko": "지도가 필요해요.",
+      "en": "I need a map.",
+      "sentenceKo": "지도가 필요해요",
+      "sentenceEn": "I need a map"
+    },
+    "quizIds": [
+      "conversation.quiz.0931",
+      "conversation.quiz.0932",
+      "conversation.quiz.0933",
+      "conversation.quiz.0934",
+      "conversation.quiz.0935",
+      "conversation.quiz.0936",
+      "conversation.quiz.0937",
+      "conversation.quiz.0938",
+      "conversation.quiz.0939",
+      "conversation.quiz.0940"
+    ],
+    "requiredStageId": "conversation.stage.093"
+  },
+  {
+    "id": "conversation.stage.095",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_010",
+    "order": 5,
+    "title": "지갑을 잃어버린 것 같아요 익히기",
+    "description": "지갑을 잃어버린 것 같아요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.travel_lost_wallet",
+      "ko": "지갑을 잃어버린 것 같아요.",
+      "en": "I think I lost my wallet.",
+      "sentenceKo": "지갑을 잃어버린 것 같아요",
+      "sentenceEn": "I think I lost my wallet"
+    },
+    "quizIds": [
+      "conversation.quiz.0941",
+      "conversation.quiz.0942",
+      "conversation.quiz.0943",
+      "conversation.quiz.0944",
+      "conversation.quiz.0945",
+      "conversation.quiz.0946",
+      "conversation.quiz.0947",
+      "conversation.quiz.0948",
+      "conversation.quiz.0949",
+      "conversation.quiz.0950"
+    ],
+    "requiredStageId": "conversation.stage.094"
+  },
+  {
+    "id": "conversation.stage.096",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_010",
+    "order": 6,
+    "title": "화장실이 어디인지 아세요 익히기",
+    "description": "화장실이 어디인지 아세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.travel_where_restroom",
+      "ko": "화장실이 어디인지 아세요?",
+      "en": "Do you know where the restroom is?",
+      "sentenceKo": "화장실이 어디인지 아세요",
+      "sentenceEn": "Do you know where the restroom is"
+    },
+    "quizIds": [
+      "conversation.quiz.0951",
+      "conversation.quiz.0952",
+      "conversation.quiz.0953",
+      "conversation.quiz.0954",
+      "conversation.quiz.0955",
+      "conversation.quiz.0956",
+      "conversation.quiz.0957",
+      "conversation.quiz.0958",
+      "conversation.quiz.0959",
+      "conversation.quiz.0960"
+    ],
+    "requiredStageId": "conversation.stage.095"
+  },
+  {
+    "id": "conversation.stage.097",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_010",
+    "order": 7,
+    "title": "체크인은 어디서 하나요 익히기",
+    "description": "체크인은 어디서 하나요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.travel_check_in",
+      "ko": "체크인은 어디서 하나요?",
+      "en": "Where do I check in?",
+      "sentenceKo": "체크인은 어디서 하나요",
+      "sentenceEn": "Where do I check in"
+    },
+    "quizIds": [
+      "conversation.quiz.0961",
+      "conversation.quiz.0962",
+      "conversation.quiz.0963",
+      "conversation.quiz.0964",
+      "conversation.quiz.0965",
+      "conversation.quiz.0966",
+      "conversation.quiz.0967",
+      "conversation.quiz.0968",
+      "conversation.quiz.0969",
+      "conversation.quiz.0970"
+    ],
+    "requiredStageId": "conversation.stage.096"
+  },
+  {
+    "id": "conversation.stage.098",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_010",
+    "order": 8,
+    "title": "도움과 여행 08",
+    "description": "창가 자리로 바꿔주실 수 있나요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.travel_window_seat",
+      "ko": "창가 자리로 바꿔주실 수 있나요?",
+      "en": "Could you change it to a window seat?",
+      "sentenceKo": "창가 자리로 바꿔주실 수 있나요",
+      "sentenceEn": "Could you change it to a window seat"
+    },
+    "quizIds": [
+      "conversation.quiz.0971",
+      "conversation.quiz.0972",
+      "conversation.quiz.0973",
+      "conversation.quiz.0974",
+      "conversation.quiz.0975",
+      "conversation.quiz.0976",
+      "conversation.quiz.0977",
+      "conversation.quiz.0978",
+      "conversation.quiz.0979",
+      "conversation.quiz.0980"
+    ],
+    "requiredStageId": "conversation.stage.097"
+  },
+  {
+    "id": "conversation.stage.099",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_010",
+    "order": 9,
+    "title": "충전할 곳이 필요해요 익히기",
+    "description": "충전할 곳이 필요해요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.travel_need_charger",
+      "ko": "충전할 곳이 필요해요.",
+      "en": "I need a place to charge my phone.",
+      "sentenceKo": "충전할 곳이 필요해요",
+      "sentenceEn": "I need a place to charge my phone"
+    },
+    "quizIds": [
+      "conversation.quiz.0981",
+      "conversation.quiz.0982",
+      "conversation.quiz.0983",
+      "conversation.quiz.0984",
+      "conversation.quiz.0985",
+      "conversation.quiz.0986",
+      "conversation.quiz.0987",
+      "conversation.quiz.0988",
+      "conversation.quiz.0989",
+      "conversation.quiz.0990"
+    ],
+    "requiredStageId": "conversation.stage.098"
+  },
+  {
+    "id": "conversation.stage.100",
+    "difficulty": "conversation",
+    "chapterId": "conversation_chapter_010",
+    "order": 10,
+    "title": "다시 한 번 감사드립니다 익히기",
+    "description": "다시 한 번 감사드립니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "conversation.target.travel_thanks_again",
+      "ko": "다시 한 번 감사드립니다.",
+      "en": "Thank you again.",
+      "sentenceKo": "다시 한 번 감사드립니다",
+      "sentenceEn": "Thank you again"
+    },
+    "quizIds": [
+      "conversation.quiz.0991",
+      "conversation.quiz.0992",
+      "conversation.quiz.0993",
+      "conversation.quiz.0994",
+      "conversation.quiz.0995",
+      "conversation.quiz.0996",
+      "conversation.quiz.0997",
+      "conversation.quiz.0998",
+      "conversation.quiz.0999",
+      "conversation.quiz.1000"
+    ],
+    "requiredStageId": "conversation.stage.099"
   }
 ]

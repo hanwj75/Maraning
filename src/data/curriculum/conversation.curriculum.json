@@ -1,0 +1,3075 @@
+{
+  "difficulty": "conversation",
+  "chapters": [
+    {
+      "chapterOrder": 1,
+      "title": "인사하기",
+      "description": "일상 인사 표현을 익혀요.",
+      "stages": [
+        {
+          "targetKey": "greet_hello",
+          "ko": "안녕하세요.",
+          "en": "Hello.",
+          "sentenceKo": "안녕하세요.",
+          "sentenceEn": "Hello.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "오늘 어떻게 지내세요?",
+              "en": "How are you today?"
+            },
+            {
+              "ko": "좋은 아침이에요.",
+              "en": "Good morning."
+            },
+            {
+              "ko": "좋은 저녁이에요.",
+              "en": "Good evening."
+            },
+            {
+              "ko": "만나서 반가워요.",
+              "en": "Nice to meet you."
+            },
+            {
+              "ko": "오랜만이에요.",
+              "en": "Long time no see."
+            }
+          ]
+        },
+        {
+          "targetKey": "greet_how_are_you",
+          "ko": "오늘 어떻게 지내세요?",
+          "en": "How are you today?",
+          "sentenceKo": "오늘 어떻게 지내세요?",
+          "sentenceEn": "How are you today?",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "좋은 아침이에요.",
+              "en": "Good morning."
+            },
+            {
+              "ko": "좋은 저녁이에요.",
+              "en": "Good evening."
+            },
+            {
+              "ko": "만나서 반가워요.",
+              "en": "Nice to meet you."
+            },
+            {
+              "ko": "오랜만이에요.",
+              "en": "Long time no see."
+            },
+            {
+              "ko": "저는 잘 지내요.",
+              "en": "I am doing well."
+            }
+          ]
+        },
+        {
+          "targetKey": "greet_good_morning",
+          "ko": "좋은 아침이에요.",
+          "en": "Good morning.",
+          "sentenceKo": "좋은 아침이에요.",
+          "sentenceEn": "Good morning.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "좋은 저녁이에요.",
+              "en": "Good evening."
+            },
+            {
+              "ko": "만나서 반가워요.",
+              "en": "Nice to meet you."
+            },
+            {
+              "ko": "오랜만이에요.",
+              "en": "Long time no see."
+            },
+            {
+              "ko": "저는 잘 지내요.",
+              "en": "I am doing well."
+            },
+            {
+              "ko": "당신은요?",
+              "en": "How about you?"
+            }
+          ]
+        },
+        {
+          "targetKey": "greet_good_evening",
+          "ko": "좋은 저녁이에요.",
+          "en": "Good evening.",
+          "sentenceKo": "좋은 저녁이에요.",
+          "sentenceEn": "Good evening.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "만나서 반가워요.",
+              "en": "Nice to meet you."
+            },
+            {
+              "ko": "오랜만이에요.",
+              "en": "Long time no see."
+            },
+            {
+              "ko": "저는 잘 지내요.",
+              "en": "I am doing well."
+            },
+            {
+              "ko": "당신은요?",
+              "en": "How about you?"
+            },
+            {
+              "ko": "곧 봬요.",
+              "en": "See you soon."
+            }
+          ]
+        },
+        {
+          "targetKey": "greet_nice_meet",
+          "ko": "만나서 반가워요.",
+          "en": "Nice to meet you.",
+          "sentenceKo": "만나서 반가워요.",
+          "sentenceEn": "Nice to meet you.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "오랜만이에요.",
+              "en": "Long time no see."
+            },
+            {
+              "ko": "저는 잘 지내요.",
+              "en": "I am doing well."
+            },
+            {
+              "ko": "당신은요?",
+              "en": "How about you?"
+            },
+            {
+              "ko": "곧 봬요.",
+              "en": "See you soon."
+            },
+            {
+              "ko": "몸조심하세요.",
+              "en": "Take care."
+            }
+          ]
+        },
+        {
+          "targetKey": "greet_long_time",
+          "ko": "오랜만이에요.",
+          "en": "Long time no see.",
+          "sentenceKo": "오랜만이에요.",
+          "sentenceEn": "Long time no see.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "저는 잘 지내요.",
+              "en": "I am doing well."
+            },
+            {
+              "ko": "당신은요?",
+              "en": "How about you?"
+            },
+            {
+              "ko": "곧 봬요.",
+              "en": "See you soon."
+            },
+            {
+              "ko": "몸조심하세요.",
+              "en": "Take care."
+            },
+            {
+              "ko": "안녕하세요.",
+              "en": "Hello."
+            }
+          ]
+        },
+        {
+          "targetKey": "greet_im_fine",
+          "ko": "저는 잘 지내요.",
+          "en": "I am doing well.",
+          "sentenceKo": "저는 잘 지내요.",
+          "sentenceEn": "I am doing well.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "당신은요?",
+              "en": "How about you?"
+            },
+            {
+              "ko": "곧 봬요.",
+              "en": "See you soon."
+            },
+            {
+              "ko": "몸조심하세요.",
+              "en": "Take care."
+            },
+            {
+              "ko": "안녕하세요.",
+              "en": "Hello."
+            },
+            {
+              "ko": "오늘 어떻게 지내세요?",
+              "en": "How are you today?"
+            }
+          ]
+        },
+        {
+          "targetKey": "greet_and_you",
+          "ko": "당신은요?",
+          "en": "How about you?",
+          "sentenceKo": "당신은요?",
+          "sentenceEn": "How about you?",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "곧 봬요.",
+              "en": "See you soon."
+            },
+            {
+              "ko": "몸조심하세요.",
+              "en": "Take care."
+            },
+            {
+              "ko": "안녕하세요.",
+              "en": "Hello."
+            },
+            {
+              "ko": "오늘 어떻게 지내세요?",
+              "en": "How are you today?"
+            },
+            {
+              "ko": "좋은 아침이에요.",
+              "en": "Good morning."
+            }
+          ]
+        },
+        {
+          "targetKey": "greet_see_soon",
+          "ko": "곧 봬요.",
+          "en": "See you soon.",
+          "sentenceKo": "곧 봬요.",
+          "sentenceEn": "See you soon.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "몸조심하세요.",
+              "en": "Take care."
+            },
+            {
+              "ko": "안녕하세요.",
+              "en": "Hello."
+            },
+            {
+              "ko": "오늘 어떻게 지내세요?",
+              "en": "How are you today?"
+            },
+            {
+              "ko": "좋은 아침이에요.",
+              "en": "Good morning."
+            },
+            {
+              "ko": "좋은 저녁이에요.",
+              "en": "Good evening."
+            }
+          ]
+        },
+        {
+          "targetKey": "greet_take_care",
+          "ko": "몸조심하세요.",
+          "en": "Take care.",
+          "sentenceKo": "몸조심하세요.",
+          "sentenceEn": "Take care.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "안녕하세요.",
+              "en": "Hello."
+            },
+            {
+              "ko": "오늘 어떻게 지내세요?",
+              "en": "How are you today?"
+            },
+            {
+              "ko": "좋은 아침이에요.",
+              "en": "Good morning."
+            },
+            {
+              "ko": "좋은 저녁이에요.",
+              "en": "Good evening."
+            },
+            {
+              "ko": "만나서 반가워요.",
+              "en": "Nice to meet you."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 2,
+      "title": "자기소개하기",
+      "description": "이름과 기본 정보를 말해요.",
+      "stages": [
+        {
+          "targetKey": "intro2_my_name",
+          "ko": "제 이름은 민지예요.",
+          "en": "My name is Minji.",
+          "sentenceKo": "제 이름은 민지예요.",
+          "sentenceEn": "My name is Minji.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "저는 한국에서 왔어요.",
+              "en": "I am from Korea."
+            },
+            {
+              "ko": "저는 마케팅 팀에서 일해요.",
+              "en": "I work on the marketing team."
+            },
+            {
+              "ko": "저는 대학에서 공부하고 있어요.",
+              "en": "I am studying at a university."
+            },
+            {
+              "ko": "제 취미는 사진 찍기예요.",
+              "en": "My hobby is taking pictures."
+            },
+            {
+              "ko": "저는 서울에 살아요.",
+              "en": "I live in Seoul."
+            }
+          ]
+        },
+        {
+          "targetKey": "intro2_im_from",
+          "ko": "저는 한국에서 왔어요.",
+          "en": "I am from Korea.",
+          "sentenceKo": "저는 한국에서 왔어요.",
+          "sentenceEn": "I am from Korea.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "저는 마케팅 팀에서 일해요.",
+              "en": "I work on the marketing team."
+            },
+            {
+              "ko": "저는 대학에서 공부하고 있어요.",
+              "en": "I am studying at a university."
+            },
+            {
+              "ko": "제 취미는 사진 찍기예요.",
+              "en": "My hobby is taking pictures."
+            },
+            {
+              "ko": "저는 서울에 살아요.",
+              "en": "I live in Seoul."
+            },
+            {
+              "ko": "저는 커피를 좋아해요.",
+              "en": "I like coffee."
+            }
+          ]
+        },
+        {
+          "targetKey": "intro2_i_work",
+          "ko": "저는 마케팅 팀에서 일해요.",
+          "en": "I work on the marketing team.",
+          "sentenceKo": "저는 마케팅 팀에서 일해요.",
+          "sentenceEn": "I work on the marketing team.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "저는 대학에서 공부하고 있어요.",
+              "en": "I am studying at a university."
+            },
+            {
+              "ko": "제 취미는 사진 찍기예요.",
+              "en": "My hobby is taking pictures."
+            },
+            {
+              "ko": "저는 서울에 살아요.",
+              "en": "I live in Seoul."
+            },
+            {
+              "ko": "저는 커피를 좋아해요.",
+              "en": "I like coffee."
+            },
+            {
+              "ko": "이곳은 처음이에요.",
+              "en": "It is my first time here."
+            }
+          ]
+        },
+        {
+          "targetKey": "intro2_i_study",
+          "ko": "저는 대학에서 공부하고 있어요.",
+          "en": "I am studying at a university.",
+          "sentenceKo": "저는 대학에서 공부하고 있어요.",
+          "sentenceEn": "I am studying at a university.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "제 취미는 사진 찍기예요.",
+              "en": "My hobby is taking pictures."
+            },
+            {
+              "ko": "저는 서울에 살아요.",
+              "en": "I live in Seoul."
+            },
+            {
+              "ko": "저는 커피를 좋아해요.",
+              "en": "I like coffee."
+            },
+            {
+              "ko": "이곳은 처음이에요.",
+              "en": "It is my first time here."
+            },
+            {
+              "ko": "저를 민지라고 불러 주세요.",
+              "en": "Please call me Minji."
+            }
+          ]
+        },
+        {
+          "targetKey": "intro2_my_hobby",
+          "ko": "제 취미는 사진 찍기예요.",
+          "en": "My hobby is taking pictures.",
+          "sentenceKo": "제 취미는 사진 찍기예요.",
+          "sentenceEn": "My hobby is taking pictures.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "저는 서울에 살아요.",
+              "en": "I live in Seoul."
+            },
+            {
+              "ko": "저는 커피를 좋아해요.",
+              "en": "I like coffee."
+            },
+            {
+              "ko": "이곳은 처음이에요.",
+              "en": "It is my first time here."
+            },
+            {
+              "ko": "저를 민지라고 불러 주세요.",
+              "en": "Please call me Minji."
+            },
+            {
+              "ko": "여러분을 만나서 기뻐요.",
+              "en": "I am glad to meet you all."
+            }
+          ]
+        },
+        {
+          "targetKey": "intro2_i_live",
+          "ko": "저는 서울에 살아요.",
+          "en": "I live in Seoul.",
+          "sentenceKo": "저는 서울에 살아요.",
+          "sentenceEn": "I live in Seoul.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "저는 커피를 좋아해요.",
+              "en": "I like coffee."
+            },
+            {
+              "ko": "이곳은 처음이에요.",
+              "en": "It is my first time here."
+            },
+            {
+              "ko": "저를 민지라고 불러 주세요.",
+              "en": "Please call me Minji."
+            },
+            {
+              "ko": "여러분을 만나서 기뻐요.",
+              "en": "I am glad to meet you all."
+            },
+            {
+              "ko": "제 이름은 민지예요.",
+              "en": "My name is Minji."
+            }
+          ]
+        },
+        {
+          "targetKey": "intro2_i_like",
+          "ko": "저는 커피를 좋아해요.",
+          "en": "I like coffee.",
+          "sentenceKo": "저는 커피를 좋아해요.",
+          "sentenceEn": "I like coffee.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "이곳은 처음이에요.",
+              "en": "It is my first time here."
+            },
+            {
+              "ko": "저를 민지라고 불러 주세요.",
+              "en": "Please call me Minji."
+            },
+            {
+              "ko": "여러분을 만나서 기뻐요.",
+              "en": "I am glad to meet you all."
+            },
+            {
+              "ko": "제 이름은 민지예요.",
+              "en": "My name is Minji."
+            },
+            {
+              "ko": "저는 한국에서 왔어요.",
+              "en": "I am from Korea."
+            }
+          ]
+        },
+        {
+          "targetKey": "intro2_first_time",
+          "ko": "이곳은 처음이에요.",
+          "en": "It is my first time here.",
+          "sentenceKo": "이곳은 처음이에요.",
+          "sentenceEn": "It is my first time here.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "저를 민지라고 불러 주세요.",
+              "en": "Please call me Minji."
+            },
+            {
+              "ko": "여러분을 만나서 기뻐요.",
+              "en": "I am glad to meet you all."
+            },
+            {
+              "ko": "제 이름은 민지예요.",
+              "en": "My name is Minji."
+            },
+            {
+              "ko": "저는 한국에서 왔어요.",
+              "en": "I am from Korea."
+            },
+            {
+              "ko": "저는 마케팅 팀에서 일해요.",
+              "en": "I work on the marketing team."
+            }
+          ]
+        },
+        {
+          "targetKey": "intro2_call_me",
+          "ko": "저를 민지라고 불러 주세요.",
+          "en": "Please call me Minji.",
+          "sentenceKo": "저를 민지라고 불러 주세요.",
+          "sentenceEn": "Please call me Minji.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "여러분을 만나서 기뻐요.",
+              "en": "I am glad to meet you all."
+            },
+            {
+              "ko": "제 이름은 민지예요.",
+              "en": "My name is Minji."
+            },
+            {
+              "ko": "저는 한국에서 왔어요.",
+              "en": "I am from Korea."
+            },
+            {
+              "ko": "저는 마케팅 팀에서 일해요.",
+              "en": "I work on the marketing team."
+            },
+            {
+              "ko": "저는 대학에서 공부하고 있어요.",
+              "en": "I am studying at a university."
+            }
+          ]
+        },
+        {
+          "targetKey": "intro2_glad_meet",
+          "ko": "여러분을 만나서 기뻐요.",
+          "en": "I am glad to meet you all.",
+          "sentenceKo": "여러분을 만나서 기뻐요.",
+          "sentenceEn": "I am glad to meet you all.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "제 이름은 민지예요.",
+              "en": "My name is Minji."
+            },
+            {
+              "ko": "저는 한국에서 왔어요.",
+              "en": "I am from Korea."
+            },
+            {
+              "ko": "저는 마케팅 팀에서 일해요.",
+              "en": "I work on the marketing team."
+            },
+            {
+              "ko": "저는 대학에서 공부하고 있어요.",
+              "en": "I am studying at a university."
+            },
+            {
+              "ko": "제 취미는 사진 찍기예요.",
+              "en": "My hobby is taking pictures."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 3,
+      "title": "카페 주문하기",
+      "description": "음료를 주문할 때 쓰는 표현이에요.",
+      "stages": [
+        {
+          "targetKey": "cafe_americano",
+          "ko": "아메리카노 한 잔 주세요.",
+          "en": "I'd like an Americano, please.",
+          "sentenceKo": "아메리카노 한 잔 주세요.",
+          "sentenceEn": "I'd like an Americano, please.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "따뜻한 라테로 주세요.",
+              "en": "Can I get a hot latte?"
+            },
+            {
+              "ko": "라지 사이즈로 부탁드려요.",
+              "en": "Could I have a large size?"
+            },
+            {
+              "ko": "포장해 주세요.",
+              "en": "To go, please."
+            },
+            {
+              "ko": "샷 하나 추가해 주세요.",
+              "en": "Please add an extra shot."
+            },
+            {
+              "ko": "얼음은 적게 넣어 주세요.",
+              "en": "Please put in less ice."
+            }
+          ]
+        },
+        {
+          "targetKey": "cafe_latte_hot",
+          "ko": "따뜻한 라테로 주세요.",
+          "en": "Can I get a hot latte?",
+          "sentenceKo": "따뜻한 라테로 주세요.",
+          "sentenceEn": "Can I get a hot latte?",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "라지 사이즈로 부탁드려요.",
+              "en": "Could I have a large size?"
+            },
+            {
+              "ko": "포장해 주세요.",
+              "en": "To go, please."
+            },
+            {
+              "ko": "샷 하나 추가해 주세요.",
+              "en": "Please add an extra shot."
+            },
+            {
+              "ko": "얼음은 적게 넣어 주세요.",
+              "en": "Please put in less ice."
+            },
+            {
+              "ko": "우유 대신 두유로 바꿔 주실 수 있나요?",
+              "en": "Could you change the milk to soy milk?"
+            }
+          ]
+        },
+        {
+          "targetKey": "cafe_size_large",
+          "ko": "라지 사이즈로 부탁드려요.",
+          "en": "Could I have a large size?",
+          "sentenceKo": "라지 사이즈로 부탁드려요.",
+          "sentenceEn": "Could I have a large size?",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "포장해 주세요.",
+              "en": "To go, please."
+            },
+            {
+              "ko": "샷 하나 추가해 주세요.",
+              "en": "Please add an extra shot."
+            },
+            {
+              "ko": "얼음은 적게 넣어 주세요.",
+              "en": "Please put in less ice."
+            },
+            {
+              "ko": "우유 대신 두유로 바꿔 주실 수 있나요?",
+              "en": "Could you change the milk to soy milk?"
+            },
+            {
+              "ko": "얼마인가요?",
+              "en": "How much is it?"
+            }
+          ]
+        },
+        {
+          "targetKey": "cafe_takeout",
+          "ko": "포장해 주세요.",
+          "en": "To go, please.",
+          "sentenceKo": "포장해 주세요.",
+          "sentenceEn": "To go, please.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "샷 하나 추가해 주세요.",
+              "en": "Please add an extra shot."
+            },
+            {
+              "ko": "얼음은 적게 넣어 주세요.",
+              "en": "Please put in less ice."
+            },
+            {
+              "ko": "우유 대신 두유로 바꿔 주실 수 있나요?",
+              "en": "Could you change the milk to soy milk?"
+            },
+            {
+              "ko": "얼마인가요?",
+              "en": "How much is it?"
+            },
+            {
+              "ko": "영수증도 부탁드려요.",
+              "en": "Could I get the receipt as well?"
+            }
+          ]
+        },
+        {
+          "targetKey": "cafe_extra_shot",
+          "ko": "샷 하나 추가해 주세요.",
+          "en": "Please add an extra shot.",
+          "sentenceKo": "샷 하나 추가해 주세요.",
+          "sentenceEn": "Please add an extra shot.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "얼음은 적게 넣어 주세요.",
+              "en": "Please put in less ice."
+            },
+            {
+              "ko": "우유 대신 두유로 바꿔 주실 수 있나요?",
+              "en": "Could you change the milk to soy milk?"
+            },
+            {
+              "ko": "얼마인가요?",
+              "en": "How much is it?"
+            },
+            {
+              "ko": "영수증도 부탁드려요.",
+              "en": "Could I get the receipt as well?"
+            },
+            {
+              "ko": "감사합니다. 좋은 하루 보내세요.",
+              "en": "Thank you. Have a nice day."
+            }
+          ]
+        },
+        {
+          "targetKey": "cafe_less_ice",
+          "ko": "얼음은 적게 넣어 주세요.",
+          "en": "Please put in less ice.",
+          "sentenceKo": "얼음은 적게 넣어 주세요.",
+          "sentenceEn": "Please put in less ice.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "우유 대신 두유로 바꿔 주실 수 있나요?",
+              "en": "Could you change the milk to soy milk?"
+            },
+            {
+              "ko": "얼마인가요?",
+              "en": "How much is it?"
+            },
+            {
+              "ko": "영수증도 부탁드려요.",
+              "en": "Could I get the receipt as well?"
+            },
+            {
+              "ko": "감사합니다. 좋은 하루 보내세요.",
+              "en": "Thank you. Have a nice day."
+            },
+            {
+              "ko": "아메리카노 한 잔 주세요.",
+              "en": "I'd like an Americano, please."
+            }
+          ]
+        },
+        {
+          "targetKey": "cafe_non_dairy",
+          "ko": "우유 대신 두유로 바꿔 주실 수 있나요?",
+          "en": "Could you change the milk to soy milk?",
+          "sentenceKo": "우유 대신 두유로 바꿔 주실 수 있나요?",
+          "sentenceEn": "Could you change the milk to soy milk?",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "얼마인가요?",
+              "en": "How much is it?"
+            },
+            {
+              "ko": "영수증도 부탁드려요.",
+              "en": "Could I get the receipt as well?"
+            },
+            {
+              "ko": "감사합니다. 좋은 하루 보내세요.",
+              "en": "Thank you. Have a nice day."
+            },
+            {
+              "ko": "아메리카노 한 잔 주세요.",
+              "en": "I'd like an Americano, please."
+            },
+            {
+              "ko": "따뜻한 라테로 주세요.",
+              "en": "Can I get a hot latte?"
+            }
+          ]
+        },
+        {
+          "targetKey": "cafe_how_much",
+          "ko": "얼마인가요?",
+          "en": "How much is it?",
+          "sentenceKo": "얼마인가요?",
+          "sentenceEn": "How much is it?",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "영수증도 부탁드려요.",
+              "en": "Could I get the receipt as well?"
+            },
+            {
+              "ko": "감사합니다. 좋은 하루 보내세요.",
+              "en": "Thank you. Have a nice day."
+            },
+            {
+              "ko": "아메리카노 한 잔 주세요.",
+              "en": "I'd like an Americano, please."
+            },
+            {
+              "ko": "따뜻한 라테로 주세요.",
+              "en": "Can I get a hot latte?"
+            },
+            {
+              "ko": "라지 사이즈로 부탁드려요.",
+              "en": "Could I have a large size?"
+            }
+          ]
+        },
+        {
+          "targetKey": "cafe_receipt",
+          "ko": "영수증도 부탁드려요.",
+          "en": "Could I get the receipt as well?",
+          "sentenceKo": "영수증도 부탁드려요.",
+          "sentenceEn": "Could I get the receipt as well?",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "감사합니다. 좋은 하루 보내세요.",
+              "en": "Thank you. Have a nice day."
+            },
+            {
+              "ko": "아메리카노 한 잔 주세요.",
+              "en": "I'd like an Americano, please."
+            },
+            {
+              "ko": "따뜻한 라테로 주세요.",
+              "en": "Can I get a hot latte?"
+            },
+            {
+              "ko": "라지 사이즈로 부탁드려요.",
+              "en": "Could I have a large size?"
+            },
+            {
+              "ko": "포장해 주세요.",
+              "en": "To go, please."
+            }
+          ]
+        },
+        {
+          "targetKey": "cafe_thank_you",
+          "ko": "감사합니다. 좋은 하루 보내세요.",
+          "en": "Thank you. Have a nice day.",
+          "sentenceKo": "감사합니다. 좋은 하루 보내세요.",
+          "sentenceEn": "Thank you. Have a nice day.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "아메리카노 한 잔 주세요.",
+              "en": "I'd like an Americano, please."
+            },
+            {
+              "ko": "따뜻한 라테로 주세요.",
+              "en": "Can I get a hot latte?"
+            },
+            {
+              "ko": "라지 사이즈로 부탁드려요.",
+              "en": "Could I have a large size?"
+            },
+            {
+              "ko": "포장해 주세요.",
+              "en": "To go, please."
+            },
+            {
+              "ko": "샷 하나 추가해 주세요.",
+              "en": "Please add an extra shot."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 4,
+      "title": "식당에서 말하기",
+      "description": "식당에서 필요한 표현을 익혀요.",
+      "stages": [
+        {
+          "targetKey": "restaurant_see_menu",
+          "ko": "메뉴 좀 보여주세요.",
+          "en": "Could I see the menu?",
+          "sentenceKo": "메뉴 좀 보여주세요.",
+          "sentenceEn": "Could I see the menu?",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "두 명 자리 있나요?",
+              "en": "Do you have a table for two?"
+            },
+            {
+              "ko": "추천 메뉴가 무엇인가요?",
+              "en": "What do you recommend?"
+            },
+            {
+              "ko": "맵지 않은 음식으로 부탁드려요.",
+              "en": "I'd like something not spicy."
+            },
+            {
+              "ko": "물 좀 주세요.",
+              "en": "Could I have some water?"
+            },
+            {
+              "ko": "주문할게요.",
+              "en": "We are ready to order."
+            }
+          ]
+        },
+        {
+          "targetKey": "restaurant_table_two",
+          "ko": "두 명 자리 있나요?",
+          "en": "Do you have a table for two?",
+          "sentenceKo": "두 명 자리 있나요?",
+          "sentenceEn": "Do you have a table for two?",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "추천 메뉴가 무엇인가요?",
+              "en": "What do you recommend?"
+            },
+            {
+              "ko": "맵지 않은 음식으로 부탁드려요.",
+              "en": "I'd like something not spicy."
+            },
+            {
+              "ko": "물 좀 주세요.",
+              "en": "Could I have some water?"
+            },
+            {
+              "ko": "주문할게요.",
+              "en": "We are ready to order."
+            },
+            {
+              "ko": "계산서 주세요.",
+              "en": "Could I have the bill, please?"
+            }
+          ]
+        },
+        {
+          "targetKey": "restaurant_recommend",
+          "ko": "추천 메뉴가 무엇인가요?",
+          "en": "What do you recommend?",
+          "sentenceKo": "추천 메뉴가 무엇인가요?",
+          "sentenceEn": "What do you recommend?",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "맵지 않은 음식으로 부탁드려요.",
+              "en": "I'd like something not spicy."
+            },
+            {
+              "ko": "물 좀 주세요.",
+              "en": "Could I have some water?"
+            },
+            {
+              "ko": "주문할게요.",
+              "en": "We are ready to order."
+            },
+            {
+              "ko": "계산서 주세요.",
+              "en": "Could I have the bill, please?"
+            },
+            {
+              "ko": "따로 계산할 수 있을까요?",
+              "en": "Could we split the bill?"
+            }
+          ]
+        },
+        {
+          "targetKey": "restaurant_no_spicy",
+          "ko": "맵지 않은 음식으로 부탁드려요.",
+          "en": "I'd like something not spicy.",
+          "sentenceKo": "맵지 않은 음식으로 부탁드려요.",
+          "sentenceEn": "I'd like something not spicy.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "물 좀 주세요.",
+              "en": "Could I have some water?"
+            },
+            {
+              "ko": "주문할게요.",
+              "en": "We are ready to order."
+            },
+            {
+              "ko": "계산서 주세요.",
+              "en": "Could I have the bill, please?"
+            },
+            {
+              "ko": "따로 계산할 수 있을까요?",
+              "en": "Could we split the bill?"
+            },
+            {
+              "ko": "조금 짠 것 같아요.",
+              "en": "It tastes a little salty."
+            }
+          ]
+        },
+        {
+          "targetKey": "restaurant_water_please",
+          "ko": "물 좀 주세요.",
+          "en": "Could I have some water?",
+          "sentenceKo": "물 좀 주세요.",
+          "sentenceEn": "Could I have some water?",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "주문할게요.",
+              "en": "We are ready to order."
+            },
+            {
+              "ko": "계산서 주세요.",
+              "en": "Could I have the bill, please?"
+            },
+            {
+              "ko": "따로 계산할 수 있을까요?",
+              "en": "Could we split the bill?"
+            },
+            {
+              "ko": "조금 짠 것 같아요.",
+              "en": "It tastes a little salty."
+            },
+            {
+              "ko": "정말 맛있었어요.",
+              "en": "It was really delicious."
+            }
+          ]
+        },
+        {
+          "targetKey": "restaurant_ready_order",
+          "ko": "주문할게요.",
+          "en": "We are ready to order.",
+          "sentenceKo": "주문할게요.",
+          "sentenceEn": "We are ready to order.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "계산서 주세요.",
+              "en": "Could I have the bill, please?"
+            },
+            {
+              "ko": "따로 계산할 수 있을까요?",
+              "en": "Could we split the bill?"
+            },
+            {
+              "ko": "조금 짠 것 같아요.",
+              "en": "It tastes a little salty."
+            },
+            {
+              "ko": "정말 맛있었어요.",
+              "en": "It was really delicious."
+            },
+            {
+              "ko": "메뉴 좀 보여주세요.",
+              "en": "Could I see the menu?"
+            }
+          ]
+        },
+        {
+          "targetKey": "restaurant_bill_please",
+          "ko": "계산서 주세요.",
+          "en": "Could I have the bill, please?",
+          "sentenceKo": "계산서 주세요.",
+          "sentenceEn": "Could I have the bill, please?",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "따로 계산할 수 있을까요?",
+              "en": "Could we split the bill?"
+            },
+            {
+              "ko": "조금 짠 것 같아요.",
+              "en": "It tastes a little salty."
+            },
+            {
+              "ko": "정말 맛있었어요.",
+              "en": "It was really delicious."
+            },
+            {
+              "ko": "메뉴 좀 보여주세요.",
+              "en": "Could I see the menu?"
+            },
+            {
+              "ko": "두 명 자리 있나요?",
+              "en": "Do you have a table for two?"
+            }
+          ]
+        },
+        {
+          "targetKey": "restaurant_split_bill",
+          "ko": "따로 계산할 수 있을까요?",
+          "en": "Could we split the bill?",
+          "sentenceKo": "따로 계산할 수 있을까요?",
+          "sentenceEn": "Could we split the bill?",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "조금 짠 것 같아요.",
+              "en": "It tastes a little salty."
+            },
+            {
+              "ko": "정말 맛있었어요.",
+              "en": "It was really delicious."
+            },
+            {
+              "ko": "메뉴 좀 보여주세요.",
+              "en": "Could I see the menu?"
+            },
+            {
+              "ko": "두 명 자리 있나요?",
+              "en": "Do you have a table for two?"
+            },
+            {
+              "ko": "추천 메뉴가 무엇인가요?",
+              "en": "What do you recommend?"
+            }
+          ]
+        },
+        {
+          "targetKey": "restaurant_too_salty",
+          "ko": "조금 짠 것 같아요.",
+          "en": "It tastes a little salty.",
+          "sentenceKo": "조금 짠 것 같아요.",
+          "sentenceEn": "It tastes a little salty.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "정말 맛있었어요.",
+              "en": "It was really delicious."
+            },
+            {
+              "ko": "메뉴 좀 보여주세요.",
+              "en": "Could I see the menu?"
+            },
+            {
+              "ko": "두 명 자리 있나요?",
+              "en": "Do you have a table for two?"
+            },
+            {
+              "ko": "추천 메뉴가 무엇인가요?",
+              "en": "What do you recommend?"
+            },
+            {
+              "ko": "맵지 않은 음식으로 부탁드려요.",
+              "en": "I'd like something not spicy."
+            }
+          ]
+        },
+        {
+          "targetKey": "restaurant_was_delicious",
+          "ko": "정말 맛있었어요.",
+          "en": "It was really delicious.",
+          "sentenceKo": "정말 맛있었어요.",
+          "sentenceEn": "It was really delicious.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "메뉴 좀 보여주세요.",
+              "en": "Could I see the menu?"
+            },
+            {
+              "ko": "두 명 자리 있나요?",
+              "en": "Do you have a table for two?"
+            },
+            {
+              "ko": "추천 메뉴가 무엇인가요?",
+              "en": "What do you recommend?"
+            },
+            {
+              "ko": "맵지 않은 음식으로 부탁드려요.",
+              "en": "I'd like something not spicy."
+            },
+            {
+              "ko": "물 좀 주세요.",
+              "en": "Could I have some water?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 5,
+      "title": "길 묻기",
+      "description": "길을 물을 때 쓰는 표현을 익혀요.",
+      "stages": [
+        {
+          "targetKey": "direction_where_subway",
+          "ko": "지하철역이 어디에 있나요?",
+          "en": "Where is the subway station?",
+          "sentenceKo": "지하철역이 어디에 있나요?",
+          "sentenceEn": "Where is the subway station?",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "은행에 어떻게 가나요?",
+              "en": "How do I get to the bank?"
+            },
+            {
+              "ko": "여기서 먼가요?",
+              "en": "Is it far from here?"
+            },
+            {
+              "ko": "저기에서 왼쪽으로 도세요.",
+              "en": "Turn left over there."
+            },
+            {
+              "ko": "쭉 가시면 됩니다.",
+              "en": "Just go straight."
+            },
+            {
+              "ko": "약국은 우체국 옆에 있어요.",
+              "en": "The pharmacy is next to the post office."
+            }
+          ]
+        },
+        {
+          "targetKey": "direction_how_get_bank",
+          "ko": "은행에 어떻게 가나요?",
+          "en": "How do I get to the bank?",
+          "sentenceKo": "은행에 어떻게 가나요?",
+          "sentenceEn": "How do I get to the bank?",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "여기서 먼가요?",
+              "en": "Is it far from here?"
+            },
+            {
+              "ko": "저기에서 왼쪽으로 도세요.",
+              "en": "Turn left over there."
+            },
+            {
+              "ko": "쭉 가시면 됩니다.",
+              "en": "Just go straight."
+            },
+            {
+              "ko": "약국은 우체국 옆에 있어요.",
+              "en": "The pharmacy is next to the post office."
+            },
+            {
+              "ko": "호텔은 공원 맞은편에 있어요.",
+              "en": "The hotel is across from the park."
+            }
+          ]
+        },
+        {
+          "targetKey": "direction_is_it_far",
+          "ko": "여기서 먼가요?",
+          "en": "Is it far from here?",
+          "sentenceKo": "여기서 먼가요?",
+          "sentenceEn": "Is it far from here?",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "저기에서 왼쪽으로 도세요.",
+              "en": "Turn left over there."
+            },
+            {
+              "ko": "쭉 가시면 됩니다.",
+              "en": "Just go straight."
+            },
+            {
+              "ko": "약국은 우체국 옆에 있어요.",
+              "en": "The pharmacy is next to the post office."
+            },
+            {
+              "ko": "호텔은 공원 맞은편에 있어요.",
+              "en": "The hotel is across from the park."
+            },
+            {
+              "ko": "어느 버스를 타야 하나요?",
+              "en": "Which bus should I take?"
+            }
+          ]
+        },
+        {
+          "targetKey": "direction_turn_left",
+          "ko": "저기에서 왼쪽으로 도세요.",
+          "en": "Turn left over there.",
+          "sentenceKo": "저기에서 왼쪽으로 도세요.",
+          "sentenceEn": "Turn left over there.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "쭉 가시면 됩니다.",
+              "en": "Just go straight."
+            },
+            {
+              "ko": "약국은 우체국 옆에 있어요.",
+              "en": "The pharmacy is next to the post office."
+            },
+            {
+              "ko": "호텔은 공원 맞은편에 있어요.",
+              "en": "The hotel is across from the park."
+            },
+            {
+              "ko": "어느 버스를 타야 하나요?",
+              "en": "Which bus should I take?"
+            },
+            {
+              "ko": "제가 길을 잘못 든 것 같아요.",
+              "en": "I think I missed the turn."
+            }
+          ]
+        },
+        {
+          "targetKey": "direction_go_straight",
+          "ko": "쭉 가시면 됩니다.",
+          "en": "Just go straight.",
+          "sentenceKo": "쭉 가시면 됩니다.",
+          "sentenceEn": "Just go straight.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "약국은 우체국 옆에 있어요.",
+              "en": "The pharmacy is next to the post office."
+            },
+            {
+              "ko": "호텔은 공원 맞은편에 있어요.",
+              "en": "The hotel is across from the park."
+            },
+            {
+              "ko": "어느 버스를 타야 하나요?",
+              "en": "Which bus should I take?"
+            },
+            {
+              "ko": "제가 길을 잘못 든 것 같아요.",
+              "en": "I think I missed the turn."
+            },
+            {
+              "ko": "도와주셔서 감사합니다.",
+              "en": "Thank you for your help."
+            }
+          ]
+        },
+        {
+          "targetKey": "direction_next_to",
+          "ko": "약국은 우체국 옆에 있어요.",
+          "en": "The pharmacy is next to the post office.",
+          "sentenceKo": "약국은 우체국 옆에 있어요.",
+          "sentenceEn": "The pharmacy is next to the post office.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "호텔은 공원 맞은편에 있어요.",
+              "en": "The hotel is across from the park."
+            },
+            {
+              "ko": "어느 버스를 타야 하나요?",
+              "en": "Which bus should I take?"
+            },
+            {
+              "ko": "제가 길을 잘못 든 것 같아요.",
+              "en": "I think I missed the turn."
+            },
+            {
+              "ko": "도와주셔서 감사합니다.",
+              "en": "Thank you for your help."
+            },
+            {
+              "ko": "지하철역이 어디에 있나요?",
+              "en": "Where is the subway station?"
+            }
+          ]
+        },
+        {
+          "targetKey": "direction_across_from",
+          "ko": "호텔은 공원 맞은편에 있어요.",
+          "en": "The hotel is across from the park.",
+          "sentenceKo": "호텔은 공원 맞은편에 있어요.",
+          "sentenceEn": "The hotel is across from the park.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "어느 버스를 타야 하나요?",
+              "en": "Which bus should I take?"
+            },
+            {
+              "ko": "제가 길을 잘못 든 것 같아요.",
+              "en": "I think I missed the turn."
+            },
+            {
+              "ko": "도와주셔서 감사합니다.",
+              "en": "Thank you for your help."
+            },
+            {
+              "ko": "지하철역이 어디에 있나요?",
+              "en": "Where is the subway station?"
+            },
+            {
+              "ko": "은행에 어떻게 가나요?",
+              "en": "How do I get to the bank?"
+            }
+          ]
+        },
+        {
+          "targetKey": "direction_which_bus",
+          "ko": "어느 버스를 타야 하나요?",
+          "en": "Which bus should I take?",
+          "sentenceKo": "어느 버스를 타야 하나요?",
+          "sentenceEn": "Which bus should I take?",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "제가 길을 잘못 든 것 같아요.",
+              "en": "I think I missed the turn."
+            },
+            {
+              "ko": "도와주셔서 감사합니다.",
+              "en": "Thank you for your help."
+            },
+            {
+              "ko": "지하철역이 어디에 있나요?",
+              "en": "Where is the subway station?"
+            },
+            {
+              "ko": "은행에 어떻게 가나요?",
+              "en": "How do I get to the bank?"
+            },
+            {
+              "ko": "여기서 먼가요?",
+              "en": "Is it far from here?"
+            }
+          ]
+        },
+        {
+          "targetKey": "direction_missed_turn",
+          "ko": "제가 길을 잘못 든 것 같아요.",
+          "en": "I think I missed the turn.",
+          "sentenceKo": "제가 길을 잘못 든 것 같아요.",
+          "sentenceEn": "I think I missed the turn.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "도와주셔서 감사합니다.",
+              "en": "Thank you for your help."
+            },
+            {
+              "ko": "지하철역이 어디에 있나요?",
+              "en": "Where is the subway station?"
+            },
+            {
+              "ko": "은행에 어떻게 가나요?",
+              "en": "How do I get to the bank?"
+            },
+            {
+              "ko": "여기서 먼가요?",
+              "en": "Is it far from here?"
+            },
+            {
+              "ko": "저기에서 왼쪽으로 도세요.",
+              "en": "Turn left over there."
+            }
+          ]
+        },
+        {
+          "targetKey": "direction_thank_for_help",
+          "ko": "도와주셔서 감사합니다.",
+          "en": "Thank you for your help.",
+          "sentenceKo": "도와주셔서 감사합니다.",
+          "sentenceEn": "Thank you for your help.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "지하철역이 어디에 있나요?",
+              "en": "Where is the subway station?"
+            },
+            {
+              "ko": "은행에 어떻게 가나요?",
+              "en": "How do I get to the bank?"
+            },
+            {
+              "ko": "여기서 먼가요?",
+              "en": "Is it far from here?"
+            },
+            {
+              "ko": "저기에서 왼쪽으로 도세요.",
+              "en": "Turn left over there."
+            },
+            {
+              "ko": "쭉 가시면 됩니다.",
+              "en": "Just go straight."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 6,
+      "title": "쇼핑하기",
+      "description": "쇼핑 상황에서 자주 쓰는 말이에요.",
+      "stages": [
+        {
+          "targetKey": "shopping_smaller_size",
+          "ko": "이거 더 작은 사이즈 있나요?",
+          "en": "Do you have this in a smaller size?",
+          "sentenceKo": "이거 더 작은 사이즈 있나요?",
+          "sentenceEn": "Do you have this in a smaller size?",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "다른 색도 있나요?",
+              "en": "Do you have this in another color?"
+            },
+            {
+              "ko": "입어봐도 될까요?",
+              "en": "May I try this on?"
+            },
+            {
+              "ko": "이거 얼마예요?",
+              "en": "How much is this?"
+            },
+            {
+              "ko": "할인 중인가요?",
+              "en": "Is this on sale?"
+            },
+            {
+              "ko": "카드로 계산할게요.",
+              "en": "I'll pay by card."
+            }
+          ]
+        },
+        {
+          "targetKey": "shopping_different_color",
+          "ko": "다른 색도 있나요?",
+          "en": "Do you have this in another color?",
+          "sentenceKo": "다른 색도 있나요?",
+          "sentenceEn": "Do you have this in another color?",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "입어봐도 될까요?",
+              "en": "May I try this on?"
+            },
+            {
+              "ko": "이거 얼마예요?",
+              "en": "How much is this?"
+            },
+            {
+              "ko": "할인 중인가요?",
+              "en": "Is this on sale?"
+            },
+            {
+              "ko": "카드로 계산할게요.",
+              "en": "I'll pay by card."
+            },
+            {
+              "ko": "그냥 둘러보고 있어요.",
+              "en": "I'm just looking around."
+            }
+          ]
+        },
+        {
+          "targetKey": "shopping_can_try",
+          "ko": "입어봐도 될까요?",
+          "en": "May I try this on?",
+          "sentenceKo": "입어봐도 될까요?",
+          "sentenceEn": "May I try this on?",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "이거 얼마예요?",
+              "en": "How much is this?"
+            },
+            {
+              "ko": "할인 중인가요?",
+              "en": "Is this on sale?"
+            },
+            {
+              "ko": "카드로 계산할게요.",
+              "en": "I'll pay by card."
+            },
+            {
+              "ko": "그냥 둘러보고 있어요.",
+              "en": "I'm just looking around."
+            },
+            {
+              "ko": "교환이나 환불이 가능한가요?",
+              "en": "Can I exchange or return it?"
+            }
+          ]
+        },
+        {
+          "targetKey": "shopping_how_much2",
+          "ko": "이거 얼마예요?",
+          "en": "How much is this?",
+          "sentenceKo": "이거 얼마예요?",
+          "sentenceEn": "How much is this?",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "할인 중인가요?",
+              "en": "Is this on sale?"
+            },
+            {
+              "ko": "카드로 계산할게요.",
+              "en": "I'll pay by card."
+            },
+            {
+              "ko": "그냥 둘러보고 있어요.",
+              "en": "I'm just looking around."
+            },
+            {
+              "ko": "교환이나 환불이 가능한가요?",
+              "en": "Can I exchange or return it?"
+            },
+            {
+              "ko": "선물 포장해 주실 수 있나요?",
+              "en": "Could you gift-wrap it?"
+            }
+          ]
+        },
+        {
+          "targetKey": "shopping_discount",
+          "ko": "할인 중인가요?",
+          "en": "Is this on sale?",
+          "sentenceKo": "할인 중인가요?",
+          "sentenceEn": "Is this on sale?",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "카드로 계산할게요.",
+              "en": "I'll pay by card."
+            },
+            {
+              "ko": "그냥 둘러보고 있어요.",
+              "en": "I'm just looking around."
+            },
+            {
+              "ko": "교환이나 환불이 가능한가요?",
+              "en": "Can I exchange or return it?"
+            },
+            {
+              "ko": "선물 포장해 주실 수 있나요?",
+              "en": "Could you gift-wrap it?"
+            },
+            {
+              "ko": "이걸로 할게요.",
+              "en": "I'll take this one."
+            }
+          ]
+        },
+        {
+          "targetKey": "shopping_pay_card",
+          "ko": "카드로 계산할게요.",
+          "en": "I'll pay by card.",
+          "sentenceKo": "카드로 계산할게요.",
+          "sentenceEn": "I'll pay by card.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "그냥 둘러보고 있어요.",
+              "en": "I'm just looking around."
+            },
+            {
+              "ko": "교환이나 환불이 가능한가요?",
+              "en": "Can I exchange or return it?"
+            },
+            {
+              "ko": "선물 포장해 주실 수 있나요?",
+              "en": "Could you gift-wrap it?"
+            },
+            {
+              "ko": "이걸로 할게요.",
+              "en": "I'll take this one."
+            },
+            {
+              "ko": "이거 더 작은 사이즈 있나요?",
+              "en": "Do you have this in a smaller size?"
+            }
+          ]
+        },
+        {
+          "targetKey": "shopping_just_looking",
+          "ko": "그냥 둘러보고 있어요.",
+          "en": "I'm just looking around.",
+          "sentenceKo": "그냥 둘러보고 있어요.",
+          "sentenceEn": "I'm just looking around.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "교환이나 환불이 가능한가요?",
+              "en": "Can I exchange or return it?"
+            },
+            {
+              "ko": "선물 포장해 주실 수 있나요?",
+              "en": "Could you gift-wrap it?"
+            },
+            {
+              "ko": "이걸로 할게요.",
+              "en": "I'll take this one."
+            },
+            {
+              "ko": "이거 더 작은 사이즈 있나요?",
+              "en": "Do you have this in a smaller size?"
+            },
+            {
+              "ko": "다른 색도 있나요?",
+              "en": "Do you have this in another color?"
+            }
+          ]
+        },
+        {
+          "targetKey": "shopping_return_policy",
+          "ko": "교환이나 환불이 가능한가요?",
+          "en": "Can I exchange or return it?",
+          "sentenceKo": "교환이나 환불이 가능한가요?",
+          "sentenceEn": "Can I exchange or return it?",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "선물 포장해 주실 수 있나요?",
+              "en": "Could you gift-wrap it?"
+            },
+            {
+              "ko": "이걸로 할게요.",
+              "en": "I'll take this one."
+            },
+            {
+              "ko": "이거 더 작은 사이즈 있나요?",
+              "en": "Do you have this in a smaller size?"
+            },
+            {
+              "ko": "다른 색도 있나요?",
+              "en": "Do you have this in another color?"
+            },
+            {
+              "ko": "입어봐도 될까요?",
+              "en": "May I try this on?"
+            }
+          ]
+        },
+        {
+          "targetKey": "shopping_pack_gift",
+          "ko": "선물 포장해 주실 수 있나요?",
+          "en": "Could you gift-wrap it?",
+          "sentenceKo": "선물 포장해 주실 수 있나요?",
+          "sentenceEn": "Could you gift-wrap it?",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "이걸로 할게요.",
+              "en": "I'll take this one."
+            },
+            {
+              "ko": "이거 더 작은 사이즈 있나요?",
+              "en": "Do you have this in a smaller size?"
+            },
+            {
+              "ko": "다른 색도 있나요?",
+              "en": "Do you have this in another color?"
+            },
+            {
+              "ko": "입어봐도 될까요?",
+              "en": "May I try this on?"
+            },
+            {
+              "ko": "이거 얼마예요?",
+              "en": "How much is this?"
+            }
+          ]
+        },
+        {
+          "targetKey": "shopping_take_it",
+          "ko": "이걸로 할게요.",
+          "en": "I'll take this one.",
+          "sentenceKo": "이걸로 할게요.",
+          "sentenceEn": "I'll take this one.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "이거 더 작은 사이즈 있나요?",
+              "en": "Do you have this in a smaller size?"
+            },
+            {
+              "ko": "다른 색도 있나요?",
+              "en": "Do you have this in another color?"
+            },
+            {
+              "ko": "입어봐도 될까요?",
+              "en": "May I try this on?"
+            },
+            {
+              "ko": "이거 얼마예요?",
+              "en": "How much is this?"
+            },
+            {
+              "ko": "할인 중인가요?",
+              "en": "Is this on sale?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 7,
+      "title": "약속 잡기",
+      "description": "만남과 일정 약속 표현을 익혀요.",
+      "stages": [
+        {
+          "targetKey": "plan2_free_weekend",
+          "ko": "이번 주말에 시간 있으세요?",
+          "en": "Are you free this weekend?",
+          "sentenceKo": "이번 주말에 시간 있으세요?",
+          "sentenceEn": "Are you free this weekend?",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "여섯 시에 만날까요?",
+              "en": "Shall we meet at six?"
+            },
+            {
+              "ko": "시간을 조금 바꿀 수 있을까요?",
+              "en": "Could we change the time a little?"
+            },
+            {
+              "ko": "제가 조금 늦을 것 같아요.",
+              "en": "I think I will be a little late."
+            },
+            {
+              "ko": "그럼 내일 봬요.",
+              "en": "See you tomorrow, then."
+            },
+            {
+              "ko": "저는 그 시간이 괜찮아요.",
+              "en": "That time works for me."
+            }
+          ]
+        },
+        {
+          "targetKey": "plan2_meet_six",
+          "ko": "여섯 시에 만날까요?",
+          "en": "Shall we meet at six?",
+          "sentenceKo": "여섯 시에 만날까요?",
+          "sentenceEn": "Shall we meet at six?",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "시간을 조금 바꿀 수 있을까요?",
+              "en": "Could we change the time a little?"
+            },
+            {
+              "ko": "제가 조금 늦을 것 같아요.",
+              "en": "I think I will be a little late."
+            },
+            {
+              "ko": "그럼 내일 봬요.",
+              "en": "See you tomorrow, then."
+            },
+            {
+              "ko": "저는 그 시간이 괜찮아요.",
+              "en": "That time works for me."
+            },
+            {
+              "ko": "저는 오전에는 바빠요.",
+              "en": "I am busy in the morning."
+            }
+          ]
+        },
+        {
+          "targetKey": "plan2_change_time",
+          "ko": "시간을 조금 바꿀 수 있을까요?",
+          "en": "Could we change the time a little?",
+          "sentenceKo": "시간을 조금 바꿀 수 있을까요?",
+          "sentenceEn": "Could we change the time a little?",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "제가 조금 늦을 것 같아요.",
+              "en": "I think I will be a little late."
+            },
+            {
+              "ko": "그럼 내일 봬요.",
+              "en": "See you tomorrow, then."
+            },
+            {
+              "ko": "저는 그 시간이 괜찮아요.",
+              "en": "That time works for me."
+            },
+            {
+              "ko": "저는 오전에는 바빠요.",
+              "en": "I am busy in the morning."
+            },
+            {
+              "ko": "장소를 다시 확인해 주실래요?",
+              "en": "Could you confirm the place again?"
+            }
+          ]
+        },
+        {
+          "targetKey": "plan2_running_late",
+          "ko": "제가 조금 늦을 것 같아요.",
+          "en": "I think I will be a little late.",
+          "sentenceKo": "제가 조금 늦을 것 같아요.",
+          "sentenceEn": "I think I will be a little late.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "그럼 내일 봬요.",
+              "en": "See you tomorrow, then."
+            },
+            {
+              "ko": "저는 그 시간이 괜찮아요.",
+              "en": "That time works for me."
+            },
+            {
+              "ko": "저는 오전에는 바빠요.",
+              "en": "I am busy in the morning."
+            },
+            {
+              "ko": "장소를 다시 확인해 주실래요?",
+              "en": "Could you confirm the place again?"
+            },
+            {
+              "ko": "죄송하지만 오늘은 취소해야 할 것 같아요.",
+              "en": "I'm sorry, but I think I need to cancel today."
+            }
+          ]
+        },
+        {
+          "targetKey": "plan2_see_tomorrow",
+          "ko": "그럼 내일 봬요.",
+          "en": "See you tomorrow, then.",
+          "sentenceKo": "그럼 내일 봬요.",
+          "sentenceEn": "See you tomorrow, then.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "저는 그 시간이 괜찮아요.",
+              "en": "That time works for me."
+            },
+            {
+              "ko": "저는 오전에는 바빠요.",
+              "en": "I am busy in the morning."
+            },
+            {
+              "ko": "장소를 다시 확인해 주실래요?",
+              "en": "Could you confirm the place again?"
+            },
+            {
+              "ko": "죄송하지만 오늘은 취소해야 할 것 같아요.",
+              "en": "I'm sorry, but I think I need to cancel today."
+            },
+            {
+              "ko": "그럼 다음에 다시 만나요.",
+              "en": "Let's meet another time, then."
+            }
+          ]
+        },
+        {
+          "targetKey": "plan2_works_for_me",
+          "ko": "저는 그 시간이 괜찮아요.",
+          "en": "That time works for me.",
+          "sentenceKo": "저는 그 시간이 괜찮아요.",
+          "sentenceEn": "That time works for me.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "저는 오전에는 바빠요.",
+              "en": "I am busy in the morning."
+            },
+            {
+              "ko": "장소를 다시 확인해 주실래요?",
+              "en": "Could you confirm the place again?"
+            },
+            {
+              "ko": "죄송하지만 오늘은 취소해야 할 것 같아요.",
+              "en": "I'm sorry, but I think I need to cancel today."
+            },
+            {
+              "ko": "그럼 다음에 다시 만나요.",
+              "en": "Let's meet another time, then."
+            },
+            {
+              "ko": "이번 주말에 시간 있으세요?",
+              "en": "Are you free this weekend?"
+            }
+          ]
+        },
+        {
+          "targetKey": "plan2_busy_morning",
+          "ko": "저는 오전에는 바빠요.",
+          "en": "I am busy in the morning.",
+          "sentenceKo": "저는 오전에는 바빠요.",
+          "sentenceEn": "I am busy in the morning.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "장소를 다시 확인해 주실래요?",
+              "en": "Could you confirm the place again?"
+            },
+            {
+              "ko": "죄송하지만 오늘은 취소해야 할 것 같아요.",
+              "en": "I'm sorry, but I think I need to cancel today."
+            },
+            {
+              "ko": "그럼 다음에 다시 만나요.",
+              "en": "Let's meet another time, then."
+            },
+            {
+              "ko": "이번 주말에 시간 있으세요?",
+              "en": "Are you free this weekend?"
+            },
+            {
+              "ko": "여섯 시에 만날까요?",
+              "en": "Shall we meet at six?"
+            }
+          ]
+        },
+        {
+          "targetKey": "plan2_confirm_place",
+          "ko": "장소를 다시 확인해 주실래요?",
+          "en": "Could you confirm the place again?",
+          "sentenceKo": "장소를 다시 확인해 주실래요?",
+          "sentenceEn": "Could you confirm the place again?",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "죄송하지만 오늘은 취소해야 할 것 같아요.",
+              "en": "I'm sorry, but I think I need to cancel today."
+            },
+            {
+              "ko": "그럼 다음에 다시 만나요.",
+              "en": "Let's meet another time, then."
+            },
+            {
+              "ko": "이번 주말에 시간 있으세요?",
+              "en": "Are you free this weekend?"
+            },
+            {
+              "ko": "여섯 시에 만날까요?",
+              "en": "Shall we meet at six?"
+            },
+            {
+              "ko": "시간을 조금 바꿀 수 있을까요?",
+              "en": "Could we change the time a little?"
+            }
+          ]
+        },
+        {
+          "targetKey": "plan2_cancel_sorry",
+          "ko": "죄송하지만 오늘은 취소해야 할 것 같아요.",
+          "en": "I'm sorry, but I think I need to cancel today.",
+          "sentenceKo": "죄송하지만 오늘은 취소해야 할 것 같아요.",
+          "sentenceEn": "I'm sorry, but I think I need to cancel today.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "그럼 다음에 다시 만나요.",
+              "en": "Let's meet another time, then."
+            },
+            {
+              "ko": "이번 주말에 시간 있으세요?",
+              "en": "Are you free this weekend?"
+            },
+            {
+              "ko": "여섯 시에 만날까요?",
+              "en": "Shall we meet at six?"
+            },
+            {
+              "ko": "시간을 조금 바꿀 수 있을까요?",
+              "en": "Could we change the time a little?"
+            },
+            {
+              "ko": "제가 조금 늦을 것 같아요.",
+              "en": "I think I will be a little late."
+            }
+          ]
+        },
+        {
+          "targetKey": "plan2_next_time",
+          "ko": "그럼 다음에 다시 만나요.",
+          "en": "Let's meet another time, then.",
+          "sentenceKo": "그럼 다음에 다시 만나요.",
+          "sentenceEn": "Let's meet another time, then.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "이번 주말에 시간 있으세요?",
+              "en": "Are you free this weekend?"
+            },
+            {
+              "ko": "여섯 시에 만날까요?",
+              "en": "Shall we meet at six?"
+            },
+            {
+              "ko": "시간을 조금 바꿀 수 있을까요?",
+              "en": "Could we change the time a little?"
+            },
+            {
+              "ko": "제가 조금 늦을 것 같아요.",
+              "en": "I think I will be a little late."
+            },
+            {
+              "ko": "그럼 내일 봬요.",
+              "en": "See you tomorrow, then."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 8,
+      "title": "전화와 메시지",
+      "description": "전화와 문자 상황 표현을 익혀요.",
+      "stages": [
+        {
+          "targetKey": "phone_call_back",
+          "ko": "나중에 다시 전화드릴게요.",
+          "en": "I'll call you back later.",
+          "sentenceKo": "나중에 다시 전화드릴게요.",
+          "sentenceEn": "I'll call you back later.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "메시지를 남겨도 될까요?",
+              "en": "May I leave a message?"
+            },
+            {
+              "ko": "잘 안 들려요.",
+              "en": "I can't hear you well."
+            },
+            {
+              "ko": "조금 천천히 말씀해 주시겠어요?",
+              "en": "Could you speak a little more slowly?"
+            },
+            {
+              "ko": "문자로 보내주실 수 있나요?",
+              "en": "Could you send it by text?"
+            },
+            {
+              "ko": "지금 가는 중이에요.",
+              "en": "I'm on my way now."
+            }
+          ]
+        },
+        {
+          "targetKey": "phone_leave_message",
+          "ko": "메시지를 남겨도 될까요?",
+          "en": "May I leave a message?",
+          "sentenceKo": "메시지를 남겨도 될까요?",
+          "sentenceEn": "May I leave a message?",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "잘 안 들려요.",
+              "en": "I can't hear you well."
+            },
+            {
+              "ko": "조금 천천히 말씀해 주시겠어요?",
+              "en": "Could you speak a little more slowly?"
+            },
+            {
+              "ko": "문자로 보내주실 수 있나요?",
+              "en": "Could you send it by text?"
+            },
+            {
+              "ko": "지금 가는 중이에요.",
+              "en": "I'm on my way now."
+            },
+            {
+              "ko": "방금 도착했어요.",
+              "en": "I just arrived."
+            }
+          ]
+        },
+        {
+          "targetKey": "phone_cant_hear",
+          "ko": "잘 안 들려요.",
+          "en": "I can't hear you well.",
+          "sentenceKo": "잘 안 들려요.",
+          "sentenceEn": "I can't hear you well.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "조금 천천히 말씀해 주시겠어요?",
+              "en": "Could you speak a little more slowly?"
+            },
+            {
+              "ko": "문자로 보내주실 수 있나요?",
+              "en": "Could you send it by text?"
+            },
+            {
+              "ko": "지금 가는 중이에요.",
+              "en": "I'm on my way now."
+            },
+            {
+              "ko": "방금 도착했어요.",
+              "en": "I just arrived."
+            },
+            {
+              "ko": "배터리가 거의 없어요.",
+              "en": "My battery is almost dead."
+            }
+          ]
+        },
+        {
+          "targetKey": "phone_speak_slowly",
+          "ko": "조금 천천히 말씀해 주시겠어요?",
+          "en": "Could you speak a little more slowly?",
+          "sentenceKo": "조금 천천히 말씀해 주시겠어요?",
+          "sentenceEn": "Could you speak a little more slowly?",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "문자로 보내주실 수 있나요?",
+              "en": "Could you send it by text?"
+            },
+            {
+              "ko": "지금 가는 중이에요.",
+              "en": "I'm on my way now."
+            },
+            {
+              "ko": "방금 도착했어요.",
+              "en": "I just arrived."
+            },
+            {
+              "ko": "배터리가 거의 없어요.",
+              "en": "My battery is almost dead."
+            },
+            {
+              "ko": "죄송하지만 잘못 거셨어요.",
+              "en": "I'm sorry, but you have the wrong number."
+            }
+          ]
+        },
+        {
+          "targetKey": "phone_send_text",
+          "ko": "문자로 보내주실 수 있나요?",
+          "en": "Could you send it by text?",
+          "sentenceKo": "문자로 보내주실 수 있나요?",
+          "sentenceEn": "Could you send it by text?",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "지금 가는 중이에요.",
+              "en": "I'm on my way now."
+            },
+            {
+              "ko": "방금 도착했어요.",
+              "en": "I just arrived."
+            },
+            {
+              "ko": "배터리가 거의 없어요.",
+              "en": "My battery is almost dead."
+            },
+            {
+              "ko": "죄송하지만 잘못 거셨어요.",
+              "en": "I'm sorry, but you have the wrong number."
+            },
+            {
+              "ko": "메시지 확인해 주세요.",
+              "en": "Please check your message."
+            }
+          ]
+        },
+        {
+          "targetKey": "phone_on_way",
+          "ko": "지금 가는 중이에요.",
+          "en": "I'm on my way now.",
+          "sentenceKo": "지금 가는 중이에요.",
+          "sentenceEn": "I'm on my way now.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "방금 도착했어요.",
+              "en": "I just arrived."
+            },
+            {
+              "ko": "배터리가 거의 없어요.",
+              "en": "My battery is almost dead."
+            },
+            {
+              "ko": "죄송하지만 잘못 거셨어요.",
+              "en": "I'm sorry, but you have the wrong number."
+            },
+            {
+              "ko": "메시지 확인해 주세요.",
+              "en": "Please check your message."
+            },
+            {
+              "ko": "나중에 다시 전화드릴게요.",
+              "en": "I'll call you back later."
+            }
+          ]
+        },
+        {
+          "targetKey": "phone_arrived",
+          "ko": "방금 도착했어요.",
+          "en": "I just arrived.",
+          "sentenceKo": "방금 도착했어요.",
+          "sentenceEn": "I just arrived.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "배터리가 거의 없어요.",
+              "en": "My battery is almost dead."
+            },
+            {
+              "ko": "죄송하지만 잘못 거셨어요.",
+              "en": "I'm sorry, but you have the wrong number."
+            },
+            {
+              "ko": "메시지 확인해 주세요.",
+              "en": "Please check your message."
+            },
+            {
+              "ko": "나중에 다시 전화드릴게요.",
+              "en": "I'll call you back later."
+            },
+            {
+              "ko": "메시지를 남겨도 될까요?",
+              "en": "May I leave a message?"
+            }
+          ]
+        },
+        {
+          "targetKey": "phone_battery_low",
+          "ko": "배터리가 거의 없어요.",
+          "en": "My battery is almost dead.",
+          "sentenceKo": "배터리가 거의 없어요.",
+          "sentenceEn": "My battery is almost dead.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "죄송하지만 잘못 거셨어요.",
+              "en": "I'm sorry, but you have the wrong number."
+            },
+            {
+              "ko": "메시지 확인해 주세요.",
+              "en": "Please check your message."
+            },
+            {
+              "ko": "나중에 다시 전화드릴게요.",
+              "en": "I'll call you back later."
+            },
+            {
+              "ko": "메시지를 남겨도 될까요?",
+              "en": "May I leave a message?"
+            },
+            {
+              "ko": "잘 안 들려요.",
+              "en": "I can't hear you well."
+            }
+          ]
+        },
+        {
+          "targetKey": "phone_wrong_number",
+          "ko": "죄송하지만 잘못 거셨어요.",
+          "en": "I'm sorry, but you have the wrong number.",
+          "sentenceKo": "죄송하지만 잘못 거셨어요.",
+          "sentenceEn": "I'm sorry, but you have the wrong number.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "메시지 확인해 주세요.",
+              "en": "Please check your message."
+            },
+            {
+              "ko": "나중에 다시 전화드릴게요.",
+              "en": "I'll call you back later."
+            },
+            {
+              "ko": "메시지를 남겨도 될까요?",
+              "en": "May I leave a message?"
+            },
+            {
+              "ko": "잘 안 들려요.",
+              "en": "I can't hear you well."
+            },
+            {
+              "ko": "조금 천천히 말씀해 주시겠어요?",
+              "en": "Could you speak a little more slowly?"
+            }
+          ]
+        },
+        {
+          "targetKey": "phone_check_message",
+          "ko": "메시지 확인해 주세요.",
+          "en": "Please check your message.",
+          "sentenceKo": "메시지 확인해 주세요.",
+          "sentenceEn": "Please check your message.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "나중에 다시 전화드릴게요.",
+              "en": "I'll call you back later."
+            },
+            {
+              "ko": "메시지를 남겨도 될까요?",
+              "en": "May I leave a message?"
+            },
+            {
+              "ko": "잘 안 들려요.",
+              "en": "I can't hear you well."
+            },
+            {
+              "ko": "조금 천천히 말씀해 주시겠어요?",
+              "en": "Could you speak a little more slowly?"
+            },
+            {
+              "ko": "문자로 보내주실 수 있나요?",
+              "en": "Could you send it by text?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 9,
+      "title": "감정과 사과",
+      "description": "감정 표현과 사과 표현을 배워요.",
+      "stages": [
+        {
+          "targetKey": "emotion2_sorry_late",
+          "ko": "늦어서 죄송해요.",
+          "en": "I'm sorry I'm late.",
+          "sentenceKo": "늦어서 죄송해요.",
+          "sentenceEn": "I'm sorry I'm late.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "친절하게 도와주셔서 감사합니다.",
+              "en": "Thank you for your kindness."
+            },
+            {
+              "ko": "지금 조금 긴장돼요.",
+              "en": "I'm a little nervous right now."
+            },
+            {
+              "ko": "좋은 소식을 들어서 기뻐요.",
+              "en": "I'm happy to hear the good news."
+            },
+            {
+              "ko": "날씨 때문에 조금 걱정돼요.",
+              "en": "I'm a little worried about the weather."
+            },
+            {
+              "ko": "여행 생각을 하니 신이 나요.",
+              "en": "I'm excited when I think about the trip."
+            }
+          ]
+        },
+        {
+          "targetKey": "emotion2_thank_kindness",
+          "ko": "친절하게 도와주셔서 감사합니다.",
+          "en": "Thank you for your kindness.",
+          "sentenceKo": "친절하게 도와주셔서 감사합니다.",
+          "sentenceEn": "Thank you for your kindness.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "지금 조금 긴장돼요.",
+              "en": "I'm a little nervous right now."
+            },
+            {
+              "ko": "좋은 소식을 들어서 기뻐요.",
+              "en": "I'm happy to hear the good news."
+            },
+            {
+              "ko": "날씨 때문에 조금 걱정돼요.",
+              "en": "I'm a little worried about the weather."
+            },
+            {
+              "ko": "여행 생각을 하니 신이 나요.",
+              "en": "I'm excited when I think about the trip."
+            },
+            {
+              "ko": "실수해서 민망했어요.",
+              "en": "I felt embarrassed because I made a mistake."
+            }
+          ]
+        },
+        {
+          "targetKey": "emotion2_nervous_now",
+          "ko": "지금 조금 긴장돼요.",
+          "en": "I'm a little nervous right now.",
+          "sentenceKo": "지금 조금 긴장돼요.",
+          "sentenceEn": "I'm a little nervous right now.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "좋은 소식을 들어서 기뻐요.",
+              "en": "I'm happy to hear the good news."
+            },
+            {
+              "ko": "날씨 때문에 조금 걱정돼요.",
+              "en": "I'm a little worried about the weather."
+            },
+            {
+              "ko": "여행 생각을 하니 신이 나요.",
+              "en": "I'm excited when I think about the trip."
+            },
+            {
+              "ko": "실수해서 민망했어요.",
+              "en": "I felt embarrassed because I made a mistake."
+            },
+            {
+              "ko": "괜찮아요. 신경 쓰지 마세요.",
+              "en": "It's okay. Don't worry about it."
+            }
+          ]
+        },
+        {
+          "targetKey": "emotion2_happy_news",
+          "ko": "좋은 소식을 들어서 기뻐요.",
+          "en": "I'm happy to hear the good news.",
+          "sentenceKo": "좋은 소식을 들어서 기뻐요.",
+          "sentenceEn": "I'm happy to hear the good news.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "날씨 때문에 조금 걱정돼요.",
+              "en": "I'm a little worried about the weather."
+            },
+            {
+              "ko": "여행 생각을 하니 신이 나요.",
+              "en": "I'm excited when I think about the trip."
+            },
+            {
+              "ko": "실수해서 민망했어요.",
+              "en": "I felt embarrassed because I made a mistake."
+            },
+            {
+              "ko": "괜찮아요. 신경 쓰지 마세요.",
+              "en": "It's okay. Don't worry about it."
+            },
+            {
+              "ko": "정말 감사해요.",
+              "en": "I'm really grateful."
+            }
+          ]
+        },
+        {
+          "targetKey": "emotion2_worried_weather",
+          "ko": "날씨 때문에 조금 걱정돼요.",
+          "en": "I'm a little worried about the weather.",
+          "sentenceKo": "날씨 때문에 조금 걱정돼요.",
+          "sentenceEn": "I'm a little worried about the weather.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "여행 생각을 하니 신이 나요.",
+              "en": "I'm excited when I think about the trip."
+            },
+            {
+              "ko": "실수해서 민망했어요.",
+              "en": "I felt embarrassed because I made a mistake."
+            },
+            {
+              "ko": "괜찮아요. 신경 쓰지 마세요.",
+              "en": "It's okay. Don't worry about it."
+            },
+            {
+              "ko": "정말 감사해요.",
+              "en": "I'm really grateful."
+            },
+            {
+              "ko": "문제없어요.",
+              "en": "No problem."
+            }
+          ]
+        },
+        {
+          "targetKey": "emotion2_excited_trip2",
+          "ko": "여행 생각을 하니 신이 나요.",
+          "en": "I'm excited when I think about the trip.",
+          "sentenceKo": "여행 생각을 하니 신이 나요.",
+          "sentenceEn": "I'm excited when I think about the trip.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "실수해서 민망했어요.",
+              "en": "I felt embarrassed because I made a mistake."
+            },
+            {
+              "ko": "괜찮아요. 신경 쓰지 마세요.",
+              "en": "It's okay. Don't worry about it."
+            },
+            {
+              "ko": "정말 감사해요.",
+              "en": "I'm really grateful."
+            },
+            {
+              "ko": "문제없어요.",
+              "en": "No problem."
+            },
+            {
+              "ko": "늦어서 죄송해요.",
+              "en": "I'm sorry I'm late."
+            }
+          ]
+        },
+        {
+          "targetKey": "emotion2_embarrassed_mistake2",
+          "ko": "실수해서 민망했어요.",
+          "en": "I felt embarrassed because I made a mistake.",
+          "sentenceKo": "실수해서 민망했어요.",
+          "sentenceEn": "I felt embarrassed because I made a mistake.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "괜찮아요. 신경 쓰지 마세요.",
+              "en": "It's okay. Don't worry about it."
+            },
+            {
+              "ko": "정말 감사해요.",
+              "en": "I'm really grateful."
+            },
+            {
+              "ko": "문제없어요.",
+              "en": "No problem."
+            },
+            {
+              "ko": "늦어서 죄송해요.",
+              "en": "I'm sorry I'm late."
+            },
+            {
+              "ko": "친절하게 도와주셔서 감사합니다.",
+              "en": "Thank you for your kindness."
+            }
+          ]
+        },
+        {
+          "targetKey": "emotion2_its_okay",
+          "ko": "괜찮아요. 신경 쓰지 마세요.",
+          "en": "It's okay. Don't worry about it.",
+          "sentenceKo": "괜찮아요. 신경 쓰지 마세요.",
+          "sentenceEn": "It's okay. Don't worry about it.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "정말 감사해요.",
+              "en": "I'm really grateful."
+            },
+            {
+              "ko": "문제없어요.",
+              "en": "No problem."
+            },
+            {
+              "ko": "늦어서 죄송해요.",
+              "en": "I'm sorry I'm late."
+            },
+            {
+              "ko": "친절하게 도와주셔서 감사합니다.",
+              "en": "Thank you for your kindness."
+            },
+            {
+              "ko": "지금 조금 긴장돼요.",
+              "en": "I'm a little nervous right now."
+            }
+          ]
+        },
+        {
+          "targetKey": "emotion2_really_grateful",
+          "ko": "정말 감사해요.",
+          "en": "I'm really grateful.",
+          "sentenceKo": "정말 감사해요.",
+          "sentenceEn": "I'm really grateful.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "문제없어요.",
+              "en": "No problem."
+            },
+            {
+              "ko": "늦어서 죄송해요.",
+              "en": "I'm sorry I'm late."
+            },
+            {
+              "ko": "친절하게 도와주셔서 감사합니다.",
+              "en": "Thank you for your kindness."
+            },
+            {
+              "ko": "지금 조금 긴장돼요.",
+              "en": "I'm a little nervous right now."
+            },
+            {
+              "ko": "좋은 소식을 들어서 기뻐요.",
+              "en": "I'm happy to hear the good news."
+            }
+          ]
+        },
+        {
+          "targetKey": "emotion2_no_problem",
+          "ko": "문제없어요.",
+          "en": "No problem.",
+          "sentenceKo": "문제없어요.",
+          "sentenceEn": "No problem.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "늦어서 죄송해요.",
+              "en": "I'm sorry I'm late."
+            },
+            {
+              "ko": "친절하게 도와주셔서 감사합니다.",
+              "en": "Thank you for your kindness."
+            },
+            {
+              "ko": "지금 조금 긴장돼요.",
+              "en": "I'm a little nervous right now."
+            },
+            {
+              "ko": "좋은 소식을 들어서 기뻐요.",
+              "en": "I'm happy to hear the good news."
+            },
+            {
+              "ko": "날씨 때문에 조금 걱정돼요.",
+              "en": "I'm a little worried about the weather."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 10,
+      "title": "도움과 여행",
+      "description": "여행 중 도움을 요청하는 표현을 익혀요.",
+      "stages": [
+        {
+          "targetKey": "travel_take_picture",
+          "ko": "사진 좀 찍어주실 수 있나요?",
+          "en": "Could you take a picture for me?",
+          "sentenceKo": "사진 좀 찍어주실 수 있나요?",
+          "sentenceEn": "Could you take a picture for me?",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "짐 좀 들어주실 수 있나요?",
+              "en": "Could you help me with my luggage?"
+            },
+            {
+              "ko": "몇 번 승강장인지 알려주실래요?",
+              "en": "Could you tell me which platform it is?"
+            },
+            {
+              "ko": "지도가 필요해요.",
+              "en": "I need a map."
+            },
+            {
+              "ko": "지갑을 잃어버린 것 같아요.",
+              "en": "I think I lost my wallet."
+            },
+            {
+              "ko": "화장실이 어디인지 아세요?",
+              "en": "Do you know where the restroom is?"
+            }
+          ]
+        },
+        {
+          "targetKey": "travel_help_luggage",
+          "ko": "짐 좀 들어주실 수 있나요?",
+          "en": "Could you help me with my luggage?",
+          "sentenceKo": "짐 좀 들어주실 수 있나요?",
+          "sentenceEn": "Could you help me with my luggage?",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "몇 번 승강장인지 알려주실래요?",
+              "en": "Could you tell me which platform it is?"
+            },
+            {
+              "ko": "지도가 필요해요.",
+              "en": "I need a map."
+            },
+            {
+              "ko": "지갑을 잃어버린 것 같아요.",
+              "en": "I think I lost my wallet."
+            },
+            {
+              "ko": "화장실이 어디인지 아세요?",
+              "en": "Do you know where the restroom is?"
+            },
+            {
+              "ko": "체크인은 어디서 하나요?",
+              "en": "Where do I check in?"
+            }
+          ]
+        },
+        {
+          "targetKey": "travel_where_platform",
+          "ko": "몇 번 승강장인지 알려주실래요?",
+          "en": "Could you tell me which platform it is?",
+          "sentenceKo": "몇 번 승강장인지 알려주실래요?",
+          "sentenceEn": "Could you tell me which platform it is?",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "지도가 필요해요.",
+              "en": "I need a map."
+            },
+            {
+              "ko": "지갑을 잃어버린 것 같아요.",
+              "en": "I think I lost my wallet."
+            },
+            {
+              "ko": "화장실이 어디인지 아세요?",
+              "en": "Do you know where the restroom is?"
+            },
+            {
+              "ko": "체크인은 어디서 하나요?",
+              "en": "Where do I check in?"
+            },
+            {
+              "ko": "창가 자리로 바꿔주실 수 있나요?",
+              "en": "Could you change it to a window seat?"
+            }
+          ]
+        },
+        {
+          "targetKey": "travel_need_map",
+          "ko": "지도가 필요해요.",
+          "en": "I need a map.",
+          "sentenceKo": "지도가 필요해요.",
+          "sentenceEn": "I need a map.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "지갑을 잃어버린 것 같아요.",
+              "en": "I think I lost my wallet."
+            },
+            {
+              "ko": "화장실이 어디인지 아세요?",
+              "en": "Do you know where the restroom is?"
+            },
+            {
+              "ko": "체크인은 어디서 하나요?",
+              "en": "Where do I check in?"
+            },
+            {
+              "ko": "창가 자리로 바꿔주실 수 있나요?",
+              "en": "Could you change it to a window seat?"
+            },
+            {
+              "ko": "충전할 곳이 필요해요.",
+              "en": "I need a place to charge my phone."
+            }
+          ]
+        },
+        {
+          "targetKey": "travel_lost_wallet",
+          "ko": "지갑을 잃어버린 것 같아요.",
+          "en": "I think I lost my wallet.",
+          "sentenceKo": "지갑을 잃어버린 것 같아요.",
+          "sentenceEn": "I think I lost my wallet.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "화장실이 어디인지 아세요?",
+              "en": "Do you know where the restroom is?"
+            },
+            {
+              "ko": "체크인은 어디서 하나요?",
+              "en": "Where do I check in?"
+            },
+            {
+              "ko": "창가 자리로 바꿔주실 수 있나요?",
+              "en": "Could you change it to a window seat?"
+            },
+            {
+              "ko": "충전할 곳이 필요해요.",
+              "en": "I need a place to charge my phone."
+            },
+            {
+              "ko": "다시 한 번 감사드립니다.",
+              "en": "Thank you again."
+            }
+          ]
+        },
+        {
+          "targetKey": "travel_where_restroom",
+          "ko": "화장실이 어디인지 아세요?",
+          "en": "Do you know where the restroom is?",
+          "sentenceKo": "화장실이 어디인지 아세요?",
+          "sentenceEn": "Do you know where the restroom is?",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "체크인은 어디서 하나요?",
+              "en": "Where do I check in?"
+            },
+            {
+              "ko": "창가 자리로 바꿔주실 수 있나요?",
+              "en": "Could you change it to a window seat?"
+            },
+            {
+              "ko": "충전할 곳이 필요해요.",
+              "en": "I need a place to charge my phone."
+            },
+            {
+              "ko": "다시 한 번 감사드립니다.",
+              "en": "Thank you again."
+            },
+            {
+              "ko": "사진 좀 찍어주실 수 있나요?",
+              "en": "Could you take a picture for me?"
+            }
+          ]
+        },
+        {
+          "targetKey": "travel_check_in",
+          "ko": "체크인은 어디서 하나요?",
+          "en": "Where do I check in?",
+          "sentenceKo": "체크인은 어디서 하나요?",
+          "sentenceEn": "Where do I check in?",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "창가 자리로 바꿔주실 수 있나요?",
+              "en": "Could you change it to a window seat?"
+            },
+            {
+              "ko": "충전할 곳이 필요해요.",
+              "en": "I need a place to charge my phone."
+            },
+            {
+              "ko": "다시 한 번 감사드립니다.",
+              "en": "Thank you again."
+            },
+            {
+              "ko": "사진 좀 찍어주실 수 있나요?",
+              "en": "Could you take a picture for me?"
+            },
+            {
+              "ko": "짐 좀 들어주실 수 있나요?",
+              "en": "Could you help me with my luggage?"
+            }
+          ]
+        },
+        {
+          "targetKey": "travel_window_seat",
+          "ko": "창가 자리로 바꿔주실 수 있나요?",
+          "en": "Could you change it to a window seat?",
+          "sentenceKo": "창가 자리로 바꿔주실 수 있나요?",
+          "sentenceEn": "Could you change it to a window seat?",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "충전할 곳이 필요해요.",
+              "en": "I need a place to charge my phone."
+            },
+            {
+              "ko": "다시 한 번 감사드립니다.",
+              "en": "Thank you again."
+            },
+            {
+              "ko": "사진 좀 찍어주실 수 있나요?",
+              "en": "Could you take a picture for me?"
+            },
+            {
+              "ko": "짐 좀 들어주실 수 있나요?",
+              "en": "Could you help me with my luggage?"
+            },
+            {
+              "ko": "몇 번 승강장인지 알려주실래요?",
+              "en": "Could you tell me which platform it is?"
+            }
+          ]
+        },
+        {
+          "targetKey": "travel_need_charger",
+          "ko": "충전할 곳이 필요해요.",
+          "en": "I need a place to charge my phone.",
+          "sentenceKo": "충전할 곳이 필요해요.",
+          "sentenceEn": "I need a place to charge my phone.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "다시 한 번 감사드립니다.",
+              "en": "Thank you again."
+            },
+            {
+              "ko": "사진 좀 찍어주실 수 있나요?",
+              "en": "Could you take a picture for me?"
+            },
+            {
+              "ko": "짐 좀 들어주실 수 있나요?",
+              "en": "Could you help me with my luggage?"
+            },
+            {
+              "ko": "몇 번 승강장인지 알려주실래요?",
+              "en": "Could you tell me which platform it is?"
+            },
+            {
+              "ko": "지도가 필요해요.",
+              "en": "I need a map."
+            }
+          ]
+        },
+        {
+          "targetKey": "travel_thanks_again",
+          "ko": "다시 한 번 감사드립니다.",
+          "en": "Thank you again.",
+          "sentenceKo": "다시 한 번 감사드립니다.",
+          "sentenceEn": "Thank you again.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "사진 좀 찍어주실 수 있나요?",
+              "en": "Could you take a picture for me?"
+            },
+            {
+              "ko": "짐 좀 들어주실 수 있나요?",
+              "en": "Could you help me with my luggage?"
+            },
+            {
+              "ko": "몇 번 승강장인지 알려주실래요?",
+              "en": "Could you tell me which platform it is?"
+            },
+            {
+              "ko": "지도가 필요해요.",
+              "en": "I need a map."
+            },
+            {
+              "ko": "지갑을 잃어버린 것 같아요.",
+              "en": "I think I lost my wallet."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -11,12 +11,12 @@ export function DifficultySelectPage() {
 
   return (
     <PageFrame contentClassName="gap-5">
-      <CuteTopBar title="난이도 선택" backTo="/home" variant="plain" />
+      <CuteTopBar title="코스 선택" backTo="/home" variant="plain" />
 
       <section className="game-card bg-white/78 px-5 py-5">
         <p className="text-sm font-black text-[#ee9d92]">오늘의 마라닝 코스</p>
         <h1 className="mt-2 text-2xl font-black tracking-tight text-[#7b4d32]">
-          진행할 난이도를 골라봐!
+          진행할 코스를 골라봐!
         </h1>
         <p className="mt-2 text-sm font-semibold text-[#9a6d4d]"></p>
       </section>

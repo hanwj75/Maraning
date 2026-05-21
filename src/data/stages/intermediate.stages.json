@@ -4,26 +4,26 @@
     "difficulty": "intermediate",
     "chapterId": "intermediate_chapter_001",
     "order": 1,
-    "title": "사과 좋아하기",
-    "description": "나는 사과를 좋아합니다 문장을 10문제로 반복 학습한다",
+    "title": "현재 습관 01",
+    "description": "저는 매일 아침 물을 마십니다 학습 목표를 10문제로 반복 학습한다",
     "learningTarget": {
-      "id": "intermediate.target.like-apples",
-      "ko": "나는 사과를 좋아합니다",
-      "en": "I like apples",
-      "sentenceKo": "나는 사과를 좋아합니다",
-      "sentenceEn": "I like apples"
+      "id": "intermediate.target.routine_drink_water",
+      "ko": "저는 매일 아침 물을 마십니다.",
+      "en": "I drink water every morning.",
+      "sentenceKo": "저는 매일 아침 물을 마십니다",
+      "sentenceEn": "I drink water every morning"
     },
     "quizIds": [
-      "intermediate.quiz.001",
-      "intermediate.quiz.002",
-      "intermediate.quiz.003",
-      "intermediate.quiz.004",
-      "intermediate.quiz.005",
-      "intermediate.quiz.006",
-      "intermediate.quiz.007",
-      "intermediate.quiz.008",
-      "intermediate.quiz.009",
-      "intermediate.quiz.010"
+      "intermediate.quiz.0001",
+      "intermediate.quiz.0002",
+      "intermediate.quiz.0003",
+      "intermediate.quiz.0004",
+      "intermediate.quiz.0005",
+      "intermediate.quiz.0006",
+      "intermediate.quiz.0007",
+      "intermediate.quiz.0008",
+      "intermediate.quiz.0009",
+      "intermediate.quiz.0010"
     ],
     "requiredStageId": null
   },
@@ -32,27 +32,2771 @@
     "difficulty": "intermediate",
     "chapterId": "intermediate_chapter_001",
     "order": 2,
-    "title": "축구 좋아하기",
-    "description": "나는 축구를 좋아합니다 문장을 10문제로 반복 학습한다",
+    "title": "현재 습관 02",
+    "description": "저는 매일 저녁 강아지를 산책시킵니다 학습 목표를 10문제로 반복 학습한다",
     "learningTarget": {
-      "id": "intermediate.target.like-soccer",
-      "ko": "나는 축구를 좋아합니다",
-      "en": "I like soccer",
-      "sentenceKo": "나는 축구를 좋아합니다",
-      "sentenceEn": "I like soccer"
+      "id": "intermediate.target.routine_walk_dog",
+      "ko": "저는 매일 저녁 강아지를 산책시킵니다.",
+      "en": "I walk my dog every evening.",
+      "sentenceKo": "저는 매일 저녁 강아지를 산책시킵니다",
+      "sentenceEn": "I walk my dog every evening"
     },
     "quizIds": [
-      "intermediate.quiz.011",
-      "intermediate.quiz.012",
-      "intermediate.quiz.013",
-      "intermediate.quiz.014",
-      "intermediate.quiz.015",
-      "intermediate.quiz.016",
-      "intermediate.quiz.017",
-      "intermediate.quiz.018",
-      "intermediate.quiz.019",
-      "intermediate.quiz.020"
+      "intermediate.quiz.0011",
+      "intermediate.quiz.0012",
+      "intermediate.quiz.0013",
+      "intermediate.quiz.0014",
+      "intermediate.quiz.0015",
+      "intermediate.quiz.0016",
+      "intermediate.quiz.0017",
+      "intermediate.quiz.0018",
+      "intermediate.quiz.0019",
+      "intermediate.quiz.0020"
     ],
     "requiredStageId": "intermediate.stage.001"
+  },
+  {
+    "id": "intermediate.stage.003",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_001",
+    "order": 3,
+    "title": "현재 습관 03",
+    "description": "저는 방과 후에 도서관에서 공부합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.routine_study_library",
+      "ko": "저는 방과 후에 도서관에서 공부합니다.",
+      "en": "I study at the library after school.",
+      "sentenceKo": "저는 방과 후에 도서관에서 공부합니다",
+      "sentenceEn": "I study at the library after school"
+    },
+    "quizIds": [
+      "intermediate.quiz.0021",
+      "intermediate.quiz.0022",
+      "intermediate.quiz.0023",
+      "intermediate.quiz.0024",
+      "intermediate.quiz.0025",
+      "intermediate.quiz.0026",
+      "intermediate.quiz.0027",
+      "intermediate.quiz.0028",
+      "intermediate.quiz.0029",
+      "intermediate.quiz.0030"
+    ],
+    "requiredStageId": "intermediate.stage.002"
+  },
+  {
+    "id": "intermediate.stage.004",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_001",
+    "order": 4,
+    "title": "현재 습관 04",
+    "description": "저는 아침마다 이메일을 확인합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.routine_check_email",
+      "ko": "저는 아침마다 이메일을 확인합니다.",
+      "en": "I check my email every morning.",
+      "sentenceKo": "저는 아침마다 이메일을 확인합니다",
+      "sentenceEn": "I check my email every morning"
+    },
+    "quizIds": [
+      "intermediate.quiz.0031",
+      "intermediate.quiz.0032",
+      "intermediate.quiz.0033",
+      "intermediate.quiz.0034",
+      "intermediate.quiz.0035",
+      "intermediate.quiz.0036",
+      "intermediate.quiz.0037",
+      "intermediate.quiz.0038",
+      "intermediate.quiz.0039",
+      "intermediate.quiz.0040"
+    ],
+    "requiredStageId": "intermediate.stage.003"
+  },
+  {
+    "id": "intermediate.stage.005",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_001",
+    "order": 5,
+    "title": "현재 습관 05",
+    "description": "저는 보통 집에서 저녁을 요리합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.routine_cook_dinner",
+      "ko": "저는 보통 집에서 저녁을 요리합니다.",
+      "en": "I usually cook dinner at home.",
+      "sentenceKo": "저는 보통 집에서 저녁을 요리합니다",
+      "sentenceEn": "I usually cook dinner at home"
+    },
+    "quizIds": [
+      "intermediate.quiz.0041",
+      "intermediate.quiz.0042",
+      "intermediate.quiz.0043",
+      "intermediate.quiz.0044",
+      "intermediate.quiz.0045",
+      "intermediate.quiz.0046",
+      "intermediate.quiz.0047",
+      "intermediate.quiz.0048",
+      "intermediate.quiz.0049",
+      "intermediate.quiz.0050"
+    ],
+    "requiredStageId": "intermediate.stage.004"
+  },
+  {
+    "id": "intermediate.stage.006",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_001",
+    "order": 6,
+    "title": "현재 습관 06",
+    "description": "저는 출근 전에 뉴스를 읽습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.routine_read_news",
+      "ko": "저는 출근 전에 뉴스를 읽습니다.",
+      "en": "I read the news before work.",
+      "sentenceKo": "저는 출근 전에 뉴스를 읽습니다",
+      "sentenceEn": "I read the news before work"
+    },
+    "quizIds": [
+      "intermediate.quiz.0051",
+      "intermediate.quiz.0052",
+      "intermediate.quiz.0053",
+      "intermediate.quiz.0054",
+      "intermediate.quiz.0055",
+      "intermediate.quiz.0056",
+      "intermediate.quiz.0057",
+      "intermediate.quiz.0058",
+      "intermediate.quiz.0059",
+      "intermediate.quiz.0060"
+    ],
+    "requiredStageId": "intermediate.stage.005"
+  },
+  {
+    "id": "intermediate.stage.007",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_001",
+    "order": 7,
+    "title": "현재 습관 07",
+    "description": "저는 학교에 갈 때 버스를 탑니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.routine_take_bus",
+      "ko": "저는 학교에 갈 때 버스를 탑니다.",
+      "en": "I take the bus to school.",
+      "sentenceKo": "저는 학교에 갈 때 버스를 탑니다",
+      "sentenceEn": "I take the bus to school"
+    },
+    "quizIds": [
+      "intermediate.quiz.0061",
+      "intermediate.quiz.0062",
+      "intermediate.quiz.0063",
+      "intermediate.quiz.0064",
+      "intermediate.quiz.0065",
+      "intermediate.quiz.0066",
+      "intermediate.quiz.0067",
+      "intermediate.quiz.0068",
+      "intermediate.quiz.0069",
+      "intermediate.quiz.0070"
+    ],
+    "requiredStageId": "intermediate.stage.006"
+  },
+  {
+    "id": "intermediate.stage.008",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_001",
+    "order": 8,
+    "title": "현재 습관 08",
+    "description": "저는 주말마다 피아노를 연습합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.routine_practice_piano",
+      "ko": "저는 주말마다 피아노를 연습합니다.",
+      "en": "I practice the piano every weekend.",
+      "sentenceKo": "저는 주말마다 피아노를 연습합니다",
+      "sentenceEn": "I practice the piano every weekend"
+    },
+    "quizIds": [
+      "intermediate.quiz.0071",
+      "intermediate.quiz.0072",
+      "intermediate.quiz.0073",
+      "intermediate.quiz.0074",
+      "intermediate.quiz.0075",
+      "intermediate.quiz.0076",
+      "intermediate.quiz.0077",
+      "intermediate.quiz.0078",
+      "intermediate.quiz.0079",
+      "intermediate.quiz.0080"
+    ],
+    "requiredStageId": "intermediate.stage.007"
+  },
+  {
+    "id": "intermediate.stage.009",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_001",
+    "order": 9,
+    "title": "현재 습관 09",
+    "description": "저는 토요일마다 방을 청소합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.routine_clean_room",
+      "ko": "저는 토요일마다 방을 청소합니다.",
+      "en": "I clean my room every Saturday.",
+      "sentenceKo": "저는 토요일마다 방을 청소합니다",
+      "sentenceEn": "I clean my room every Saturday"
+    },
+    "quizIds": [
+      "intermediate.quiz.0081",
+      "intermediate.quiz.0082",
+      "intermediate.quiz.0083",
+      "intermediate.quiz.0084",
+      "intermediate.quiz.0085",
+      "intermediate.quiz.0086",
+      "intermediate.quiz.0087",
+      "intermediate.quiz.0088",
+      "intermediate.quiz.0089",
+      "intermediate.quiz.0090"
+    ],
+    "requiredStageId": "intermediate.stage.008"
+  },
+  {
+    "id": "intermediate.stage.010",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_001",
+    "order": 10,
+    "title": "현재 습관 10",
+    "description": "저는 일요일마다 부모님께 전화합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.routine_call_parents",
+      "ko": "저는 일요일마다 부모님께 전화합니다.",
+      "en": "I call my parents every Sunday.",
+      "sentenceKo": "저는 일요일마다 부모님께 전화합니다",
+      "sentenceEn": "I call my parents every Sunday"
+    },
+    "quizIds": [
+      "intermediate.quiz.0091",
+      "intermediate.quiz.0092",
+      "intermediate.quiz.0093",
+      "intermediate.quiz.0094",
+      "intermediate.quiz.0095",
+      "intermediate.quiz.0096",
+      "intermediate.quiz.0097",
+      "intermediate.quiz.0098",
+      "intermediate.quiz.0099",
+      "intermediate.quiz.0100"
+    ],
+    "requiredStageId": "intermediate.stage.009"
+  },
+  {
+    "id": "intermediate.stage.011",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_002",
+    "order": 1,
+    "title": "저는 어제 공원에 갔습니다 익히기",
+    "description": "저는 어제 공원에 갔습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.past_went_park",
+      "ko": "저는 어제 공원에 갔습니다.",
+      "en": "I went to the park yesterday.",
+      "sentenceKo": "저는 어제 공원에 갔습니다",
+      "sentenceEn": "I went to the park yesterday"
+    },
+    "quizIds": [
+      "intermediate.quiz.0101",
+      "intermediate.quiz.0102",
+      "intermediate.quiz.0103",
+      "intermediate.quiz.0104",
+      "intermediate.quiz.0105",
+      "intermediate.quiz.0106",
+      "intermediate.quiz.0107",
+      "intermediate.quiz.0108",
+      "intermediate.quiz.0109",
+      "intermediate.quiz.0110"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "intermediate.stage.012",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_002",
+    "order": 2,
+    "title": "과거 경험 02",
+    "description": "저는 지난밤에 책을 읽었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.past_read_book",
+      "ko": "저는 지난밤에 책을 읽었습니다.",
+      "en": "I read a book last night.",
+      "sentenceKo": "저는 지난밤에 책을 읽었습니다",
+      "sentenceEn": "I read a book last night"
+    },
+    "quizIds": [
+      "intermediate.quiz.0111",
+      "intermediate.quiz.0112",
+      "intermediate.quiz.0113",
+      "intermediate.quiz.0114",
+      "intermediate.quiz.0115",
+      "intermediate.quiz.0116",
+      "intermediate.quiz.0117",
+      "intermediate.quiz.0118",
+      "intermediate.quiz.0119",
+      "intermediate.quiz.0120"
+    ],
+    "requiredStageId": "intermediate.stage.011"
+  },
+  {
+    "id": "intermediate.stage.013",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_002",
+    "order": 3,
+    "title": "과거 경험 03",
+    "description": "저는 주말에 영화를 봤습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.past_watched_movie",
+      "ko": "저는 주말에 영화를 봤습니다.",
+      "en": "I watched a movie on the weekend.",
+      "sentenceKo": "저는 주말에 영화를 봤습니다",
+      "sentenceEn": "I watched a movie on the weekend"
+    },
+    "quizIds": [
+      "intermediate.quiz.0121",
+      "intermediate.quiz.0122",
+      "intermediate.quiz.0123",
+      "intermediate.quiz.0124",
+      "intermediate.quiz.0125",
+      "intermediate.quiz.0126",
+      "intermediate.quiz.0127",
+      "intermediate.quiz.0128",
+      "intermediate.quiz.0129",
+      "intermediate.quiz.0130"
+    ],
+    "requiredStageId": "intermediate.stage.012"
+  },
+  {
+    "id": "intermediate.stage.014",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_002",
+    "order": 4,
+    "title": "과거 경험 04",
+    "description": "저는 어제 친구를 만났습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.past_met_friend",
+      "ko": "저는 어제 친구를 만났습니다.",
+      "en": "I met my friend yesterday.",
+      "sentenceKo": "저는 어제 친구를 만났습니다",
+      "sentenceEn": "I met my friend yesterday"
+    },
+    "quizIds": [
+      "intermediate.quiz.0131",
+      "intermediate.quiz.0132",
+      "intermediate.quiz.0133",
+      "intermediate.quiz.0134",
+      "intermediate.quiz.0135",
+      "intermediate.quiz.0136",
+      "intermediate.quiz.0137",
+      "intermediate.quiz.0138",
+      "intermediate.quiz.0139",
+      "intermediate.quiz.0140"
+    ],
+    "requiredStageId": "intermediate.stage.013"
+  },
+  {
+    "id": "intermediate.stage.015",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_002",
+    "order": 5,
+    "title": "과거 경험 05",
+    "description": "저는 지난주에 신발을 샀습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.past_bought_shoes",
+      "ko": "저는 지난주에 신발을 샀습니다.",
+      "en": "I bought shoes last week.",
+      "sentenceKo": "저는 지난주에 신발을 샀습니다",
+      "sentenceEn": "I bought shoes last week"
+    },
+    "quizIds": [
+      "intermediate.quiz.0141",
+      "intermediate.quiz.0142",
+      "intermediate.quiz.0143",
+      "intermediate.quiz.0144",
+      "intermediate.quiz.0145",
+      "intermediate.quiz.0146",
+      "intermediate.quiz.0147",
+      "intermediate.quiz.0148",
+      "intermediate.quiz.0149",
+      "intermediate.quiz.0150"
+    ],
+    "requiredStageId": "intermediate.stage.014"
+  },
+  {
+    "id": "intermediate.stage.016",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_002",
+    "order": 6,
+    "title": "과거 경험 06",
+    "description": "저는 일요일에 할머니를 방문했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.past_visited_grandma",
+      "ko": "저는 일요일에 할머니를 방문했습니다.",
+      "en": "I visited my grandmother on Sunday.",
+      "sentenceKo": "저는 일요일에 할머니를 방문했습니다",
+      "sentenceEn": "I visited my grandmother on Sunday"
+    },
+    "quizIds": [
+      "intermediate.quiz.0151",
+      "intermediate.quiz.0152",
+      "intermediate.quiz.0153",
+      "intermediate.quiz.0154",
+      "intermediate.quiz.0155",
+      "intermediate.quiz.0156",
+      "intermediate.quiz.0157",
+      "intermediate.quiz.0158",
+      "intermediate.quiz.0159",
+      "intermediate.quiz.0160"
+    ],
+    "requiredStageId": "intermediate.stage.015"
+  },
+  {
+    "id": "intermediate.stage.017",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_002",
+    "order": 7,
+    "title": "과거 경험 07",
+    "description": "저는 아침에 열쇠를 잃어버렸습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.past_lost_key",
+      "ko": "저는 아침에 열쇠를 잃어버렸습니다.",
+      "en": "I lost my key this morning.",
+      "sentenceKo": "저는 아침에 열쇠를 잃어버렸습니다",
+      "sentenceEn": "I lost my key this morning"
+    },
+    "quizIds": [
+      "intermediate.quiz.0161",
+      "intermediate.quiz.0162",
+      "intermediate.quiz.0163",
+      "intermediate.quiz.0164",
+      "intermediate.quiz.0165",
+      "intermediate.quiz.0166",
+      "intermediate.quiz.0167",
+      "intermediate.quiz.0168",
+      "intermediate.quiz.0169",
+      "intermediate.quiz.0170"
+    ],
+    "requiredStageId": "intermediate.stage.016"
+  },
+  {
+    "id": "intermediate.stage.018",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_002",
+    "order": 8,
+    "title": "과거 경험 08",
+    "description": "저는 저녁 전에 숙제를 끝냈습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.past_finished_homework",
+      "ko": "저는 저녁 전에 숙제를 끝냈습니다.",
+      "en": "I finished my homework before dinner.",
+      "sentenceKo": "저는 저녁 전에 숙제를 끝냈습니다",
+      "sentenceEn": "I finished my homework before dinner"
+    },
+    "quizIds": [
+      "intermediate.quiz.0171",
+      "intermediate.quiz.0172",
+      "intermediate.quiz.0173",
+      "intermediate.quiz.0174",
+      "intermediate.quiz.0175",
+      "intermediate.quiz.0176",
+      "intermediate.quiz.0177",
+      "intermediate.quiz.0178",
+      "intermediate.quiz.0179",
+      "intermediate.quiz.0180"
+    ],
+    "requiredStageId": "intermediate.stage.017"
+  },
+  {
+    "id": "intermediate.stage.019",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_002",
+    "order": 9,
+    "title": "과거 경험 09",
+    "description": "저는 점심시간에 메시지를 보냈습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.past_sent_message",
+      "ko": "저는 점심시간에 메시지를 보냈습니다.",
+      "en": "I sent a message at lunch.",
+      "sentenceKo": "저는 점심시간에 메시지를 보냈습니다",
+      "sentenceEn": "I sent a message at lunch"
+    },
+    "quizIds": [
+      "intermediate.quiz.0181",
+      "intermediate.quiz.0182",
+      "intermediate.quiz.0183",
+      "intermediate.quiz.0184",
+      "intermediate.quiz.0185",
+      "intermediate.quiz.0186",
+      "intermediate.quiz.0187",
+      "intermediate.quiz.0188",
+      "intermediate.quiz.0189",
+      "intermediate.quiz.0190"
+    ],
+    "requiredStageId": "intermediate.stage.018"
+  },
+  {
+    "id": "intermediate.stage.020",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_002",
+    "order": 10,
+    "title": "과거 경험 10",
+    "description": "저는 여행 중에 사진을 찍었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.past_took_photo",
+      "ko": "저는 여행 중에 사진을 찍었습니다.",
+      "en": "I took a picture during the trip.",
+      "sentenceKo": "저는 여행 중에 사진을 찍었습니다",
+      "sentenceEn": "I took a picture during the trip"
+    },
+    "quizIds": [
+      "intermediate.quiz.0191",
+      "intermediate.quiz.0192",
+      "intermediate.quiz.0193",
+      "intermediate.quiz.0194",
+      "intermediate.quiz.0195",
+      "intermediate.quiz.0196",
+      "intermediate.quiz.0197",
+      "intermediate.quiz.0198",
+      "intermediate.quiz.0199",
+      "intermediate.quiz.0200"
+    ],
+    "requiredStageId": "intermediate.stage.019"
+  },
+  {
+    "id": "intermediate.stage.021",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_003",
+    "order": 1,
+    "title": "미래 계획 01",
+    "description": "저는 내일 책을 읽을 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.future_read_tomorrow",
+      "ko": "저는 내일 책을 읽을 것입니다.",
+      "en": "I will read a book tomorrow.",
+      "sentenceKo": "저는 내일 책을 읽을 것입니다",
+      "sentenceEn": "I will read a book tomorrow"
+    },
+    "quizIds": [
+      "intermediate.quiz.0201",
+      "intermediate.quiz.0202",
+      "intermediate.quiz.0203",
+      "intermediate.quiz.0204",
+      "intermediate.quiz.0205",
+      "intermediate.quiz.0206",
+      "intermediate.quiz.0207",
+      "intermediate.quiz.0208",
+      "intermediate.quiz.0209",
+      "intermediate.quiz.0210"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "intermediate.stage.022",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_003",
+    "order": 2,
+    "title": "미래 계획 02",
+    "description": "저는 주말에 이모를 방문할 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.future_visit_aunt",
+      "ko": "저는 주말에 이모를 방문할 것입니다.",
+      "en": "I will visit my aunt this weekend.",
+      "sentenceKo": "저는 주말에 이모를 방문할 것입니다",
+      "sentenceEn": "I will visit my aunt this weekend"
+    },
+    "quizIds": [
+      "intermediate.quiz.0211",
+      "intermediate.quiz.0212",
+      "intermediate.quiz.0213",
+      "intermediate.quiz.0214",
+      "intermediate.quiz.0215",
+      "intermediate.quiz.0216",
+      "intermediate.quiz.0217",
+      "intermediate.quiz.0218",
+      "intermediate.quiz.0219",
+      "intermediate.quiz.0220"
+    ],
+    "requiredStageId": "intermediate.stage.021"
+  },
+  {
+    "id": "intermediate.stage.023",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_003",
+    "order": 3,
+    "title": "미래 계획 03",
+    "description": "저는 오늘 밤 시험 공부를 할 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.future_study_test",
+      "ko": "저는 오늘 밤 시험 공부를 할 것입니다.",
+      "en": "I will study for the test tonight.",
+      "sentenceKo": "저는 오늘 밤 시험 공부를 할 것입니다",
+      "sentenceEn": "I will study for the test tonight"
+    },
+    "quizIds": [
+      "intermediate.quiz.0221",
+      "intermediate.quiz.0222",
+      "intermediate.quiz.0223",
+      "intermediate.quiz.0224",
+      "intermediate.quiz.0225",
+      "intermediate.quiz.0226",
+      "intermediate.quiz.0227",
+      "intermediate.quiz.0228",
+      "intermediate.quiz.0229",
+      "intermediate.quiz.0230"
+    ],
+    "requiredStageId": "intermediate.stage.022"
+  },
+  {
+    "id": "intermediate.stage.024",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_003",
+    "order": 4,
+    "title": "미래 계획 04",
+    "description": "저는 다음 달에 새 가방을 살 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.future_buy_bag",
+      "ko": "저는 다음 달에 새 가방을 살 것입니다.",
+      "en": "I will buy a new bag next month.",
+      "sentenceKo": "저는 다음 달에 새 가방을 살 것입니다",
+      "sentenceEn": "I will buy a new bag next month"
+    },
+    "quizIds": [
+      "intermediate.quiz.0231",
+      "intermediate.quiz.0232",
+      "intermediate.quiz.0233",
+      "intermediate.quiz.0234",
+      "intermediate.quiz.0235",
+      "intermediate.quiz.0236",
+      "intermediate.quiz.0237",
+      "intermediate.quiz.0238",
+      "intermediate.quiz.0239",
+      "intermediate.quiz.0240"
+    ],
+    "requiredStageId": "intermediate.stage.023"
+  },
+  {
+    "id": "intermediate.stage.025",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_003",
+    "order": 5,
+    "title": "미래 계획 05",
+    "description": "저는 나중에 매니저에게 전화할 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.future_call_manager",
+      "ko": "저는 나중에 매니저에게 전화할 것입니다.",
+      "en": "I will call the manager later.",
+      "sentenceKo": "저는 나중에 매니저에게 전화할 것입니다",
+      "sentenceEn": "I will call the manager later"
+    },
+    "quizIds": [
+      "intermediate.quiz.0241",
+      "intermediate.quiz.0242",
+      "intermediate.quiz.0243",
+      "intermediate.quiz.0244",
+      "intermediate.quiz.0245",
+      "intermediate.quiz.0246",
+      "intermediate.quiz.0247",
+      "intermediate.quiz.0248",
+      "intermediate.quiz.0249",
+      "intermediate.quiz.0250"
+    ],
+    "requiredStageId": "intermediate.stage.024"
+  },
+  {
+    "id": "intermediate.stage.026",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_003",
+    "order": 6,
+    "title": "미래 계획 06",
+    "description": "저는 저녁 후에 부엌을 청소할 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.future_clean_kitchen",
+      "ko": "저는 저녁 후에 부엌을 청소할 것입니다.",
+      "en": "I will clean the kitchen after dinner.",
+      "sentenceKo": "저는 저녁 후에 부엌을 청소할 것입니다",
+      "sentenceEn": "I will clean the kitchen after dinner"
+    },
+    "quizIds": [
+      "intermediate.quiz.0251",
+      "intermediate.quiz.0252",
+      "intermediate.quiz.0253",
+      "intermediate.quiz.0254",
+      "intermediate.quiz.0255",
+      "intermediate.quiz.0256",
+      "intermediate.quiz.0257",
+      "intermediate.quiz.0258",
+      "intermediate.quiz.0259",
+      "intermediate.quiz.0260"
+    ],
+    "requiredStageId": "intermediate.stage.025"
+  },
+  {
+    "id": "intermediate.stage.027",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_003",
+    "order": 7,
+    "title": "미래 계획 07",
+    "description": "저는 다음 주에 수업에 참여할 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.future_join_class",
+      "ko": "저는 다음 주에 수업에 참여할 것입니다.",
+      "en": "I will join the class next week.",
+      "sentenceKo": "저는 다음 주에 수업에 참여할 것입니다",
+      "sentenceEn": "I will join the class next week"
+    },
+    "quizIds": [
+      "intermediate.quiz.0261",
+      "intermediate.quiz.0262",
+      "intermediate.quiz.0263",
+      "intermediate.quiz.0264",
+      "intermediate.quiz.0265",
+      "intermediate.quiz.0266",
+      "intermediate.quiz.0267",
+      "intermediate.quiz.0268",
+      "intermediate.quiz.0269",
+      "intermediate.quiz.0270"
+    ],
+    "requiredStageId": "intermediate.stage.026"
+  },
+  {
+    "id": "intermediate.stage.028",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_003",
+    "order": 8,
+    "title": "미래 계획 08",
+    "description": "저는 금요일에 보고서를 보낼 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.future_send_report",
+      "ko": "저는 금요일에 보고서를 보낼 것입니다.",
+      "en": "I will send the report on Friday.",
+      "sentenceKo": "저는 금요일에 보고서를 보낼 것입니다",
+      "sentenceEn": "I will send the report on Friday"
+    },
+    "quizIds": [
+      "intermediate.quiz.0271",
+      "intermediate.quiz.0272",
+      "intermediate.quiz.0273",
+      "intermediate.quiz.0274",
+      "intermediate.quiz.0275",
+      "intermediate.quiz.0276",
+      "intermediate.quiz.0277",
+      "intermediate.quiz.0278",
+      "intermediate.quiz.0279",
+      "intermediate.quiz.0280"
+    ],
+    "requiredStageId": "intermediate.stage.027"
+  },
+  {
+    "id": "intermediate.stage.029",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_003",
+    "order": 9,
+    "title": "미래 계획 09",
+    "description": "저는 오후에 팀을 만날 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.future_meet_team",
+      "ko": "저는 오후에 팀을 만날 것입니다.",
+      "en": "I will meet the team this afternoon.",
+      "sentenceKo": "저는 오후에 팀을 만날 것입니다",
+      "sentenceEn": "I will meet the team this afternoon"
+    },
+    "quizIds": [
+      "intermediate.quiz.0281",
+      "intermediate.quiz.0282",
+      "intermediate.quiz.0283",
+      "intermediate.quiz.0284",
+      "intermediate.quiz.0285",
+      "intermediate.quiz.0286",
+      "intermediate.quiz.0287",
+      "intermediate.quiz.0288",
+      "intermediate.quiz.0289",
+      "intermediate.quiz.0290"
+    ],
+    "requiredStageId": "intermediate.stage.028"
+  },
+  {
+    "id": "intermediate.stage.030",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_003",
+    "order": 10,
+    "title": "미래 계획 10",
+    "description": "저는 다음 주부터 식단을 시작할 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.future_start_diet",
+      "ko": "저는 다음 주부터 식단을 시작할 것입니다.",
+      "en": "I will start my diet next week.",
+      "sentenceKo": "저는 다음 주부터 식단을 시작할 것입니다",
+      "sentenceEn": "I will start my diet next week"
+    },
+    "quizIds": [
+      "intermediate.quiz.0291",
+      "intermediate.quiz.0292",
+      "intermediate.quiz.0293",
+      "intermediate.quiz.0294",
+      "intermediate.quiz.0295",
+      "intermediate.quiz.0296",
+      "intermediate.quiz.0297",
+      "intermediate.quiz.0298",
+      "intermediate.quiz.0299",
+      "intermediate.quiz.0300"
+    ],
+    "requiredStageId": "intermediate.stage.029"
+  },
+  {
+    "id": "intermediate.stage.031",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_004",
+    "order": 1,
+    "title": "이유 말하기 01",
+    "description": "저는 배가 고파서 밥을 먹습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.because_eat_hungry",
+      "ko": "저는 배가 고파서 밥을 먹습니다.",
+      "en": "I eat rice because I am hungry.",
+      "sentenceKo": "저는 배가 고파서 밥을 먹습니다",
+      "sentenceEn": "I eat rice because I am hungry"
+    },
+    "quizIds": [
+      "intermediate.quiz.0301",
+      "intermediate.quiz.0302",
+      "intermediate.quiz.0303",
+      "intermediate.quiz.0304",
+      "intermediate.quiz.0305",
+      "intermediate.quiz.0306",
+      "intermediate.quiz.0307",
+      "intermediate.quiz.0308",
+      "intermediate.quiz.0309",
+      "intermediate.quiz.0310"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "intermediate.stage.032",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_004",
+    "order": 2,
+    "title": "이유 말하기 02",
+    "description": "저는 비가 와서 집에 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.because_stay_home_rain",
+      "ko": "저는 비가 와서 집에 있습니다.",
+      "en": "I stay home because it is raining.",
+      "sentenceKo": "저는 비가 와서 집에 있습니다",
+      "sentenceEn": "I stay home because it is raining"
+    },
+    "quizIds": [
+      "intermediate.quiz.0311",
+      "intermediate.quiz.0312",
+      "intermediate.quiz.0313",
+      "intermediate.quiz.0314",
+      "intermediate.quiz.0315",
+      "intermediate.quiz.0316",
+      "intermediate.quiz.0317",
+      "intermediate.quiz.0318",
+      "intermediate.quiz.0319",
+      "intermediate.quiz.0320"
+    ],
+    "requiredStageId": "intermediate.stage.031"
+  },
+  {
+    "id": "intermediate.stage.033",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_004",
+    "order": 3,
+    "title": "이유 말하기 03",
+    "description": "저는 시험이 있어서 공부합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.because_study_test",
+      "ko": "저는 시험이 있어서 공부합니다.",
+      "en": "I study because I have a test.",
+      "sentenceKo": "저는 시험이 있어서 공부합니다",
+      "sentenceEn": "I study because I have a test"
+    },
+    "quizIds": [
+      "intermediate.quiz.0321",
+      "intermediate.quiz.0322",
+      "intermediate.quiz.0323",
+      "intermediate.quiz.0324",
+      "intermediate.quiz.0325",
+      "intermediate.quiz.0326",
+      "intermediate.quiz.0327",
+      "intermediate.quiz.0328",
+      "intermediate.quiz.0329",
+      "intermediate.quiz.0330"
+    ],
+    "requiredStageId": "intermediate.stage.032"
+  },
+  {
+    "id": "intermediate.stage.034",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_004",
+    "order": 4,
+    "title": "이유 말하기 04",
+    "description": "저는 추워서 코트를 입습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.because_wear_coat_cold",
+      "ko": "저는 추워서 코트를 입습니다.",
+      "en": "I wear a coat because it is cold.",
+      "sentenceKo": "저는 추워서 코트를 입습니다",
+      "sentenceEn": "I wear a coat because it is cold"
+    },
+    "quizIds": [
+      "intermediate.quiz.0331",
+      "intermediate.quiz.0332",
+      "intermediate.quiz.0333",
+      "intermediate.quiz.0334",
+      "intermediate.quiz.0335",
+      "intermediate.quiz.0336",
+      "intermediate.quiz.0337",
+      "intermediate.quiz.0338",
+      "intermediate.quiz.0339",
+      "intermediate.quiz.0340"
+    ],
+    "requiredStageId": "intermediate.stage.033"
+  },
+  {
+    "id": "intermediate.stage.035",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_004",
+    "order": 5,
+    "title": "저는 더워서 창문을 엽니다 익히기",
+    "description": "저는 더워서 창문을 엽니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.because_open_window_hot",
+      "ko": "저는 더워서 창문을 엽니다.",
+      "en": "I open the window because it is hot.",
+      "sentenceKo": "저는 더워서 창문을 엽니다",
+      "sentenceEn": "I open the window because it is hot"
+    },
+    "quizIds": [
+      "intermediate.quiz.0341",
+      "intermediate.quiz.0342",
+      "intermediate.quiz.0343",
+      "intermediate.quiz.0344",
+      "intermediate.quiz.0345",
+      "intermediate.quiz.0346",
+      "intermediate.quiz.0347",
+      "intermediate.quiz.0348",
+      "intermediate.quiz.0349",
+      "intermediate.quiz.0350"
+    ],
+    "requiredStageId": "intermediate.stage.034"
+  },
+  {
+    "id": "intermediate.stage.036",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_004",
+    "order": 6,
+    "title": "이유 말하기 06",
+    "description": "저는 목이 말라서 물을 마십니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.because_drink_water_thirsty",
+      "ko": "저는 목이 말라서 물을 마십니다.",
+      "en": "I drink water because I am thirsty.",
+      "sentenceKo": "저는 목이 말라서 물을 마십니다",
+      "sentenceEn": "I drink water because I am thirsty"
+    },
+    "quizIds": [
+      "intermediate.quiz.0351",
+      "intermediate.quiz.0352",
+      "intermediate.quiz.0353",
+      "intermediate.quiz.0354",
+      "intermediate.quiz.0355",
+      "intermediate.quiz.0356",
+      "intermediate.quiz.0357",
+      "intermediate.quiz.0358",
+      "intermediate.quiz.0359",
+      "intermediate.quiz.0360"
+    ],
+    "requiredStageId": "intermediate.stage.035"
+  },
+  {
+    "id": "intermediate.stage.037",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_004",
+    "order": 7,
+    "title": "저는 피곤해서 일찍 잡니다 익히기",
+    "description": "저는 피곤해서 일찍 잡니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.because_sleep_tired",
+      "ko": "저는 피곤해서 일찍 잡니다.",
+      "en": "I sleep early because I am tired.",
+      "sentenceKo": "저는 피곤해서 일찍 잡니다",
+      "sentenceEn": "I sleep early because I am tired"
+    },
+    "quizIds": [
+      "intermediate.quiz.0361",
+      "intermediate.quiz.0362",
+      "intermediate.quiz.0363",
+      "intermediate.quiz.0364",
+      "intermediate.quiz.0365",
+      "intermediate.quiz.0366",
+      "intermediate.quiz.0367",
+      "intermediate.quiz.0368",
+      "intermediate.quiz.0369",
+      "intermediate.quiz.0370"
+    ],
+    "requiredStageId": "intermediate.stage.036"
+  },
+  {
+    "id": "intermediate.stage.038",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_004",
+    "order": 8,
+    "title": "저는 늦어서 버스를 탑니다 익히기",
+    "description": "저는 늦어서 버스를 탑니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.because_take_bus_late",
+      "ko": "저는 늦어서 버스를 탑니다.",
+      "en": "I take the bus because I am late.",
+      "sentenceKo": "저는 늦어서 버스를 탑니다",
+      "sentenceEn": "I take the bus because I am late"
+    },
+    "quizIds": [
+      "intermediate.quiz.0371",
+      "intermediate.quiz.0372",
+      "intermediate.quiz.0373",
+      "intermediate.quiz.0374",
+      "intermediate.quiz.0375",
+      "intermediate.quiz.0376",
+      "intermediate.quiz.0377",
+      "intermediate.quiz.0378",
+      "intermediate.quiz.0379",
+      "intermediate.quiz.0380"
+    ],
+    "requiredStageId": "intermediate.stage.037"
+  },
+  {
+    "id": "intermediate.stage.039",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_004",
+    "order": 9,
+    "title": "이유 말하기 09",
+    "description": "저는 걱정돼서 엄마에게 전화합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.because_call_mom_worried",
+      "ko": "저는 걱정돼서 엄마에게 전화합니다.",
+      "en": "I call my mom because I am worried.",
+      "sentenceKo": "저는 걱정돼서 엄마에게 전화합니다",
+      "sentenceEn": "I call my mom because I am worried"
+    },
+    "quizIds": [
+      "intermediate.quiz.0381",
+      "intermediate.quiz.0382",
+      "intermediate.quiz.0383",
+      "intermediate.quiz.0384",
+      "intermediate.quiz.0385",
+      "intermediate.quiz.0386",
+      "intermediate.quiz.0387",
+      "intermediate.quiz.0388",
+      "intermediate.quiz.0389",
+      "intermediate.quiz.0390"
+    ],
+    "requiredStageId": "intermediate.stage.038"
+  },
+  {
+    "id": "intermediate.stage.040",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_004",
+    "order": 10,
+    "title": "이유 말하기 10",
+    "description": "저는 배가 고파서 빵을 삽니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.because_buy_bread_hungry",
+      "ko": "저는 배가 고파서 빵을 삽니다.",
+      "en": "I buy bread because I am hungry.",
+      "sentenceKo": "저는 배가 고파서 빵을 삽니다",
+      "sentenceEn": "I buy bread because I am hungry"
+    },
+    "quizIds": [
+      "intermediate.quiz.0391",
+      "intermediate.quiz.0392",
+      "intermediate.quiz.0393",
+      "intermediate.quiz.0394",
+      "intermediate.quiz.0395",
+      "intermediate.quiz.0396",
+      "intermediate.quiz.0397",
+      "intermediate.quiz.0398",
+      "intermediate.quiz.0399",
+      "intermediate.quiz.0400"
+    ],
+    "requiredStageId": "intermediate.stage.039"
+  },
+  {
+    "id": "intermediate.stage.041",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_005",
+    "order": 1,
+    "title": "when 절 01",
+    "description": "비가 오면 저는 집에 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.when_rain_home",
+      "ko": "비가 오면 저는 집에 있습니다.",
+      "en": "When it rains, I stay home.",
+      "sentenceKo": "비가 오면 저는 집에 있습니다",
+      "sentenceEn": "When it rains, I stay home"
+    },
+    "quizIds": [
+      "intermediate.quiz.0401",
+      "intermediate.quiz.0402",
+      "intermediate.quiz.0403",
+      "intermediate.quiz.0404",
+      "intermediate.quiz.0405",
+      "intermediate.quiz.0406",
+      "intermediate.quiz.0407",
+      "intermediate.quiz.0408",
+      "intermediate.quiz.0409",
+      "intermediate.quiz.0410"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "intermediate.stage.042",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_005",
+    "order": 2,
+    "title": "when 절 02",
+    "description": "일을 마치면 저는 친구에게 전화를 겁니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.when_finish_call",
+      "ko": "일을 마치면 저는 친구에게 전화를 겁니다.",
+      "en": "When I finish work, I call my friend.",
+      "sentenceKo": "일을 마치면 저는 친구에게 전화를 겁니다",
+      "sentenceEn": "When I finish work, I call my friend"
+    },
+    "quizIds": [
+      "intermediate.quiz.0411",
+      "intermediate.quiz.0412",
+      "intermediate.quiz.0413",
+      "intermediate.quiz.0414",
+      "intermediate.quiz.0415",
+      "intermediate.quiz.0416",
+      "intermediate.quiz.0417",
+      "intermediate.quiz.0418",
+      "intermediate.quiz.0419",
+      "intermediate.quiz.0420"
+    ],
+    "requiredStageId": "intermediate.stage.041"
+  },
+  {
+    "id": "intermediate.stage.043",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_005",
+    "order": 3,
+    "title": "when 절 03",
+    "description": "저는 일어나면 창문을 엽니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.when_wake_open",
+      "ko": "저는 일어나면 창문을 엽니다.",
+      "en": "When I wake up, I open the window.",
+      "sentenceKo": "저는 일어나면 창문을 엽니다",
+      "sentenceEn": "When I wake up, I open the window"
+    },
+    "quizIds": [
+      "intermediate.quiz.0421",
+      "intermediate.quiz.0422",
+      "intermediate.quiz.0423",
+      "intermediate.quiz.0424",
+      "intermediate.quiz.0425",
+      "intermediate.quiz.0426",
+      "intermediate.quiz.0427",
+      "intermediate.quiz.0428",
+      "intermediate.quiz.0429",
+      "intermediate.quiz.0430"
+    ],
+    "requiredStageId": "intermediate.stage.042"
+  },
+  {
+    "id": "intermediate.stage.044",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_005",
+    "order": 4,
+    "title": "when 절 04",
+    "description": "저는 도착하면 메시지를 보냅니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.when_arrive_send",
+      "ko": "저는 도착하면 메시지를 보냅니다.",
+      "en": "When I arrive, I send a message.",
+      "sentenceKo": "저는 도착하면 메시지를 보냅니다",
+      "sentenceEn": "When I arrive, I send a message"
+    },
+    "quizIds": [
+      "intermediate.quiz.0431",
+      "intermediate.quiz.0432",
+      "intermediate.quiz.0433",
+      "intermediate.quiz.0434",
+      "intermediate.quiz.0435",
+      "intermediate.quiz.0436",
+      "intermediate.quiz.0437",
+      "intermediate.quiz.0438",
+      "intermediate.quiz.0439",
+      "intermediate.quiz.0440"
+    ],
+    "requiredStageId": "intermediate.stage.043"
+  },
+  {
+    "id": "intermediate.stage.045",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_005",
+    "order": 5,
+    "title": "when 절 05",
+    "description": "배가 고프면 저는 샌드위치를 먹습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.when_hungry_eat",
+      "ko": "배가 고프면 저는 샌드위치를 먹습니다.",
+      "en": "When I am hungry, I eat a sandwich.",
+      "sentenceKo": "배가 고프면 저는 샌드위치를 먹습니다",
+      "sentenceEn": "When I am hungry, I eat a sandwich"
+    },
+    "quizIds": [
+      "intermediate.quiz.0441",
+      "intermediate.quiz.0442",
+      "intermediate.quiz.0443",
+      "intermediate.quiz.0444",
+      "intermediate.quiz.0445",
+      "intermediate.quiz.0446",
+      "intermediate.quiz.0447",
+      "intermediate.quiz.0448",
+      "intermediate.quiz.0449",
+      "intermediate.quiz.0450"
+    ],
+    "requiredStageId": "intermediate.stage.044"
+  },
+  {
+    "id": "intermediate.stage.046",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_005",
+    "order": 6,
+    "title": "when 절 06",
+    "description": "시간이 있으면 저는 책을 읽습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.when_free_read",
+      "ko": "시간이 있으면 저는 책을 읽습니다.",
+      "en": "When I am free, I read a book.",
+      "sentenceKo": "시간이 있으면 저는 책을 읽습니다",
+      "sentenceEn": "When I am free, I read a book"
+    },
+    "quizIds": [
+      "intermediate.quiz.0451",
+      "intermediate.quiz.0452",
+      "intermediate.quiz.0453",
+      "intermediate.quiz.0454",
+      "intermediate.quiz.0455",
+      "intermediate.quiz.0456",
+      "intermediate.quiz.0457",
+      "intermediate.quiz.0458",
+      "intermediate.quiz.0459",
+      "intermediate.quiz.0460"
+    ],
+    "requiredStageId": "intermediate.stage.045"
+  },
+  {
+    "id": "intermediate.stage.047",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_005",
+    "order": 7,
+    "title": "when 절 07",
+    "description": "슬프면 저는 음악을 듣습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.when_sad_music",
+      "ko": "슬프면 저는 음악을 듣습니다.",
+      "en": "When I feel sad, I listen to music.",
+      "sentenceKo": "슬프면 저는 음악을 듣습니다",
+      "sentenceEn": "When I feel sad, I listen to music"
+    },
+    "quizIds": [
+      "intermediate.quiz.0461",
+      "intermediate.quiz.0462",
+      "intermediate.quiz.0463",
+      "intermediate.quiz.0464",
+      "intermediate.quiz.0465",
+      "intermediate.quiz.0466",
+      "intermediate.quiz.0467",
+      "intermediate.quiz.0468",
+      "intermediate.quiz.0469",
+      "intermediate.quiz.0470"
+    ],
+    "requiredStageId": "intermediate.stage.046"
+  },
+  {
+    "id": "intermediate.stage.048",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_005",
+    "order": 8,
+    "title": "when 절 08",
+    "description": "주말이 되면 저는 가족을 방문합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.when_weekend_visit",
+      "ko": "주말이 되면 저는 가족을 방문합니다.",
+      "en": "When the weekend comes, I visit my family.",
+      "sentenceKo": "주말이 되면 저는 가족을 방문합니다",
+      "sentenceEn": "When the weekend comes, I visit my family"
+    },
+    "quizIds": [
+      "intermediate.quiz.0471",
+      "intermediate.quiz.0472",
+      "intermediate.quiz.0473",
+      "intermediate.quiz.0474",
+      "intermediate.quiz.0475",
+      "intermediate.quiz.0476",
+      "intermediate.quiz.0477",
+      "intermediate.quiz.0478",
+      "intermediate.quiz.0479",
+      "intermediate.quiz.0480"
+    ],
+    "requiredStageId": "intermediate.stage.047"
+  },
+  {
+    "id": "intermediate.stage.049",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_005",
+    "order": 9,
+    "title": "when 절 09",
+    "description": "종이 울리면 학생들은 교실에 들어갑니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.when_bell_enter",
+      "ko": "종이 울리면 학생들은 교실에 들어갑니다.",
+      "en": "When the bell rings, students enter the classroom.",
+      "sentenceKo": "종이 울리면 학생들은 교실에 들어갑니다",
+      "sentenceEn": "When the bell rings, students enter the classroom"
+    },
+    "quizIds": [
+      "intermediate.quiz.0481",
+      "intermediate.quiz.0482",
+      "intermediate.quiz.0483",
+      "intermediate.quiz.0484",
+      "intermediate.quiz.0485",
+      "intermediate.quiz.0486",
+      "intermediate.quiz.0487",
+      "intermediate.quiz.0488",
+      "intermediate.quiz.0489",
+      "intermediate.quiz.0490"
+    ],
+    "requiredStageId": "intermediate.stage.048"
+  },
+  {
+    "id": "intermediate.stage.050",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_005",
+    "order": 10,
+    "title": "when 절 10",
+    "description": "저녁을 먹고 나면 저는 산책합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.when_finish_dinner_walk",
+      "ko": "저녁을 먹고 나면 저는 산책합니다.",
+      "en": "When I finish dinner, I take a walk.",
+      "sentenceKo": "저녁을 먹고 나면 저는 산책합니다",
+      "sentenceEn": "When I finish dinner, I take a walk"
+    },
+    "quizIds": [
+      "intermediate.quiz.0491",
+      "intermediate.quiz.0492",
+      "intermediate.quiz.0493",
+      "intermediate.quiz.0494",
+      "intermediate.quiz.0495",
+      "intermediate.quiz.0496",
+      "intermediate.quiz.0497",
+      "intermediate.quiz.0498",
+      "intermediate.quiz.0499",
+      "intermediate.quiz.0500"
+    ],
+    "requiredStageId": "intermediate.stage.049"
+  },
+  {
+    "id": "intermediate.stage.051",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_006",
+    "order": 1,
+    "title": "before after 01",
+    "description": "저는 숙제 전에 저녁을 먹습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.sequence_dinner_before_homework",
+      "ko": "저는 숙제 전에 저녁을 먹습니다.",
+      "en": "I eat dinner before homework.",
+      "sentenceKo": "저는 숙제 전에 저녁을 먹습니다",
+      "sentenceEn": "I eat dinner before homework"
+    },
+    "quizIds": [
+      "intermediate.quiz.0501",
+      "intermediate.quiz.0502",
+      "intermediate.quiz.0503",
+      "intermediate.quiz.0504",
+      "intermediate.quiz.0505",
+      "intermediate.quiz.0506",
+      "intermediate.quiz.0507",
+      "intermediate.quiz.0508",
+      "intermediate.quiz.0509",
+      "intermediate.quiz.0510"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "intermediate.stage.052",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_006",
+    "order": 2,
+    "title": "before after 02",
+    "description": "저는 아침 식사 후에 이를 닦습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.sequence_brush_after_breakfast",
+      "ko": "저는 아침 식사 후에 이를 닦습니다.",
+      "en": "I brush my teeth after breakfast.",
+      "sentenceKo": "저는 아침 식사 후에 이를 닦습니다",
+      "sentenceEn": "I brush my teeth after breakfast"
+    },
+    "quizIds": [
+      "intermediate.quiz.0511",
+      "intermediate.quiz.0512",
+      "intermediate.quiz.0513",
+      "intermediate.quiz.0514",
+      "intermediate.quiz.0515",
+      "intermediate.quiz.0516",
+      "intermediate.quiz.0517",
+      "intermediate.quiz.0518",
+      "intermediate.quiz.0519",
+      "intermediate.quiz.0520"
+    ],
+    "requiredStageId": "intermediate.stage.051"
+  },
+  {
+    "id": "intermediate.stage.053",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_006",
+    "order": 3,
+    "title": "before after 03",
+    "description": "저는 회의 전에 전화를 겁니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.sequence_call_before_meeting",
+      "ko": "저는 회의 전에 전화를 겁니다.",
+      "en": "I call him before the meeting.",
+      "sentenceKo": "저는 회의 전에 전화를 겁니다",
+      "sentenceEn": "I call him before the meeting"
+    },
+    "quizIds": [
+      "intermediate.quiz.0521",
+      "intermediate.quiz.0522",
+      "intermediate.quiz.0523",
+      "intermediate.quiz.0524",
+      "intermediate.quiz.0525",
+      "intermediate.quiz.0526",
+      "intermediate.quiz.0527",
+      "intermediate.quiz.0528",
+      "intermediate.quiz.0529",
+      "intermediate.quiz.0530"
+    ],
+    "requiredStageId": "intermediate.stage.052"
+  },
+  {
+    "id": "intermediate.stage.054",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_006",
+    "order": 4,
+    "title": "before after 04",
+    "description": "저는 학교 후에 잠깐 쉽니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.sequence_rest_after_school",
+      "ko": "저는 학교 후에 잠깐 쉽니다.",
+      "en": "I rest after school.",
+      "sentenceKo": "저는 학교 후에 잠깐 쉽니다",
+      "sentenceEn": "I rest after school"
+    },
+    "quizIds": [
+      "intermediate.quiz.0531",
+      "intermediate.quiz.0532",
+      "intermediate.quiz.0533",
+      "intermediate.quiz.0534",
+      "intermediate.quiz.0535",
+      "intermediate.quiz.0536",
+      "intermediate.quiz.0537",
+      "intermediate.quiz.0538",
+      "intermediate.quiz.0539",
+      "intermediate.quiz.0540"
+    ],
+    "requiredStageId": "intermediate.stage.053"
+  },
+  {
+    "id": "intermediate.stage.055",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_006",
+    "order": 5,
+    "title": "before after 05",
+    "description": "저는 여행 전에 짐을 쌉니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.sequence_pack_before_trip",
+      "ko": "저는 여행 전에 짐을 쌉니다.",
+      "en": "I pack my bag before the trip.",
+      "sentenceKo": "저는 여행 전에 짐을 쌉니다",
+      "sentenceEn": "I pack my bag before the trip"
+    },
+    "quizIds": [
+      "intermediate.quiz.0541",
+      "intermediate.quiz.0542",
+      "intermediate.quiz.0543",
+      "intermediate.quiz.0544",
+      "intermediate.quiz.0545",
+      "intermediate.quiz.0546",
+      "intermediate.quiz.0547",
+      "intermediate.quiz.0548",
+      "intermediate.quiz.0549",
+      "intermediate.quiz.0550"
+    ],
+    "requiredStageId": "intermediate.stage.054"
+  },
+  {
+    "id": "intermediate.stage.056",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_006",
+    "order": 6,
+    "title": "before after 06",
+    "description": "저는 달리기 후에 손을 씻습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.sequence_wash_after_run",
+      "ko": "저는 달리기 후에 손을 씻습니다.",
+      "en": "I wash my hands after running.",
+      "sentenceKo": "저는 달리기 후에 손을 씻습니다",
+      "sentenceEn": "I wash my hands after running"
+    },
+    "quizIds": [
+      "intermediate.quiz.0551",
+      "intermediate.quiz.0552",
+      "intermediate.quiz.0553",
+      "intermediate.quiz.0554",
+      "intermediate.quiz.0555",
+      "intermediate.quiz.0556",
+      "intermediate.quiz.0557",
+      "intermediate.quiz.0558",
+      "intermediate.quiz.0559",
+      "intermediate.quiz.0560"
+    ],
+    "requiredStageId": "intermediate.stage.055"
+  },
+  {
+    "id": "intermediate.stage.057",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_006",
+    "order": 7,
+    "title": "저는 시험 전에 복습합니다 익히기",
+    "description": "저는 시험 전에 복습합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.sequence_review_before_test",
+      "ko": "저는 시험 전에 복습합니다.",
+      "en": "I review my notes before the test.",
+      "sentenceKo": "저는 시험 전에 복습합니다",
+      "sentenceEn": "I review my notes before the test"
+    },
+    "quizIds": [
+      "intermediate.quiz.0561",
+      "intermediate.quiz.0562",
+      "intermediate.quiz.0563",
+      "intermediate.quiz.0564",
+      "intermediate.quiz.0565",
+      "intermediate.quiz.0566",
+      "intermediate.quiz.0567",
+      "intermediate.quiz.0568",
+      "intermediate.quiz.0569",
+      "intermediate.quiz.0570"
+    ],
+    "requiredStageId": "intermediate.stage.056"
+  },
+  {
+    "id": "intermediate.stage.058",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_006",
+    "order": 8,
+    "title": "before after 08",
+    "description": "저는 일 후에 간식을 먹습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.sequence_snack_after_work",
+      "ko": "저는 일 후에 간식을 먹습니다.",
+      "en": "I eat a snack after work.",
+      "sentenceKo": "저는 일 후에 간식을 먹습니다",
+      "sentenceEn": "I eat a snack after work"
+    },
+    "quizIds": [
+      "intermediate.quiz.0571",
+      "intermediate.quiz.0572",
+      "intermediate.quiz.0573",
+      "intermediate.quiz.0574",
+      "intermediate.quiz.0575",
+      "intermediate.quiz.0576",
+      "intermediate.quiz.0577",
+      "intermediate.quiz.0578",
+      "intermediate.quiz.0579",
+      "intermediate.quiz.0580"
+    ],
+    "requiredStageId": "intermediate.stage.057"
+  },
+  {
+    "id": "intermediate.stage.059",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_006",
+    "order": 9,
+    "title": "before after 09",
+    "description": "저는 보내기 전에 다시 확인합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.sequence_check_before_send",
+      "ko": "저는 보내기 전에 다시 확인합니다.",
+      "en": "I check again before sending it.",
+      "sentenceKo": "저는 보내기 전에 다시 확인합니다",
+      "sentenceEn": "I check again before sending it"
+    },
+    "quizIds": [
+      "intermediate.quiz.0581",
+      "intermediate.quiz.0582",
+      "intermediate.quiz.0583",
+      "intermediate.quiz.0584",
+      "intermediate.quiz.0585",
+      "intermediate.quiz.0586",
+      "intermediate.quiz.0587",
+      "intermediate.quiz.0588",
+      "intermediate.quiz.0589",
+      "intermediate.quiz.0590"
+    ],
+    "requiredStageId": "intermediate.stage.058"
+  },
+  {
+    "id": "intermediate.stage.060",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_006",
+    "order": 10,
+    "title": "저는 샤워 후에 잠듭니다 익히기",
+    "description": "저는 샤워 후에 잠듭니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.sequence_sleep_after_shower",
+      "ko": "저는 샤워 후에 잠듭니다.",
+      "en": "I sleep after a shower.",
+      "sentenceKo": "저는 샤워 후에 잠듭니다",
+      "sentenceEn": "I sleep after a shower"
+    },
+    "quizIds": [
+      "intermediate.quiz.0591",
+      "intermediate.quiz.0592",
+      "intermediate.quiz.0593",
+      "intermediate.quiz.0594",
+      "intermediate.quiz.0595",
+      "intermediate.quiz.0596",
+      "intermediate.quiz.0597",
+      "intermediate.quiz.0598",
+      "intermediate.quiz.0599",
+      "intermediate.quiz.0600"
+    ],
+    "requiredStageId": "intermediate.stage.059"
+  },
+  {
+    "id": "intermediate.stage.061",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_007",
+    "order": 1,
+    "title": "비교 표현 01",
+    "description": "이 가방은 저 가방보다 큽니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.compare_bag_bigger",
+      "ko": "이 가방은 저 가방보다 큽니다.",
+      "en": "This bag is bigger than that bag.",
+      "sentenceKo": "이 가방은 저 가방보다 큽니다",
+      "sentenceEn": "This bag is bigger than that bag"
+    },
+    "quizIds": [
+      "intermediate.quiz.0601",
+      "intermediate.quiz.0602",
+      "intermediate.quiz.0603",
+      "intermediate.quiz.0604",
+      "intermediate.quiz.0605",
+      "intermediate.quiz.0606",
+      "intermediate.quiz.0607",
+      "intermediate.quiz.0608",
+      "intermediate.quiz.0609",
+      "intermediate.quiz.0610"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "intermediate.stage.062",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_007",
+    "order": 2,
+    "title": "비교 표현 02",
+    "description": "이 차는 저 자전거보다 빠릅니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.compare_car_faster",
+      "ko": "이 차는 저 자전거보다 빠릅니다.",
+      "en": "This car is faster than that bike.",
+      "sentenceKo": "이 차는 저 자전거보다 빠릅니다",
+      "sentenceEn": "This car is faster than that bike"
+    },
+    "quizIds": [
+      "intermediate.quiz.0611",
+      "intermediate.quiz.0612",
+      "intermediate.quiz.0613",
+      "intermediate.quiz.0614",
+      "intermediate.quiz.0615",
+      "intermediate.quiz.0616",
+      "intermediate.quiz.0617",
+      "intermediate.quiz.0618",
+      "intermediate.quiz.0619",
+      "intermediate.quiz.0620"
+    ],
+    "requiredStageId": "intermediate.stage.061"
+  },
+  {
+    "id": "intermediate.stage.063",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_007",
+    "order": 3,
+    "title": "비교 표현 03",
+    "description": "이 책은 저 책보다 더 재미있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.compare_book_more_interesting",
+      "ko": "이 책은 저 책보다 더 재미있습니다.",
+      "en": "This book is more interesting than that one.",
+      "sentenceKo": "이 책은 저 책보다 더 재미있습니다",
+      "sentenceEn": "This book is more interesting than that one"
+    },
+    "quizIds": [
+      "intermediate.quiz.0621",
+      "intermediate.quiz.0622",
+      "intermediate.quiz.0623",
+      "intermediate.quiz.0624",
+      "intermediate.quiz.0625",
+      "intermediate.quiz.0626",
+      "intermediate.quiz.0627",
+      "intermediate.quiz.0628",
+      "intermediate.quiz.0629",
+      "intermediate.quiz.0630"
+    ],
+    "requiredStageId": "intermediate.stage.062"
+  },
+  {
+    "id": "intermediate.stage.064",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_007",
+    "order": 4,
+    "title": "비교 표현 04",
+    "description": "이 커피는 저 차보다 더 뜨겁습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.compare_coffee_hotter",
+      "ko": "이 커피는 저 차보다 더 뜨겁습니다.",
+      "en": "This coffee is hotter than that tea.",
+      "sentenceKo": "이 커피는 저 차보다 더 뜨겁습니다",
+      "sentenceEn": "This coffee is hotter than that tea"
+    },
+    "quizIds": [
+      "intermediate.quiz.0631",
+      "intermediate.quiz.0632",
+      "intermediate.quiz.0633",
+      "intermediate.quiz.0634",
+      "intermediate.quiz.0635",
+      "intermediate.quiz.0636",
+      "intermediate.quiz.0637",
+      "intermediate.quiz.0638",
+      "intermediate.quiz.0639",
+      "intermediate.quiz.0640"
+    ],
+    "requiredStageId": "intermediate.stage.063"
+  },
+  {
+    "id": "intermediate.stage.065",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_007",
+    "order": 5,
+    "title": "비교 표현 05",
+    "description": "제 방은 동생 방보다 더 깨끗합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.compare_room_cleaner",
+      "ko": "제 방은 동생 방보다 더 깨끗합니다.",
+      "en": "My room is cleaner than my brother's room.",
+      "sentenceKo": "제 방은 동생 방보다 더 깨끗합니다",
+      "sentenceEn": "My room is cleaner than my brother's room"
+    },
+    "quizIds": [
+      "intermediate.quiz.0641",
+      "intermediate.quiz.0642",
+      "intermediate.quiz.0643",
+      "intermediate.quiz.0644",
+      "intermediate.quiz.0645",
+      "intermediate.quiz.0646",
+      "intermediate.quiz.0647",
+      "intermediate.quiz.0648",
+      "intermediate.quiz.0649",
+      "intermediate.quiz.0650"
+    ],
+    "requiredStageId": "intermediate.stage.064"
+  },
+  {
+    "id": "intermediate.stage.066",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_007",
+    "order": 6,
+    "title": "비교 표현 06",
+    "description": "이 강은 저 개울보다 깁니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.compare_river_longer",
+      "ko": "이 강은 저 개울보다 깁니다.",
+      "en": "This river is longer than that stream.",
+      "sentenceKo": "이 강은 저 개울보다 깁니다",
+      "sentenceEn": "This river is longer than that stream"
+    },
+    "quizIds": [
+      "intermediate.quiz.0651",
+      "intermediate.quiz.0652",
+      "intermediate.quiz.0653",
+      "intermediate.quiz.0654",
+      "intermediate.quiz.0655",
+      "intermediate.quiz.0656",
+      "intermediate.quiz.0657",
+      "intermediate.quiz.0658",
+      "intermediate.quiz.0659",
+      "intermediate.quiz.0660"
+    ],
+    "requiredStageId": "intermediate.stage.065"
+  },
+  {
+    "id": "intermediate.stage.067",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_007",
+    "order": 7,
+    "title": "비교 표현 07",
+    "description": "이번 영화는 지난 영화보다 더 좋습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.compare_movie_better",
+      "ko": "이번 영화는 지난 영화보다 더 좋습니다.",
+      "en": "This movie is better than the last one.",
+      "sentenceKo": "이번 영화는 지난 영화보다 더 좋습니다",
+      "sentenceEn": "This movie is better than the last one"
+    },
+    "quizIds": [
+      "intermediate.quiz.0661",
+      "intermediate.quiz.0662",
+      "intermediate.quiz.0663",
+      "intermediate.quiz.0664",
+      "intermediate.quiz.0665",
+      "intermediate.quiz.0666",
+      "intermediate.quiz.0667",
+      "intermediate.quiz.0668",
+      "intermediate.quiz.0669",
+      "intermediate.quiz.0670"
+    ],
+    "requiredStageId": "intermediate.stage.066"
+  },
+  {
+    "id": "intermediate.stage.068",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_007",
+    "order": 8,
+    "title": "비교 표현 08",
+    "description": "이 수업은 저 수업보다 쉽습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.compare_class_easier",
+      "ko": "이 수업은 저 수업보다 쉽습니다.",
+      "en": "This class is easier than that class.",
+      "sentenceKo": "이 수업은 저 수업보다 쉽습니다",
+      "sentenceEn": "This class is easier than that class"
+    },
+    "quizIds": [
+      "intermediate.quiz.0671",
+      "intermediate.quiz.0672",
+      "intermediate.quiz.0673",
+      "intermediate.quiz.0674",
+      "intermediate.quiz.0675",
+      "intermediate.quiz.0676",
+      "intermediate.quiz.0677",
+      "intermediate.quiz.0678",
+      "intermediate.quiz.0679",
+      "intermediate.quiz.0680"
+    ],
+    "requiredStageId": "intermediate.stage.067"
+  },
+  {
+    "id": "intermediate.stage.069",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_007",
+    "order": 9,
+    "title": "버스는 택시보다 저렴합니다 익히기",
+    "description": "버스는 택시보다 저렴합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.compare_bus_cheaper",
+      "ko": "버스는 택시보다 저렴합니다.",
+      "en": "The bus is cheaper than a taxi.",
+      "sentenceKo": "버스는 택시보다 저렴합니다",
+      "sentenceEn": "The bus is cheaper than a taxi"
+    },
+    "quizIds": [
+      "intermediate.quiz.0681",
+      "intermediate.quiz.0682",
+      "intermediate.quiz.0683",
+      "intermediate.quiz.0684",
+      "intermediate.quiz.0685",
+      "intermediate.quiz.0686",
+      "intermediate.quiz.0687",
+      "intermediate.quiz.0688",
+      "intermediate.quiz.0689",
+      "intermediate.quiz.0690"
+    ],
+    "requiredStageId": "intermediate.stage.068"
+  },
+  {
+    "id": "intermediate.stage.070",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_007",
+    "order": 10,
+    "title": "여름은 봄보다 더 덥습니다 익히기",
+    "description": "여름은 봄보다 더 덥습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.compare_summer_hotter",
+      "ko": "여름은 봄보다 더 덥습니다.",
+      "en": "Summer is hotter than spring.",
+      "sentenceKo": "여름은 봄보다 더 덥습니다",
+      "sentenceEn": "Summer is hotter than spring"
+    },
+    "quizIds": [
+      "intermediate.quiz.0691",
+      "intermediate.quiz.0692",
+      "intermediate.quiz.0693",
+      "intermediate.quiz.0694",
+      "intermediate.quiz.0695",
+      "intermediate.quiz.0696",
+      "intermediate.quiz.0697",
+      "intermediate.quiz.0698",
+      "intermediate.quiz.0699",
+      "intermediate.quiz.0700"
+    ],
+    "requiredStageId": "intermediate.stage.069"
+  },
+  {
+    "id": "intermediate.stage.071",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_008",
+    "order": 1,
+    "title": "주말과 취미 01",
+    "description": "저는 주말마다 축구를 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.hobby_play_soccer_weekend",
+      "ko": "저는 주말마다 축구를 합니다.",
+      "en": "I play soccer every weekend.",
+      "sentenceKo": "저는 주말마다 축구를 합니다",
+      "sentenceEn": "I play soccer every weekend"
+    },
+    "quizIds": [
+      "intermediate.quiz.0701",
+      "intermediate.quiz.0702",
+      "intermediate.quiz.0703",
+      "intermediate.quiz.0704",
+      "intermediate.quiz.0705",
+      "intermediate.quiz.0706",
+      "intermediate.quiz.0707",
+      "intermediate.quiz.0708",
+      "intermediate.quiz.0709",
+      "intermediate.quiz.0710"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "intermediate.stage.072",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_008",
+    "order": 2,
+    "title": "주말과 취미 02",
+    "description": "저는 밤에 영화를 보는 것을 좋아합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.hobby_watch_movies_night",
+      "ko": "저는 밤에 영화를 보는 것을 좋아합니다.",
+      "en": "I like watching movies at night.",
+      "sentenceKo": "저는 밤에 영화를 보는 것을 좋아합니다",
+      "sentenceEn": "I like watching movies at night"
+    },
+    "quizIds": [
+      "intermediate.quiz.0711",
+      "intermediate.quiz.0712",
+      "intermediate.quiz.0713",
+      "intermediate.quiz.0714",
+      "intermediate.quiz.0715",
+      "intermediate.quiz.0716",
+      "intermediate.quiz.0717",
+      "intermediate.quiz.0718",
+      "intermediate.quiz.0719",
+      "intermediate.quiz.0720"
+    ],
+    "requiredStageId": "intermediate.stage.071"
+  },
+  {
+    "id": "intermediate.stage.073",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_008",
+    "order": 3,
+    "title": "주말과 취미 03",
+    "description": "저는 친구들과 카페에 가는 것을 좋아합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.hobby_visit_cafe_friends",
+      "ko": "저는 친구들과 카페에 가는 것을 좋아합니다.",
+      "en": "I enjoy visiting cafes with my friends.",
+      "sentenceKo": "저는 친구들과 카페에 가는 것을 좋아합니다",
+      "sentenceEn": "I enjoy visiting cafes with my friends"
+    },
+    "quizIds": [
+      "intermediate.quiz.0721",
+      "intermediate.quiz.0722",
+      "intermediate.quiz.0723",
+      "intermediate.quiz.0724",
+      "intermediate.quiz.0725",
+      "intermediate.quiz.0726",
+      "intermediate.quiz.0727",
+      "intermediate.quiz.0728",
+      "intermediate.quiz.0729",
+      "intermediate.quiz.0730"
+    ],
+    "requiredStageId": "intermediate.stage.072"
+  },
+  {
+    "id": "intermediate.stage.074",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_008",
+    "order": 4,
+    "title": "주말과 취미 04",
+    "description": "저는 집에서 그림을 그리곤 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.hobby_draw_home",
+      "ko": "저는 집에서 그림을 그리곤 합니다.",
+      "en": "I often draw pictures at home.",
+      "sentenceKo": "저는 집에서 그림을 그리곤 합니다",
+      "sentenceEn": "I often draw pictures at home"
+    },
+    "quizIds": [
+      "intermediate.quiz.0731",
+      "intermediate.quiz.0732",
+      "intermediate.quiz.0733",
+      "intermediate.quiz.0734",
+      "intermediate.quiz.0735",
+      "intermediate.quiz.0736",
+      "intermediate.quiz.0737",
+      "intermediate.quiz.0738",
+      "intermediate.quiz.0739",
+      "intermediate.quiz.0740"
+    ],
+    "requiredStageId": "intermediate.stage.073"
+  },
+  {
+    "id": "intermediate.stage.075",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_008",
+    "order": 5,
+    "title": "주말과 취미 05",
+    "description": "저는 버스에서 음악을 듣습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.hobby_listen_music_bus",
+      "ko": "저는 버스에서 음악을 듣습니다.",
+      "en": "I listen to music on the bus.",
+      "sentenceKo": "저는 버스에서 음악을 듣습니다",
+      "sentenceEn": "I listen to music on the bus"
+    },
+    "quizIds": [
+      "intermediate.quiz.0741",
+      "intermediate.quiz.0742",
+      "intermediate.quiz.0743",
+      "intermediate.quiz.0744",
+      "intermediate.quiz.0745",
+      "intermediate.quiz.0746",
+      "intermediate.quiz.0747",
+      "intermediate.quiz.0748",
+      "intermediate.quiz.0749",
+      "intermediate.quiz.0750"
+    ],
+    "requiredStageId": "intermediate.stage.074"
+  },
+  {
+    "id": "intermediate.stage.076",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_008",
+    "order": 6,
+    "title": "주말과 취미 06",
+    "description": "저는 여행 중에 사진을 찍는 것을 좋아합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.hobby_take_photos_trip",
+      "ko": "저는 여행 중에 사진을 찍는 것을 좋아합니다.",
+      "en": "I like taking photos during trips.",
+      "sentenceKo": "저는 여행 중에 사진을 찍는 것을 좋아합니다",
+      "sentenceEn": "I like taking photos during trips"
+    },
+    "quizIds": [
+      "intermediate.quiz.0751",
+      "intermediate.quiz.0752",
+      "intermediate.quiz.0753",
+      "intermediate.quiz.0754",
+      "intermediate.quiz.0755",
+      "intermediate.quiz.0756",
+      "intermediate.quiz.0757",
+      "intermediate.quiz.0758",
+      "intermediate.quiz.0759",
+      "intermediate.quiz.0760"
+    ],
+    "requiredStageId": "intermediate.stage.075"
+  },
+  {
+    "id": "intermediate.stage.077",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_008",
+    "order": 7,
+    "title": "주말과 취미 07",
+    "description": "저는 가족을 위해 요리하는 것을 좋아합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.hobby_cook_family",
+      "ko": "저는 가족을 위해 요리하는 것을 좋아합니다.",
+      "en": "I enjoy cooking for my family.",
+      "sentenceKo": "저는 가족을 위해 요리하는 것을 좋아합니다",
+      "sentenceEn": "I enjoy cooking for my family"
+    },
+    "quizIds": [
+      "intermediate.quiz.0761",
+      "intermediate.quiz.0762",
+      "intermediate.quiz.0763",
+      "intermediate.quiz.0764",
+      "intermediate.quiz.0765",
+      "intermediate.quiz.0766",
+      "intermediate.quiz.0767",
+      "intermediate.quiz.0768",
+      "intermediate.quiz.0769",
+      "intermediate.quiz.0770"
+    ],
+    "requiredStageId": "intermediate.stage.076"
+  },
+  {
+    "id": "intermediate.stage.078",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_008",
+    "order": 8,
+    "title": "주말과 취미 08",
+    "description": "저는 자기 전에 책을 읽습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.hobby_read_before_sleep",
+      "ko": "저는 자기 전에 책을 읽습니다.",
+      "en": "I read before I sleep.",
+      "sentenceKo": "저는 자기 전에 책을 읽습니다",
+      "sentenceEn": "I read before I sleep"
+    },
+    "quizIds": [
+      "intermediate.quiz.0771",
+      "intermediate.quiz.0772",
+      "intermediate.quiz.0773",
+      "intermediate.quiz.0774",
+      "intermediate.quiz.0775",
+      "intermediate.quiz.0776",
+      "intermediate.quiz.0777",
+      "intermediate.quiz.0778",
+      "intermediate.quiz.0779",
+      "intermediate.quiz.0780"
+    ],
+    "requiredStageId": "intermediate.stage.077"
+  },
+  {
+    "id": "intermediate.stage.079",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_008",
+    "order": 9,
+    "title": "주말과 취미 09",
+    "description": "저는 공원에서 산책하는 것을 좋아합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.hobby_walk_park",
+      "ko": "저는 공원에서 산책하는 것을 좋아합니다.",
+      "en": "I like taking walks in the park.",
+      "sentenceKo": "저는 공원에서 산책하는 것을 좋아합니다",
+      "sentenceEn": "I like taking walks in the park"
+    },
+    "quizIds": [
+      "intermediate.quiz.0781",
+      "intermediate.quiz.0782",
+      "intermediate.quiz.0783",
+      "intermediate.quiz.0784",
+      "intermediate.quiz.0785",
+      "intermediate.quiz.0786",
+      "intermediate.quiz.0787",
+      "intermediate.quiz.0788",
+      "intermediate.quiz.0789",
+      "intermediate.quiz.0790"
+    ],
+    "requiredStageId": "intermediate.stage.078"
+  },
+  {
+    "id": "intermediate.stage.080",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_008",
+    "order": 10,
+    "title": "주말과 취미 10",
+    "description": "저는 매일 영어를 연습하려고 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.hobby_practice_english_daily",
+      "ko": "저는 매일 영어를 연습하려고 합니다.",
+      "en": "I try to practice English every day.",
+      "sentenceKo": "저는 매일 영어를 연습하려고 합니다",
+      "sentenceEn": "I try to practice English every day"
+    },
+    "quizIds": [
+      "intermediate.quiz.0791",
+      "intermediate.quiz.0792",
+      "intermediate.quiz.0793",
+      "intermediate.quiz.0794",
+      "intermediate.quiz.0795",
+      "intermediate.quiz.0796",
+      "intermediate.quiz.0797",
+      "intermediate.quiz.0798",
+      "intermediate.quiz.0799",
+      "intermediate.quiz.0800"
+    ],
+    "requiredStageId": "intermediate.stage.079"
+  },
+  {
+    "id": "intermediate.stage.081",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_009",
+    "order": 1,
+    "title": "생각과 의견 01",
+    "description": "저는 영어 공부가 중요하다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.opinion_english_important",
+      "ko": "저는 영어 공부가 중요하다고 생각합니다.",
+      "en": "I think studying English is important.",
+      "sentenceKo": "저는 영어 공부가 중요하다고 생각합니다",
+      "sentenceEn": "I think studying English is important"
+    },
+    "quizIds": [
+      "intermediate.quiz.0801",
+      "intermediate.quiz.0802",
+      "intermediate.quiz.0803",
+      "intermediate.quiz.0804",
+      "intermediate.quiz.0805",
+      "intermediate.quiz.0806",
+      "intermediate.quiz.0807",
+      "intermediate.quiz.0808",
+      "intermediate.quiz.0809",
+      "intermediate.quiz.0810"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "intermediate.stage.082",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_009",
+    "order": 2,
+    "title": "생각과 의견 02",
+    "description": "저는 운동이 건강에 도움이 된다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.opinion_exercise_helpful",
+      "ko": "저는 운동이 건강에 도움이 된다고 생각합니다.",
+      "en": "I think exercise is helpful for health.",
+      "sentenceKo": "저는 운동이 건강에 도움이 된다고 생각합니다",
+      "sentenceEn": "I think exercise is helpful for health"
+    },
+    "quizIds": [
+      "intermediate.quiz.0811",
+      "intermediate.quiz.0812",
+      "intermediate.quiz.0813",
+      "intermediate.quiz.0814",
+      "intermediate.quiz.0815",
+      "intermediate.quiz.0816",
+      "intermediate.quiz.0817",
+      "intermediate.quiz.0818",
+      "intermediate.quiz.0819",
+      "intermediate.quiz.0820"
+    ],
+    "requiredStageId": "intermediate.stage.081"
+  },
+  {
+    "id": "intermediate.stage.083",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_009",
+    "order": 3,
+    "title": "생각과 의견 03",
+    "description": "저는 독서가 유용하다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.opinion_reading_useful",
+      "ko": "저는 독서가 유용하다고 생각합니다.",
+      "en": "I think reading is useful.",
+      "sentenceKo": "저는 독서가 유용하다고 생각합니다",
+      "sentenceEn": "I think reading is useful"
+    },
+    "quizIds": [
+      "intermediate.quiz.0821",
+      "intermediate.quiz.0822",
+      "intermediate.quiz.0823",
+      "intermediate.quiz.0824",
+      "intermediate.quiz.0825",
+      "intermediate.quiz.0826",
+      "intermediate.quiz.0827",
+      "intermediate.quiz.0828",
+      "intermediate.quiz.0829",
+      "intermediate.quiz.0830"
+    ],
+    "requiredStageId": "intermediate.stage.082"
+  },
+  {
+    "id": "intermediate.stage.084",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_009",
+    "order": 4,
+    "title": "생각과 의견 04",
+    "description": "저는 여행이 신난다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.opinion_travel_exciting",
+      "ko": "저는 여행이 신난다고 생각합니다.",
+      "en": "I think traveling is exciting.",
+      "sentenceKo": "저는 여행이 신난다고 생각합니다",
+      "sentenceEn": "I think traveling is exciting"
+    },
+    "quizIds": [
+      "intermediate.quiz.0831",
+      "intermediate.quiz.0832",
+      "intermediate.quiz.0833",
+      "intermediate.quiz.0834",
+      "intermediate.quiz.0835",
+      "intermediate.quiz.0836",
+      "intermediate.quiz.0837",
+      "intermediate.quiz.0838",
+      "intermediate.quiz.0839",
+      "intermediate.quiz.0840"
+    ],
+    "requiredStageId": "intermediate.stage.083"
+  },
+  {
+    "id": "intermediate.stage.085",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_009",
+    "order": 5,
+    "title": "생각과 의견 05",
+    "description": "저는 음악이 편안하다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.opinion_music_relaxing",
+      "ko": "저는 음악이 편안하다고 생각합니다.",
+      "en": "I think music is relaxing.",
+      "sentenceKo": "저는 음악이 편안하다고 생각합니다",
+      "sentenceEn": "I think music is relaxing"
+    },
+    "quizIds": [
+      "intermediate.quiz.0841",
+      "intermediate.quiz.0842",
+      "intermediate.quiz.0843",
+      "intermediate.quiz.0844",
+      "intermediate.quiz.0845",
+      "intermediate.quiz.0846",
+      "intermediate.quiz.0847",
+      "intermediate.quiz.0848",
+      "intermediate.quiz.0849",
+      "intermediate.quiz.0850"
+    ],
+    "requiredStageId": "intermediate.stage.084"
+  },
+  {
+    "id": "intermediate.stage.086",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_009",
+    "order": 6,
+    "title": "생각과 의견 06",
+    "description": "저는 팀워크가 중요하다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.opinion_teamwork_important",
+      "ko": "저는 팀워크가 중요하다고 생각합니다.",
+      "en": "I think teamwork is important.",
+      "sentenceKo": "저는 팀워크가 중요하다고 생각합니다",
+      "sentenceEn": "I think teamwork is important"
+    },
+    "quizIds": [
+      "intermediate.quiz.0851",
+      "intermediate.quiz.0852",
+      "intermediate.quiz.0853",
+      "intermediate.quiz.0854",
+      "intermediate.quiz.0855",
+      "intermediate.quiz.0856",
+      "intermediate.quiz.0857",
+      "intermediate.quiz.0858",
+      "intermediate.quiz.0859",
+      "intermediate.quiz.0860"
+    ],
+    "requiredStageId": "intermediate.stage.085"
+  },
+  {
+    "id": "intermediate.stage.087",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_009",
+    "order": 7,
+    "title": "생각과 의견 07",
+    "description": "저는 연습이 필요하다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.opinion_practice_necessary",
+      "ko": "저는 연습이 필요하다고 생각합니다.",
+      "en": "I think practice is necessary.",
+      "sentenceKo": "저는 연습이 필요하다고 생각합니다",
+      "sentenceEn": "I think practice is necessary"
+    },
+    "quizIds": [
+      "intermediate.quiz.0861",
+      "intermediate.quiz.0862",
+      "intermediate.quiz.0863",
+      "intermediate.quiz.0864",
+      "intermediate.quiz.0865",
+      "intermediate.quiz.0866",
+      "intermediate.quiz.0867",
+      "intermediate.quiz.0868",
+      "intermediate.quiz.0869",
+      "intermediate.quiz.0870"
+    ],
+    "requiredStageId": "intermediate.stage.086"
+  },
+  {
+    "id": "intermediate.stage.088",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_009",
+    "order": 8,
+    "title": "생각과 의견 08",
+    "description": "저는 오늘 날씨가 아름답다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.opinion_weather_beautiful",
+      "ko": "저는 오늘 날씨가 아름답다고 생각합니다.",
+      "en": "I think the weather is beautiful today.",
+      "sentenceKo": "저는 오늘 날씨가 아름답다고 생각합니다",
+      "sentenceEn": "I think the weather is beautiful today"
+    },
+    "quizIds": [
+      "intermediate.quiz.0871",
+      "intermediate.quiz.0872",
+      "intermediate.quiz.0873",
+      "intermediate.quiz.0874",
+      "intermediate.quiz.0875",
+      "intermediate.quiz.0876",
+      "intermediate.quiz.0877",
+      "intermediate.quiz.0878",
+      "intermediate.quiz.0879",
+      "intermediate.quiz.0880"
+    ],
+    "requiredStageId": "intermediate.stage.087"
+  },
+  {
+    "id": "intermediate.stage.089",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_009",
+    "order": 9,
+    "title": "생각과 의견 09",
+    "description": "저는 계획을 세우는 것이 도움이 된다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.opinion_plan_useful",
+      "ko": "저는 계획을 세우는 것이 도움이 된다고 생각합니다.",
+      "en": "I think making plans is helpful.",
+      "sentenceKo": "저는 계획을 세우는 것이 도움이 된다고 생각합니다",
+      "sentenceEn": "I think making plans is helpful"
+    },
+    "quizIds": [
+      "intermediate.quiz.0881",
+      "intermediate.quiz.0882",
+      "intermediate.quiz.0883",
+      "intermediate.quiz.0884",
+      "intermediate.quiz.0885",
+      "intermediate.quiz.0886",
+      "intermediate.quiz.0887",
+      "intermediate.quiz.0888",
+      "intermediate.quiz.0889",
+      "intermediate.quiz.0890"
+    ],
+    "requiredStageId": "intermediate.stage.088"
+  },
+  {
+    "id": "intermediate.stage.090",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_009",
+    "order": 10,
+    "title": "생각과 의견 10",
+    "description": "저는 충분한 휴식이 필요하다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.opinion_rest_needed",
+      "ko": "저는 충분한 휴식이 필요하다고 생각합니다.",
+      "en": "I think enough rest is needed.",
+      "sentenceKo": "저는 충분한 휴식이 필요하다고 생각합니다",
+      "sentenceEn": "I think enough rest is needed"
+    },
+    "quizIds": [
+      "intermediate.quiz.0891",
+      "intermediate.quiz.0892",
+      "intermediate.quiz.0893",
+      "intermediate.quiz.0894",
+      "intermediate.quiz.0895",
+      "intermediate.quiz.0896",
+      "intermediate.quiz.0897",
+      "intermediate.quiz.0898",
+      "intermediate.quiz.0899",
+      "intermediate.quiz.0900"
+    ],
+    "requiredStageId": "intermediate.stage.089"
+  },
+  {
+    "id": "intermediate.stage.091",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_010",
+    "order": 1,
+    "title": "필요와 소망 01",
+    "description": "저는 오늘 우산이 필요합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.need_need_umbrella",
+      "ko": "저는 오늘 우산이 필요합니다.",
+      "en": "I need an umbrella today.",
+      "sentenceKo": "저는 오늘 우산이 필요합니다",
+      "sentenceEn": "I need an umbrella today"
+    },
+    "quizIds": [
+      "intermediate.quiz.0901",
+      "intermediate.quiz.0902",
+      "intermediate.quiz.0903",
+      "intermediate.quiz.0904",
+      "intermediate.quiz.0905",
+      "intermediate.quiz.0906",
+      "intermediate.quiz.0907",
+      "intermediate.quiz.0908",
+      "intermediate.quiz.0909",
+      "intermediate.quiz.0910"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "intermediate.stage.092",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_010",
+    "order": 2,
+    "title": "필요와 소망 02",
+    "description": "저는 지금 휴식이 필요합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.need_need_break",
+      "ko": "저는 지금 휴식이 필요합니다.",
+      "en": "I need a break now.",
+      "sentenceKo": "저는 지금 휴식이 필요합니다",
+      "sentenceEn": "I need a break now"
+    },
+    "quizIds": [
+      "intermediate.quiz.0911",
+      "intermediate.quiz.0912",
+      "intermediate.quiz.0913",
+      "intermediate.quiz.0914",
+      "intermediate.quiz.0915",
+      "intermediate.quiz.0916",
+      "intermediate.quiz.0917",
+      "intermediate.quiz.0918",
+      "intermediate.quiz.0919",
+      "intermediate.quiz.0920"
+    ],
+    "requiredStageId": "intermediate.stage.091"
+  },
+  {
+    "id": "intermediate.stage.093",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_010",
+    "order": 3,
+    "title": "필요와 소망 03",
+    "description": "저는 이 문제에 도움이 필요합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.need_need_help",
+      "ko": "저는 이 문제에 도움이 필요합니다.",
+      "en": "I need help with this problem.",
+      "sentenceKo": "저는 이 문제에 도움이 필요합니다",
+      "sentenceEn": "I need help with this problem"
+    },
+    "quizIds": [
+      "intermediate.quiz.0921",
+      "intermediate.quiz.0922",
+      "intermediate.quiz.0923",
+      "intermediate.quiz.0924",
+      "intermediate.quiz.0925",
+      "intermediate.quiz.0926",
+      "intermediate.quiz.0927",
+      "intermediate.quiz.0928",
+      "intermediate.quiz.0929",
+      "intermediate.quiz.0930"
+    ],
+    "requiredStageId": "intermediate.stage.092"
+  },
+  {
+    "id": "intermediate.stage.094",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_010",
+    "order": 4,
+    "title": "필요와 소망 04",
+    "description": "저는 따뜻한 커피를 원합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.need_want_coffee",
+      "ko": "저는 따뜻한 커피를 원합니다.",
+      "en": "I want hot coffee.",
+      "sentenceKo": "저는 따뜻한 커피를 원합니다",
+      "sentenceEn": "I want hot coffee"
+    },
+    "quizIds": [
+      "intermediate.quiz.0931",
+      "intermediate.quiz.0932",
+      "intermediate.quiz.0933",
+      "intermediate.quiz.0934",
+      "intermediate.quiz.0935",
+      "intermediate.quiz.0936",
+      "intermediate.quiz.0937",
+      "intermediate.quiz.0938",
+      "intermediate.quiz.0939",
+      "intermediate.quiz.0940"
+    ],
+    "requiredStageId": "intermediate.stage.093"
+  },
+  {
+    "id": "intermediate.stage.095",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_010",
+    "order": 5,
+    "title": "저는 새 가방을 원합니다 익히기",
+    "description": "저는 새 가방을 원합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.need_want_new_bag",
+      "ko": "저는 새 가방을 원합니다.",
+      "en": "I want a new bag.",
+      "sentenceKo": "저는 새 가방을 원합니다",
+      "sentenceEn": "I want a new bag"
+    },
+    "quizIds": [
+      "intermediate.quiz.0941",
+      "intermediate.quiz.0942",
+      "intermediate.quiz.0943",
+      "intermediate.quiz.0944",
+      "intermediate.quiz.0945",
+      "intermediate.quiz.0946",
+      "intermediate.quiz.0947",
+      "intermediate.quiz.0948",
+      "intermediate.quiz.0949",
+      "intermediate.quiz.0950"
+    ],
+    "requiredStageId": "intermediate.stage.094"
+  },
+  {
+    "id": "intermediate.stage.096",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_010",
+    "order": 6,
+    "title": "저는 시간이 더 필요합니다 익히기",
+    "description": "저는 시간이 더 필요합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.need_need_more_time",
+      "ko": "저는 시간이 더 필요합니다.",
+      "en": "I need more time.",
+      "sentenceKo": "저는 시간이 더 필요합니다",
+      "sentenceEn": "I need more time"
+    },
+    "quizIds": [
+      "intermediate.quiz.0951",
+      "intermediate.quiz.0952",
+      "intermediate.quiz.0953",
+      "intermediate.quiz.0954",
+      "intermediate.quiz.0955",
+      "intermediate.quiz.0956",
+      "intermediate.quiz.0957",
+      "intermediate.quiz.0958",
+      "intermediate.quiz.0959",
+      "intermediate.quiz.0960"
+    ],
+    "requiredStageId": "intermediate.stage.095"
+  },
+  {
+    "id": "intermediate.stage.097",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_010",
+    "order": 7,
+    "title": "저는 집에 가고 싶습니다 익히기",
+    "description": "저는 집에 가고 싶습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.need_want_go_home",
+      "ko": "저는 집에 가고 싶습니다.",
+      "en": "I want to go home.",
+      "sentenceKo": "저는 집에 가고 싶습니다",
+      "sentenceEn": "I want to go home"
+    },
+    "quizIds": [
+      "intermediate.quiz.0961",
+      "intermediate.quiz.0962",
+      "intermediate.quiz.0963",
+      "intermediate.quiz.0964",
+      "intermediate.quiz.0965",
+      "intermediate.quiz.0966",
+      "intermediate.quiz.0967",
+      "intermediate.quiz.0968",
+      "intermediate.quiz.0969",
+      "intermediate.quiz.0970"
+    ],
+    "requiredStageId": "intermediate.stage.096"
+  },
+  {
+    "id": "intermediate.stage.098",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_010",
+    "order": 8,
+    "title": "저는 표가 필요합니다 익히기",
+    "description": "저는 표가 필요합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.need_need_ticket",
+      "ko": "저는 표가 필요합니다.",
+      "en": "I need a ticket.",
+      "sentenceKo": "저는 표가 필요합니다",
+      "sentenceEn": "I need a ticket"
+    },
+    "quizIds": [
+      "intermediate.quiz.0971",
+      "intermediate.quiz.0972",
+      "intermediate.quiz.0973",
+      "intermediate.quiz.0974",
+      "intermediate.quiz.0975",
+      "intermediate.quiz.0976",
+      "intermediate.quiz.0977",
+      "intermediate.quiz.0978",
+      "intermediate.quiz.0979",
+      "intermediate.quiz.0980"
+    ],
+    "requiredStageId": "intermediate.stage.097"
+  },
+  {
+    "id": "intermediate.stage.099",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_010",
+    "order": 9,
+    "title": "저는 좋은 결과를 원합니다 익히기",
+    "description": "저는 좋은 결과를 원합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.need_want_good_result",
+      "ko": "저는 좋은 결과를 원합니다.",
+      "en": "I want a good result.",
+      "sentenceKo": "저는 좋은 결과를 원합니다",
+      "sentenceEn": "I want a good result"
+    },
+    "quizIds": [
+      "intermediate.quiz.0981",
+      "intermediate.quiz.0982",
+      "intermediate.quiz.0983",
+      "intermediate.quiz.0984",
+      "intermediate.quiz.0985",
+      "intermediate.quiz.0986",
+      "intermediate.quiz.0987",
+      "intermediate.quiz.0988",
+      "intermediate.quiz.0989",
+      "intermediate.quiz.0990"
+    ],
+    "requiredStageId": "intermediate.stage.098"
+  },
+  {
+    "id": "intermediate.stage.100",
+    "difficulty": "intermediate",
+    "chapterId": "intermediate_chapter_010",
+    "order": 10,
+    "title": "필요와 소망 10",
+    "description": "저는 오늘 밤 잠이 더 필요합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "intermediate.target.need_need_sleep",
+      "ko": "저는 오늘 밤 잠이 더 필요합니다.",
+      "en": "I need more sleep tonight.",
+      "sentenceKo": "저는 오늘 밤 잠이 더 필요합니다",
+      "sentenceEn": "I need more sleep tonight"
+    },
+    "quizIds": [
+      "intermediate.quiz.0991",
+      "intermediate.quiz.0992",
+      "intermediate.quiz.0993",
+      "intermediate.quiz.0994",
+      "intermediate.quiz.0995",
+      "intermediate.quiz.0996",
+      "intermediate.quiz.0997",
+      "intermediate.quiz.0998",
+      "intermediate.quiz.0999",
+      "intermediate.quiz.1000"
+    ],
+    "requiredStageId": "intermediate.stage.099"
   }
 ]

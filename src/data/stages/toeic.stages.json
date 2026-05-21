@@ -4,26 +4,26 @@
     "difficulty": "toeic",
     "chapterId": "toeic_chapter_001",
     "order": 1,
-    "title": "회의 일정 공지",
-    "description": "회의 시작 시간 표현을 10문제로 반복 학습한다",
+    "title": "회의 일정 01",
+    "description": "회의는 오전 아홉시에 시작됩니다 학습 목표를 10문제로 반복 학습한다",
     "learningTarget": {
-      "id": "toeic.target.meeting",
-      "ko": "회의는 오전 아홉시에 시작됩니다",
-      "en": "The meeting starts at nine in the morning",
+      "id": "toeic.target.meeting_starts_nine",
+      "ko": "회의는 오전 아홉시에 시작됩니다.",
+      "en": "The meeting starts at nine in the morning.",
       "sentenceKo": "회의는 오전 아홉시에 시작됩니다",
       "sentenceEn": "The meeting starts at nine in the morning"
     },
     "quizIds": [
-      "toeic.quiz.001",
-      "toeic.quiz.002",
-      "toeic.quiz.003",
-      "toeic.quiz.004",
-      "toeic.quiz.005",
-      "toeic.quiz.006",
-      "toeic.quiz.007",
-      "toeic.quiz.008",
-      "toeic.quiz.009",
-      "toeic.quiz.010"
+      "toeic.quiz.0001",
+      "toeic.quiz.0002",
+      "toeic.quiz.0003",
+      "toeic.quiz.0004",
+      "toeic.quiz.0005",
+      "toeic.quiz.0006",
+      "toeic.quiz.0007",
+      "toeic.quiz.0008",
+      "toeic.quiz.0009",
+      "toeic.quiz.0010"
     ],
     "requiredStageId": null
   },
@@ -32,27 +32,2771 @@
     "difficulty": "toeic",
     "chapterId": "toeic_chapter_001",
     "order": 2,
-    "title": "보고서 제출 공지",
-    "description": "보고서 제출 표현을 10문제로 반복 학습한다",
+    "title": "회의 일정 02",
+    "description": "회의 일정은 월요일로 변경되었습니다 학습 목표를 10문제로 반복 학습한다",
     "learningTarget": {
-      "id": "toeic.target.report",
-      "ko": "보고서는 금요일까지 제출해야 합니다",
-      "en": "The report must be submitted by Friday",
+      "id": "toeic.target.meeting_moved_monday",
+      "ko": "회의 일정은 월요일로 변경되었습니다.",
+      "en": "The meeting has been moved to Monday.",
+      "sentenceKo": "회의 일정은 월요일로 변경되었습니다",
+      "sentenceEn": "The meeting has been moved to Monday"
+    },
+    "quizIds": [
+      "toeic.quiz.0011",
+      "toeic.quiz.0012",
+      "toeic.quiz.0013",
+      "toeic.quiz.0014",
+      "toeic.quiz.0015",
+      "toeic.quiz.0016",
+      "toeic.quiz.0017",
+      "toeic.quiz.0018",
+      "toeic.quiz.0019",
+      "toeic.quiz.0020"
+    ],
+    "requiredStageId": "toeic.stage.001"
+  },
+  {
+    "id": "toeic.stage.003",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_001",
+    "order": 3,
+    "title": "회의 일정 03",
+    "description": "회의는 3층 회의실에서 열립니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.meeting_conference_room",
+      "ko": "회의는 3층 회의실에서 열립니다.",
+      "en": "The meeting will be held in the conference room on the third floor.",
+      "sentenceKo": "회의는 3층 회의실에서 열립니다",
+      "sentenceEn": "The meeting will be held in the conference room on the third floor"
+    },
+    "quizIds": [
+      "toeic.quiz.0021",
+      "toeic.quiz.0022",
+      "toeic.quiz.0023",
+      "toeic.quiz.0024",
+      "toeic.quiz.0025",
+      "toeic.quiz.0026",
+      "toeic.quiz.0027",
+      "toeic.quiz.0028",
+      "toeic.quiz.0029",
+      "toeic.quiz.0030"
+    ],
+    "requiredStageId": "toeic.stage.002"
+  },
+  {
+    "id": "toeic.stage.004",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_001",
+    "order": 4,
+    "title": "회의 일정 04",
+    "description": "모든 직원은 월간 회의에 참석해야 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.meeting_all_staff",
+      "ko": "모든 직원은 월간 회의에 참석해야 합니다.",
+      "en": "All staff members must attend the monthly meeting.",
+      "sentenceKo": "모든 직원은 월간 회의에 참석해야 합니다",
+      "sentenceEn": "All staff members must attend the monthly meeting"
+    },
+    "quizIds": [
+      "toeic.quiz.0031",
+      "toeic.quiz.0032",
+      "toeic.quiz.0033",
+      "toeic.quiz.0034",
+      "toeic.quiz.0035",
+      "toeic.quiz.0036",
+      "toeic.quiz.0037",
+      "toeic.quiz.0038",
+      "toeic.quiz.0039",
+      "toeic.quiz.0040"
+    ],
+    "requiredStageId": "toeic.stage.003"
+  },
+  {
+    "id": "toeic.stage.005",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_001",
+    "order": 5,
+    "title": "회의 일정 05",
+    "description": "회의 안건이 이메일에 첨부되어 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.meeting_agenda_attached",
+      "ko": "회의 안건이 이메일에 첨부되어 있습니다.",
+      "en": "The meeting agenda is attached to the email.",
+      "sentenceKo": "회의 안건이 이메일에 첨부되어 있습니다",
+      "sentenceEn": "The meeting agenda is attached to the email"
+    },
+    "quizIds": [
+      "toeic.quiz.0041",
+      "toeic.quiz.0042",
+      "toeic.quiz.0043",
+      "toeic.quiz.0044",
+      "toeic.quiz.0045",
+      "toeic.quiz.0046",
+      "toeic.quiz.0047",
+      "toeic.quiz.0048",
+      "toeic.quiz.0049",
+      "toeic.quiz.0050"
+    ],
+    "requiredStageId": "toeic.stage.004"
+  },
+  {
+    "id": "toeic.stage.006",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_001",
+    "order": 6,
+    "title": "회의 일정 06",
+    "description": "일부 직원은 온라인으로 회의에 참여할 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.meeting_join_online",
+      "ko": "일부 직원은 온라인으로 회의에 참여할 것입니다.",
+      "en": "Some employees will join the meeting online.",
+      "sentenceKo": "일부 직원은 온라인으로 회의에 참여할 것입니다",
+      "sentenceEn": "Some employees will join the meeting online"
+    },
+    "quizIds": [
+      "toeic.quiz.0051",
+      "toeic.quiz.0052",
+      "toeic.quiz.0053",
+      "toeic.quiz.0054",
+      "toeic.quiz.0055",
+      "toeic.quiz.0056",
+      "toeic.quiz.0057",
+      "toeic.quiz.0058",
+      "toeic.quiz.0059",
+      "toeic.quiz.0060"
+    ],
+    "requiredStageId": "toeic.stage.005"
+  },
+  {
+    "id": "toeic.stage.007",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_001",
+    "order": 7,
+    "title": "회의 일정 07",
+    "description": "발표자가 늦어서 회의 시작이 지연되었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.meeting_start_delayed",
+      "ko": "발표자가 늦어서 회의 시작이 지연되었습니다.",
+      "en": "The meeting was delayed because the speaker was late.",
+      "sentenceKo": "발표자가 늦어서 회의 시작이 지연되었습니다",
+      "sentenceEn": "The meeting was delayed because the speaker was late"
+    },
+    "quizIds": [
+      "toeic.quiz.0061",
+      "toeic.quiz.0062",
+      "toeic.quiz.0063",
+      "toeic.quiz.0064",
+      "toeic.quiz.0065",
+      "toeic.quiz.0066",
+      "toeic.quiz.0067",
+      "toeic.quiz.0068",
+      "toeic.quiz.0069",
+      "toeic.quiz.0070"
+    ],
+    "requiredStageId": "toeic.stage.006"
+  },
+  {
+    "id": "toeic.stage.008",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_001",
+    "order": 8,
+    "title": "회의 일정 08",
+    "description": "날씨 문제로 오전 회의가 취소되었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.meeting_cancelled_weather",
+      "ko": "날씨 문제로 오전 회의가 취소되었습니다.",
+      "en": "The morning meeting was canceled due to the weather.",
+      "sentenceKo": "날씨 문제로 오전 회의가 취소되었습니다",
+      "sentenceEn": "The morning meeting was canceled due to the weather"
+    },
+    "quizIds": [
+      "toeic.quiz.0071",
+      "toeic.quiz.0072",
+      "toeic.quiz.0073",
+      "toeic.quiz.0074",
+      "toeic.quiz.0075",
+      "toeic.quiz.0076",
+      "toeic.quiz.0077",
+      "toeic.quiz.0078",
+      "toeic.quiz.0079",
+      "toeic.quiz.0080"
+    ],
+    "requiredStageId": "toeic.stage.007"
+  },
+  {
+    "id": "toeic.stage.009",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_001",
+    "order": 9,
+    "title": "회의 일정 09",
+    "description": "다음 회의 전에 회의록을 검토해 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.meeting_review_minutes",
+      "ko": "다음 회의 전에 회의록을 검토해 주세요.",
+      "en": "Please review the meeting minutes before the next session.",
+      "sentenceKo": "다음 회의 전에 회의록을 검토해 주세요",
+      "sentenceEn": "Please review the meeting minutes before the next session"
+    },
+    "quizIds": [
+      "toeic.quiz.0081",
+      "toeic.quiz.0082",
+      "toeic.quiz.0083",
+      "toeic.quiz.0084",
+      "toeic.quiz.0085",
+      "toeic.quiz.0086",
+      "toeic.quiz.0087",
+      "toeic.quiz.0088",
+      "toeic.quiz.0089",
+      "toeic.quiz.0090"
+    ],
+    "requiredStageId": "toeic.stage.008"
+  },
+  {
+    "id": "toeic.stage.010",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_001",
+    "order": 10,
+    "title": "회의 일정 10",
+    "description": "질문이 있으면 회의에 가져와 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.meeting_bring_questions",
+      "ko": "질문이 있으면 회의에 가져와 주세요.",
+      "en": "Please bring any questions to the meeting.",
+      "sentenceKo": "질문이 있으면 회의에 가져와 주세요",
+      "sentenceEn": "Please bring any questions to the meeting"
+    },
+    "quizIds": [
+      "toeic.quiz.0091",
+      "toeic.quiz.0092",
+      "toeic.quiz.0093",
+      "toeic.quiz.0094",
+      "toeic.quiz.0095",
+      "toeic.quiz.0096",
+      "toeic.quiz.0097",
+      "toeic.quiz.0098",
+      "toeic.quiz.0099",
+      "toeic.quiz.0100"
+    ],
+    "requiredStageId": "toeic.stage.009"
+  },
+  {
+    "id": "toeic.stage.011",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_002",
+    "order": 1,
+    "title": "보고서 제출 01",
+    "description": "보고서는 금요일까지 제출해야 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.report_submit_friday",
+      "ko": "보고서는 금요일까지 제출해야 합니다.",
+      "en": "The report must be submitted by Friday.",
       "sentenceKo": "보고서는 금요일까지 제출해야 합니다",
       "sentenceEn": "The report must be submitted by Friday"
     },
     "quizIds": [
-      "toeic.quiz.011",
-      "toeic.quiz.012",
-      "toeic.quiz.013",
-      "toeic.quiz.014",
-      "toeic.quiz.015",
-      "toeic.quiz.016",
-      "toeic.quiz.017",
-      "toeic.quiz.018",
-      "toeic.quiz.019",
-      "toeic.quiz.020"
+      "toeic.quiz.0101",
+      "toeic.quiz.0102",
+      "toeic.quiz.0103",
+      "toeic.quiz.0104",
+      "toeic.quiz.0105",
+      "toeic.quiz.0106",
+      "toeic.quiz.0107",
+      "toeic.quiz.0108",
+      "toeic.quiz.0109",
+      "toeic.quiz.0110"
     ],
-    "requiredStageId": "toeic.stage.001"
+    "requiredStageId": null
+  },
+  {
+    "id": "toeic.stage.012",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_002",
+    "order": 2,
+    "title": "보고서 제출 02",
+    "description": "초안 보고서는 검토할 준비가 되었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.report_draft_ready",
+      "ko": "초안 보고서는 검토할 준비가 되었습니다.",
+      "en": "The draft report is ready for review.",
+      "sentenceKo": "초안 보고서는 검토할 준비가 되었습니다",
+      "sentenceEn": "The draft report is ready for review"
+    },
+    "quizIds": [
+      "toeic.quiz.0111",
+      "toeic.quiz.0112",
+      "toeic.quiz.0113",
+      "toeic.quiz.0114",
+      "toeic.quiz.0115",
+      "toeic.quiz.0116",
+      "toeic.quiz.0117",
+      "toeic.quiz.0118",
+      "toeic.quiz.0119",
+      "toeic.quiz.0120"
+    ],
+    "requiredStageId": "toeic.stage.011"
+  },
+  {
+    "id": "toeic.stage.013",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_002",
+    "order": 3,
+    "title": "보고서 제출 03",
+    "description": "영업 요약은 마지막 페이지에 포함되어 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.report_sales_summary",
+      "ko": "영업 요약은 마지막 페이지에 포함되어 있습니다.",
+      "en": "The sales summary is included on the final page.",
+      "sentenceKo": "영업 요약은 마지막 페이지에 포함되어 있습니다",
+      "sentenceEn": "The sales summary is included on the final page"
+    },
+    "quizIds": [
+      "toeic.quiz.0121",
+      "toeic.quiz.0122",
+      "toeic.quiz.0123",
+      "toeic.quiz.0124",
+      "toeic.quiz.0125",
+      "toeic.quiz.0126",
+      "toeic.quiz.0127",
+      "toeic.quiz.0128",
+      "toeic.quiz.0129",
+      "toeic.quiz.0130"
+    ],
+    "requiredStageId": "toeic.stage.012"
+  },
+  {
+    "id": "toeic.stage.014",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_002",
+    "order": 4,
+    "title": "보고서 제출 04",
+    "description": "수정된 버전을 오늘 오후에 보내주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.report_send_revision",
+      "ko": "수정된 버전을 오늘 오후에 보내주세요.",
+      "en": "Please send the revised version this afternoon.",
+      "sentenceKo": "수정된 버전을 오늘 오후에 보내주세요",
+      "sentenceEn": "Please send the revised version this afternoon"
+    },
+    "quizIds": [
+      "toeic.quiz.0131",
+      "toeic.quiz.0132",
+      "toeic.quiz.0133",
+      "toeic.quiz.0134",
+      "toeic.quiz.0135",
+      "toeic.quiz.0136",
+      "toeic.quiz.0137",
+      "toeic.quiz.0138",
+      "toeic.quiz.0139",
+      "toeic.quiz.0140"
+    ],
+    "requiredStageId": "toeic.stage.013"
+  },
+  {
+    "id": "toeic.stage.015",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_002",
+    "order": 5,
+    "title": "보고서 제출 05",
+    "description": "차트 한 장이 최종 보고서에서 빠져 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.report_missing_chart",
+      "ko": "차트 한 장이 최종 보고서에서 빠져 있습니다.",
+      "en": "One chart is missing from the final report.",
+      "sentenceKo": "차트 한 장이 최종 보고서에서 빠져 있습니다",
+      "sentenceEn": "One chart is missing from the final report"
+    },
+    "quizIds": [
+      "toeic.quiz.0141",
+      "toeic.quiz.0142",
+      "toeic.quiz.0143",
+      "toeic.quiz.0144",
+      "toeic.quiz.0145",
+      "toeic.quiz.0146",
+      "toeic.quiz.0147",
+      "toeic.quiz.0148",
+      "toeic.quiz.0149",
+      "toeic.quiz.0150"
+    ],
+    "requiredStageId": "toeic.stage.014"
+  },
+  {
+    "id": "toeic.stage.016",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_002",
+    "order": 6,
+    "title": "보고서 제출 06",
+    "description": "매니저가 이미 예산 보고서를 승인했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.report_manager_approved",
+      "ko": "매니저가 이미 예산 보고서를 승인했습니다.",
+      "en": "The manager has already approved the budget report.",
+      "sentenceKo": "매니저가 이미 예산 보고서를 승인했습니다",
+      "sentenceEn": "The manager has already approved the budget report"
+    },
+    "quizIds": [
+      "toeic.quiz.0151",
+      "toeic.quiz.0152",
+      "toeic.quiz.0153",
+      "toeic.quiz.0154",
+      "toeic.quiz.0155",
+      "toeic.quiz.0156",
+      "toeic.quiz.0157",
+      "toeic.quiz.0158",
+      "toeic.quiz.0159",
+      "toeic.quiz.0160"
+    ],
+    "requiredStageId": "toeic.stage.015"
+  },
+  {
+    "id": "toeic.stage.017",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_002",
+    "order": 7,
+    "title": "보고서 제출 07",
+    "description": "분기 실적 보고서는 내일 발표될 예정입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.report_quarterly_results",
+      "ko": "분기 실적 보고서는 내일 발표될 예정입니다.",
+      "en": "The quarterly results report will be presented tomorrow.",
+      "sentenceKo": "분기 실적 보고서는 내일 발표될 예정입니다",
+      "sentenceEn": "The quarterly results report will be presented tomorrow"
+    },
+    "quizIds": [
+      "toeic.quiz.0161",
+      "toeic.quiz.0162",
+      "toeic.quiz.0163",
+      "toeic.quiz.0164",
+      "toeic.quiz.0165",
+      "toeic.quiz.0166",
+      "toeic.quiz.0167",
+      "toeic.quiz.0168",
+      "toeic.quiz.0169",
+      "toeic.quiz.0170"
+    ],
+    "requiredStageId": "toeic.stage.016"
+  },
+  {
+    "id": "toeic.stage.018",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_002",
+    "order": 8,
+    "title": "보고서 제출 08",
+    "description": "모든 서류는 온라인으로 제출해야 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.report_submit_online",
+      "ko": "모든 서류는 온라인으로 제출해야 합니다.",
+      "en": "All documents must be submitted online.",
+      "sentenceKo": "모든 서류는 온라인으로 제출해야 합니다",
+      "sentenceEn": "All documents must be submitted online"
+    },
+    "quizIds": [
+      "toeic.quiz.0171",
+      "toeic.quiz.0172",
+      "toeic.quiz.0173",
+      "toeic.quiz.0174",
+      "toeic.quiz.0175",
+      "toeic.quiz.0176",
+      "toeic.quiz.0177",
+      "toeic.quiz.0178",
+      "toeic.quiz.0179",
+      "toeic.quiz.0180"
+    ],
+    "requiredStageId": "toeic.stage.017"
+  },
+  {
+    "id": "toeic.stage.019",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_002",
+    "order": 9,
+    "title": "보고서 제출 09",
+    "description": "파일이 올바른 형식으로 저장되었는지 확인하세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.report_correct_format",
+      "ko": "파일이 올바른 형식으로 저장되었는지 확인하세요.",
+      "en": "Make sure the file is saved in the correct format.",
+      "sentenceKo": "파일이 올바른 형식으로 저장되었는지 확인하세요",
+      "sentenceEn": "Make sure the file is saved in the correct format"
+    },
+    "quizIds": [
+      "toeic.quiz.0181",
+      "toeic.quiz.0182",
+      "toeic.quiz.0183",
+      "toeic.quiz.0184",
+      "toeic.quiz.0185",
+      "toeic.quiz.0186",
+      "toeic.quiz.0187",
+      "toeic.quiz.0188",
+      "toeic.quiz.0189",
+      "toeic.quiz.0190"
+    ],
+    "requiredStageId": "toeic.stage.018"
+  },
+  {
+    "id": "toeic.stage.020",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_002",
+    "order": 10,
+    "title": "보고서 제출 10",
+    "description": "수정 전에 리뷰 의견을 먼저 읽어 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.report_review_comments",
+      "ko": "수정 전에 리뷰 의견을 먼저 읽어 주세요.",
+      "en": "Please read the review comments before revising it.",
+      "sentenceKo": "수정 전에 리뷰 의견을 먼저 읽어 주세요",
+      "sentenceEn": "Please read the review comments before revising it"
+    },
+    "quizIds": [
+      "toeic.quiz.0191",
+      "toeic.quiz.0192",
+      "toeic.quiz.0193",
+      "toeic.quiz.0194",
+      "toeic.quiz.0195",
+      "toeic.quiz.0196",
+      "toeic.quiz.0197",
+      "toeic.quiz.0198",
+      "toeic.quiz.0199",
+      "toeic.quiz.0200"
+    ],
+    "requiredStageId": "toeic.stage.019"
+  },
+  {
+    "id": "toeic.stage.021",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_003",
+    "order": 1,
+    "title": "이메일과 연락 01",
+    "description": "고객에게 확인 이메일을 보내주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.email_send_confirmation",
+      "ko": "고객에게 확인 이메일을 보내주세요.",
+      "en": "Please send a confirmation email to the client.",
+      "sentenceKo": "고객에게 확인 이메일을 보내주세요",
+      "sentenceEn": "Please send a confirmation email to the client"
+    },
+    "quizIds": [
+      "toeic.quiz.0201",
+      "toeic.quiz.0202",
+      "toeic.quiz.0203",
+      "toeic.quiz.0204",
+      "toeic.quiz.0205",
+      "toeic.quiz.0206",
+      "toeic.quiz.0207",
+      "toeic.quiz.0208",
+      "toeic.quiz.0209",
+      "toeic.quiz.0210"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "toeic.stage.022",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_003",
+    "order": 2,
+    "title": "이메일과 연락 02",
+    "description": "필요한 경우에만 전체 회신을 사용해 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.email_reply_all",
+      "ko": "필요한 경우에만 전체 회신을 사용해 주세요.",
+      "en": "Please use reply all only when necessary.",
+      "sentenceKo": "필요한 경우에만 전체 회신을 사용해 주세요",
+      "sentenceEn": "Please use reply all only when necessary"
+    },
+    "quizIds": [
+      "toeic.quiz.0211",
+      "toeic.quiz.0212",
+      "toeic.quiz.0213",
+      "toeic.quiz.0214",
+      "toeic.quiz.0215",
+      "toeic.quiz.0216",
+      "toeic.quiz.0217",
+      "toeic.quiz.0218",
+      "toeic.quiz.0219",
+      "toeic.quiz.0220"
+    ],
+    "requiredStageId": "toeic.stage.021"
+  },
+  {
+    "id": "toeic.stage.023",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_003",
+    "order": 3,
+    "title": "이메일과 연락 03",
+    "description": "제목 줄에 주문 번호를 포함해 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.email_subject_line",
+      "ko": "제목 줄에 주문 번호를 포함해 주세요.",
+      "en": "Please include the order number in the subject line.",
+      "sentenceKo": "제목 줄에 주문 번호를 포함해 주세요",
+      "sentenceEn": "Please include the order number in the subject line"
+    },
+    "quizIds": [
+      "toeic.quiz.0221",
+      "toeic.quiz.0222",
+      "toeic.quiz.0223",
+      "toeic.quiz.0224",
+      "toeic.quiz.0225",
+      "toeic.quiz.0226",
+      "toeic.quiz.0227",
+      "toeic.quiz.0228",
+      "toeic.quiz.0229",
+      "toeic.quiz.0230"
+    ],
+    "requiredStageId": "toeic.stage.022"
+  },
+  {
+    "id": "toeic.stage.024",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_003",
+    "order": 4,
+    "title": "이메일과 연락 04",
+    "description": "송장을 이메일에 첨부하는 것을 잊지 마세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.email_attach_invoice",
+      "ko": "송장을 이메일에 첨부하는 것을 잊지 마세요.",
+      "en": "Do not forget to attach the invoice to the email.",
+      "sentenceKo": "송장을 이메일에 첨부하는 것을 잊지 마세요",
+      "sentenceEn": "Do not forget to attach the invoice to the email"
+    },
+    "quizIds": [
+      "toeic.quiz.0231",
+      "toeic.quiz.0232",
+      "toeic.quiz.0233",
+      "toeic.quiz.0234",
+      "toeic.quiz.0235",
+      "toeic.quiz.0236",
+      "toeic.quiz.0237",
+      "toeic.quiz.0238",
+      "toeic.quiz.0239",
+      "toeic.quiz.0240"
+    ],
+    "requiredStageId": "toeic.stage.023"
+  },
+  {
+    "id": "toeic.stage.025",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_003",
+    "order": 5,
+    "title": "이메일과 연락 05",
+    "description": "답장이 없으면 다음 주에 다시 연락해 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.email_follow_up",
+      "ko": "답장이 없으면 다음 주에 다시 연락해 주세요.",
+      "en": "Please follow up next week if there is no response.",
+      "sentenceKo": "답장이 없으면 다음 주에 다시 연락해 주세요",
+      "sentenceEn": "Please follow up next week if there is no response"
+    },
+    "quizIds": [
+      "toeic.quiz.0241",
+      "toeic.quiz.0242",
+      "toeic.quiz.0243",
+      "toeic.quiz.0244",
+      "toeic.quiz.0245",
+      "toeic.quiz.0246",
+      "toeic.quiz.0247",
+      "toeic.quiz.0248",
+      "toeic.quiz.0249",
+      "toeic.quiz.0250"
+    ],
+    "requiredStageId": "toeic.stage.024"
+  },
+  {
+    "id": "toeic.stage.026",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_003",
+    "order": 6,
+    "title": "이메일과 연락 06",
+    "description": "중요한 문의에는 상사를 참조에 넣어 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.email_copy_supervisor",
+      "ko": "중요한 문의에는 상사를 참조에 넣어 주세요.",
+      "en": "Please copy your supervisor on important inquiries.",
+      "sentenceKo": "중요한 문의에는 상사를 참조에 넣어 주세요",
+      "sentenceEn": "Please copy your supervisor on important inquiries"
+    },
+    "quizIds": [
+      "toeic.quiz.0251",
+      "toeic.quiz.0252",
+      "toeic.quiz.0253",
+      "toeic.quiz.0254",
+      "toeic.quiz.0255",
+      "toeic.quiz.0256",
+      "toeic.quiz.0257",
+      "toeic.quiz.0258",
+      "toeic.quiz.0259",
+      "toeic.quiz.0260"
+    ],
+    "requiredStageId": "toeic.stage.025"
+  },
+  {
+    "id": "toeic.stage.027",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_003",
+    "order": 7,
+    "title": "이메일과 연락 07",
+    "description": "초안 이메일은 공유 폴더에 저장되어 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.email_draft_saved",
+      "ko": "초안 이메일은 공유 폴더에 저장되어 있습니다.",
+      "en": "The draft email is saved in the shared folder.",
+      "sentenceKo": "초안 이메일은 공유 폴더에 저장되어 있습니다",
+      "sentenceEn": "The draft email is saved in the shared folder"
+    },
+    "quizIds": [
+      "toeic.quiz.0261",
+      "toeic.quiz.0262",
+      "toeic.quiz.0263",
+      "toeic.quiz.0264",
+      "toeic.quiz.0265",
+      "toeic.quiz.0266",
+      "toeic.quiz.0267",
+      "toeic.quiz.0268",
+      "toeic.quiz.0269",
+      "toeic.quiz.0270"
+    ],
+    "requiredStageId": "toeic.stage.026"
+  },
+  {
+    "id": "toeic.stage.028",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_003",
+    "order": 8,
+    "title": "이메일과 연락 08",
+    "description": "이 요청은 긴급하므로 오늘 처리되어야 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.email_urgent_request",
+      "ko": "이 요청은 긴급하므로 오늘 처리되어야 합니다.",
+      "en": "This request is urgent and should be handled today.",
+      "sentenceKo": "이 요청은 긴급하므로 오늘 처리되어야 합니다",
+      "sentenceEn": "This request is urgent and should be handled today"
+    },
+    "quizIds": [
+      "toeic.quiz.0271",
+      "toeic.quiz.0272",
+      "toeic.quiz.0273",
+      "toeic.quiz.0274",
+      "toeic.quiz.0275",
+      "toeic.quiz.0276",
+      "toeic.quiz.0277",
+      "toeic.quiz.0278",
+      "toeic.quiz.0279",
+      "toeic.quiz.0280"
+    ],
+    "requiredStageId": "toeic.stage.027"
+  },
+  {
+    "id": "toeic.stage.029",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_003",
+    "order": 9,
+    "title": "빠른 답변에 감사드립니다 익히기",
+    "description": "빠른 답변에 감사드립니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.email_thank_response",
+      "ko": "빠른 답변에 감사드립니다.",
+      "en": "Thank you for your prompt response.",
+      "sentenceKo": "빠른 답변에 감사드립니다",
+      "sentenceEn": "Thank you for your prompt response"
+    },
+    "quizIds": [
+      "toeic.quiz.0281",
+      "toeic.quiz.0282",
+      "toeic.quiz.0283",
+      "toeic.quiz.0284",
+      "toeic.quiz.0285",
+      "toeic.quiz.0286",
+      "toeic.quiz.0287",
+      "toeic.quiz.0288",
+      "toeic.quiz.0289",
+      "toeic.quiz.0290"
+    ],
+    "requiredStageId": "toeic.stage.028"
+  },
+  {
+    "id": "toeic.stage.030",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_003",
+    "order": 10,
+    "title": "이메일과 연락 10",
+    "description": "혼동을 피하기 위해 세부 내용을 명확히 해주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.email_clarify_details",
+      "ko": "혼동을 피하기 위해 세부 내용을 명확히 해주세요.",
+      "en": "Please clarify the details to avoid confusion.",
+      "sentenceKo": "혼동을 피하기 위해 세부 내용을 명확히 해주세요",
+      "sentenceEn": "Please clarify the details to avoid confusion"
+    },
+    "quizIds": [
+      "toeic.quiz.0291",
+      "toeic.quiz.0292",
+      "toeic.quiz.0293",
+      "toeic.quiz.0294",
+      "toeic.quiz.0295",
+      "toeic.quiz.0296",
+      "toeic.quiz.0297",
+      "toeic.quiz.0298",
+      "toeic.quiz.0299",
+      "toeic.quiz.0300"
+    ],
+    "requiredStageId": "toeic.stage.029"
+  },
+  {
+    "id": "toeic.stage.031",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_004",
+    "order": 1,
+    "title": "출장과 일정 01",
+    "description": "항공편은 한 시간 지연되었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.travelbiz_flight_delayed",
+      "ko": "항공편은 한 시간 지연되었습니다.",
+      "en": "The flight was delayed by one hour.",
+      "sentenceKo": "항공편은 한 시간 지연되었습니다",
+      "sentenceEn": "The flight was delayed by one hour"
+    },
+    "quizIds": [
+      "toeic.quiz.0301",
+      "toeic.quiz.0302",
+      "toeic.quiz.0303",
+      "toeic.quiz.0304",
+      "toeic.quiz.0305",
+      "toeic.quiz.0306",
+      "toeic.quiz.0307",
+      "toeic.quiz.0308",
+      "toeic.quiz.0309",
+      "toeic.quiz.0310"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "toeic.stage.032",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_004",
+    "order": 2,
+    "title": "출장과 일정 02",
+    "description": "호텔 예약은 이미 완료되었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.travelbiz_hotel_reserved",
+      "ko": "호텔 예약은 이미 완료되었습니다.",
+      "en": "The hotel reservation has already been completed.",
+      "sentenceKo": "호텔 예약은 이미 완료되었습니다",
+      "sentenceEn": "The hotel reservation has already been completed"
+    },
+    "quizIds": [
+      "toeic.quiz.0311",
+      "toeic.quiz.0312",
+      "toeic.quiz.0313",
+      "toeic.quiz.0314",
+      "toeic.quiz.0315",
+      "toeic.quiz.0316",
+      "toeic.quiz.0317",
+      "toeic.quiz.0318",
+      "toeic.quiz.0319",
+      "toeic.quiz.0320"
+    ],
+    "requiredStageId": "toeic.stage.031"
+  },
+  {
+    "id": "toeic.stage.033",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_004",
+    "order": 3,
+    "title": "출장과 일정 03",
+    "description": "도착 터미널은 변경될 수 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.travelbiz_arrival_terminal",
+      "ko": "도착 터미널은 변경될 수 있습니다.",
+      "en": "The arrival terminal may change.",
+      "sentenceKo": "도착 터미널은 변경될 수 있습니다",
+      "sentenceEn": "The arrival terminal may change"
+    },
+    "quizIds": [
+      "toeic.quiz.0321",
+      "toeic.quiz.0322",
+      "toeic.quiz.0323",
+      "toeic.quiz.0324",
+      "toeic.quiz.0325",
+      "toeic.quiz.0326",
+      "toeic.quiz.0327",
+      "toeic.quiz.0328",
+      "toeic.quiz.0329",
+      "toeic.quiz.0330"
+    ],
+    "requiredStageId": "toeic.stage.032"
+  },
+  {
+    "id": "toeic.stage.034",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_004",
+    "order": 4,
+    "title": "출장과 일정 04",
+    "description": "택시 영수증은 경비 처리에 필요합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.travelbiz_taxi_receipt",
+      "ko": "택시 영수증은 경비 처리에 필요합니다.",
+      "en": "A taxi receipt is required for reimbursement.",
+      "sentenceKo": "택시 영수증은 경비 처리에 필요합니다",
+      "sentenceEn": "A taxi receipt is required for reimbursement"
+    },
+    "quizIds": [
+      "toeic.quiz.0331",
+      "toeic.quiz.0332",
+      "toeic.quiz.0333",
+      "toeic.quiz.0334",
+      "toeic.quiz.0335",
+      "toeic.quiz.0336",
+      "toeic.quiz.0337",
+      "toeic.quiz.0338",
+      "toeic.quiz.0339",
+      "toeic.quiz.0340"
+    ],
+    "requiredStageId": "toeic.stage.033"
+  },
+  {
+    "id": "toeic.stage.035",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_004",
+    "order": 5,
+    "title": "출장과 일정 05",
+    "description": "탑승구 번호를 다시 확인해 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.travelbiz_boarding_gate",
+      "ko": "탑승구 번호를 다시 확인해 주세요.",
+      "en": "Please check the boarding gate number again.",
+      "sentenceKo": "탑승구 번호를 다시 확인해 주세요",
+      "sentenceEn": "Please check the boarding gate number again"
+    },
+    "quizIds": [
+      "toeic.quiz.0341",
+      "toeic.quiz.0342",
+      "toeic.quiz.0343",
+      "toeic.quiz.0344",
+      "toeic.quiz.0345",
+      "toeic.quiz.0346",
+      "toeic.quiz.0347",
+      "toeic.quiz.0348",
+      "toeic.quiz.0349",
+      "toeic.quiz.0350"
+    ],
+    "requiredStageId": "toeic.stage.034"
+  },
+  {
+    "id": "toeic.stage.036",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_004",
+    "order": 6,
+    "title": "출장과 일정 06",
+    "description": "지사 방문은 다음 주 화요일로 예정되어 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.travelbiz_visit_branch",
+      "ko": "지사 방문은 다음 주 화요일로 예정되어 있습니다.",
+      "en": "The branch visit is scheduled for next Tuesday.",
+      "sentenceKo": "지사 방문은 다음 주 화요일로 예정되어 있습니다",
+      "sentenceEn": "The branch visit is scheduled for next Tuesday"
+    },
+    "quizIds": [
+      "toeic.quiz.0351",
+      "toeic.quiz.0352",
+      "toeic.quiz.0353",
+      "toeic.quiz.0354",
+      "toeic.quiz.0355",
+      "toeic.quiz.0356",
+      "toeic.quiz.0357",
+      "toeic.quiz.0358",
+      "toeic.quiz.0359",
+      "toeic.quiz.0360"
+    ],
+    "requiredStageId": "toeic.stage.035"
+  },
+  {
+    "id": "toeic.stage.037",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_004",
+    "order": 7,
+    "title": "출장과 일정 07",
+    "description": "교통 파업으로 일정이 일부 변경되었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.travelbiz_transport_strike",
+      "ko": "교통 파업으로 일정이 일부 변경되었습니다.",
+      "en": "The schedule has been partially changed due to the transport strike.",
+      "sentenceKo": "교통 파업으로 일정이 일부 변경되었습니다",
+      "sentenceEn": "The schedule has been partially changed due to the transport strike"
+    },
+    "quizIds": [
+      "toeic.quiz.0361",
+      "toeic.quiz.0362",
+      "toeic.quiz.0363",
+      "toeic.quiz.0364",
+      "toeic.quiz.0365",
+      "toeic.quiz.0366",
+      "toeic.quiz.0367",
+      "toeic.quiz.0368",
+      "toeic.quiz.0369",
+      "toeic.quiz.0370"
+    ],
+    "requiredStageId": "toeic.stage.036"
+  },
+  {
+    "id": "toeic.stage.038",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_004",
+    "order": 8,
+    "title": "출장과 일정 08",
+    "description": "회의 배지는 등록 데스크에서 받을 수 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.travelbiz_conference_badge",
+      "ko": "회의 배지는 등록 데스크에서 받을 수 있습니다.",
+      "en": "Conference badges can be picked up at the registration desk.",
+      "sentenceKo": "회의 배지는 등록 데스크에서 받을 수 있습니다",
+      "sentenceEn": "Conference badges can be picked up at the registration desk"
+    },
+    "quizIds": [
+      "toeic.quiz.0371",
+      "toeic.quiz.0372",
+      "toeic.quiz.0373",
+      "toeic.quiz.0374",
+      "toeic.quiz.0375",
+      "toeic.quiz.0376",
+      "toeic.quiz.0377",
+      "toeic.quiz.0378",
+      "toeic.quiz.0379",
+      "toeic.quiz.0380"
+    ],
+    "requiredStageId": "toeic.stage.037"
+  },
+  {
+    "id": "toeic.stage.039",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_004",
+    "order": 9,
+    "title": "출장과 일정 09",
+    "description": "수하물은 잠시 후 컨베이어 벨트에 도착할 예정입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.travelbiz_luggage_arrival",
+      "ko": "수하물은 잠시 후 컨베이어 벨트에 도착할 예정입니다.",
+      "en": "The luggage will arrive on the conveyor belt shortly.",
+      "sentenceKo": "수하물은 잠시 후 컨베이어 벨트에 도착할 예정입니다",
+      "sentenceEn": "The luggage will arrive on the conveyor belt shortly"
+    },
+    "quizIds": [
+      "toeic.quiz.0381",
+      "toeic.quiz.0382",
+      "toeic.quiz.0383",
+      "toeic.quiz.0384",
+      "toeic.quiz.0385",
+      "toeic.quiz.0386",
+      "toeic.quiz.0387",
+      "toeic.quiz.0388",
+      "toeic.quiz.0389",
+      "toeic.quiz.0390"
+    ],
+    "requiredStageId": "toeic.stage.038"
+  },
+  {
+    "id": "toeic.stage.040",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_004",
+    "order": 10,
+    "title": "출장과 일정 10",
+    "description": "출장 일정표가 팀과 공유되었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.travelbiz_itinerary_shared",
+      "ko": "출장 일정표가 팀과 공유되었습니다.",
+      "en": "The travel itinerary has been shared with the team.",
+      "sentenceKo": "출장 일정표가 팀과 공유되었습니다",
+      "sentenceEn": "The travel itinerary has been shared with the team"
+    },
+    "quizIds": [
+      "toeic.quiz.0391",
+      "toeic.quiz.0392",
+      "toeic.quiz.0393",
+      "toeic.quiz.0394",
+      "toeic.quiz.0395",
+      "toeic.quiz.0396",
+      "toeic.quiz.0397",
+      "toeic.quiz.0398",
+      "toeic.quiz.0399",
+      "toeic.quiz.0400"
+    ],
+    "requiredStageId": "toeic.stage.039"
+  },
+  {
+    "id": "toeic.stage.041",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_005",
+    "order": 1,
+    "title": "사무실 장비 01",
+    "description": "복사기가 다시 작동하지 않습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.office_copier_broken",
+      "ko": "복사기가 다시 작동하지 않습니다.",
+      "en": "The copier is not working again.",
+      "sentenceKo": "복사기가 다시 작동하지 않습니다",
+      "sentenceEn": "The copier is not working again"
+    },
+    "quizIds": [
+      "toeic.quiz.0401",
+      "toeic.quiz.0402",
+      "toeic.quiz.0403",
+      "toeic.quiz.0404",
+      "toeic.quiz.0405",
+      "toeic.quiz.0406",
+      "toeic.quiz.0407",
+      "toeic.quiz.0408",
+      "toeic.quiz.0409",
+      "toeic.quiz.0410"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "toeic.stage.042",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_005",
+    "order": 2,
+    "title": "사무실 장비 02",
+    "description": "프린터에 용지를 보충해 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.office_printer_paper",
+      "ko": "프린터에 용지를 보충해 주세요.",
+      "en": "Please refill the paper in the printer.",
+      "sentenceKo": "프린터에 용지를 보충해 주세요",
+      "sentenceEn": "Please refill the paper in the printer"
+    },
+    "quizIds": [
+      "toeic.quiz.0411",
+      "toeic.quiz.0412",
+      "toeic.quiz.0413",
+      "toeic.quiz.0414",
+      "toeic.quiz.0415",
+      "toeic.quiz.0416",
+      "toeic.quiz.0417",
+      "toeic.quiz.0418",
+      "toeic.quiz.0419",
+      "toeic.quiz.0420"
+    ],
+    "requiredStageId": "toeic.stage.041"
+  },
+  {
+    "id": "toeic.stage.043",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_005",
+    "order": 3,
+    "title": "사무실 장비 03",
+    "description": "모든 컴퓨터는 어젯밤에 업데이트되었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.office_computer_updated",
+      "ko": "모든 컴퓨터는 어젯밤에 업데이트되었습니다.",
+      "en": "All computers were updated last night.",
+      "sentenceKo": "모든 컴퓨터는 어젯밤에 업데이트되었습니다",
+      "sentenceEn": "All computers were updated last night"
+    },
+    "quizIds": [
+      "toeic.quiz.0421",
+      "toeic.quiz.0422",
+      "toeic.quiz.0423",
+      "toeic.quiz.0424",
+      "toeic.quiz.0425",
+      "toeic.quiz.0426",
+      "toeic.quiz.0427",
+      "toeic.quiz.0428",
+      "toeic.quiz.0429",
+      "toeic.quiz.0430"
+    ],
+    "requiredStageId": "toeic.stage.042"
+  },
+  {
+    "id": "toeic.stage.044",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_005",
+    "order": 4,
+    "title": "사무실 장비 04",
+    "description": "회의실 화면 연결에 문제가 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.office_meeting_screen",
+      "ko": "회의실 화면 연결에 문제가 있습니다.",
+      "en": "There is a problem with the meeting room display connection.",
+      "sentenceKo": "회의실 화면 연결에 문제가 있습니다",
+      "sentenceEn": "There is a problem with the meeting room display connection"
+    },
+    "quizIds": [
+      "toeic.quiz.0431",
+      "toeic.quiz.0432",
+      "toeic.quiz.0433",
+      "toeic.quiz.0434",
+      "toeic.quiz.0435",
+      "toeic.quiz.0436",
+      "toeic.quiz.0437",
+      "toeic.quiz.0438",
+      "toeic.quiz.0439",
+      "toeic.quiz.0440"
+    ],
+    "requiredStageId": "toeic.stage.043"
+  },
+  {
+    "id": "toeic.stage.045",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_005",
+    "order": 5,
+    "title": "사무실 장비 05",
+    "description": "이 의자는 새 것으로 교체되어야 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.office_replace_chair",
+      "ko": "이 의자는 새 것으로 교체되어야 합니다.",
+      "en": "This chair should be replaced with a new one.",
+      "sentenceKo": "이 의자는 새 것으로 교체되어야 합니다",
+      "sentenceEn": "This chair should be replaced with a new one"
+    },
+    "quizIds": [
+      "toeic.quiz.0441",
+      "toeic.quiz.0442",
+      "toeic.quiz.0443",
+      "toeic.quiz.0444",
+      "toeic.quiz.0445",
+      "toeic.quiz.0446",
+      "toeic.quiz.0447",
+      "toeic.quiz.0448",
+      "toeic.quiz.0449",
+      "toeic.quiz.0450"
+    ],
+    "requiredStageId": "toeic.stage.044"
+  },
+  {
+    "id": "toeic.stage.046",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_005",
+    "order": 6,
+    "title": "사무실 장비 06",
+    "description": "사무용품 주문은 오늘 마감됩니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.office_supply_order",
+      "ko": "사무용품 주문은 오늘 마감됩니다.",
+      "en": "The office supply order closes today.",
+      "sentenceKo": "사무용품 주문은 오늘 마감됩니다",
+      "sentenceEn": "The office supply order closes today"
+    },
+    "quizIds": [
+      "toeic.quiz.0451",
+      "toeic.quiz.0452",
+      "toeic.quiz.0453",
+      "toeic.quiz.0454",
+      "toeic.quiz.0455",
+      "toeic.quiz.0456",
+      "toeic.quiz.0457",
+      "toeic.quiz.0458",
+      "toeic.quiz.0459",
+      "toeic.quiz.0460"
+    ],
+    "requiredStageId": "toeic.stage.045"
+  },
+  {
+    "id": "toeic.stage.047",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_005",
+    "order": 7,
+    "title": "사무실 장비 07",
+    "description": "프로젝터는 발표 전에 준비되어 있어야 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.office_projector_ready",
+      "ko": "프로젝터는 발표 전에 준비되어 있어야 합니다.",
+      "en": "The projector should be ready before the presentation.",
+      "sentenceKo": "프로젝터는 발표 전에 준비되어 있어야 합니다",
+      "sentenceEn": "The projector should be ready before the presentation"
+    },
+    "quizIds": [
+      "toeic.quiz.0461",
+      "toeic.quiz.0462",
+      "toeic.quiz.0463",
+      "toeic.quiz.0464",
+      "toeic.quiz.0465",
+      "toeic.quiz.0466",
+      "toeic.quiz.0467",
+      "toeic.quiz.0468",
+      "toeic.quiz.0469",
+      "toeic.quiz.0470"
+    ],
+    "requiredStageId": "toeic.stage.046"
+  },
+  {
+    "id": "toeic.stage.048",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_005",
+    "order": 8,
+    "title": "사무실 장비 08",
+    "description": "네트워크 비밀번호는 매달 변경됩니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.office_network_password",
+      "ko": "네트워크 비밀번호는 매달 변경됩니다.",
+      "en": "The network password is changed every month.",
+      "sentenceKo": "네트워크 비밀번호는 매달 변경됩니다",
+      "sentenceEn": "The network password is changed every month"
+    },
+    "quizIds": [
+      "toeic.quiz.0471",
+      "toeic.quiz.0472",
+      "toeic.quiz.0473",
+      "toeic.quiz.0474",
+      "toeic.quiz.0475",
+      "toeic.quiz.0476",
+      "toeic.quiz.0477",
+      "toeic.quiz.0478",
+      "toeic.quiz.0479",
+      "toeic.quiz.0480"
+    ],
+    "requiredStageId": "toeic.stage.047"
+  },
+  {
+    "id": "toeic.stage.049",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_005",
+    "order": 9,
+    "title": "사무실 장비 09",
+    "description": "공용 프린터는 복도 끝에 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.office_shared_printer",
+      "ko": "공용 프린터는 복도 끝에 있습니다.",
+      "en": "The shared printer is at the end of the hallway.",
+      "sentenceKo": "공용 프린터는 복도 끝에 있습니다",
+      "sentenceEn": "The shared printer is at the end of the hallway"
+    },
+    "quizIds": [
+      "toeic.quiz.0481",
+      "toeic.quiz.0482",
+      "toeic.quiz.0483",
+      "toeic.quiz.0484",
+      "toeic.quiz.0485",
+      "toeic.quiz.0486",
+      "toeic.quiz.0487",
+      "toeic.quiz.0488",
+      "toeic.quiz.0489",
+      "toeic.quiz.0490"
+    ],
+    "requiredStageId": "toeic.stage.048"
+  },
+  {
+    "id": "toeic.stage.050",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_005",
+    "order": 10,
+    "title": "사무실 장비 10",
+    "description": "문제가 계속되면 기술자를 불러 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.office_call_technician",
+      "ko": "문제가 계속되면 기술자를 불러 주세요.",
+      "en": "Please call a technician if the problem continues.",
+      "sentenceKo": "문제가 계속되면 기술자를 불러 주세요",
+      "sentenceEn": "Please call a technician if the problem continues"
+    },
+    "quizIds": [
+      "toeic.quiz.0491",
+      "toeic.quiz.0492",
+      "toeic.quiz.0493",
+      "toeic.quiz.0494",
+      "toeic.quiz.0495",
+      "toeic.quiz.0496",
+      "toeic.quiz.0497",
+      "toeic.quiz.0498",
+      "toeic.quiz.0499",
+      "toeic.quiz.0500"
+    ],
+    "requiredStageId": "toeic.stage.049"
+  },
+  {
+    "id": "toeic.stage.051",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_006",
+    "order": 1,
+    "title": "인사와 교육 01",
+    "description": "신입 직원은 다음 주에 교육을 받습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.hr_training_next_week",
+      "ko": "신입 직원은 다음 주에 교육을 받습니다.",
+      "en": "New employees will receive training next week.",
+      "sentenceKo": "신입 직원은 다음 주에 교육을 받습니다",
+      "sentenceEn": "New employees will receive training next week"
+    },
+    "quizIds": [
+      "toeic.quiz.0501",
+      "toeic.quiz.0502",
+      "toeic.quiz.0503",
+      "toeic.quiz.0504",
+      "toeic.quiz.0505",
+      "toeic.quiz.0506",
+      "toeic.quiz.0507",
+      "toeic.quiz.0508",
+      "toeic.quiz.0509",
+      "toeic.quiz.0510"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "toeic.stage.052",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_006",
+    "order": 2,
+    "title": "인사와 교육 02",
+    "description": "오리엔테이션은 대회의실에서 열립니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.hr_orientation_room",
+      "ko": "오리엔테이션은 대회의실에서 열립니다.",
+      "en": "The orientation will take place in the main conference room.",
+      "sentenceKo": "오리엔테이션은 대회의실에서 열립니다",
+      "sentenceEn": "The orientation will take place in the main conference room"
+    },
+    "quizIds": [
+      "toeic.quiz.0511",
+      "toeic.quiz.0512",
+      "toeic.quiz.0513",
+      "toeic.quiz.0514",
+      "toeic.quiz.0515",
+      "toeic.quiz.0516",
+      "toeic.quiz.0517",
+      "toeic.quiz.0518",
+      "toeic.quiz.0519",
+      "toeic.quiz.0520"
+    ],
+    "requiredStageId": "toeic.stage.051"
+  },
+  {
+    "id": "toeic.stage.053",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_006",
+    "order": 3,
+    "title": "인사와 교육 03",
+    "description": "지원자는 이력서를 온라인으로 제출해야 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.hr_submit_resume",
+      "ko": "지원자는 이력서를 온라인으로 제출해야 합니다.",
+      "en": "Applicants must submit their resumes online.",
+      "sentenceKo": "지원자는 이력서를 온라인으로 제출해야 합니다",
+      "sentenceEn": "Applicants must submit their resumes online"
+    },
+    "quizIds": [
+      "toeic.quiz.0521",
+      "toeic.quiz.0522",
+      "toeic.quiz.0523",
+      "toeic.quiz.0524",
+      "toeic.quiz.0525",
+      "toeic.quiz.0526",
+      "toeic.quiz.0527",
+      "toeic.quiz.0528",
+      "toeic.quiz.0529",
+      "toeic.quiz.0530"
+    ],
+    "requiredStageId": "toeic.stage.052"
+  },
+  {
+    "id": "toeic.stage.054",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_006",
+    "order": 4,
+    "title": "인사와 교육 04",
+    "description": "면접 일정은 내일 공지될 예정입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.hr_interview_schedule",
+      "ko": "면접 일정은 내일 공지될 예정입니다.",
+      "en": "The interview schedule will be announced tomorrow.",
+      "sentenceKo": "면접 일정은 내일 공지될 예정입니다",
+      "sentenceEn": "The interview schedule will be announced tomorrow"
+    },
+    "quizIds": [
+      "toeic.quiz.0531",
+      "toeic.quiz.0532",
+      "toeic.quiz.0533",
+      "toeic.quiz.0534",
+      "toeic.quiz.0535",
+      "toeic.quiz.0536",
+      "toeic.quiz.0537",
+      "toeic.quiz.0538",
+      "toeic.quiz.0539",
+      "toeic.quiz.0540"
+    ],
+    "requiredStageId": "toeic.stage.053"
+  },
+  {
+    "id": "toeic.stage.055",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_006",
+    "order": 5,
+    "title": "인사와 교육 05",
+    "description": "복지 제도는 첫 교육 시간에 설명됩니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.hr_benefits_explained",
+      "ko": "복지 제도는 첫 교육 시간에 설명됩니다.",
+      "en": "The benefits package is explained during the first training session.",
+      "sentenceKo": "복지 제도는 첫 교육 시간에 설명됩니다",
+      "sentenceEn": "The benefits package is explained during the first training session"
+    },
+    "quizIds": [
+      "toeic.quiz.0541",
+      "toeic.quiz.0542",
+      "toeic.quiz.0543",
+      "toeic.quiz.0544",
+      "toeic.quiz.0545",
+      "toeic.quiz.0546",
+      "toeic.quiz.0547",
+      "toeic.quiz.0548",
+      "toeic.quiz.0549",
+      "toeic.quiz.0550"
+    ],
+    "requiredStageId": "toeic.stage.054"
+  },
+  {
+    "id": "toeic.stage.056",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_006",
+    "order": 6,
+    "title": "인사와 교육 06",
+    "description": "매니저는 매달 성과 피드백을 제공합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.hr_manager_feedback",
+      "ko": "매니저는 매달 성과 피드백을 제공합니다.",
+      "en": "Managers provide performance feedback every month.",
+      "sentenceKo": "매니저는 매달 성과 피드백을 제공합니다",
+      "sentenceEn": "Managers provide performance feedback every month"
+    },
+    "quizIds": [
+      "toeic.quiz.0551",
+      "toeic.quiz.0552",
+      "toeic.quiz.0553",
+      "toeic.quiz.0554",
+      "toeic.quiz.0555",
+      "toeic.quiz.0556",
+      "toeic.quiz.0557",
+      "toeic.quiz.0558",
+      "toeic.quiz.0559",
+      "toeic.quiz.0560"
+    ],
+    "requiredStageId": "toeic.stage.055"
+  },
+  {
+    "id": "toeic.stage.057",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_006",
+    "order": 7,
+    "title": "인사와 교육 07",
+    "description": "워크숍에는 전원 참석이 요구됩니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.hr_attendance_required",
+      "ko": "워크숍에는 전원 참석이 요구됩니다.",
+      "en": "Attendance is required for the workshop.",
+      "sentenceKo": "워크숍에는 전원 참석이 요구됩니다",
+      "sentenceEn": "Attendance is required for the workshop"
+    },
+    "quizIds": [
+      "toeic.quiz.0561",
+      "toeic.quiz.0562",
+      "toeic.quiz.0563",
+      "toeic.quiz.0564",
+      "toeic.quiz.0565",
+      "toeic.quiz.0566",
+      "toeic.quiz.0567",
+      "toeic.quiz.0568",
+      "toeic.quiz.0569",
+      "toeic.quiz.0570"
+    ],
+    "requiredStageId": "toeic.stage.056"
+  },
+  {
+    "id": "toeic.stage.058",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_006",
+    "order": 8,
+    "title": "인사와 교육 08",
+    "description": "승진 심사는 연말에 진행됩니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.hr_promotion_review",
+      "ko": "승진 심사는 연말에 진행됩니다.",
+      "en": "Promotion reviews take place at the end of the year.",
+      "sentenceKo": "승진 심사는 연말에 진행됩니다",
+      "sentenceEn": "Promotion reviews take place at the end of the year"
+    },
+    "quizIds": [
+      "toeic.quiz.0571",
+      "toeic.quiz.0572",
+      "toeic.quiz.0573",
+      "toeic.quiz.0574",
+      "toeic.quiz.0575",
+      "toeic.quiz.0576",
+      "toeic.quiz.0577",
+      "toeic.quiz.0578",
+      "toeic.quiz.0579",
+      "toeic.quiz.0580"
+    ],
+    "requiredStageId": "toeic.stage.057"
+  },
+  {
+    "id": "toeic.stage.059",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_006",
+    "order": 9,
+    "title": "인사와 교육 09",
+    "description": "새로운 근무 정책이 오늘부터 적용됩니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.hr_updated_policy",
+      "ko": "새로운 근무 정책이 오늘부터 적용됩니다.",
+      "en": "The updated work policy takes effect today.",
+      "sentenceKo": "새로운 근무 정책이 오늘부터 적용됩니다",
+      "sentenceEn": "The updated work policy takes effect today"
+    },
+    "quizIds": [
+      "toeic.quiz.0581",
+      "toeic.quiz.0582",
+      "toeic.quiz.0583",
+      "toeic.quiz.0584",
+      "toeic.quiz.0585",
+      "toeic.quiz.0586",
+      "toeic.quiz.0587",
+      "toeic.quiz.0588",
+      "toeic.quiz.0589",
+      "toeic.quiz.0590"
+    ],
+    "requiredStageId": "toeic.stage.058"
+  },
+  {
+    "id": "toeic.stage.060",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_006",
+    "order": 10,
+    "title": "인사와 교육 10",
+    "description": "추가 질문은 인사팀에 문의해 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.hr_contact_hr",
+      "ko": "추가 질문은 인사팀에 문의해 주세요.",
+      "en": "Please contact the HR team if you have additional questions.",
+      "sentenceKo": "추가 질문은 인사팀에 문의해 주세요",
+      "sentenceEn": "Please contact the HR team if you have additional questions"
+    },
+    "quizIds": [
+      "toeic.quiz.0591",
+      "toeic.quiz.0592",
+      "toeic.quiz.0593",
+      "toeic.quiz.0594",
+      "toeic.quiz.0595",
+      "toeic.quiz.0596",
+      "toeic.quiz.0597",
+      "toeic.quiz.0598",
+      "toeic.quiz.0599",
+      "toeic.quiz.0600"
+    ],
+    "requiredStageId": "toeic.stage.059"
+  },
+  {
+    "id": "toeic.stage.061",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_007",
+    "order": 1,
+    "title": "판매와 마케팅 01",
+    "description": "이번 분기 판매량이 예상보다 높았습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.sales_higher_expected",
+      "ko": "이번 분기 판매량이 예상보다 높았습니다.",
+      "en": "Sales were higher than expected this quarter.",
+      "sentenceKo": "이번 분기 판매량이 예상보다 높았습니다",
+      "sentenceEn": "Sales were higher than expected this quarter"
+    },
+    "quizIds": [
+      "toeic.quiz.0601",
+      "toeic.quiz.0602",
+      "toeic.quiz.0603",
+      "toeic.quiz.0604",
+      "toeic.quiz.0605",
+      "toeic.quiz.0606",
+      "toeic.quiz.0607",
+      "toeic.quiz.0608",
+      "toeic.quiz.0609",
+      "toeic.quiz.0610"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "toeic.stage.062",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_007",
+    "order": 2,
+    "title": "판매와 마케팅 02",
+    "description": "새 마케팅 캠페인은 다음 달에 시작됩니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.sales_campaign_next_month",
+      "ko": "새 마케팅 캠페인은 다음 달에 시작됩니다.",
+      "en": "The new marketing campaign starts next month.",
+      "sentenceKo": "새 마케팅 캠페인은 다음 달에 시작됩니다",
+      "sentenceEn": "The new marketing campaign starts next month"
+    },
+    "quizIds": [
+      "toeic.quiz.0611",
+      "toeic.quiz.0612",
+      "toeic.quiz.0613",
+      "toeic.quiz.0614",
+      "toeic.quiz.0615",
+      "toeic.quiz.0616",
+      "toeic.quiz.0617",
+      "toeic.quiz.0618",
+      "toeic.quiz.0619",
+      "toeic.quiz.0620"
+    ],
+    "requiredStageId": "toeic.stage.061"
+  },
+  {
+    "id": "toeic.stage.063",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_007",
+    "order": 3,
+    "title": "판매와 마케팅 03",
+    "description": "고객 수요가 최근 빠르게 증가하고 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.sales_customer_demand",
+      "ko": "고객 수요가 최근 빠르게 증가하고 있습니다.",
+      "en": "Customer demand has been increasing rapidly lately.",
+      "sentenceKo": "고객 수요가 최근 빠르게 증가하고 있습니다",
+      "sentenceEn": "Customer demand has been increasing rapidly lately"
+    },
+    "quizIds": [
+      "toeic.quiz.0621",
+      "toeic.quiz.0622",
+      "toeic.quiz.0623",
+      "toeic.quiz.0624",
+      "toeic.quiz.0625",
+      "toeic.quiz.0626",
+      "toeic.quiz.0627",
+      "toeic.quiz.0628",
+      "toeic.quiz.0629",
+      "toeic.quiz.0630"
+    ],
+    "requiredStageId": "toeic.stage.062"
+  },
+  {
+    "id": "toeic.stage.064",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_007",
+    "order": 4,
+    "title": "판매와 마케팅 04",
+    "description": "특별 할인 행사는 이번 주말까지 계속됩니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.sales_discount_offer",
+      "ko": "특별 할인 행사는 이번 주말까지 계속됩니다.",
+      "en": "The special discount offer continues through this weekend.",
+      "sentenceKo": "특별 할인 행사는 이번 주말까지 계속됩니다",
+      "sentenceEn": "The special discount offer continues through this weekend"
+    },
+    "quizIds": [
+      "toeic.quiz.0631",
+      "toeic.quiz.0632",
+      "toeic.quiz.0633",
+      "toeic.quiz.0634",
+      "toeic.quiz.0635",
+      "toeic.quiz.0636",
+      "toeic.quiz.0637",
+      "toeic.quiz.0638",
+      "toeic.quiz.0639",
+      "toeic.quiz.0640"
+    ],
+    "requiredStageId": "toeic.stage.063"
+  },
+  {
+    "id": "toeic.stage.065",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_007",
+    "order": 5,
+    "title": "판매와 마케팅 05",
+    "description": "설문 조사 결과는 제품 개선에 사용될 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.sales_survey_results",
+      "ko": "설문 조사 결과는 제품 개선에 사용될 것입니다.",
+      "en": "The survey results will be used to improve the product.",
+      "sentenceKo": "설문 조사 결과는 제품 개선에 사용될 것입니다",
+      "sentenceEn": "The survey results will be used to improve the product"
+    },
+    "quizIds": [
+      "toeic.quiz.0641",
+      "toeic.quiz.0642",
+      "toeic.quiz.0643",
+      "toeic.quiz.0644",
+      "toeic.quiz.0645",
+      "toeic.quiz.0646",
+      "toeic.quiz.0647",
+      "toeic.quiz.0648",
+      "toeic.quiz.0649",
+      "toeic.quiz.0650"
+    ],
+    "requiredStageId": "toeic.stage.064"
+  },
+  {
+    "id": "toeic.stage.066",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_007",
+    "order": 6,
+    "title": "판매와 마케팅 06",
+    "description": "신제품 출시는 언론 보도와 함께 진행됩니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.sales_new_launch",
+      "ko": "신제품 출시는 언론 보도와 함께 진행됩니다.",
+      "en": "The new product launch will be accompanied by media coverage.",
+      "sentenceKo": "신제품 출시는 언론 보도와 함께 진행됩니다",
+      "sentenceEn": "The new product launch will be accompanied by media coverage"
+    },
+    "quizIds": [
+      "toeic.quiz.0651",
+      "toeic.quiz.0652",
+      "toeic.quiz.0653",
+      "toeic.quiz.0654",
+      "toeic.quiz.0655",
+      "toeic.quiz.0656",
+      "toeic.quiz.0657",
+      "toeic.quiz.0658",
+      "toeic.quiz.0659",
+      "toeic.quiz.0660"
+    ],
+    "requiredStageId": "toeic.stage.065"
+  },
+  {
+    "id": "toeic.stage.067",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_007",
+    "order": 7,
+    "title": "판매와 마케팅 07",
+    "description": "강한 브랜드 이미지는 장기적인 성장에 도움이 됩니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.sales_strong_brand",
+      "ko": "강한 브랜드 이미지는 장기적인 성장에 도움이 됩니다.",
+      "en": "A strong brand image helps long-term growth.",
+      "sentenceKo": "강한 브랜드 이미지는 장기적인 성장에 도움이 됩니다",
+      "sentenceEn": "A strong brand image helps long-term growth"
+    },
+    "quizIds": [
+      "toeic.quiz.0661",
+      "toeic.quiz.0662",
+      "toeic.quiz.0663",
+      "toeic.quiz.0664",
+      "toeic.quiz.0665",
+      "toeic.quiz.0666",
+      "toeic.quiz.0667",
+      "toeic.quiz.0668",
+      "toeic.quiz.0669",
+      "toeic.quiz.0670"
+    ],
+    "requiredStageId": "toeic.stage.066"
+  },
+  {
+    "id": "toeic.stage.068",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_007",
+    "order": 8,
+    "title": "판매와 마케팅 08",
+    "description": "이 광고는 젊은 고객층을 대상으로 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.sales_target_market",
+      "ko": "이 광고는 젊은 고객층을 대상으로 합니다.",
+      "en": "This advertisement targets younger customers.",
+      "sentenceKo": "이 광고는 젊은 고객층을 대상으로 합니다",
+      "sentenceEn": "This advertisement targets younger customers"
+    },
+    "quizIds": [
+      "toeic.quiz.0671",
+      "toeic.quiz.0672",
+      "toeic.quiz.0673",
+      "toeic.quiz.0674",
+      "toeic.quiz.0675",
+      "toeic.quiz.0676",
+      "toeic.quiz.0677",
+      "toeic.quiz.0678",
+      "toeic.quiz.0679",
+      "toeic.quiz.0680"
+    ],
+    "requiredStageId": "toeic.stage.067"
+  },
+  {
+    "id": "toeic.stage.069",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_007",
+    "order": 9,
+    "title": "판매와 마케팅 09",
+    "description": "매출 보고서는 오전 회의 전에 준비되어야 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.sales_revenue_report",
+      "ko": "매출 보고서는 오전 회의 전에 준비되어야 합니다.",
+      "en": "The revenue report should be ready before the morning meeting.",
+      "sentenceKo": "매출 보고서는 오전 회의 전에 준비되어야 합니다",
+      "sentenceEn": "The revenue report should be ready before the morning meeting"
+    },
+    "quizIds": [
+      "toeic.quiz.0681",
+      "toeic.quiz.0682",
+      "toeic.quiz.0683",
+      "toeic.quiz.0684",
+      "toeic.quiz.0685",
+      "toeic.quiz.0686",
+      "toeic.quiz.0687",
+      "toeic.quiz.0688",
+      "toeic.quiz.0689",
+      "toeic.quiz.0690"
+    ],
+    "requiredStageId": "toeic.stage.068"
+  },
+  {
+    "id": "toeic.stage.070",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_007",
+    "order": 10,
+    "title": "판매와 마케팅 10",
+    "description": "고객 피드백은 다음 전략 수립에 중요합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.sales_client_feedback",
+      "ko": "고객 피드백은 다음 전략 수립에 중요합니다.",
+      "en": "Client feedback is important for planning the next strategy.",
+      "sentenceKo": "고객 피드백은 다음 전략 수립에 중요합니다",
+      "sentenceEn": "Client feedback is important for planning the next strategy"
+    },
+    "quizIds": [
+      "toeic.quiz.0691",
+      "toeic.quiz.0692",
+      "toeic.quiz.0693",
+      "toeic.quiz.0694",
+      "toeic.quiz.0695",
+      "toeic.quiz.0696",
+      "toeic.quiz.0697",
+      "toeic.quiz.0698",
+      "toeic.quiz.0699",
+      "toeic.quiz.0700"
+    ],
+    "requiredStageId": "toeic.stage.069"
+  },
+  {
+    "id": "toeic.stage.071",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_008",
+    "order": 1,
+    "title": "배송과 물류 01",
+    "description": "주문 상품은 오늘 발송될 예정입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.logistics_shipped_today",
+      "ko": "주문 상품은 오늘 발송될 예정입니다.",
+      "en": "The order will be shipped today.",
+      "sentenceKo": "주문 상품은 오늘 발송될 예정입니다",
+      "sentenceEn": "The order will be shipped today"
+    },
+    "quizIds": [
+      "toeic.quiz.0701",
+      "toeic.quiz.0702",
+      "toeic.quiz.0703",
+      "toeic.quiz.0704",
+      "toeic.quiz.0705",
+      "toeic.quiz.0706",
+      "toeic.quiz.0707",
+      "toeic.quiz.0708",
+      "toeic.quiz.0709",
+      "toeic.quiz.0710"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "toeic.stage.072",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_008",
+    "order": 2,
+    "title": "배송과 물류 02",
+    "description": "창고가 가득 차서 추가 공간이 필요합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.logistics_warehouse_full",
+      "ko": "창고가 가득 차서 추가 공간이 필요합니다.",
+      "en": "The warehouse is full, so additional space is needed.",
+      "sentenceKo": "창고가 가득 차서 추가 공간이 필요합니다",
+      "sentenceEn": "The warehouse is full, so additional space is needed"
+    },
+    "quizIds": [
+      "toeic.quiz.0711",
+      "toeic.quiz.0712",
+      "toeic.quiz.0713",
+      "toeic.quiz.0714",
+      "toeic.quiz.0715",
+      "toeic.quiz.0716",
+      "toeic.quiz.0717",
+      "toeic.quiz.0718",
+      "toeic.quiz.0719",
+      "toeic.quiz.0720"
+    ],
+    "requiredStageId": "toeic.stage.071"
+  },
+  {
+    "id": "toeic.stage.073",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_008",
+    "order": 3,
+    "title": "배송과 물류 03",
+    "description": "추적 번호는 발송 후 이메일로 보내집니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.logistics_tracking_number",
+      "ko": "추적 번호는 발송 후 이메일로 보내집니다.",
+      "en": "The tracking number is sent by email after shipment.",
+      "sentenceKo": "추적 번호는 발송 후 이메일로 보내집니다",
+      "sentenceEn": "The tracking number is sent by email after shipment"
+    },
+    "quizIds": [
+      "toeic.quiz.0721",
+      "toeic.quiz.0722",
+      "toeic.quiz.0723",
+      "toeic.quiz.0724",
+      "toeic.quiz.0725",
+      "toeic.quiz.0726",
+      "toeic.quiz.0727",
+      "toeic.quiz.0728",
+      "toeic.quiz.0729",
+      "toeic.quiz.0730"
+    ],
+    "requiredStageId": "toeic.stage.072"
+  },
+  {
+    "id": "toeic.stage.074",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_008",
+    "order": 4,
+    "title": "배송과 물류 04",
+    "description": "기상 악화로 배송이 지연되고 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.logistics_delivery_delay",
+      "ko": "기상 악화로 배송이 지연되고 있습니다.",
+      "en": "Deliveries are being delayed because of bad weather.",
+      "sentenceKo": "기상 악화로 배송이 지연되고 있습니다",
+      "sentenceEn": "Deliveries are being delayed because of bad weather"
+    },
+    "quizIds": [
+      "toeic.quiz.0731",
+      "toeic.quiz.0732",
+      "toeic.quiz.0733",
+      "toeic.quiz.0734",
+      "toeic.quiz.0735",
+      "toeic.quiz.0736",
+      "toeic.quiz.0737",
+      "toeic.quiz.0738",
+      "toeic.quiz.0739",
+      "toeic.quiz.0740"
+    ],
+    "requiredStageId": "toeic.stage.073"
+  },
+  {
+    "id": "toeic.stage.075",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_008",
+    "order": 5,
+    "title": "배송과 물류 05",
+    "description": "도착한 상자 중 하나가 손상되어 있었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.logistics_package_damaged",
+      "ko": "도착한 상자 중 하나가 손상되어 있었습니다.",
+      "en": "One of the delivered boxes was damaged.",
+      "sentenceKo": "도착한 상자 중 하나가 손상되어 있었습니다",
+      "sentenceEn": "One of the delivered boxes was damaged"
+    },
+    "quizIds": [
+      "toeic.quiz.0741",
+      "toeic.quiz.0742",
+      "toeic.quiz.0743",
+      "toeic.quiz.0744",
+      "toeic.quiz.0745",
+      "toeic.quiz.0746",
+      "toeic.quiz.0747",
+      "toeic.quiz.0748",
+      "toeic.quiz.0749",
+      "toeic.quiz.0750"
+    ],
+    "requiredStageId": "toeic.stage.074"
+  },
+  {
+    "id": "toeic.stage.076",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_008",
+    "order": 6,
+    "title": "배송과 물류 06",
+    "description": "발송 전에 배송 주소를 다시 확인해 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.logistics_confirm_address2",
+      "ko": "발송 전에 배송 주소를 다시 확인해 주세요.",
+      "en": "Please confirm the shipping address before dispatch.",
+      "sentenceKo": "발송 전에 배송 주소를 다시 확인해 주세요",
+      "sentenceEn": "Please confirm the shipping address before dispatch"
+    },
+    "quizIds": [
+      "toeic.quiz.0751",
+      "toeic.quiz.0752",
+      "toeic.quiz.0753",
+      "toeic.quiz.0754",
+      "toeic.quiz.0755",
+      "toeic.quiz.0756",
+      "toeic.quiz.0757",
+      "toeic.quiz.0758",
+      "toeic.quiz.0759",
+      "toeic.quiz.0760"
+    ],
+    "requiredStageId": "toeic.stage.075"
+  },
+  {
+    "id": "toeic.stage.077",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_008",
+    "order": 7,
+    "title": "배송과 물류 07",
+    "description": "일부 부품의 재고가 부족합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.logistics_inventory_low",
+      "ko": "일부 부품의 재고가 부족합니다.",
+      "en": "The inventory for some parts is running low.",
+      "sentenceKo": "일부 부품의 재고가 부족합니다",
+      "sentenceEn": "The inventory for some parts is running low"
+    },
+    "quizIds": [
+      "toeic.quiz.0761",
+      "toeic.quiz.0762",
+      "toeic.quiz.0763",
+      "toeic.quiz.0764",
+      "toeic.quiz.0765",
+      "toeic.quiz.0766",
+      "toeic.quiz.0767",
+      "toeic.quiz.0768",
+      "toeic.quiz.0769",
+      "toeic.quiz.0770"
+    ],
+    "requiredStageId": "toeic.stage.076"
+  },
+  {
+    "id": "toeic.stage.078",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_008",
+    "order": 8,
+    "title": "배송과 물류 08",
+    "description": "적재 구역은 건물 뒤편에 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.logistics_loading_area",
+      "ko": "적재 구역은 건물 뒤편에 있습니다.",
+      "en": "The loading area is behind the building.",
+      "sentenceKo": "적재 구역은 건물 뒤편에 있습니다",
+      "sentenceEn": "The loading area is behind the building"
+    },
+    "quizIds": [
+      "toeic.quiz.0771",
+      "toeic.quiz.0772",
+      "toeic.quiz.0773",
+      "toeic.quiz.0774",
+      "toeic.quiz.0775",
+      "toeic.quiz.0776",
+      "toeic.quiz.0777",
+      "toeic.quiz.0778",
+      "toeic.quiz.0779",
+      "toeic.quiz.0780"
+    ],
+    "requiredStageId": "toeic.stage.077"
+  },
+  {
+    "id": "toeic.stage.079",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_008",
+    "order": 9,
+    "title": "배송과 물류 09",
+    "description": "긴급 주문에는 빠른 배송 서비스가 사용됩니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.logistics_express_service",
+      "ko": "긴급 주문에는 빠른 배송 서비스가 사용됩니다.",
+      "en": "Express service is used for urgent orders.",
+      "sentenceKo": "긴급 주문에는 빠른 배송 서비스가 사용됩니다",
+      "sentenceEn": "Express service is used for urgent orders"
+    },
+    "quizIds": [
+      "toeic.quiz.0781",
+      "toeic.quiz.0782",
+      "toeic.quiz.0783",
+      "toeic.quiz.0784",
+      "toeic.quiz.0785",
+      "toeic.quiz.0786",
+      "toeic.quiz.0787",
+      "toeic.quiz.0788",
+      "toeic.quiz.0789",
+      "toeic.quiz.0790"
+    ],
+    "requiredStageId": "toeic.stage.078"
+  },
+  {
+    "id": "toeic.stage.080",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_008",
+    "order": 10,
+    "title": "배송과 물류 10",
+    "description": "고객이 배송 완료를 확인했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.logistics_delivery_confirmed",
+      "ko": "고객이 배송 완료를 확인했습니다.",
+      "en": "The customer confirmed the delivery.",
+      "sentenceKo": "고객이 배송 완료를 확인했습니다",
+      "sentenceEn": "The customer confirmed the delivery"
+    },
+    "quizIds": [
+      "toeic.quiz.0791",
+      "toeic.quiz.0792",
+      "toeic.quiz.0793",
+      "toeic.quiz.0794",
+      "toeic.quiz.0795",
+      "toeic.quiz.0796",
+      "toeic.quiz.0797",
+      "toeic.quiz.0798",
+      "toeic.quiz.0799",
+      "toeic.quiz.0800"
+    ],
+    "requiredStageId": "toeic.stage.079"
+  },
+  {
+    "id": "toeic.stage.081",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_009",
+    "order": 1,
+    "title": "고객 응대 01",
+    "description": "고객 불만은 즉시 처리되어야 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.service_complaints_immediately",
+      "ko": "고객 불만은 즉시 처리되어야 합니다.",
+      "en": "Customer complaints must be handled immediately.",
+      "sentenceKo": "고객 불만은 즉시 처리되어야 합니다",
+      "sentenceEn": "Customer complaints must be handled immediately"
+    },
+    "quizIds": [
+      "toeic.quiz.0801",
+      "toeic.quiz.0802",
+      "toeic.quiz.0803",
+      "toeic.quiz.0804",
+      "toeic.quiz.0805",
+      "toeic.quiz.0806",
+      "toeic.quiz.0807",
+      "toeic.quiz.0808",
+      "toeic.quiz.0809",
+      "toeic.quiz.0810"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "toeic.stage.082",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_009",
+    "order": 2,
+    "title": "고객 응대 02",
+    "description": "배송 지연에 대해 사과드립니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.service_apology_delay",
+      "ko": "배송 지연에 대해 사과드립니다.",
+      "en": "We apologize for the delivery delay.",
+      "sentenceKo": "배송 지연에 대해 사과드립니다",
+      "sentenceEn": "We apologize for the delivery delay"
+    },
+    "quizIds": [
+      "toeic.quiz.0811",
+      "toeic.quiz.0812",
+      "toeic.quiz.0813",
+      "toeic.quiz.0814",
+      "toeic.quiz.0815",
+      "toeic.quiz.0816",
+      "toeic.quiz.0817",
+      "toeic.quiz.0818",
+      "toeic.quiz.0819",
+      "toeic.quiz.0820"
+    ],
+    "requiredStageId": "toeic.stage.081"
+  },
+  {
+    "id": "toeic.stage.083",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_009",
+    "order": 3,
+    "title": "고객 응대 03",
+    "description": "환불 요청은 이미 처리되었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.service_refund_processed",
+      "ko": "환불 요청은 이미 처리되었습니다.",
+      "en": "The refund request has already been processed.",
+      "sentenceKo": "환불 요청은 이미 처리되었습니다",
+      "sentenceEn": "The refund request has already been processed"
+    },
+    "quizIds": [
+      "toeic.quiz.0821",
+      "toeic.quiz.0822",
+      "toeic.quiz.0823",
+      "toeic.quiz.0824",
+      "toeic.quiz.0825",
+      "toeic.quiz.0826",
+      "toeic.quiz.0827",
+      "toeic.quiz.0828",
+      "toeic.quiz.0829",
+      "toeic.quiz.0830"
+    ],
+    "requiredStageId": "toeic.stage.082"
+  },
+  {
+    "id": "toeic.stage.084",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_009",
+    "order": 4,
+    "title": "고객 응대 04",
+    "description": "교환을 위해서는 영수증이 필요합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.service_need_receipt",
+      "ko": "교환을 위해서는 영수증이 필요합니다.",
+      "en": "A receipt is required for an exchange.",
+      "sentenceKo": "교환을 위해서는 영수증이 필요합니다",
+      "sentenceEn": "A receipt is required for an exchange"
+    },
+    "quizIds": [
+      "toeic.quiz.0831",
+      "toeic.quiz.0832",
+      "toeic.quiz.0833",
+      "toeic.quiz.0834",
+      "toeic.quiz.0835",
+      "toeic.quiz.0836",
+      "toeic.quiz.0837",
+      "toeic.quiz.0838",
+      "toeic.quiz.0839",
+      "toeic.quiz.0840"
+    ],
+    "requiredStageId": "toeic.stage.083"
+  },
+  {
+    "id": "toeic.stage.085",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_009",
+    "order": 5,
+    "title": "고객 응대 05",
+    "description": "지원 팀은 평일 내내 이용 가능합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.service_support_available",
+      "ko": "지원 팀은 평일 내내 이용 가능합니다.",
+      "en": "The support team is available throughout the workweek.",
+      "sentenceKo": "지원 팀은 평일 내내 이용 가능합니다",
+      "sentenceEn": "The support team is available throughout the workweek"
+    },
+    "quizIds": [
+      "toeic.quiz.0841",
+      "toeic.quiz.0842",
+      "toeic.quiz.0843",
+      "toeic.quiz.0844",
+      "toeic.quiz.0845",
+      "toeic.quiz.0846",
+      "toeic.quiz.0847",
+      "toeic.quiz.0848",
+      "toeic.quiz.0849",
+      "toeic.quiz.0850"
+    ],
+    "requiredStageId": "toeic.stage.084"
+  },
+  {
+    "id": "toeic.stage.086",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_009",
+    "order": 6,
+    "title": "고객 응대 06",
+    "description": "해결 방법은 이메일로 안내드리겠습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.service_solution_email",
+      "ko": "해결 방법은 이메일로 안내드리겠습니다.",
+      "en": "We will provide the solution by email.",
+      "sentenceKo": "해결 방법은 이메일로 안내드리겠습니다",
+      "sentenceEn": "We will provide the solution by email"
+    },
+    "quizIds": [
+      "toeic.quiz.0851",
+      "toeic.quiz.0852",
+      "toeic.quiz.0853",
+      "toeic.quiz.0854",
+      "toeic.quiz.0855",
+      "toeic.quiz.0856",
+      "toeic.quiz.0857",
+      "toeic.quiz.0858",
+      "toeic.quiz.0859",
+      "toeic.quiz.0860"
+    ],
+    "requiredStageId": "toeic.stage.085"
+  },
+  {
+    "id": "toeic.stage.087",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_009",
+    "order": 7,
+    "title": "고객 응대 07",
+    "description": "주문 상태를 먼저 확인해 보겠습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.service_check_order_status",
+      "ko": "주문 상태를 먼저 확인해 보겠습니다.",
+      "en": "Let me check the order status first.",
+      "sentenceKo": "주문 상태를 먼저 확인해 보겠습니다",
+      "sentenceEn": "Let me check the order status first"
+    },
+    "quizIds": [
+      "toeic.quiz.0861",
+      "toeic.quiz.0862",
+      "toeic.quiz.0863",
+      "toeic.quiz.0864",
+      "toeic.quiz.0865",
+      "toeic.quiz.0866",
+      "toeic.quiz.0867",
+      "toeic.quiz.0868",
+      "toeic.quiz.0869",
+      "toeic.quiz.0870"
+    ],
+    "requiredStageId": "toeic.stage.086"
+  },
+  {
+    "id": "toeic.stage.088",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_009",
+    "order": 8,
+    "title": "기다려 주셔서 감사합니다 익히기",
+    "description": "기다려 주셔서 감사합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.service_thank_patience",
+      "ko": "기다려 주셔서 감사합니다.",
+      "en": "Thank you for your patience.",
+      "sentenceKo": "기다려 주셔서 감사합니다",
+      "sentenceEn": "Thank you for your patience"
+    },
+    "quizIds": [
+      "toeic.quiz.0871",
+      "toeic.quiz.0872",
+      "toeic.quiz.0873",
+      "toeic.quiz.0874",
+      "toeic.quiz.0875",
+      "toeic.quiz.0876",
+      "toeic.quiz.0877",
+      "toeic.quiz.0878",
+      "toeic.quiz.0879",
+      "toeic.quiz.0880"
+    ],
+    "requiredStageId": "toeic.stage.087"
+  },
+  {
+    "id": "toeic.stage.089",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_009",
+    "order": 9,
+    "title": "고객 응대 09",
+    "description": "잘못된 상품이 배송된 것 같습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.service_incorrect_item",
+      "ko": "잘못된 상품이 배송된 것 같습니다.",
+      "en": "It seems the wrong item was delivered.",
+      "sentenceKo": "잘못된 상품이 배송된 것 같습니다",
+      "sentenceEn": "It seems the wrong item was delivered"
+    },
+    "quizIds": [
+      "toeic.quiz.0881",
+      "toeic.quiz.0882",
+      "toeic.quiz.0883",
+      "toeic.quiz.0884",
+      "toeic.quiz.0885",
+      "toeic.quiz.0886",
+      "toeic.quiz.0887",
+      "toeic.quiz.0888",
+      "toeic.quiz.0889",
+      "toeic.quiz.0890"
+    ],
+    "requiredStageId": "toeic.stage.088"
+  },
+  {
+    "id": "toeic.stage.090",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_009",
+    "order": 10,
+    "title": "고객 응대 10",
+    "description": "가능한 한 빨리 문제를 해결하겠습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.service_resolve_issue",
+      "ko": "가능한 한 빨리 문제를 해결하겠습니다.",
+      "en": "We will resolve the issue as quickly as possible.",
+      "sentenceKo": "가능한 한 빨리 문제를 해결하겠습니다",
+      "sentenceEn": "We will resolve the issue as quickly as possible"
+    },
+    "quizIds": [
+      "toeic.quiz.0891",
+      "toeic.quiz.0892",
+      "toeic.quiz.0893",
+      "toeic.quiz.0894",
+      "toeic.quiz.0895",
+      "toeic.quiz.0896",
+      "toeic.quiz.0897",
+      "toeic.quiz.0898",
+      "toeic.quiz.0899",
+      "toeic.quiz.0900"
+    ],
+    "requiredStageId": "toeic.stage.089"
+  },
+  {
+    "id": "toeic.stage.091",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_010",
+    "order": 1,
+    "title": "계약과 재무 01",
+    "description": "계약서는 월말 전에 검토되어야 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.finance_contract_reviewed",
+      "ko": "계약서는 월말 전에 검토되어야 합니다.",
+      "en": "The contract should be reviewed before the end of the month.",
+      "sentenceKo": "계약서는 월말 전에 검토되어야 합니다",
+      "sentenceEn": "The contract should be reviewed before the end of the month"
+    },
+    "quizIds": [
+      "toeic.quiz.0901",
+      "toeic.quiz.0902",
+      "toeic.quiz.0903",
+      "toeic.quiz.0904",
+      "toeic.quiz.0905",
+      "toeic.quiz.0906",
+      "toeic.quiz.0907",
+      "toeic.quiz.0908",
+      "toeic.quiz.0909",
+      "toeic.quiz.0910"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "toeic.stage.092",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_010",
+    "order": 2,
+    "title": "계약과 재무 02",
+    "description": "내년도 예산안이 승인되었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.finance_budget_approved",
+      "ko": "내년도 예산안이 승인되었습니다.",
+      "en": "The budget proposal for next year has been approved.",
+      "sentenceKo": "내년도 예산안이 승인되었습니다",
+      "sentenceEn": "The budget proposal for next year has been approved"
+    },
+    "quizIds": [
+      "toeic.quiz.0911",
+      "toeic.quiz.0912",
+      "toeic.quiz.0913",
+      "toeic.quiz.0914",
+      "toeic.quiz.0915",
+      "toeic.quiz.0916",
+      "toeic.quiz.0917",
+      "toeic.quiz.0918",
+      "toeic.quiz.0919",
+      "toeic.quiz.0920"
+    ],
+    "requiredStageId": "toeic.stage.091"
+  },
+  {
+    "id": "toeic.stage.093",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_010",
+    "order": 3,
+    "title": "계약과 재무 03",
+    "description": "지불 기한은 이번 주 목요일입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.finance_payment_due",
+      "ko": "지불 기한은 이번 주 목요일입니다.",
+      "en": "The payment is due this Thursday.",
+      "sentenceKo": "지불 기한은 이번 주 목요일입니다",
+      "sentenceEn": "The payment is due this Thursday"
+    },
+    "quizIds": [
+      "toeic.quiz.0921",
+      "toeic.quiz.0922",
+      "toeic.quiz.0923",
+      "toeic.quiz.0924",
+      "toeic.quiz.0925",
+      "toeic.quiz.0926",
+      "toeic.quiz.0927",
+      "toeic.quiz.0928",
+      "toeic.quiz.0929",
+      "toeic.quiz.0930"
+    ],
+    "requiredStageId": "toeic.stage.092"
+  },
+  {
+    "id": "toeic.stage.094",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_010",
+    "order": 4,
+    "title": "계약과 재무 04",
+    "description": "청구서는 오늘 아침에 발송되었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.finance_invoice_sent",
+      "ko": "청구서는 오늘 아침에 발송되었습니다.",
+      "en": "The invoice was sent this morning.",
+      "sentenceKo": "청구서는 오늘 아침에 발송되었습니다",
+      "sentenceEn": "The invoice was sent this morning"
+    },
+    "quizIds": [
+      "toeic.quiz.0931",
+      "toeic.quiz.0932",
+      "toeic.quiz.0933",
+      "toeic.quiz.0934",
+      "toeic.quiz.0935",
+      "toeic.quiz.0936",
+      "toeic.quiz.0937",
+      "toeic.quiz.0938",
+      "toeic.quiz.0939",
+      "toeic.quiz.0940"
+    ],
+    "requiredStageId": "toeic.stage.093"
+  },
+  {
+    "id": "toeic.stage.095",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_010",
+    "order": 5,
+    "title": "계약과 재무 05",
+    "description": "새 시스템 도입 후 비용이 줄었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.finance_cost_reduced",
+      "ko": "새 시스템 도입 후 비용이 줄었습니다.",
+      "en": "Costs were reduced after the new system was introduced.",
+      "sentenceKo": "새 시스템 도입 후 비용이 줄었습니다",
+      "sentenceEn": "Costs were reduced after the new system was introduced"
+    },
+    "quizIds": [
+      "toeic.quiz.0941",
+      "toeic.quiz.0942",
+      "toeic.quiz.0943",
+      "toeic.quiz.0944",
+      "toeic.quiz.0945",
+      "toeic.quiz.0946",
+      "toeic.quiz.0947",
+      "toeic.quiz.0948",
+      "toeic.quiz.0949",
+      "toeic.quiz.0950"
+    ],
+    "requiredStageId": "toeic.stage.094"
+  },
+  {
+    "id": "toeic.stage.096",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_010",
+    "order": 6,
+    "title": "계약과 재무 06",
+    "description": "출장비 청구서는 다음 주까지 제출해야 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.finance_expense_claim",
+      "ko": "출장비 청구서는 다음 주까지 제출해야 합니다.",
+      "en": "Expense claims must be submitted by next week.",
+      "sentenceKo": "출장비 청구서는 다음 주까지 제출해야 합니다",
+      "sentenceEn": "Expense claims must be submitted by next week"
+    },
+    "quizIds": [
+      "toeic.quiz.0951",
+      "toeic.quiz.0952",
+      "toeic.quiz.0953",
+      "toeic.quiz.0954",
+      "toeic.quiz.0955",
+      "toeic.quiz.0956",
+      "toeic.quiz.0957",
+      "toeic.quiz.0958",
+      "toeic.quiz.0959",
+      "toeic.quiz.0960"
+    ],
+    "requiredStageId": "toeic.stage.095"
+  },
+  {
+    "id": "toeic.stage.097",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_010",
+    "order": 7,
+    "title": "계약과 재무 07",
+    "description": "연간 수수료는 계약서에 명시되어 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.finance_annual_fee",
+      "ko": "연간 수수료는 계약서에 명시되어 있습니다.",
+      "en": "The annual fee is stated in the contract.",
+      "sentenceKo": "연간 수수료는 계약서에 명시되어 있습니다",
+      "sentenceEn": "The annual fee is stated in the contract"
+    },
+    "quizIds": [
+      "toeic.quiz.0961",
+      "toeic.quiz.0962",
+      "toeic.quiz.0963",
+      "toeic.quiz.0964",
+      "toeic.quiz.0965",
+      "toeic.quiz.0966",
+      "toeic.quiz.0967",
+      "toeic.quiz.0968",
+      "toeic.quiz.0969",
+      "toeic.quiz.0970"
+    ],
+    "requiredStageId": "toeic.stage.096"
+  },
+  {
+    "id": "toeic.stage.098",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_010",
+    "order": 8,
+    "title": "계약과 재무 08",
+    "description": "원자재 가격 상승으로 단가가 조정되었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.finance_price_increase",
+      "ko": "원자재 가격 상승으로 단가가 조정되었습니다.",
+      "en": "The unit price was adjusted because of higher material costs.",
+      "sentenceKo": "원자재 가격 상승으로 단가가 조정되었습니다",
+      "sentenceEn": "The unit price was adjusted because of higher material costs"
+    },
+    "quizIds": [
+      "toeic.quiz.0971",
+      "toeic.quiz.0972",
+      "toeic.quiz.0973",
+      "toeic.quiz.0974",
+      "toeic.quiz.0975",
+      "toeic.quiz.0976",
+      "toeic.quiz.0977",
+      "toeic.quiz.0978",
+      "toeic.quiz.0979",
+      "toeic.quiz.0980"
+    ],
+    "requiredStageId": "toeic.stage.097"
+  },
+  {
+    "id": "toeic.stage.099",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_010",
+    "order": 9,
+    "title": "계약과 재무 09",
+    "description": "재무제표는 외부 감사를 위해 준비되고 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.finance_financial_statement",
+      "ko": "재무제표는 외부 감사를 위해 준비되고 있습니다.",
+      "en": "The financial statements are being prepared for an external audit.",
+      "sentenceKo": "재무제표는 외부 감사를 위해 준비되고 있습니다",
+      "sentenceEn": "The financial statements are being prepared for an external audit"
+    },
+    "quizIds": [
+      "toeic.quiz.0981",
+      "toeic.quiz.0982",
+      "toeic.quiz.0983",
+      "toeic.quiz.0984",
+      "toeic.quiz.0985",
+      "toeic.quiz.0986",
+      "toeic.quiz.0987",
+      "toeic.quiz.0988",
+      "toeic.quiz.0989",
+      "toeic.quiz.0990"
+    ],
+    "requiredStageId": "toeic.stage.098"
+  },
+  {
+    "id": "toeic.stage.100",
+    "difficulty": "toeic",
+    "chapterId": "toeic_chapter_010",
+    "order": 10,
+    "title": "계약과 재무 10",
+    "description": "검토가 끝난 후에 서명해 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "toeic.target.finance_sign_after_review",
+      "ko": "검토가 끝난 후에 서명해 주세요.",
+      "en": "Please sign it after the review is complete.",
+      "sentenceKo": "검토가 끝난 후에 서명해 주세요",
+      "sentenceEn": "Please sign it after the review is complete"
+    },
+    "quizIds": [
+      "toeic.quiz.0991",
+      "toeic.quiz.0992",
+      "toeic.quiz.0993",
+      "toeic.quiz.0994",
+      "toeic.quiz.0995",
+      "toeic.quiz.0996",
+      "toeic.quiz.0997",
+      "toeic.quiz.0998",
+      "toeic.quiz.0999",
+      "toeic.quiz.1000"
+    ],
+    "requiredStageId": "toeic.stage.099"
   }
 ]

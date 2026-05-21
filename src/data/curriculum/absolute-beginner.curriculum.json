@@ -1,0 +1,3075 @@
+{
+  "difficulty": "absolute_beginner",
+  "chapters": [
+    {
+      "chapterOrder": 1,
+      "title": "기본 과일",
+      "description": "가장 쉬운 과일 단어부터 배워요.",
+      "stages": [
+        {
+          "targetKey": "fruit_apple",
+          "ko": "사과",
+          "en": "apple",
+          "sentenceKo": "이것은 사과입니다.",
+          "sentenceEn": "This is an apple.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "바나나",
+              "en": "banana"
+            },
+            {
+              "ko": "포도",
+              "en": "grape"
+            },
+            {
+              "ko": "오렌지",
+              "en": "orange"
+            },
+            {
+              "ko": "복숭아",
+              "en": "peach"
+            },
+            {
+              "ko": "멜론",
+              "en": "melon"
+            }
+          ]
+        },
+        {
+          "targetKey": "fruit_banana",
+          "ko": "바나나",
+          "en": "banana",
+          "sentenceKo": "이것은 바나나입니다.",
+          "sentenceEn": "This is a banana.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "포도",
+              "en": "grape"
+            },
+            {
+              "ko": "오렌지",
+              "en": "orange"
+            },
+            {
+              "ko": "복숭아",
+              "en": "peach"
+            },
+            {
+              "ko": "멜론",
+              "en": "melon"
+            },
+            {
+              "ko": "딸기",
+              "en": "strawberry"
+            }
+          ]
+        },
+        {
+          "targetKey": "fruit_grape",
+          "ko": "포도",
+          "en": "grape",
+          "sentenceKo": "이것은 포도입니다.",
+          "sentenceEn": "This is a grape.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "오렌지",
+              "en": "orange"
+            },
+            {
+              "ko": "복숭아",
+              "en": "peach"
+            },
+            {
+              "ko": "멜론",
+              "en": "melon"
+            },
+            {
+              "ko": "딸기",
+              "en": "strawberry"
+            },
+            {
+              "ko": "레몬",
+              "en": "lemon"
+            }
+          ]
+        },
+        {
+          "targetKey": "fruit_orange",
+          "ko": "오렌지",
+          "en": "orange",
+          "sentenceKo": "이것은 오렌지입니다.",
+          "sentenceEn": "This is an orange.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "복숭아",
+              "en": "peach"
+            },
+            {
+              "ko": "멜론",
+              "en": "melon"
+            },
+            {
+              "ko": "딸기",
+              "en": "strawberry"
+            },
+            {
+              "ko": "레몬",
+              "en": "lemon"
+            },
+            {
+              "ko": "배",
+              "en": "pear"
+            }
+          ]
+        },
+        {
+          "targetKey": "fruit_peach",
+          "ko": "복숭아",
+          "en": "peach",
+          "sentenceKo": "이것은 복숭아입니다.",
+          "sentenceEn": "This is a peach.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "멜론",
+              "en": "melon"
+            },
+            {
+              "ko": "딸기",
+              "en": "strawberry"
+            },
+            {
+              "ko": "레몬",
+              "en": "lemon"
+            },
+            {
+              "ko": "배",
+              "en": "pear"
+            },
+            {
+              "ko": "망고",
+              "en": "mango"
+            }
+          ]
+        },
+        {
+          "targetKey": "fruit_melon",
+          "ko": "멜론",
+          "en": "melon",
+          "sentenceKo": "이것은 멜론입니다.",
+          "sentenceEn": "This is a melon.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "딸기",
+              "en": "strawberry"
+            },
+            {
+              "ko": "레몬",
+              "en": "lemon"
+            },
+            {
+              "ko": "배",
+              "en": "pear"
+            },
+            {
+              "ko": "망고",
+              "en": "mango"
+            },
+            {
+              "ko": "사과",
+              "en": "apple"
+            }
+          ]
+        },
+        {
+          "targetKey": "fruit_strawberry",
+          "ko": "딸기",
+          "en": "strawberry",
+          "sentenceKo": "이것은 딸기입니다.",
+          "sentenceEn": "This is a strawberry.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "레몬",
+              "en": "lemon"
+            },
+            {
+              "ko": "배",
+              "en": "pear"
+            },
+            {
+              "ko": "망고",
+              "en": "mango"
+            },
+            {
+              "ko": "사과",
+              "en": "apple"
+            },
+            {
+              "ko": "바나나",
+              "en": "banana"
+            }
+          ]
+        },
+        {
+          "targetKey": "fruit_lemon",
+          "ko": "레몬",
+          "en": "lemon",
+          "sentenceKo": "이것은 레몬입니다.",
+          "sentenceEn": "This is a lemon.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "배",
+              "en": "pear"
+            },
+            {
+              "ko": "망고",
+              "en": "mango"
+            },
+            {
+              "ko": "사과",
+              "en": "apple"
+            },
+            {
+              "ko": "바나나",
+              "en": "banana"
+            },
+            {
+              "ko": "포도",
+              "en": "grape"
+            }
+          ]
+        },
+        {
+          "targetKey": "fruit_pear",
+          "ko": "배",
+          "en": "pear",
+          "sentenceKo": "이것은 배입니다.",
+          "sentenceEn": "This is a pear.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "망고",
+              "en": "mango"
+            },
+            {
+              "ko": "사과",
+              "en": "apple"
+            },
+            {
+              "ko": "바나나",
+              "en": "banana"
+            },
+            {
+              "ko": "포도",
+              "en": "grape"
+            },
+            {
+              "ko": "오렌지",
+              "en": "orange"
+            }
+          ]
+        },
+        {
+          "targetKey": "fruit_mango",
+          "ko": "망고",
+          "en": "mango",
+          "sentenceKo": "이것은 망고입니다.",
+          "sentenceEn": "This is a mango.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "사과",
+              "en": "apple"
+            },
+            {
+              "ko": "바나나",
+              "en": "banana"
+            },
+            {
+              "ko": "포도",
+              "en": "grape"
+            },
+            {
+              "ko": "오렌지",
+              "en": "orange"
+            },
+            {
+              "ko": "복숭아",
+              "en": "peach"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 2,
+      "title": "기본 동물",
+      "description": "친숙한 동물 이름을 익혀요.",
+      "stages": [
+        {
+          "targetKey": "animal_cat",
+          "ko": "고양이",
+          "en": "cat",
+          "sentenceKo": "이것은 고양이입니다.",
+          "sentenceEn": "This is a cat.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "강아지",
+              "en": "dog"
+            },
+            {
+              "ko": "토끼",
+              "en": "rabbit"
+            },
+            {
+              "ko": "곰",
+              "en": "bear"
+            },
+            {
+              "ko": "호랑이",
+              "en": "tiger"
+            },
+            {
+              "ko": "사자",
+              "en": "lion"
+            }
+          ]
+        },
+        {
+          "targetKey": "animal_dog",
+          "ko": "강아지",
+          "en": "dog",
+          "sentenceKo": "이것은 강아지입니다.",
+          "sentenceEn": "This is a dog.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "토끼",
+              "en": "rabbit"
+            },
+            {
+              "ko": "곰",
+              "en": "bear"
+            },
+            {
+              "ko": "호랑이",
+              "en": "tiger"
+            },
+            {
+              "ko": "사자",
+              "en": "lion"
+            },
+            {
+              "ko": "코끼리",
+              "en": "elephant"
+            }
+          ]
+        },
+        {
+          "targetKey": "animal_rabbit",
+          "ko": "토끼",
+          "en": "rabbit",
+          "sentenceKo": "이것은 토끼입니다.",
+          "sentenceEn": "This is a rabbit.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "곰",
+              "en": "bear"
+            },
+            {
+              "ko": "호랑이",
+              "en": "tiger"
+            },
+            {
+              "ko": "사자",
+              "en": "lion"
+            },
+            {
+              "ko": "코끼리",
+              "en": "elephant"
+            },
+            {
+              "ko": "원숭이",
+              "en": "monkey"
+            }
+          ]
+        },
+        {
+          "targetKey": "animal_bear",
+          "ko": "곰",
+          "en": "bear",
+          "sentenceKo": "이것은 곰입니다.",
+          "sentenceEn": "This is a bear.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "호랑이",
+              "en": "tiger"
+            },
+            {
+              "ko": "사자",
+              "en": "lion"
+            },
+            {
+              "ko": "코끼리",
+              "en": "elephant"
+            },
+            {
+              "ko": "원숭이",
+              "en": "monkey"
+            },
+            {
+              "ko": "새",
+              "en": "bird"
+            }
+          ]
+        },
+        {
+          "targetKey": "animal_tiger",
+          "ko": "호랑이",
+          "en": "tiger",
+          "sentenceKo": "이것은 호랑이입니다.",
+          "sentenceEn": "This is a tiger.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "사자",
+              "en": "lion"
+            },
+            {
+              "ko": "코끼리",
+              "en": "elephant"
+            },
+            {
+              "ko": "원숭이",
+              "en": "monkey"
+            },
+            {
+              "ko": "새",
+              "en": "bird"
+            },
+            {
+              "ko": "물고기",
+              "en": "fish"
+            }
+          ]
+        },
+        {
+          "targetKey": "animal_lion",
+          "ko": "사자",
+          "en": "lion",
+          "sentenceKo": "이것은 사자입니다.",
+          "sentenceEn": "This is a lion.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "코끼리",
+              "en": "elephant"
+            },
+            {
+              "ko": "원숭이",
+              "en": "monkey"
+            },
+            {
+              "ko": "새",
+              "en": "bird"
+            },
+            {
+              "ko": "물고기",
+              "en": "fish"
+            },
+            {
+              "ko": "고양이",
+              "en": "cat"
+            }
+          ]
+        },
+        {
+          "targetKey": "animal_elephant",
+          "ko": "코끼리",
+          "en": "elephant",
+          "sentenceKo": "이것은 코끼리입니다.",
+          "sentenceEn": "This is an elephant.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "원숭이",
+              "en": "monkey"
+            },
+            {
+              "ko": "새",
+              "en": "bird"
+            },
+            {
+              "ko": "물고기",
+              "en": "fish"
+            },
+            {
+              "ko": "고양이",
+              "en": "cat"
+            },
+            {
+              "ko": "강아지",
+              "en": "dog"
+            }
+          ]
+        },
+        {
+          "targetKey": "animal_monkey",
+          "ko": "원숭이",
+          "en": "monkey",
+          "sentenceKo": "이것은 원숭이입니다.",
+          "sentenceEn": "This is a monkey.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "새",
+              "en": "bird"
+            },
+            {
+              "ko": "물고기",
+              "en": "fish"
+            },
+            {
+              "ko": "고양이",
+              "en": "cat"
+            },
+            {
+              "ko": "강아지",
+              "en": "dog"
+            },
+            {
+              "ko": "토끼",
+              "en": "rabbit"
+            }
+          ]
+        },
+        {
+          "targetKey": "animal_bird",
+          "ko": "새",
+          "en": "bird",
+          "sentenceKo": "이것은 새입니다.",
+          "sentenceEn": "This is a bird.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "물고기",
+              "en": "fish"
+            },
+            {
+              "ko": "고양이",
+              "en": "cat"
+            },
+            {
+              "ko": "강아지",
+              "en": "dog"
+            },
+            {
+              "ko": "토끼",
+              "en": "rabbit"
+            },
+            {
+              "ko": "곰",
+              "en": "bear"
+            }
+          ]
+        },
+        {
+          "targetKey": "animal_fish",
+          "ko": "물고기",
+          "en": "fish",
+          "sentenceKo": "이것은 물고기입니다.",
+          "sentenceEn": "This is a fish.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "고양이",
+              "en": "cat"
+            },
+            {
+              "ko": "강아지",
+              "en": "dog"
+            },
+            {
+              "ko": "토끼",
+              "en": "rabbit"
+            },
+            {
+              "ko": "곰",
+              "en": "bear"
+            },
+            {
+              "ko": "호랑이",
+              "en": "tiger"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 3,
+      "title": "학교 물건",
+      "description": "교실에서 자주 보는 물건을 배워요.",
+      "stages": [
+        {
+          "targetKey": "school_book",
+          "ko": "책",
+          "en": "book",
+          "sentenceKo": "이것은 책입니다.",
+          "sentenceEn": "This is a book.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "펜",
+              "en": "pen"
+            },
+            {
+              "ko": "연필",
+              "en": "pencil"
+            },
+            {
+              "ko": "지우개",
+              "en": "eraser"
+            },
+            {
+              "ko": "자",
+              "en": "ruler"
+            },
+            {
+              "ko": "가방",
+              "en": "bag"
+            }
+          ]
+        },
+        {
+          "targetKey": "school_pen",
+          "ko": "펜",
+          "en": "pen",
+          "sentenceKo": "이것은 펜입니다.",
+          "sentenceEn": "This is a pen.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "연필",
+              "en": "pencil"
+            },
+            {
+              "ko": "지우개",
+              "en": "eraser"
+            },
+            {
+              "ko": "자",
+              "en": "ruler"
+            },
+            {
+              "ko": "가방",
+              "en": "bag"
+            },
+            {
+              "ko": "공책",
+              "en": "notebook"
+            }
+          ]
+        },
+        {
+          "targetKey": "school_pencil",
+          "ko": "연필",
+          "en": "pencil",
+          "sentenceKo": "이것은 연필입니다.",
+          "sentenceEn": "This is a pencil.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "지우개",
+              "en": "eraser"
+            },
+            {
+              "ko": "자",
+              "en": "ruler"
+            },
+            {
+              "ko": "가방",
+              "en": "bag"
+            },
+            {
+              "ko": "공책",
+              "en": "notebook"
+            },
+            {
+              "ko": "책상",
+              "en": "desk"
+            }
+          ]
+        },
+        {
+          "targetKey": "school_eraser",
+          "ko": "지우개",
+          "en": "eraser",
+          "sentenceKo": "이것은 지우개입니다.",
+          "sentenceEn": "This is an eraser.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "자",
+              "en": "ruler"
+            },
+            {
+              "ko": "가방",
+              "en": "bag"
+            },
+            {
+              "ko": "공책",
+              "en": "notebook"
+            },
+            {
+              "ko": "책상",
+              "en": "desk"
+            },
+            {
+              "ko": "의자",
+              "en": "chair"
+            }
+          ]
+        },
+        {
+          "targetKey": "school_ruler",
+          "ko": "자",
+          "en": "ruler",
+          "sentenceKo": "이것은 자입니다.",
+          "sentenceEn": "This is a ruler.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "가방",
+              "en": "bag"
+            },
+            {
+              "ko": "공책",
+              "en": "notebook"
+            },
+            {
+              "ko": "책상",
+              "en": "desk"
+            },
+            {
+              "ko": "의자",
+              "en": "chair"
+            },
+            {
+              "ko": "마커",
+              "en": "marker"
+            }
+          ]
+        },
+        {
+          "targetKey": "school_bag",
+          "ko": "가방",
+          "en": "bag",
+          "sentenceKo": "이것은 가방입니다.",
+          "sentenceEn": "This is a bag.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "공책",
+              "en": "notebook"
+            },
+            {
+              "ko": "책상",
+              "en": "desk"
+            },
+            {
+              "ko": "의자",
+              "en": "chair"
+            },
+            {
+              "ko": "마커",
+              "en": "marker"
+            },
+            {
+              "ko": "책",
+              "en": "book"
+            }
+          ]
+        },
+        {
+          "targetKey": "school_notebook",
+          "ko": "공책",
+          "en": "notebook",
+          "sentenceKo": "이것은 공책입니다.",
+          "sentenceEn": "This is a notebook.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "책상",
+              "en": "desk"
+            },
+            {
+              "ko": "의자",
+              "en": "chair"
+            },
+            {
+              "ko": "마커",
+              "en": "marker"
+            },
+            {
+              "ko": "책",
+              "en": "book"
+            },
+            {
+              "ko": "펜",
+              "en": "pen"
+            }
+          ]
+        },
+        {
+          "targetKey": "school_desk",
+          "ko": "책상",
+          "en": "desk",
+          "sentenceKo": "이것은 책상입니다.",
+          "sentenceEn": "This is a desk.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "의자",
+              "en": "chair"
+            },
+            {
+              "ko": "마커",
+              "en": "marker"
+            },
+            {
+              "ko": "책",
+              "en": "book"
+            },
+            {
+              "ko": "펜",
+              "en": "pen"
+            },
+            {
+              "ko": "연필",
+              "en": "pencil"
+            }
+          ]
+        },
+        {
+          "targetKey": "school_chair",
+          "ko": "의자",
+          "en": "chair",
+          "sentenceKo": "이것은 의자입니다.",
+          "sentenceEn": "This is a chair.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "마커",
+              "en": "marker"
+            },
+            {
+              "ko": "책",
+              "en": "book"
+            },
+            {
+              "ko": "펜",
+              "en": "pen"
+            },
+            {
+              "ko": "연필",
+              "en": "pencil"
+            },
+            {
+              "ko": "지우개",
+              "en": "eraser"
+            }
+          ]
+        },
+        {
+          "targetKey": "school_marker",
+          "ko": "마커",
+          "en": "marker",
+          "sentenceKo": "이것은 마커입니다.",
+          "sentenceEn": "This is a marker.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "책",
+              "en": "book"
+            },
+            {
+              "ko": "펜",
+              "en": "pen"
+            },
+            {
+              "ko": "연필",
+              "en": "pencil"
+            },
+            {
+              "ko": "지우개",
+              "en": "eraser"
+            },
+            {
+              "ko": "자",
+              "en": "ruler"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 4,
+      "title": "집 안 물건",
+      "description": "집 안에서 자주 보는 물건을 배워요.",
+      "stages": [
+        {
+          "targetKey": "home_bed",
+          "ko": "침대",
+          "en": "bed",
+          "sentenceKo": "이것은 침대입니다.",
+          "sentenceEn": "This is a bed.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "문",
+              "en": "door"
+            },
+            {
+              "ko": "창문",
+              "en": "window"
+            },
+            {
+              "ko": "테이블",
+              "en": "table"
+            },
+            {
+              "ko": "컵",
+              "en": "cup"
+            },
+            {
+              "ko": "숟가락",
+              "en": "spoon"
+            }
+          ]
+        },
+        {
+          "targetKey": "home_door",
+          "ko": "문",
+          "en": "door",
+          "sentenceKo": "이것은 문입니다.",
+          "sentenceEn": "This is a door.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "창문",
+              "en": "window"
+            },
+            {
+              "ko": "테이블",
+              "en": "table"
+            },
+            {
+              "ko": "컵",
+              "en": "cup"
+            },
+            {
+              "ko": "숟가락",
+              "en": "spoon"
+            },
+            {
+              "ko": "접시",
+              "en": "plate"
+            }
+          ]
+        },
+        {
+          "targetKey": "home_window",
+          "ko": "창문",
+          "en": "window",
+          "sentenceKo": "이것은 창문입니다.",
+          "sentenceEn": "This is a window.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "테이블",
+              "en": "table"
+            },
+            {
+              "ko": "컵",
+              "en": "cup"
+            },
+            {
+              "ko": "숟가락",
+              "en": "spoon"
+            },
+            {
+              "ko": "접시",
+              "en": "plate"
+            },
+            {
+              "ko": "램프",
+              "en": "lamp"
+            }
+          ]
+        },
+        {
+          "targetKey": "home_table",
+          "ko": "테이블",
+          "en": "table",
+          "sentenceKo": "이것은 테이블입니다.",
+          "sentenceEn": "This is a table.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "컵",
+              "en": "cup"
+            },
+            {
+              "ko": "숟가락",
+              "en": "spoon"
+            },
+            {
+              "ko": "접시",
+              "en": "plate"
+            },
+            {
+              "ko": "램프",
+              "en": "lamp"
+            },
+            {
+              "ko": "시계",
+              "en": "clock"
+            }
+          ]
+        },
+        {
+          "targetKey": "home_cup",
+          "ko": "컵",
+          "en": "cup",
+          "sentenceKo": "이것은 컵입니다.",
+          "sentenceEn": "This is a cup.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "숟가락",
+              "en": "spoon"
+            },
+            {
+              "ko": "접시",
+              "en": "plate"
+            },
+            {
+              "ko": "램프",
+              "en": "lamp"
+            },
+            {
+              "ko": "시계",
+              "en": "clock"
+            },
+            {
+              "ko": "거울",
+              "en": "mirror"
+            }
+          ]
+        },
+        {
+          "targetKey": "home_spoon",
+          "ko": "숟가락",
+          "en": "spoon",
+          "sentenceKo": "이것은 숟가락입니다.",
+          "sentenceEn": "This is a spoon.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "접시",
+              "en": "plate"
+            },
+            {
+              "ko": "램프",
+              "en": "lamp"
+            },
+            {
+              "ko": "시계",
+              "en": "clock"
+            },
+            {
+              "ko": "거울",
+              "en": "mirror"
+            },
+            {
+              "ko": "침대",
+              "en": "bed"
+            }
+          ]
+        },
+        {
+          "targetKey": "home_plate",
+          "ko": "접시",
+          "en": "plate",
+          "sentenceKo": "이것은 접시입니다.",
+          "sentenceEn": "This is a plate.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "램프",
+              "en": "lamp"
+            },
+            {
+              "ko": "시계",
+              "en": "clock"
+            },
+            {
+              "ko": "거울",
+              "en": "mirror"
+            },
+            {
+              "ko": "침대",
+              "en": "bed"
+            },
+            {
+              "ko": "문",
+              "en": "door"
+            }
+          ]
+        },
+        {
+          "targetKey": "home_lamp",
+          "ko": "램프",
+          "en": "lamp",
+          "sentenceKo": "이것은 램프입니다.",
+          "sentenceEn": "This is a lamp.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "시계",
+              "en": "clock"
+            },
+            {
+              "ko": "거울",
+              "en": "mirror"
+            },
+            {
+              "ko": "침대",
+              "en": "bed"
+            },
+            {
+              "ko": "문",
+              "en": "door"
+            },
+            {
+              "ko": "창문",
+              "en": "window"
+            }
+          ]
+        },
+        {
+          "targetKey": "home_clock",
+          "ko": "시계",
+          "en": "clock",
+          "sentenceKo": "이것은 시계입니다.",
+          "sentenceEn": "This is a clock.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "거울",
+              "en": "mirror"
+            },
+            {
+              "ko": "침대",
+              "en": "bed"
+            },
+            {
+              "ko": "문",
+              "en": "door"
+            },
+            {
+              "ko": "창문",
+              "en": "window"
+            },
+            {
+              "ko": "테이블",
+              "en": "table"
+            }
+          ]
+        },
+        {
+          "targetKey": "home_mirror",
+          "ko": "거울",
+          "en": "mirror",
+          "sentenceKo": "이것은 거울입니다.",
+          "sentenceEn": "This is a mirror.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "침대",
+              "en": "bed"
+            },
+            {
+              "ko": "문",
+              "en": "door"
+            },
+            {
+              "ko": "창문",
+              "en": "window"
+            },
+            {
+              "ko": "테이블",
+              "en": "table"
+            },
+            {
+              "ko": "컵",
+              "en": "cup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 5,
+      "title": "기본 음식",
+      "description": "간단한 음식 단어를 익혀요.",
+      "stages": [
+        {
+          "targetKey": "food_rice",
+          "ko": "밥",
+          "en": "rice",
+          "sentenceKo": "이것은 밥입니다.",
+          "sentenceEn": "This is a rice.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "빵",
+              "en": "bread"
+            },
+            {
+              "ko": "수프",
+              "en": "soup"
+            },
+            {
+              "ko": "케이크",
+              "en": "cake"
+            },
+            {
+              "ko": "피자",
+              "en": "pizza"
+            },
+            {
+              "ko": "국수",
+              "en": "noodle"
+            }
+          ]
+        },
+        {
+          "targetKey": "food_bread",
+          "ko": "빵",
+          "en": "bread",
+          "sentenceKo": "이것은 빵입니다.",
+          "sentenceEn": "This is a bread.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "수프",
+              "en": "soup"
+            },
+            {
+              "ko": "케이크",
+              "en": "cake"
+            },
+            {
+              "ko": "피자",
+              "en": "pizza"
+            },
+            {
+              "ko": "국수",
+              "en": "noodle"
+            },
+            {
+              "ko": "달걀",
+              "en": "egg"
+            }
+          ]
+        },
+        {
+          "targetKey": "food_soup",
+          "ko": "수프",
+          "en": "soup",
+          "sentenceKo": "이것은 수프입니다.",
+          "sentenceEn": "This is a soup.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "케이크",
+              "en": "cake"
+            },
+            {
+              "ko": "피자",
+              "en": "pizza"
+            },
+            {
+              "ko": "국수",
+              "en": "noodle"
+            },
+            {
+              "ko": "달걀",
+              "en": "egg"
+            },
+            {
+              "ko": "치즈",
+              "en": "cheese"
+            }
+          ]
+        },
+        {
+          "targetKey": "food_cake",
+          "ko": "케이크",
+          "en": "cake",
+          "sentenceKo": "이것은 케이크입니다.",
+          "sentenceEn": "This is a cake.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "피자",
+              "en": "pizza"
+            },
+            {
+              "ko": "국수",
+              "en": "noodle"
+            },
+            {
+              "ko": "달걀",
+              "en": "egg"
+            },
+            {
+              "ko": "치즈",
+              "en": "cheese"
+            },
+            {
+              "ko": "쿠키",
+              "en": "cookie"
+            }
+          ]
+        },
+        {
+          "targetKey": "food_pizza",
+          "ko": "피자",
+          "en": "pizza",
+          "sentenceKo": "이것은 피자입니다.",
+          "sentenceEn": "This is a pizza.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "국수",
+              "en": "noodle"
+            },
+            {
+              "ko": "달걀",
+              "en": "egg"
+            },
+            {
+              "ko": "치즈",
+              "en": "cheese"
+            },
+            {
+              "ko": "쿠키",
+              "en": "cookie"
+            },
+            {
+              "ko": "샌드위치",
+              "en": "sandwich"
+            }
+          ]
+        },
+        {
+          "targetKey": "food_noodle",
+          "ko": "국수",
+          "en": "noodle",
+          "sentenceKo": "이것은 국수입니다.",
+          "sentenceEn": "This is a noodle.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "달걀",
+              "en": "egg"
+            },
+            {
+              "ko": "치즈",
+              "en": "cheese"
+            },
+            {
+              "ko": "쿠키",
+              "en": "cookie"
+            },
+            {
+              "ko": "샌드위치",
+              "en": "sandwich"
+            },
+            {
+              "ko": "밥",
+              "en": "rice"
+            }
+          ]
+        },
+        {
+          "targetKey": "food_egg",
+          "ko": "달걀",
+          "en": "egg",
+          "sentenceKo": "이것은 달걀입니다.",
+          "sentenceEn": "This is an egg.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "치즈",
+              "en": "cheese"
+            },
+            {
+              "ko": "쿠키",
+              "en": "cookie"
+            },
+            {
+              "ko": "샌드위치",
+              "en": "sandwich"
+            },
+            {
+              "ko": "밥",
+              "en": "rice"
+            },
+            {
+              "ko": "빵",
+              "en": "bread"
+            }
+          ]
+        },
+        {
+          "targetKey": "food_cheese",
+          "ko": "치즈",
+          "en": "cheese",
+          "sentenceKo": "이것은 치즈입니다.",
+          "sentenceEn": "This is a cheese.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "쿠키",
+              "en": "cookie"
+            },
+            {
+              "ko": "샌드위치",
+              "en": "sandwich"
+            },
+            {
+              "ko": "밥",
+              "en": "rice"
+            },
+            {
+              "ko": "빵",
+              "en": "bread"
+            },
+            {
+              "ko": "수프",
+              "en": "soup"
+            }
+          ]
+        },
+        {
+          "targetKey": "food_cookie",
+          "ko": "쿠키",
+          "en": "cookie",
+          "sentenceKo": "이것은 쿠키입니다.",
+          "sentenceEn": "This is a cookie.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "샌드위치",
+              "en": "sandwich"
+            },
+            {
+              "ko": "밥",
+              "en": "rice"
+            },
+            {
+              "ko": "빵",
+              "en": "bread"
+            },
+            {
+              "ko": "수프",
+              "en": "soup"
+            },
+            {
+              "ko": "케이크",
+              "en": "cake"
+            }
+          ]
+        },
+        {
+          "targetKey": "food_sandwich",
+          "ko": "샌드위치",
+          "en": "sandwich",
+          "sentenceKo": "이것은 샌드위치입니다.",
+          "sentenceEn": "This is a sandwich.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "밥",
+              "en": "rice"
+            },
+            {
+              "ko": "빵",
+              "en": "bread"
+            },
+            {
+              "ko": "수프",
+              "en": "soup"
+            },
+            {
+              "ko": "케이크",
+              "en": "cake"
+            },
+            {
+              "ko": "피자",
+              "en": "pizza"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 6,
+      "title": "기본 음료",
+      "description": "마실 것 이름을 익혀요.",
+      "stages": [
+        {
+          "targetKey": "drink_water",
+          "ko": "물",
+          "en": "water",
+          "sentenceKo": "이것은 물입니다.",
+          "sentenceEn": "This is a water.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "우유",
+              "en": "milk"
+            },
+            {
+              "ko": "주스",
+              "en": "juice"
+            },
+            {
+              "ko": "커피",
+              "en": "coffee"
+            },
+            {
+              "ko": "차",
+              "en": "tea"
+            },
+            {
+              "ko": "탄산음료",
+              "en": "soda"
+            }
+          ]
+        },
+        {
+          "targetKey": "drink_milk",
+          "ko": "우유",
+          "en": "milk",
+          "sentenceKo": "이것은 우유입니다.",
+          "sentenceEn": "This is a milk.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "주스",
+              "en": "juice"
+            },
+            {
+              "ko": "커피",
+              "en": "coffee"
+            },
+            {
+              "ko": "차",
+              "en": "tea"
+            },
+            {
+              "ko": "탄산음료",
+              "en": "soda"
+            },
+            {
+              "ko": "코코아",
+              "en": "cocoa"
+            }
+          ]
+        },
+        {
+          "targetKey": "drink_juice",
+          "ko": "주스",
+          "en": "juice",
+          "sentenceKo": "이것은 주스입니다.",
+          "sentenceEn": "This is a juice.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "커피",
+              "en": "coffee"
+            },
+            {
+              "ko": "차",
+              "en": "tea"
+            },
+            {
+              "ko": "탄산음료",
+              "en": "soda"
+            },
+            {
+              "ko": "코코아",
+              "en": "cocoa"
+            },
+            {
+              "ko": "요거트",
+              "en": "yogurt"
+            }
+          ]
+        },
+        {
+          "targetKey": "drink_coffee",
+          "ko": "커피",
+          "en": "coffee",
+          "sentenceKo": "이것은 커피입니다.",
+          "sentenceEn": "This is a coffee.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "차",
+              "en": "tea"
+            },
+            {
+              "ko": "탄산음료",
+              "en": "soda"
+            },
+            {
+              "ko": "코코아",
+              "en": "cocoa"
+            },
+            {
+              "ko": "요거트",
+              "en": "yogurt"
+            },
+            {
+              "ko": "스무디",
+              "en": "smoothie"
+            }
+          ]
+        },
+        {
+          "targetKey": "drink_tea",
+          "ko": "차",
+          "en": "tea",
+          "sentenceKo": "이것은 차입니다.",
+          "sentenceEn": "This is a tea.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "탄산음료",
+              "en": "soda"
+            },
+            {
+              "ko": "코코아",
+              "en": "cocoa"
+            },
+            {
+              "ko": "요거트",
+              "en": "yogurt"
+            },
+            {
+              "ko": "스무디",
+              "en": "smoothie"
+            },
+            {
+              "ko": "레모네이드",
+              "en": "lemonade"
+            }
+          ]
+        },
+        {
+          "targetKey": "drink_soda",
+          "ko": "탄산음료",
+          "en": "soda",
+          "sentenceKo": "이것은 탄산음료입니다.",
+          "sentenceEn": "This is a soda.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "코코아",
+              "en": "cocoa"
+            },
+            {
+              "ko": "요거트",
+              "en": "yogurt"
+            },
+            {
+              "ko": "스무디",
+              "en": "smoothie"
+            },
+            {
+              "ko": "레모네이드",
+              "en": "lemonade"
+            },
+            {
+              "ko": "물",
+              "en": "water"
+            }
+          ]
+        },
+        {
+          "targetKey": "drink_cocoa",
+          "ko": "코코아",
+          "en": "cocoa",
+          "sentenceKo": "이것은 코코아입니다.",
+          "sentenceEn": "This is a cocoa.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "요거트",
+              "en": "yogurt"
+            },
+            {
+              "ko": "스무디",
+              "en": "smoothie"
+            },
+            {
+              "ko": "레모네이드",
+              "en": "lemonade"
+            },
+            {
+              "ko": "물",
+              "en": "water"
+            },
+            {
+              "ko": "우유",
+              "en": "milk"
+            }
+          ]
+        },
+        {
+          "targetKey": "drink_yogurt",
+          "ko": "요거트",
+          "en": "yogurt",
+          "sentenceKo": "이것은 요거트입니다.",
+          "sentenceEn": "This is a yogurt.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "스무디",
+              "en": "smoothie"
+            },
+            {
+              "ko": "레모네이드",
+              "en": "lemonade"
+            },
+            {
+              "ko": "물",
+              "en": "water"
+            },
+            {
+              "ko": "우유",
+              "en": "milk"
+            },
+            {
+              "ko": "주스",
+              "en": "juice"
+            }
+          ]
+        },
+        {
+          "targetKey": "drink_smoothie",
+          "ko": "스무디",
+          "en": "smoothie",
+          "sentenceKo": "이것은 스무디입니다.",
+          "sentenceEn": "This is a smoothie.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "레모네이드",
+              "en": "lemonade"
+            },
+            {
+              "ko": "물",
+              "en": "water"
+            },
+            {
+              "ko": "우유",
+              "en": "milk"
+            },
+            {
+              "ko": "주스",
+              "en": "juice"
+            },
+            {
+              "ko": "커피",
+              "en": "coffee"
+            }
+          ]
+        },
+        {
+          "targetKey": "drink_lemonade",
+          "ko": "레모네이드",
+          "en": "lemonade",
+          "sentenceKo": "이것은 레모네이드입니다.",
+          "sentenceEn": "This is a lemonade.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "물",
+              "en": "water"
+            },
+            {
+              "ko": "우유",
+              "en": "milk"
+            },
+            {
+              "ko": "주스",
+              "en": "juice"
+            },
+            {
+              "ko": "커피",
+              "en": "coffee"
+            },
+            {
+              "ko": "차",
+              "en": "tea"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 7,
+      "title": "기본 옷",
+      "description": "입는 물건 이름을 배워요.",
+      "stages": [
+        {
+          "targetKey": "clothes_shirt",
+          "ko": "셔츠",
+          "en": "shirt",
+          "sentenceKo": "이것은 셔츠입니다.",
+          "sentenceEn": "This is a shirt.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "바지",
+              "en": "pants"
+            },
+            {
+              "ko": "원피스",
+              "en": "dress"
+            },
+            {
+              "ko": "치마",
+              "en": "skirt"
+            },
+            {
+              "ko": "신발",
+              "en": "shoes"
+            },
+            {
+              "ko": "양말",
+              "en": "socks"
+            }
+          ]
+        },
+        {
+          "targetKey": "clothes_pants",
+          "ko": "바지",
+          "en": "pants",
+          "sentenceKo": "이것은 바지입니다.",
+          "sentenceEn": "This is a pants.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "원피스",
+              "en": "dress"
+            },
+            {
+              "ko": "치마",
+              "en": "skirt"
+            },
+            {
+              "ko": "신발",
+              "en": "shoes"
+            },
+            {
+              "ko": "양말",
+              "en": "socks"
+            },
+            {
+              "ko": "모자",
+              "en": "hat"
+            }
+          ]
+        },
+        {
+          "targetKey": "clothes_dress",
+          "ko": "원피스",
+          "en": "dress",
+          "sentenceKo": "이것은 원피스입니다.",
+          "sentenceEn": "This is a dress.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "치마",
+              "en": "skirt"
+            },
+            {
+              "ko": "신발",
+              "en": "shoes"
+            },
+            {
+              "ko": "양말",
+              "en": "socks"
+            },
+            {
+              "ko": "모자",
+              "en": "hat"
+            },
+            {
+              "ko": "코트",
+              "en": "coat"
+            }
+          ]
+        },
+        {
+          "targetKey": "clothes_skirt",
+          "ko": "치마",
+          "en": "skirt",
+          "sentenceKo": "이것은 치마입니다.",
+          "sentenceEn": "This is a skirt.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "신발",
+              "en": "shoes"
+            },
+            {
+              "ko": "양말",
+              "en": "socks"
+            },
+            {
+              "ko": "모자",
+              "en": "hat"
+            },
+            {
+              "ko": "코트",
+              "en": "coat"
+            },
+            {
+              "ko": "장갑",
+              "en": "gloves"
+            }
+          ]
+        },
+        {
+          "targetKey": "clothes_shoes",
+          "ko": "신발",
+          "en": "shoes",
+          "sentenceKo": "이것들은 신발입니다.",
+          "sentenceEn": "These are shoes.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "양말",
+              "en": "socks"
+            },
+            {
+              "ko": "모자",
+              "en": "hat"
+            },
+            {
+              "ko": "코트",
+              "en": "coat"
+            },
+            {
+              "ko": "장갑",
+              "en": "gloves"
+            },
+            {
+              "ko": "목도리",
+              "en": "scarf"
+            }
+          ]
+        },
+        {
+          "targetKey": "clothes_socks",
+          "ko": "양말",
+          "en": "socks",
+          "sentenceKo": "이것들은 양말입니다.",
+          "sentenceEn": "These are socks.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "모자",
+              "en": "hat"
+            },
+            {
+              "ko": "코트",
+              "en": "coat"
+            },
+            {
+              "ko": "장갑",
+              "en": "gloves"
+            },
+            {
+              "ko": "목도리",
+              "en": "scarf"
+            },
+            {
+              "ko": "셔츠",
+              "en": "shirt"
+            }
+          ]
+        },
+        {
+          "targetKey": "clothes_hat",
+          "ko": "모자",
+          "en": "hat",
+          "sentenceKo": "이것은 모자입니다.",
+          "sentenceEn": "This is a hat.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "코트",
+              "en": "coat"
+            },
+            {
+              "ko": "장갑",
+              "en": "gloves"
+            },
+            {
+              "ko": "목도리",
+              "en": "scarf"
+            },
+            {
+              "ko": "셔츠",
+              "en": "shirt"
+            },
+            {
+              "ko": "바지",
+              "en": "pants"
+            }
+          ]
+        },
+        {
+          "targetKey": "clothes_coat",
+          "ko": "코트",
+          "en": "coat",
+          "sentenceKo": "이것은 코트입니다.",
+          "sentenceEn": "This is a coat.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "장갑",
+              "en": "gloves"
+            },
+            {
+              "ko": "목도리",
+              "en": "scarf"
+            },
+            {
+              "ko": "셔츠",
+              "en": "shirt"
+            },
+            {
+              "ko": "바지",
+              "en": "pants"
+            },
+            {
+              "ko": "원피스",
+              "en": "dress"
+            }
+          ]
+        },
+        {
+          "targetKey": "clothes_gloves",
+          "ko": "장갑",
+          "en": "gloves",
+          "sentenceKo": "이것들은 장갑입니다.",
+          "sentenceEn": "These are gloves.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "목도리",
+              "en": "scarf"
+            },
+            {
+              "ko": "셔츠",
+              "en": "shirt"
+            },
+            {
+              "ko": "바지",
+              "en": "pants"
+            },
+            {
+              "ko": "원피스",
+              "en": "dress"
+            },
+            {
+              "ko": "치마",
+              "en": "skirt"
+            }
+          ]
+        },
+        {
+          "targetKey": "clothes_scarf",
+          "ko": "목도리",
+          "en": "scarf",
+          "sentenceKo": "이것은 목도리입니다.",
+          "sentenceEn": "This is a scarf.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "셔츠",
+              "en": "shirt"
+            },
+            {
+              "ko": "바지",
+              "en": "pants"
+            },
+            {
+              "ko": "원피스",
+              "en": "dress"
+            },
+            {
+              "ko": "치마",
+              "en": "skirt"
+            },
+            {
+              "ko": "신발",
+              "en": "shoes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 8,
+      "title": "몸의 부분",
+      "description": "몸의 부분을 영어로 말해요.",
+      "stages": [
+        {
+          "targetKey": "body_hand",
+          "ko": "손",
+          "en": "hand",
+          "sentenceKo": "이것은 손입니다.",
+          "sentenceEn": "This is a hand.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "얼굴",
+              "en": "face"
+            },
+            {
+              "ko": "눈",
+              "en": "eye"
+            },
+            {
+              "ko": "코",
+              "en": "nose"
+            },
+            {
+              "ko": "입",
+              "en": "mouth"
+            },
+            {
+              "ko": "귀",
+              "en": "ear"
+            }
+          ]
+        },
+        {
+          "targetKey": "body_face",
+          "ko": "얼굴",
+          "en": "face",
+          "sentenceKo": "이것은 얼굴입니다.",
+          "sentenceEn": "This is a face.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "눈",
+              "en": "eye"
+            },
+            {
+              "ko": "코",
+              "en": "nose"
+            },
+            {
+              "ko": "입",
+              "en": "mouth"
+            },
+            {
+              "ko": "귀",
+              "en": "ear"
+            },
+            {
+              "ko": "팔",
+              "en": "arm"
+            }
+          ]
+        },
+        {
+          "targetKey": "body_eye",
+          "ko": "눈",
+          "en": "eye",
+          "sentenceKo": "이것은 눈입니다.",
+          "sentenceEn": "This is an eye.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "코",
+              "en": "nose"
+            },
+            {
+              "ko": "입",
+              "en": "mouth"
+            },
+            {
+              "ko": "귀",
+              "en": "ear"
+            },
+            {
+              "ko": "팔",
+              "en": "arm"
+            },
+            {
+              "ko": "다리",
+              "en": "leg"
+            }
+          ]
+        },
+        {
+          "targetKey": "body_nose",
+          "ko": "코",
+          "en": "nose",
+          "sentenceKo": "이것은 코입니다.",
+          "sentenceEn": "This is a nose.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "입",
+              "en": "mouth"
+            },
+            {
+              "ko": "귀",
+              "en": "ear"
+            },
+            {
+              "ko": "팔",
+              "en": "arm"
+            },
+            {
+              "ko": "다리",
+              "en": "leg"
+            },
+            {
+              "ko": "머리카락",
+              "en": "hair"
+            }
+          ]
+        },
+        {
+          "targetKey": "body_mouth",
+          "ko": "입",
+          "en": "mouth",
+          "sentenceKo": "이것은 입입니다.",
+          "sentenceEn": "This is a mouth.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "귀",
+              "en": "ear"
+            },
+            {
+              "ko": "팔",
+              "en": "arm"
+            },
+            {
+              "ko": "다리",
+              "en": "leg"
+            },
+            {
+              "ko": "머리카락",
+              "en": "hair"
+            },
+            {
+              "ko": "발",
+              "en": "foot"
+            }
+          ]
+        },
+        {
+          "targetKey": "body_ear",
+          "ko": "귀",
+          "en": "ear",
+          "sentenceKo": "이것은 귀입니다.",
+          "sentenceEn": "This is an ear.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "팔",
+              "en": "arm"
+            },
+            {
+              "ko": "다리",
+              "en": "leg"
+            },
+            {
+              "ko": "머리카락",
+              "en": "hair"
+            },
+            {
+              "ko": "발",
+              "en": "foot"
+            },
+            {
+              "ko": "손",
+              "en": "hand"
+            }
+          ]
+        },
+        {
+          "targetKey": "body_arm",
+          "ko": "팔",
+          "en": "arm",
+          "sentenceKo": "이것은 팔입니다.",
+          "sentenceEn": "This is an arm.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "다리",
+              "en": "leg"
+            },
+            {
+              "ko": "머리카락",
+              "en": "hair"
+            },
+            {
+              "ko": "발",
+              "en": "foot"
+            },
+            {
+              "ko": "손",
+              "en": "hand"
+            },
+            {
+              "ko": "얼굴",
+              "en": "face"
+            }
+          ]
+        },
+        {
+          "targetKey": "body_leg",
+          "ko": "다리",
+          "en": "leg",
+          "sentenceKo": "이것은 다리입니다.",
+          "sentenceEn": "This is a leg.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "머리카락",
+              "en": "hair"
+            },
+            {
+              "ko": "발",
+              "en": "foot"
+            },
+            {
+              "ko": "손",
+              "en": "hand"
+            },
+            {
+              "ko": "얼굴",
+              "en": "face"
+            },
+            {
+              "ko": "눈",
+              "en": "eye"
+            }
+          ]
+        },
+        {
+          "targetKey": "body_hair",
+          "ko": "머리카락",
+          "en": "hair",
+          "sentenceKo": "이것은 머리카락입니다.",
+          "sentenceEn": "This is a hair.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "발",
+              "en": "foot"
+            },
+            {
+              "ko": "손",
+              "en": "hand"
+            },
+            {
+              "ko": "얼굴",
+              "en": "face"
+            },
+            {
+              "ko": "눈",
+              "en": "eye"
+            },
+            {
+              "ko": "코",
+              "en": "nose"
+            }
+          ]
+        },
+        {
+          "targetKey": "body_foot",
+          "ko": "발",
+          "en": "foot",
+          "sentenceKo": "이것은 발입니다.",
+          "sentenceEn": "This is a foot.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "손",
+              "en": "hand"
+            },
+            {
+              "ko": "얼굴",
+              "en": "face"
+            },
+            {
+              "ko": "눈",
+              "en": "eye"
+            },
+            {
+              "ko": "코",
+              "en": "nose"
+            },
+            {
+              "ko": "입",
+              "en": "mouth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 9,
+      "title": "기본 장소",
+      "description": "일상 장소 단어를 배워요.",
+      "stages": [
+        {
+          "targetKey": "place_classroom",
+          "ko": "교실",
+          "en": "classroom",
+          "sentenceKo": "이곳은 교실입니다.",
+          "sentenceEn": "This is the classroom.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "부엌",
+              "en": "kitchen"
+            },
+            {
+              "ko": "침실",
+              "en": "bedroom"
+            },
+            {
+              "ko": "욕실",
+              "en": "bathroom"
+            },
+            {
+              "ko": "정원",
+              "en": "garden"
+            },
+            {
+              "ko": "사무실",
+              "en": "office"
+            }
+          ]
+        },
+        {
+          "targetKey": "place_kitchen",
+          "ko": "부엌",
+          "en": "kitchen",
+          "sentenceKo": "이곳은 부엌입니다.",
+          "sentenceEn": "This is the kitchen.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "침실",
+              "en": "bedroom"
+            },
+            {
+              "ko": "욕실",
+              "en": "bathroom"
+            },
+            {
+              "ko": "정원",
+              "en": "garden"
+            },
+            {
+              "ko": "사무실",
+              "en": "office"
+            },
+            {
+              "ko": "도서관",
+              "en": "library"
+            }
+          ]
+        },
+        {
+          "targetKey": "place_bedroom",
+          "ko": "침실",
+          "en": "bedroom",
+          "sentenceKo": "이곳은 침실입니다.",
+          "sentenceEn": "This is the bedroom.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "욕실",
+              "en": "bathroom"
+            },
+            {
+              "ko": "정원",
+              "en": "garden"
+            },
+            {
+              "ko": "사무실",
+              "en": "office"
+            },
+            {
+              "ko": "도서관",
+              "en": "library"
+            },
+            {
+              "ko": "병원",
+              "en": "hospital"
+            }
+          ]
+        },
+        {
+          "targetKey": "place_bathroom",
+          "ko": "욕실",
+          "en": "bathroom",
+          "sentenceKo": "이곳은 욕실입니다.",
+          "sentenceEn": "This is the bathroom.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "정원",
+              "en": "garden"
+            },
+            {
+              "ko": "사무실",
+              "en": "office"
+            },
+            {
+              "ko": "도서관",
+              "en": "library"
+            },
+            {
+              "ko": "병원",
+              "en": "hospital"
+            },
+            {
+              "ko": "농장",
+              "en": "farm"
+            }
+          ]
+        },
+        {
+          "targetKey": "place_garden",
+          "ko": "정원",
+          "en": "garden",
+          "sentenceKo": "이곳은 정원입니다.",
+          "sentenceEn": "This is the garden.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "사무실",
+              "en": "office"
+            },
+            {
+              "ko": "도서관",
+              "en": "library"
+            },
+            {
+              "ko": "병원",
+              "en": "hospital"
+            },
+            {
+              "ko": "농장",
+              "en": "farm"
+            },
+            {
+              "ko": "공원",
+              "en": "park"
+            }
+          ]
+        },
+        {
+          "targetKey": "place_office",
+          "ko": "사무실",
+          "en": "office",
+          "sentenceKo": "이곳은 사무실입니다.",
+          "sentenceEn": "This is the office.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "도서관",
+              "en": "library"
+            },
+            {
+              "ko": "병원",
+              "en": "hospital"
+            },
+            {
+              "ko": "농장",
+              "en": "farm"
+            },
+            {
+              "ko": "공원",
+              "en": "park"
+            },
+            {
+              "ko": "교실",
+              "en": "classroom"
+            }
+          ]
+        },
+        {
+          "targetKey": "place_library",
+          "ko": "도서관",
+          "en": "library",
+          "sentenceKo": "이곳은 도서관입니다.",
+          "sentenceEn": "This is the library.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "병원",
+              "en": "hospital"
+            },
+            {
+              "ko": "농장",
+              "en": "farm"
+            },
+            {
+              "ko": "공원",
+              "en": "park"
+            },
+            {
+              "ko": "교실",
+              "en": "classroom"
+            },
+            {
+              "ko": "부엌",
+              "en": "kitchen"
+            }
+          ]
+        },
+        {
+          "targetKey": "place_hospital",
+          "ko": "병원",
+          "en": "hospital",
+          "sentenceKo": "이곳은 병원입니다.",
+          "sentenceEn": "This is the hospital.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "농장",
+              "en": "farm"
+            },
+            {
+              "ko": "공원",
+              "en": "park"
+            },
+            {
+              "ko": "교실",
+              "en": "classroom"
+            },
+            {
+              "ko": "부엌",
+              "en": "kitchen"
+            },
+            {
+              "ko": "침실",
+              "en": "bedroom"
+            }
+          ]
+        },
+        {
+          "targetKey": "place_farm",
+          "ko": "농장",
+          "en": "farm",
+          "sentenceKo": "이곳은 농장입니다.",
+          "sentenceEn": "This is the farm.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "공원",
+              "en": "park"
+            },
+            {
+              "ko": "교실",
+              "en": "classroom"
+            },
+            {
+              "ko": "부엌",
+              "en": "kitchen"
+            },
+            {
+              "ko": "침실",
+              "en": "bedroom"
+            },
+            {
+              "ko": "욕실",
+              "en": "bathroom"
+            }
+          ]
+        },
+        {
+          "targetKey": "place_park",
+          "ko": "공원",
+          "en": "park",
+          "sentenceKo": "이곳은 공원입니다.",
+          "sentenceEn": "This is the park.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "교실",
+              "en": "classroom"
+            },
+            {
+              "ko": "부엌",
+              "en": "kitchen"
+            },
+            {
+              "ko": "침실",
+              "en": "bedroom"
+            },
+            {
+              "ko": "욕실",
+              "en": "bathroom"
+            },
+            {
+              "ko": "정원",
+              "en": "garden"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 10,
+      "title": "교통수단",
+      "description": "탈것 이름을 영어로 배워요.",
+      "stages": [
+        {
+          "targetKey": "transport_bus",
+          "ko": "버스",
+          "en": "bus",
+          "sentenceKo": "이것은 버스입니다.",
+          "sentenceEn": "This is a bus.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "자동차",
+              "en": "car"
+            },
+            {
+              "ko": "기차",
+              "en": "train"
+            },
+            {
+              "ko": "자전거",
+              "en": "bike"
+            },
+            {
+              "ko": "택시",
+              "en": "taxi"
+            },
+            {
+              "ko": "비행기",
+              "en": "plane"
+            }
+          ]
+        },
+        {
+          "targetKey": "transport_car",
+          "ko": "자동차",
+          "en": "car",
+          "sentenceKo": "이것은 자동차입니다.",
+          "sentenceEn": "This is a car.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "기차",
+              "en": "train"
+            },
+            {
+              "ko": "자전거",
+              "en": "bike"
+            },
+            {
+              "ko": "택시",
+              "en": "taxi"
+            },
+            {
+              "ko": "비행기",
+              "en": "plane"
+            },
+            {
+              "ko": "배",
+              "en": "ship"
+            }
+          ]
+        },
+        {
+          "targetKey": "transport_train",
+          "ko": "기차",
+          "en": "train",
+          "sentenceKo": "이것은 기차입니다.",
+          "sentenceEn": "This is a train.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "자전거",
+              "en": "bike"
+            },
+            {
+              "ko": "택시",
+              "en": "taxi"
+            },
+            {
+              "ko": "비행기",
+              "en": "plane"
+            },
+            {
+              "ko": "배",
+              "en": "ship"
+            },
+            {
+              "ko": "트럭",
+              "en": "truck"
+            }
+          ]
+        },
+        {
+          "targetKey": "transport_bike",
+          "ko": "자전거",
+          "en": "bike",
+          "sentenceKo": "이것은 자전거입니다.",
+          "sentenceEn": "This is a bike.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "택시",
+              "en": "taxi"
+            },
+            {
+              "ko": "비행기",
+              "en": "plane"
+            },
+            {
+              "ko": "배",
+              "en": "ship"
+            },
+            {
+              "ko": "트럭",
+              "en": "truck"
+            },
+            {
+              "ko": "지하철",
+              "en": "subway"
+            }
+          ]
+        },
+        {
+          "targetKey": "transport_taxi",
+          "ko": "택시",
+          "en": "taxi",
+          "sentenceKo": "이것은 택시입니다.",
+          "sentenceEn": "This is a taxi.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "비행기",
+              "en": "plane"
+            },
+            {
+              "ko": "배",
+              "en": "ship"
+            },
+            {
+              "ko": "트럭",
+              "en": "truck"
+            },
+            {
+              "ko": "지하철",
+              "en": "subway"
+            },
+            {
+              "ko": "보트",
+              "en": "boat"
+            }
+          ]
+        },
+        {
+          "targetKey": "transport_plane",
+          "ko": "비행기",
+          "en": "plane",
+          "sentenceKo": "이것은 비행기입니다.",
+          "sentenceEn": "This is a plane.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "배",
+              "en": "ship"
+            },
+            {
+              "ko": "트럭",
+              "en": "truck"
+            },
+            {
+              "ko": "지하철",
+              "en": "subway"
+            },
+            {
+              "ko": "보트",
+              "en": "boat"
+            },
+            {
+              "ko": "버스",
+              "en": "bus"
+            }
+          ]
+        },
+        {
+          "targetKey": "transport_ship",
+          "ko": "배",
+          "en": "ship",
+          "sentenceKo": "이것은 배입니다.",
+          "sentenceEn": "This is a ship.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "트럭",
+              "en": "truck"
+            },
+            {
+              "ko": "지하철",
+              "en": "subway"
+            },
+            {
+              "ko": "보트",
+              "en": "boat"
+            },
+            {
+              "ko": "버스",
+              "en": "bus"
+            },
+            {
+              "ko": "자동차",
+              "en": "car"
+            }
+          ]
+        },
+        {
+          "targetKey": "transport_truck",
+          "ko": "트럭",
+          "en": "truck",
+          "sentenceKo": "이것은 트럭입니다.",
+          "sentenceEn": "This is a truck.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "지하철",
+              "en": "subway"
+            },
+            {
+              "ko": "보트",
+              "en": "boat"
+            },
+            {
+              "ko": "버스",
+              "en": "bus"
+            },
+            {
+              "ko": "자동차",
+              "en": "car"
+            },
+            {
+              "ko": "기차",
+              "en": "train"
+            }
+          ]
+        },
+        {
+          "targetKey": "transport_subway",
+          "ko": "지하철",
+          "en": "subway",
+          "sentenceKo": "이것은 지하철입니다.",
+          "sentenceEn": "This is a subway.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "보트",
+              "en": "boat"
+            },
+            {
+              "ko": "버스",
+              "en": "bus"
+            },
+            {
+              "ko": "자동차",
+              "en": "car"
+            },
+            {
+              "ko": "기차",
+              "en": "train"
+            },
+            {
+              "ko": "자전거",
+              "en": "bike"
+            }
+          ]
+        },
+        {
+          "targetKey": "transport_boat",
+          "ko": "보트",
+          "en": "boat",
+          "sentenceKo": "이것은 보트입니다.",
+          "sentenceEn": "This is a boat.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "버스",
+              "en": "bus"
+            },
+            {
+              "ko": "자동차",
+              "en": "car"
+            },
+            {
+              "ko": "기차",
+              "en": "train"
+            },
+            {
+              "ko": "자전거",
+              "en": "bike"
+            },
+            {
+              "ko": "택시",
+              "en": "taxi"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,8 @@ import {
   getOrderedQuizzesByIds,
   getQuizProgressLabel,
   isQuizSubmissionCorrect,
+  removeMatchingPairByCardId,
+  upsertMatchingPair,
   validateMatchingQuizPairs,
   validateBlankFillQuestion,
   validateQuizChoiceCount,
@@ -318,6 +320,30 @@ describe('quiz.utils', () => {
         },
       }),
     ).toHaveLength(1)
+  })
+
+  it('removes an existing matching pair when one of its cards is clicked again', () => {
+    expect(
+      removeMatchingPairByCardId(
+        [
+          { leftId: 'l1', rightId: 'r1' },
+          { leftId: 'l2', rightId: 'r2' },
+        ],
+        'r1',
+      ),
+    ).toEqual([{ leftId: 'l2', rightId: 'r2' }])
+  })
+
+  it('replaces an existing matching connection when a used card is connected again', () => {
+    expect(
+      upsertMatchingPair(
+        [
+          { leftId: 'l1', rightId: 'r1' },
+          { leftId: 'l2', rightId: 'r2' },
+        ],
+        { leftId: 'l2', rightId: 'r1' },
+      ),
+    ).toEqual([{ leftId: 'l2', rightId: 'r1' }])
   })
 
   it('builds session answer with correctness', () => {

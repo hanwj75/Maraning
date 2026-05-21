@@ -3,12 +3,200 @@
     "id": "beginner_chapter_001",
     "difficulty": "beginner",
     "order": 1,
-    "title": "기본 소개 배우기",
-    "description": "초보 난이도의 기본 소개 문장을 익혀요.",
+    "title": "자기소개",
+    "description": "I am 패턴으로 자신을 소개해요.",
     "stageIds": [
       "beginner.stage.001",
-      "beginner.stage.002"
+      "beginner.stage.002",
+      "beginner.stage.003",
+      "beginner.stage.004",
+      "beginner.stage.005",
+      "beginner.stage.006",
+      "beginner.stage.007",
+      "beginner.stage.008",
+      "beginner.stage.009",
+      "beginner.stage.010"
     ],
     "requiredChapterId": null
+  },
+  {
+    "id": "beginner_chapter_002",
+    "difficulty": "beginner",
+    "order": 2,
+    "title": "좋아하는 것",
+    "description": "I like 패턴으로 취향을 말해요.",
+    "stageIds": [
+      "beginner.stage.011",
+      "beginner.stage.012",
+      "beginner.stage.013",
+      "beginner.stage.014",
+      "beginner.stage.015",
+      "beginner.stage.016",
+      "beginner.stage.017",
+      "beginner.stage.018",
+      "beginner.stage.019",
+      "beginner.stage.020"
+    ],
+    "requiredChapterId": "beginner_chapter_001"
+  },
+  {
+    "id": "beginner_chapter_003",
+    "difficulty": "beginner",
+    "order": 3,
+    "title": "가지고 있는 것",
+    "description": "I have 패턴으로 소유를 말해요.",
+    "stageIds": [
+      "beginner.stage.021",
+      "beginner.stage.022",
+      "beginner.stage.023",
+      "beginner.stage.024",
+      "beginner.stage.025",
+      "beginner.stage.026",
+      "beginner.stage.027",
+      "beginner.stage.028",
+      "beginner.stage.029",
+      "beginner.stage.030"
+    ],
+    "requiredChapterId": "beginner_chapter_002"
+  },
+  {
+    "id": "beginner_chapter_004",
+    "difficulty": "beginner",
+    "order": 4,
+    "title": "사물 묘사",
+    "description": "It is 패턴으로 사물 특징을 말해요.",
+    "stageIds": [
+      "beginner.stage.031",
+      "beginner.stage.032",
+      "beginner.stage.033",
+      "beginner.stage.034",
+      "beginner.stage.035",
+      "beginner.stage.036",
+      "beginner.stage.037",
+      "beginner.stage.038",
+      "beginner.stage.039",
+      "beginner.stage.040"
+    ],
+    "requiredChapterId": "beginner_chapter_003"
+  },
+  {
+    "id": "beginner_chapter_005",
+    "difficulty": "beginner",
+    "order": 5,
+    "title": "내 주변 소개",
+    "description": "This is 패턴으로 주변 사물을 소개해요.",
+    "stageIds": [
+      "beginner.stage.041",
+      "beginner.stage.042",
+      "beginner.stage.043",
+      "beginner.stage.044",
+      "beginner.stage.045",
+      "beginner.stage.046",
+      "beginner.stage.047",
+      "beginner.stage.048",
+      "beginner.stage.049",
+      "beginner.stage.050"
+    ],
+    "requiredChapterId": "beginner_chapter_004"
+  },
+  {
+    "id": "beginner_chapter_006",
+    "difficulty": "beginner",
+    "order": 6,
+    "title": "할 수 있는 것",
+    "description": "I can 패턴으로 능력을 말해요.",
+    "stageIds": [
+      "beginner.stage.051",
+      "beginner.stage.052",
+      "beginner.stage.053",
+      "beginner.stage.054",
+      "beginner.stage.055",
+      "beginner.stage.056",
+      "beginner.stage.057",
+      "beginner.stage.058",
+      "beginner.stage.059",
+      "beginner.stage.060"
+    ],
+    "requiredChapterId": "beginner_chapter_005"
+  },
+  {
+    "id": "beginner_chapter_007",
+    "difficulty": "beginner",
+    "order": 7,
+    "title": "하루 일과",
+    "description": "기본 일상을 짧게 말해요.",
+    "stageIds": [
+      "beginner.stage.061",
+      "beginner.stage.062",
+      "beginner.stage.063",
+      "beginner.stage.064",
+      "beginner.stage.065",
+      "beginner.stage.066",
+      "beginner.stage.067",
+      "beginner.stage.068",
+      "beginner.stage.069",
+      "beginner.stage.070"
+    ],
+    "requiredChapterId": "beginner_chapter_006"
+  },
+  {
+    "id": "beginner_chapter_008",
+    "difficulty": "beginner",
+    "order": 8,
+    "title": "장소 이동",
+    "description": "어디에 가는지 말해요.",
+    "stageIds": [
+      "beginner.stage.071",
+      "beginner.stage.072",
+      "beginner.stage.073",
+      "beginner.stage.074",
+      "beginner.stage.075",
+      "beginner.stage.076",
+      "beginner.stage.077",
+      "beginner.stage.078",
+      "beginner.stage.079",
+      "beginner.stage.080"
+    ],
+    "requiredChapterId": "beginner_chapter_007"
+  },
+  {
+    "id": "beginner_chapter_009",
+    "difficulty": "beginner",
+    "order": 9,
+    "title": "가족과 친구",
+    "description": "가까운 사람을 소개해요.",
+    "stageIds": [
+      "beginner.stage.081",
+      "beginner.stage.082",
+      "beginner.stage.083",
+      "beginner.stage.084",
+      "beginner.stage.085",
+      "beginner.stage.086",
+      "beginner.stage.087",
+      "beginner.stage.088",
+      "beginner.stage.089",
+      "beginner.stage.090"
+    ],
+    "requiredChapterId": "beginner_chapter_008"
+  },
+  {
+    "id": "beginner_chapter_010",
+    "difficulty": "beginner",
+    "order": 10,
+    "title": "감정과 상태",
+    "description": "기본 감정 표현을 익혀요.",
+    "stageIds": [
+      "beginner.stage.091",
+      "beginner.stage.092",
+      "beginner.stage.093",
+      "beginner.stage.094",
+      "beginner.stage.095",
+      "beginner.stage.096",
+      "beginner.stage.097",
+      "beginner.stage.098",
+      "beginner.stage.099",
+      "beginner.stage.100"
+    ],
+    "requiredChapterId": "beginner_chapter_009"
   }
 ]

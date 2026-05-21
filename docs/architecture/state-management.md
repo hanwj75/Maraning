@@ -60,6 +60,8 @@
 - `selectedDifficulty` 는 현재 사용자가 보고 있는 난이도 컨텍스트다.
 - `progressByDifficulty` 는 난이도별 독립 진행도를 저장한다.
 - 각 난이도 진행도는 `Chapter` 해금/완료와 `Stage` 해금/완료를 함께 저장한다.
+- `MyPage` 는 `selectedDifficulty` 와 해당 difficulty 의 `currentChapterId`, `currentStageId` 를 읽어 현재 진행 중인 스테이지를 표시한다.
+- 현재 스테이지 공유 기능도 `selectedDifficulty` 와 해당 difficulty 의 `currentChapterId`, `currentStageId` 를 읽어 공유 payload 를 만든다.
 - `jelly` 는 모든 난이도가 공유하는 전역 자원 상태다.
 - `session` 은 현재 플레이 중인 Stage 와 Quiz 같은 휘발성 상태다.
 - 캐릭터 반응과 일시 UI 상태는 도메인 진행도와 분리해 다룬다.
@@ -104,6 +106,8 @@
 
 - 저장 복원 실패 시 기본 초기 상태로 안전하게 되돌아갈 수 있어야 한다.
 - 잘못된 난이도 key 나 존재하지 않는 `stageId` 는 무시하거나 초기화 대상이 된다.
+- `MyPage` 에서 `currentStageId` 또는 `currentChapterId` 가 더 이상 유효하지 않으면 앱이 깨지지 않고 fallback 문구를 보여야 한다.
+- 공유 모달에서도 `currentStageId` 또는 `currentChapterId` 가 유효하지 않으면 앱이 깨지지 않고 fallback 공유 문구를 사용해야 한다.
 - 구버전 `clearedStageIds / unlockedStageIds` 형식이 남아 있으면 현재 `Chapter` 구조로 변환하거나 초기 상태로 fallback 한다.
 - `localStorage` 접근이 실패해도 앱은 메모리 상태로 최소 동작해야 한다.
 

@@ -3,12 +3,200 @@
     "id": "toeic_chapter_001",
     "difficulty": "toeic",
     "order": 1,
-    "title": "토익 기초 워밍업",
-    "description": "토익 기본 어휘와 문장 감각을 가볍게 시작해요.",
+    "title": "회의 일정",
+    "description": "회의와 일정 관련 표현을 정리해요.",
     "stageIds": [
       "toeic.stage.001",
-      "toeic.stage.002"
+      "toeic.stage.002",
+      "toeic.stage.003",
+      "toeic.stage.004",
+      "toeic.stage.005",
+      "toeic.stage.006",
+      "toeic.stage.007",
+      "toeic.stage.008",
+      "toeic.stage.009",
+      "toeic.stage.010"
     ],
     "requiredChapterId": null
+  },
+  {
+    "id": "toeic_chapter_002",
+    "difficulty": "toeic",
+    "order": 2,
+    "title": "보고서 제출",
+    "description": "보고서와 문서 제출 표현을 익혀요.",
+    "stageIds": [
+      "toeic.stage.011",
+      "toeic.stage.012",
+      "toeic.stage.013",
+      "toeic.stage.014",
+      "toeic.stage.015",
+      "toeic.stage.016",
+      "toeic.stage.017",
+      "toeic.stage.018",
+      "toeic.stage.019",
+      "toeic.stage.020"
+    ],
+    "requiredChapterId": "toeic_chapter_001"
+  },
+  {
+    "id": "toeic_chapter_003",
+    "difficulty": "toeic",
+    "order": 3,
+    "title": "이메일과 연락",
+    "description": "업무용 이메일 표현을 정리해요.",
+    "stageIds": [
+      "toeic.stage.021",
+      "toeic.stage.022",
+      "toeic.stage.023",
+      "toeic.stage.024",
+      "toeic.stage.025",
+      "toeic.stage.026",
+      "toeic.stage.027",
+      "toeic.stage.028",
+      "toeic.stage.029",
+      "toeic.stage.030"
+    ],
+    "requiredChapterId": "toeic_chapter_002"
+  },
+  {
+    "id": "toeic_chapter_004",
+    "difficulty": "toeic",
+    "order": 4,
+    "title": "출장과 일정",
+    "description": "출장과 이동 관련 문장을 익혀요.",
+    "stageIds": [
+      "toeic.stage.031",
+      "toeic.stage.032",
+      "toeic.stage.033",
+      "toeic.stage.034",
+      "toeic.stage.035",
+      "toeic.stage.036",
+      "toeic.stage.037",
+      "toeic.stage.038",
+      "toeic.stage.039",
+      "toeic.stage.040"
+    ],
+    "requiredChapterId": "toeic_chapter_003"
+  },
+  {
+    "id": "toeic_chapter_005",
+    "difficulty": "toeic",
+    "order": 5,
+    "title": "사무실 장비",
+    "description": "사무실 장비와 비품 관련 표현을 익혀요.",
+    "stageIds": [
+      "toeic.stage.041",
+      "toeic.stage.042",
+      "toeic.stage.043",
+      "toeic.stage.044",
+      "toeic.stage.045",
+      "toeic.stage.046",
+      "toeic.stage.047",
+      "toeic.stage.048",
+      "toeic.stage.049",
+      "toeic.stage.050"
+    ],
+    "requiredChapterId": "toeic_chapter_004"
+  },
+  {
+    "id": "toeic_chapter_006",
+    "difficulty": "toeic",
+    "order": 6,
+    "title": "인사와 교육",
+    "description": "채용, 교육, 인사 표현을 정리해요.",
+    "stageIds": [
+      "toeic.stage.051",
+      "toeic.stage.052",
+      "toeic.stage.053",
+      "toeic.stage.054",
+      "toeic.stage.055",
+      "toeic.stage.056",
+      "toeic.stage.057",
+      "toeic.stage.058",
+      "toeic.stage.059",
+      "toeic.stage.060"
+    ],
+    "requiredChapterId": "toeic_chapter_005"
+  },
+  {
+    "id": "toeic_chapter_007",
+    "difficulty": "toeic",
+    "order": 7,
+    "title": "판매와 마케팅",
+    "description": "매출과 홍보 관련 문장을 익혀요.",
+    "stageIds": [
+      "toeic.stage.061",
+      "toeic.stage.062",
+      "toeic.stage.063",
+      "toeic.stage.064",
+      "toeic.stage.065",
+      "toeic.stage.066",
+      "toeic.stage.067",
+      "toeic.stage.068",
+      "toeic.stage.069",
+      "toeic.stage.070"
+    ],
+    "requiredChapterId": "toeic_chapter_006"
+  },
+  {
+    "id": "toeic_chapter_008",
+    "difficulty": "toeic",
+    "order": 8,
+    "title": "배송과 물류",
+    "description": "주문과 배송 관련 문장을 연습해요.",
+    "stageIds": [
+      "toeic.stage.071",
+      "toeic.stage.072",
+      "toeic.stage.073",
+      "toeic.stage.074",
+      "toeic.stage.075",
+      "toeic.stage.076",
+      "toeic.stage.077",
+      "toeic.stage.078",
+      "toeic.stage.079",
+      "toeic.stage.080"
+    ],
+    "requiredChapterId": "toeic_chapter_007"
+  },
+  {
+    "id": "toeic_chapter_009",
+    "difficulty": "toeic",
+    "order": 9,
+    "title": "고객 응대",
+    "description": "고객 서비스 표현을 익혀요.",
+    "stageIds": [
+      "toeic.stage.081",
+      "toeic.stage.082",
+      "toeic.stage.083",
+      "toeic.stage.084",
+      "toeic.stage.085",
+      "toeic.stage.086",
+      "toeic.stage.087",
+      "toeic.stage.088",
+      "toeic.stage.089",
+      "toeic.stage.090"
+    ],
+    "requiredChapterId": "toeic_chapter_008"
+  },
+  {
+    "id": "toeic_chapter_010",
+    "difficulty": "toeic",
+    "order": 10,
+    "title": "계약과 재무",
+    "description": "계약, 비용, 예산 관련 문장을 익혀요.",
+    "stageIds": [
+      "toeic.stage.091",
+      "toeic.stage.092",
+      "toeic.stage.093",
+      "toeic.stage.094",
+      "toeic.stage.095",
+      "toeic.stage.096",
+      "toeic.stage.097",
+      "toeic.stage.098",
+      "toeic.stage.099",
+      "toeic.stage.100"
+    ],
+    "requiredChapterId": "toeic_chapter_009"
   }
 ]

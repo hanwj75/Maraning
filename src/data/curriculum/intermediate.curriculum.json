@@ -1,0 +1,3075 @@
+{
+  "difficulty": "intermediate",
+  "chapters": [
+    {
+      "chapterOrder": 1,
+      "title": "현재 습관",
+      "description": "매일 하는 일을 현재시제로 말해요.",
+      "stages": [
+        {
+          "targetKey": "routine_drink_water",
+          "ko": "저는 매일 아침 물을 마십니다.",
+          "en": "I drink water every morning.",
+          "sentenceKo": "저는 매일 아침 물을 마십니다.",
+          "sentenceEn": "I drink water every morning.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "저는 매일 저녁 강아지를 산책시킵니다.",
+              "en": "I walk my dog every evening."
+            },
+            {
+              "ko": "저는 방과 후에 도서관에서 공부합니다.",
+              "en": "I study at the library after school."
+            },
+            {
+              "ko": "저는 아침마다 이메일을 확인합니다.",
+              "en": "I check my email every morning."
+            },
+            {
+              "ko": "저는 보통 집에서 저녁을 요리합니다.",
+              "en": "I usually cook dinner at home."
+            },
+            {
+              "ko": "저는 출근 전에 뉴스를 읽습니다.",
+              "en": "I read the news before work."
+            }
+          ]
+        },
+        {
+          "targetKey": "routine_walk_dog",
+          "ko": "저는 매일 저녁 강아지를 산책시킵니다.",
+          "en": "I walk my dog every evening.",
+          "sentenceKo": "저는 매일 저녁 강아지를 산책시킵니다.",
+          "sentenceEn": "I walk my dog every evening.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "저는 방과 후에 도서관에서 공부합니다.",
+              "en": "I study at the library after school."
+            },
+            {
+              "ko": "저는 아침마다 이메일을 확인합니다.",
+              "en": "I check my email every morning."
+            },
+            {
+              "ko": "저는 보통 집에서 저녁을 요리합니다.",
+              "en": "I usually cook dinner at home."
+            },
+            {
+              "ko": "저는 출근 전에 뉴스를 읽습니다.",
+              "en": "I read the news before work."
+            },
+            {
+              "ko": "저는 학교에 갈 때 버스를 탑니다.",
+              "en": "I take the bus to school."
+            }
+          ]
+        },
+        {
+          "targetKey": "routine_study_library",
+          "ko": "저는 방과 후에 도서관에서 공부합니다.",
+          "en": "I study at the library after school.",
+          "sentenceKo": "저는 방과 후에 도서관에서 공부합니다.",
+          "sentenceEn": "I study at the library after school.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "저는 아침마다 이메일을 확인합니다.",
+              "en": "I check my email every morning."
+            },
+            {
+              "ko": "저는 보통 집에서 저녁을 요리합니다.",
+              "en": "I usually cook dinner at home."
+            },
+            {
+              "ko": "저는 출근 전에 뉴스를 읽습니다.",
+              "en": "I read the news before work."
+            },
+            {
+              "ko": "저는 학교에 갈 때 버스를 탑니다.",
+              "en": "I take the bus to school."
+            },
+            {
+              "ko": "저는 주말마다 피아노를 연습합니다.",
+              "en": "I practice the piano every weekend."
+            }
+          ]
+        },
+        {
+          "targetKey": "routine_check_email",
+          "ko": "저는 아침마다 이메일을 확인합니다.",
+          "en": "I check my email every morning.",
+          "sentenceKo": "저는 아침마다 이메일을 확인합니다.",
+          "sentenceEn": "I check my email every morning.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "저는 보통 집에서 저녁을 요리합니다.",
+              "en": "I usually cook dinner at home."
+            },
+            {
+              "ko": "저는 출근 전에 뉴스를 읽습니다.",
+              "en": "I read the news before work."
+            },
+            {
+              "ko": "저는 학교에 갈 때 버스를 탑니다.",
+              "en": "I take the bus to school."
+            },
+            {
+              "ko": "저는 주말마다 피아노를 연습합니다.",
+              "en": "I practice the piano every weekend."
+            },
+            {
+              "ko": "저는 토요일마다 방을 청소합니다.",
+              "en": "I clean my room every Saturday."
+            }
+          ]
+        },
+        {
+          "targetKey": "routine_cook_dinner",
+          "ko": "저는 보통 집에서 저녁을 요리합니다.",
+          "en": "I usually cook dinner at home.",
+          "sentenceKo": "저는 보통 집에서 저녁을 요리합니다.",
+          "sentenceEn": "I usually cook dinner at home.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "저는 출근 전에 뉴스를 읽습니다.",
+              "en": "I read the news before work."
+            },
+            {
+              "ko": "저는 학교에 갈 때 버스를 탑니다.",
+              "en": "I take the bus to school."
+            },
+            {
+              "ko": "저는 주말마다 피아노를 연습합니다.",
+              "en": "I practice the piano every weekend."
+            },
+            {
+              "ko": "저는 토요일마다 방을 청소합니다.",
+              "en": "I clean my room every Saturday."
+            },
+            {
+              "ko": "저는 일요일마다 부모님께 전화합니다.",
+              "en": "I call my parents every Sunday."
+            }
+          ]
+        },
+        {
+          "targetKey": "routine_read_news",
+          "ko": "저는 출근 전에 뉴스를 읽습니다.",
+          "en": "I read the news before work.",
+          "sentenceKo": "저는 출근 전에 뉴스를 읽습니다.",
+          "sentenceEn": "I read the news before work.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "저는 학교에 갈 때 버스를 탑니다.",
+              "en": "I take the bus to school."
+            },
+            {
+              "ko": "저는 주말마다 피아노를 연습합니다.",
+              "en": "I practice the piano every weekend."
+            },
+            {
+              "ko": "저는 토요일마다 방을 청소합니다.",
+              "en": "I clean my room every Saturday."
+            },
+            {
+              "ko": "저는 일요일마다 부모님께 전화합니다.",
+              "en": "I call my parents every Sunday."
+            },
+            {
+              "ko": "저는 매일 아침 물을 마십니다.",
+              "en": "I drink water every morning."
+            }
+          ]
+        },
+        {
+          "targetKey": "routine_take_bus",
+          "ko": "저는 학교에 갈 때 버스를 탑니다.",
+          "en": "I take the bus to school.",
+          "sentenceKo": "저는 학교에 갈 때 버스를 탑니다.",
+          "sentenceEn": "I take the bus to school.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "저는 주말마다 피아노를 연습합니다.",
+              "en": "I practice the piano every weekend."
+            },
+            {
+              "ko": "저는 토요일마다 방을 청소합니다.",
+              "en": "I clean my room every Saturday."
+            },
+            {
+              "ko": "저는 일요일마다 부모님께 전화합니다.",
+              "en": "I call my parents every Sunday."
+            },
+            {
+              "ko": "저는 매일 아침 물을 마십니다.",
+              "en": "I drink water every morning."
+            },
+            {
+              "ko": "저는 매일 저녁 강아지를 산책시킵니다.",
+              "en": "I walk my dog every evening."
+            }
+          ]
+        },
+        {
+          "targetKey": "routine_practice_piano",
+          "ko": "저는 주말마다 피아노를 연습합니다.",
+          "en": "I practice the piano every weekend.",
+          "sentenceKo": "저는 주말마다 피아노를 연습합니다.",
+          "sentenceEn": "I practice the piano every weekend.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "저는 토요일마다 방을 청소합니다.",
+              "en": "I clean my room every Saturday."
+            },
+            {
+              "ko": "저는 일요일마다 부모님께 전화합니다.",
+              "en": "I call my parents every Sunday."
+            },
+            {
+              "ko": "저는 매일 아침 물을 마십니다.",
+              "en": "I drink water every morning."
+            },
+            {
+              "ko": "저는 매일 저녁 강아지를 산책시킵니다.",
+              "en": "I walk my dog every evening."
+            },
+            {
+              "ko": "저는 방과 후에 도서관에서 공부합니다.",
+              "en": "I study at the library after school."
+            }
+          ]
+        },
+        {
+          "targetKey": "routine_clean_room",
+          "ko": "저는 토요일마다 방을 청소합니다.",
+          "en": "I clean my room every Saturday.",
+          "sentenceKo": "저는 토요일마다 방을 청소합니다.",
+          "sentenceEn": "I clean my room every Saturday.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "저는 일요일마다 부모님께 전화합니다.",
+              "en": "I call my parents every Sunday."
+            },
+            {
+              "ko": "저는 매일 아침 물을 마십니다.",
+              "en": "I drink water every morning."
+            },
+            {
+              "ko": "저는 매일 저녁 강아지를 산책시킵니다.",
+              "en": "I walk my dog every evening."
+            },
+            {
+              "ko": "저는 방과 후에 도서관에서 공부합니다.",
+              "en": "I study at the library after school."
+            },
+            {
+              "ko": "저는 아침마다 이메일을 확인합니다.",
+              "en": "I check my email every morning."
+            }
+          ]
+        },
+        {
+          "targetKey": "routine_call_parents",
+          "ko": "저는 일요일마다 부모님께 전화합니다.",
+          "en": "I call my parents every Sunday.",
+          "sentenceKo": "저는 일요일마다 부모님께 전화합니다.",
+          "sentenceEn": "I call my parents every Sunday.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "저는 매일 아침 물을 마십니다.",
+              "en": "I drink water every morning."
+            },
+            {
+              "ko": "저는 매일 저녁 강아지를 산책시킵니다.",
+              "en": "I walk my dog every evening."
+            },
+            {
+              "ko": "저는 방과 후에 도서관에서 공부합니다.",
+              "en": "I study at the library after school."
+            },
+            {
+              "ko": "저는 아침마다 이메일을 확인합니다.",
+              "en": "I check my email every morning."
+            },
+            {
+              "ko": "저는 보통 집에서 저녁을 요리합니다.",
+              "en": "I usually cook dinner at home."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 2,
+      "title": "과거 경험",
+      "description": "어제나 지난주에 한 일을 말해요.",
+      "stages": [
+        {
+          "targetKey": "past_went_park",
+          "ko": "저는 어제 공원에 갔습니다.",
+          "en": "I went to the park yesterday.",
+          "sentenceKo": "저는 어제 공원에 갔습니다.",
+          "sentenceEn": "I went to the park yesterday.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "저는 지난밤에 책을 읽었습니다.",
+              "en": "I read a book last night."
+            },
+            {
+              "ko": "저는 주말에 영화를 봤습니다.",
+              "en": "I watched a movie on the weekend."
+            },
+            {
+              "ko": "저는 어제 친구를 만났습니다.",
+              "en": "I met my friend yesterday."
+            },
+            {
+              "ko": "저는 지난주에 신발을 샀습니다.",
+              "en": "I bought shoes last week."
+            },
+            {
+              "ko": "저는 일요일에 할머니를 방문했습니다.",
+              "en": "I visited my grandmother on Sunday."
+            }
+          ]
+        },
+        {
+          "targetKey": "past_read_book",
+          "ko": "저는 지난밤에 책을 읽었습니다.",
+          "en": "I read a book last night.",
+          "sentenceKo": "저는 지난밤에 책을 읽었습니다.",
+          "sentenceEn": "I read a book last night.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "저는 주말에 영화를 봤습니다.",
+              "en": "I watched a movie on the weekend."
+            },
+            {
+              "ko": "저는 어제 친구를 만났습니다.",
+              "en": "I met my friend yesterday."
+            },
+            {
+              "ko": "저는 지난주에 신발을 샀습니다.",
+              "en": "I bought shoes last week."
+            },
+            {
+              "ko": "저는 일요일에 할머니를 방문했습니다.",
+              "en": "I visited my grandmother on Sunday."
+            },
+            {
+              "ko": "저는 아침에 열쇠를 잃어버렸습니다.",
+              "en": "I lost my key this morning."
+            }
+          ]
+        },
+        {
+          "targetKey": "past_watched_movie",
+          "ko": "저는 주말에 영화를 봤습니다.",
+          "en": "I watched a movie on the weekend.",
+          "sentenceKo": "저는 주말에 영화를 봤습니다.",
+          "sentenceEn": "I watched a movie on the weekend.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "저는 어제 친구를 만났습니다.",
+              "en": "I met my friend yesterday."
+            },
+            {
+              "ko": "저는 지난주에 신발을 샀습니다.",
+              "en": "I bought shoes last week."
+            },
+            {
+              "ko": "저는 일요일에 할머니를 방문했습니다.",
+              "en": "I visited my grandmother on Sunday."
+            },
+            {
+              "ko": "저는 아침에 열쇠를 잃어버렸습니다.",
+              "en": "I lost my key this morning."
+            },
+            {
+              "ko": "저는 저녁 전에 숙제를 끝냈습니다.",
+              "en": "I finished my homework before dinner."
+            }
+          ]
+        },
+        {
+          "targetKey": "past_met_friend",
+          "ko": "저는 어제 친구를 만났습니다.",
+          "en": "I met my friend yesterday.",
+          "sentenceKo": "저는 어제 친구를 만났습니다.",
+          "sentenceEn": "I met my friend yesterday.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "저는 지난주에 신발을 샀습니다.",
+              "en": "I bought shoes last week."
+            },
+            {
+              "ko": "저는 일요일에 할머니를 방문했습니다.",
+              "en": "I visited my grandmother on Sunday."
+            },
+            {
+              "ko": "저는 아침에 열쇠를 잃어버렸습니다.",
+              "en": "I lost my key this morning."
+            },
+            {
+              "ko": "저는 저녁 전에 숙제를 끝냈습니다.",
+              "en": "I finished my homework before dinner."
+            },
+            {
+              "ko": "저는 점심시간에 메시지를 보냈습니다.",
+              "en": "I sent a message at lunch."
+            }
+          ]
+        },
+        {
+          "targetKey": "past_bought_shoes",
+          "ko": "저는 지난주에 신발을 샀습니다.",
+          "en": "I bought shoes last week.",
+          "sentenceKo": "저는 지난주에 신발을 샀습니다.",
+          "sentenceEn": "I bought shoes last week.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "저는 일요일에 할머니를 방문했습니다.",
+              "en": "I visited my grandmother on Sunday."
+            },
+            {
+              "ko": "저는 아침에 열쇠를 잃어버렸습니다.",
+              "en": "I lost my key this morning."
+            },
+            {
+              "ko": "저는 저녁 전에 숙제를 끝냈습니다.",
+              "en": "I finished my homework before dinner."
+            },
+            {
+              "ko": "저는 점심시간에 메시지를 보냈습니다.",
+              "en": "I sent a message at lunch."
+            },
+            {
+              "ko": "저는 여행 중에 사진을 찍었습니다.",
+              "en": "I took a picture during the trip."
+            }
+          ]
+        },
+        {
+          "targetKey": "past_visited_grandma",
+          "ko": "저는 일요일에 할머니를 방문했습니다.",
+          "en": "I visited my grandmother on Sunday.",
+          "sentenceKo": "저는 일요일에 할머니를 방문했습니다.",
+          "sentenceEn": "I visited my grandmother on Sunday.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "저는 아침에 열쇠를 잃어버렸습니다.",
+              "en": "I lost my key this morning."
+            },
+            {
+              "ko": "저는 저녁 전에 숙제를 끝냈습니다.",
+              "en": "I finished my homework before dinner."
+            },
+            {
+              "ko": "저는 점심시간에 메시지를 보냈습니다.",
+              "en": "I sent a message at lunch."
+            },
+            {
+              "ko": "저는 여행 중에 사진을 찍었습니다.",
+              "en": "I took a picture during the trip."
+            },
+            {
+              "ko": "저는 어제 공원에 갔습니다.",
+              "en": "I went to the park yesterday."
+            }
+          ]
+        },
+        {
+          "targetKey": "past_lost_key",
+          "ko": "저는 아침에 열쇠를 잃어버렸습니다.",
+          "en": "I lost my key this morning.",
+          "sentenceKo": "저는 아침에 열쇠를 잃어버렸습니다.",
+          "sentenceEn": "I lost my key this morning.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "저는 저녁 전에 숙제를 끝냈습니다.",
+              "en": "I finished my homework before dinner."
+            },
+            {
+              "ko": "저는 점심시간에 메시지를 보냈습니다.",
+              "en": "I sent a message at lunch."
+            },
+            {
+              "ko": "저는 여행 중에 사진을 찍었습니다.",
+              "en": "I took a picture during the trip."
+            },
+            {
+              "ko": "저는 어제 공원에 갔습니다.",
+              "en": "I went to the park yesterday."
+            },
+            {
+              "ko": "저는 지난밤에 책을 읽었습니다.",
+              "en": "I read a book last night."
+            }
+          ]
+        },
+        {
+          "targetKey": "past_finished_homework",
+          "ko": "저는 저녁 전에 숙제를 끝냈습니다.",
+          "en": "I finished my homework before dinner.",
+          "sentenceKo": "저는 저녁 전에 숙제를 끝냈습니다.",
+          "sentenceEn": "I finished my homework before dinner.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "저는 점심시간에 메시지를 보냈습니다.",
+              "en": "I sent a message at lunch."
+            },
+            {
+              "ko": "저는 여행 중에 사진을 찍었습니다.",
+              "en": "I took a picture during the trip."
+            },
+            {
+              "ko": "저는 어제 공원에 갔습니다.",
+              "en": "I went to the park yesterday."
+            },
+            {
+              "ko": "저는 지난밤에 책을 읽었습니다.",
+              "en": "I read a book last night."
+            },
+            {
+              "ko": "저는 주말에 영화를 봤습니다.",
+              "en": "I watched a movie on the weekend."
+            }
+          ]
+        },
+        {
+          "targetKey": "past_sent_message",
+          "ko": "저는 점심시간에 메시지를 보냈습니다.",
+          "en": "I sent a message at lunch.",
+          "sentenceKo": "저는 점심시간에 메시지를 보냈습니다.",
+          "sentenceEn": "I sent a message at lunch.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "저는 여행 중에 사진을 찍었습니다.",
+              "en": "I took a picture during the trip."
+            },
+            {
+              "ko": "저는 어제 공원에 갔습니다.",
+              "en": "I went to the park yesterday."
+            },
+            {
+              "ko": "저는 지난밤에 책을 읽었습니다.",
+              "en": "I read a book last night."
+            },
+            {
+              "ko": "저는 주말에 영화를 봤습니다.",
+              "en": "I watched a movie on the weekend."
+            },
+            {
+              "ko": "저는 어제 친구를 만났습니다.",
+              "en": "I met my friend yesterday."
+            }
+          ]
+        },
+        {
+          "targetKey": "past_took_photo",
+          "ko": "저는 여행 중에 사진을 찍었습니다.",
+          "en": "I took a picture during the trip.",
+          "sentenceKo": "저는 여행 중에 사진을 찍었습니다.",
+          "sentenceEn": "I took a picture during the trip.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "저는 어제 공원에 갔습니다.",
+              "en": "I went to the park yesterday."
+            },
+            {
+              "ko": "저는 지난밤에 책을 읽었습니다.",
+              "en": "I read a book last night."
+            },
+            {
+              "ko": "저는 주말에 영화를 봤습니다.",
+              "en": "I watched a movie on the weekend."
+            },
+            {
+              "ko": "저는 어제 친구를 만났습니다.",
+              "en": "I met my friend yesterday."
+            },
+            {
+              "ko": "저는 지난주에 신발을 샀습니다.",
+              "en": "I bought shoes last week."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 3,
+      "title": "미래 계획",
+      "description": "앞으로 할 일을 말해요.",
+      "stages": [
+        {
+          "targetKey": "future_read_tomorrow",
+          "ko": "저는 내일 책을 읽을 것입니다.",
+          "en": "I will read a book tomorrow.",
+          "sentenceKo": "저는 내일 책을 읽을 것입니다.",
+          "sentenceEn": "I will read a book tomorrow.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "저는 주말에 이모를 방문할 것입니다.",
+              "en": "I will visit my aunt this weekend."
+            },
+            {
+              "ko": "저는 오늘 밤 시험 공부를 할 것입니다.",
+              "en": "I will study for the test tonight."
+            },
+            {
+              "ko": "저는 다음 달에 새 가방을 살 것입니다.",
+              "en": "I will buy a new bag next month."
+            },
+            {
+              "ko": "저는 나중에 매니저에게 전화할 것입니다.",
+              "en": "I will call the manager later."
+            },
+            {
+              "ko": "저는 저녁 후에 부엌을 청소할 것입니다.",
+              "en": "I will clean the kitchen after dinner."
+            }
+          ]
+        },
+        {
+          "targetKey": "future_visit_aunt",
+          "ko": "저는 주말에 이모를 방문할 것입니다.",
+          "en": "I will visit my aunt this weekend.",
+          "sentenceKo": "저는 주말에 이모를 방문할 것입니다.",
+          "sentenceEn": "I will visit my aunt this weekend.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "저는 오늘 밤 시험 공부를 할 것입니다.",
+              "en": "I will study for the test tonight."
+            },
+            {
+              "ko": "저는 다음 달에 새 가방을 살 것입니다.",
+              "en": "I will buy a new bag next month."
+            },
+            {
+              "ko": "저는 나중에 매니저에게 전화할 것입니다.",
+              "en": "I will call the manager later."
+            },
+            {
+              "ko": "저는 저녁 후에 부엌을 청소할 것입니다.",
+              "en": "I will clean the kitchen after dinner."
+            },
+            {
+              "ko": "저는 다음 주에 수업에 참여할 것입니다.",
+              "en": "I will join the class next week."
+            }
+          ]
+        },
+        {
+          "targetKey": "future_study_test",
+          "ko": "저는 오늘 밤 시험 공부를 할 것입니다.",
+          "en": "I will study for the test tonight.",
+          "sentenceKo": "저는 오늘 밤 시험 공부를 할 것입니다.",
+          "sentenceEn": "I will study for the test tonight.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "저는 다음 달에 새 가방을 살 것입니다.",
+              "en": "I will buy a new bag next month."
+            },
+            {
+              "ko": "저는 나중에 매니저에게 전화할 것입니다.",
+              "en": "I will call the manager later."
+            },
+            {
+              "ko": "저는 저녁 후에 부엌을 청소할 것입니다.",
+              "en": "I will clean the kitchen after dinner."
+            },
+            {
+              "ko": "저는 다음 주에 수업에 참여할 것입니다.",
+              "en": "I will join the class next week."
+            },
+            {
+              "ko": "저는 금요일에 보고서를 보낼 것입니다.",
+              "en": "I will send the report on Friday."
+            }
+          ]
+        },
+        {
+          "targetKey": "future_buy_bag",
+          "ko": "저는 다음 달에 새 가방을 살 것입니다.",
+          "en": "I will buy a new bag next month.",
+          "sentenceKo": "저는 다음 달에 새 가방을 살 것입니다.",
+          "sentenceEn": "I will buy a new bag next month.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "저는 나중에 매니저에게 전화할 것입니다.",
+              "en": "I will call the manager later."
+            },
+            {
+              "ko": "저는 저녁 후에 부엌을 청소할 것입니다.",
+              "en": "I will clean the kitchen after dinner."
+            },
+            {
+              "ko": "저는 다음 주에 수업에 참여할 것입니다.",
+              "en": "I will join the class next week."
+            },
+            {
+              "ko": "저는 금요일에 보고서를 보낼 것입니다.",
+              "en": "I will send the report on Friday."
+            },
+            {
+              "ko": "저는 오후에 팀을 만날 것입니다.",
+              "en": "I will meet the team this afternoon."
+            }
+          ]
+        },
+        {
+          "targetKey": "future_call_manager",
+          "ko": "저는 나중에 매니저에게 전화할 것입니다.",
+          "en": "I will call the manager later.",
+          "sentenceKo": "저는 나중에 매니저에게 전화할 것입니다.",
+          "sentenceEn": "I will call the manager later.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "저는 저녁 후에 부엌을 청소할 것입니다.",
+              "en": "I will clean the kitchen after dinner."
+            },
+            {
+              "ko": "저는 다음 주에 수업에 참여할 것입니다.",
+              "en": "I will join the class next week."
+            },
+            {
+              "ko": "저는 금요일에 보고서를 보낼 것입니다.",
+              "en": "I will send the report on Friday."
+            },
+            {
+              "ko": "저는 오후에 팀을 만날 것입니다.",
+              "en": "I will meet the team this afternoon."
+            },
+            {
+              "ko": "저는 다음 주부터 식단을 시작할 것입니다.",
+              "en": "I will start my diet next week."
+            }
+          ]
+        },
+        {
+          "targetKey": "future_clean_kitchen",
+          "ko": "저는 저녁 후에 부엌을 청소할 것입니다.",
+          "en": "I will clean the kitchen after dinner.",
+          "sentenceKo": "저는 저녁 후에 부엌을 청소할 것입니다.",
+          "sentenceEn": "I will clean the kitchen after dinner.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "저는 다음 주에 수업에 참여할 것입니다.",
+              "en": "I will join the class next week."
+            },
+            {
+              "ko": "저는 금요일에 보고서를 보낼 것입니다.",
+              "en": "I will send the report on Friday."
+            },
+            {
+              "ko": "저는 오후에 팀을 만날 것입니다.",
+              "en": "I will meet the team this afternoon."
+            },
+            {
+              "ko": "저는 다음 주부터 식단을 시작할 것입니다.",
+              "en": "I will start my diet next week."
+            },
+            {
+              "ko": "저는 내일 책을 읽을 것입니다.",
+              "en": "I will read a book tomorrow."
+            }
+          ]
+        },
+        {
+          "targetKey": "future_join_class",
+          "ko": "저는 다음 주에 수업에 참여할 것입니다.",
+          "en": "I will join the class next week.",
+          "sentenceKo": "저는 다음 주에 수업에 참여할 것입니다.",
+          "sentenceEn": "I will join the class next week.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "저는 금요일에 보고서를 보낼 것입니다.",
+              "en": "I will send the report on Friday."
+            },
+            {
+              "ko": "저는 오후에 팀을 만날 것입니다.",
+              "en": "I will meet the team this afternoon."
+            },
+            {
+              "ko": "저는 다음 주부터 식단을 시작할 것입니다.",
+              "en": "I will start my diet next week."
+            },
+            {
+              "ko": "저는 내일 책을 읽을 것입니다.",
+              "en": "I will read a book tomorrow."
+            },
+            {
+              "ko": "저는 주말에 이모를 방문할 것입니다.",
+              "en": "I will visit my aunt this weekend."
+            }
+          ]
+        },
+        {
+          "targetKey": "future_send_report",
+          "ko": "저는 금요일에 보고서를 보낼 것입니다.",
+          "en": "I will send the report on Friday.",
+          "sentenceKo": "저는 금요일에 보고서를 보낼 것입니다.",
+          "sentenceEn": "I will send the report on Friday.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "저는 오후에 팀을 만날 것입니다.",
+              "en": "I will meet the team this afternoon."
+            },
+            {
+              "ko": "저는 다음 주부터 식단을 시작할 것입니다.",
+              "en": "I will start my diet next week."
+            },
+            {
+              "ko": "저는 내일 책을 읽을 것입니다.",
+              "en": "I will read a book tomorrow."
+            },
+            {
+              "ko": "저는 주말에 이모를 방문할 것입니다.",
+              "en": "I will visit my aunt this weekend."
+            },
+            {
+              "ko": "저는 오늘 밤 시험 공부를 할 것입니다.",
+              "en": "I will study for the test tonight."
+            }
+          ]
+        },
+        {
+          "targetKey": "future_meet_team",
+          "ko": "저는 오후에 팀을 만날 것입니다.",
+          "en": "I will meet the team this afternoon.",
+          "sentenceKo": "저는 오후에 팀을 만날 것입니다.",
+          "sentenceEn": "I will meet the team this afternoon.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "저는 다음 주부터 식단을 시작할 것입니다.",
+              "en": "I will start my diet next week."
+            },
+            {
+              "ko": "저는 내일 책을 읽을 것입니다.",
+              "en": "I will read a book tomorrow."
+            },
+            {
+              "ko": "저는 주말에 이모를 방문할 것입니다.",
+              "en": "I will visit my aunt this weekend."
+            },
+            {
+              "ko": "저는 오늘 밤 시험 공부를 할 것입니다.",
+              "en": "I will study for the test tonight."
+            },
+            {
+              "ko": "저는 다음 달에 새 가방을 살 것입니다.",
+              "en": "I will buy a new bag next month."
+            }
+          ]
+        },
+        {
+          "targetKey": "future_start_diet",
+          "ko": "저는 다음 주부터 식단을 시작할 것입니다.",
+          "en": "I will start my diet next week.",
+          "sentenceKo": "저는 다음 주부터 식단을 시작할 것입니다.",
+          "sentenceEn": "I will start my diet next week.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "저는 내일 책을 읽을 것입니다.",
+              "en": "I will read a book tomorrow."
+            },
+            {
+              "ko": "저는 주말에 이모를 방문할 것입니다.",
+              "en": "I will visit my aunt this weekend."
+            },
+            {
+              "ko": "저는 오늘 밤 시험 공부를 할 것입니다.",
+              "en": "I will study for the test tonight."
+            },
+            {
+              "ko": "저는 다음 달에 새 가방을 살 것입니다.",
+              "en": "I will buy a new bag next month."
+            },
+            {
+              "ko": "저는 나중에 매니저에게 전화할 것입니다.",
+              "en": "I will call the manager later."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 4,
+      "title": "이유 말하기",
+      "description": "because 로 이유를 덧붙여요.",
+      "stages": [
+        {
+          "targetKey": "because_eat_hungry",
+          "ko": "저는 배가 고파서 밥을 먹습니다.",
+          "en": "I eat rice because I am hungry.",
+          "sentenceKo": "저는 배가 고파서 밥을 먹습니다.",
+          "sentenceEn": "I eat rice because I am hungry.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "저는 비가 와서 집에 있습니다.",
+              "en": "I stay home because it is raining."
+            },
+            {
+              "ko": "저는 시험이 있어서 공부합니다.",
+              "en": "I study because I have a test."
+            },
+            {
+              "ko": "저는 추워서 코트를 입습니다.",
+              "en": "I wear a coat because it is cold."
+            },
+            {
+              "ko": "저는 더워서 창문을 엽니다.",
+              "en": "I open the window because it is hot."
+            },
+            {
+              "ko": "저는 목이 말라서 물을 마십니다.",
+              "en": "I drink water because I am thirsty."
+            }
+          ]
+        },
+        {
+          "targetKey": "because_stay_home_rain",
+          "ko": "저는 비가 와서 집에 있습니다.",
+          "en": "I stay home because it is raining.",
+          "sentenceKo": "저는 비가 와서 집에 있습니다.",
+          "sentenceEn": "I stay home because it is raining.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "저는 시험이 있어서 공부합니다.",
+              "en": "I study because I have a test."
+            },
+            {
+              "ko": "저는 추워서 코트를 입습니다.",
+              "en": "I wear a coat because it is cold."
+            },
+            {
+              "ko": "저는 더워서 창문을 엽니다.",
+              "en": "I open the window because it is hot."
+            },
+            {
+              "ko": "저는 목이 말라서 물을 마십니다.",
+              "en": "I drink water because I am thirsty."
+            },
+            {
+              "ko": "저는 피곤해서 일찍 잡니다.",
+              "en": "I sleep early because I am tired."
+            }
+          ]
+        },
+        {
+          "targetKey": "because_study_test",
+          "ko": "저는 시험이 있어서 공부합니다.",
+          "en": "I study because I have a test.",
+          "sentenceKo": "저는 시험이 있어서 공부합니다.",
+          "sentenceEn": "I study because I have a test.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "저는 추워서 코트를 입습니다.",
+              "en": "I wear a coat because it is cold."
+            },
+            {
+              "ko": "저는 더워서 창문을 엽니다.",
+              "en": "I open the window because it is hot."
+            },
+            {
+              "ko": "저는 목이 말라서 물을 마십니다.",
+              "en": "I drink water because I am thirsty."
+            },
+            {
+              "ko": "저는 피곤해서 일찍 잡니다.",
+              "en": "I sleep early because I am tired."
+            },
+            {
+              "ko": "저는 늦어서 버스를 탑니다.",
+              "en": "I take the bus because I am late."
+            }
+          ]
+        },
+        {
+          "targetKey": "because_wear_coat_cold",
+          "ko": "저는 추워서 코트를 입습니다.",
+          "en": "I wear a coat because it is cold.",
+          "sentenceKo": "저는 추워서 코트를 입습니다.",
+          "sentenceEn": "I wear a coat because it is cold.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "저는 더워서 창문을 엽니다.",
+              "en": "I open the window because it is hot."
+            },
+            {
+              "ko": "저는 목이 말라서 물을 마십니다.",
+              "en": "I drink water because I am thirsty."
+            },
+            {
+              "ko": "저는 피곤해서 일찍 잡니다.",
+              "en": "I sleep early because I am tired."
+            },
+            {
+              "ko": "저는 늦어서 버스를 탑니다.",
+              "en": "I take the bus because I am late."
+            },
+            {
+              "ko": "저는 걱정돼서 엄마에게 전화합니다.",
+              "en": "I call my mom because I am worried."
+            }
+          ]
+        },
+        {
+          "targetKey": "because_open_window_hot",
+          "ko": "저는 더워서 창문을 엽니다.",
+          "en": "I open the window because it is hot.",
+          "sentenceKo": "저는 더워서 창문을 엽니다.",
+          "sentenceEn": "I open the window because it is hot.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "저는 목이 말라서 물을 마십니다.",
+              "en": "I drink water because I am thirsty."
+            },
+            {
+              "ko": "저는 피곤해서 일찍 잡니다.",
+              "en": "I sleep early because I am tired."
+            },
+            {
+              "ko": "저는 늦어서 버스를 탑니다.",
+              "en": "I take the bus because I am late."
+            },
+            {
+              "ko": "저는 걱정돼서 엄마에게 전화합니다.",
+              "en": "I call my mom because I am worried."
+            },
+            {
+              "ko": "저는 배가 고파서 빵을 삽니다.",
+              "en": "I buy bread because I am hungry."
+            }
+          ]
+        },
+        {
+          "targetKey": "because_drink_water_thirsty",
+          "ko": "저는 목이 말라서 물을 마십니다.",
+          "en": "I drink water because I am thirsty.",
+          "sentenceKo": "저는 목이 말라서 물을 마십니다.",
+          "sentenceEn": "I drink water because I am thirsty.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "저는 피곤해서 일찍 잡니다.",
+              "en": "I sleep early because I am tired."
+            },
+            {
+              "ko": "저는 늦어서 버스를 탑니다.",
+              "en": "I take the bus because I am late."
+            },
+            {
+              "ko": "저는 걱정돼서 엄마에게 전화합니다.",
+              "en": "I call my mom because I am worried."
+            },
+            {
+              "ko": "저는 배가 고파서 빵을 삽니다.",
+              "en": "I buy bread because I am hungry."
+            },
+            {
+              "ko": "저는 배가 고파서 밥을 먹습니다.",
+              "en": "I eat rice because I am hungry."
+            }
+          ]
+        },
+        {
+          "targetKey": "because_sleep_tired",
+          "ko": "저는 피곤해서 일찍 잡니다.",
+          "en": "I sleep early because I am tired.",
+          "sentenceKo": "저는 피곤해서 일찍 잡니다.",
+          "sentenceEn": "I sleep early because I am tired.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "저는 늦어서 버스를 탑니다.",
+              "en": "I take the bus because I am late."
+            },
+            {
+              "ko": "저는 걱정돼서 엄마에게 전화합니다.",
+              "en": "I call my mom because I am worried."
+            },
+            {
+              "ko": "저는 배가 고파서 빵을 삽니다.",
+              "en": "I buy bread because I am hungry."
+            },
+            {
+              "ko": "저는 배가 고파서 밥을 먹습니다.",
+              "en": "I eat rice because I am hungry."
+            },
+            {
+              "ko": "저는 비가 와서 집에 있습니다.",
+              "en": "I stay home because it is raining."
+            }
+          ]
+        },
+        {
+          "targetKey": "because_take_bus_late",
+          "ko": "저는 늦어서 버스를 탑니다.",
+          "en": "I take the bus because I am late.",
+          "sentenceKo": "저는 늦어서 버스를 탑니다.",
+          "sentenceEn": "I take the bus because I am late.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "저는 걱정돼서 엄마에게 전화합니다.",
+              "en": "I call my mom because I am worried."
+            },
+            {
+              "ko": "저는 배가 고파서 빵을 삽니다.",
+              "en": "I buy bread because I am hungry."
+            },
+            {
+              "ko": "저는 배가 고파서 밥을 먹습니다.",
+              "en": "I eat rice because I am hungry."
+            },
+            {
+              "ko": "저는 비가 와서 집에 있습니다.",
+              "en": "I stay home because it is raining."
+            },
+            {
+              "ko": "저는 시험이 있어서 공부합니다.",
+              "en": "I study because I have a test."
+            }
+          ]
+        },
+        {
+          "targetKey": "because_call_mom_worried",
+          "ko": "저는 걱정돼서 엄마에게 전화합니다.",
+          "en": "I call my mom because I am worried.",
+          "sentenceKo": "저는 걱정돼서 엄마에게 전화합니다.",
+          "sentenceEn": "I call my mom because I am worried.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "저는 배가 고파서 빵을 삽니다.",
+              "en": "I buy bread because I am hungry."
+            },
+            {
+              "ko": "저는 배가 고파서 밥을 먹습니다.",
+              "en": "I eat rice because I am hungry."
+            },
+            {
+              "ko": "저는 비가 와서 집에 있습니다.",
+              "en": "I stay home because it is raining."
+            },
+            {
+              "ko": "저는 시험이 있어서 공부합니다.",
+              "en": "I study because I have a test."
+            },
+            {
+              "ko": "저는 추워서 코트를 입습니다.",
+              "en": "I wear a coat because it is cold."
+            }
+          ]
+        },
+        {
+          "targetKey": "because_buy_bread_hungry",
+          "ko": "저는 배가 고파서 빵을 삽니다.",
+          "en": "I buy bread because I am hungry.",
+          "sentenceKo": "저는 배가 고파서 빵을 삽니다.",
+          "sentenceEn": "I buy bread because I am hungry.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "저는 배가 고파서 밥을 먹습니다.",
+              "en": "I eat rice because I am hungry."
+            },
+            {
+              "ko": "저는 비가 와서 집에 있습니다.",
+              "en": "I stay home because it is raining."
+            },
+            {
+              "ko": "저는 시험이 있어서 공부합니다.",
+              "en": "I study because I have a test."
+            },
+            {
+              "ko": "저는 추워서 코트를 입습니다.",
+              "en": "I wear a coat because it is cold."
+            },
+            {
+              "ko": "저는 더워서 창문을 엽니다.",
+              "en": "I open the window because it is hot."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 5,
+      "title": "when 절",
+      "description": "when 으로 시간 관계를 말해요.",
+      "stages": [
+        {
+          "targetKey": "when_rain_home",
+          "ko": "비가 오면 저는 집에 있습니다.",
+          "en": "When it rains, I stay home.",
+          "sentenceKo": "비가 오면 저는 집에 있습니다.",
+          "sentenceEn": "When it rains, I stay home.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "일을 마치면 저는 친구에게 전화를 겁니다.",
+              "en": "When I finish work, I call my friend."
+            },
+            {
+              "ko": "저는 일어나면 창문을 엽니다.",
+              "en": "When I wake up, I open the window."
+            },
+            {
+              "ko": "저는 도착하면 메시지를 보냅니다.",
+              "en": "When I arrive, I send a message."
+            },
+            {
+              "ko": "배가 고프면 저는 샌드위치를 먹습니다.",
+              "en": "When I am hungry, I eat a sandwich."
+            },
+            {
+              "ko": "시간이 있으면 저는 책을 읽습니다.",
+              "en": "When I am free, I read a book."
+            }
+          ]
+        },
+        {
+          "targetKey": "when_finish_call",
+          "ko": "일을 마치면 저는 친구에게 전화를 겁니다.",
+          "en": "When I finish work, I call my friend.",
+          "sentenceKo": "일을 마치면 저는 친구에게 전화를 겁니다.",
+          "sentenceEn": "When I finish work, I call my friend.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "저는 일어나면 창문을 엽니다.",
+              "en": "When I wake up, I open the window."
+            },
+            {
+              "ko": "저는 도착하면 메시지를 보냅니다.",
+              "en": "When I arrive, I send a message."
+            },
+            {
+              "ko": "배가 고프면 저는 샌드위치를 먹습니다.",
+              "en": "When I am hungry, I eat a sandwich."
+            },
+            {
+              "ko": "시간이 있으면 저는 책을 읽습니다.",
+              "en": "When I am free, I read a book."
+            },
+            {
+              "ko": "슬프면 저는 음악을 듣습니다.",
+              "en": "When I feel sad, I listen to music."
+            }
+          ]
+        },
+        {
+          "targetKey": "when_wake_open",
+          "ko": "저는 일어나면 창문을 엽니다.",
+          "en": "When I wake up, I open the window.",
+          "sentenceKo": "저는 일어나면 창문을 엽니다.",
+          "sentenceEn": "When I wake up, I open the window.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "저는 도착하면 메시지를 보냅니다.",
+              "en": "When I arrive, I send a message."
+            },
+            {
+              "ko": "배가 고프면 저는 샌드위치를 먹습니다.",
+              "en": "When I am hungry, I eat a sandwich."
+            },
+            {
+              "ko": "시간이 있으면 저는 책을 읽습니다.",
+              "en": "When I am free, I read a book."
+            },
+            {
+              "ko": "슬프면 저는 음악을 듣습니다.",
+              "en": "When I feel sad, I listen to music."
+            },
+            {
+              "ko": "주말이 되면 저는 가족을 방문합니다.",
+              "en": "When the weekend comes, I visit my family."
+            }
+          ]
+        },
+        {
+          "targetKey": "when_arrive_send",
+          "ko": "저는 도착하면 메시지를 보냅니다.",
+          "en": "When I arrive, I send a message.",
+          "sentenceKo": "저는 도착하면 메시지를 보냅니다.",
+          "sentenceEn": "When I arrive, I send a message.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "배가 고프면 저는 샌드위치를 먹습니다.",
+              "en": "When I am hungry, I eat a sandwich."
+            },
+            {
+              "ko": "시간이 있으면 저는 책을 읽습니다.",
+              "en": "When I am free, I read a book."
+            },
+            {
+              "ko": "슬프면 저는 음악을 듣습니다.",
+              "en": "When I feel sad, I listen to music."
+            },
+            {
+              "ko": "주말이 되면 저는 가족을 방문합니다.",
+              "en": "When the weekend comes, I visit my family."
+            },
+            {
+              "ko": "종이 울리면 학생들은 교실에 들어갑니다.",
+              "en": "When the bell rings, students enter the classroom."
+            }
+          ]
+        },
+        {
+          "targetKey": "when_hungry_eat",
+          "ko": "배가 고프면 저는 샌드위치를 먹습니다.",
+          "en": "When I am hungry, I eat a sandwich.",
+          "sentenceKo": "배가 고프면 저는 샌드위치를 먹습니다.",
+          "sentenceEn": "When I am hungry, I eat a sandwich.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "시간이 있으면 저는 책을 읽습니다.",
+              "en": "When I am free, I read a book."
+            },
+            {
+              "ko": "슬프면 저는 음악을 듣습니다.",
+              "en": "When I feel sad, I listen to music."
+            },
+            {
+              "ko": "주말이 되면 저는 가족을 방문합니다.",
+              "en": "When the weekend comes, I visit my family."
+            },
+            {
+              "ko": "종이 울리면 학생들은 교실에 들어갑니다.",
+              "en": "When the bell rings, students enter the classroom."
+            },
+            {
+              "ko": "저녁을 먹고 나면 저는 산책합니다.",
+              "en": "When I finish dinner, I take a walk."
+            }
+          ]
+        },
+        {
+          "targetKey": "when_free_read",
+          "ko": "시간이 있으면 저는 책을 읽습니다.",
+          "en": "When I am free, I read a book.",
+          "sentenceKo": "시간이 있으면 저는 책을 읽습니다.",
+          "sentenceEn": "When I am free, I read a book.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "슬프면 저는 음악을 듣습니다.",
+              "en": "When I feel sad, I listen to music."
+            },
+            {
+              "ko": "주말이 되면 저는 가족을 방문합니다.",
+              "en": "When the weekend comes, I visit my family."
+            },
+            {
+              "ko": "종이 울리면 학생들은 교실에 들어갑니다.",
+              "en": "When the bell rings, students enter the classroom."
+            },
+            {
+              "ko": "저녁을 먹고 나면 저는 산책합니다.",
+              "en": "When I finish dinner, I take a walk."
+            },
+            {
+              "ko": "비가 오면 저는 집에 있습니다.",
+              "en": "When it rains, I stay home."
+            }
+          ]
+        },
+        {
+          "targetKey": "when_sad_music",
+          "ko": "슬프면 저는 음악을 듣습니다.",
+          "en": "When I feel sad, I listen to music.",
+          "sentenceKo": "슬프면 저는 음악을 듣습니다.",
+          "sentenceEn": "When I feel sad, I listen to music.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "주말이 되면 저는 가족을 방문합니다.",
+              "en": "When the weekend comes, I visit my family."
+            },
+            {
+              "ko": "종이 울리면 학생들은 교실에 들어갑니다.",
+              "en": "When the bell rings, students enter the classroom."
+            },
+            {
+              "ko": "저녁을 먹고 나면 저는 산책합니다.",
+              "en": "When I finish dinner, I take a walk."
+            },
+            {
+              "ko": "비가 오면 저는 집에 있습니다.",
+              "en": "When it rains, I stay home."
+            },
+            {
+              "ko": "일을 마치면 저는 친구에게 전화를 겁니다.",
+              "en": "When I finish work, I call my friend."
+            }
+          ]
+        },
+        {
+          "targetKey": "when_weekend_visit",
+          "ko": "주말이 되면 저는 가족을 방문합니다.",
+          "en": "When the weekend comes, I visit my family.",
+          "sentenceKo": "주말이 되면 저는 가족을 방문합니다.",
+          "sentenceEn": "When the weekend comes, I visit my family.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "종이 울리면 학생들은 교실에 들어갑니다.",
+              "en": "When the bell rings, students enter the classroom."
+            },
+            {
+              "ko": "저녁을 먹고 나면 저는 산책합니다.",
+              "en": "When I finish dinner, I take a walk."
+            },
+            {
+              "ko": "비가 오면 저는 집에 있습니다.",
+              "en": "When it rains, I stay home."
+            },
+            {
+              "ko": "일을 마치면 저는 친구에게 전화를 겁니다.",
+              "en": "When I finish work, I call my friend."
+            },
+            {
+              "ko": "저는 일어나면 창문을 엽니다.",
+              "en": "When I wake up, I open the window."
+            }
+          ]
+        },
+        {
+          "targetKey": "when_bell_enter",
+          "ko": "종이 울리면 학생들은 교실에 들어갑니다.",
+          "en": "When the bell rings, students enter the classroom.",
+          "sentenceKo": "종이 울리면 학생들은 교실에 들어갑니다.",
+          "sentenceEn": "When the bell rings, students enter the classroom.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "저녁을 먹고 나면 저는 산책합니다.",
+              "en": "When I finish dinner, I take a walk."
+            },
+            {
+              "ko": "비가 오면 저는 집에 있습니다.",
+              "en": "When it rains, I stay home."
+            },
+            {
+              "ko": "일을 마치면 저는 친구에게 전화를 겁니다.",
+              "en": "When I finish work, I call my friend."
+            },
+            {
+              "ko": "저는 일어나면 창문을 엽니다.",
+              "en": "When I wake up, I open the window."
+            },
+            {
+              "ko": "저는 도착하면 메시지를 보냅니다.",
+              "en": "When I arrive, I send a message."
+            }
+          ]
+        },
+        {
+          "targetKey": "when_finish_dinner_walk",
+          "ko": "저녁을 먹고 나면 저는 산책합니다.",
+          "en": "When I finish dinner, I take a walk.",
+          "sentenceKo": "저녁을 먹고 나면 저는 산책합니다.",
+          "sentenceEn": "When I finish dinner, I take a walk.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "비가 오면 저는 집에 있습니다.",
+              "en": "When it rains, I stay home."
+            },
+            {
+              "ko": "일을 마치면 저는 친구에게 전화를 겁니다.",
+              "en": "When I finish work, I call my friend."
+            },
+            {
+              "ko": "저는 일어나면 창문을 엽니다.",
+              "en": "When I wake up, I open the window."
+            },
+            {
+              "ko": "저는 도착하면 메시지를 보냅니다.",
+              "en": "When I arrive, I send a message."
+            },
+            {
+              "ko": "배가 고프면 저는 샌드위치를 먹습니다.",
+              "en": "When I am hungry, I eat a sandwich."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 6,
+      "title": "before after",
+      "description": "전후 관계를 말해요.",
+      "stages": [
+        {
+          "targetKey": "sequence_dinner_before_homework",
+          "ko": "저는 숙제 전에 저녁을 먹습니다.",
+          "en": "I eat dinner before homework.",
+          "sentenceKo": "저는 숙제 전에 저녁을 먹습니다.",
+          "sentenceEn": "I eat dinner before homework.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "저는 아침 식사 후에 이를 닦습니다.",
+              "en": "I brush my teeth after breakfast."
+            },
+            {
+              "ko": "저는 회의 전에 전화를 겁니다.",
+              "en": "I call him before the meeting."
+            },
+            {
+              "ko": "저는 학교 후에 잠깐 쉽니다.",
+              "en": "I rest after school."
+            },
+            {
+              "ko": "저는 여행 전에 짐을 쌉니다.",
+              "en": "I pack my bag before the trip."
+            },
+            {
+              "ko": "저는 달리기 후에 손을 씻습니다.",
+              "en": "I wash my hands after running."
+            }
+          ]
+        },
+        {
+          "targetKey": "sequence_brush_after_breakfast",
+          "ko": "저는 아침 식사 후에 이를 닦습니다.",
+          "en": "I brush my teeth after breakfast.",
+          "sentenceKo": "저는 아침 식사 후에 이를 닦습니다.",
+          "sentenceEn": "I brush my teeth after breakfast.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "저는 회의 전에 전화를 겁니다.",
+              "en": "I call him before the meeting."
+            },
+            {
+              "ko": "저는 학교 후에 잠깐 쉽니다.",
+              "en": "I rest after school."
+            },
+            {
+              "ko": "저는 여행 전에 짐을 쌉니다.",
+              "en": "I pack my bag before the trip."
+            },
+            {
+              "ko": "저는 달리기 후에 손을 씻습니다.",
+              "en": "I wash my hands after running."
+            },
+            {
+              "ko": "저는 시험 전에 복습합니다.",
+              "en": "I review my notes before the test."
+            }
+          ]
+        },
+        {
+          "targetKey": "sequence_call_before_meeting",
+          "ko": "저는 회의 전에 전화를 겁니다.",
+          "en": "I call him before the meeting.",
+          "sentenceKo": "저는 회의 전에 전화를 겁니다.",
+          "sentenceEn": "I call him before the meeting.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "저는 학교 후에 잠깐 쉽니다.",
+              "en": "I rest after school."
+            },
+            {
+              "ko": "저는 여행 전에 짐을 쌉니다.",
+              "en": "I pack my bag before the trip."
+            },
+            {
+              "ko": "저는 달리기 후에 손을 씻습니다.",
+              "en": "I wash my hands after running."
+            },
+            {
+              "ko": "저는 시험 전에 복습합니다.",
+              "en": "I review my notes before the test."
+            },
+            {
+              "ko": "저는 일 후에 간식을 먹습니다.",
+              "en": "I eat a snack after work."
+            }
+          ]
+        },
+        {
+          "targetKey": "sequence_rest_after_school",
+          "ko": "저는 학교 후에 잠깐 쉽니다.",
+          "en": "I rest after school.",
+          "sentenceKo": "저는 학교 후에 잠깐 쉽니다.",
+          "sentenceEn": "I rest after school.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "저는 여행 전에 짐을 쌉니다.",
+              "en": "I pack my bag before the trip."
+            },
+            {
+              "ko": "저는 달리기 후에 손을 씻습니다.",
+              "en": "I wash my hands after running."
+            },
+            {
+              "ko": "저는 시험 전에 복습합니다.",
+              "en": "I review my notes before the test."
+            },
+            {
+              "ko": "저는 일 후에 간식을 먹습니다.",
+              "en": "I eat a snack after work."
+            },
+            {
+              "ko": "저는 보내기 전에 다시 확인합니다.",
+              "en": "I check again before sending it."
+            }
+          ]
+        },
+        {
+          "targetKey": "sequence_pack_before_trip",
+          "ko": "저는 여행 전에 짐을 쌉니다.",
+          "en": "I pack my bag before the trip.",
+          "sentenceKo": "저는 여행 전에 짐을 쌉니다.",
+          "sentenceEn": "I pack my bag before the trip.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "저는 달리기 후에 손을 씻습니다.",
+              "en": "I wash my hands after running."
+            },
+            {
+              "ko": "저는 시험 전에 복습합니다.",
+              "en": "I review my notes before the test."
+            },
+            {
+              "ko": "저는 일 후에 간식을 먹습니다.",
+              "en": "I eat a snack after work."
+            },
+            {
+              "ko": "저는 보내기 전에 다시 확인합니다.",
+              "en": "I check again before sending it."
+            },
+            {
+              "ko": "저는 샤워 후에 잠듭니다.",
+              "en": "I sleep after a shower."
+            }
+          ]
+        },
+        {
+          "targetKey": "sequence_wash_after_run",
+          "ko": "저는 달리기 후에 손을 씻습니다.",
+          "en": "I wash my hands after running.",
+          "sentenceKo": "저는 달리기 후에 손을 씻습니다.",
+          "sentenceEn": "I wash my hands after running.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "저는 시험 전에 복습합니다.",
+              "en": "I review my notes before the test."
+            },
+            {
+              "ko": "저는 일 후에 간식을 먹습니다.",
+              "en": "I eat a snack after work."
+            },
+            {
+              "ko": "저는 보내기 전에 다시 확인합니다.",
+              "en": "I check again before sending it."
+            },
+            {
+              "ko": "저는 샤워 후에 잠듭니다.",
+              "en": "I sleep after a shower."
+            },
+            {
+              "ko": "저는 숙제 전에 저녁을 먹습니다.",
+              "en": "I eat dinner before homework."
+            }
+          ]
+        },
+        {
+          "targetKey": "sequence_review_before_test",
+          "ko": "저는 시험 전에 복습합니다.",
+          "en": "I review my notes before the test.",
+          "sentenceKo": "저는 시험 전에 복습합니다.",
+          "sentenceEn": "I review my notes before the test.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "저는 일 후에 간식을 먹습니다.",
+              "en": "I eat a snack after work."
+            },
+            {
+              "ko": "저는 보내기 전에 다시 확인합니다.",
+              "en": "I check again before sending it."
+            },
+            {
+              "ko": "저는 샤워 후에 잠듭니다.",
+              "en": "I sleep after a shower."
+            },
+            {
+              "ko": "저는 숙제 전에 저녁을 먹습니다.",
+              "en": "I eat dinner before homework."
+            },
+            {
+              "ko": "저는 아침 식사 후에 이를 닦습니다.",
+              "en": "I brush my teeth after breakfast."
+            }
+          ]
+        },
+        {
+          "targetKey": "sequence_snack_after_work",
+          "ko": "저는 일 후에 간식을 먹습니다.",
+          "en": "I eat a snack after work.",
+          "sentenceKo": "저는 일 후에 간식을 먹습니다.",
+          "sentenceEn": "I eat a snack after work.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "저는 보내기 전에 다시 확인합니다.",
+              "en": "I check again before sending it."
+            },
+            {
+              "ko": "저는 샤워 후에 잠듭니다.",
+              "en": "I sleep after a shower."
+            },
+            {
+              "ko": "저는 숙제 전에 저녁을 먹습니다.",
+              "en": "I eat dinner before homework."
+            },
+            {
+              "ko": "저는 아침 식사 후에 이를 닦습니다.",
+              "en": "I brush my teeth after breakfast."
+            },
+            {
+              "ko": "저는 회의 전에 전화를 겁니다.",
+              "en": "I call him before the meeting."
+            }
+          ]
+        },
+        {
+          "targetKey": "sequence_check_before_send",
+          "ko": "저는 보내기 전에 다시 확인합니다.",
+          "en": "I check again before sending it.",
+          "sentenceKo": "저는 보내기 전에 다시 확인합니다.",
+          "sentenceEn": "I check again before sending it.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "저는 샤워 후에 잠듭니다.",
+              "en": "I sleep after a shower."
+            },
+            {
+              "ko": "저는 숙제 전에 저녁을 먹습니다.",
+              "en": "I eat dinner before homework."
+            },
+            {
+              "ko": "저는 아침 식사 후에 이를 닦습니다.",
+              "en": "I brush my teeth after breakfast."
+            },
+            {
+              "ko": "저는 회의 전에 전화를 겁니다.",
+              "en": "I call him before the meeting."
+            },
+            {
+              "ko": "저는 학교 후에 잠깐 쉽니다.",
+              "en": "I rest after school."
+            }
+          ]
+        },
+        {
+          "targetKey": "sequence_sleep_after_shower",
+          "ko": "저는 샤워 후에 잠듭니다.",
+          "en": "I sleep after a shower.",
+          "sentenceKo": "저는 샤워 후에 잠듭니다.",
+          "sentenceEn": "I sleep after a shower.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "저는 숙제 전에 저녁을 먹습니다.",
+              "en": "I eat dinner before homework."
+            },
+            {
+              "ko": "저는 아침 식사 후에 이를 닦습니다.",
+              "en": "I brush my teeth after breakfast."
+            },
+            {
+              "ko": "저는 회의 전에 전화를 겁니다.",
+              "en": "I call him before the meeting."
+            },
+            {
+              "ko": "저는 학교 후에 잠깐 쉽니다.",
+              "en": "I rest after school."
+            },
+            {
+              "ko": "저는 여행 전에 짐을 쌉니다.",
+              "en": "I pack my bag before the trip."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 7,
+      "title": "비교 표현",
+      "description": "더 크다, 더 빠르다 같은 비교를 말해요.",
+      "stages": [
+        {
+          "targetKey": "compare_bag_bigger",
+          "ko": "이 가방은 저 가방보다 큽니다.",
+          "en": "This bag is bigger than that bag.",
+          "sentenceKo": "이 가방은 저 가방보다 큽니다.",
+          "sentenceEn": "This bag is bigger than that bag.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "이 차는 저 자전거보다 빠릅니다.",
+              "en": "This car is faster than that bike."
+            },
+            {
+              "ko": "이 책은 저 책보다 더 재미있습니다.",
+              "en": "This book is more interesting than that one."
+            },
+            {
+              "ko": "이 커피는 저 차보다 더 뜨겁습니다.",
+              "en": "This coffee is hotter than that tea."
+            },
+            {
+              "ko": "제 방은 동생 방보다 더 깨끗합니다.",
+              "en": "My room is cleaner than my brother's room."
+            },
+            {
+              "ko": "이 강은 저 개울보다 깁니다.",
+              "en": "This river is longer than that stream."
+            }
+          ]
+        },
+        {
+          "targetKey": "compare_car_faster",
+          "ko": "이 차는 저 자전거보다 빠릅니다.",
+          "en": "This car is faster than that bike.",
+          "sentenceKo": "이 차는 저 자전거보다 빠릅니다.",
+          "sentenceEn": "This car is faster than that bike.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "이 책은 저 책보다 더 재미있습니다.",
+              "en": "This book is more interesting than that one."
+            },
+            {
+              "ko": "이 커피는 저 차보다 더 뜨겁습니다.",
+              "en": "This coffee is hotter than that tea."
+            },
+            {
+              "ko": "제 방은 동생 방보다 더 깨끗합니다.",
+              "en": "My room is cleaner than my brother's room."
+            },
+            {
+              "ko": "이 강은 저 개울보다 깁니다.",
+              "en": "This river is longer than that stream."
+            },
+            {
+              "ko": "이번 영화는 지난 영화보다 더 좋습니다.",
+              "en": "This movie is better than the last one."
+            }
+          ]
+        },
+        {
+          "targetKey": "compare_book_more_interesting",
+          "ko": "이 책은 저 책보다 더 재미있습니다.",
+          "en": "This book is more interesting than that one.",
+          "sentenceKo": "이 책은 저 책보다 더 재미있습니다.",
+          "sentenceEn": "This book is more interesting than that one.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "이 커피는 저 차보다 더 뜨겁습니다.",
+              "en": "This coffee is hotter than that tea."
+            },
+            {
+              "ko": "제 방은 동생 방보다 더 깨끗합니다.",
+              "en": "My room is cleaner than my brother's room."
+            },
+            {
+              "ko": "이 강은 저 개울보다 깁니다.",
+              "en": "This river is longer than that stream."
+            },
+            {
+              "ko": "이번 영화는 지난 영화보다 더 좋습니다.",
+              "en": "This movie is better than the last one."
+            },
+            {
+              "ko": "이 수업은 저 수업보다 쉽습니다.",
+              "en": "This class is easier than that class."
+            }
+          ]
+        },
+        {
+          "targetKey": "compare_coffee_hotter",
+          "ko": "이 커피는 저 차보다 더 뜨겁습니다.",
+          "en": "This coffee is hotter than that tea.",
+          "sentenceKo": "이 커피는 저 차보다 더 뜨겁습니다.",
+          "sentenceEn": "This coffee is hotter than that tea.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "제 방은 동생 방보다 더 깨끗합니다.",
+              "en": "My room is cleaner than my brother's room."
+            },
+            {
+              "ko": "이 강은 저 개울보다 깁니다.",
+              "en": "This river is longer than that stream."
+            },
+            {
+              "ko": "이번 영화는 지난 영화보다 더 좋습니다.",
+              "en": "This movie is better than the last one."
+            },
+            {
+              "ko": "이 수업은 저 수업보다 쉽습니다.",
+              "en": "This class is easier than that class."
+            },
+            {
+              "ko": "버스는 택시보다 저렴합니다.",
+              "en": "The bus is cheaper than a taxi."
+            }
+          ]
+        },
+        {
+          "targetKey": "compare_room_cleaner",
+          "ko": "제 방은 동생 방보다 더 깨끗합니다.",
+          "en": "My room is cleaner than my brother's room.",
+          "sentenceKo": "제 방은 동생 방보다 더 깨끗합니다.",
+          "sentenceEn": "My room is cleaner than my brother's room.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "이 강은 저 개울보다 깁니다.",
+              "en": "This river is longer than that stream."
+            },
+            {
+              "ko": "이번 영화는 지난 영화보다 더 좋습니다.",
+              "en": "This movie is better than the last one."
+            },
+            {
+              "ko": "이 수업은 저 수업보다 쉽습니다.",
+              "en": "This class is easier than that class."
+            },
+            {
+              "ko": "버스는 택시보다 저렴합니다.",
+              "en": "The bus is cheaper than a taxi."
+            },
+            {
+              "ko": "여름은 봄보다 더 덥습니다.",
+              "en": "Summer is hotter than spring."
+            }
+          ]
+        },
+        {
+          "targetKey": "compare_river_longer",
+          "ko": "이 강은 저 개울보다 깁니다.",
+          "en": "This river is longer than that stream.",
+          "sentenceKo": "이 강은 저 개울보다 깁니다.",
+          "sentenceEn": "This river is longer than that stream.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "이번 영화는 지난 영화보다 더 좋습니다.",
+              "en": "This movie is better than the last one."
+            },
+            {
+              "ko": "이 수업은 저 수업보다 쉽습니다.",
+              "en": "This class is easier than that class."
+            },
+            {
+              "ko": "버스는 택시보다 저렴합니다.",
+              "en": "The bus is cheaper than a taxi."
+            },
+            {
+              "ko": "여름은 봄보다 더 덥습니다.",
+              "en": "Summer is hotter than spring."
+            },
+            {
+              "ko": "이 가방은 저 가방보다 큽니다.",
+              "en": "This bag is bigger than that bag."
+            }
+          ]
+        },
+        {
+          "targetKey": "compare_movie_better",
+          "ko": "이번 영화는 지난 영화보다 더 좋습니다.",
+          "en": "This movie is better than the last one.",
+          "sentenceKo": "이번 영화는 지난 영화보다 더 좋습니다.",
+          "sentenceEn": "This movie is better than the last one.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "이 수업은 저 수업보다 쉽습니다.",
+              "en": "This class is easier than that class."
+            },
+            {
+              "ko": "버스는 택시보다 저렴합니다.",
+              "en": "The bus is cheaper than a taxi."
+            },
+            {
+              "ko": "여름은 봄보다 더 덥습니다.",
+              "en": "Summer is hotter than spring."
+            },
+            {
+              "ko": "이 가방은 저 가방보다 큽니다.",
+              "en": "This bag is bigger than that bag."
+            },
+            {
+              "ko": "이 차는 저 자전거보다 빠릅니다.",
+              "en": "This car is faster than that bike."
+            }
+          ]
+        },
+        {
+          "targetKey": "compare_class_easier",
+          "ko": "이 수업은 저 수업보다 쉽습니다.",
+          "en": "This class is easier than that class.",
+          "sentenceKo": "이 수업은 저 수업보다 쉽습니다.",
+          "sentenceEn": "This class is easier than that class.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "버스는 택시보다 저렴합니다.",
+              "en": "The bus is cheaper than a taxi."
+            },
+            {
+              "ko": "여름은 봄보다 더 덥습니다.",
+              "en": "Summer is hotter than spring."
+            },
+            {
+              "ko": "이 가방은 저 가방보다 큽니다.",
+              "en": "This bag is bigger than that bag."
+            },
+            {
+              "ko": "이 차는 저 자전거보다 빠릅니다.",
+              "en": "This car is faster than that bike."
+            },
+            {
+              "ko": "이 책은 저 책보다 더 재미있습니다.",
+              "en": "This book is more interesting than that one."
+            }
+          ]
+        },
+        {
+          "targetKey": "compare_bus_cheaper",
+          "ko": "버스는 택시보다 저렴합니다.",
+          "en": "The bus is cheaper than a taxi.",
+          "sentenceKo": "버스는 택시보다 저렴합니다.",
+          "sentenceEn": "The bus is cheaper than a taxi.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "여름은 봄보다 더 덥습니다.",
+              "en": "Summer is hotter than spring."
+            },
+            {
+              "ko": "이 가방은 저 가방보다 큽니다.",
+              "en": "This bag is bigger than that bag."
+            },
+            {
+              "ko": "이 차는 저 자전거보다 빠릅니다.",
+              "en": "This car is faster than that bike."
+            },
+            {
+              "ko": "이 책은 저 책보다 더 재미있습니다.",
+              "en": "This book is more interesting than that one."
+            },
+            {
+              "ko": "이 커피는 저 차보다 더 뜨겁습니다.",
+              "en": "This coffee is hotter than that tea."
+            }
+          ]
+        },
+        {
+          "targetKey": "compare_summer_hotter",
+          "ko": "여름은 봄보다 더 덥습니다.",
+          "en": "Summer is hotter than spring.",
+          "sentenceKo": "여름은 봄보다 더 덥습니다.",
+          "sentenceEn": "Summer is hotter than spring.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "이 가방은 저 가방보다 큽니다.",
+              "en": "This bag is bigger than that bag."
+            },
+            {
+              "ko": "이 차는 저 자전거보다 빠릅니다.",
+              "en": "This car is faster than that bike."
+            },
+            {
+              "ko": "이 책은 저 책보다 더 재미있습니다.",
+              "en": "This book is more interesting than that one."
+            },
+            {
+              "ko": "이 커피는 저 차보다 더 뜨겁습니다.",
+              "en": "This coffee is hotter than that tea."
+            },
+            {
+              "ko": "제 방은 동생 방보다 더 깨끗합니다.",
+              "en": "My room is cleaner than my brother's room."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 8,
+      "title": "주말과 취미",
+      "description": "주말 취미를 조금 길게 말해요.",
+      "stages": [
+        {
+          "targetKey": "hobby_play_soccer_weekend",
+          "ko": "저는 주말마다 축구를 합니다.",
+          "en": "I play soccer every weekend.",
+          "sentenceKo": "저는 주말마다 축구를 합니다.",
+          "sentenceEn": "I play soccer every weekend.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "저는 밤에 영화를 보는 것을 좋아합니다.",
+              "en": "I like watching movies at night."
+            },
+            {
+              "ko": "저는 친구들과 카페에 가는 것을 좋아합니다.",
+              "en": "I enjoy visiting cafes with my friends."
+            },
+            {
+              "ko": "저는 집에서 그림을 그리곤 합니다.",
+              "en": "I often draw pictures at home."
+            },
+            {
+              "ko": "저는 버스에서 음악을 듣습니다.",
+              "en": "I listen to music on the bus."
+            },
+            {
+              "ko": "저는 여행 중에 사진을 찍는 것을 좋아합니다.",
+              "en": "I like taking photos during trips."
+            }
+          ]
+        },
+        {
+          "targetKey": "hobby_watch_movies_night",
+          "ko": "저는 밤에 영화를 보는 것을 좋아합니다.",
+          "en": "I like watching movies at night.",
+          "sentenceKo": "저는 밤에 영화를 보는 것을 좋아합니다.",
+          "sentenceEn": "I like watching movies at night.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "저는 친구들과 카페에 가는 것을 좋아합니다.",
+              "en": "I enjoy visiting cafes with my friends."
+            },
+            {
+              "ko": "저는 집에서 그림을 그리곤 합니다.",
+              "en": "I often draw pictures at home."
+            },
+            {
+              "ko": "저는 버스에서 음악을 듣습니다.",
+              "en": "I listen to music on the bus."
+            },
+            {
+              "ko": "저는 여행 중에 사진을 찍는 것을 좋아합니다.",
+              "en": "I like taking photos during trips."
+            },
+            {
+              "ko": "저는 가족을 위해 요리하는 것을 좋아합니다.",
+              "en": "I enjoy cooking for my family."
+            }
+          ]
+        },
+        {
+          "targetKey": "hobby_visit_cafe_friends",
+          "ko": "저는 친구들과 카페에 가는 것을 좋아합니다.",
+          "en": "I enjoy visiting cafes with my friends.",
+          "sentenceKo": "저는 친구들과 카페에 가는 것을 좋아합니다.",
+          "sentenceEn": "I enjoy visiting cafes with my friends.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "저는 집에서 그림을 그리곤 합니다.",
+              "en": "I often draw pictures at home."
+            },
+            {
+              "ko": "저는 버스에서 음악을 듣습니다.",
+              "en": "I listen to music on the bus."
+            },
+            {
+              "ko": "저는 여행 중에 사진을 찍는 것을 좋아합니다.",
+              "en": "I like taking photos during trips."
+            },
+            {
+              "ko": "저는 가족을 위해 요리하는 것을 좋아합니다.",
+              "en": "I enjoy cooking for my family."
+            },
+            {
+              "ko": "저는 자기 전에 책을 읽습니다.",
+              "en": "I read before I sleep."
+            }
+          ]
+        },
+        {
+          "targetKey": "hobby_draw_home",
+          "ko": "저는 집에서 그림을 그리곤 합니다.",
+          "en": "I often draw pictures at home.",
+          "sentenceKo": "저는 집에서 그림을 그리곤 합니다.",
+          "sentenceEn": "I often draw pictures at home.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "저는 버스에서 음악을 듣습니다.",
+              "en": "I listen to music on the bus."
+            },
+            {
+              "ko": "저는 여행 중에 사진을 찍는 것을 좋아합니다.",
+              "en": "I like taking photos during trips."
+            },
+            {
+              "ko": "저는 가족을 위해 요리하는 것을 좋아합니다.",
+              "en": "I enjoy cooking for my family."
+            },
+            {
+              "ko": "저는 자기 전에 책을 읽습니다.",
+              "en": "I read before I sleep."
+            },
+            {
+              "ko": "저는 공원에서 산책하는 것을 좋아합니다.",
+              "en": "I like taking walks in the park."
+            }
+          ]
+        },
+        {
+          "targetKey": "hobby_listen_music_bus",
+          "ko": "저는 버스에서 음악을 듣습니다.",
+          "en": "I listen to music on the bus.",
+          "sentenceKo": "저는 버스에서 음악을 듣습니다.",
+          "sentenceEn": "I listen to music on the bus.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "저는 여행 중에 사진을 찍는 것을 좋아합니다.",
+              "en": "I like taking photos during trips."
+            },
+            {
+              "ko": "저는 가족을 위해 요리하는 것을 좋아합니다.",
+              "en": "I enjoy cooking for my family."
+            },
+            {
+              "ko": "저는 자기 전에 책을 읽습니다.",
+              "en": "I read before I sleep."
+            },
+            {
+              "ko": "저는 공원에서 산책하는 것을 좋아합니다.",
+              "en": "I like taking walks in the park."
+            },
+            {
+              "ko": "저는 매일 영어를 연습하려고 합니다.",
+              "en": "I try to practice English every day."
+            }
+          ]
+        },
+        {
+          "targetKey": "hobby_take_photos_trip",
+          "ko": "저는 여행 중에 사진을 찍는 것을 좋아합니다.",
+          "en": "I like taking photos during trips.",
+          "sentenceKo": "저는 여행 중에 사진을 찍는 것을 좋아합니다.",
+          "sentenceEn": "I like taking photos during trips.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "저는 가족을 위해 요리하는 것을 좋아합니다.",
+              "en": "I enjoy cooking for my family."
+            },
+            {
+              "ko": "저는 자기 전에 책을 읽습니다.",
+              "en": "I read before I sleep."
+            },
+            {
+              "ko": "저는 공원에서 산책하는 것을 좋아합니다.",
+              "en": "I like taking walks in the park."
+            },
+            {
+              "ko": "저는 매일 영어를 연습하려고 합니다.",
+              "en": "I try to practice English every day."
+            },
+            {
+              "ko": "저는 주말마다 축구를 합니다.",
+              "en": "I play soccer every weekend."
+            }
+          ]
+        },
+        {
+          "targetKey": "hobby_cook_family",
+          "ko": "저는 가족을 위해 요리하는 것을 좋아합니다.",
+          "en": "I enjoy cooking for my family.",
+          "sentenceKo": "저는 가족을 위해 요리하는 것을 좋아합니다.",
+          "sentenceEn": "I enjoy cooking for my family.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "저는 자기 전에 책을 읽습니다.",
+              "en": "I read before I sleep."
+            },
+            {
+              "ko": "저는 공원에서 산책하는 것을 좋아합니다.",
+              "en": "I like taking walks in the park."
+            },
+            {
+              "ko": "저는 매일 영어를 연습하려고 합니다.",
+              "en": "I try to practice English every day."
+            },
+            {
+              "ko": "저는 주말마다 축구를 합니다.",
+              "en": "I play soccer every weekend."
+            },
+            {
+              "ko": "저는 밤에 영화를 보는 것을 좋아합니다.",
+              "en": "I like watching movies at night."
+            }
+          ]
+        },
+        {
+          "targetKey": "hobby_read_before_sleep",
+          "ko": "저는 자기 전에 책을 읽습니다.",
+          "en": "I read before I sleep.",
+          "sentenceKo": "저는 자기 전에 책을 읽습니다.",
+          "sentenceEn": "I read before I sleep.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "저는 공원에서 산책하는 것을 좋아합니다.",
+              "en": "I like taking walks in the park."
+            },
+            {
+              "ko": "저는 매일 영어를 연습하려고 합니다.",
+              "en": "I try to practice English every day."
+            },
+            {
+              "ko": "저는 주말마다 축구를 합니다.",
+              "en": "I play soccer every weekend."
+            },
+            {
+              "ko": "저는 밤에 영화를 보는 것을 좋아합니다.",
+              "en": "I like watching movies at night."
+            },
+            {
+              "ko": "저는 친구들과 카페에 가는 것을 좋아합니다.",
+              "en": "I enjoy visiting cafes with my friends."
+            }
+          ]
+        },
+        {
+          "targetKey": "hobby_walk_park",
+          "ko": "저는 공원에서 산책하는 것을 좋아합니다.",
+          "en": "I like taking walks in the park.",
+          "sentenceKo": "저는 공원에서 산책하는 것을 좋아합니다.",
+          "sentenceEn": "I like taking walks in the park.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "저는 매일 영어를 연습하려고 합니다.",
+              "en": "I try to practice English every day."
+            },
+            {
+              "ko": "저는 주말마다 축구를 합니다.",
+              "en": "I play soccer every weekend."
+            },
+            {
+              "ko": "저는 밤에 영화를 보는 것을 좋아합니다.",
+              "en": "I like watching movies at night."
+            },
+            {
+              "ko": "저는 친구들과 카페에 가는 것을 좋아합니다.",
+              "en": "I enjoy visiting cafes with my friends."
+            },
+            {
+              "ko": "저는 집에서 그림을 그리곤 합니다.",
+              "en": "I often draw pictures at home."
+            }
+          ]
+        },
+        {
+          "targetKey": "hobby_practice_english_daily",
+          "ko": "저는 매일 영어를 연습하려고 합니다.",
+          "en": "I try to practice English every day.",
+          "sentenceKo": "저는 매일 영어를 연습하려고 합니다.",
+          "sentenceEn": "I try to practice English every day.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "저는 주말마다 축구를 합니다.",
+              "en": "I play soccer every weekend."
+            },
+            {
+              "ko": "저는 밤에 영화를 보는 것을 좋아합니다.",
+              "en": "I like watching movies at night."
+            },
+            {
+              "ko": "저는 친구들과 카페에 가는 것을 좋아합니다.",
+              "en": "I enjoy visiting cafes with my friends."
+            },
+            {
+              "ko": "저는 집에서 그림을 그리곤 합니다.",
+              "en": "I often draw pictures at home."
+            },
+            {
+              "ko": "저는 버스에서 음악을 듣습니다.",
+              "en": "I listen to music on the bus."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 9,
+      "title": "생각과 의견",
+      "description": "생각과 중요도를 말해요.",
+      "stages": [
+        {
+          "targetKey": "opinion_english_important",
+          "ko": "저는 영어 공부가 중요하다고 생각합니다.",
+          "en": "I think studying English is important.",
+          "sentenceKo": "저는 영어 공부가 중요하다고 생각합니다.",
+          "sentenceEn": "I think studying English is important.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "저는 운동이 건강에 도움이 된다고 생각합니다.",
+              "en": "I think exercise is helpful for health."
+            },
+            {
+              "ko": "저는 독서가 유용하다고 생각합니다.",
+              "en": "I think reading is useful."
+            },
+            {
+              "ko": "저는 여행이 신난다고 생각합니다.",
+              "en": "I think traveling is exciting."
+            },
+            {
+              "ko": "저는 음악이 편안하다고 생각합니다.",
+              "en": "I think music is relaxing."
+            },
+            {
+              "ko": "저는 팀워크가 중요하다고 생각합니다.",
+              "en": "I think teamwork is important."
+            }
+          ]
+        },
+        {
+          "targetKey": "opinion_exercise_helpful",
+          "ko": "저는 운동이 건강에 도움이 된다고 생각합니다.",
+          "en": "I think exercise is helpful for health.",
+          "sentenceKo": "저는 운동이 건강에 도움이 된다고 생각합니다.",
+          "sentenceEn": "I think exercise is helpful for health.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "저는 독서가 유용하다고 생각합니다.",
+              "en": "I think reading is useful."
+            },
+            {
+              "ko": "저는 여행이 신난다고 생각합니다.",
+              "en": "I think traveling is exciting."
+            },
+            {
+              "ko": "저는 음악이 편안하다고 생각합니다.",
+              "en": "I think music is relaxing."
+            },
+            {
+              "ko": "저는 팀워크가 중요하다고 생각합니다.",
+              "en": "I think teamwork is important."
+            },
+            {
+              "ko": "저는 연습이 필요하다고 생각합니다.",
+              "en": "I think practice is necessary."
+            }
+          ]
+        },
+        {
+          "targetKey": "opinion_reading_useful",
+          "ko": "저는 독서가 유용하다고 생각합니다.",
+          "en": "I think reading is useful.",
+          "sentenceKo": "저는 독서가 유용하다고 생각합니다.",
+          "sentenceEn": "I think reading is useful.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "저는 여행이 신난다고 생각합니다.",
+              "en": "I think traveling is exciting."
+            },
+            {
+              "ko": "저는 음악이 편안하다고 생각합니다.",
+              "en": "I think music is relaxing."
+            },
+            {
+              "ko": "저는 팀워크가 중요하다고 생각합니다.",
+              "en": "I think teamwork is important."
+            },
+            {
+              "ko": "저는 연습이 필요하다고 생각합니다.",
+              "en": "I think practice is necessary."
+            },
+            {
+              "ko": "저는 오늘 날씨가 아름답다고 생각합니다.",
+              "en": "I think the weather is beautiful today."
+            }
+          ]
+        },
+        {
+          "targetKey": "opinion_travel_exciting",
+          "ko": "저는 여행이 신난다고 생각합니다.",
+          "en": "I think traveling is exciting.",
+          "sentenceKo": "저는 여행이 신난다고 생각합니다.",
+          "sentenceEn": "I think traveling is exciting.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "저는 음악이 편안하다고 생각합니다.",
+              "en": "I think music is relaxing."
+            },
+            {
+              "ko": "저는 팀워크가 중요하다고 생각합니다.",
+              "en": "I think teamwork is important."
+            },
+            {
+              "ko": "저는 연습이 필요하다고 생각합니다.",
+              "en": "I think practice is necessary."
+            },
+            {
+              "ko": "저는 오늘 날씨가 아름답다고 생각합니다.",
+              "en": "I think the weather is beautiful today."
+            },
+            {
+              "ko": "저는 계획을 세우는 것이 도움이 된다고 생각합니다.",
+              "en": "I think making plans is helpful."
+            }
+          ]
+        },
+        {
+          "targetKey": "opinion_music_relaxing",
+          "ko": "저는 음악이 편안하다고 생각합니다.",
+          "en": "I think music is relaxing.",
+          "sentenceKo": "저는 음악이 편안하다고 생각합니다.",
+          "sentenceEn": "I think music is relaxing.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "저는 팀워크가 중요하다고 생각합니다.",
+              "en": "I think teamwork is important."
+            },
+            {
+              "ko": "저는 연습이 필요하다고 생각합니다.",
+              "en": "I think practice is necessary."
+            },
+            {
+              "ko": "저는 오늘 날씨가 아름답다고 생각합니다.",
+              "en": "I think the weather is beautiful today."
+            },
+            {
+              "ko": "저는 계획을 세우는 것이 도움이 된다고 생각합니다.",
+              "en": "I think making plans is helpful."
+            },
+            {
+              "ko": "저는 충분한 휴식이 필요하다고 생각합니다.",
+              "en": "I think enough rest is needed."
+            }
+          ]
+        },
+        {
+          "targetKey": "opinion_teamwork_important",
+          "ko": "저는 팀워크가 중요하다고 생각합니다.",
+          "en": "I think teamwork is important.",
+          "sentenceKo": "저는 팀워크가 중요하다고 생각합니다.",
+          "sentenceEn": "I think teamwork is important.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "저는 연습이 필요하다고 생각합니다.",
+              "en": "I think practice is necessary."
+            },
+            {
+              "ko": "저는 오늘 날씨가 아름답다고 생각합니다.",
+              "en": "I think the weather is beautiful today."
+            },
+            {
+              "ko": "저는 계획을 세우는 것이 도움이 된다고 생각합니다.",
+              "en": "I think making plans is helpful."
+            },
+            {
+              "ko": "저는 충분한 휴식이 필요하다고 생각합니다.",
+              "en": "I think enough rest is needed."
+            },
+            {
+              "ko": "저는 영어 공부가 중요하다고 생각합니다.",
+              "en": "I think studying English is important."
+            }
+          ]
+        },
+        {
+          "targetKey": "opinion_practice_necessary",
+          "ko": "저는 연습이 필요하다고 생각합니다.",
+          "en": "I think practice is necessary.",
+          "sentenceKo": "저는 연습이 필요하다고 생각합니다.",
+          "sentenceEn": "I think practice is necessary.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "저는 오늘 날씨가 아름답다고 생각합니다.",
+              "en": "I think the weather is beautiful today."
+            },
+            {
+              "ko": "저는 계획을 세우는 것이 도움이 된다고 생각합니다.",
+              "en": "I think making plans is helpful."
+            },
+            {
+              "ko": "저는 충분한 휴식이 필요하다고 생각합니다.",
+              "en": "I think enough rest is needed."
+            },
+            {
+              "ko": "저는 영어 공부가 중요하다고 생각합니다.",
+              "en": "I think studying English is important."
+            },
+            {
+              "ko": "저는 운동이 건강에 도움이 된다고 생각합니다.",
+              "en": "I think exercise is helpful for health."
+            }
+          ]
+        },
+        {
+          "targetKey": "opinion_weather_beautiful",
+          "ko": "저는 오늘 날씨가 아름답다고 생각합니다.",
+          "en": "I think the weather is beautiful today.",
+          "sentenceKo": "저는 오늘 날씨가 아름답다고 생각합니다.",
+          "sentenceEn": "I think the weather is beautiful today.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "저는 계획을 세우는 것이 도움이 된다고 생각합니다.",
+              "en": "I think making plans is helpful."
+            },
+            {
+              "ko": "저는 충분한 휴식이 필요하다고 생각합니다.",
+              "en": "I think enough rest is needed."
+            },
+            {
+              "ko": "저는 영어 공부가 중요하다고 생각합니다.",
+              "en": "I think studying English is important."
+            },
+            {
+              "ko": "저는 운동이 건강에 도움이 된다고 생각합니다.",
+              "en": "I think exercise is helpful for health."
+            },
+            {
+              "ko": "저는 독서가 유용하다고 생각합니다.",
+              "en": "I think reading is useful."
+            }
+          ]
+        },
+        {
+          "targetKey": "opinion_plan_useful",
+          "ko": "저는 계획을 세우는 것이 도움이 된다고 생각합니다.",
+          "en": "I think making plans is helpful.",
+          "sentenceKo": "저는 계획을 세우는 것이 도움이 된다고 생각합니다.",
+          "sentenceEn": "I think making plans is helpful.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "저는 충분한 휴식이 필요하다고 생각합니다.",
+              "en": "I think enough rest is needed."
+            },
+            {
+              "ko": "저는 영어 공부가 중요하다고 생각합니다.",
+              "en": "I think studying English is important."
+            },
+            {
+              "ko": "저는 운동이 건강에 도움이 된다고 생각합니다.",
+              "en": "I think exercise is helpful for health."
+            },
+            {
+              "ko": "저는 독서가 유용하다고 생각합니다.",
+              "en": "I think reading is useful."
+            },
+            {
+              "ko": "저는 여행이 신난다고 생각합니다.",
+              "en": "I think traveling is exciting."
+            }
+          ]
+        },
+        {
+          "targetKey": "opinion_rest_needed",
+          "ko": "저는 충분한 휴식이 필요하다고 생각합니다.",
+          "en": "I think enough rest is needed.",
+          "sentenceKo": "저는 충분한 휴식이 필요하다고 생각합니다.",
+          "sentenceEn": "I think enough rest is needed.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "저는 영어 공부가 중요하다고 생각합니다.",
+              "en": "I think studying English is important."
+            },
+            {
+              "ko": "저는 운동이 건강에 도움이 된다고 생각합니다.",
+              "en": "I think exercise is helpful for health."
+            },
+            {
+              "ko": "저는 독서가 유용하다고 생각합니다.",
+              "en": "I think reading is useful."
+            },
+            {
+              "ko": "저는 여행이 신난다고 생각합니다.",
+              "en": "I think traveling is exciting."
+            },
+            {
+              "ko": "저는 음악이 편안하다고 생각합니다.",
+              "en": "I think music is relaxing."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapterOrder": 10,
+      "title": "필요와 소망",
+      "description": "need 와 want 로 필요와 희망을 말해요.",
+      "stages": [
+        {
+          "targetKey": "need_need_umbrella",
+          "ko": "저는 오늘 우산이 필요합니다.",
+          "en": "I need an umbrella today.",
+          "sentenceKo": "저는 오늘 우산이 필요합니다.",
+          "sentenceEn": "I need an umbrella today.",
+          "stageOrder": 1,
+          "distractors": [
+            {
+              "ko": "저는 지금 휴식이 필요합니다.",
+              "en": "I need a break now."
+            },
+            {
+              "ko": "저는 이 문제에 도움이 필요합니다.",
+              "en": "I need help with this problem."
+            },
+            {
+              "ko": "저는 따뜻한 커피를 원합니다.",
+              "en": "I want hot coffee."
+            },
+            {
+              "ko": "저는 새 가방을 원합니다.",
+              "en": "I want a new bag."
+            },
+            {
+              "ko": "저는 시간이 더 필요합니다.",
+              "en": "I need more time."
+            }
+          ]
+        },
+        {
+          "targetKey": "need_need_break",
+          "ko": "저는 지금 휴식이 필요합니다.",
+          "en": "I need a break now.",
+          "sentenceKo": "저는 지금 휴식이 필요합니다.",
+          "sentenceEn": "I need a break now.",
+          "stageOrder": 2,
+          "distractors": [
+            {
+              "ko": "저는 이 문제에 도움이 필요합니다.",
+              "en": "I need help with this problem."
+            },
+            {
+              "ko": "저는 따뜻한 커피를 원합니다.",
+              "en": "I want hot coffee."
+            },
+            {
+              "ko": "저는 새 가방을 원합니다.",
+              "en": "I want a new bag."
+            },
+            {
+              "ko": "저는 시간이 더 필요합니다.",
+              "en": "I need more time."
+            },
+            {
+              "ko": "저는 집에 가고 싶습니다.",
+              "en": "I want to go home."
+            }
+          ]
+        },
+        {
+          "targetKey": "need_need_help",
+          "ko": "저는 이 문제에 도움이 필요합니다.",
+          "en": "I need help with this problem.",
+          "sentenceKo": "저는 이 문제에 도움이 필요합니다.",
+          "sentenceEn": "I need help with this problem.",
+          "stageOrder": 3,
+          "distractors": [
+            {
+              "ko": "저는 따뜻한 커피를 원합니다.",
+              "en": "I want hot coffee."
+            },
+            {
+              "ko": "저는 새 가방을 원합니다.",
+              "en": "I want a new bag."
+            },
+            {
+              "ko": "저는 시간이 더 필요합니다.",
+              "en": "I need more time."
+            },
+            {
+              "ko": "저는 집에 가고 싶습니다.",
+              "en": "I want to go home."
+            },
+            {
+              "ko": "저는 표가 필요합니다.",
+              "en": "I need a ticket."
+            }
+          ]
+        },
+        {
+          "targetKey": "need_want_coffee",
+          "ko": "저는 따뜻한 커피를 원합니다.",
+          "en": "I want hot coffee.",
+          "sentenceKo": "저는 따뜻한 커피를 원합니다.",
+          "sentenceEn": "I want hot coffee.",
+          "stageOrder": 4,
+          "distractors": [
+            {
+              "ko": "저는 새 가방을 원합니다.",
+              "en": "I want a new bag."
+            },
+            {
+              "ko": "저는 시간이 더 필요합니다.",
+              "en": "I need more time."
+            },
+            {
+              "ko": "저는 집에 가고 싶습니다.",
+              "en": "I want to go home."
+            },
+            {
+              "ko": "저는 표가 필요합니다.",
+              "en": "I need a ticket."
+            },
+            {
+              "ko": "저는 좋은 결과를 원합니다.",
+              "en": "I want a good result."
+            }
+          ]
+        },
+        {
+          "targetKey": "need_want_new_bag",
+          "ko": "저는 새 가방을 원합니다.",
+          "en": "I want a new bag.",
+          "sentenceKo": "저는 새 가방을 원합니다.",
+          "sentenceEn": "I want a new bag.",
+          "stageOrder": 5,
+          "distractors": [
+            {
+              "ko": "저는 시간이 더 필요합니다.",
+              "en": "I need more time."
+            },
+            {
+              "ko": "저는 집에 가고 싶습니다.",
+              "en": "I want to go home."
+            },
+            {
+              "ko": "저는 표가 필요합니다.",
+              "en": "I need a ticket."
+            },
+            {
+              "ko": "저는 좋은 결과를 원합니다.",
+              "en": "I want a good result."
+            },
+            {
+              "ko": "저는 오늘 밤 잠이 더 필요합니다.",
+              "en": "I need more sleep tonight."
+            }
+          ]
+        },
+        {
+          "targetKey": "need_need_more_time",
+          "ko": "저는 시간이 더 필요합니다.",
+          "en": "I need more time.",
+          "sentenceKo": "저는 시간이 더 필요합니다.",
+          "sentenceEn": "I need more time.",
+          "stageOrder": 6,
+          "distractors": [
+            {
+              "ko": "저는 집에 가고 싶습니다.",
+              "en": "I want to go home."
+            },
+            {
+              "ko": "저는 표가 필요합니다.",
+              "en": "I need a ticket."
+            },
+            {
+              "ko": "저는 좋은 결과를 원합니다.",
+              "en": "I want a good result."
+            },
+            {
+              "ko": "저는 오늘 밤 잠이 더 필요합니다.",
+              "en": "I need more sleep tonight."
+            },
+            {
+              "ko": "저는 오늘 우산이 필요합니다.",
+              "en": "I need an umbrella today."
+            }
+          ]
+        },
+        {
+          "targetKey": "need_want_go_home",
+          "ko": "저는 집에 가고 싶습니다.",
+          "en": "I want to go home.",
+          "sentenceKo": "저는 집에 가고 싶습니다.",
+          "sentenceEn": "I want to go home.",
+          "stageOrder": 7,
+          "distractors": [
+            {
+              "ko": "저는 표가 필요합니다.",
+              "en": "I need a ticket."
+            },
+            {
+              "ko": "저는 좋은 결과를 원합니다.",
+              "en": "I want a good result."
+            },
+            {
+              "ko": "저는 오늘 밤 잠이 더 필요합니다.",
+              "en": "I need more sleep tonight."
+            },
+            {
+              "ko": "저는 오늘 우산이 필요합니다.",
+              "en": "I need an umbrella today."
+            },
+            {
+              "ko": "저는 지금 휴식이 필요합니다.",
+              "en": "I need a break now."
+            }
+          ]
+        },
+        {
+          "targetKey": "need_need_ticket",
+          "ko": "저는 표가 필요합니다.",
+          "en": "I need a ticket.",
+          "sentenceKo": "저는 표가 필요합니다.",
+          "sentenceEn": "I need a ticket.",
+          "stageOrder": 8,
+          "distractors": [
+            {
+              "ko": "저는 좋은 결과를 원합니다.",
+              "en": "I want a good result."
+            },
+            {
+              "ko": "저는 오늘 밤 잠이 더 필요합니다.",
+              "en": "I need more sleep tonight."
+            },
+            {
+              "ko": "저는 오늘 우산이 필요합니다.",
+              "en": "I need an umbrella today."
+            },
+            {
+              "ko": "저는 지금 휴식이 필요합니다.",
+              "en": "I need a break now."
+            },
+            {
+              "ko": "저는 이 문제에 도움이 필요합니다.",
+              "en": "I need help with this problem."
+            }
+          ]
+        },
+        {
+          "targetKey": "need_want_good_result",
+          "ko": "저는 좋은 결과를 원합니다.",
+          "en": "I want a good result.",
+          "sentenceKo": "저는 좋은 결과를 원합니다.",
+          "sentenceEn": "I want a good result.",
+          "stageOrder": 9,
+          "distractors": [
+            {
+              "ko": "저는 오늘 밤 잠이 더 필요합니다.",
+              "en": "I need more sleep tonight."
+            },
+            {
+              "ko": "저는 오늘 우산이 필요합니다.",
+              "en": "I need an umbrella today."
+            },
+            {
+              "ko": "저는 지금 휴식이 필요합니다.",
+              "en": "I need a break now."
+            },
+            {
+              "ko": "저는 이 문제에 도움이 필요합니다.",
+              "en": "I need help with this problem."
+            },
+            {
+              "ko": "저는 따뜻한 커피를 원합니다.",
+              "en": "I want hot coffee."
+            }
+          ]
+        },
+        {
+          "targetKey": "need_need_sleep",
+          "ko": "저는 오늘 밤 잠이 더 필요합니다.",
+          "en": "I need more sleep tonight.",
+          "sentenceKo": "저는 오늘 밤 잠이 더 필요합니다.",
+          "sentenceEn": "I need more sleep tonight.",
+          "stageOrder": 10,
+          "distractors": [
+            {
+              "ko": "저는 오늘 우산이 필요합니다.",
+              "en": "I need an umbrella today."
+            },
+            {
+              "ko": "저는 지금 휴식이 필요합니다.",
+              "en": "I need a break now."
+            },
+            {
+              "ko": "저는 이 문제에 도움이 필요합니다.",
+              "en": "I need help with this problem."
+            },
+            {
+              "ko": "저는 따뜻한 커피를 원합니다.",
+              "en": "I want hot coffee."
+            },
+            {
+              "ko": "저는 새 가방을 원합니다.",
+              "en": "I want a new bag."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

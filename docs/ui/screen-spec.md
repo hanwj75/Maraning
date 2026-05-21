@@ -4,6 +4,7 @@
 
 - `Splash`
 - `Home`
+- `MyPage`
 - `DifficultySelect`
 - `ChapterMap`
 - `StageMap`
@@ -24,6 +25,14 @@
 - 학습 진입점 역할을 한다.
 - 현재 `jelly` 상태와 귀여운 캐릭터 분위기를 빠르게 보여준다.
 - 다음 행동은 `DifficultySelect` 진입이어야 한다.
+
+### MyPage
+
+- 사용자 이름과 현재 진행 중인 스테이지를 간단히 보여주는 화면이다.
+- 기본 사용자 이름은 `말랑이 친구` 로 표시한다.
+- 진행 정보가 있으면 `챕터N : N스테이지` 형식과 현재 Stage 제목을 함께 보여줄 수 있다.
+- 진행 정보가 없으면 fallback 문구를 표시해야 한다.
+- MVP 에서는 이름 수정, 로그인, 프로필 편집 기능을 두지 않는다.
 
 ### DifficultySelect
 
@@ -73,6 +82,7 @@
 ## Navigation Rules
 
 - 기본 축은 `Splash -> Home -> DifficultySelect -> ChapterMap -> StageMap -> Quiz -> Result -> Reward` 다.
+- `MyPage` 는 하단 내비게이션으로 진입하는 보조 화면이다.
 - `Result` 는 짧은 중간 판정 계층이며, 필요 시 `Quiz` 내부 오버레이 또는 별도 화면으로 해석할 수 있다.
 - `Reward` 이후에는 동일 난이도 `StageMap` 으로 돌아가는 흐름을 기본값으로 둔다.
 - `Reward` 이후에는 방금 플레이한 `Chapter` 의 `StageMap` 으로 돌아가는 흐름을 기본값으로 둔다.

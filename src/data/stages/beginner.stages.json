@@ -4,26 +4,26 @@
     "difficulty": "beginner",
     "chapterId": "beginner_chapter_001",
     "order": 1,
-    "title": "학생 소개",
-    "description": "나는 학생입니다 문장을 10문제로 반복 학습한다",
+    "title": "저는 학생입니다 익히기",
+    "description": "저는 학생입니다 학습 목표를 10문제로 반복 학습한다",
     "learningTarget": {
-      "id": "beginner.target.student",
-      "ko": "학생",
-      "en": "student",
-      "sentenceKo": "나는 학생입니다",
+      "id": "beginner.target.intro_student",
+      "ko": "저는 학생입니다.",
+      "en": "I am a student.",
+      "sentenceKo": "저는 학생입니다",
       "sentenceEn": "I am a student"
     },
     "quizIds": [
-      "beginner.quiz.001",
-      "beginner.quiz.002",
-      "beginner.quiz.003",
-      "beginner.quiz.004",
-      "beginner.quiz.005",
-      "beginner.quiz.006",
-      "beginner.quiz.007",
-      "beginner.quiz.008",
-      "beginner.quiz.009",
-      "beginner.quiz.010"
+      "beginner.quiz.0001",
+      "beginner.quiz.0002",
+      "beginner.quiz.0003",
+      "beginner.quiz.0004",
+      "beginner.quiz.0005",
+      "beginner.quiz.0006",
+      "beginner.quiz.0007",
+      "beginner.quiz.0008",
+      "beginner.quiz.0009",
+      "beginner.quiz.0010"
     ],
     "requiredStageId": null
   },
@@ -32,27 +32,2771 @@
     "difficulty": "beginner",
     "chapterId": "beginner_chapter_001",
     "order": 2,
-    "title": "교사 소개",
-    "description": "나는 선생님입니다 문장을 10문제로 반복 학습한다",
+    "title": "저는 선생님입니다 익히기",
+    "description": "저는 선생님입니다 학습 목표를 10문제로 반복 학습한다",
     "learningTarget": {
-      "id": "beginner.target.teacher",
-      "ko": "선생님",
-      "en": "teacher",
-      "sentenceKo": "나는 선생님입니다",
+      "id": "beginner.target.intro_teacher",
+      "ko": "저는 선생님입니다.",
+      "en": "I am a teacher.",
+      "sentenceKo": "저는 선생님입니다",
       "sentenceEn": "I am a teacher"
     },
     "quizIds": [
-      "beginner.quiz.011",
-      "beginner.quiz.012",
-      "beginner.quiz.013",
-      "beginner.quiz.014",
-      "beginner.quiz.015",
-      "beginner.quiz.016",
-      "beginner.quiz.017",
-      "beginner.quiz.018",
-      "beginner.quiz.019",
-      "beginner.quiz.020"
+      "beginner.quiz.0011",
+      "beginner.quiz.0012",
+      "beginner.quiz.0013",
+      "beginner.quiz.0014",
+      "beginner.quiz.0015",
+      "beginner.quiz.0016",
+      "beginner.quiz.0017",
+      "beginner.quiz.0018",
+      "beginner.quiz.0019",
+      "beginner.quiz.0020"
     ],
     "requiredStageId": "beginner.stage.001"
+  },
+  {
+    "id": "beginner.stage.003",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_001",
+    "order": 3,
+    "title": "저는 요리사입니다 익히기",
+    "description": "저는 요리사입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.intro_cook",
+      "ko": "저는 요리사입니다.",
+      "en": "I am a cook.",
+      "sentenceKo": "저는 요리사입니다",
+      "sentenceEn": "I am a cook"
+    },
+    "quizIds": [
+      "beginner.quiz.0021",
+      "beginner.quiz.0022",
+      "beginner.quiz.0023",
+      "beginner.quiz.0024",
+      "beginner.quiz.0025",
+      "beginner.quiz.0026",
+      "beginner.quiz.0027",
+      "beginner.quiz.0028",
+      "beginner.quiz.0029",
+      "beginner.quiz.0030"
+    ],
+    "requiredStageId": "beginner.stage.002"
+  },
+  {
+    "id": "beginner.stage.004",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_001",
+    "order": 4,
+    "title": "저는 의사입니다 익히기",
+    "description": "저는 의사입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.intro_doctor",
+      "ko": "저는 의사입니다.",
+      "en": "I am a doctor.",
+      "sentenceKo": "저는 의사입니다",
+      "sentenceEn": "I am a doctor"
+    },
+    "quizIds": [
+      "beginner.quiz.0031",
+      "beginner.quiz.0032",
+      "beginner.quiz.0033",
+      "beginner.quiz.0034",
+      "beginner.quiz.0035",
+      "beginner.quiz.0036",
+      "beginner.quiz.0037",
+      "beginner.quiz.0038",
+      "beginner.quiz.0039",
+      "beginner.quiz.0040"
+    ],
+    "requiredStageId": "beginner.stage.003"
+  },
+  {
+    "id": "beginner.stage.005",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_001",
+    "order": 5,
+    "title": "저는 간호사입니다 익히기",
+    "description": "저는 간호사입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.intro_nurse",
+      "ko": "저는 간호사입니다.",
+      "en": "I am a nurse.",
+      "sentenceKo": "저는 간호사입니다",
+      "sentenceEn": "I am a nurse"
+    },
+    "quizIds": [
+      "beginner.quiz.0041",
+      "beginner.quiz.0042",
+      "beginner.quiz.0043",
+      "beginner.quiz.0044",
+      "beginner.quiz.0045",
+      "beginner.quiz.0046",
+      "beginner.quiz.0047",
+      "beginner.quiz.0048",
+      "beginner.quiz.0049",
+      "beginner.quiz.0050"
+    ],
+    "requiredStageId": "beginner.stage.004"
+  },
+  {
+    "id": "beginner.stage.006",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_001",
+    "order": 6,
+    "title": "저는 운전기사입니다 익히기",
+    "description": "저는 운전기사입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.intro_driver",
+      "ko": "저는 운전기사입니다.",
+      "en": "I am a driver.",
+      "sentenceKo": "저는 운전기사입니다",
+      "sentenceEn": "I am a driver"
+    },
+    "quizIds": [
+      "beginner.quiz.0051",
+      "beginner.quiz.0052",
+      "beginner.quiz.0053",
+      "beginner.quiz.0054",
+      "beginner.quiz.0055",
+      "beginner.quiz.0056",
+      "beginner.quiz.0057",
+      "beginner.quiz.0058",
+      "beginner.quiz.0059",
+      "beginner.quiz.0060"
+    ],
+    "requiredStageId": "beginner.stage.005"
+  },
+  {
+    "id": "beginner.stage.007",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_001",
+    "order": 7,
+    "title": "저는 농부입니다 익히기",
+    "description": "저는 농부입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.intro_farmer",
+      "ko": "저는 농부입니다.",
+      "en": "I am a farmer.",
+      "sentenceKo": "저는 농부입니다",
+      "sentenceEn": "I am a farmer"
+    },
+    "quizIds": [
+      "beginner.quiz.0061",
+      "beginner.quiz.0062",
+      "beginner.quiz.0063",
+      "beginner.quiz.0064",
+      "beginner.quiz.0065",
+      "beginner.quiz.0066",
+      "beginner.quiz.0067",
+      "beginner.quiz.0068",
+      "beginner.quiz.0069",
+      "beginner.quiz.0070"
+    ],
+    "requiredStageId": "beginner.stage.006"
+  },
+  {
+    "id": "beginner.stage.008",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_001",
+    "order": 8,
+    "title": "저는 가수입니다 익히기",
+    "description": "저는 가수입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.intro_singer",
+      "ko": "저는 가수입니다.",
+      "en": "I am a singer.",
+      "sentenceKo": "저는 가수입니다",
+      "sentenceEn": "I am a singer"
+    },
+    "quizIds": [
+      "beginner.quiz.0071",
+      "beginner.quiz.0072",
+      "beginner.quiz.0073",
+      "beginner.quiz.0074",
+      "beginner.quiz.0075",
+      "beginner.quiz.0076",
+      "beginner.quiz.0077",
+      "beginner.quiz.0078",
+      "beginner.quiz.0079",
+      "beginner.quiz.0080"
+    ],
+    "requiredStageId": "beginner.stage.007"
+  },
+  {
+    "id": "beginner.stage.009",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_001",
+    "order": 9,
+    "title": "저는 무용수입니다 익히기",
+    "description": "저는 무용수입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.intro_dancer",
+      "ko": "저는 무용수입니다.",
+      "en": "I am a dancer.",
+      "sentenceKo": "저는 무용수입니다",
+      "sentenceEn": "I am a dancer"
+    },
+    "quizIds": [
+      "beginner.quiz.0081",
+      "beginner.quiz.0082",
+      "beginner.quiz.0083",
+      "beginner.quiz.0084",
+      "beginner.quiz.0085",
+      "beginner.quiz.0086",
+      "beginner.quiz.0087",
+      "beginner.quiz.0088",
+      "beginner.quiz.0089",
+      "beginner.quiz.0090"
+    ],
+    "requiredStageId": "beginner.stage.008"
+  },
+  {
+    "id": "beginner.stage.010",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_001",
+    "order": 10,
+    "title": "저는 좋은 친구입니다 익히기",
+    "description": "저는 좋은 친구입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.intro_friend",
+      "ko": "저는 좋은 친구입니다.",
+      "en": "I am a good friend.",
+      "sentenceKo": "저는 좋은 친구입니다",
+      "sentenceEn": "I am a good friend"
+    },
+    "quizIds": [
+      "beginner.quiz.0091",
+      "beginner.quiz.0092",
+      "beginner.quiz.0093",
+      "beginner.quiz.0094",
+      "beginner.quiz.0095",
+      "beginner.quiz.0096",
+      "beginner.quiz.0097",
+      "beginner.quiz.0098",
+      "beginner.quiz.0099",
+      "beginner.quiz.0100"
+    ],
+    "requiredStageId": "beginner.stage.009"
+  },
+  {
+    "id": "beginner.stage.011",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_002",
+    "order": 1,
+    "title": "저는 사과를 좋아합니다 익히기",
+    "description": "저는 사과를 좋아합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.like_apples",
+      "ko": "저는 사과를 좋아합니다.",
+      "en": "I like apples.",
+      "sentenceKo": "저는 사과를 좋아합니다",
+      "sentenceEn": "I like apples"
+    },
+    "quizIds": [
+      "beginner.quiz.0101",
+      "beginner.quiz.0102",
+      "beginner.quiz.0103",
+      "beginner.quiz.0104",
+      "beginner.quiz.0105",
+      "beginner.quiz.0106",
+      "beginner.quiz.0107",
+      "beginner.quiz.0108",
+      "beginner.quiz.0109",
+      "beginner.quiz.0110"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "beginner.stage.012",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_002",
+    "order": 2,
+    "title": "저는 바나나를 좋아합니다 익히기",
+    "description": "저는 바나나를 좋아합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.like_bananas",
+      "ko": "저는 바나나를 좋아합니다.",
+      "en": "I like bananas.",
+      "sentenceKo": "저는 바나나를 좋아합니다",
+      "sentenceEn": "I like bananas"
+    },
+    "quizIds": [
+      "beginner.quiz.0111",
+      "beginner.quiz.0112",
+      "beginner.quiz.0113",
+      "beginner.quiz.0114",
+      "beginner.quiz.0115",
+      "beginner.quiz.0116",
+      "beginner.quiz.0117",
+      "beginner.quiz.0118",
+      "beginner.quiz.0119",
+      "beginner.quiz.0120"
+    ],
+    "requiredStageId": "beginner.stage.011"
+  },
+  {
+    "id": "beginner.stage.013",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_002",
+    "order": 3,
+    "title": "저는 축구를 좋아합니다 익히기",
+    "description": "저는 축구를 좋아합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.like_soccer",
+      "ko": "저는 축구를 좋아합니다.",
+      "en": "I like soccer.",
+      "sentenceKo": "저는 축구를 좋아합니다",
+      "sentenceEn": "I like soccer"
+    },
+    "quizIds": [
+      "beginner.quiz.0121",
+      "beginner.quiz.0122",
+      "beginner.quiz.0123",
+      "beginner.quiz.0124",
+      "beginner.quiz.0125",
+      "beginner.quiz.0126",
+      "beginner.quiz.0127",
+      "beginner.quiz.0128",
+      "beginner.quiz.0129",
+      "beginner.quiz.0130"
+    ],
+    "requiredStageId": "beginner.stage.012"
+  },
+  {
+    "id": "beginner.stage.014",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_002",
+    "order": 4,
+    "title": "저는 음악를 좋아합니다 익히기",
+    "description": "저는 음악를 좋아합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.like_music",
+      "ko": "저는 음악를 좋아합니다.",
+      "en": "I like music.",
+      "sentenceKo": "저는 음악를 좋아합니다",
+      "sentenceEn": "I like music"
+    },
+    "quizIds": [
+      "beginner.quiz.0131",
+      "beginner.quiz.0132",
+      "beginner.quiz.0133",
+      "beginner.quiz.0134",
+      "beginner.quiz.0135",
+      "beginner.quiz.0136",
+      "beginner.quiz.0137",
+      "beginner.quiz.0138",
+      "beginner.quiz.0139",
+      "beginner.quiz.0140"
+    ],
+    "requiredStageId": "beginner.stage.013"
+  },
+  {
+    "id": "beginner.stage.015",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_002",
+    "order": 5,
+    "title": "저는 책를 좋아합니다 익히기",
+    "description": "저는 책를 좋아합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.like_books",
+      "ko": "저는 책를 좋아합니다.",
+      "en": "I like books.",
+      "sentenceKo": "저는 책를 좋아합니다",
+      "sentenceEn": "I like books"
+    },
+    "quizIds": [
+      "beginner.quiz.0141",
+      "beginner.quiz.0142",
+      "beginner.quiz.0143",
+      "beginner.quiz.0144",
+      "beginner.quiz.0145",
+      "beginner.quiz.0146",
+      "beginner.quiz.0147",
+      "beginner.quiz.0148",
+      "beginner.quiz.0149",
+      "beginner.quiz.0150"
+    ],
+    "requiredStageId": "beginner.stage.014"
+  },
+  {
+    "id": "beginner.stage.016",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_002",
+    "order": 6,
+    "title": "저는 강아지를 좋아합니다 익히기",
+    "description": "저는 강아지를 좋아합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.like_dogs",
+      "ko": "저는 강아지를 좋아합니다.",
+      "en": "I like dogs.",
+      "sentenceKo": "저는 강아지를 좋아합니다",
+      "sentenceEn": "I like dogs"
+    },
+    "quizIds": [
+      "beginner.quiz.0151",
+      "beginner.quiz.0152",
+      "beginner.quiz.0153",
+      "beginner.quiz.0154",
+      "beginner.quiz.0155",
+      "beginner.quiz.0156",
+      "beginner.quiz.0157",
+      "beginner.quiz.0158",
+      "beginner.quiz.0159",
+      "beginner.quiz.0160"
+    ],
+    "requiredStageId": "beginner.stage.015"
+  },
+  {
+    "id": "beginner.stage.017",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_002",
+    "order": 7,
+    "title": "저는 고양이를 좋아합니다 익히기",
+    "description": "저는 고양이를 좋아합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.like_cats",
+      "ko": "저는 고양이를 좋아합니다.",
+      "en": "I like cats.",
+      "sentenceKo": "저는 고양이를 좋아합니다",
+      "sentenceEn": "I like cats"
+    },
+    "quizIds": [
+      "beginner.quiz.0161",
+      "beginner.quiz.0162",
+      "beginner.quiz.0163",
+      "beginner.quiz.0164",
+      "beginner.quiz.0165",
+      "beginner.quiz.0166",
+      "beginner.quiz.0167",
+      "beginner.quiz.0168",
+      "beginner.quiz.0169",
+      "beginner.quiz.0170"
+    ],
+    "requiredStageId": "beginner.stage.016"
+  },
+  {
+    "id": "beginner.stage.018",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_002",
+    "order": 8,
+    "title": "저는 피자를 좋아합니다 익히기",
+    "description": "저는 피자를 좋아합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.like_pizza",
+      "ko": "저는 피자를 좋아합니다.",
+      "en": "I like pizza.",
+      "sentenceKo": "저는 피자를 좋아합니다",
+      "sentenceEn": "I like pizza"
+    },
+    "quizIds": [
+      "beginner.quiz.0171",
+      "beginner.quiz.0172",
+      "beginner.quiz.0173",
+      "beginner.quiz.0174",
+      "beginner.quiz.0175",
+      "beginner.quiz.0176",
+      "beginner.quiz.0177",
+      "beginner.quiz.0178",
+      "beginner.quiz.0179",
+      "beginner.quiz.0180"
+    ],
+    "requiredStageId": "beginner.stage.017"
+  },
+  {
+    "id": "beginner.stage.019",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_002",
+    "order": 9,
+    "title": "저는 영화를 좋아합니다 익히기",
+    "description": "저는 영화를 좋아합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.like_movies",
+      "ko": "저는 영화를 좋아합니다.",
+      "en": "I like movies.",
+      "sentenceKo": "저는 영화를 좋아합니다",
+      "sentenceEn": "I like movies"
+    },
+    "quizIds": [
+      "beginner.quiz.0181",
+      "beginner.quiz.0182",
+      "beginner.quiz.0183",
+      "beginner.quiz.0184",
+      "beginner.quiz.0185",
+      "beginner.quiz.0186",
+      "beginner.quiz.0187",
+      "beginner.quiz.0188",
+      "beginner.quiz.0189",
+      "beginner.quiz.0190"
+    ],
+    "requiredStageId": "beginner.stage.018"
+  },
+  {
+    "id": "beginner.stage.020",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_002",
+    "order": 10,
+    "title": "저는 게임를 좋아합니다 익히기",
+    "description": "저는 게임를 좋아합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.like_games",
+      "ko": "저는 게임를 좋아합니다.",
+      "en": "I like games.",
+      "sentenceKo": "저는 게임를 좋아합니다",
+      "sentenceEn": "I like games"
+    },
+    "quizIds": [
+      "beginner.quiz.0191",
+      "beginner.quiz.0192",
+      "beginner.quiz.0193",
+      "beginner.quiz.0194",
+      "beginner.quiz.0195",
+      "beginner.quiz.0196",
+      "beginner.quiz.0197",
+      "beginner.quiz.0198",
+      "beginner.quiz.0199",
+      "beginner.quiz.0200"
+    ],
+    "requiredStageId": "beginner.stage.019"
+  },
+  {
+    "id": "beginner.stage.021",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_003",
+    "order": 1,
+    "title": "저는 책을 가지고 있습니다 익히기",
+    "description": "저는 책을 가지고 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.have_book",
+      "ko": "저는 책을 가지고 있습니다.",
+      "en": "I have a book.",
+      "sentenceKo": "저는 책을 가지고 있습니다",
+      "sentenceEn": "I have a book"
+    },
+    "quizIds": [
+      "beginner.quiz.0201",
+      "beginner.quiz.0202",
+      "beginner.quiz.0203",
+      "beginner.quiz.0204",
+      "beginner.quiz.0205",
+      "beginner.quiz.0206",
+      "beginner.quiz.0207",
+      "beginner.quiz.0208",
+      "beginner.quiz.0209",
+      "beginner.quiz.0210"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "beginner.stage.022",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_003",
+    "order": 2,
+    "title": "가지고 있는 것 02",
+    "description": "저는 가방을 가지고 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.have_bag",
+      "ko": "저는 가방을 가지고 있습니다.",
+      "en": "I have a bag.",
+      "sentenceKo": "저는 가방을 가지고 있습니다",
+      "sentenceEn": "I have a bag"
+    },
+    "quizIds": [
+      "beginner.quiz.0211",
+      "beginner.quiz.0212",
+      "beginner.quiz.0213",
+      "beginner.quiz.0214",
+      "beginner.quiz.0215",
+      "beginner.quiz.0216",
+      "beginner.quiz.0217",
+      "beginner.quiz.0218",
+      "beginner.quiz.0219",
+      "beginner.quiz.0220"
+    ],
+    "requiredStageId": "beginner.stage.021"
+  },
+  {
+    "id": "beginner.stage.023",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_003",
+    "order": 3,
+    "title": "저는 펜을 가지고 있습니다 익히기",
+    "description": "저는 펜을 가지고 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.have_pen",
+      "ko": "저는 펜을 가지고 있습니다.",
+      "en": "I have a pen.",
+      "sentenceKo": "저는 펜을 가지고 있습니다",
+      "sentenceEn": "I have a pen"
+    },
+    "quizIds": [
+      "beginner.quiz.0221",
+      "beginner.quiz.0222",
+      "beginner.quiz.0223",
+      "beginner.quiz.0224",
+      "beginner.quiz.0225",
+      "beginner.quiz.0226",
+      "beginner.quiz.0227",
+      "beginner.quiz.0228",
+      "beginner.quiz.0229",
+      "beginner.quiz.0230"
+    ],
+    "requiredStageId": "beginner.stage.022"
+  },
+  {
+    "id": "beginner.stage.024",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_003",
+    "order": 4,
+    "title": "가지고 있는 것 04",
+    "description": "저는 고양이를 키우고 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.have_cat",
+      "ko": "저는 고양이를 키우고 있습니다.",
+      "en": "I have a cat.",
+      "sentenceKo": "저는 고양이를 키우고 있습니다",
+      "sentenceEn": "I have a cat"
+    },
+    "quizIds": [
+      "beginner.quiz.0231",
+      "beginner.quiz.0232",
+      "beginner.quiz.0233",
+      "beginner.quiz.0234",
+      "beginner.quiz.0235",
+      "beginner.quiz.0236",
+      "beginner.quiz.0237",
+      "beginner.quiz.0238",
+      "beginner.quiz.0239",
+      "beginner.quiz.0240"
+    ],
+    "requiredStageId": "beginner.stage.023"
+  },
+  {
+    "id": "beginner.stage.025",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_003",
+    "order": 5,
+    "title": "가지고 있는 것 05",
+    "description": "저는 강아지를 키우고 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.have_dog",
+      "ko": "저는 강아지를 키우고 있습니다.",
+      "en": "I have a dog.",
+      "sentenceKo": "저는 강아지를 키우고 있습니다",
+      "sentenceEn": "I have a dog"
+    },
+    "quizIds": [
+      "beginner.quiz.0241",
+      "beginner.quiz.0242",
+      "beginner.quiz.0243",
+      "beginner.quiz.0244",
+      "beginner.quiz.0245",
+      "beginner.quiz.0246",
+      "beginner.quiz.0247",
+      "beginner.quiz.0248",
+      "beginner.quiz.0249",
+      "beginner.quiz.0250"
+    ],
+    "requiredStageId": "beginner.stage.024"
+  },
+  {
+    "id": "beginner.stage.026",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_003",
+    "order": 6,
+    "title": "가지고 있는 것 06",
+    "description": "저는 모자를 가지고 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.have_hat",
+      "ko": "저는 모자를 가지고 있습니다.",
+      "en": "I have a hat.",
+      "sentenceKo": "저는 모자를 가지고 있습니다",
+      "sentenceEn": "I have a hat"
+    },
+    "quizIds": [
+      "beginner.quiz.0251",
+      "beginner.quiz.0252",
+      "beginner.quiz.0253",
+      "beginner.quiz.0254",
+      "beginner.quiz.0255",
+      "beginner.quiz.0256",
+      "beginner.quiz.0257",
+      "beginner.quiz.0258",
+      "beginner.quiz.0259",
+      "beginner.quiz.0260"
+    ],
+    "requiredStageId": "beginner.stage.025"
+  },
+  {
+    "id": "beginner.stage.027",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_003",
+    "order": 7,
+    "title": "가지고 있는 것 07",
+    "description": "저는 자전거를 가지고 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.have_bike",
+      "ko": "저는 자전거를 가지고 있습니다.",
+      "en": "I have a bike.",
+      "sentenceKo": "저는 자전거를 가지고 있습니다",
+      "sentenceEn": "I have a bike"
+    },
+    "quizIds": [
+      "beginner.quiz.0261",
+      "beginner.quiz.0262",
+      "beginner.quiz.0263",
+      "beginner.quiz.0264",
+      "beginner.quiz.0265",
+      "beginner.quiz.0266",
+      "beginner.quiz.0267",
+      "beginner.quiz.0268",
+      "beginner.quiz.0269",
+      "beginner.quiz.0270"
+    ],
+    "requiredStageId": "beginner.stage.026"
+  },
+  {
+    "id": "beginner.stage.028",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_003",
+    "order": 8,
+    "title": "가지고 있는 것 08",
+    "description": "저는 장난감을 가지고 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.have_toy",
+      "ko": "저는 장난감을 가지고 있습니다.",
+      "en": "I have a toy.",
+      "sentenceKo": "저는 장난감을 가지고 있습니다",
+      "sentenceEn": "I have a toy"
+    },
+    "quizIds": [
+      "beginner.quiz.0271",
+      "beginner.quiz.0272",
+      "beginner.quiz.0273",
+      "beginner.quiz.0274",
+      "beginner.quiz.0275",
+      "beginner.quiz.0276",
+      "beginner.quiz.0277",
+      "beginner.quiz.0278",
+      "beginner.quiz.0279",
+      "beginner.quiz.0280"
+    ],
+    "requiredStageId": "beginner.stage.027"
+  },
+  {
+    "id": "beginner.stage.029",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_003",
+    "order": 9,
+    "title": "저는 컵을 가지고 있습니다 익히기",
+    "description": "저는 컵을 가지고 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.have_cup",
+      "ko": "저는 컵을 가지고 있습니다.",
+      "en": "I have a cup.",
+      "sentenceKo": "저는 컵을 가지고 있습니다",
+      "sentenceEn": "I have a cup"
+    },
+    "quizIds": [
+      "beginner.quiz.0281",
+      "beginner.quiz.0282",
+      "beginner.quiz.0283",
+      "beginner.quiz.0284",
+      "beginner.quiz.0285",
+      "beginner.quiz.0286",
+      "beginner.quiz.0287",
+      "beginner.quiz.0288",
+      "beginner.quiz.0289",
+      "beginner.quiz.0290"
+    ],
+    "requiredStageId": "beginner.stage.028"
+  },
+  {
+    "id": "beginner.stage.030",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_003",
+    "order": 10,
+    "title": "저는 표를 가지고 있습니다 익히기",
+    "description": "저는 표를 가지고 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.have_ticket",
+      "ko": "저는 표를 가지고 있습니다.",
+      "en": "I have a ticket.",
+      "sentenceKo": "저는 표를 가지고 있습니다",
+      "sentenceEn": "I have a ticket"
+    },
+    "quizIds": [
+      "beginner.quiz.0291",
+      "beginner.quiz.0292",
+      "beginner.quiz.0293",
+      "beginner.quiz.0294",
+      "beginner.quiz.0295",
+      "beginner.quiz.0296",
+      "beginner.quiz.0297",
+      "beginner.quiz.0298",
+      "beginner.quiz.0299",
+      "beginner.quiz.0300"
+    ],
+    "requiredStageId": "beginner.stage.029"
+  },
+  {
+    "id": "beginner.stage.031",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_004",
+    "order": 1,
+    "title": "그것은 빨간색입니다 익히기",
+    "description": "그것은 빨간색입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.itis_red",
+      "ko": "그것은 빨간색입니다",
+      "en": "It is red.",
+      "sentenceKo": "그것은 빨간색입니다",
+      "sentenceEn": "It is red"
+    },
+    "quizIds": [
+      "beginner.quiz.0301",
+      "beginner.quiz.0302",
+      "beginner.quiz.0303",
+      "beginner.quiz.0304",
+      "beginner.quiz.0305",
+      "beginner.quiz.0306",
+      "beginner.quiz.0307",
+      "beginner.quiz.0308",
+      "beginner.quiz.0309",
+      "beginner.quiz.0310"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "beginner.stage.032",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_004",
+    "order": 2,
+    "title": "그것은 파란색입니다 익히기",
+    "description": "그것은 파란색입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.itis_blue",
+      "ko": "그것은 파란색입니다",
+      "en": "It is blue.",
+      "sentenceKo": "그것은 파란색입니다",
+      "sentenceEn": "It is blue"
+    },
+    "quizIds": [
+      "beginner.quiz.0311",
+      "beginner.quiz.0312",
+      "beginner.quiz.0313",
+      "beginner.quiz.0314",
+      "beginner.quiz.0315",
+      "beginner.quiz.0316",
+      "beginner.quiz.0317",
+      "beginner.quiz.0318",
+      "beginner.quiz.0319",
+      "beginner.quiz.0320"
+    ],
+    "requiredStageId": "beginner.stage.031"
+  },
+  {
+    "id": "beginner.stage.033",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_004",
+    "order": 3,
+    "title": "그것은 초록색입니다 익히기",
+    "description": "그것은 초록색입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.itis_green",
+      "ko": "그것은 초록색입니다",
+      "en": "It is green.",
+      "sentenceKo": "그것은 초록색입니다",
+      "sentenceEn": "It is green"
+    },
+    "quizIds": [
+      "beginner.quiz.0321",
+      "beginner.quiz.0322",
+      "beginner.quiz.0323",
+      "beginner.quiz.0324",
+      "beginner.quiz.0325",
+      "beginner.quiz.0326",
+      "beginner.quiz.0327",
+      "beginner.quiz.0328",
+      "beginner.quiz.0329",
+      "beginner.quiz.0330"
+    ],
+    "requiredStageId": "beginner.stage.032"
+  },
+  {
+    "id": "beginner.stage.034",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_004",
+    "order": 4,
+    "title": "그것은 큽니다 익히기",
+    "description": "그것은 큽니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.itis_big",
+      "ko": "그것은 큽니다",
+      "en": "It is big.",
+      "sentenceKo": "그것은 큽니다",
+      "sentenceEn": "It is big"
+    },
+    "quizIds": [
+      "beginner.quiz.0331",
+      "beginner.quiz.0332",
+      "beginner.quiz.0333",
+      "beginner.quiz.0334",
+      "beginner.quiz.0335",
+      "beginner.quiz.0336",
+      "beginner.quiz.0337",
+      "beginner.quiz.0338",
+      "beginner.quiz.0339",
+      "beginner.quiz.0340"
+    ],
+    "requiredStageId": "beginner.stage.033"
+  },
+  {
+    "id": "beginner.stage.035",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_004",
+    "order": 5,
+    "title": "그것은 작습니다 익히기",
+    "description": "그것은 작습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.itis_small",
+      "ko": "그것은 작습니다",
+      "en": "It is small.",
+      "sentenceKo": "그것은 작습니다",
+      "sentenceEn": "It is small"
+    },
+    "quizIds": [
+      "beginner.quiz.0341",
+      "beginner.quiz.0342",
+      "beginner.quiz.0343",
+      "beginner.quiz.0344",
+      "beginner.quiz.0345",
+      "beginner.quiz.0346",
+      "beginner.quiz.0347",
+      "beginner.quiz.0348",
+      "beginner.quiz.0349",
+      "beginner.quiz.0350"
+    ],
+    "requiredStageId": "beginner.stage.034"
+  },
+  {
+    "id": "beginner.stage.036",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_004",
+    "order": 6,
+    "title": "그것은 새것입니다 익히기",
+    "description": "그것은 새것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.itis_new",
+      "ko": "그것은 새것입니다",
+      "en": "It is new.",
+      "sentenceKo": "그것은 새것입니다",
+      "sentenceEn": "It is new"
+    },
+    "quizIds": [
+      "beginner.quiz.0351",
+      "beginner.quiz.0352",
+      "beginner.quiz.0353",
+      "beginner.quiz.0354",
+      "beginner.quiz.0355",
+      "beginner.quiz.0356",
+      "beginner.quiz.0357",
+      "beginner.quiz.0358",
+      "beginner.quiz.0359",
+      "beginner.quiz.0360"
+    ],
+    "requiredStageId": "beginner.stage.035"
+  },
+  {
+    "id": "beginner.stage.037",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_004",
+    "order": 7,
+    "title": "그것은 오래되었습니다 익히기",
+    "description": "그것은 오래되었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.itis_old",
+      "ko": "그것은 오래되었습니다",
+      "en": "It is old.",
+      "sentenceKo": "그것은 오래되었습니다",
+      "sentenceEn": "It is old"
+    },
+    "quizIds": [
+      "beginner.quiz.0361",
+      "beginner.quiz.0362",
+      "beginner.quiz.0363",
+      "beginner.quiz.0364",
+      "beginner.quiz.0365",
+      "beginner.quiz.0366",
+      "beginner.quiz.0367",
+      "beginner.quiz.0368",
+      "beginner.quiz.0369",
+      "beginner.quiz.0370"
+    ],
+    "requiredStageId": "beginner.stage.036"
+  },
+  {
+    "id": "beginner.stage.038",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_004",
+    "order": 8,
+    "title": "그것은 깨끗합니다 익히기",
+    "description": "그것은 깨끗합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.itis_clean",
+      "ko": "그것은 깨끗합니다",
+      "en": "It is clean.",
+      "sentenceKo": "그것은 깨끗합니다",
+      "sentenceEn": "It is clean"
+    },
+    "quizIds": [
+      "beginner.quiz.0371",
+      "beginner.quiz.0372",
+      "beginner.quiz.0373",
+      "beginner.quiz.0374",
+      "beginner.quiz.0375",
+      "beginner.quiz.0376",
+      "beginner.quiz.0377",
+      "beginner.quiz.0378",
+      "beginner.quiz.0379",
+      "beginner.quiz.0380"
+    ],
+    "requiredStageId": "beginner.stage.037"
+  },
+  {
+    "id": "beginner.stage.039",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_004",
+    "order": 9,
+    "title": "그것은 따뜻합니다 익히기",
+    "description": "그것은 따뜻합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.itis_warm",
+      "ko": "그것은 따뜻합니다",
+      "en": "It is warm.",
+      "sentenceKo": "그것은 따뜻합니다",
+      "sentenceEn": "It is warm"
+    },
+    "quizIds": [
+      "beginner.quiz.0381",
+      "beginner.quiz.0382",
+      "beginner.quiz.0383",
+      "beginner.quiz.0384",
+      "beginner.quiz.0385",
+      "beginner.quiz.0386",
+      "beginner.quiz.0387",
+      "beginner.quiz.0388",
+      "beginner.quiz.0389",
+      "beginner.quiz.0390"
+    ],
+    "requiredStageId": "beginner.stage.038"
+  },
+  {
+    "id": "beginner.stage.040",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_004",
+    "order": 10,
+    "title": "그것은 차갑습니다 익히기",
+    "description": "그것은 차갑습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.itis_cold",
+      "ko": "그것은 차갑습니다",
+      "en": "It is cold.",
+      "sentenceKo": "그것은 차갑습니다",
+      "sentenceEn": "It is cold"
+    },
+    "quizIds": [
+      "beginner.quiz.0391",
+      "beginner.quiz.0392",
+      "beginner.quiz.0393",
+      "beginner.quiz.0394",
+      "beginner.quiz.0395",
+      "beginner.quiz.0396",
+      "beginner.quiz.0397",
+      "beginner.quiz.0398",
+      "beginner.quiz.0399",
+      "beginner.quiz.0400"
+    ],
+    "requiredStageId": "beginner.stage.039"
+  },
+  {
+    "id": "beginner.stage.041",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_005",
+    "order": 1,
+    "title": "이것은 제 책입니다 익히기",
+    "description": "이것은 제 책입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.thisis_my_book",
+      "ko": "이것은 제 책입니다.",
+      "en": "This is my book.",
+      "sentenceKo": "이것은 제 책입니다",
+      "sentenceEn": "This is my book"
+    },
+    "quizIds": [
+      "beginner.quiz.0401",
+      "beginner.quiz.0402",
+      "beginner.quiz.0403",
+      "beginner.quiz.0404",
+      "beginner.quiz.0405",
+      "beginner.quiz.0406",
+      "beginner.quiz.0407",
+      "beginner.quiz.0408",
+      "beginner.quiz.0409",
+      "beginner.quiz.0410"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "beginner.stage.042",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_005",
+    "order": 2,
+    "title": "이것은 제 가방입니다 익히기",
+    "description": "이것은 제 가방입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.thisis_my_bag",
+      "ko": "이것은 제 가방입니다.",
+      "en": "This is my bag.",
+      "sentenceKo": "이것은 제 가방입니다",
+      "sentenceEn": "This is my bag"
+    },
+    "quizIds": [
+      "beginner.quiz.0411",
+      "beginner.quiz.0412",
+      "beginner.quiz.0413",
+      "beginner.quiz.0414",
+      "beginner.quiz.0415",
+      "beginner.quiz.0416",
+      "beginner.quiz.0417",
+      "beginner.quiz.0418",
+      "beginner.quiz.0419",
+      "beginner.quiz.0420"
+    ],
+    "requiredStageId": "beginner.stage.041"
+  },
+  {
+    "id": "beginner.stage.043",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_005",
+    "order": 3,
+    "title": "이것은 제 펜입니다 익히기",
+    "description": "이것은 제 펜입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.thisis_my_pen",
+      "ko": "이것은 제 펜입니다.",
+      "en": "This is my pen.",
+      "sentenceKo": "이것은 제 펜입니다",
+      "sentenceEn": "This is my pen"
+    },
+    "quizIds": [
+      "beginner.quiz.0421",
+      "beginner.quiz.0422",
+      "beginner.quiz.0423",
+      "beginner.quiz.0424",
+      "beginner.quiz.0425",
+      "beginner.quiz.0426",
+      "beginner.quiz.0427",
+      "beginner.quiz.0428",
+      "beginner.quiz.0429",
+      "beginner.quiz.0430"
+    ],
+    "requiredStageId": "beginner.stage.042"
+  },
+  {
+    "id": "beginner.stage.044",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_005",
+    "order": 4,
+    "title": "이것은 제 방입니다 익히기",
+    "description": "이것은 제 방입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.thisis_my_room",
+      "ko": "이것은 제 방입니다.",
+      "en": "This is my room.",
+      "sentenceKo": "이것은 제 방입니다",
+      "sentenceEn": "This is my room"
+    },
+    "quizIds": [
+      "beginner.quiz.0431",
+      "beginner.quiz.0432",
+      "beginner.quiz.0433",
+      "beginner.quiz.0434",
+      "beginner.quiz.0435",
+      "beginner.quiz.0436",
+      "beginner.quiz.0437",
+      "beginner.quiz.0438",
+      "beginner.quiz.0439",
+      "beginner.quiz.0440"
+    ],
+    "requiredStageId": "beginner.stage.043"
+  },
+  {
+    "id": "beginner.stage.045",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_005",
+    "order": 5,
+    "title": "이것은 제 책상입니다 익히기",
+    "description": "이것은 제 책상입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.thisis_my_desk",
+      "ko": "이것은 제 책상입니다.",
+      "en": "This is my desk.",
+      "sentenceKo": "이것은 제 책상입니다",
+      "sentenceEn": "This is my desk"
+    },
+    "quizIds": [
+      "beginner.quiz.0441",
+      "beginner.quiz.0442",
+      "beginner.quiz.0443",
+      "beginner.quiz.0444",
+      "beginner.quiz.0445",
+      "beginner.quiz.0446",
+      "beginner.quiz.0447",
+      "beginner.quiz.0448",
+      "beginner.quiz.0449",
+      "beginner.quiz.0450"
+    ],
+    "requiredStageId": "beginner.stage.044"
+  },
+  {
+    "id": "beginner.stage.046",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_005",
+    "order": 6,
+    "title": "이것은 제 휴대전화입니다 익히기",
+    "description": "이것은 제 휴대전화입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.thisis_my_phone",
+      "ko": "이것은 제 휴대전화입니다.",
+      "en": "This is my phone.",
+      "sentenceKo": "이것은 제 휴대전화입니다",
+      "sentenceEn": "This is my phone"
+    },
+    "quizIds": [
+      "beginner.quiz.0451",
+      "beginner.quiz.0452",
+      "beginner.quiz.0453",
+      "beginner.quiz.0454",
+      "beginner.quiz.0455",
+      "beginner.quiz.0456",
+      "beginner.quiz.0457",
+      "beginner.quiz.0458",
+      "beginner.quiz.0459",
+      "beginner.quiz.0460"
+    ],
+    "requiredStageId": "beginner.stage.045"
+  },
+  {
+    "id": "beginner.stage.047",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_005",
+    "order": 7,
+    "title": "이분은 제 선생님입니다 익히기",
+    "description": "이분은 제 선생님입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.thisis_my_teacher",
+      "ko": "이분은 제 선생님입니다.",
+      "en": "This is my teacher.",
+      "sentenceKo": "이분은 제 선생님입니다",
+      "sentenceEn": "This is my teacher"
+    },
+    "quizIds": [
+      "beginner.quiz.0461",
+      "beginner.quiz.0462",
+      "beginner.quiz.0463",
+      "beginner.quiz.0464",
+      "beginner.quiz.0465",
+      "beginner.quiz.0466",
+      "beginner.quiz.0467",
+      "beginner.quiz.0468",
+      "beginner.quiz.0469",
+      "beginner.quiz.0470"
+    ],
+    "requiredStageId": "beginner.stage.046"
+  },
+  {
+    "id": "beginner.stage.048",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_005",
+    "order": 8,
+    "title": "이 사람은 제 친구입니다 익히기",
+    "description": "이 사람은 제 친구입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.thisis_my_friend",
+      "ko": "이 사람은 제 친구입니다.",
+      "en": "This is my friend.",
+      "sentenceKo": "이 사람은 제 친구입니다",
+      "sentenceEn": "This is my friend"
+    },
+    "quizIds": [
+      "beginner.quiz.0471",
+      "beginner.quiz.0472",
+      "beginner.quiz.0473",
+      "beginner.quiz.0474",
+      "beginner.quiz.0475",
+      "beginner.quiz.0476",
+      "beginner.quiz.0477",
+      "beginner.quiz.0478",
+      "beginner.quiz.0479",
+      "beginner.quiz.0480"
+    ],
+    "requiredStageId": "beginner.stage.047"
+  },
+  {
+    "id": "beginner.stage.049",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_005",
+    "order": 9,
+    "title": "이곳은 제 학교입니다 익히기",
+    "description": "이곳은 제 학교입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.thisis_my_school",
+      "ko": "이곳은 제 학교입니다.",
+      "en": "This is my school.",
+      "sentenceKo": "이곳은 제 학교입니다",
+      "sentenceEn": "This is my school"
+    },
+    "quizIds": [
+      "beginner.quiz.0481",
+      "beginner.quiz.0482",
+      "beginner.quiz.0483",
+      "beginner.quiz.0484",
+      "beginner.quiz.0485",
+      "beginner.quiz.0486",
+      "beginner.quiz.0487",
+      "beginner.quiz.0488",
+      "beginner.quiz.0489",
+      "beginner.quiz.0490"
+    ],
+    "requiredStageId": "beginner.stage.048"
+  },
+  {
+    "id": "beginner.stage.050",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_005",
+    "order": 10,
+    "title": "이곳은 제 집입니다 익히기",
+    "description": "이곳은 제 집입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.thisis_my_house",
+      "ko": "이곳은 제 집입니다.",
+      "en": "This is my house.",
+      "sentenceKo": "이곳은 제 집입니다",
+      "sentenceEn": "This is my house"
+    },
+    "quizIds": [
+      "beginner.quiz.0491",
+      "beginner.quiz.0492",
+      "beginner.quiz.0493",
+      "beginner.quiz.0494",
+      "beginner.quiz.0495",
+      "beginner.quiz.0496",
+      "beginner.quiz.0497",
+      "beginner.quiz.0498",
+      "beginner.quiz.0499",
+      "beginner.quiz.0500"
+    ],
+    "requiredStageId": "beginner.stage.049"
+  },
+  {
+    "id": "beginner.stage.051",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_006",
+    "order": 1,
+    "title": "저는 수영할 수 있습니다 익히기",
+    "description": "저는 수영할 수 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.can_swim",
+      "ko": "저는 수영할 수 있습니다.",
+      "en": "I can swim.",
+      "sentenceKo": "저는 수영할 수 있습니다",
+      "sentenceEn": "I can swim"
+    },
+    "quizIds": [
+      "beginner.quiz.0501",
+      "beginner.quiz.0502",
+      "beginner.quiz.0503",
+      "beginner.quiz.0504",
+      "beginner.quiz.0505",
+      "beginner.quiz.0506",
+      "beginner.quiz.0507",
+      "beginner.quiz.0508",
+      "beginner.quiz.0509",
+      "beginner.quiz.0510"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "beginner.stage.052",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_006",
+    "order": 2,
+    "title": "저는 달릴 수 있습니다 익히기",
+    "description": "저는 달릴 수 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.can_run",
+      "ko": "저는 달릴 수 있습니다.",
+      "en": "I can run.",
+      "sentenceKo": "저는 달릴 수 있습니다",
+      "sentenceEn": "I can run"
+    },
+    "quizIds": [
+      "beginner.quiz.0511",
+      "beginner.quiz.0512",
+      "beginner.quiz.0513",
+      "beginner.quiz.0514",
+      "beginner.quiz.0515",
+      "beginner.quiz.0516",
+      "beginner.quiz.0517",
+      "beginner.quiz.0518",
+      "beginner.quiz.0519",
+      "beginner.quiz.0520"
+    ],
+    "requiredStageId": "beginner.stage.051"
+  },
+  {
+    "id": "beginner.stage.053",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_006",
+    "order": 3,
+    "title": "저는 요리할 수 있습니다 익히기",
+    "description": "저는 요리할 수 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.can_cook",
+      "ko": "저는 요리할 수 있습니다.",
+      "en": "I can cook.",
+      "sentenceKo": "저는 요리할 수 있습니다",
+      "sentenceEn": "I can cook"
+    },
+    "quizIds": [
+      "beginner.quiz.0521",
+      "beginner.quiz.0522",
+      "beginner.quiz.0523",
+      "beginner.quiz.0524",
+      "beginner.quiz.0525",
+      "beginner.quiz.0526",
+      "beginner.quiz.0527",
+      "beginner.quiz.0528",
+      "beginner.quiz.0529",
+      "beginner.quiz.0530"
+    ],
+    "requiredStageId": "beginner.stage.052"
+  },
+  {
+    "id": "beginner.stage.054",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_006",
+    "order": 4,
+    "title": "저는 노래할 수 있습니다 익히기",
+    "description": "저는 노래할 수 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.can_sing",
+      "ko": "저는 노래할 수 있습니다.",
+      "en": "I can sing.",
+      "sentenceKo": "저는 노래할 수 있습니다",
+      "sentenceEn": "I can sing"
+    },
+    "quizIds": [
+      "beginner.quiz.0531",
+      "beginner.quiz.0532",
+      "beginner.quiz.0533",
+      "beginner.quiz.0534",
+      "beginner.quiz.0535",
+      "beginner.quiz.0536",
+      "beginner.quiz.0537",
+      "beginner.quiz.0538",
+      "beginner.quiz.0539",
+      "beginner.quiz.0540"
+    ],
+    "requiredStageId": "beginner.stage.053"
+  },
+  {
+    "id": "beginner.stage.055",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_006",
+    "order": 5,
+    "title": "저는 춤출 수 있습니다 익히기",
+    "description": "저는 춤출 수 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.can_dance",
+      "ko": "저는 춤출 수 있습니다.",
+      "en": "I can dance.",
+      "sentenceKo": "저는 춤출 수 있습니다",
+      "sentenceEn": "I can dance"
+    },
+    "quizIds": [
+      "beginner.quiz.0541",
+      "beginner.quiz.0542",
+      "beginner.quiz.0543",
+      "beginner.quiz.0544",
+      "beginner.quiz.0545",
+      "beginner.quiz.0546",
+      "beginner.quiz.0547",
+      "beginner.quiz.0548",
+      "beginner.quiz.0549",
+      "beginner.quiz.0550"
+    ],
+    "requiredStageId": "beginner.stage.054"
+  },
+  {
+    "id": "beginner.stage.056",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_006",
+    "order": 6,
+    "title": "할 수 있는 것 06",
+    "description": "저는 그림을 그릴 수 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.can_draw",
+      "ko": "저는 그림을 그릴 수 있습니다.",
+      "en": "I can draw.",
+      "sentenceKo": "저는 그림을 그릴 수 있습니다",
+      "sentenceEn": "I can draw"
+    },
+    "quizIds": [
+      "beginner.quiz.0551",
+      "beginner.quiz.0552",
+      "beginner.quiz.0553",
+      "beginner.quiz.0554",
+      "beginner.quiz.0555",
+      "beginner.quiz.0556",
+      "beginner.quiz.0557",
+      "beginner.quiz.0558",
+      "beginner.quiz.0559",
+      "beginner.quiz.0560"
+    ],
+    "requiredStageId": "beginner.stage.055"
+  },
+  {
+    "id": "beginner.stage.057",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_006",
+    "order": 7,
+    "title": "할 수 있는 것 07",
+    "description": "저는 책을 읽을 수 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.can_read",
+      "ko": "저는 책을 읽을 수 있습니다.",
+      "en": "I can read.",
+      "sentenceKo": "저는 책을 읽을 수 있습니다",
+      "sentenceEn": "I can read"
+    },
+    "quizIds": [
+      "beginner.quiz.0561",
+      "beginner.quiz.0562",
+      "beginner.quiz.0563",
+      "beginner.quiz.0564",
+      "beginner.quiz.0565",
+      "beginner.quiz.0566",
+      "beginner.quiz.0567",
+      "beginner.quiz.0568",
+      "beginner.quiz.0569",
+      "beginner.quiz.0570"
+    ],
+    "requiredStageId": "beginner.stage.056"
+  },
+  {
+    "id": "beginner.stage.058",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_006",
+    "order": 8,
+    "title": "저는 글을 쓸 수 있습니다 익히기",
+    "description": "저는 글을 쓸 수 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.can_write",
+      "ko": "저는 글을 쓸 수 있습니다.",
+      "en": "I can write.",
+      "sentenceKo": "저는 글을 쓸 수 있습니다",
+      "sentenceEn": "I can write"
+    },
+    "quizIds": [
+      "beginner.quiz.0571",
+      "beginner.quiz.0572",
+      "beginner.quiz.0573",
+      "beginner.quiz.0574",
+      "beginner.quiz.0575",
+      "beginner.quiz.0576",
+      "beginner.quiz.0577",
+      "beginner.quiz.0578",
+      "beginner.quiz.0579",
+      "beginner.quiz.0580"
+    ],
+    "requiredStageId": "beginner.stage.057"
+  },
+  {
+    "id": "beginner.stage.059",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_006",
+    "order": 9,
+    "title": "저는 점프할 수 있습니다 익히기",
+    "description": "저는 점프할 수 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.can_jump",
+      "ko": "저는 점프할 수 있습니다.",
+      "en": "I can jump.",
+      "sentenceKo": "저는 점프할 수 있습니다",
+      "sentenceEn": "I can jump"
+    },
+    "quizIds": [
+      "beginner.quiz.0581",
+      "beginner.quiz.0582",
+      "beginner.quiz.0583",
+      "beginner.quiz.0584",
+      "beginner.quiz.0585",
+      "beginner.quiz.0586",
+      "beginner.quiz.0587",
+      "beginner.quiz.0588",
+      "beginner.quiz.0589",
+      "beginner.quiz.0590"
+    ],
+    "requiredStageId": "beginner.stage.058"
+  },
+  {
+    "id": "beginner.stage.060",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_006",
+    "order": 10,
+    "title": "할 수 있는 것 10",
+    "description": "저는 당신을 도울 수 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.can_help",
+      "ko": "저는 당신을 도울 수 있습니다.",
+      "en": "I can help you.",
+      "sentenceKo": "저는 당신을 도울 수 있습니다",
+      "sentenceEn": "I can help you"
+    },
+    "quizIds": [
+      "beginner.quiz.0591",
+      "beginner.quiz.0592",
+      "beginner.quiz.0593",
+      "beginner.quiz.0594",
+      "beginner.quiz.0595",
+      "beginner.quiz.0596",
+      "beginner.quiz.0597",
+      "beginner.quiz.0598",
+      "beginner.quiz.0599",
+      "beginner.quiz.0600"
+    ],
+    "requiredStageId": "beginner.stage.059"
+  },
+  {
+    "id": "beginner.stage.061",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_007",
+    "order": 1,
+    "title": "저는 아침에 일어납니다 익히기",
+    "description": "저는 아침에 일어납니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.daily_wake_up",
+      "ko": "저는 아침에 일어납니다.",
+      "en": "I get up in the morning.",
+      "sentenceKo": "저는 아침에 일어납니다",
+      "sentenceEn": "I get up in the morning"
+    },
+    "quizIds": [
+      "beginner.quiz.0601",
+      "beginner.quiz.0602",
+      "beginner.quiz.0603",
+      "beginner.quiz.0604",
+      "beginner.quiz.0605",
+      "beginner.quiz.0606",
+      "beginner.quiz.0607",
+      "beginner.quiz.0608",
+      "beginner.quiz.0609",
+      "beginner.quiz.0610"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "beginner.stage.062",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_007",
+    "order": 2,
+    "title": "저는 아침을 먹습니다 익히기",
+    "description": "저는 아침을 먹습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.daily_eat_breakfast",
+      "ko": "저는 아침을 먹습니다.",
+      "en": "I eat breakfast.",
+      "sentenceKo": "저는 아침을 먹습니다",
+      "sentenceEn": "I eat breakfast"
+    },
+    "quizIds": [
+      "beginner.quiz.0611",
+      "beginner.quiz.0612",
+      "beginner.quiz.0613",
+      "beginner.quiz.0614",
+      "beginner.quiz.0615",
+      "beginner.quiz.0616",
+      "beginner.quiz.0617",
+      "beginner.quiz.0618",
+      "beginner.quiz.0619",
+      "beginner.quiz.0620"
+    ],
+    "requiredStageId": "beginner.stage.061"
+  },
+  {
+    "id": "beginner.stage.063",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_007",
+    "order": 3,
+    "title": "저는 학교에 갑니다 익히기",
+    "description": "저는 학교에 갑니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.daily_go_school",
+      "ko": "저는 학교에 갑니다.",
+      "en": "I go to school.",
+      "sentenceKo": "저는 학교에 갑니다",
+      "sentenceEn": "I go to school"
+    },
+    "quizIds": [
+      "beginner.quiz.0621",
+      "beginner.quiz.0622",
+      "beginner.quiz.0623",
+      "beginner.quiz.0624",
+      "beginner.quiz.0625",
+      "beginner.quiz.0626",
+      "beginner.quiz.0627",
+      "beginner.quiz.0628",
+      "beginner.quiz.0629",
+      "beginner.quiz.0630"
+    ],
+    "requiredStageId": "beginner.stage.062"
+  },
+  {
+    "id": "beginner.stage.064",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_007",
+    "order": 4,
+    "title": "저는 영어를 공부합니다 익히기",
+    "description": "저는 영어를 공부합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.daily_study_english",
+      "ko": "저는 영어를 공부합니다.",
+      "en": "I study English.",
+      "sentenceKo": "저는 영어를 공부합니다",
+      "sentenceEn": "I study English"
+    },
+    "quizIds": [
+      "beginner.quiz.0631",
+      "beginner.quiz.0632",
+      "beginner.quiz.0633",
+      "beginner.quiz.0634",
+      "beginner.quiz.0635",
+      "beginner.quiz.0636",
+      "beginner.quiz.0637",
+      "beginner.quiz.0638",
+      "beginner.quiz.0639",
+      "beginner.quiz.0640"
+    ],
+    "requiredStageId": "beginner.stage.063"
+  },
+  {
+    "id": "beginner.stage.065",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_007",
+    "order": 5,
+    "title": "저는 축구를 합니다 익히기",
+    "description": "저는 축구를 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.daily_play_soccer",
+      "ko": "저는 축구를 합니다.",
+      "en": "I play soccer.",
+      "sentenceKo": "저는 축구를 합니다",
+      "sentenceEn": "I play soccer"
+    },
+    "quizIds": [
+      "beginner.quiz.0641",
+      "beginner.quiz.0642",
+      "beginner.quiz.0643",
+      "beginner.quiz.0644",
+      "beginner.quiz.0645",
+      "beginner.quiz.0646",
+      "beginner.quiz.0647",
+      "beginner.quiz.0648",
+      "beginner.quiz.0649",
+      "beginner.quiz.0650"
+    ],
+    "requiredStageId": "beginner.stage.064"
+  },
+  {
+    "id": "beginner.stage.066",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_007",
+    "order": 6,
+    "title": "저는 책을 읽습니다 익히기",
+    "description": "저는 책을 읽습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.daily_read_books",
+      "ko": "저는 책을 읽습니다.",
+      "en": "I read books.",
+      "sentenceKo": "저는 책을 읽습니다",
+      "sentenceEn": "I read books"
+    },
+    "quizIds": [
+      "beginner.quiz.0651",
+      "beginner.quiz.0652",
+      "beginner.quiz.0653",
+      "beginner.quiz.0654",
+      "beginner.quiz.0655",
+      "beginner.quiz.0656",
+      "beginner.quiz.0657",
+      "beginner.quiz.0658",
+      "beginner.quiz.0659",
+      "beginner.quiz.0660"
+    ],
+    "requiredStageId": "beginner.stage.065"
+  },
+  {
+    "id": "beginner.stage.067",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_007",
+    "order": 7,
+    "title": "저는 저녁을 먹습니다 익히기",
+    "description": "저는 저녁을 먹습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.daily_eat_dinner",
+      "ko": "저는 저녁을 먹습니다.",
+      "en": "I eat dinner.",
+      "sentenceKo": "저는 저녁을 먹습니다",
+      "sentenceEn": "I eat dinner"
+    },
+    "quizIds": [
+      "beginner.quiz.0661",
+      "beginner.quiz.0662",
+      "beginner.quiz.0663",
+      "beginner.quiz.0664",
+      "beginner.quiz.0665",
+      "beginner.quiz.0666",
+      "beginner.quiz.0667",
+      "beginner.quiz.0668",
+      "beginner.quiz.0669",
+      "beginner.quiz.0670"
+    ],
+    "requiredStageId": "beginner.stage.066"
+  },
+  {
+    "id": "beginner.stage.068",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_007",
+    "order": 8,
+    "title": "저는 텔레비전을 봅니다 익히기",
+    "description": "저는 텔레비전을 봅니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.daily_watch_tv",
+      "ko": "저는 텔레비전을 봅니다.",
+      "en": "I watch TV.",
+      "sentenceKo": "저는 텔레비전을 봅니다",
+      "sentenceEn": "I watch TV"
+    },
+    "quizIds": [
+      "beginner.quiz.0671",
+      "beginner.quiz.0672",
+      "beginner.quiz.0673",
+      "beginner.quiz.0674",
+      "beginner.quiz.0675",
+      "beginner.quiz.0676",
+      "beginner.quiz.0677",
+      "beginner.quiz.0678",
+      "beginner.quiz.0679",
+      "beginner.quiz.0680"
+    ],
+    "requiredStageId": "beginner.stage.067"
+  },
+  {
+    "id": "beginner.stage.069",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_007",
+    "order": 9,
+    "title": "저는 샤워를 합니다 익히기",
+    "description": "저는 샤워를 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.daily_take_shower",
+      "ko": "저는 샤워를 합니다.",
+      "en": "I take a shower.",
+      "sentenceKo": "저는 샤워를 합니다",
+      "sentenceEn": "I take a shower"
+    },
+    "quizIds": [
+      "beginner.quiz.0681",
+      "beginner.quiz.0682",
+      "beginner.quiz.0683",
+      "beginner.quiz.0684",
+      "beginner.quiz.0685",
+      "beginner.quiz.0686",
+      "beginner.quiz.0687",
+      "beginner.quiz.0688",
+      "beginner.quiz.0689",
+      "beginner.quiz.0690"
+    ],
+    "requiredStageId": "beginner.stage.068"
+  },
+  {
+    "id": "beginner.stage.070",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_007",
+    "order": 10,
+    "title": "저는 일찍 잠자리에 듭니다 익히기",
+    "description": "저는 일찍 잠자리에 듭니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.daily_go_bed",
+      "ko": "저는 일찍 잠자리에 듭니다.",
+      "en": "I go to bed early.",
+      "sentenceKo": "저는 일찍 잠자리에 듭니다",
+      "sentenceEn": "I go to bed early"
+    },
+    "quizIds": [
+      "beginner.quiz.0691",
+      "beginner.quiz.0692",
+      "beginner.quiz.0693",
+      "beginner.quiz.0694",
+      "beginner.quiz.0695",
+      "beginner.quiz.0696",
+      "beginner.quiz.0697",
+      "beginner.quiz.0698",
+      "beginner.quiz.0699",
+      "beginner.quiz.0700"
+    ],
+    "requiredStageId": "beginner.stage.069"
+  },
+  {
+    "id": "beginner.stage.071",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_008",
+    "order": 1,
+    "title": "저는 학교에 갑니다 익히기",
+    "description": "저는 학교에 갑니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.placego_to_school",
+      "ko": "저는 학교에 갑니다.",
+      "en": "I go to school.",
+      "sentenceKo": "저는 학교에 갑니다",
+      "sentenceEn": "I go to school"
+    },
+    "quizIds": [
+      "beginner.quiz.0701",
+      "beginner.quiz.0702",
+      "beginner.quiz.0703",
+      "beginner.quiz.0704",
+      "beginner.quiz.0705",
+      "beginner.quiz.0706",
+      "beginner.quiz.0707",
+      "beginner.quiz.0708",
+      "beginner.quiz.0709",
+      "beginner.quiz.0710"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "beginner.stage.072",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_008",
+    "order": 2,
+    "title": "저는 도서관에 갑니다 익히기",
+    "description": "저는 도서관에 갑니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.placego_to_library",
+      "ko": "저는 도서관에 갑니다.",
+      "en": "I go to the library.",
+      "sentenceKo": "저는 도서관에 갑니다",
+      "sentenceEn": "I go to the library"
+    },
+    "quizIds": [
+      "beginner.quiz.0711",
+      "beginner.quiz.0712",
+      "beginner.quiz.0713",
+      "beginner.quiz.0714",
+      "beginner.quiz.0715",
+      "beginner.quiz.0716",
+      "beginner.quiz.0717",
+      "beginner.quiz.0718",
+      "beginner.quiz.0719",
+      "beginner.quiz.0720"
+    ],
+    "requiredStageId": "beginner.stage.071"
+  },
+  {
+    "id": "beginner.stage.073",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_008",
+    "order": 3,
+    "title": "저는 공원에 갑니다 익히기",
+    "description": "저는 공원에 갑니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.placego_to_park",
+      "ko": "저는 공원에 갑니다.",
+      "en": "I go to the park.",
+      "sentenceKo": "저는 공원에 갑니다",
+      "sentenceEn": "I go to the park"
+    },
+    "quizIds": [
+      "beginner.quiz.0721",
+      "beginner.quiz.0722",
+      "beginner.quiz.0723",
+      "beginner.quiz.0724",
+      "beginner.quiz.0725",
+      "beginner.quiz.0726",
+      "beginner.quiz.0727",
+      "beginner.quiz.0728",
+      "beginner.quiz.0729",
+      "beginner.quiz.0730"
+    ],
+    "requiredStageId": "beginner.stage.072"
+  },
+  {
+    "id": "beginner.stage.074",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_008",
+    "order": 4,
+    "title": "저는 가게에 갑니다 익히기",
+    "description": "저는 가게에 갑니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.placego_to_store",
+      "ko": "저는 가게에 갑니다.",
+      "en": "I go to the store.",
+      "sentenceKo": "저는 가게에 갑니다",
+      "sentenceEn": "I go to the store"
+    },
+    "quizIds": [
+      "beginner.quiz.0731",
+      "beginner.quiz.0732",
+      "beginner.quiz.0733",
+      "beginner.quiz.0734",
+      "beginner.quiz.0735",
+      "beginner.quiz.0736",
+      "beginner.quiz.0737",
+      "beginner.quiz.0738",
+      "beginner.quiz.0739",
+      "beginner.quiz.0740"
+    ],
+    "requiredStageId": "beginner.stage.073"
+  },
+  {
+    "id": "beginner.stage.075",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_008",
+    "order": 5,
+    "title": "저는 병원에 갑니다 익히기",
+    "description": "저는 병원에 갑니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.placego_to_hospital",
+      "ko": "저는 병원에 갑니다.",
+      "en": "I go to the hospital.",
+      "sentenceKo": "저는 병원에 갑니다",
+      "sentenceEn": "I go to the hospital"
+    },
+    "quizIds": [
+      "beginner.quiz.0741",
+      "beginner.quiz.0742",
+      "beginner.quiz.0743",
+      "beginner.quiz.0744",
+      "beginner.quiz.0745",
+      "beginner.quiz.0746",
+      "beginner.quiz.0747",
+      "beginner.quiz.0748",
+      "beginner.quiz.0749",
+      "beginner.quiz.0750"
+    ],
+    "requiredStageId": "beginner.stage.074"
+  },
+  {
+    "id": "beginner.stage.076",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_008",
+    "order": 6,
+    "title": "저는 사무실에 갑니다 익히기",
+    "description": "저는 사무실에 갑니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.placego_to_office",
+      "ko": "저는 사무실에 갑니다.",
+      "en": "I go to the office.",
+      "sentenceKo": "저는 사무실에 갑니다",
+      "sentenceEn": "I go to the office"
+    },
+    "quizIds": [
+      "beginner.quiz.0751",
+      "beginner.quiz.0752",
+      "beginner.quiz.0753",
+      "beginner.quiz.0754",
+      "beginner.quiz.0755",
+      "beginner.quiz.0756",
+      "beginner.quiz.0757",
+      "beginner.quiz.0758",
+      "beginner.quiz.0759",
+      "beginner.quiz.0760"
+    ],
+    "requiredStageId": "beginner.stage.075"
+  },
+  {
+    "id": "beginner.stage.077",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_008",
+    "order": 7,
+    "title": "저는 역에 갑니다 익히기",
+    "description": "저는 역에 갑니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.placego_to_station",
+      "ko": "저는 역에 갑니다.",
+      "en": "I go to the station.",
+      "sentenceKo": "저는 역에 갑니다",
+      "sentenceEn": "I go to the station"
+    },
+    "quizIds": [
+      "beginner.quiz.0761",
+      "beginner.quiz.0762",
+      "beginner.quiz.0763",
+      "beginner.quiz.0764",
+      "beginner.quiz.0765",
+      "beginner.quiz.0766",
+      "beginner.quiz.0767",
+      "beginner.quiz.0768",
+      "beginner.quiz.0769",
+      "beginner.quiz.0770"
+    ],
+    "requiredStageId": "beginner.stage.076"
+  },
+  {
+    "id": "beginner.stage.078",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_008",
+    "order": 8,
+    "title": "저는 은행에 갑니다 익히기",
+    "description": "저는 은행에 갑니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.placego_to_bank",
+      "ko": "저는 은행에 갑니다.",
+      "en": "I go to the bank.",
+      "sentenceKo": "저는 은행에 갑니다",
+      "sentenceEn": "I go to the bank"
+    },
+    "quizIds": [
+      "beginner.quiz.0771",
+      "beginner.quiz.0772",
+      "beginner.quiz.0773",
+      "beginner.quiz.0774",
+      "beginner.quiz.0775",
+      "beginner.quiz.0776",
+      "beginner.quiz.0777",
+      "beginner.quiz.0778",
+      "beginner.quiz.0779",
+      "beginner.quiz.0780"
+    ],
+    "requiredStageId": "beginner.stage.077"
+  },
+  {
+    "id": "beginner.stage.079",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_008",
+    "order": 9,
+    "title": "저는 집에 갑니다 익히기",
+    "description": "저는 집에 갑니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.placego_to_home",
+      "ko": "저는 집에 갑니다.",
+      "en": "I go home.",
+      "sentenceKo": "저는 집에 갑니다",
+      "sentenceEn": "I go home"
+    },
+    "quizIds": [
+      "beginner.quiz.0781",
+      "beginner.quiz.0782",
+      "beginner.quiz.0783",
+      "beginner.quiz.0784",
+      "beginner.quiz.0785",
+      "beginner.quiz.0786",
+      "beginner.quiz.0787",
+      "beginner.quiz.0788",
+      "beginner.quiz.0789",
+      "beginner.quiz.0790"
+    ],
+    "requiredStageId": "beginner.stage.078"
+  },
+  {
+    "id": "beginner.stage.080",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_008",
+    "order": 10,
+    "title": "저는 시장에 갑니다 익히기",
+    "description": "저는 시장에 갑니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.placego_to_market",
+      "ko": "저는 시장에 갑니다.",
+      "en": "I go to the market.",
+      "sentenceKo": "저는 시장에 갑니다",
+      "sentenceEn": "I go to the market"
+    },
+    "quizIds": [
+      "beginner.quiz.0791",
+      "beginner.quiz.0792",
+      "beginner.quiz.0793",
+      "beginner.quiz.0794",
+      "beginner.quiz.0795",
+      "beginner.quiz.0796",
+      "beginner.quiz.0797",
+      "beginner.quiz.0798",
+      "beginner.quiz.0799",
+      "beginner.quiz.0800"
+    ],
+    "requiredStageId": "beginner.stage.079"
+  },
+  {
+    "id": "beginner.stage.081",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_009",
+    "order": 1,
+    "title": "그는 제 형입니다 익히기",
+    "description": "그는 제 형입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.people_he_brother",
+      "ko": "그는 제 형입니다.",
+      "en": "He is my brother.",
+      "sentenceKo": "그는 제 형입니다",
+      "sentenceEn": "He is my brother"
+    },
+    "quizIds": [
+      "beginner.quiz.0801",
+      "beginner.quiz.0802",
+      "beginner.quiz.0803",
+      "beginner.quiz.0804",
+      "beginner.quiz.0805",
+      "beginner.quiz.0806",
+      "beginner.quiz.0807",
+      "beginner.quiz.0808",
+      "beginner.quiz.0809",
+      "beginner.quiz.0810"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "beginner.stage.082",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_009",
+    "order": 2,
+    "title": "그녀는 제 누나입니다 익히기",
+    "description": "그녀는 제 누나입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.people_she_sister",
+      "ko": "그녀는 제 누나입니다.",
+      "en": "She is my sister.",
+      "sentenceKo": "그녀는 제 누나입니다",
+      "sentenceEn": "She is my sister"
+    },
+    "quizIds": [
+      "beginner.quiz.0811",
+      "beginner.quiz.0812",
+      "beginner.quiz.0813",
+      "beginner.quiz.0814",
+      "beginner.quiz.0815",
+      "beginner.quiz.0816",
+      "beginner.quiz.0817",
+      "beginner.quiz.0818",
+      "beginner.quiz.0819",
+      "beginner.quiz.0820"
+    ],
+    "requiredStageId": "beginner.stage.081"
+  },
+  {
+    "id": "beginner.stage.083",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_009",
+    "order": 3,
+    "title": "그는 제 아버지입니다 익히기",
+    "description": "그는 제 아버지입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.people_he_father",
+      "ko": "그는 제 아버지입니다.",
+      "en": "He is my father.",
+      "sentenceKo": "그는 제 아버지입니다",
+      "sentenceEn": "He is my father"
+    },
+    "quizIds": [
+      "beginner.quiz.0821",
+      "beginner.quiz.0822",
+      "beginner.quiz.0823",
+      "beginner.quiz.0824",
+      "beginner.quiz.0825",
+      "beginner.quiz.0826",
+      "beginner.quiz.0827",
+      "beginner.quiz.0828",
+      "beginner.quiz.0829",
+      "beginner.quiz.0830"
+    ],
+    "requiredStageId": "beginner.stage.082"
+  },
+  {
+    "id": "beginner.stage.084",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_009",
+    "order": 4,
+    "title": "그녀는 제 어머니입니다 익히기",
+    "description": "그녀는 제 어머니입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.people_she_mother",
+      "ko": "그녀는 제 어머니입니다.",
+      "en": "She is my mother.",
+      "sentenceKo": "그녀는 제 어머니입니다",
+      "sentenceEn": "She is my mother"
+    },
+    "quizIds": [
+      "beginner.quiz.0831",
+      "beginner.quiz.0832",
+      "beginner.quiz.0833",
+      "beginner.quiz.0834",
+      "beginner.quiz.0835",
+      "beginner.quiz.0836",
+      "beginner.quiz.0837",
+      "beginner.quiz.0838",
+      "beginner.quiz.0839",
+      "beginner.quiz.0840"
+    ],
+    "requiredStageId": "beginner.stage.083"
+  },
+  {
+    "id": "beginner.stage.085",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_009",
+    "order": 5,
+    "title": "그는 제 친구입니다 익히기",
+    "description": "그는 제 친구입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.people_he_friend",
+      "ko": "그는 제 친구입니다.",
+      "en": "He is my friend.",
+      "sentenceKo": "그는 제 친구입니다",
+      "sentenceEn": "He is my friend"
+    },
+    "quizIds": [
+      "beginner.quiz.0841",
+      "beginner.quiz.0842",
+      "beginner.quiz.0843",
+      "beginner.quiz.0844",
+      "beginner.quiz.0845",
+      "beginner.quiz.0846",
+      "beginner.quiz.0847",
+      "beginner.quiz.0848",
+      "beginner.quiz.0849",
+      "beginner.quiz.0850"
+    ],
+    "requiredStageId": "beginner.stage.084"
+  },
+  {
+    "id": "beginner.stage.086",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_009",
+    "order": 6,
+    "title": "그녀는 제 친구입니다 익히기",
+    "description": "그녀는 제 친구입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.people_she_friend",
+      "ko": "그녀는 제 친구입니다.",
+      "en": "She is my friend.",
+      "sentenceKo": "그녀는 제 친구입니다",
+      "sentenceEn": "She is my friend"
+    },
+    "quizIds": [
+      "beginner.quiz.0851",
+      "beginner.quiz.0852",
+      "beginner.quiz.0853",
+      "beginner.quiz.0854",
+      "beginner.quiz.0855",
+      "beginner.quiz.0856",
+      "beginner.quiz.0857",
+      "beginner.quiz.0858",
+      "beginner.quiz.0859",
+      "beginner.quiz.0860"
+    ],
+    "requiredStageId": "beginner.stage.085"
+  },
+  {
+    "id": "beginner.stage.087",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_009",
+    "order": 7,
+    "title": "그는 제 선생님입니다 익히기",
+    "description": "그는 제 선생님입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.people_he_teacher",
+      "ko": "그는 제 선생님입니다.",
+      "en": "He is my teacher.",
+      "sentenceKo": "그는 제 선생님입니다",
+      "sentenceEn": "He is my teacher"
+    },
+    "quizIds": [
+      "beginner.quiz.0861",
+      "beginner.quiz.0862",
+      "beginner.quiz.0863",
+      "beginner.quiz.0864",
+      "beginner.quiz.0865",
+      "beginner.quiz.0866",
+      "beginner.quiz.0867",
+      "beginner.quiz.0868",
+      "beginner.quiz.0869",
+      "beginner.quiz.0870"
+    ],
+    "requiredStageId": "beginner.stage.086"
+  },
+  {
+    "id": "beginner.stage.088",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_009",
+    "order": 8,
+    "title": "그녀는 의사입니다 익히기",
+    "description": "그녀는 의사입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.people_she_doctor",
+      "ko": "그녀는 의사입니다.",
+      "en": "She is a doctor.",
+      "sentenceKo": "그녀는 의사입니다",
+      "sentenceEn": "She is a doctor"
+    },
+    "quizIds": [
+      "beginner.quiz.0871",
+      "beginner.quiz.0872",
+      "beginner.quiz.0873",
+      "beginner.quiz.0874",
+      "beginner.quiz.0875",
+      "beginner.quiz.0876",
+      "beginner.quiz.0877",
+      "beginner.quiz.0878",
+      "beginner.quiz.0879",
+      "beginner.quiz.0880"
+    ],
+    "requiredStageId": "beginner.stage.087"
+  },
+  {
+    "id": "beginner.stage.089",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_009",
+    "order": 9,
+    "title": "그는 운전기사입니다 익히기",
+    "description": "그는 운전기사입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.people_he_driver",
+      "ko": "그는 운전기사입니다.",
+      "en": "He is a driver.",
+      "sentenceKo": "그는 운전기사입니다",
+      "sentenceEn": "He is a driver"
+    },
+    "quizIds": [
+      "beginner.quiz.0881",
+      "beginner.quiz.0882",
+      "beginner.quiz.0883",
+      "beginner.quiz.0884",
+      "beginner.quiz.0885",
+      "beginner.quiz.0886",
+      "beginner.quiz.0887",
+      "beginner.quiz.0888",
+      "beginner.quiz.0889",
+      "beginner.quiz.0890"
+    ],
+    "requiredStageId": "beginner.stage.088"
+  },
+  {
+    "id": "beginner.stage.090",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_009",
+    "order": 10,
+    "title": "그녀는 학생입니다 익히기",
+    "description": "그녀는 학생입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.people_she_student",
+      "ko": "그녀는 학생입니다.",
+      "en": "She is a student.",
+      "sentenceKo": "그녀는 학생입니다",
+      "sentenceEn": "She is a student"
+    },
+    "quizIds": [
+      "beginner.quiz.0891",
+      "beginner.quiz.0892",
+      "beginner.quiz.0893",
+      "beginner.quiz.0894",
+      "beginner.quiz.0895",
+      "beginner.quiz.0896",
+      "beginner.quiz.0897",
+      "beginner.quiz.0898",
+      "beginner.quiz.0899",
+      "beginner.quiz.0900"
+    ],
+    "requiredStageId": "beginner.stage.089"
+  },
+  {
+    "id": "beginner.stage.091",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_010",
+    "order": 1,
+    "title": "저는 행복합니다 익히기",
+    "description": "저는 행복합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.feeling_happy",
+      "ko": "저는 행복합니다.",
+      "en": "I am happy.",
+      "sentenceKo": "저는 행복합니다",
+      "sentenceEn": "I am happy"
+    },
+    "quizIds": [
+      "beginner.quiz.0901",
+      "beginner.quiz.0902",
+      "beginner.quiz.0903",
+      "beginner.quiz.0904",
+      "beginner.quiz.0905",
+      "beginner.quiz.0906",
+      "beginner.quiz.0907",
+      "beginner.quiz.0908",
+      "beginner.quiz.0909",
+      "beginner.quiz.0910"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "beginner.stage.092",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_010",
+    "order": 2,
+    "title": "저는 슬픕니다 익히기",
+    "description": "저는 슬픕니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.feeling_sad",
+      "ko": "저는 슬픕니다.",
+      "en": "I am sad.",
+      "sentenceKo": "저는 슬픕니다",
+      "sentenceEn": "I am sad"
+    },
+    "quizIds": [
+      "beginner.quiz.0911",
+      "beginner.quiz.0912",
+      "beginner.quiz.0913",
+      "beginner.quiz.0914",
+      "beginner.quiz.0915",
+      "beginner.quiz.0916",
+      "beginner.quiz.0917",
+      "beginner.quiz.0918",
+      "beginner.quiz.0919",
+      "beginner.quiz.0920"
+    ],
+    "requiredStageId": "beginner.stage.091"
+  },
+  {
+    "id": "beginner.stage.093",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_010",
+    "order": 3,
+    "title": "저는 배가 고픕니다 익히기",
+    "description": "저는 배가 고픕니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.feeling_hungry",
+      "ko": "저는 배가 고픕니다.",
+      "en": "I am hungry.",
+      "sentenceKo": "저는 배가 고픕니다",
+      "sentenceEn": "I am hungry"
+    },
+    "quizIds": [
+      "beginner.quiz.0921",
+      "beginner.quiz.0922",
+      "beginner.quiz.0923",
+      "beginner.quiz.0924",
+      "beginner.quiz.0925",
+      "beginner.quiz.0926",
+      "beginner.quiz.0927",
+      "beginner.quiz.0928",
+      "beginner.quiz.0929",
+      "beginner.quiz.0930"
+    ],
+    "requiredStageId": "beginner.stage.092"
+  },
+  {
+    "id": "beginner.stage.094",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_010",
+    "order": 4,
+    "title": "저는 목이 마릅니다 익히기",
+    "description": "저는 목이 마릅니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.feeling_thirsty",
+      "ko": "저는 목이 마릅니다.",
+      "en": "I am thirsty.",
+      "sentenceKo": "저는 목이 마릅니다",
+      "sentenceEn": "I am thirsty"
+    },
+    "quizIds": [
+      "beginner.quiz.0931",
+      "beginner.quiz.0932",
+      "beginner.quiz.0933",
+      "beginner.quiz.0934",
+      "beginner.quiz.0935",
+      "beginner.quiz.0936",
+      "beginner.quiz.0937",
+      "beginner.quiz.0938",
+      "beginner.quiz.0939",
+      "beginner.quiz.0940"
+    ],
+    "requiredStageId": "beginner.stage.093"
+  },
+  {
+    "id": "beginner.stage.095",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_010",
+    "order": 5,
+    "title": "저는 피곤합니다 익히기",
+    "description": "저는 피곤합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.feeling_tired",
+      "ko": "저는 피곤합니다.",
+      "en": "I am tired.",
+      "sentenceKo": "저는 피곤합니다",
+      "sentenceEn": "I am tired"
+    },
+    "quizIds": [
+      "beginner.quiz.0941",
+      "beginner.quiz.0942",
+      "beginner.quiz.0943",
+      "beginner.quiz.0944",
+      "beginner.quiz.0945",
+      "beginner.quiz.0946",
+      "beginner.quiz.0947",
+      "beginner.quiz.0948",
+      "beginner.quiz.0949",
+      "beginner.quiz.0950"
+    ],
+    "requiredStageId": "beginner.stage.094"
+  },
+  {
+    "id": "beginner.stage.096",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_010",
+    "order": 6,
+    "title": "저는 바쁩니다 익히기",
+    "description": "저는 바쁩니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.feeling_busy",
+      "ko": "저는 바쁩니다.",
+      "en": "I am busy.",
+      "sentenceKo": "저는 바쁩니다",
+      "sentenceEn": "I am busy"
+    },
+    "quizIds": [
+      "beginner.quiz.0951",
+      "beginner.quiz.0952",
+      "beginner.quiz.0953",
+      "beginner.quiz.0954",
+      "beginner.quiz.0955",
+      "beginner.quiz.0956",
+      "beginner.quiz.0957",
+      "beginner.quiz.0958",
+      "beginner.quiz.0959",
+      "beginner.quiz.0960"
+    ],
+    "requiredStageId": "beginner.stage.095"
+  },
+  {
+    "id": "beginner.stage.097",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_010",
+    "order": 7,
+    "title": "저는 괜찮습니다 익히기",
+    "description": "저는 괜찮습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.feeling_fine",
+      "ko": "저는 괜찮습니다.",
+      "en": "I am fine.",
+      "sentenceKo": "저는 괜찮습니다",
+      "sentenceEn": "I am fine"
+    },
+    "quizIds": [
+      "beginner.quiz.0961",
+      "beginner.quiz.0962",
+      "beginner.quiz.0963",
+      "beginner.quiz.0964",
+      "beginner.quiz.0965",
+      "beginner.quiz.0966",
+      "beginner.quiz.0967",
+      "beginner.quiz.0968",
+      "beginner.quiz.0969",
+      "beginner.quiz.0970"
+    ],
+    "requiredStageId": "beginner.stage.096"
+  },
+  {
+    "id": "beginner.stage.098",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_010",
+    "order": 8,
+    "title": "저는 신이 납니다 익히기",
+    "description": "저는 신이 납니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.feeling_excited",
+      "ko": "저는 신이 납니다.",
+      "en": "I am excited.",
+      "sentenceKo": "저는 신이 납니다",
+      "sentenceEn": "I am excited"
+    },
+    "quizIds": [
+      "beginner.quiz.0971",
+      "beginner.quiz.0972",
+      "beginner.quiz.0973",
+      "beginner.quiz.0974",
+      "beginner.quiz.0975",
+      "beginner.quiz.0976",
+      "beginner.quiz.0977",
+      "beginner.quiz.0978",
+      "beginner.quiz.0979",
+      "beginner.quiz.0980"
+    ],
+    "requiredStageId": "beginner.stage.097"
+  },
+  {
+    "id": "beginner.stage.099",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_010",
+    "order": 9,
+    "title": "저는 졸립니다 익히기",
+    "description": "저는 졸립니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.feeling_sleepy",
+      "ko": "저는 졸립니다.",
+      "en": "I am sleepy.",
+      "sentenceKo": "저는 졸립니다",
+      "sentenceEn": "I am sleepy"
+    },
+    "quizIds": [
+      "beginner.quiz.0981",
+      "beginner.quiz.0982",
+      "beginner.quiz.0983",
+      "beginner.quiz.0984",
+      "beginner.quiz.0985",
+      "beginner.quiz.0986",
+      "beginner.quiz.0987",
+      "beginner.quiz.0988",
+      "beginner.quiz.0989",
+      "beginner.quiz.0990"
+    ],
+    "requiredStageId": "beginner.stage.098"
+  },
+  {
+    "id": "beginner.stage.100",
+    "difficulty": "beginner",
+    "chapterId": "beginner_chapter_010",
+    "order": 10,
+    "title": "저는 준비되었습니다 익히기",
+    "description": "저는 준비되었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "beginner.target.feeling_ready",
+      "ko": "저는 준비되었습니다.",
+      "en": "I am ready.",
+      "sentenceKo": "저는 준비되었습니다",
+      "sentenceEn": "I am ready"
+    },
+    "quizIds": [
+      "beginner.quiz.0991",
+      "beginner.quiz.0992",
+      "beginner.quiz.0993",
+      "beginner.quiz.0994",
+      "beginner.quiz.0995",
+      "beginner.quiz.0996",
+      "beginner.quiz.0997",
+      "beginner.quiz.0998",
+      "beginner.quiz.0999",
+      "beginner.quiz.1000"
+    ],
+    "requiredStageId": "beginner.stage.099"
   }
 ]

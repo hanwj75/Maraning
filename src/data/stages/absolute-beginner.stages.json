@@ -5,25 +5,25 @@
     "chapterId": "absolute_beginner_chapter_001",
     "order": 1,
     "title": "사과 익히기",
-    "description": "사과 단어와 기본 문장을 10문제로 반복 학습한다",
+    "description": "이것은 사과입니다 학습 목표를 10문제로 반복 학습한다",
     "learningTarget": {
-      "id": "absolute-beginner.target.apple",
+      "id": "absolute-beginner.target.fruit_apple",
       "ko": "사과",
       "en": "apple",
       "sentenceKo": "이것은 사과입니다",
       "sentenceEn": "This is an apple"
     },
     "quizIds": [
-      "absolute-beginner.quiz.001",
-      "absolute-beginner.quiz.002",
-      "absolute-beginner.quiz.003",
-      "absolute-beginner.quiz.004",
-      "absolute-beginner.quiz.005",
-      "absolute-beginner.quiz.006",
-      "absolute-beginner.quiz.007",
-      "absolute-beginner.quiz.008",
-      "absolute-beginner.quiz.009",
-      "absolute-beginner.quiz.010"
+      "absolute-beginner.quiz.0001",
+      "absolute-beginner.quiz.0002",
+      "absolute-beginner.quiz.0003",
+      "absolute-beginner.quiz.0004",
+      "absolute-beginner.quiz.0005",
+      "absolute-beginner.quiz.0006",
+      "absolute-beginner.quiz.0007",
+      "absolute-beginner.quiz.0008",
+      "absolute-beginner.quiz.0009",
+      "absolute-beginner.quiz.0010"
     ],
     "requiredStageId": null
   },
@@ -32,26 +32,26 @@
     "difficulty": "absolute_beginner",
     "chapterId": "absolute_beginner_chapter_001",
     "order": 2,
-    "title": "고양이 익히기",
-    "description": "고양이 단어와 기본 문장을 10문제로 반복 학습한다",
+    "title": "바나나 익히기",
+    "description": "이것은 바나나입니다 학습 목표를 10문제로 반복 학습한다",
     "learningTarget": {
-      "id": "absolute-beginner.target.cat",
-      "ko": "고양이",
-      "en": "cat",
-      "sentenceKo": "이것은 고양이입니다",
-      "sentenceEn": "This is a cat"
+      "id": "absolute-beginner.target.fruit_banana",
+      "ko": "바나나",
+      "en": "banana",
+      "sentenceKo": "이것은 바나나입니다",
+      "sentenceEn": "This is a banana"
     },
     "quizIds": [
-      "absolute-beginner.quiz.011",
-      "absolute-beginner.quiz.012",
-      "absolute-beginner.quiz.013",
-      "absolute-beginner.quiz.014",
-      "absolute-beginner.quiz.015",
-      "absolute-beginner.quiz.016",
-      "absolute-beginner.quiz.017",
-      "absolute-beginner.quiz.018",
-      "absolute-beginner.quiz.019",
-      "absolute-beginner.quiz.020"
+      "absolute-beginner.quiz.0011",
+      "absolute-beginner.quiz.0012",
+      "absolute-beginner.quiz.0013",
+      "absolute-beginner.quiz.0014",
+      "absolute-beginner.quiz.0015",
+      "absolute-beginner.quiz.0016",
+      "absolute-beginner.quiz.0017",
+      "absolute-beginner.quiz.0018",
+      "absolute-beginner.quiz.0019",
+      "absolute-beginner.quiz.0020"
     ],
     "requiredStageId": "absolute-beginner.stage.001"
   },
@@ -60,27 +60,2743 @@
     "difficulty": "absolute_beginner",
     "chapterId": "absolute_beginner_chapter_001",
     "order": 3,
-    "title": "강아지 익히기",
-    "description": "강아지 단어와 기본 문장을 10문제로 반복 학습한다",
+    "title": "포도 익히기",
+    "description": "이것은 포도입니다 학습 목표를 10문제로 반복 학습한다",
     "learningTarget": {
-      "id": "absolute-beginner.target.dog",
+      "id": "absolute-beginner.target.fruit_grape",
+      "ko": "포도",
+      "en": "grape",
+      "sentenceKo": "이것은 포도입니다",
+      "sentenceEn": "This is a grape"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0021",
+      "absolute-beginner.quiz.0022",
+      "absolute-beginner.quiz.0023",
+      "absolute-beginner.quiz.0024",
+      "absolute-beginner.quiz.0025",
+      "absolute-beginner.quiz.0026",
+      "absolute-beginner.quiz.0027",
+      "absolute-beginner.quiz.0028",
+      "absolute-beginner.quiz.0029",
+      "absolute-beginner.quiz.0030"
+    ],
+    "requiredStageId": "absolute-beginner.stage.002"
+  },
+  {
+    "id": "absolute-beginner.stage.004",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_001",
+    "order": 4,
+    "title": "오렌지 익히기",
+    "description": "이것은 오렌지입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.fruit_orange",
+      "ko": "오렌지",
+      "en": "orange",
+      "sentenceKo": "이것은 오렌지입니다",
+      "sentenceEn": "This is an orange"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0031",
+      "absolute-beginner.quiz.0032",
+      "absolute-beginner.quiz.0033",
+      "absolute-beginner.quiz.0034",
+      "absolute-beginner.quiz.0035",
+      "absolute-beginner.quiz.0036",
+      "absolute-beginner.quiz.0037",
+      "absolute-beginner.quiz.0038",
+      "absolute-beginner.quiz.0039",
+      "absolute-beginner.quiz.0040"
+    ],
+    "requiredStageId": "absolute-beginner.stage.003"
+  },
+  {
+    "id": "absolute-beginner.stage.005",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_001",
+    "order": 5,
+    "title": "복숭아 익히기",
+    "description": "이것은 복숭아입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.fruit_peach",
+      "ko": "복숭아",
+      "en": "peach",
+      "sentenceKo": "이것은 복숭아입니다",
+      "sentenceEn": "This is a peach"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0041",
+      "absolute-beginner.quiz.0042",
+      "absolute-beginner.quiz.0043",
+      "absolute-beginner.quiz.0044",
+      "absolute-beginner.quiz.0045",
+      "absolute-beginner.quiz.0046",
+      "absolute-beginner.quiz.0047",
+      "absolute-beginner.quiz.0048",
+      "absolute-beginner.quiz.0049",
+      "absolute-beginner.quiz.0050"
+    ],
+    "requiredStageId": "absolute-beginner.stage.004"
+  },
+  {
+    "id": "absolute-beginner.stage.006",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_001",
+    "order": 6,
+    "title": "멜론 익히기",
+    "description": "이것은 멜론입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.fruit_melon",
+      "ko": "멜론",
+      "en": "melon",
+      "sentenceKo": "이것은 멜론입니다",
+      "sentenceEn": "This is a melon"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0051",
+      "absolute-beginner.quiz.0052",
+      "absolute-beginner.quiz.0053",
+      "absolute-beginner.quiz.0054",
+      "absolute-beginner.quiz.0055",
+      "absolute-beginner.quiz.0056",
+      "absolute-beginner.quiz.0057",
+      "absolute-beginner.quiz.0058",
+      "absolute-beginner.quiz.0059",
+      "absolute-beginner.quiz.0060"
+    ],
+    "requiredStageId": "absolute-beginner.stage.005"
+  },
+  {
+    "id": "absolute-beginner.stage.007",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_001",
+    "order": 7,
+    "title": "딸기 익히기",
+    "description": "이것은 딸기입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.fruit_strawberry",
+      "ko": "딸기",
+      "en": "strawberry",
+      "sentenceKo": "이것은 딸기입니다",
+      "sentenceEn": "This is a strawberry"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0061",
+      "absolute-beginner.quiz.0062",
+      "absolute-beginner.quiz.0063",
+      "absolute-beginner.quiz.0064",
+      "absolute-beginner.quiz.0065",
+      "absolute-beginner.quiz.0066",
+      "absolute-beginner.quiz.0067",
+      "absolute-beginner.quiz.0068",
+      "absolute-beginner.quiz.0069",
+      "absolute-beginner.quiz.0070"
+    ],
+    "requiredStageId": "absolute-beginner.stage.006"
+  },
+  {
+    "id": "absolute-beginner.stage.008",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_001",
+    "order": 8,
+    "title": "레몬 익히기",
+    "description": "이것은 레몬입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.fruit_lemon",
+      "ko": "레몬",
+      "en": "lemon",
+      "sentenceKo": "이것은 레몬입니다",
+      "sentenceEn": "This is a lemon"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0071",
+      "absolute-beginner.quiz.0072",
+      "absolute-beginner.quiz.0073",
+      "absolute-beginner.quiz.0074",
+      "absolute-beginner.quiz.0075",
+      "absolute-beginner.quiz.0076",
+      "absolute-beginner.quiz.0077",
+      "absolute-beginner.quiz.0078",
+      "absolute-beginner.quiz.0079",
+      "absolute-beginner.quiz.0080"
+    ],
+    "requiredStageId": "absolute-beginner.stage.007"
+  },
+  {
+    "id": "absolute-beginner.stage.009",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_001",
+    "order": 9,
+    "title": "배 익히기",
+    "description": "이것은 배입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.fruit_pear",
+      "ko": "배",
+      "en": "pear",
+      "sentenceKo": "이것은 배입니다",
+      "sentenceEn": "This is a pear"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0081",
+      "absolute-beginner.quiz.0082",
+      "absolute-beginner.quiz.0083",
+      "absolute-beginner.quiz.0084",
+      "absolute-beginner.quiz.0085",
+      "absolute-beginner.quiz.0086",
+      "absolute-beginner.quiz.0087",
+      "absolute-beginner.quiz.0088",
+      "absolute-beginner.quiz.0089",
+      "absolute-beginner.quiz.0090"
+    ],
+    "requiredStageId": "absolute-beginner.stage.008"
+  },
+  {
+    "id": "absolute-beginner.stage.010",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_001",
+    "order": 10,
+    "title": "망고 익히기",
+    "description": "이것은 망고입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.fruit_mango",
+      "ko": "망고",
+      "en": "mango",
+      "sentenceKo": "이것은 망고입니다",
+      "sentenceEn": "This is a mango"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0091",
+      "absolute-beginner.quiz.0092",
+      "absolute-beginner.quiz.0093",
+      "absolute-beginner.quiz.0094",
+      "absolute-beginner.quiz.0095",
+      "absolute-beginner.quiz.0096",
+      "absolute-beginner.quiz.0097",
+      "absolute-beginner.quiz.0098",
+      "absolute-beginner.quiz.0099",
+      "absolute-beginner.quiz.0100"
+    ],
+    "requiredStageId": "absolute-beginner.stage.009"
+  },
+  {
+    "id": "absolute-beginner.stage.011",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_002",
+    "order": 1,
+    "title": "고양이 익히기",
+    "description": "이것은 고양이입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.animal_cat",
+      "ko": "고양이",
+      "en": "cat",
+      "sentenceKo": "이것은 고양이입니다",
+      "sentenceEn": "This is a cat"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0101",
+      "absolute-beginner.quiz.0102",
+      "absolute-beginner.quiz.0103",
+      "absolute-beginner.quiz.0104",
+      "absolute-beginner.quiz.0105",
+      "absolute-beginner.quiz.0106",
+      "absolute-beginner.quiz.0107",
+      "absolute-beginner.quiz.0108",
+      "absolute-beginner.quiz.0109",
+      "absolute-beginner.quiz.0110"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "absolute-beginner.stage.012",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_002",
+    "order": 2,
+    "title": "강아지 익히기",
+    "description": "이것은 강아지입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.animal_dog",
       "ko": "강아지",
       "en": "dog",
       "sentenceKo": "이것은 강아지입니다",
       "sentenceEn": "This is a dog"
     },
     "quizIds": [
-      "absolute-beginner.quiz.021",
-      "absolute-beginner.quiz.022",
-      "absolute-beginner.quiz.023",
-      "absolute-beginner.quiz.024",
-      "absolute-beginner.quiz.025",
-      "absolute-beginner.quiz.026",
-      "absolute-beginner.quiz.027",
-      "absolute-beginner.quiz.028",
-      "absolute-beginner.quiz.029",
-      "absolute-beginner.quiz.030"
+      "absolute-beginner.quiz.0111",
+      "absolute-beginner.quiz.0112",
+      "absolute-beginner.quiz.0113",
+      "absolute-beginner.quiz.0114",
+      "absolute-beginner.quiz.0115",
+      "absolute-beginner.quiz.0116",
+      "absolute-beginner.quiz.0117",
+      "absolute-beginner.quiz.0118",
+      "absolute-beginner.quiz.0119",
+      "absolute-beginner.quiz.0120"
     ],
-    "requiredStageId": "absolute-beginner.stage.002"
+    "requiredStageId": "absolute-beginner.stage.011"
+  },
+  {
+    "id": "absolute-beginner.stage.013",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_002",
+    "order": 3,
+    "title": "토끼 익히기",
+    "description": "이것은 토끼입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.animal_rabbit",
+      "ko": "토끼",
+      "en": "rabbit",
+      "sentenceKo": "이것은 토끼입니다",
+      "sentenceEn": "This is a rabbit"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0121",
+      "absolute-beginner.quiz.0122",
+      "absolute-beginner.quiz.0123",
+      "absolute-beginner.quiz.0124",
+      "absolute-beginner.quiz.0125",
+      "absolute-beginner.quiz.0126",
+      "absolute-beginner.quiz.0127",
+      "absolute-beginner.quiz.0128",
+      "absolute-beginner.quiz.0129",
+      "absolute-beginner.quiz.0130"
+    ],
+    "requiredStageId": "absolute-beginner.stage.012"
+  },
+  {
+    "id": "absolute-beginner.stage.014",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_002",
+    "order": 4,
+    "title": "곰 익히기",
+    "description": "이것은 곰입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.animal_bear",
+      "ko": "곰",
+      "en": "bear",
+      "sentenceKo": "이것은 곰입니다",
+      "sentenceEn": "This is a bear"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0131",
+      "absolute-beginner.quiz.0132",
+      "absolute-beginner.quiz.0133",
+      "absolute-beginner.quiz.0134",
+      "absolute-beginner.quiz.0135",
+      "absolute-beginner.quiz.0136",
+      "absolute-beginner.quiz.0137",
+      "absolute-beginner.quiz.0138",
+      "absolute-beginner.quiz.0139",
+      "absolute-beginner.quiz.0140"
+    ],
+    "requiredStageId": "absolute-beginner.stage.013"
+  },
+  {
+    "id": "absolute-beginner.stage.015",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_002",
+    "order": 5,
+    "title": "호랑이 익히기",
+    "description": "이것은 호랑이입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.animal_tiger",
+      "ko": "호랑이",
+      "en": "tiger",
+      "sentenceKo": "이것은 호랑이입니다",
+      "sentenceEn": "This is a tiger"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0141",
+      "absolute-beginner.quiz.0142",
+      "absolute-beginner.quiz.0143",
+      "absolute-beginner.quiz.0144",
+      "absolute-beginner.quiz.0145",
+      "absolute-beginner.quiz.0146",
+      "absolute-beginner.quiz.0147",
+      "absolute-beginner.quiz.0148",
+      "absolute-beginner.quiz.0149",
+      "absolute-beginner.quiz.0150"
+    ],
+    "requiredStageId": "absolute-beginner.stage.014"
+  },
+  {
+    "id": "absolute-beginner.stage.016",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_002",
+    "order": 6,
+    "title": "사자 익히기",
+    "description": "이것은 사자입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.animal_lion",
+      "ko": "사자",
+      "en": "lion",
+      "sentenceKo": "이것은 사자입니다",
+      "sentenceEn": "This is a lion"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0151",
+      "absolute-beginner.quiz.0152",
+      "absolute-beginner.quiz.0153",
+      "absolute-beginner.quiz.0154",
+      "absolute-beginner.quiz.0155",
+      "absolute-beginner.quiz.0156",
+      "absolute-beginner.quiz.0157",
+      "absolute-beginner.quiz.0158",
+      "absolute-beginner.quiz.0159",
+      "absolute-beginner.quiz.0160"
+    ],
+    "requiredStageId": "absolute-beginner.stage.015"
+  },
+  {
+    "id": "absolute-beginner.stage.017",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_002",
+    "order": 7,
+    "title": "코끼리 익히기",
+    "description": "이것은 코끼리입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.animal_elephant",
+      "ko": "코끼리",
+      "en": "elephant",
+      "sentenceKo": "이것은 코끼리입니다",
+      "sentenceEn": "This is an elephant"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0161",
+      "absolute-beginner.quiz.0162",
+      "absolute-beginner.quiz.0163",
+      "absolute-beginner.quiz.0164",
+      "absolute-beginner.quiz.0165",
+      "absolute-beginner.quiz.0166",
+      "absolute-beginner.quiz.0167",
+      "absolute-beginner.quiz.0168",
+      "absolute-beginner.quiz.0169",
+      "absolute-beginner.quiz.0170"
+    ],
+    "requiredStageId": "absolute-beginner.stage.016"
+  },
+  {
+    "id": "absolute-beginner.stage.018",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_002",
+    "order": 8,
+    "title": "원숭이 익히기",
+    "description": "이것은 원숭이입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.animal_monkey",
+      "ko": "원숭이",
+      "en": "monkey",
+      "sentenceKo": "이것은 원숭이입니다",
+      "sentenceEn": "This is a monkey"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0171",
+      "absolute-beginner.quiz.0172",
+      "absolute-beginner.quiz.0173",
+      "absolute-beginner.quiz.0174",
+      "absolute-beginner.quiz.0175",
+      "absolute-beginner.quiz.0176",
+      "absolute-beginner.quiz.0177",
+      "absolute-beginner.quiz.0178",
+      "absolute-beginner.quiz.0179",
+      "absolute-beginner.quiz.0180"
+    ],
+    "requiredStageId": "absolute-beginner.stage.017"
+  },
+  {
+    "id": "absolute-beginner.stage.019",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_002",
+    "order": 9,
+    "title": "새 익히기",
+    "description": "이것은 새입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.animal_bird",
+      "ko": "새",
+      "en": "bird",
+      "sentenceKo": "이것은 새입니다",
+      "sentenceEn": "This is a bird"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0181",
+      "absolute-beginner.quiz.0182",
+      "absolute-beginner.quiz.0183",
+      "absolute-beginner.quiz.0184",
+      "absolute-beginner.quiz.0185",
+      "absolute-beginner.quiz.0186",
+      "absolute-beginner.quiz.0187",
+      "absolute-beginner.quiz.0188",
+      "absolute-beginner.quiz.0189",
+      "absolute-beginner.quiz.0190"
+    ],
+    "requiredStageId": "absolute-beginner.stage.018"
+  },
+  {
+    "id": "absolute-beginner.stage.020",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_002",
+    "order": 10,
+    "title": "물고기 익히기",
+    "description": "이것은 물고기입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.animal_fish",
+      "ko": "물고기",
+      "en": "fish",
+      "sentenceKo": "이것은 물고기입니다",
+      "sentenceEn": "This is a fish"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0191",
+      "absolute-beginner.quiz.0192",
+      "absolute-beginner.quiz.0193",
+      "absolute-beginner.quiz.0194",
+      "absolute-beginner.quiz.0195",
+      "absolute-beginner.quiz.0196",
+      "absolute-beginner.quiz.0197",
+      "absolute-beginner.quiz.0198",
+      "absolute-beginner.quiz.0199",
+      "absolute-beginner.quiz.0200"
+    ],
+    "requiredStageId": "absolute-beginner.stage.019"
+  },
+  {
+    "id": "absolute-beginner.stage.021",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_003",
+    "order": 1,
+    "title": "책 익히기",
+    "description": "이것은 책입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.school_book",
+      "ko": "책",
+      "en": "book",
+      "sentenceKo": "이것은 책입니다",
+      "sentenceEn": "This is a book"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0201",
+      "absolute-beginner.quiz.0202",
+      "absolute-beginner.quiz.0203",
+      "absolute-beginner.quiz.0204",
+      "absolute-beginner.quiz.0205",
+      "absolute-beginner.quiz.0206",
+      "absolute-beginner.quiz.0207",
+      "absolute-beginner.quiz.0208",
+      "absolute-beginner.quiz.0209",
+      "absolute-beginner.quiz.0210"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "absolute-beginner.stage.022",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_003",
+    "order": 2,
+    "title": "펜 익히기",
+    "description": "이것은 펜입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.school_pen",
+      "ko": "펜",
+      "en": "pen",
+      "sentenceKo": "이것은 펜입니다",
+      "sentenceEn": "This is a pen"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0211",
+      "absolute-beginner.quiz.0212",
+      "absolute-beginner.quiz.0213",
+      "absolute-beginner.quiz.0214",
+      "absolute-beginner.quiz.0215",
+      "absolute-beginner.quiz.0216",
+      "absolute-beginner.quiz.0217",
+      "absolute-beginner.quiz.0218",
+      "absolute-beginner.quiz.0219",
+      "absolute-beginner.quiz.0220"
+    ],
+    "requiredStageId": "absolute-beginner.stage.021"
+  },
+  {
+    "id": "absolute-beginner.stage.023",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_003",
+    "order": 3,
+    "title": "연필 익히기",
+    "description": "이것은 연필입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.school_pencil",
+      "ko": "연필",
+      "en": "pencil",
+      "sentenceKo": "이것은 연필입니다",
+      "sentenceEn": "This is a pencil"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0221",
+      "absolute-beginner.quiz.0222",
+      "absolute-beginner.quiz.0223",
+      "absolute-beginner.quiz.0224",
+      "absolute-beginner.quiz.0225",
+      "absolute-beginner.quiz.0226",
+      "absolute-beginner.quiz.0227",
+      "absolute-beginner.quiz.0228",
+      "absolute-beginner.quiz.0229",
+      "absolute-beginner.quiz.0230"
+    ],
+    "requiredStageId": "absolute-beginner.stage.022"
+  },
+  {
+    "id": "absolute-beginner.stage.024",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_003",
+    "order": 4,
+    "title": "지우개 익히기",
+    "description": "이것은 지우개입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.school_eraser",
+      "ko": "지우개",
+      "en": "eraser",
+      "sentenceKo": "이것은 지우개입니다",
+      "sentenceEn": "This is an eraser"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0231",
+      "absolute-beginner.quiz.0232",
+      "absolute-beginner.quiz.0233",
+      "absolute-beginner.quiz.0234",
+      "absolute-beginner.quiz.0235",
+      "absolute-beginner.quiz.0236",
+      "absolute-beginner.quiz.0237",
+      "absolute-beginner.quiz.0238",
+      "absolute-beginner.quiz.0239",
+      "absolute-beginner.quiz.0240"
+    ],
+    "requiredStageId": "absolute-beginner.stage.023"
+  },
+  {
+    "id": "absolute-beginner.stage.025",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_003",
+    "order": 5,
+    "title": "자 익히기",
+    "description": "이것은 자입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.school_ruler",
+      "ko": "자",
+      "en": "ruler",
+      "sentenceKo": "이것은 자입니다",
+      "sentenceEn": "This is a ruler"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0241",
+      "absolute-beginner.quiz.0242",
+      "absolute-beginner.quiz.0243",
+      "absolute-beginner.quiz.0244",
+      "absolute-beginner.quiz.0245",
+      "absolute-beginner.quiz.0246",
+      "absolute-beginner.quiz.0247",
+      "absolute-beginner.quiz.0248",
+      "absolute-beginner.quiz.0249",
+      "absolute-beginner.quiz.0250"
+    ],
+    "requiredStageId": "absolute-beginner.stage.024"
+  },
+  {
+    "id": "absolute-beginner.stage.026",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_003",
+    "order": 6,
+    "title": "가방 익히기",
+    "description": "이것은 가방입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.school_bag",
+      "ko": "가방",
+      "en": "bag",
+      "sentenceKo": "이것은 가방입니다",
+      "sentenceEn": "This is a bag"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0251",
+      "absolute-beginner.quiz.0252",
+      "absolute-beginner.quiz.0253",
+      "absolute-beginner.quiz.0254",
+      "absolute-beginner.quiz.0255",
+      "absolute-beginner.quiz.0256",
+      "absolute-beginner.quiz.0257",
+      "absolute-beginner.quiz.0258",
+      "absolute-beginner.quiz.0259",
+      "absolute-beginner.quiz.0260"
+    ],
+    "requiredStageId": "absolute-beginner.stage.025"
+  },
+  {
+    "id": "absolute-beginner.stage.027",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_003",
+    "order": 7,
+    "title": "공책 익히기",
+    "description": "이것은 공책입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.school_notebook",
+      "ko": "공책",
+      "en": "notebook",
+      "sentenceKo": "이것은 공책입니다",
+      "sentenceEn": "This is a notebook"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0261",
+      "absolute-beginner.quiz.0262",
+      "absolute-beginner.quiz.0263",
+      "absolute-beginner.quiz.0264",
+      "absolute-beginner.quiz.0265",
+      "absolute-beginner.quiz.0266",
+      "absolute-beginner.quiz.0267",
+      "absolute-beginner.quiz.0268",
+      "absolute-beginner.quiz.0269",
+      "absolute-beginner.quiz.0270"
+    ],
+    "requiredStageId": "absolute-beginner.stage.026"
+  },
+  {
+    "id": "absolute-beginner.stage.028",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_003",
+    "order": 8,
+    "title": "책상 익히기",
+    "description": "이것은 책상입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.school_desk",
+      "ko": "책상",
+      "en": "desk",
+      "sentenceKo": "이것은 책상입니다",
+      "sentenceEn": "This is a desk"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0271",
+      "absolute-beginner.quiz.0272",
+      "absolute-beginner.quiz.0273",
+      "absolute-beginner.quiz.0274",
+      "absolute-beginner.quiz.0275",
+      "absolute-beginner.quiz.0276",
+      "absolute-beginner.quiz.0277",
+      "absolute-beginner.quiz.0278",
+      "absolute-beginner.quiz.0279",
+      "absolute-beginner.quiz.0280"
+    ],
+    "requiredStageId": "absolute-beginner.stage.027"
+  },
+  {
+    "id": "absolute-beginner.stage.029",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_003",
+    "order": 9,
+    "title": "의자 익히기",
+    "description": "이것은 의자입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.school_chair",
+      "ko": "의자",
+      "en": "chair",
+      "sentenceKo": "이것은 의자입니다",
+      "sentenceEn": "This is a chair"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0281",
+      "absolute-beginner.quiz.0282",
+      "absolute-beginner.quiz.0283",
+      "absolute-beginner.quiz.0284",
+      "absolute-beginner.quiz.0285",
+      "absolute-beginner.quiz.0286",
+      "absolute-beginner.quiz.0287",
+      "absolute-beginner.quiz.0288",
+      "absolute-beginner.quiz.0289",
+      "absolute-beginner.quiz.0290"
+    ],
+    "requiredStageId": "absolute-beginner.stage.028"
+  },
+  {
+    "id": "absolute-beginner.stage.030",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_003",
+    "order": 10,
+    "title": "마커 익히기",
+    "description": "이것은 마커입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.school_marker",
+      "ko": "마커",
+      "en": "marker",
+      "sentenceKo": "이것은 마커입니다",
+      "sentenceEn": "This is a marker"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0291",
+      "absolute-beginner.quiz.0292",
+      "absolute-beginner.quiz.0293",
+      "absolute-beginner.quiz.0294",
+      "absolute-beginner.quiz.0295",
+      "absolute-beginner.quiz.0296",
+      "absolute-beginner.quiz.0297",
+      "absolute-beginner.quiz.0298",
+      "absolute-beginner.quiz.0299",
+      "absolute-beginner.quiz.0300"
+    ],
+    "requiredStageId": "absolute-beginner.stage.029"
+  },
+  {
+    "id": "absolute-beginner.stage.031",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_004",
+    "order": 1,
+    "title": "침대 익히기",
+    "description": "이것은 침대입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.home_bed",
+      "ko": "침대",
+      "en": "bed",
+      "sentenceKo": "이것은 침대입니다",
+      "sentenceEn": "This is a bed"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0301",
+      "absolute-beginner.quiz.0302",
+      "absolute-beginner.quiz.0303",
+      "absolute-beginner.quiz.0304",
+      "absolute-beginner.quiz.0305",
+      "absolute-beginner.quiz.0306",
+      "absolute-beginner.quiz.0307",
+      "absolute-beginner.quiz.0308",
+      "absolute-beginner.quiz.0309",
+      "absolute-beginner.quiz.0310"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "absolute-beginner.stage.032",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_004",
+    "order": 2,
+    "title": "문 익히기",
+    "description": "이것은 문입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.home_door",
+      "ko": "문",
+      "en": "door",
+      "sentenceKo": "이것은 문입니다",
+      "sentenceEn": "This is a door"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0311",
+      "absolute-beginner.quiz.0312",
+      "absolute-beginner.quiz.0313",
+      "absolute-beginner.quiz.0314",
+      "absolute-beginner.quiz.0315",
+      "absolute-beginner.quiz.0316",
+      "absolute-beginner.quiz.0317",
+      "absolute-beginner.quiz.0318",
+      "absolute-beginner.quiz.0319",
+      "absolute-beginner.quiz.0320"
+    ],
+    "requiredStageId": "absolute-beginner.stage.031"
+  },
+  {
+    "id": "absolute-beginner.stage.033",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_004",
+    "order": 3,
+    "title": "창문 익히기",
+    "description": "이것은 창문입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.home_window",
+      "ko": "창문",
+      "en": "window",
+      "sentenceKo": "이것은 창문입니다",
+      "sentenceEn": "This is a window"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0321",
+      "absolute-beginner.quiz.0322",
+      "absolute-beginner.quiz.0323",
+      "absolute-beginner.quiz.0324",
+      "absolute-beginner.quiz.0325",
+      "absolute-beginner.quiz.0326",
+      "absolute-beginner.quiz.0327",
+      "absolute-beginner.quiz.0328",
+      "absolute-beginner.quiz.0329",
+      "absolute-beginner.quiz.0330"
+    ],
+    "requiredStageId": "absolute-beginner.stage.032"
+  },
+  {
+    "id": "absolute-beginner.stage.034",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_004",
+    "order": 4,
+    "title": "테이블 익히기",
+    "description": "이것은 테이블입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.home_table",
+      "ko": "테이블",
+      "en": "table",
+      "sentenceKo": "이것은 테이블입니다",
+      "sentenceEn": "This is a table"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0331",
+      "absolute-beginner.quiz.0332",
+      "absolute-beginner.quiz.0333",
+      "absolute-beginner.quiz.0334",
+      "absolute-beginner.quiz.0335",
+      "absolute-beginner.quiz.0336",
+      "absolute-beginner.quiz.0337",
+      "absolute-beginner.quiz.0338",
+      "absolute-beginner.quiz.0339",
+      "absolute-beginner.quiz.0340"
+    ],
+    "requiredStageId": "absolute-beginner.stage.033"
+  },
+  {
+    "id": "absolute-beginner.stage.035",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_004",
+    "order": 5,
+    "title": "컵 익히기",
+    "description": "이것은 컵입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.home_cup",
+      "ko": "컵",
+      "en": "cup",
+      "sentenceKo": "이것은 컵입니다",
+      "sentenceEn": "This is a cup"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0341",
+      "absolute-beginner.quiz.0342",
+      "absolute-beginner.quiz.0343",
+      "absolute-beginner.quiz.0344",
+      "absolute-beginner.quiz.0345",
+      "absolute-beginner.quiz.0346",
+      "absolute-beginner.quiz.0347",
+      "absolute-beginner.quiz.0348",
+      "absolute-beginner.quiz.0349",
+      "absolute-beginner.quiz.0350"
+    ],
+    "requiredStageId": "absolute-beginner.stage.034"
+  },
+  {
+    "id": "absolute-beginner.stage.036",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_004",
+    "order": 6,
+    "title": "숟가락 익히기",
+    "description": "이것은 숟가락입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.home_spoon",
+      "ko": "숟가락",
+      "en": "spoon",
+      "sentenceKo": "이것은 숟가락입니다",
+      "sentenceEn": "This is a spoon"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0351",
+      "absolute-beginner.quiz.0352",
+      "absolute-beginner.quiz.0353",
+      "absolute-beginner.quiz.0354",
+      "absolute-beginner.quiz.0355",
+      "absolute-beginner.quiz.0356",
+      "absolute-beginner.quiz.0357",
+      "absolute-beginner.quiz.0358",
+      "absolute-beginner.quiz.0359",
+      "absolute-beginner.quiz.0360"
+    ],
+    "requiredStageId": "absolute-beginner.stage.035"
+  },
+  {
+    "id": "absolute-beginner.stage.037",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_004",
+    "order": 7,
+    "title": "접시 익히기",
+    "description": "이것은 접시입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.home_plate",
+      "ko": "접시",
+      "en": "plate",
+      "sentenceKo": "이것은 접시입니다",
+      "sentenceEn": "This is a plate"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0361",
+      "absolute-beginner.quiz.0362",
+      "absolute-beginner.quiz.0363",
+      "absolute-beginner.quiz.0364",
+      "absolute-beginner.quiz.0365",
+      "absolute-beginner.quiz.0366",
+      "absolute-beginner.quiz.0367",
+      "absolute-beginner.quiz.0368",
+      "absolute-beginner.quiz.0369",
+      "absolute-beginner.quiz.0370"
+    ],
+    "requiredStageId": "absolute-beginner.stage.036"
+  },
+  {
+    "id": "absolute-beginner.stage.038",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_004",
+    "order": 8,
+    "title": "램프 익히기",
+    "description": "이것은 램프입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.home_lamp",
+      "ko": "램프",
+      "en": "lamp",
+      "sentenceKo": "이것은 램프입니다",
+      "sentenceEn": "This is a lamp"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0371",
+      "absolute-beginner.quiz.0372",
+      "absolute-beginner.quiz.0373",
+      "absolute-beginner.quiz.0374",
+      "absolute-beginner.quiz.0375",
+      "absolute-beginner.quiz.0376",
+      "absolute-beginner.quiz.0377",
+      "absolute-beginner.quiz.0378",
+      "absolute-beginner.quiz.0379",
+      "absolute-beginner.quiz.0380"
+    ],
+    "requiredStageId": "absolute-beginner.stage.037"
+  },
+  {
+    "id": "absolute-beginner.stage.039",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_004",
+    "order": 9,
+    "title": "시계 익히기",
+    "description": "이것은 시계입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.home_clock",
+      "ko": "시계",
+      "en": "clock",
+      "sentenceKo": "이것은 시계입니다",
+      "sentenceEn": "This is a clock"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0381",
+      "absolute-beginner.quiz.0382",
+      "absolute-beginner.quiz.0383",
+      "absolute-beginner.quiz.0384",
+      "absolute-beginner.quiz.0385",
+      "absolute-beginner.quiz.0386",
+      "absolute-beginner.quiz.0387",
+      "absolute-beginner.quiz.0388",
+      "absolute-beginner.quiz.0389",
+      "absolute-beginner.quiz.0390"
+    ],
+    "requiredStageId": "absolute-beginner.stage.038"
+  },
+  {
+    "id": "absolute-beginner.stage.040",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_004",
+    "order": 10,
+    "title": "거울 익히기",
+    "description": "이것은 거울입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.home_mirror",
+      "ko": "거울",
+      "en": "mirror",
+      "sentenceKo": "이것은 거울입니다",
+      "sentenceEn": "This is a mirror"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0391",
+      "absolute-beginner.quiz.0392",
+      "absolute-beginner.quiz.0393",
+      "absolute-beginner.quiz.0394",
+      "absolute-beginner.quiz.0395",
+      "absolute-beginner.quiz.0396",
+      "absolute-beginner.quiz.0397",
+      "absolute-beginner.quiz.0398",
+      "absolute-beginner.quiz.0399",
+      "absolute-beginner.quiz.0400"
+    ],
+    "requiredStageId": "absolute-beginner.stage.039"
+  },
+  {
+    "id": "absolute-beginner.stage.041",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_005",
+    "order": 1,
+    "title": "밥 익히기",
+    "description": "이것은 밥입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.food_rice",
+      "ko": "밥",
+      "en": "rice",
+      "sentenceKo": "이것은 밥입니다",
+      "sentenceEn": "This is a rice"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0401",
+      "absolute-beginner.quiz.0402",
+      "absolute-beginner.quiz.0403",
+      "absolute-beginner.quiz.0404",
+      "absolute-beginner.quiz.0405",
+      "absolute-beginner.quiz.0406",
+      "absolute-beginner.quiz.0407",
+      "absolute-beginner.quiz.0408",
+      "absolute-beginner.quiz.0409",
+      "absolute-beginner.quiz.0410"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "absolute-beginner.stage.042",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_005",
+    "order": 2,
+    "title": "빵 익히기",
+    "description": "이것은 빵입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.food_bread",
+      "ko": "빵",
+      "en": "bread",
+      "sentenceKo": "이것은 빵입니다",
+      "sentenceEn": "This is a bread"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0411",
+      "absolute-beginner.quiz.0412",
+      "absolute-beginner.quiz.0413",
+      "absolute-beginner.quiz.0414",
+      "absolute-beginner.quiz.0415",
+      "absolute-beginner.quiz.0416",
+      "absolute-beginner.quiz.0417",
+      "absolute-beginner.quiz.0418",
+      "absolute-beginner.quiz.0419",
+      "absolute-beginner.quiz.0420"
+    ],
+    "requiredStageId": "absolute-beginner.stage.041"
+  },
+  {
+    "id": "absolute-beginner.stage.043",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_005",
+    "order": 3,
+    "title": "수프 익히기",
+    "description": "이것은 수프입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.food_soup",
+      "ko": "수프",
+      "en": "soup",
+      "sentenceKo": "이것은 수프입니다",
+      "sentenceEn": "This is a soup"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0421",
+      "absolute-beginner.quiz.0422",
+      "absolute-beginner.quiz.0423",
+      "absolute-beginner.quiz.0424",
+      "absolute-beginner.quiz.0425",
+      "absolute-beginner.quiz.0426",
+      "absolute-beginner.quiz.0427",
+      "absolute-beginner.quiz.0428",
+      "absolute-beginner.quiz.0429",
+      "absolute-beginner.quiz.0430"
+    ],
+    "requiredStageId": "absolute-beginner.stage.042"
+  },
+  {
+    "id": "absolute-beginner.stage.044",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_005",
+    "order": 4,
+    "title": "케이크 익히기",
+    "description": "이것은 케이크입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.food_cake",
+      "ko": "케이크",
+      "en": "cake",
+      "sentenceKo": "이것은 케이크입니다",
+      "sentenceEn": "This is a cake"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0431",
+      "absolute-beginner.quiz.0432",
+      "absolute-beginner.quiz.0433",
+      "absolute-beginner.quiz.0434",
+      "absolute-beginner.quiz.0435",
+      "absolute-beginner.quiz.0436",
+      "absolute-beginner.quiz.0437",
+      "absolute-beginner.quiz.0438",
+      "absolute-beginner.quiz.0439",
+      "absolute-beginner.quiz.0440"
+    ],
+    "requiredStageId": "absolute-beginner.stage.043"
+  },
+  {
+    "id": "absolute-beginner.stage.045",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_005",
+    "order": 5,
+    "title": "피자 익히기",
+    "description": "이것은 피자입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.food_pizza",
+      "ko": "피자",
+      "en": "pizza",
+      "sentenceKo": "이것은 피자입니다",
+      "sentenceEn": "This is a pizza"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0441",
+      "absolute-beginner.quiz.0442",
+      "absolute-beginner.quiz.0443",
+      "absolute-beginner.quiz.0444",
+      "absolute-beginner.quiz.0445",
+      "absolute-beginner.quiz.0446",
+      "absolute-beginner.quiz.0447",
+      "absolute-beginner.quiz.0448",
+      "absolute-beginner.quiz.0449",
+      "absolute-beginner.quiz.0450"
+    ],
+    "requiredStageId": "absolute-beginner.stage.044"
+  },
+  {
+    "id": "absolute-beginner.stage.046",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_005",
+    "order": 6,
+    "title": "국수 익히기",
+    "description": "이것은 국수입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.food_noodle",
+      "ko": "국수",
+      "en": "noodle",
+      "sentenceKo": "이것은 국수입니다",
+      "sentenceEn": "This is a noodle"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0451",
+      "absolute-beginner.quiz.0452",
+      "absolute-beginner.quiz.0453",
+      "absolute-beginner.quiz.0454",
+      "absolute-beginner.quiz.0455",
+      "absolute-beginner.quiz.0456",
+      "absolute-beginner.quiz.0457",
+      "absolute-beginner.quiz.0458",
+      "absolute-beginner.quiz.0459",
+      "absolute-beginner.quiz.0460"
+    ],
+    "requiredStageId": "absolute-beginner.stage.045"
+  },
+  {
+    "id": "absolute-beginner.stage.047",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_005",
+    "order": 7,
+    "title": "달걀 익히기",
+    "description": "이것은 달걀입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.food_egg",
+      "ko": "달걀",
+      "en": "egg",
+      "sentenceKo": "이것은 달걀입니다",
+      "sentenceEn": "This is an egg"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0461",
+      "absolute-beginner.quiz.0462",
+      "absolute-beginner.quiz.0463",
+      "absolute-beginner.quiz.0464",
+      "absolute-beginner.quiz.0465",
+      "absolute-beginner.quiz.0466",
+      "absolute-beginner.quiz.0467",
+      "absolute-beginner.quiz.0468",
+      "absolute-beginner.quiz.0469",
+      "absolute-beginner.quiz.0470"
+    ],
+    "requiredStageId": "absolute-beginner.stage.046"
+  },
+  {
+    "id": "absolute-beginner.stage.048",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_005",
+    "order": 8,
+    "title": "치즈 익히기",
+    "description": "이것은 치즈입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.food_cheese",
+      "ko": "치즈",
+      "en": "cheese",
+      "sentenceKo": "이것은 치즈입니다",
+      "sentenceEn": "This is a cheese"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0471",
+      "absolute-beginner.quiz.0472",
+      "absolute-beginner.quiz.0473",
+      "absolute-beginner.quiz.0474",
+      "absolute-beginner.quiz.0475",
+      "absolute-beginner.quiz.0476",
+      "absolute-beginner.quiz.0477",
+      "absolute-beginner.quiz.0478",
+      "absolute-beginner.quiz.0479",
+      "absolute-beginner.quiz.0480"
+    ],
+    "requiredStageId": "absolute-beginner.stage.047"
+  },
+  {
+    "id": "absolute-beginner.stage.049",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_005",
+    "order": 9,
+    "title": "쿠키 익히기",
+    "description": "이것은 쿠키입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.food_cookie",
+      "ko": "쿠키",
+      "en": "cookie",
+      "sentenceKo": "이것은 쿠키입니다",
+      "sentenceEn": "This is a cookie"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0481",
+      "absolute-beginner.quiz.0482",
+      "absolute-beginner.quiz.0483",
+      "absolute-beginner.quiz.0484",
+      "absolute-beginner.quiz.0485",
+      "absolute-beginner.quiz.0486",
+      "absolute-beginner.quiz.0487",
+      "absolute-beginner.quiz.0488",
+      "absolute-beginner.quiz.0489",
+      "absolute-beginner.quiz.0490"
+    ],
+    "requiredStageId": "absolute-beginner.stage.048"
+  },
+  {
+    "id": "absolute-beginner.stage.050",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_005",
+    "order": 10,
+    "title": "샌드위치 익히기",
+    "description": "이것은 샌드위치입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.food_sandwich",
+      "ko": "샌드위치",
+      "en": "sandwich",
+      "sentenceKo": "이것은 샌드위치입니다",
+      "sentenceEn": "This is a sandwich"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0491",
+      "absolute-beginner.quiz.0492",
+      "absolute-beginner.quiz.0493",
+      "absolute-beginner.quiz.0494",
+      "absolute-beginner.quiz.0495",
+      "absolute-beginner.quiz.0496",
+      "absolute-beginner.quiz.0497",
+      "absolute-beginner.quiz.0498",
+      "absolute-beginner.quiz.0499",
+      "absolute-beginner.quiz.0500"
+    ],
+    "requiredStageId": "absolute-beginner.stage.049"
+  },
+  {
+    "id": "absolute-beginner.stage.051",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_006",
+    "order": 1,
+    "title": "물 익히기",
+    "description": "이것은 물입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.drink_water",
+      "ko": "물",
+      "en": "water",
+      "sentenceKo": "이것은 물입니다",
+      "sentenceEn": "This is a water"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0501",
+      "absolute-beginner.quiz.0502",
+      "absolute-beginner.quiz.0503",
+      "absolute-beginner.quiz.0504",
+      "absolute-beginner.quiz.0505",
+      "absolute-beginner.quiz.0506",
+      "absolute-beginner.quiz.0507",
+      "absolute-beginner.quiz.0508",
+      "absolute-beginner.quiz.0509",
+      "absolute-beginner.quiz.0510"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "absolute-beginner.stage.052",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_006",
+    "order": 2,
+    "title": "우유 익히기",
+    "description": "이것은 우유입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.drink_milk",
+      "ko": "우유",
+      "en": "milk",
+      "sentenceKo": "이것은 우유입니다",
+      "sentenceEn": "This is a milk"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0511",
+      "absolute-beginner.quiz.0512",
+      "absolute-beginner.quiz.0513",
+      "absolute-beginner.quiz.0514",
+      "absolute-beginner.quiz.0515",
+      "absolute-beginner.quiz.0516",
+      "absolute-beginner.quiz.0517",
+      "absolute-beginner.quiz.0518",
+      "absolute-beginner.quiz.0519",
+      "absolute-beginner.quiz.0520"
+    ],
+    "requiredStageId": "absolute-beginner.stage.051"
+  },
+  {
+    "id": "absolute-beginner.stage.053",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_006",
+    "order": 3,
+    "title": "주스 익히기",
+    "description": "이것은 주스입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.drink_juice",
+      "ko": "주스",
+      "en": "juice",
+      "sentenceKo": "이것은 주스입니다",
+      "sentenceEn": "This is a juice"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0521",
+      "absolute-beginner.quiz.0522",
+      "absolute-beginner.quiz.0523",
+      "absolute-beginner.quiz.0524",
+      "absolute-beginner.quiz.0525",
+      "absolute-beginner.quiz.0526",
+      "absolute-beginner.quiz.0527",
+      "absolute-beginner.quiz.0528",
+      "absolute-beginner.quiz.0529",
+      "absolute-beginner.quiz.0530"
+    ],
+    "requiredStageId": "absolute-beginner.stage.052"
+  },
+  {
+    "id": "absolute-beginner.stage.054",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_006",
+    "order": 4,
+    "title": "커피 익히기",
+    "description": "이것은 커피입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.drink_coffee",
+      "ko": "커피",
+      "en": "coffee",
+      "sentenceKo": "이것은 커피입니다",
+      "sentenceEn": "This is a coffee"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0531",
+      "absolute-beginner.quiz.0532",
+      "absolute-beginner.quiz.0533",
+      "absolute-beginner.quiz.0534",
+      "absolute-beginner.quiz.0535",
+      "absolute-beginner.quiz.0536",
+      "absolute-beginner.quiz.0537",
+      "absolute-beginner.quiz.0538",
+      "absolute-beginner.quiz.0539",
+      "absolute-beginner.quiz.0540"
+    ],
+    "requiredStageId": "absolute-beginner.stage.053"
+  },
+  {
+    "id": "absolute-beginner.stage.055",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_006",
+    "order": 5,
+    "title": "차 익히기",
+    "description": "이것은 차입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.drink_tea",
+      "ko": "차",
+      "en": "tea",
+      "sentenceKo": "이것은 차입니다",
+      "sentenceEn": "This is a tea"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0541",
+      "absolute-beginner.quiz.0542",
+      "absolute-beginner.quiz.0543",
+      "absolute-beginner.quiz.0544",
+      "absolute-beginner.quiz.0545",
+      "absolute-beginner.quiz.0546",
+      "absolute-beginner.quiz.0547",
+      "absolute-beginner.quiz.0548",
+      "absolute-beginner.quiz.0549",
+      "absolute-beginner.quiz.0550"
+    ],
+    "requiredStageId": "absolute-beginner.stage.054"
+  },
+  {
+    "id": "absolute-beginner.stage.056",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_006",
+    "order": 6,
+    "title": "탄산음료 익히기",
+    "description": "이것은 탄산음료입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.drink_soda",
+      "ko": "탄산음료",
+      "en": "soda",
+      "sentenceKo": "이것은 탄산음료입니다",
+      "sentenceEn": "This is a soda"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0551",
+      "absolute-beginner.quiz.0552",
+      "absolute-beginner.quiz.0553",
+      "absolute-beginner.quiz.0554",
+      "absolute-beginner.quiz.0555",
+      "absolute-beginner.quiz.0556",
+      "absolute-beginner.quiz.0557",
+      "absolute-beginner.quiz.0558",
+      "absolute-beginner.quiz.0559",
+      "absolute-beginner.quiz.0560"
+    ],
+    "requiredStageId": "absolute-beginner.stage.055"
+  },
+  {
+    "id": "absolute-beginner.stage.057",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_006",
+    "order": 7,
+    "title": "코코아 익히기",
+    "description": "이것은 코코아입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.drink_cocoa",
+      "ko": "코코아",
+      "en": "cocoa",
+      "sentenceKo": "이것은 코코아입니다",
+      "sentenceEn": "This is a cocoa"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0561",
+      "absolute-beginner.quiz.0562",
+      "absolute-beginner.quiz.0563",
+      "absolute-beginner.quiz.0564",
+      "absolute-beginner.quiz.0565",
+      "absolute-beginner.quiz.0566",
+      "absolute-beginner.quiz.0567",
+      "absolute-beginner.quiz.0568",
+      "absolute-beginner.quiz.0569",
+      "absolute-beginner.quiz.0570"
+    ],
+    "requiredStageId": "absolute-beginner.stage.056"
+  },
+  {
+    "id": "absolute-beginner.stage.058",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_006",
+    "order": 8,
+    "title": "요거트 익히기",
+    "description": "이것은 요거트입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.drink_yogurt",
+      "ko": "요거트",
+      "en": "yogurt",
+      "sentenceKo": "이것은 요거트입니다",
+      "sentenceEn": "This is a yogurt"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0571",
+      "absolute-beginner.quiz.0572",
+      "absolute-beginner.quiz.0573",
+      "absolute-beginner.quiz.0574",
+      "absolute-beginner.quiz.0575",
+      "absolute-beginner.quiz.0576",
+      "absolute-beginner.quiz.0577",
+      "absolute-beginner.quiz.0578",
+      "absolute-beginner.quiz.0579",
+      "absolute-beginner.quiz.0580"
+    ],
+    "requiredStageId": "absolute-beginner.stage.057"
+  },
+  {
+    "id": "absolute-beginner.stage.059",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_006",
+    "order": 9,
+    "title": "스무디 익히기",
+    "description": "이것은 스무디입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.drink_smoothie",
+      "ko": "스무디",
+      "en": "smoothie",
+      "sentenceKo": "이것은 스무디입니다",
+      "sentenceEn": "This is a smoothie"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0581",
+      "absolute-beginner.quiz.0582",
+      "absolute-beginner.quiz.0583",
+      "absolute-beginner.quiz.0584",
+      "absolute-beginner.quiz.0585",
+      "absolute-beginner.quiz.0586",
+      "absolute-beginner.quiz.0587",
+      "absolute-beginner.quiz.0588",
+      "absolute-beginner.quiz.0589",
+      "absolute-beginner.quiz.0590"
+    ],
+    "requiredStageId": "absolute-beginner.stage.058"
+  },
+  {
+    "id": "absolute-beginner.stage.060",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_006",
+    "order": 10,
+    "title": "레모네이드 익히기",
+    "description": "이것은 레모네이드입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.drink_lemonade",
+      "ko": "레모네이드",
+      "en": "lemonade",
+      "sentenceKo": "이것은 레모네이드입니다",
+      "sentenceEn": "This is a lemonade"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0591",
+      "absolute-beginner.quiz.0592",
+      "absolute-beginner.quiz.0593",
+      "absolute-beginner.quiz.0594",
+      "absolute-beginner.quiz.0595",
+      "absolute-beginner.quiz.0596",
+      "absolute-beginner.quiz.0597",
+      "absolute-beginner.quiz.0598",
+      "absolute-beginner.quiz.0599",
+      "absolute-beginner.quiz.0600"
+    ],
+    "requiredStageId": "absolute-beginner.stage.059"
+  },
+  {
+    "id": "absolute-beginner.stage.061",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_007",
+    "order": 1,
+    "title": "셔츠 익히기",
+    "description": "이것은 셔츠입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.clothes_shirt",
+      "ko": "셔츠",
+      "en": "shirt",
+      "sentenceKo": "이것은 셔츠입니다",
+      "sentenceEn": "This is a shirt"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0601",
+      "absolute-beginner.quiz.0602",
+      "absolute-beginner.quiz.0603",
+      "absolute-beginner.quiz.0604",
+      "absolute-beginner.quiz.0605",
+      "absolute-beginner.quiz.0606",
+      "absolute-beginner.quiz.0607",
+      "absolute-beginner.quiz.0608",
+      "absolute-beginner.quiz.0609",
+      "absolute-beginner.quiz.0610"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "absolute-beginner.stage.062",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_007",
+    "order": 2,
+    "title": "바지 익히기",
+    "description": "이것은 바지입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.clothes_pants",
+      "ko": "바지",
+      "en": "pants",
+      "sentenceKo": "이것은 바지입니다",
+      "sentenceEn": "This is a pants"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0611",
+      "absolute-beginner.quiz.0612",
+      "absolute-beginner.quiz.0613",
+      "absolute-beginner.quiz.0614",
+      "absolute-beginner.quiz.0615",
+      "absolute-beginner.quiz.0616",
+      "absolute-beginner.quiz.0617",
+      "absolute-beginner.quiz.0618",
+      "absolute-beginner.quiz.0619",
+      "absolute-beginner.quiz.0620"
+    ],
+    "requiredStageId": "absolute-beginner.stage.061"
+  },
+  {
+    "id": "absolute-beginner.stage.063",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_007",
+    "order": 3,
+    "title": "원피스 익히기",
+    "description": "이것은 원피스입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.clothes_dress",
+      "ko": "원피스",
+      "en": "dress",
+      "sentenceKo": "이것은 원피스입니다",
+      "sentenceEn": "This is a dress"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0621",
+      "absolute-beginner.quiz.0622",
+      "absolute-beginner.quiz.0623",
+      "absolute-beginner.quiz.0624",
+      "absolute-beginner.quiz.0625",
+      "absolute-beginner.quiz.0626",
+      "absolute-beginner.quiz.0627",
+      "absolute-beginner.quiz.0628",
+      "absolute-beginner.quiz.0629",
+      "absolute-beginner.quiz.0630"
+    ],
+    "requiredStageId": "absolute-beginner.stage.062"
+  },
+  {
+    "id": "absolute-beginner.stage.064",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_007",
+    "order": 4,
+    "title": "치마 익히기",
+    "description": "이것은 치마입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.clothes_skirt",
+      "ko": "치마",
+      "en": "skirt",
+      "sentenceKo": "이것은 치마입니다",
+      "sentenceEn": "This is a skirt"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0631",
+      "absolute-beginner.quiz.0632",
+      "absolute-beginner.quiz.0633",
+      "absolute-beginner.quiz.0634",
+      "absolute-beginner.quiz.0635",
+      "absolute-beginner.quiz.0636",
+      "absolute-beginner.quiz.0637",
+      "absolute-beginner.quiz.0638",
+      "absolute-beginner.quiz.0639",
+      "absolute-beginner.quiz.0640"
+    ],
+    "requiredStageId": "absolute-beginner.stage.063"
+  },
+  {
+    "id": "absolute-beginner.stage.065",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_007",
+    "order": 5,
+    "title": "신발 익히기",
+    "description": "이것들은 신발입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.clothes_shoes",
+      "ko": "신발",
+      "en": "shoes",
+      "sentenceKo": "이것들은 신발입니다",
+      "sentenceEn": "These are shoes"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0641",
+      "absolute-beginner.quiz.0642",
+      "absolute-beginner.quiz.0643",
+      "absolute-beginner.quiz.0644",
+      "absolute-beginner.quiz.0645",
+      "absolute-beginner.quiz.0646",
+      "absolute-beginner.quiz.0647",
+      "absolute-beginner.quiz.0648",
+      "absolute-beginner.quiz.0649",
+      "absolute-beginner.quiz.0650"
+    ],
+    "requiredStageId": "absolute-beginner.stage.064"
+  },
+  {
+    "id": "absolute-beginner.stage.066",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_007",
+    "order": 6,
+    "title": "양말 익히기",
+    "description": "이것들은 양말입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.clothes_socks",
+      "ko": "양말",
+      "en": "socks",
+      "sentenceKo": "이것들은 양말입니다",
+      "sentenceEn": "These are socks"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0651",
+      "absolute-beginner.quiz.0652",
+      "absolute-beginner.quiz.0653",
+      "absolute-beginner.quiz.0654",
+      "absolute-beginner.quiz.0655",
+      "absolute-beginner.quiz.0656",
+      "absolute-beginner.quiz.0657",
+      "absolute-beginner.quiz.0658",
+      "absolute-beginner.quiz.0659",
+      "absolute-beginner.quiz.0660"
+    ],
+    "requiredStageId": "absolute-beginner.stage.065"
+  },
+  {
+    "id": "absolute-beginner.stage.067",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_007",
+    "order": 7,
+    "title": "모자 익히기",
+    "description": "이것은 모자입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.clothes_hat",
+      "ko": "모자",
+      "en": "hat",
+      "sentenceKo": "이것은 모자입니다",
+      "sentenceEn": "This is a hat"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0661",
+      "absolute-beginner.quiz.0662",
+      "absolute-beginner.quiz.0663",
+      "absolute-beginner.quiz.0664",
+      "absolute-beginner.quiz.0665",
+      "absolute-beginner.quiz.0666",
+      "absolute-beginner.quiz.0667",
+      "absolute-beginner.quiz.0668",
+      "absolute-beginner.quiz.0669",
+      "absolute-beginner.quiz.0670"
+    ],
+    "requiredStageId": "absolute-beginner.stage.066"
+  },
+  {
+    "id": "absolute-beginner.stage.068",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_007",
+    "order": 8,
+    "title": "코트 익히기",
+    "description": "이것은 코트입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.clothes_coat",
+      "ko": "코트",
+      "en": "coat",
+      "sentenceKo": "이것은 코트입니다",
+      "sentenceEn": "This is a coat"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0671",
+      "absolute-beginner.quiz.0672",
+      "absolute-beginner.quiz.0673",
+      "absolute-beginner.quiz.0674",
+      "absolute-beginner.quiz.0675",
+      "absolute-beginner.quiz.0676",
+      "absolute-beginner.quiz.0677",
+      "absolute-beginner.quiz.0678",
+      "absolute-beginner.quiz.0679",
+      "absolute-beginner.quiz.0680"
+    ],
+    "requiredStageId": "absolute-beginner.stage.067"
+  },
+  {
+    "id": "absolute-beginner.stage.069",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_007",
+    "order": 9,
+    "title": "장갑 익히기",
+    "description": "이것들은 장갑입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.clothes_gloves",
+      "ko": "장갑",
+      "en": "gloves",
+      "sentenceKo": "이것들은 장갑입니다",
+      "sentenceEn": "These are gloves"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0681",
+      "absolute-beginner.quiz.0682",
+      "absolute-beginner.quiz.0683",
+      "absolute-beginner.quiz.0684",
+      "absolute-beginner.quiz.0685",
+      "absolute-beginner.quiz.0686",
+      "absolute-beginner.quiz.0687",
+      "absolute-beginner.quiz.0688",
+      "absolute-beginner.quiz.0689",
+      "absolute-beginner.quiz.0690"
+    ],
+    "requiredStageId": "absolute-beginner.stage.068"
+  },
+  {
+    "id": "absolute-beginner.stage.070",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_007",
+    "order": 10,
+    "title": "목도리 익히기",
+    "description": "이것은 목도리입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.clothes_scarf",
+      "ko": "목도리",
+      "en": "scarf",
+      "sentenceKo": "이것은 목도리입니다",
+      "sentenceEn": "This is a scarf"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0691",
+      "absolute-beginner.quiz.0692",
+      "absolute-beginner.quiz.0693",
+      "absolute-beginner.quiz.0694",
+      "absolute-beginner.quiz.0695",
+      "absolute-beginner.quiz.0696",
+      "absolute-beginner.quiz.0697",
+      "absolute-beginner.quiz.0698",
+      "absolute-beginner.quiz.0699",
+      "absolute-beginner.quiz.0700"
+    ],
+    "requiredStageId": "absolute-beginner.stage.069"
+  },
+  {
+    "id": "absolute-beginner.stage.071",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_008",
+    "order": 1,
+    "title": "손 익히기",
+    "description": "이것은 손입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.body_hand",
+      "ko": "손",
+      "en": "hand",
+      "sentenceKo": "이것은 손입니다",
+      "sentenceEn": "This is a hand"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0701",
+      "absolute-beginner.quiz.0702",
+      "absolute-beginner.quiz.0703",
+      "absolute-beginner.quiz.0704",
+      "absolute-beginner.quiz.0705",
+      "absolute-beginner.quiz.0706",
+      "absolute-beginner.quiz.0707",
+      "absolute-beginner.quiz.0708",
+      "absolute-beginner.quiz.0709",
+      "absolute-beginner.quiz.0710"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "absolute-beginner.stage.072",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_008",
+    "order": 2,
+    "title": "얼굴 익히기",
+    "description": "이것은 얼굴입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.body_face",
+      "ko": "얼굴",
+      "en": "face",
+      "sentenceKo": "이것은 얼굴입니다",
+      "sentenceEn": "This is a face"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0711",
+      "absolute-beginner.quiz.0712",
+      "absolute-beginner.quiz.0713",
+      "absolute-beginner.quiz.0714",
+      "absolute-beginner.quiz.0715",
+      "absolute-beginner.quiz.0716",
+      "absolute-beginner.quiz.0717",
+      "absolute-beginner.quiz.0718",
+      "absolute-beginner.quiz.0719",
+      "absolute-beginner.quiz.0720"
+    ],
+    "requiredStageId": "absolute-beginner.stage.071"
+  },
+  {
+    "id": "absolute-beginner.stage.073",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_008",
+    "order": 3,
+    "title": "눈 익히기",
+    "description": "이것은 눈입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.body_eye",
+      "ko": "눈",
+      "en": "eye",
+      "sentenceKo": "이것은 눈입니다",
+      "sentenceEn": "This is an eye"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0721",
+      "absolute-beginner.quiz.0722",
+      "absolute-beginner.quiz.0723",
+      "absolute-beginner.quiz.0724",
+      "absolute-beginner.quiz.0725",
+      "absolute-beginner.quiz.0726",
+      "absolute-beginner.quiz.0727",
+      "absolute-beginner.quiz.0728",
+      "absolute-beginner.quiz.0729",
+      "absolute-beginner.quiz.0730"
+    ],
+    "requiredStageId": "absolute-beginner.stage.072"
+  },
+  {
+    "id": "absolute-beginner.stage.074",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_008",
+    "order": 4,
+    "title": "코 익히기",
+    "description": "이것은 코입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.body_nose",
+      "ko": "코",
+      "en": "nose",
+      "sentenceKo": "이것은 코입니다",
+      "sentenceEn": "This is a nose"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0731",
+      "absolute-beginner.quiz.0732",
+      "absolute-beginner.quiz.0733",
+      "absolute-beginner.quiz.0734",
+      "absolute-beginner.quiz.0735",
+      "absolute-beginner.quiz.0736",
+      "absolute-beginner.quiz.0737",
+      "absolute-beginner.quiz.0738",
+      "absolute-beginner.quiz.0739",
+      "absolute-beginner.quiz.0740"
+    ],
+    "requiredStageId": "absolute-beginner.stage.073"
+  },
+  {
+    "id": "absolute-beginner.stage.075",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_008",
+    "order": 5,
+    "title": "입 익히기",
+    "description": "이것은 입입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.body_mouth",
+      "ko": "입",
+      "en": "mouth",
+      "sentenceKo": "이것은 입입니다",
+      "sentenceEn": "This is a mouth"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0741",
+      "absolute-beginner.quiz.0742",
+      "absolute-beginner.quiz.0743",
+      "absolute-beginner.quiz.0744",
+      "absolute-beginner.quiz.0745",
+      "absolute-beginner.quiz.0746",
+      "absolute-beginner.quiz.0747",
+      "absolute-beginner.quiz.0748",
+      "absolute-beginner.quiz.0749",
+      "absolute-beginner.quiz.0750"
+    ],
+    "requiredStageId": "absolute-beginner.stage.074"
+  },
+  {
+    "id": "absolute-beginner.stage.076",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_008",
+    "order": 6,
+    "title": "귀 익히기",
+    "description": "이것은 귀입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.body_ear",
+      "ko": "귀",
+      "en": "ear",
+      "sentenceKo": "이것은 귀입니다",
+      "sentenceEn": "This is an ear"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0751",
+      "absolute-beginner.quiz.0752",
+      "absolute-beginner.quiz.0753",
+      "absolute-beginner.quiz.0754",
+      "absolute-beginner.quiz.0755",
+      "absolute-beginner.quiz.0756",
+      "absolute-beginner.quiz.0757",
+      "absolute-beginner.quiz.0758",
+      "absolute-beginner.quiz.0759",
+      "absolute-beginner.quiz.0760"
+    ],
+    "requiredStageId": "absolute-beginner.stage.075"
+  },
+  {
+    "id": "absolute-beginner.stage.077",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_008",
+    "order": 7,
+    "title": "팔 익히기",
+    "description": "이것은 팔입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.body_arm",
+      "ko": "팔",
+      "en": "arm",
+      "sentenceKo": "이것은 팔입니다",
+      "sentenceEn": "This is an arm"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0761",
+      "absolute-beginner.quiz.0762",
+      "absolute-beginner.quiz.0763",
+      "absolute-beginner.quiz.0764",
+      "absolute-beginner.quiz.0765",
+      "absolute-beginner.quiz.0766",
+      "absolute-beginner.quiz.0767",
+      "absolute-beginner.quiz.0768",
+      "absolute-beginner.quiz.0769",
+      "absolute-beginner.quiz.0770"
+    ],
+    "requiredStageId": "absolute-beginner.stage.076"
+  },
+  {
+    "id": "absolute-beginner.stage.078",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_008",
+    "order": 8,
+    "title": "다리 익히기",
+    "description": "이것은 다리입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.body_leg",
+      "ko": "다리",
+      "en": "leg",
+      "sentenceKo": "이것은 다리입니다",
+      "sentenceEn": "This is a leg"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0771",
+      "absolute-beginner.quiz.0772",
+      "absolute-beginner.quiz.0773",
+      "absolute-beginner.quiz.0774",
+      "absolute-beginner.quiz.0775",
+      "absolute-beginner.quiz.0776",
+      "absolute-beginner.quiz.0777",
+      "absolute-beginner.quiz.0778",
+      "absolute-beginner.quiz.0779",
+      "absolute-beginner.quiz.0780"
+    ],
+    "requiredStageId": "absolute-beginner.stage.077"
+  },
+  {
+    "id": "absolute-beginner.stage.079",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_008",
+    "order": 9,
+    "title": "머리카락 익히기",
+    "description": "이것은 머리카락입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.body_hair",
+      "ko": "머리카락",
+      "en": "hair",
+      "sentenceKo": "이것은 머리카락입니다",
+      "sentenceEn": "This is a hair"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0781",
+      "absolute-beginner.quiz.0782",
+      "absolute-beginner.quiz.0783",
+      "absolute-beginner.quiz.0784",
+      "absolute-beginner.quiz.0785",
+      "absolute-beginner.quiz.0786",
+      "absolute-beginner.quiz.0787",
+      "absolute-beginner.quiz.0788",
+      "absolute-beginner.quiz.0789",
+      "absolute-beginner.quiz.0790"
+    ],
+    "requiredStageId": "absolute-beginner.stage.078"
+  },
+  {
+    "id": "absolute-beginner.stage.080",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_008",
+    "order": 10,
+    "title": "발 익히기",
+    "description": "이것은 발입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.body_foot",
+      "ko": "발",
+      "en": "foot",
+      "sentenceKo": "이것은 발입니다",
+      "sentenceEn": "This is a foot"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0791",
+      "absolute-beginner.quiz.0792",
+      "absolute-beginner.quiz.0793",
+      "absolute-beginner.quiz.0794",
+      "absolute-beginner.quiz.0795",
+      "absolute-beginner.quiz.0796",
+      "absolute-beginner.quiz.0797",
+      "absolute-beginner.quiz.0798",
+      "absolute-beginner.quiz.0799",
+      "absolute-beginner.quiz.0800"
+    ],
+    "requiredStageId": "absolute-beginner.stage.079"
+  },
+  {
+    "id": "absolute-beginner.stage.081",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_009",
+    "order": 1,
+    "title": "교실 익히기",
+    "description": "이곳은 교실입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.place_classroom",
+      "ko": "교실",
+      "en": "classroom",
+      "sentenceKo": "이곳은 교실입니다",
+      "sentenceEn": "This is the classroom"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0801",
+      "absolute-beginner.quiz.0802",
+      "absolute-beginner.quiz.0803",
+      "absolute-beginner.quiz.0804",
+      "absolute-beginner.quiz.0805",
+      "absolute-beginner.quiz.0806",
+      "absolute-beginner.quiz.0807",
+      "absolute-beginner.quiz.0808",
+      "absolute-beginner.quiz.0809",
+      "absolute-beginner.quiz.0810"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "absolute-beginner.stage.082",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_009",
+    "order": 2,
+    "title": "부엌 익히기",
+    "description": "이곳은 부엌입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.place_kitchen",
+      "ko": "부엌",
+      "en": "kitchen",
+      "sentenceKo": "이곳은 부엌입니다",
+      "sentenceEn": "This is the kitchen"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0811",
+      "absolute-beginner.quiz.0812",
+      "absolute-beginner.quiz.0813",
+      "absolute-beginner.quiz.0814",
+      "absolute-beginner.quiz.0815",
+      "absolute-beginner.quiz.0816",
+      "absolute-beginner.quiz.0817",
+      "absolute-beginner.quiz.0818",
+      "absolute-beginner.quiz.0819",
+      "absolute-beginner.quiz.0820"
+    ],
+    "requiredStageId": "absolute-beginner.stage.081"
+  },
+  {
+    "id": "absolute-beginner.stage.083",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_009",
+    "order": 3,
+    "title": "침실 익히기",
+    "description": "이곳은 침실입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.place_bedroom",
+      "ko": "침실",
+      "en": "bedroom",
+      "sentenceKo": "이곳은 침실입니다",
+      "sentenceEn": "This is the bedroom"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0821",
+      "absolute-beginner.quiz.0822",
+      "absolute-beginner.quiz.0823",
+      "absolute-beginner.quiz.0824",
+      "absolute-beginner.quiz.0825",
+      "absolute-beginner.quiz.0826",
+      "absolute-beginner.quiz.0827",
+      "absolute-beginner.quiz.0828",
+      "absolute-beginner.quiz.0829",
+      "absolute-beginner.quiz.0830"
+    ],
+    "requiredStageId": "absolute-beginner.stage.082"
+  },
+  {
+    "id": "absolute-beginner.stage.084",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_009",
+    "order": 4,
+    "title": "욕실 익히기",
+    "description": "이곳은 욕실입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.place_bathroom",
+      "ko": "욕실",
+      "en": "bathroom",
+      "sentenceKo": "이곳은 욕실입니다",
+      "sentenceEn": "This is the bathroom"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0831",
+      "absolute-beginner.quiz.0832",
+      "absolute-beginner.quiz.0833",
+      "absolute-beginner.quiz.0834",
+      "absolute-beginner.quiz.0835",
+      "absolute-beginner.quiz.0836",
+      "absolute-beginner.quiz.0837",
+      "absolute-beginner.quiz.0838",
+      "absolute-beginner.quiz.0839",
+      "absolute-beginner.quiz.0840"
+    ],
+    "requiredStageId": "absolute-beginner.stage.083"
+  },
+  {
+    "id": "absolute-beginner.stage.085",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_009",
+    "order": 5,
+    "title": "정원 익히기",
+    "description": "이곳은 정원입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.place_garden",
+      "ko": "정원",
+      "en": "garden",
+      "sentenceKo": "이곳은 정원입니다",
+      "sentenceEn": "This is the garden"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0841",
+      "absolute-beginner.quiz.0842",
+      "absolute-beginner.quiz.0843",
+      "absolute-beginner.quiz.0844",
+      "absolute-beginner.quiz.0845",
+      "absolute-beginner.quiz.0846",
+      "absolute-beginner.quiz.0847",
+      "absolute-beginner.quiz.0848",
+      "absolute-beginner.quiz.0849",
+      "absolute-beginner.quiz.0850"
+    ],
+    "requiredStageId": "absolute-beginner.stage.084"
+  },
+  {
+    "id": "absolute-beginner.stage.086",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_009",
+    "order": 6,
+    "title": "사무실 익히기",
+    "description": "이곳은 사무실입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.place_office",
+      "ko": "사무실",
+      "en": "office",
+      "sentenceKo": "이곳은 사무실입니다",
+      "sentenceEn": "This is the office"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0851",
+      "absolute-beginner.quiz.0852",
+      "absolute-beginner.quiz.0853",
+      "absolute-beginner.quiz.0854",
+      "absolute-beginner.quiz.0855",
+      "absolute-beginner.quiz.0856",
+      "absolute-beginner.quiz.0857",
+      "absolute-beginner.quiz.0858",
+      "absolute-beginner.quiz.0859",
+      "absolute-beginner.quiz.0860"
+    ],
+    "requiredStageId": "absolute-beginner.stage.085"
+  },
+  {
+    "id": "absolute-beginner.stage.087",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_009",
+    "order": 7,
+    "title": "도서관 익히기",
+    "description": "이곳은 도서관입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.place_library",
+      "ko": "도서관",
+      "en": "library",
+      "sentenceKo": "이곳은 도서관입니다",
+      "sentenceEn": "This is the library"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0861",
+      "absolute-beginner.quiz.0862",
+      "absolute-beginner.quiz.0863",
+      "absolute-beginner.quiz.0864",
+      "absolute-beginner.quiz.0865",
+      "absolute-beginner.quiz.0866",
+      "absolute-beginner.quiz.0867",
+      "absolute-beginner.quiz.0868",
+      "absolute-beginner.quiz.0869",
+      "absolute-beginner.quiz.0870"
+    ],
+    "requiredStageId": "absolute-beginner.stage.086"
+  },
+  {
+    "id": "absolute-beginner.stage.088",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_009",
+    "order": 8,
+    "title": "병원 익히기",
+    "description": "이곳은 병원입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.place_hospital",
+      "ko": "병원",
+      "en": "hospital",
+      "sentenceKo": "이곳은 병원입니다",
+      "sentenceEn": "This is the hospital"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0871",
+      "absolute-beginner.quiz.0872",
+      "absolute-beginner.quiz.0873",
+      "absolute-beginner.quiz.0874",
+      "absolute-beginner.quiz.0875",
+      "absolute-beginner.quiz.0876",
+      "absolute-beginner.quiz.0877",
+      "absolute-beginner.quiz.0878",
+      "absolute-beginner.quiz.0879",
+      "absolute-beginner.quiz.0880"
+    ],
+    "requiredStageId": "absolute-beginner.stage.087"
+  },
+  {
+    "id": "absolute-beginner.stage.089",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_009",
+    "order": 9,
+    "title": "농장 익히기",
+    "description": "이곳은 농장입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.place_farm",
+      "ko": "농장",
+      "en": "farm",
+      "sentenceKo": "이곳은 농장입니다",
+      "sentenceEn": "This is the farm"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0881",
+      "absolute-beginner.quiz.0882",
+      "absolute-beginner.quiz.0883",
+      "absolute-beginner.quiz.0884",
+      "absolute-beginner.quiz.0885",
+      "absolute-beginner.quiz.0886",
+      "absolute-beginner.quiz.0887",
+      "absolute-beginner.quiz.0888",
+      "absolute-beginner.quiz.0889",
+      "absolute-beginner.quiz.0890"
+    ],
+    "requiredStageId": "absolute-beginner.stage.088"
+  },
+  {
+    "id": "absolute-beginner.stage.090",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_009",
+    "order": 10,
+    "title": "공원 익히기",
+    "description": "이곳은 공원입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.place_park",
+      "ko": "공원",
+      "en": "park",
+      "sentenceKo": "이곳은 공원입니다",
+      "sentenceEn": "This is the park"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0891",
+      "absolute-beginner.quiz.0892",
+      "absolute-beginner.quiz.0893",
+      "absolute-beginner.quiz.0894",
+      "absolute-beginner.quiz.0895",
+      "absolute-beginner.quiz.0896",
+      "absolute-beginner.quiz.0897",
+      "absolute-beginner.quiz.0898",
+      "absolute-beginner.quiz.0899",
+      "absolute-beginner.quiz.0900"
+    ],
+    "requiredStageId": "absolute-beginner.stage.089"
+  },
+  {
+    "id": "absolute-beginner.stage.091",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_010",
+    "order": 1,
+    "title": "버스 익히기",
+    "description": "이것은 버스입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.transport_bus",
+      "ko": "버스",
+      "en": "bus",
+      "sentenceKo": "이것은 버스입니다",
+      "sentenceEn": "This is a bus"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0901",
+      "absolute-beginner.quiz.0902",
+      "absolute-beginner.quiz.0903",
+      "absolute-beginner.quiz.0904",
+      "absolute-beginner.quiz.0905",
+      "absolute-beginner.quiz.0906",
+      "absolute-beginner.quiz.0907",
+      "absolute-beginner.quiz.0908",
+      "absolute-beginner.quiz.0909",
+      "absolute-beginner.quiz.0910"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "absolute-beginner.stage.092",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_010",
+    "order": 2,
+    "title": "자동차 익히기",
+    "description": "이것은 자동차입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.transport_car",
+      "ko": "자동차",
+      "en": "car",
+      "sentenceKo": "이것은 자동차입니다",
+      "sentenceEn": "This is a car"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0911",
+      "absolute-beginner.quiz.0912",
+      "absolute-beginner.quiz.0913",
+      "absolute-beginner.quiz.0914",
+      "absolute-beginner.quiz.0915",
+      "absolute-beginner.quiz.0916",
+      "absolute-beginner.quiz.0917",
+      "absolute-beginner.quiz.0918",
+      "absolute-beginner.quiz.0919",
+      "absolute-beginner.quiz.0920"
+    ],
+    "requiredStageId": "absolute-beginner.stage.091"
+  },
+  {
+    "id": "absolute-beginner.stage.093",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_010",
+    "order": 3,
+    "title": "기차 익히기",
+    "description": "이것은 기차입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.transport_train",
+      "ko": "기차",
+      "en": "train",
+      "sentenceKo": "이것은 기차입니다",
+      "sentenceEn": "This is a train"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0921",
+      "absolute-beginner.quiz.0922",
+      "absolute-beginner.quiz.0923",
+      "absolute-beginner.quiz.0924",
+      "absolute-beginner.quiz.0925",
+      "absolute-beginner.quiz.0926",
+      "absolute-beginner.quiz.0927",
+      "absolute-beginner.quiz.0928",
+      "absolute-beginner.quiz.0929",
+      "absolute-beginner.quiz.0930"
+    ],
+    "requiredStageId": "absolute-beginner.stage.092"
+  },
+  {
+    "id": "absolute-beginner.stage.094",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_010",
+    "order": 4,
+    "title": "자전거 익히기",
+    "description": "이것은 자전거입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.transport_bike",
+      "ko": "자전거",
+      "en": "bike",
+      "sentenceKo": "이것은 자전거입니다",
+      "sentenceEn": "This is a bike"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0931",
+      "absolute-beginner.quiz.0932",
+      "absolute-beginner.quiz.0933",
+      "absolute-beginner.quiz.0934",
+      "absolute-beginner.quiz.0935",
+      "absolute-beginner.quiz.0936",
+      "absolute-beginner.quiz.0937",
+      "absolute-beginner.quiz.0938",
+      "absolute-beginner.quiz.0939",
+      "absolute-beginner.quiz.0940"
+    ],
+    "requiredStageId": "absolute-beginner.stage.093"
+  },
+  {
+    "id": "absolute-beginner.stage.095",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_010",
+    "order": 5,
+    "title": "택시 익히기",
+    "description": "이것은 택시입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.transport_taxi",
+      "ko": "택시",
+      "en": "taxi",
+      "sentenceKo": "이것은 택시입니다",
+      "sentenceEn": "This is a taxi"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0941",
+      "absolute-beginner.quiz.0942",
+      "absolute-beginner.quiz.0943",
+      "absolute-beginner.quiz.0944",
+      "absolute-beginner.quiz.0945",
+      "absolute-beginner.quiz.0946",
+      "absolute-beginner.quiz.0947",
+      "absolute-beginner.quiz.0948",
+      "absolute-beginner.quiz.0949",
+      "absolute-beginner.quiz.0950"
+    ],
+    "requiredStageId": "absolute-beginner.stage.094"
+  },
+  {
+    "id": "absolute-beginner.stage.096",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_010",
+    "order": 6,
+    "title": "비행기 익히기",
+    "description": "이것은 비행기입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.transport_plane",
+      "ko": "비행기",
+      "en": "plane",
+      "sentenceKo": "이것은 비행기입니다",
+      "sentenceEn": "This is a plane"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0951",
+      "absolute-beginner.quiz.0952",
+      "absolute-beginner.quiz.0953",
+      "absolute-beginner.quiz.0954",
+      "absolute-beginner.quiz.0955",
+      "absolute-beginner.quiz.0956",
+      "absolute-beginner.quiz.0957",
+      "absolute-beginner.quiz.0958",
+      "absolute-beginner.quiz.0959",
+      "absolute-beginner.quiz.0960"
+    ],
+    "requiredStageId": "absolute-beginner.stage.095"
+  },
+  {
+    "id": "absolute-beginner.stage.097",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_010",
+    "order": 7,
+    "title": "배 익히기",
+    "description": "이것은 배입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.transport_ship",
+      "ko": "배",
+      "en": "ship",
+      "sentenceKo": "이것은 배입니다",
+      "sentenceEn": "This is a ship"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0961",
+      "absolute-beginner.quiz.0962",
+      "absolute-beginner.quiz.0963",
+      "absolute-beginner.quiz.0964",
+      "absolute-beginner.quiz.0965",
+      "absolute-beginner.quiz.0966",
+      "absolute-beginner.quiz.0967",
+      "absolute-beginner.quiz.0968",
+      "absolute-beginner.quiz.0969",
+      "absolute-beginner.quiz.0970"
+    ],
+    "requiredStageId": "absolute-beginner.stage.096"
+  },
+  {
+    "id": "absolute-beginner.stage.098",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_010",
+    "order": 8,
+    "title": "트럭 익히기",
+    "description": "이것은 트럭입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.transport_truck",
+      "ko": "트럭",
+      "en": "truck",
+      "sentenceKo": "이것은 트럭입니다",
+      "sentenceEn": "This is a truck"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0971",
+      "absolute-beginner.quiz.0972",
+      "absolute-beginner.quiz.0973",
+      "absolute-beginner.quiz.0974",
+      "absolute-beginner.quiz.0975",
+      "absolute-beginner.quiz.0976",
+      "absolute-beginner.quiz.0977",
+      "absolute-beginner.quiz.0978",
+      "absolute-beginner.quiz.0979",
+      "absolute-beginner.quiz.0980"
+    ],
+    "requiredStageId": "absolute-beginner.stage.097"
+  },
+  {
+    "id": "absolute-beginner.stage.099",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_010",
+    "order": 9,
+    "title": "지하철 익히기",
+    "description": "이것은 지하철입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.transport_subway",
+      "ko": "지하철",
+      "en": "subway",
+      "sentenceKo": "이것은 지하철입니다",
+      "sentenceEn": "This is a subway"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0981",
+      "absolute-beginner.quiz.0982",
+      "absolute-beginner.quiz.0983",
+      "absolute-beginner.quiz.0984",
+      "absolute-beginner.quiz.0985",
+      "absolute-beginner.quiz.0986",
+      "absolute-beginner.quiz.0987",
+      "absolute-beginner.quiz.0988",
+      "absolute-beginner.quiz.0989",
+      "absolute-beginner.quiz.0990"
+    ],
+    "requiredStageId": "absolute-beginner.stage.098"
+  },
+  {
+    "id": "absolute-beginner.stage.100",
+    "difficulty": "absolute_beginner",
+    "chapterId": "absolute_beginner_chapter_010",
+    "order": 10,
+    "title": "보트 익히기",
+    "description": "이것은 보트입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "absolute-beginner.target.transport_boat",
+      "ko": "보트",
+      "en": "boat",
+      "sentenceKo": "이것은 보트입니다",
+      "sentenceEn": "This is a boat"
+    },
+    "quizIds": [
+      "absolute-beginner.quiz.0991",
+      "absolute-beginner.quiz.0992",
+      "absolute-beginner.quiz.0993",
+      "absolute-beginner.quiz.0994",
+      "absolute-beginner.quiz.0995",
+      "absolute-beginner.quiz.0996",
+      "absolute-beginner.quiz.0997",
+      "absolute-beginner.quiz.0998",
+      "absolute-beginner.quiz.0999",
+      "absolute-beginner.quiz.1000"
+    ],
+    "requiredStageId": "absolute-beginner.stage.099"
   }
 ]

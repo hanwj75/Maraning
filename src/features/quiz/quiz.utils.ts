@@ -1,6 +1,11 @@
 import { shuffleArray } from '../../shared/utils/shuffle'
 import type { MatchingDisplayOrder, Quiz, QuizSessionAnswer, QuizSubmission } from './quiz.types'
 
+export type MatchingPair = {
+  leftId: string
+  rightId: string
+}
+
 export type QuizValidationError = {
   quizId: string
   reason: string
@@ -131,6 +136,27 @@ export function getMatchingDisplayChoicesForQuiz(
         ? quiz.answer.pairs.map((pair) => pair.leftId)
         : [],
   }
+}
+
+export function removeMatchingPairByCardId(
+  pairs: readonly MatchingPair[],
+  cardId: string,
+): MatchingPair[] {
+  return pairs.filter((pair) => pair.leftId !== cardId && pair.rightId !== cardId)
+}
+
+export function upsertMatchingPair(
+  pairs: readonly MatchingPair[],
+  nextPair: MatchingPair,
+): MatchingPair[] {
+  return [
+    ...pairs.filter(
+      (pair) =>
+        pair.leftId !== nextPair.leftId &&
+        pair.rightId !== nextPair.rightId,
+    ),
+    nextPair,
+  ]
 }
 
 function normalizeText(value: string): string {

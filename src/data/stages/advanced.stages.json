@@ -4,26 +4,26 @@
     "difficulty": "advanced",
     "chapterId": "advanced_chapter_001",
     "order": 1,
-    "title": "아침 영어 공부",
-    "description": "아침에 영어를 공부하는 긴 문장을 10문제로 반복 학습한다",
+    "title": "긴 일상 설명 01",
+    "description": "저는 보통 출근 전에 아침에 영어를 공부합니다 학습 목표를 10문제로 반복 학습한다",
     "learningTarget": {
-      "id": "advanced.target.study-morning",
-      "ko": "저는 보통 아침에 영어를 공부합니다",
-      "en": "I usually study English in the morning",
-      "sentenceKo": "저는 보통 아침에 영어를 공부합니다",
-      "sentenceEn": "I usually study English in the morning"
+      "id": "advanced.target.aroutine_study_morning",
+      "ko": "저는 보통 출근 전에 아침에 영어를 공부합니다.",
+      "en": "I usually study English in the morning before work.",
+      "sentenceKo": "저는 보통 출근 전에 아침에 영어를 공부합니다",
+      "sentenceEn": "I usually study English in the morning before work"
     },
     "quizIds": [
-      "advanced.quiz.001",
-      "advanced.quiz.002",
-      "advanced.quiz.003",
-      "advanced.quiz.004",
-      "advanced.quiz.005",
-      "advanced.quiz.006",
-      "advanced.quiz.007",
-      "advanced.quiz.008",
-      "advanced.quiz.009",
-      "advanced.quiz.010"
+      "advanced.quiz.0001",
+      "advanced.quiz.0002",
+      "advanced.quiz.0003",
+      "advanced.quiz.0004",
+      "advanced.quiz.0005",
+      "advanced.quiz.0006",
+      "advanced.quiz.0007",
+      "advanced.quiz.0008",
+      "advanced.quiz.0009",
+      "advanced.quiz.0010"
     ],
     "requiredStageId": null
   },
@@ -32,27 +32,2771 @@
     "difficulty": "advanced",
     "chapterId": "advanced_chapter_001",
     "order": 2,
-    "title": "저녁 책 읽기",
-    "description": "저녁에 책을 읽는 긴 문장을 10문제로 반복 학습한다",
+    "title": "긴 일상 설명 02",
+    "description": "저는 아침 식사 전에 가벼운 운동을 하는 편입니다 학습 목표를 10문제로 반복 학습한다",
     "learningTarget": {
-      "id": "advanced.target.read-evening",
-      "ko": "저는 보통 저녁에 책을 읽습니다",
-      "en": "I usually read books in the evening",
-      "sentenceKo": "저는 보통 저녁에 책을 읽습니다",
-      "sentenceEn": "I usually read books in the evening"
+      "id": "advanced.target.aroutine_exercise_breakfast",
+      "ko": "저는 아침 식사 전에 가벼운 운동을 하는 편입니다.",
+      "en": "I tend to do light exercise before breakfast.",
+      "sentenceKo": "저는 아침 식사 전에 가벼운 운동을 하는 편입니다",
+      "sentenceEn": "I tend to do light exercise before breakfast"
     },
     "quizIds": [
-      "advanced.quiz.011",
-      "advanced.quiz.012",
-      "advanced.quiz.013",
-      "advanced.quiz.014",
-      "advanced.quiz.015",
-      "advanced.quiz.016",
-      "advanced.quiz.017",
-      "advanced.quiz.018",
-      "advanced.quiz.019",
-      "advanced.quiz.020"
+      "advanced.quiz.0011",
+      "advanced.quiz.0012",
+      "advanced.quiz.0013",
+      "advanced.quiz.0014",
+      "advanced.quiz.0015",
+      "advanced.quiz.0016",
+      "advanced.quiz.0017",
+      "advanced.quiz.0018",
+      "advanced.quiz.0019",
+      "advanced.quiz.0020"
     ],
     "requiredStageId": "advanced.stage.001"
+  },
+  {
+    "id": "advanced.stage.003",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_001",
+    "order": 3,
+    "title": "긴 일상 설명 03",
+    "description": "저는 사무실에 도착하면 먼저 일정을 검토합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aroutine_review_schedule",
+      "ko": "저는 사무실에 도착하면 먼저 일정을 검토합니다.",
+      "en": "I review my schedule first when I arrive at the office.",
+      "sentenceKo": "저는 사무실에 도착하면 먼저 일정을 검토합니다",
+      "sentenceEn": "I review my schedule first when I arrive at the office"
+    },
+    "quizIds": [
+      "advanced.quiz.0021",
+      "advanced.quiz.0022",
+      "advanced.quiz.0023",
+      "advanced.quiz.0024",
+      "advanced.quiz.0025",
+      "advanced.quiz.0026",
+      "advanced.quiz.0027",
+      "advanced.quiz.0028",
+      "advanced.quiz.0029",
+      "advanced.quiz.0030"
+    ],
+    "requiredStageId": "advanced.stage.002"
+  },
+  {
+    "id": "advanced.stage.004",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_001",
+    "order": 4,
+    "title": "긴 일상 설명 04",
+    "description": "저는 바쁜 날에는 집에서 점심을 준비합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aroutine_prepare_lunch",
+      "ko": "저는 바쁜 날에는 집에서 점심을 준비합니다.",
+      "en": "I prepare lunch at home on busy days.",
+      "sentenceKo": "저는 바쁜 날에는 집에서 점심을 준비합니다",
+      "sentenceEn": "I prepare lunch at home on busy days"
+    },
+    "quizIds": [
+      "advanced.quiz.0031",
+      "advanced.quiz.0032",
+      "advanced.quiz.0033",
+      "advanced.quiz.0034",
+      "advanced.quiz.0035",
+      "advanced.quiz.0036",
+      "advanced.quiz.0037",
+      "advanced.quiz.0038",
+      "advanced.quiz.0039",
+      "advanced.quiz.0040"
+    ],
+    "requiredStageId": "advanced.stage.003"
+  },
+  {
+    "id": "advanced.stage.005",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_001",
+    "order": 5,
+    "title": "긴 일상 설명 05",
+    "description": "저는 퇴근 전에 중요한 보고서를 읽습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aroutine_read_reports",
+      "ko": "저는 퇴근 전에 중요한 보고서를 읽습니다.",
+      "en": "I read important reports before leaving work.",
+      "sentenceKo": "저는 퇴근 전에 중요한 보고서를 읽습니다",
+      "sentenceEn": "I read important reports before leaving work"
+    },
+    "quizIds": [
+      "advanced.quiz.0041",
+      "advanced.quiz.0042",
+      "advanced.quiz.0043",
+      "advanced.quiz.0044",
+      "advanced.quiz.0045",
+      "advanced.quiz.0046",
+      "advanced.quiz.0047",
+      "advanced.quiz.0048",
+      "advanced.quiz.0049",
+      "advanced.quiz.0050"
+    ],
+    "requiredStageId": "advanced.stage.004"
+  },
+  {
+    "id": "advanced.stage.006",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_001",
+    "order": 6,
+    "title": "긴 일상 설명 06",
+    "description": "저는 저녁에 머리를 식히기 위해 산책을 합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aroutine_walk_evening",
+      "ko": "저는 저녁에 머리를 식히기 위해 산책을 합니다.",
+      "en": "I take a walk in the evening to clear my head.",
+      "sentenceKo": "저는 저녁에 머리를 식히기 위해 산책을 합니다",
+      "sentenceEn": "I take a walk in the evening to clear my head"
+    },
+    "quizIds": [
+      "advanced.quiz.0051",
+      "advanced.quiz.0052",
+      "advanced.quiz.0053",
+      "advanced.quiz.0054",
+      "advanced.quiz.0055",
+      "advanced.quiz.0056",
+      "advanced.quiz.0057",
+      "advanced.quiz.0058",
+      "advanced.quiz.0059",
+      "advanced.quiz.0060"
+    ],
+    "requiredStageId": "advanced.stage.005"
+  },
+  {
+    "id": "advanced.stage.007",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_001",
+    "order": 7,
+    "title": "긴 일상 설명 07",
+    "description": "저는 잠들기 전에 다음 날 계획을 세웁니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aroutine_plan_tomorrow",
+      "ko": "저는 잠들기 전에 다음 날 계획을 세웁니다.",
+      "en": "I make plans for the next day before I go to sleep.",
+      "sentenceKo": "저는 잠들기 전에 다음 날 계획을 세웁니다",
+      "sentenceEn": "I make plans for the next day before I go to sleep"
+    },
+    "quizIds": [
+      "advanced.quiz.0061",
+      "advanced.quiz.0062",
+      "advanced.quiz.0063",
+      "advanced.quiz.0064",
+      "advanced.quiz.0065",
+      "advanced.quiz.0066",
+      "advanced.quiz.0067",
+      "advanced.quiz.0068",
+      "advanced.quiz.0069",
+      "advanced.quiz.0070"
+    ],
+    "requiredStageId": "advanced.stage.006"
+  },
+  {
+    "id": "advanced.stage.008",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_001",
+    "order": 8,
+    "title": "긴 일상 설명 08",
+    "description": "저는 주말마다 개인 지출을 확인합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aroutine_check_finances",
+      "ko": "저는 주말마다 개인 지출을 확인합니다.",
+      "en": "I check my personal spending every weekend.",
+      "sentenceKo": "저는 주말마다 개인 지출을 확인합니다",
+      "sentenceEn": "I check my personal spending every weekend"
+    },
+    "quizIds": [
+      "advanced.quiz.0071",
+      "advanced.quiz.0072",
+      "advanced.quiz.0073",
+      "advanced.quiz.0074",
+      "advanced.quiz.0075",
+      "advanced.quiz.0076",
+      "advanced.quiz.0077",
+      "advanced.quiz.0078",
+      "advanced.quiz.0079",
+      "advanced.quiz.0080"
+    ],
+    "requiredStageId": "advanced.stage.007"
+  },
+  {
+    "id": "advanced.stage.009",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_001",
+    "order": 9,
+    "title": "긴 일상 설명 09",
+    "description": "저는 발표가 있을 때 거울 앞에서 연습합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aroutine_practice_presentation",
+      "ko": "저는 발표가 있을 때 거울 앞에서 연습합니다.",
+      "en": "I practice in front of a mirror when I have a presentation.",
+      "sentenceKo": "저는 발표가 있을 때 거울 앞에서 연습합니다",
+      "sentenceEn": "I practice in front of a mirror when I have a presentation"
+    },
+    "quizIds": [
+      "advanced.quiz.0081",
+      "advanced.quiz.0082",
+      "advanced.quiz.0083",
+      "advanced.quiz.0084",
+      "advanced.quiz.0085",
+      "advanced.quiz.0086",
+      "advanced.quiz.0087",
+      "advanced.quiz.0088",
+      "advanced.quiz.0089",
+      "advanced.quiz.0090"
+    ],
+    "requiredStageId": "advanced.stage.008"
+  },
+  {
+    "id": "advanced.stage.010",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_001",
+    "order": 10,
+    "title": "긴 일상 설명 10",
+    "description": "저는 하루가 끝나기 전에 답장하지 못한 메시지를 확인합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aroutine_answer_messages",
+      "ko": "저는 하루가 끝나기 전에 답장하지 못한 메시지를 확인합니다.",
+      "en": "I check unanswered messages before the end of the day.",
+      "sentenceKo": "저는 하루가 끝나기 전에 답장하지 못한 메시지를 확인합니다",
+      "sentenceEn": "I check unanswered messages before the end of the day"
+    },
+    "quizIds": [
+      "advanced.quiz.0091",
+      "advanced.quiz.0092",
+      "advanced.quiz.0093",
+      "advanced.quiz.0094",
+      "advanced.quiz.0095",
+      "advanced.quiz.0096",
+      "advanced.quiz.0097",
+      "advanced.quiz.0098",
+      "advanced.quiz.0099",
+      "advanced.quiz.0100"
+    ],
+    "requiredStageId": "advanced.stage.009"
+  },
+  {
+    "id": "advanced.stage.011",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_002",
+    "order": 1,
+    "title": "의견과 이유 01",
+    "description": "저는 온라인 수업이 시간을 절약해 주기 때문에 도움이 된다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aopinion_online_classes",
+      "ko": "저는 온라인 수업이 시간을 절약해 주기 때문에 도움이 된다고 생각합니다.",
+      "en": "I think online classes are helpful because they save time.",
+      "sentenceKo": "저는 온라인 수업이 시간을 절약해 주기 때문에 도움이 된다고 생각합니다",
+      "sentenceEn": "I think online classes are helpful because they save time"
+    },
+    "quizIds": [
+      "advanced.quiz.0101",
+      "advanced.quiz.0102",
+      "advanced.quiz.0103",
+      "advanced.quiz.0104",
+      "advanced.quiz.0105",
+      "advanced.quiz.0106",
+      "advanced.quiz.0107",
+      "advanced.quiz.0108",
+      "advanced.quiz.0109",
+      "advanced.quiz.0110"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "advanced.stage.012",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_002",
+    "order": 2,
+    "title": "의견과 이유 02",
+    "description": "저는 대중교통이 운전보다 스트레스를 덜 준다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aopinion_public_transport",
+      "ko": "저는 대중교통이 운전보다 스트레스를 덜 준다고 생각합니다.",
+      "en": "I think public transportation is less stressful than driving.",
+      "sentenceKo": "저는 대중교통이 운전보다 스트레스를 덜 준다고 생각합니다",
+      "sentenceEn": "I think public transportation is less stressful than driving"
+    },
+    "quizIds": [
+      "advanced.quiz.0111",
+      "advanced.quiz.0112",
+      "advanced.quiz.0113",
+      "advanced.quiz.0114",
+      "advanced.quiz.0115",
+      "advanced.quiz.0116",
+      "advanced.quiz.0117",
+      "advanced.quiz.0118",
+      "advanced.quiz.0119",
+      "advanced.quiz.0120"
+    ],
+    "requiredStageId": "advanced.stage.011"
+  },
+  {
+    "id": "advanced.stage.013",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_002",
+    "order": 3,
+    "title": "의견과 이유 03",
+    "description": "저는 이른 회의가 하루를 더 효율적으로 시작하게 해준다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aopinion_early_meetings",
+      "ko": "저는 이른 회의가 하루를 더 효율적으로 시작하게 해준다고 생각합니다.",
+      "en": "I think early meetings help us start the day more efficiently.",
+      "sentenceKo": "저는 이른 회의가 하루를 더 효율적으로 시작하게 해준다고 생각합니다",
+      "sentenceEn": "I think early meetings help us start the day more efficiently"
+    },
+    "quizIds": [
+      "advanced.quiz.0121",
+      "advanced.quiz.0122",
+      "advanced.quiz.0123",
+      "advanced.quiz.0124",
+      "advanced.quiz.0125",
+      "advanced.quiz.0126",
+      "advanced.quiz.0127",
+      "advanced.quiz.0128",
+      "advanced.quiz.0129",
+      "advanced.quiz.0130"
+    ],
+    "requiredStageId": "advanced.stage.012"
+  },
+  {
+    "id": "advanced.stage.014",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_002",
+    "order": 4,
+    "title": "의견과 이유 04",
+    "description": "저는 매일 독서하는 습관이 집중력 향상에 도움이 된다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aopinion_reading_habit",
+      "ko": "저는 매일 독서하는 습관이 집중력 향상에 도움이 된다고 생각합니다.",
+      "en": "I think reading every day improves concentration.",
+      "sentenceKo": "저는 매일 독서하는 습관이 집중력 향상에 도움이 된다고 생각합니다",
+      "sentenceEn": "I think reading every day improves concentration"
+    },
+    "quizIds": [
+      "advanced.quiz.0131",
+      "advanced.quiz.0132",
+      "advanced.quiz.0133",
+      "advanced.quiz.0134",
+      "advanced.quiz.0135",
+      "advanced.quiz.0136",
+      "advanced.quiz.0137",
+      "advanced.quiz.0138",
+      "advanced.quiz.0139",
+      "advanced.quiz.0140"
+    ],
+    "requiredStageId": "advanced.stage.013"
+  },
+  {
+    "id": "advanced.stage.015",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_002",
+    "order": 5,
+    "title": "의견과 이유 05",
+    "description": "저는 좋은 팀워크가 개별 능력보다 더 큰 결과를 만든다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aopinion_teamwork",
+      "ko": "저는 좋은 팀워크가 개별 능력보다 더 큰 결과를 만든다고 생각합니다.",
+      "en": "I think good teamwork creates better results than individual skill alone.",
+      "sentenceKo": "저는 좋은 팀워크가 개별 능력보다 더 큰 결과를 만든다고 생각합니다",
+      "sentenceEn": "I think good teamwork creates better results than individual skill alone"
+    },
+    "quizIds": [
+      "advanced.quiz.0141",
+      "advanced.quiz.0142",
+      "advanced.quiz.0143",
+      "advanced.quiz.0144",
+      "advanced.quiz.0145",
+      "advanced.quiz.0146",
+      "advanced.quiz.0147",
+      "advanced.quiz.0148",
+      "advanced.quiz.0149",
+      "advanced.quiz.0150"
+    ],
+    "requiredStageId": "advanced.stage.014"
+  },
+  {
+    "id": "advanced.stage.016",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_002",
+    "order": 6,
+    "title": "의견과 이유 06",
+    "description": "저는 여행이 교실 밖에서 배우는 가장 좋은 방법 중 하나라고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aopinion_travel_learning",
+      "ko": "저는 여행이 교실 밖에서 배우는 가장 좋은 방법 중 하나라고 생각합니다.",
+      "en": "I think traveling is one of the best ways to learn outside the classroom.",
+      "sentenceKo": "저는 여행이 교실 밖에서 배우는 가장 좋은 방법 중 하나라고 생각합니다",
+      "sentenceEn": "I think traveling is one of the best ways to learn outside the classroom"
+    },
+    "quizIds": [
+      "advanced.quiz.0151",
+      "advanced.quiz.0152",
+      "advanced.quiz.0153",
+      "advanced.quiz.0154",
+      "advanced.quiz.0155",
+      "advanced.quiz.0156",
+      "advanced.quiz.0157",
+      "advanced.quiz.0158",
+      "advanced.quiz.0159",
+      "advanced.quiz.0160"
+    ],
+    "requiredStageId": "advanced.stage.015"
+  },
+  {
+    "id": "advanced.stage.017",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_002",
+    "order": 7,
+    "title": "의견과 이유 07",
+    "description": "저는 건강한 음식이 생산성을 유지하는 데 중요하다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aopinion_healthy_food",
+      "ko": "저는 건강한 음식이 생산성을 유지하는 데 중요하다고 생각합니다.",
+      "en": "I think healthy food is important for staying productive.",
+      "sentenceKo": "저는 건강한 음식이 생산성을 유지하는 데 중요하다고 생각합니다",
+      "sentenceEn": "I think healthy food is important for staying productive"
+    },
+    "quizIds": [
+      "advanced.quiz.0161",
+      "advanced.quiz.0162",
+      "advanced.quiz.0163",
+      "advanced.quiz.0164",
+      "advanced.quiz.0165",
+      "advanced.quiz.0166",
+      "advanced.quiz.0167",
+      "advanced.quiz.0168",
+      "advanced.quiz.0169",
+      "advanced.quiz.0170"
+    ],
+    "requiredStageId": "advanced.stage.016"
+  },
+  {
+    "id": "advanced.stage.018",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_002",
+    "order": 8,
+    "title": "의견과 이유 08",
+    "description": "저는 조용한 공간이 깊이 있는 사고에 필요하다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aopinion_quiet_space",
+      "ko": "저는 조용한 공간이 깊이 있는 사고에 필요하다고 생각합니다.",
+      "en": "I think a quiet space is necessary for deep thinking.",
+      "sentenceKo": "저는 조용한 공간이 깊이 있는 사고에 필요하다고 생각합니다",
+      "sentenceEn": "I think a quiet space is necessary for deep thinking"
+    },
+    "quizIds": [
+      "advanced.quiz.0171",
+      "advanced.quiz.0172",
+      "advanced.quiz.0173",
+      "advanced.quiz.0174",
+      "advanced.quiz.0175",
+      "advanced.quiz.0176",
+      "advanced.quiz.0177",
+      "advanced.quiz.0178",
+      "advanced.quiz.0179",
+      "advanced.quiz.0180"
+    ],
+    "requiredStageId": "advanced.stage.017"
+  },
+  {
+    "id": "advanced.stage.019",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_002",
+    "order": 9,
+    "title": "의견과 이유 09",
+    "description": "저는 솔직한 피드백이 빠른 성장에 꼭 필요하다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aopinion_feedback",
+      "ko": "저는 솔직한 피드백이 빠른 성장에 꼭 필요하다고 생각합니다.",
+      "en": "I think honest feedback is essential for quick growth.",
+      "sentenceKo": "저는 솔직한 피드백이 빠른 성장에 꼭 필요하다고 생각합니다",
+      "sentenceEn": "I think honest feedback is essential for quick growth"
+    },
+    "quizIds": [
+      "advanced.quiz.0181",
+      "advanced.quiz.0182",
+      "advanced.quiz.0183",
+      "advanced.quiz.0184",
+      "advanced.quiz.0185",
+      "advanced.quiz.0186",
+      "advanced.quiz.0187",
+      "advanced.quiz.0188",
+      "advanced.quiz.0189",
+      "advanced.quiz.0190"
+    ],
+    "requiredStageId": "advanced.stage.018"
+  },
+  {
+    "id": "advanced.stage.020",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_002",
+    "order": 10,
+    "title": "의견과 이유 10",
+    "description": "저는 좋은 수면이 어떤 공부법보다 더 중요하다고 생각합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.aopinion_sleep_quality",
+      "ko": "저는 좋은 수면이 어떤 공부법보다 더 중요하다고 생각합니다.",
+      "en": "I think good sleep is more important than any study method.",
+      "sentenceKo": "저는 좋은 수면이 어떤 공부법보다 더 중요하다고 생각합니다",
+      "sentenceEn": "I think good sleep is more important than any study method"
+    },
+    "quizIds": [
+      "advanced.quiz.0191",
+      "advanced.quiz.0192",
+      "advanced.quiz.0193",
+      "advanced.quiz.0194",
+      "advanced.quiz.0195",
+      "advanced.quiz.0196",
+      "advanced.quiz.0197",
+      "advanced.quiz.0198",
+      "advanced.quiz.0199",
+      "advanced.quiz.0200"
+    ],
+    "requiredStageId": "advanced.stage.019"
+  },
+  {
+    "id": "advanced.stage.021",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_003",
+    "order": 1,
+    "title": "조건 표현 01",
+    "description": "제가 일찍 끝나면 오늘 밤에 전화드리겠습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.condition_finish_early_call",
+      "ko": "제가 일찍 끝나면 오늘 밤에 전화드리겠습니다.",
+      "en": "If I finish early, I will call you tonight.",
+      "sentenceKo": "제가 일찍 끝나면 오늘 밤에 전화드리겠습니다",
+      "sentenceEn": "If I finish early, I will call you tonight"
+    },
+    "quizIds": [
+      "advanced.quiz.0201",
+      "advanced.quiz.0202",
+      "advanced.quiz.0203",
+      "advanced.quiz.0204",
+      "advanced.quiz.0205",
+      "advanced.quiz.0206",
+      "advanced.quiz.0207",
+      "advanced.quiz.0208",
+      "advanced.quiz.0209",
+      "advanced.quiz.0210"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "advanced.stage.022",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_003",
+    "order": 2,
+    "title": "조건 표현 02",
+    "description": "비가 심하게 오면 야외 행사는 취소될 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.condition_rain_cancel",
+      "ko": "비가 심하게 오면 야외 행사는 취소될 것입니다.",
+      "en": "If it rains heavily, the outdoor event will be canceled.",
+      "sentenceKo": "비가 심하게 오면 야외 행사는 취소될 것입니다",
+      "sentenceEn": "If it rains heavily, the outdoor event will be canceled"
+    },
+    "quizIds": [
+      "advanced.quiz.0211",
+      "advanced.quiz.0212",
+      "advanced.quiz.0213",
+      "advanced.quiz.0214",
+      "advanced.quiz.0215",
+      "advanced.quiz.0216",
+      "advanced.quiz.0217",
+      "advanced.quiz.0218",
+      "advanced.quiz.0219",
+      "advanced.quiz.0220"
+    ],
+    "requiredStageId": "advanced.stage.021"
+  },
+  {
+    "id": "advanced.stage.023",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_003",
+    "order": 3,
+    "title": "조건 표현 03",
+    "description": "시간이 남으면 보내기 전에 다시 확인하겠습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.condition_check_again_before_send",
+      "ko": "시간이 남으면 보내기 전에 다시 확인하겠습니다.",
+      "en": "If I have time, I will check it again before sending it.",
+      "sentenceKo": "시간이 남으면 보내기 전에 다시 확인하겠습니다",
+      "sentenceEn": "If I have time, I will check it again before sending it"
+    },
+    "quizIds": [
+      "advanced.quiz.0221",
+      "advanced.quiz.0222",
+      "advanced.quiz.0223",
+      "advanced.quiz.0224",
+      "advanced.quiz.0225",
+      "advanced.quiz.0226",
+      "advanced.quiz.0227",
+      "advanced.quiz.0228",
+      "advanced.quiz.0229",
+      "advanced.quiz.0230"
+    ],
+    "requiredStageId": "advanced.stage.022"
+  },
+  {
+    "id": "advanced.stage.024",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_003",
+    "order": 4,
+    "title": "조건 표현 04",
+    "description": "서두르지 않으면 기차를 놓칠지도 모릅니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.condition_unless_hurry",
+      "ko": "서두르지 않으면 기차를 놓칠지도 모릅니다.",
+      "en": "Unless we hurry, we may miss the train.",
+      "sentenceKo": "서두르지 않으면 기차를 놓칠지도 모릅니다",
+      "sentenceEn": "Unless we hurry, we may miss the train"
+    },
+    "quizIds": [
+      "advanced.quiz.0231",
+      "advanced.quiz.0232",
+      "advanced.quiz.0233",
+      "advanced.quiz.0234",
+      "advanced.quiz.0235",
+      "advanced.quiz.0236",
+      "advanced.quiz.0237",
+      "advanced.quiz.0238",
+      "advanced.quiz.0239",
+      "advanced.quiz.0240"
+    ],
+    "requiredStageId": "advanced.stage.023"
+  },
+  {
+    "id": "advanced.stage.025",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_003",
+    "order": 5,
+    "title": "조건 표현 05",
+    "description": "도움이 필요하시면 언제든지 말씀해 주세요 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.condition_if_need_help",
+      "ko": "도움이 필요하시면 언제든지 말씀해 주세요.",
+      "en": "If you need help, please let me know anytime.",
+      "sentenceKo": "도움이 필요하시면 언제든지 말씀해 주세요",
+      "sentenceEn": "If you need help, please let me know anytime"
+    },
+    "quizIds": [
+      "advanced.quiz.0241",
+      "advanced.quiz.0242",
+      "advanced.quiz.0243",
+      "advanced.quiz.0244",
+      "advanced.quiz.0245",
+      "advanced.quiz.0246",
+      "advanced.quiz.0247",
+      "advanced.quiz.0248",
+      "advanced.quiz.0249",
+      "advanced.quiz.0250"
+    ],
+    "requiredStageId": "advanced.stage.024"
+  },
+  {
+    "id": "advanced.stage.026",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_003",
+    "order": 6,
+    "title": "조건 표현 06",
+    "description": "가격이 내려가면 그 컴퓨터를 살 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.condition_if_price_drops",
+      "ko": "가격이 내려가면 그 컴퓨터를 살 것입니다.",
+      "en": "If the price drops, I will buy that computer.",
+      "sentenceKo": "가격이 내려가면 그 컴퓨터를 살 것입니다",
+      "sentenceEn": "If the price drops, I will buy that computer"
+    },
+    "quizIds": [
+      "advanced.quiz.0251",
+      "advanced.quiz.0252",
+      "advanced.quiz.0253",
+      "advanced.quiz.0254",
+      "advanced.quiz.0255",
+      "advanced.quiz.0256",
+      "advanced.quiz.0257",
+      "advanced.quiz.0258",
+      "advanced.quiz.0259",
+      "advanced.quiz.0260"
+    ],
+    "requiredStageId": "advanced.stage.025"
+  },
+  {
+    "id": "advanced.stage.027",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_003",
+    "order": 7,
+    "title": "조건 표현 07",
+    "description": "충분히 쉬지 않으면 집중하기 어려울 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.condition_unless_rest",
+      "ko": "충분히 쉬지 않으면 집중하기 어려울 것입니다.",
+      "en": "Unless you get enough rest, it will be hard to focus.",
+      "sentenceKo": "충분히 쉬지 않으면 집중하기 어려울 것입니다",
+      "sentenceEn": "Unless you get enough rest, it will be hard to focus"
+    },
+    "quizIds": [
+      "advanced.quiz.0261",
+      "advanced.quiz.0262",
+      "advanced.quiz.0263",
+      "advanced.quiz.0264",
+      "advanced.quiz.0265",
+      "advanced.quiz.0266",
+      "advanced.quiz.0267",
+      "advanced.quiz.0268",
+      "advanced.quiz.0269",
+      "advanced.quiz.0270"
+    ],
+    "requiredStageId": "advanced.stage.026"
+  },
+  {
+    "id": "advanced.stage.028",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_003",
+    "order": 8,
+    "title": "조건 표현 08",
+    "description": "회의가 길어지면 점심을 늦게 먹게 될 것입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.condition_if_meeting_runs_long",
+      "ko": "회의가 길어지면 점심을 늦게 먹게 될 것입니다.",
+      "en": "If the meeting runs long, we will have lunch late.",
+      "sentenceKo": "회의가 길어지면 점심을 늦게 먹게 될 것입니다",
+      "sentenceEn": "If the meeting runs long, we will have lunch late"
+    },
+    "quizIds": [
+      "advanced.quiz.0271",
+      "advanced.quiz.0272",
+      "advanced.quiz.0273",
+      "advanced.quiz.0274",
+      "advanced.quiz.0275",
+      "advanced.quiz.0276",
+      "advanced.quiz.0277",
+      "advanced.quiz.0278",
+      "advanced.quiz.0279",
+      "advanced.quiz.0280"
+    ],
+    "requiredStageId": "advanced.stage.027"
+  },
+  {
+    "id": "advanced.stage.029",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_003",
+    "order": 9,
+    "title": "조건 표현 09",
+    "description": "보고서를 끝내면 바로 보내겠습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.condition_if_finish_report",
+      "ko": "보고서를 끝내면 바로 보내겠습니다.",
+      "en": "If I finish the report, I will send it right away.",
+      "sentenceKo": "보고서를 끝내면 바로 보내겠습니다",
+      "sentenceEn": "If I finish the report, I will send it right away"
+    },
+    "quizIds": [
+      "advanced.quiz.0281",
+      "advanced.quiz.0282",
+      "advanced.quiz.0283",
+      "advanced.quiz.0284",
+      "advanced.quiz.0285",
+      "advanced.quiz.0286",
+      "advanced.quiz.0287",
+      "advanced.quiz.0288",
+      "advanced.quiz.0289",
+      "advanced.quiz.0290"
+    ],
+    "requiredStageId": "advanced.stage.028"
+  },
+  {
+    "id": "advanced.stage.030",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_003",
+    "order": 10,
+    "title": "조건 표현 10",
+    "description": "오늘 결정하지 않으면 기회를 놓칠 수 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.condition_unless_decide",
+      "ko": "오늘 결정하지 않으면 기회를 놓칠 수 있습니다.",
+      "en": "Unless we decide today, we may miss the opportunity.",
+      "sentenceKo": "오늘 결정하지 않으면 기회를 놓칠 수 있습니다",
+      "sentenceEn": "Unless we decide today, we may miss the opportunity"
+    },
+    "quizIds": [
+      "advanced.quiz.0291",
+      "advanced.quiz.0292",
+      "advanced.quiz.0293",
+      "advanced.quiz.0294",
+      "advanced.quiz.0295",
+      "advanced.quiz.0296",
+      "advanced.quiz.0297",
+      "advanced.quiz.0298",
+      "advanced.quiz.0299",
+      "advanced.quiz.0300"
+    ],
+    "requiredStageId": "advanced.stage.029"
+  },
+  {
+    "id": "advanced.stage.031",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_004",
+    "order": 1,
+    "title": "비교와 선택 01",
+    "description": "이 식당은 역 근처 식당보다 더 편안합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.compare2_restaurant_comfortable",
+      "ko": "이 식당은 역 근처 식당보다 더 편안합니다.",
+      "en": "This restaurant is more comfortable than the one near the station.",
+      "sentenceKo": "이 식당은 역 근처 식당보다 더 편안합니다",
+      "sentenceEn": "This restaurant is more comfortable than the one near the station"
+    },
+    "quizIds": [
+      "advanced.quiz.0301",
+      "advanced.quiz.0302",
+      "advanced.quiz.0303",
+      "advanced.quiz.0304",
+      "advanced.quiz.0305",
+      "advanced.quiz.0306",
+      "advanced.quiz.0307",
+      "advanced.quiz.0308",
+      "advanced.quiz.0309",
+      "advanced.quiz.0310"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "advanced.stage.032",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_004",
+    "order": 2,
+    "title": "비교와 선택 02",
+    "description": "이 설명서는 이전 버전보다 훨씬 더 명확합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.compare2_book_clearer",
+      "ko": "이 설명서는 이전 버전보다 훨씬 더 명확합니다.",
+      "en": "This guide is much clearer than the previous version.",
+      "sentenceKo": "이 설명서는 이전 버전보다 훨씬 더 명확합니다",
+      "sentenceEn": "This guide is much clearer than the previous version"
+    },
+    "quizIds": [
+      "advanced.quiz.0311",
+      "advanced.quiz.0312",
+      "advanced.quiz.0313",
+      "advanced.quiz.0314",
+      "advanced.quiz.0315",
+      "advanced.quiz.0316",
+      "advanced.quiz.0317",
+      "advanced.quiz.0318",
+      "advanced.quiz.0319",
+      "advanced.quiz.0320"
+    ],
+    "requiredStageId": "advanced.stage.031"
+  },
+  {
+    "id": "advanced.stage.033",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_004",
+    "order": 3,
+    "title": "비교와 선택 03",
+    "description": "우리가 묵은 호텔은 예상보다 더 조용했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.compare2_hotel_quieter",
+      "ko": "우리가 묵은 호텔은 예상보다 더 조용했습니다.",
+      "en": "The hotel we stayed at was quieter than expected.",
+      "sentenceKo": "우리가 묵은 호텔은 예상보다 더 조용했습니다",
+      "sentenceEn": "The hotel we stayed at was quieter than expected"
+    },
+    "quizIds": [
+      "advanced.quiz.0321",
+      "advanced.quiz.0322",
+      "advanced.quiz.0323",
+      "advanced.quiz.0324",
+      "advanced.quiz.0325",
+      "advanced.quiz.0326",
+      "advanced.quiz.0327",
+      "advanced.quiz.0328",
+      "advanced.quiz.0329",
+      "advanced.quiz.0330"
+    ],
+    "requiredStageId": "advanced.stage.032"
+  },
+  {
+    "id": "advanced.stage.034",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_004",
+    "order": 4,
+    "title": "비교와 선택 04",
+    "description": "이동 시간만 보면 기차가 버스보다 더 나은 선택입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.compare2_train_better",
+      "ko": "이동 시간만 보면 기차가 버스보다 더 나은 선택입니다.",
+      "en": "The train is a better option than the bus in terms of travel time.",
+      "sentenceKo": "이동 시간만 보면 기차가 버스보다 더 나은 선택입니다",
+      "sentenceEn": "The train is a better option than the bus in terms of travel time"
+    },
+    "quizIds": [
+      "advanced.quiz.0331",
+      "advanced.quiz.0332",
+      "advanced.quiz.0333",
+      "advanced.quiz.0334",
+      "advanced.quiz.0335",
+      "advanced.quiz.0336",
+      "advanced.quiz.0337",
+      "advanced.quiz.0338",
+      "advanced.quiz.0339",
+      "advanced.quiz.0340"
+    ],
+    "requiredStageId": "advanced.stage.033"
+  },
+  {
+    "id": "advanced.stage.035",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_004",
+    "order": 5,
+    "title": "비교와 선택 05",
+    "description": "그 보고서는 제가 읽은 다른 보고서보다 더 자세했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.compare2_report_detailed",
+      "ko": "그 보고서는 제가 읽은 다른 보고서보다 더 자세했습니다.",
+      "en": "That report was more detailed than the others I read.",
+      "sentenceKo": "그 보고서는 제가 읽은 다른 보고서보다 더 자세했습니다",
+      "sentenceEn": "That report was more detailed than the others I read"
+    },
+    "quizIds": [
+      "advanced.quiz.0341",
+      "advanced.quiz.0342",
+      "advanced.quiz.0343",
+      "advanced.quiz.0344",
+      "advanced.quiz.0345",
+      "advanced.quiz.0346",
+      "advanced.quiz.0347",
+      "advanced.quiz.0348",
+      "advanced.quiz.0349",
+      "advanced.quiz.0350"
+    ],
+    "requiredStageId": "advanced.stage.034"
+  },
+  {
+    "id": "advanced.stage.036",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_004",
+    "order": 6,
+    "title": "비교와 선택 06",
+    "description": "온라인 주문이 매장 방문보다 훨씬 더 빠릅니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.compare2_online_faster",
+      "ko": "온라인 주문이 매장 방문보다 훨씬 더 빠릅니다.",
+      "en": "Ordering online is much faster than visiting the store.",
+      "sentenceKo": "온라인 주문이 매장 방문보다 훨씬 더 빠릅니다",
+      "sentenceEn": "Ordering online is much faster than visiting the store"
+    },
+    "quizIds": [
+      "advanced.quiz.0351",
+      "advanced.quiz.0352",
+      "advanced.quiz.0353",
+      "advanced.quiz.0354",
+      "advanced.quiz.0355",
+      "advanced.quiz.0356",
+      "advanced.quiz.0357",
+      "advanced.quiz.0358",
+      "advanced.quiz.0359",
+      "advanced.quiz.0360"
+    ],
+    "requiredStageId": "advanced.stage.035"
+  },
+  {
+    "id": "advanced.stage.037",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_004",
+    "order": 7,
+    "title": "비교와 선택 07",
+    "description": "이 커피는 평소 마시는 것보다 더 진합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.compare2_coffee_stronger",
+      "ko": "이 커피는 평소 마시는 것보다 더 진합니다.",
+      "en": "This coffee is stronger than the one I usually drink.",
+      "sentenceKo": "이 커피는 평소 마시는 것보다 더 진합니다",
+      "sentenceEn": "This coffee is stronger than the one I usually drink"
+    },
+    "quizIds": [
+      "advanced.quiz.0361",
+      "advanced.quiz.0362",
+      "advanced.quiz.0363",
+      "advanced.quiz.0364",
+      "advanced.quiz.0365",
+      "advanced.quiz.0366",
+      "advanced.quiz.0367",
+      "advanced.quiz.0368",
+      "advanced.quiz.0369",
+      "advanced.quiz.0370"
+    ],
+    "requiredStageId": "advanced.stage.036"
+  },
+  {
+    "id": "advanced.stage.038",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_004",
+    "order": 8,
+    "title": "비교와 선택 08",
+    "description": "새 아파트는 예전 집보다 더 밝고 넓습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.compare2_apartment_brighter",
+      "ko": "새 아파트는 예전 집보다 더 밝고 넓습니다.",
+      "en": "The new apartment is brighter and larger than the old one.",
+      "sentenceKo": "새 아파트는 예전 집보다 더 밝고 넓습니다",
+      "sentenceEn": "The new apartment is brighter and larger than the old one"
+    },
+    "quizIds": [
+      "advanced.quiz.0371",
+      "advanced.quiz.0372",
+      "advanced.quiz.0373",
+      "advanced.quiz.0374",
+      "advanced.quiz.0375",
+      "advanced.quiz.0376",
+      "advanced.quiz.0377",
+      "advanced.quiz.0378",
+      "advanced.quiz.0379",
+      "advanced.quiz.0380"
+    ],
+    "requiredStageId": "advanced.stage.037"
+  },
+  {
+    "id": "advanced.stage.039",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_004",
+    "order": 9,
+    "title": "비교와 선택 09",
+    "description": "두 번째 선택지가 첫 번째보다 더 안전해 보입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.compare2_option_safer",
+      "ko": "두 번째 선택지가 첫 번째보다 더 안전해 보입니다.",
+      "en": "The second option looks safer than the first one.",
+      "sentenceKo": "두 번째 선택지가 첫 번째보다 더 안전해 보입니다",
+      "sentenceEn": "The second option looks safer than the first one"
+    },
+    "quizIds": [
+      "advanced.quiz.0381",
+      "advanced.quiz.0382",
+      "advanced.quiz.0383",
+      "advanced.quiz.0384",
+      "advanced.quiz.0385",
+      "advanced.quiz.0386",
+      "advanced.quiz.0387",
+      "advanced.quiz.0388",
+      "advanced.quiz.0389",
+      "advanced.quiz.0390"
+    ],
+    "requiredStageId": "advanced.stage.038"
+  },
+  {
+    "id": "advanced.stage.040",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_004",
+    "order": 10,
+    "title": "비교와 선택 10",
+    "description": "날씨가 좋을 때는 걷는 것이 택시를 타는 것보다 낫습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.compare2_walking_better",
+      "ko": "날씨가 좋을 때는 걷는 것이 택시를 타는 것보다 낫습니다.",
+      "en": "Walking is better than taking a taxi when the weather is nice.",
+      "sentenceKo": "날씨가 좋을 때는 걷는 것이 택시를 타는 것보다 낫습니다",
+      "sentenceEn": "Walking is better than taking a taxi when the weather is nice"
+    },
+    "quizIds": [
+      "advanced.quiz.0391",
+      "advanced.quiz.0392",
+      "advanced.quiz.0393",
+      "advanced.quiz.0394",
+      "advanced.quiz.0395",
+      "advanced.quiz.0396",
+      "advanced.quiz.0397",
+      "advanced.quiz.0398",
+      "advanced.quiz.0399",
+      "advanced.quiz.0400"
+    ],
+    "requiredStageId": "advanced.stage.039"
+  },
+  {
+    "id": "advanced.stage.041",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_005",
+    "order": 1,
+    "title": "경험과 완료 01",
+    "description": "회의가 시작되기 전에 저는 이미 저녁을 먹었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.experience_already_eaten",
+      "ko": "회의가 시작되기 전에 저는 이미 저녁을 먹었습니다.",
+      "en": "I had already eaten dinner before the meeting started.",
+      "sentenceKo": "회의가 시작되기 전에 저는 이미 저녁을 먹었습니다",
+      "sentenceEn": "I had already eaten dinner before the meeting started"
+    },
+    "quizIds": [
+      "advanced.quiz.0401",
+      "advanced.quiz.0402",
+      "advanced.quiz.0403",
+      "advanced.quiz.0404",
+      "advanced.quiz.0405",
+      "advanced.quiz.0406",
+      "advanced.quiz.0407",
+      "advanced.quiz.0408",
+      "advanced.quiz.0409",
+      "advanced.quiz.0410"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "advanced.stage.042",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_005",
+    "order": 2,
+    "title": "경험과 완료 02",
+    "description": "저는 그 도시에서 그렇게 큰 시장을 본 적이 없습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.experience_never_seen",
+      "ko": "저는 그 도시에서 그렇게 큰 시장을 본 적이 없습니다.",
+      "en": "I had never seen such a large market in that city.",
+      "sentenceKo": "저는 그 도시에서 그렇게 큰 시장을 본 적이 없습니다",
+      "sentenceEn": "I had never seen such a large market in that city"
+    },
+    "quizIds": [
+      "advanced.quiz.0411",
+      "advanced.quiz.0412",
+      "advanced.quiz.0413",
+      "advanced.quiz.0414",
+      "advanced.quiz.0415",
+      "advanced.quiz.0416",
+      "advanced.quiz.0417",
+      "advanced.quiz.0418",
+      "advanced.quiz.0419",
+      "advanced.quiz.0420"
+    ],
+    "requiredStageId": "advanced.stage.041"
+  },
+  {
+    "id": "advanced.stage.043",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_005",
+    "order": 3,
+    "title": "경험과 완료 03",
+    "description": "그녀가 도착하기 전에 우리는 준비를 끝냈습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.experience_finished_before_arrival",
+      "ko": "그녀가 도착하기 전에 우리는 준비를 끝냈습니다.",
+      "en": "We had finished preparing before she arrived.",
+      "sentenceKo": "그녀가 도착하기 전에 우리는 준비를 끝냈습니다",
+      "sentenceEn": "We had finished preparing before she arrived"
+    },
+    "quizIds": [
+      "advanced.quiz.0421",
+      "advanced.quiz.0422",
+      "advanced.quiz.0423",
+      "advanced.quiz.0424",
+      "advanced.quiz.0425",
+      "advanced.quiz.0426",
+      "advanced.quiz.0427",
+      "advanced.quiz.0428",
+      "advanced.quiz.0429",
+      "advanced.quiz.0430"
+    ],
+    "requiredStageId": "advanced.stage.042"
+  },
+  {
+    "id": "advanced.stage.044",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_005",
+    "order": 4,
+    "title": "경험과 완료 04",
+    "description": "저는 마감 전에 모든 서류를 보냈습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.experience_sent_before_deadline",
+      "ko": "저는 마감 전에 모든 서류를 보냈습니다.",
+      "en": "I had sent all the documents before the deadline.",
+      "sentenceKo": "저는 마감 전에 모든 서류를 보냈습니다",
+      "sentenceEn": "I had sent all the documents before the deadline"
+    },
+    "quizIds": [
+      "advanced.quiz.0431",
+      "advanced.quiz.0432",
+      "advanced.quiz.0433",
+      "advanced.quiz.0434",
+      "advanced.quiz.0435",
+      "advanced.quiz.0436",
+      "advanced.quiz.0437",
+      "advanced.quiz.0438",
+      "advanced.quiz.0439",
+      "advanced.quiz.0440"
+    ],
+    "requiredStageId": "advanced.stage.043"
+  },
+  {
+    "id": "advanced.stage.045",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_005",
+    "order": 5,
+    "title": "경험과 완료 05",
+    "description": "저는 예전에 그 박물관을 두 번 방문한 적이 있습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.experience_visited_before",
+      "ko": "저는 예전에 그 박물관을 두 번 방문한 적이 있습니다.",
+      "en": "I had visited that museum twice before.",
+      "sentenceKo": "저는 예전에 그 박물관을 두 번 방문한 적이 있습니다",
+      "sentenceEn": "I had visited that museum twice before"
+    },
+    "quizIds": [
+      "advanced.quiz.0441",
+      "advanced.quiz.0442",
+      "advanced.quiz.0443",
+      "advanced.quiz.0444",
+      "advanced.quiz.0445",
+      "advanced.quiz.0446",
+      "advanced.quiz.0447",
+      "advanced.quiz.0448",
+      "advanced.quiz.0449",
+      "advanced.quiz.0450"
+    ],
+    "requiredStageId": "advanced.stage.044"
+  },
+  {
+    "id": "advanced.stage.046",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_005",
+    "order": 6,
+    "title": "경험과 완료 06",
+    "description": "무대에 오르기 전에 우리는 여러 번 연습했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.experience_practiced_before_show",
+      "ko": "무대에 오르기 전에 우리는 여러 번 연습했습니다.",
+      "en": "We had practiced many times before going on stage.",
+      "sentenceKo": "무대에 오르기 전에 우리는 여러 번 연습했습니다",
+      "sentenceEn": "We had practiced many times before going on stage"
+    },
+    "quizIds": [
+      "advanced.quiz.0451",
+      "advanced.quiz.0452",
+      "advanced.quiz.0453",
+      "advanced.quiz.0454",
+      "advanced.quiz.0455",
+      "advanced.quiz.0456",
+      "advanced.quiz.0457",
+      "advanced.quiz.0458",
+      "advanced.quiz.0459",
+      "advanced.quiz.0460"
+    ],
+    "requiredStageId": "advanced.stage.045"
+  },
+  {
+    "id": "advanced.stage.047",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_005",
+    "order": 7,
+    "title": "경험과 완료 07",
+    "description": "제가 잃어버린 줄 알았던 열쇠를 나중에 찾았습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.experience_lost_found",
+      "ko": "제가 잃어버린 줄 알았던 열쇠를 나중에 찾았습니다.",
+      "en": "I later found the key that I had thought I lost.",
+      "sentenceKo": "제가 잃어버린 줄 알았던 열쇠를 나중에 찾았습니다",
+      "sentenceEn": "I later found the key that I had thought I lost"
+    },
+    "quizIds": [
+      "advanced.quiz.0461",
+      "advanced.quiz.0462",
+      "advanced.quiz.0463",
+      "advanced.quiz.0464",
+      "advanced.quiz.0465",
+      "advanced.quiz.0466",
+      "advanced.quiz.0467",
+      "advanced.quiz.0468",
+      "advanced.quiz.0469",
+      "advanced.quiz.0470"
+    ],
+    "requiredStageId": "advanced.stage.046"
+  },
+  {
+    "id": "advanced.stage.048",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_005",
+    "order": 8,
+    "title": "경험과 완료 08",
+    "description": "친구를 만나기 전에 저는 책 한 권을 다 읽었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.experience_finished_book",
+      "ko": "친구를 만나기 전에 저는 책 한 권을 다 읽었습니다.",
+      "en": "I had finished a book before meeting my friend.",
+      "sentenceKo": "친구를 만나기 전에 저는 책 한 권을 다 읽었습니다",
+      "sentenceEn": "I had finished a book before meeting my friend"
+    },
+    "quizIds": [
+      "advanced.quiz.0471",
+      "advanced.quiz.0472",
+      "advanced.quiz.0473",
+      "advanced.quiz.0474",
+      "advanced.quiz.0475",
+      "advanced.quiz.0476",
+      "advanced.quiz.0477",
+      "advanced.quiz.0478",
+      "advanced.quiz.0479",
+      "advanced.quiz.0480"
+    ],
+    "requiredStageId": "advanced.stage.047"
+  },
+  {
+    "id": "advanced.stage.049",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_005",
+    "order": 9,
+    "title": "경험과 완료 09",
+    "description": "여행을 예약하기 전에 우리는 충분한 돈을 모았습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.experience_saved_money",
+      "ko": "여행을 예약하기 전에 우리는 충분한 돈을 모았습니다.",
+      "en": "We had saved enough money before booking the trip.",
+      "sentenceKo": "여행을 예약하기 전에 우리는 충분한 돈을 모았습니다",
+      "sentenceEn": "We had saved enough money before booking the trip"
+    },
+    "quizIds": [
+      "advanced.quiz.0481",
+      "advanced.quiz.0482",
+      "advanced.quiz.0483",
+      "advanced.quiz.0484",
+      "advanced.quiz.0485",
+      "advanced.quiz.0486",
+      "advanced.quiz.0487",
+      "advanced.quiz.0488",
+      "advanced.quiz.0489",
+      "advanced.quiz.0490"
+    ],
+    "requiredStageId": "advanced.stage.048"
+  },
+  {
+    "id": "advanced.stage.050",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_005",
+    "order": 10,
+    "title": "경험과 완료 10",
+    "description": "그는 공식 발표 전에 그 소식을 들었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.experience_heard_news",
+      "ko": "그는 공식 발표 전에 그 소식을 들었습니다.",
+      "en": "He had heard the news before the official announcement.",
+      "sentenceKo": "그는 공식 발표 전에 그 소식을 들었습니다",
+      "sentenceEn": "He had heard the news before the official announcement"
+    },
+    "quizIds": [
+      "advanced.quiz.0491",
+      "advanced.quiz.0492",
+      "advanced.quiz.0493",
+      "advanced.quiz.0494",
+      "advanced.quiz.0495",
+      "advanced.quiz.0496",
+      "advanced.quiz.0497",
+      "advanced.quiz.0498",
+      "advanced.quiz.0499",
+      "advanced.quiz.0500"
+    ],
+    "requiredStageId": "advanced.stage.049"
+  },
+  {
+    "id": "advanced.stage.051",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_006",
+    "order": 1,
+    "title": "일정과 계획 01",
+    "description": "우리는 내일 점심 후에 보고서를 검토할 예정입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.plan_review_report",
+      "ko": "우리는 내일 점심 후에 보고서를 검토할 예정입니다.",
+      "en": "We are going to review the report after lunch tomorrow.",
+      "sentenceKo": "우리는 내일 점심 후에 보고서를 검토할 예정입니다",
+      "sentenceEn": "We are going to review the report after lunch tomorrow"
+    },
+    "quizIds": [
+      "advanced.quiz.0501",
+      "advanced.quiz.0502",
+      "advanced.quiz.0503",
+      "advanced.quiz.0504",
+      "advanced.quiz.0505",
+      "advanced.quiz.0506",
+      "advanced.quiz.0507",
+      "advanced.quiz.0508",
+      "advanced.quiz.0509",
+      "advanced.quiz.0510"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "advanced.stage.052",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_006",
+    "order": 2,
+    "title": "일정과 계획 02",
+    "description": "매니저는 금요일 오전에 고객을 만날 예정입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.plan_meet_client",
+      "ko": "매니저는 금요일 오전에 고객을 만날 예정입니다.",
+      "en": "The manager is going to meet the client on Friday morning.",
+      "sentenceKo": "매니저는 금요일 오전에 고객을 만날 예정입니다",
+      "sentenceEn": "The manager is going to meet the client on Friday morning"
+    },
+    "quizIds": [
+      "advanced.quiz.0511",
+      "advanced.quiz.0512",
+      "advanced.quiz.0513",
+      "advanced.quiz.0514",
+      "advanced.quiz.0515",
+      "advanced.quiz.0516",
+      "advanced.quiz.0517",
+      "advanced.quiz.0518",
+      "advanced.quiz.0519",
+      "advanced.quiz.0520"
+    ],
+    "requiredStageId": "advanced.stage.051"
+  },
+  {
+    "id": "advanced.stage.053",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_006",
+    "order": 3,
+    "title": "일정과 계획 03",
+    "description": "디자인 팀은 이번 주 안에 초안을 제출할 예정입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.plan_submit_design",
+      "ko": "디자인 팀은 이번 주 안에 초안을 제출할 예정입니다.",
+      "en": "The design team is going to submit the draft this week.",
+      "sentenceKo": "디자인 팀은 이번 주 안에 초안을 제출할 예정입니다",
+      "sentenceEn": "The design team is going to submit the draft this week"
+    },
+    "quizIds": [
+      "advanced.quiz.0521",
+      "advanced.quiz.0522",
+      "advanced.quiz.0523",
+      "advanced.quiz.0524",
+      "advanced.quiz.0525",
+      "advanced.quiz.0526",
+      "advanced.quiz.0527",
+      "advanced.quiz.0528",
+      "advanced.quiz.0529",
+      "advanced.quiz.0530"
+    ],
+    "requiredStageId": "advanced.stage.052"
+  },
+  {
+    "id": "advanced.stage.054",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_006",
+    "order": 4,
+    "title": "일정과 계획 04",
+    "description": "우리는 날씨 때문에 일정을 옮길 예정입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.plan_move_schedule",
+      "ko": "우리는 날씨 때문에 일정을 옮길 예정입니다.",
+      "en": "We are going to move the schedule because of the weather.",
+      "sentenceKo": "우리는 날씨 때문에 일정을 옮길 예정입니다",
+      "sentenceEn": "We are going to move the schedule because of the weather"
+    },
+    "quizIds": [
+      "advanced.quiz.0531",
+      "advanced.quiz.0532",
+      "advanced.quiz.0533",
+      "advanced.quiz.0534",
+      "advanced.quiz.0535",
+      "advanced.quiz.0536",
+      "advanced.quiz.0537",
+      "advanced.quiz.0538",
+      "advanced.quiz.0539",
+      "advanced.quiz.0540"
+    ],
+    "requiredStageId": "advanced.stage.053"
+  },
+  {
+    "id": "advanced.stage.055",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_006",
+    "order": 5,
+    "title": "일정과 계획 05",
+    "description": "창고 팀은 오늘 오후에 재고를 확인할 예정입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.plan_check_inventory",
+      "ko": "창고 팀은 오늘 오후에 재고를 확인할 예정입니다.",
+      "en": "The warehouse team is going to check the inventory this afternoon.",
+      "sentenceKo": "창고 팀은 오늘 오후에 재고를 확인할 예정입니다",
+      "sentenceEn": "The warehouse team is going to check the inventory this afternoon"
+    },
+    "quizIds": [
+      "advanced.quiz.0541",
+      "advanced.quiz.0542",
+      "advanced.quiz.0543",
+      "advanced.quiz.0544",
+      "advanced.quiz.0545",
+      "advanced.quiz.0546",
+      "advanced.quiz.0547",
+      "advanced.quiz.0548",
+      "advanced.quiz.0549",
+      "advanced.quiz.0550"
+    ],
+    "requiredStageId": "advanced.stage.054"
+  },
+  {
+    "id": "advanced.stage.056",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_006",
+    "order": 6,
+    "title": "일정과 계획 06",
+    "description": "저는 오늘 밤 호텔을 예약할 예정입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.plan_book_hotel",
+      "ko": "저는 오늘 밤 호텔을 예약할 예정입니다.",
+      "en": "I am going to book the hotel tonight.",
+      "sentenceKo": "저는 오늘 밤 호텔을 예약할 예정입니다",
+      "sentenceEn": "I am going to book the hotel tonight"
+    },
+    "quizIds": [
+      "advanced.quiz.0551",
+      "advanced.quiz.0552",
+      "advanced.quiz.0553",
+      "advanced.quiz.0554",
+      "advanced.quiz.0555",
+      "advanced.quiz.0556",
+      "advanced.quiz.0557",
+      "advanced.quiz.0558",
+      "advanced.quiz.0559",
+      "advanced.quiz.0560"
+    ],
+    "requiredStageId": "advanced.stage.055"
+  },
+  {
+    "id": "advanced.stage.057",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_006",
+    "order": 7,
+    "title": "일정과 계획 07",
+    "description": "우리는 발표 전에 질문을 준비할 예정입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.plan_prepare_questions",
+      "ko": "우리는 발표 전에 질문을 준비할 예정입니다.",
+      "en": "We are going to prepare questions before the presentation.",
+      "sentenceKo": "우리는 발표 전에 질문을 준비할 예정입니다",
+      "sentenceEn": "We are going to prepare questions before the presentation"
+    },
+    "quizIds": [
+      "advanced.quiz.0561",
+      "advanced.quiz.0562",
+      "advanced.quiz.0563",
+      "advanced.quiz.0564",
+      "advanced.quiz.0565",
+      "advanced.quiz.0566",
+      "advanced.quiz.0567",
+      "advanced.quiz.0568",
+      "advanced.quiz.0569",
+      "advanced.quiz.0570"
+    ],
+    "requiredStageId": "advanced.stage.056"
+  },
+  {
+    "id": "advanced.stage.058",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_006",
+    "order": 8,
+    "title": "일정과 계획 08",
+    "description": "회사는 다음 달에 새 서비스를 출시할 예정입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.plan_launch_service",
+      "ko": "회사는 다음 달에 새 서비스를 출시할 예정입니다.",
+      "en": "The company is going to launch a new service next month.",
+      "sentenceKo": "회사는 다음 달에 새 서비스를 출시할 예정입니다",
+      "sentenceEn": "The company is going to launch a new service next month"
+    },
+    "quizIds": [
+      "advanced.quiz.0571",
+      "advanced.quiz.0572",
+      "advanced.quiz.0573",
+      "advanced.quiz.0574",
+      "advanced.quiz.0575",
+      "advanced.quiz.0576",
+      "advanced.quiz.0577",
+      "advanced.quiz.0578",
+      "advanced.quiz.0579",
+      "advanced.quiz.0580"
+    ],
+    "requiredStageId": "advanced.stage.057"
+  },
+  {
+    "id": "advanced.stage.059",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_006",
+    "order": 9,
+    "title": "일정과 계획 09",
+    "description": "분석 전에 데이터를 먼저 정리할 예정입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.plan_clean_data",
+      "ko": "분석 전에 데이터를 먼저 정리할 예정입니다.",
+      "en": "We are going to clean the data before the analysis.",
+      "sentenceKo": "분석 전에 데이터를 먼저 정리할 예정입니다",
+      "sentenceEn": "We are going to clean the data before the analysis"
+    },
+    "quizIds": [
+      "advanced.quiz.0581",
+      "advanced.quiz.0582",
+      "advanced.quiz.0583",
+      "advanced.quiz.0584",
+      "advanced.quiz.0585",
+      "advanced.quiz.0586",
+      "advanced.quiz.0587",
+      "advanced.quiz.0588",
+      "advanced.quiz.0589",
+      "advanced.quiz.0590"
+    ],
+    "requiredStageId": "advanced.stage.058"
+  },
+  {
+    "id": "advanced.stage.060",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_006",
+    "order": 10,
+    "title": "일정과 계획 10",
+    "description": "대표님은 다음 주에 지방 지사를 방문할 예정입니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.plan_visit_branch",
+      "ko": "대표님은 다음 주에 지방 지사를 방문할 예정입니다.",
+      "en": "The director is going to visit the local branch next week.",
+      "sentenceKo": "대표님은 다음 주에 지방 지사를 방문할 예정입니다",
+      "sentenceEn": "The director is going to visit the local branch next week"
+    },
+    "quizIds": [
+      "advanced.quiz.0591",
+      "advanced.quiz.0592",
+      "advanced.quiz.0593",
+      "advanced.quiz.0594",
+      "advanced.quiz.0595",
+      "advanced.quiz.0596",
+      "advanced.quiz.0597",
+      "advanced.quiz.0598",
+      "advanced.quiz.0599",
+      "advanced.quiz.0600"
+    ],
+    "requiredStageId": "advanced.stage.059"
+  },
+  {
+    "id": "advanced.stage.061",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_007",
+    "order": 1,
+    "title": "문제와 해결 01",
+    "description": "프린터가 고장 나서 우리는 파일을 이메일로 보냈습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.problem_printer_broken",
+      "ko": "프린터가 고장 나서 우리는 파일을 이메일로 보냈습니다.",
+      "en": "Because the printer was broken, we sent the file by email.",
+      "sentenceKo": "프린터가 고장 나서 우리는 파일을 이메일로 보냈습니다",
+      "sentenceEn": "Because the printer was broken, we sent the file by email"
+    },
+    "quizIds": [
+      "advanced.quiz.0601",
+      "advanced.quiz.0602",
+      "advanced.quiz.0603",
+      "advanced.quiz.0604",
+      "advanced.quiz.0605",
+      "advanced.quiz.0606",
+      "advanced.quiz.0607",
+      "advanced.quiz.0608",
+      "advanced.quiz.0609",
+      "advanced.quiz.0610"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "advanced.stage.062",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_007",
+    "order": 2,
+    "title": "문제와 해결 02",
+    "description": "버스가 늦어서 저는 회의에 조금 늦었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.problem_late_bus",
+      "ko": "버스가 늦어서 저는 회의에 조금 늦었습니다.",
+      "en": "Because the bus was late, I arrived at the meeting a little late.",
+      "sentenceKo": "버스가 늦어서 저는 회의에 조금 늦었습니다",
+      "sentenceEn": "Because the bus was late, I arrived at the meeting a little late"
+    },
+    "quizIds": [
+      "advanced.quiz.0611",
+      "advanced.quiz.0612",
+      "advanced.quiz.0613",
+      "advanced.quiz.0614",
+      "advanced.quiz.0615",
+      "advanced.quiz.0616",
+      "advanced.quiz.0617",
+      "advanced.quiz.0618",
+      "advanced.quiz.0619",
+      "advanced.quiz.0620"
+    ],
+    "requiredStageId": "advanced.stage.061"
+  },
+  {
+    "id": "advanced.stage.063",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_007",
+    "order": 3,
+    "title": "문제와 해결 03",
+    "description": "인터넷이 불안정해서 화상 회의를 다시 시작해야 했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.problem_network_issue",
+      "ko": "인터넷이 불안정해서 화상 회의를 다시 시작해야 했습니다.",
+      "en": "Because the internet was unstable, we had to restart the video meeting.",
+      "sentenceKo": "인터넷이 불안정해서 화상 회의를 다시 시작해야 했습니다",
+      "sentenceEn": "Because the internet was unstable, we had to restart the video meeting"
+    },
+    "quizIds": [
+      "advanced.quiz.0621",
+      "advanced.quiz.0622",
+      "advanced.quiz.0623",
+      "advanced.quiz.0624",
+      "advanced.quiz.0625",
+      "advanced.quiz.0626",
+      "advanced.quiz.0627",
+      "advanced.quiz.0628",
+      "advanced.quiz.0629",
+      "advanced.quiz.0630"
+    ],
+    "requiredStageId": "advanced.stage.062"
+  },
+  {
+    "id": "advanced.stage.064",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_007",
+    "order": 4,
+    "title": "문제와 해결 04",
+    "description": "한 페이지가 빠져 있어서 문서를 다시 인쇄했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.problem_missing_page",
+      "ko": "한 페이지가 빠져 있어서 문서를 다시 인쇄했습니다.",
+      "en": "Because one page was missing, we printed the document again.",
+      "sentenceKo": "한 페이지가 빠져 있어서 문서를 다시 인쇄했습니다",
+      "sentenceEn": "Because one page was missing, we printed the document again"
+    },
+    "quizIds": [
+      "advanced.quiz.0631",
+      "advanced.quiz.0632",
+      "advanced.quiz.0633",
+      "advanced.quiz.0634",
+      "advanced.quiz.0635",
+      "advanced.quiz.0636",
+      "advanced.quiz.0637",
+      "advanced.quiz.0638",
+      "advanced.quiz.0639",
+      "advanced.quiz.0640"
+    ],
+    "requiredStageId": "advanced.stage.063"
+  },
+  {
+    "id": "advanced.stage.065",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_007",
+    "order": 5,
+    "title": "문제와 해결 05",
+    "description": "주소가 잘못되어서 택배가 다른 곳으로 배송되었습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.problem_wrong_address",
+      "ko": "주소가 잘못되어서 택배가 다른 곳으로 배송되었습니다.",
+      "en": "Because the address was wrong, the package was delivered elsewhere.",
+      "sentenceKo": "주소가 잘못되어서 택배가 다른 곳으로 배송되었습니다",
+      "sentenceEn": "Because the address was wrong, the package was delivered elsewhere"
+    },
+    "quizIds": [
+      "advanced.quiz.0641",
+      "advanced.quiz.0642",
+      "advanced.quiz.0643",
+      "advanced.quiz.0644",
+      "advanced.quiz.0645",
+      "advanced.quiz.0646",
+      "advanced.quiz.0647",
+      "advanced.quiz.0648",
+      "advanced.quiz.0649",
+      "advanced.quiz.0650"
+    ],
+    "requiredStageId": "advanced.stage.064"
+  },
+  {
+    "id": "advanced.stage.066",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_007",
+    "order": 6,
+    "title": "문제와 해결 06",
+    "description": "예산이 부족해서 계획을 조정해야 했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.problem_budget_limit",
+      "ko": "예산이 부족해서 계획을 조정해야 했습니다.",
+      "en": "Because the budget was limited, we had to adjust the plan.",
+      "sentenceKo": "예산이 부족해서 계획을 조정해야 했습니다",
+      "sentenceEn": "Because the budget was limited, we had to adjust the plan"
+    },
+    "quizIds": [
+      "advanced.quiz.0651",
+      "advanced.quiz.0652",
+      "advanced.quiz.0653",
+      "advanced.quiz.0654",
+      "advanced.quiz.0655",
+      "advanced.quiz.0656",
+      "advanced.quiz.0657",
+      "advanced.quiz.0658",
+      "advanced.quiz.0659",
+      "advanced.quiz.0660"
+    ],
+    "requiredStageId": "advanced.stage.065"
+  },
+  {
+    "id": "advanced.stage.067",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_007",
+    "order": 7,
+    "title": "문제와 해결 07",
+    "description": "밖이 너무 시끄러워서 창문을 닫았습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.problem_noise_issue",
+      "ko": "밖이 너무 시끄러워서 창문을 닫았습니다.",
+      "en": "Because it was too noisy outside, I closed the window.",
+      "sentenceKo": "밖이 너무 시끄러워서 창문을 닫았습니다",
+      "sentenceEn": "Because it was too noisy outside, I closed the window"
+    },
+    "quizIds": [
+      "advanced.quiz.0661",
+      "advanced.quiz.0662",
+      "advanced.quiz.0663",
+      "advanced.quiz.0664",
+      "advanced.quiz.0665",
+      "advanced.quiz.0666",
+      "advanced.quiz.0667",
+      "advanced.quiz.0668",
+      "advanced.quiz.0669",
+      "advanced.quiz.0670"
+    ],
+    "requiredStageId": "advanced.stage.066"
+  },
+  {
+    "id": "advanced.stage.068",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_007",
+    "order": 8,
+    "title": "문제와 해결 08",
+    "description": "배터리가 거의 없어서 발표 자료를 바로 저장했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.problem_low_battery",
+      "ko": "배터리가 거의 없어서 발표 자료를 바로 저장했습니다.",
+      "en": "Because the battery was low, I saved the presentation right away.",
+      "sentenceKo": "배터리가 거의 없어서 발표 자료를 바로 저장했습니다",
+      "sentenceEn": "Because the battery was low, I saved the presentation right away"
+    },
+    "quizIds": [
+      "advanced.quiz.0671",
+      "advanced.quiz.0672",
+      "advanced.quiz.0673",
+      "advanced.quiz.0674",
+      "advanced.quiz.0675",
+      "advanced.quiz.0676",
+      "advanced.quiz.0677",
+      "advanced.quiz.0678",
+      "advanced.quiz.0679",
+      "advanced.quiz.0680"
+    ],
+    "requiredStageId": "advanced.stage.067"
+  },
+  {
+    "id": "advanced.stage.069",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_007",
+    "order": 9,
+    "title": "문제와 해결 09",
+    "description": "공지 시간이 짧아서 모두가 급히 준비했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.problem_short_notice",
+      "ko": "공지 시간이 짧아서 모두가 급히 준비했습니다.",
+      "en": "Because the notice was short, everyone prepared in a hurry.",
+      "sentenceKo": "공지 시간이 짧아서 모두가 급히 준비했습니다",
+      "sentenceEn": "Because the notice was short, everyone prepared in a hurry"
+    },
+    "quizIds": [
+      "advanced.quiz.0681",
+      "advanced.quiz.0682",
+      "advanced.quiz.0683",
+      "advanced.quiz.0684",
+      "advanced.quiz.0685",
+      "advanced.quiz.0686",
+      "advanced.quiz.0687",
+      "advanced.quiz.0688",
+      "advanced.quiz.0689",
+      "advanced.quiz.0690"
+    ],
+    "requiredStageId": "advanced.stage.068"
+  },
+  {
+    "id": "advanced.stage.070",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_007",
+    "order": 10,
+    "title": "문제와 해결 10",
+    "description": "교통 체증 때문에 고객과의 약속 시간을 변경했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.problem_traffic_jam",
+      "ko": "교통 체증 때문에 고객과의 약속 시간을 변경했습니다.",
+      "en": "Because of the traffic jam, we changed the meeting time with the client.",
+      "sentenceKo": "교통 체증 때문에 고객과의 약속 시간을 변경했습니다",
+      "sentenceEn": "Because of the traffic jam, we changed the meeting time with the client"
+    },
+    "quizIds": [
+      "advanced.quiz.0691",
+      "advanced.quiz.0692",
+      "advanced.quiz.0693",
+      "advanced.quiz.0694",
+      "advanced.quiz.0695",
+      "advanced.quiz.0696",
+      "advanced.quiz.0697",
+      "advanced.quiz.0698",
+      "advanced.quiz.0699",
+      "advanced.quiz.0700"
+    ],
+    "requiredStageId": "advanced.stage.069"
+  },
+  {
+    "id": "advanced.stage.071",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_008",
+    "order": 1,
+    "title": "선호와 선택 01",
+    "description": "저는 비 오는 날에는 밖에 나가기보다 집에 있는 편이 낫습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.prefer_stay_home_rain",
+      "ko": "저는 비 오는 날에는 밖에 나가기보다 집에 있는 편이 낫습니다.",
+      "en": "I would rather stay home than go out in the rain.",
+      "sentenceKo": "저는 비 오는 날에는 밖에 나가기보다 집에 있는 편이 낫습니다",
+      "sentenceEn": "I would rather stay home than go out in the rain"
+    },
+    "quizIds": [
+      "advanced.quiz.0701",
+      "advanced.quiz.0702",
+      "advanced.quiz.0703",
+      "advanced.quiz.0704",
+      "advanced.quiz.0705",
+      "advanced.quiz.0706",
+      "advanced.quiz.0707",
+      "advanced.quiz.0708",
+      "advanced.quiz.0709",
+      "advanced.quiz.0710"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "advanced.stage.072",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_008",
+    "order": 2,
+    "title": "선호와 선택 02",
+    "description": "저는 밤에는 커피보다 차를 마시는 편이 낫습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.prefer_tea_coffee",
+      "ko": "저는 밤에는 커피보다 차를 마시는 편이 낫습니다.",
+      "en": "I would rather drink tea than coffee at night.",
+      "sentenceKo": "저는 밤에는 커피보다 차를 마시는 편이 낫습니다",
+      "sentenceEn": "I would rather drink tea than coffee at night"
+    },
+    "quizIds": [
+      "advanced.quiz.0711",
+      "advanced.quiz.0712",
+      "advanced.quiz.0713",
+      "advanced.quiz.0714",
+      "advanced.quiz.0715",
+      "advanced.quiz.0716",
+      "advanced.quiz.0717",
+      "advanced.quiz.0718",
+      "advanced.quiz.0719",
+      "advanced.quiz.0720"
+    ],
+    "requiredStageId": "advanced.stage.071"
+  },
+  {
+    "id": "advanced.stage.073",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_008",
+    "order": 3,
+    "title": "선호와 선택 03",
+    "description": "가까운 곳이라면 운전보다 걷는 편이 낫습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.prefer_walk_drive",
+      "ko": "가까운 곳이라면 운전보다 걷는 편이 낫습니다.",
+      "en": "I would rather walk than drive when the place is nearby.",
+      "sentenceKo": "가까운 곳이라면 운전보다 걷는 편이 낫습니다",
+      "sentenceEn": "I would rather walk than drive when the place is nearby"
+    },
+    "quizIds": [
+      "advanced.quiz.0721",
+      "advanced.quiz.0722",
+      "advanced.quiz.0723",
+      "advanced.quiz.0724",
+      "advanced.quiz.0725",
+      "advanced.quiz.0726",
+      "advanced.quiz.0727",
+      "advanced.quiz.0728",
+      "advanced.quiz.0729",
+      "advanced.quiz.0730"
+    ],
+    "requiredStageId": "advanced.stage.072"
+  },
+  {
+    "id": "advanced.stage.074",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_008",
+    "order": 4,
+    "title": "선호와 선택 04",
+    "description": "복잡한 내용을 설명할 때는 전화보다 글을 쓰는 편이 낫습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.prefer_write_call",
+      "ko": "복잡한 내용을 설명할 때는 전화보다 글을 쓰는 편이 낫습니다.",
+      "en": "I would rather write than call when the topic is complicated.",
+      "sentenceKo": "복잡한 내용을 설명할 때는 전화보다 글을 쓰는 편이 낫습니다",
+      "sentenceEn": "I would rather write than call when the topic is complicated"
+    },
+    "quizIds": [
+      "advanced.quiz.0731",
+      "advanced.quiz.0732",
+      "advanced.quiz.0733",
+      "advanced.quiz.0734",
+      "advanced.quiz.0735",
+      "advanced.quiz.0736",
+      "advanced.quiz.0737",
+      "advanced.quiz.0738",
+      "advanced.quiz.0739",
+      "advanced.quiz.0740"
+    ],
+    "requiredStageId": "advanced.stage.073"
+  },
+  {
+    "id": "advanced.stage.075",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_008",
+    "order": 5,
+    "title": "선호와 선택 05",
+    "description": "짧은 출장이라면 비행기보다 기차를 타는 편이 낫습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.prefer_train_plane",
+      "ko": "짧은 출장이라면 비행기보다 기차를 타는 편이 낫습니다.",
+      "en": "I would rather take the train than fly for a short business trip.",
+      "sentenceKo": "짧은 출장이라면 비행기보다 기차를 타는 편이 낫습니다",
+      "sentenceEn": "I would rather take the train than fly for a short business trip"
+    },
+    "quizIds": [
+      "advanced.quiz.0741",
+      "advanced.quiz.0742",
+      "advanced.quiz.0743",
+      "advanced.quiz.0744",
+      "advanced.quiz.0745",
+      "advanced.quiz.0746",
+      "advanced.quiz.0747",
+      "advanced.quiz.0748",
+      "advanced.quiz.0749",
+      "advanced.quiz.0750"
+    ],
+    "requiredStageId": "advanced.stage.074"
+  },
+  {
+    "id": "advanced.stage.076",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_008",
+    "order": 6,
+    "title": "선호와 선택 06",
+    "description": "저는 밤늦게 일하는 것보다 일찍 시작하는 편이 낫습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.prefer_early_late",
+      "ko": "저는 밤늦게 일하는 것보다 일찍 시작하는 편이 낫습니다.",
+      "en": "I would rather start early than work late at night.",
+      "sentenceKo": "저는 밤늦게 일하는 것보다 일찍 시작하는 편이 낫습니다",
+      "sentenceEn": "I would rather start early than work late at night"
+    },
+    "quizIds": [
+      "advanced.quiz.0751",
+      "advanced.quiz.0752",
+      "advanced.quiz.0753",
+      "advanced.quiz.0754",
+      "advanced.quiz.0755",
+      "advanced.quiz.0756",
+      "advanced.quiz.0757",
+      "advanced.quiz.0758",
+      "advanced.quiz.0759",
+      "advanced.quiz.0760"
+    ],
+    "requiredStageId": "advanced.stage.075"
+  },
+  {
+    "id": "advanced.stage.077",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_008",
+    "order": 7,
+    "title": "선호와 선택 07",
+    "description": "저는 복잡한 디자인보다 단순한 디자인을 선호합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.prefer_simple_design",
+      "ko": "저는 복잡한 디자인보다 단순한 디자인을 선호합니다.",
+      "en": "I prefer a simple design to a complicated one.",
+      "sentenceKo": "저는 복잡한 디자인보다 단순한 디자인을 선호합니다",
+      "sentenceEn": "I prefer a simple design to a complicated one"
+    },
+    "quizIds": [
+      "advanced.quiz.0761",
+      "advanced.quiz.0762",
+      "advanced.quiz.0763",
+      "advanced.quiz.0764",
+      "advanced.quiz.0765",
+      "advanced.quiz.0766",
+      "advanced.quiz.0767",
+      "advanced.quiz.0768",
+      "advanced.quiz.0769",
+      "advanced.quiz.0770"
+    ],
+    "requiredStageId": "advanced.stage.076"
+  },
+  {
+    "id": "advanced.stage.078",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_008",
+    "order": 8,
+    "title": "선호와 선택 08",
+    "description": "저는 큰 모임보다 작은 모임이 더 편합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.prefer_small_group",
+      "ko": "저는 큰 모임보다 작은 모임이 더 편합니다.",
+      "en": "I am more comfortable in a small group than in a large one.",
+      "sentenceKo": "저는 큰 모임보다 작은 모임이 더 편합니다",
+      "sentenceEn": "I am more comfortable in a small group than in a large one"
+    },
+    "quizIds": [
+      "advanced.quiz.0771",
+      "advanced.quiz.0772",
+      "advanced.quiz.0773",
+      "advanced.quiz.0774",
+      "advanced.quiz.0775",
+      "advanced.quiz.0776",
+      "advanced.quiz.0777",
+      "advanced.quiz.0778",
+      "advanced.quiz.0779",
+      "advanced.quiz.0780"
+    ],
+    "requiredStageId": "advanced.stage.077"
+  },
+  {
+    "id": "advanced.stage.079",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_008",
+    "order": 9,
+    "title": "선호와 선택 09",
+    "description": "저는 시끄러운 카페보다 조용한 카페를 선호합니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.prefer_quiet_cafe",
+      "ko": "저는 시끄러운 카페보다 조용한 카페를 선호합니다.",
+      "en": "I prefer a quiet cafe to a noisy one.",
+      "sentenceKo": "저는 시끄러운 카페보다 조용한 카페를 선호합니다",
+      "sentenceEn": "I prefer a quiet cafe to a noisy one"
+    },
+    "quizIds": [
+      "advanced.quiz.0781",
+      "advanced.quiz.0782",
+      "advanced.quiz.0783",
+      "advanced.quiz.0784",
+      "advanced.quiz.0785",
+      "advanced.quiz.0786",
+      "advanced.quiz.0787",
+      "advanced.quiz.0788",
+      "advanced.quiz.0789",
+      "advanced.quiz.0790"
+    ],
+    "requiredStageId": "advanced.stage.078"
+  },
+  {
+    "id": "advanced.stage.080",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_008",
+    "order": 10,
+    "title": "선호와 선택 10",
+    "description": "저는 마감 직전보다 미리 준비하는 편이 낫습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.prefer_prepare_early",
+      "ko": "저는 마감 직전보다 미리 준비하는 편이 낫습니다.",
+      "en": "I would rather prepare early than rush at the last minute.",
+      "sentenceKo": "저는 마감 직전보다 미리 준비하는 편이 낫습니다",
+      "sentenceEn": "I would rather prepare early than rush at the last minute"
+    },
+    "quizIds": [
+      "advanced.quiz.0791",
+      "advanced.quiz.0792",
+      "advanced.quiz.0793",
+      "advanced.quiz.0794",
+      "advanced.quiz.0795",
+      "advanced.quiz.0796",
+      "advanced.quiz.0797",
+      "advanced.quiz.0798",
+      "advanced.quiz.0799",
+      "advanced.quiz.0800"
+    ],
+    "requiredStageId": "advanced.stage.079"
+  },
+  {
+    "id": "advanced.stage.081",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_009",
+    "order": 1,
+    "title": "조언과 제안 01",
+    "description": "표를 예약하기 전에 일정을 다시 확인하는 것이 좋습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.advice_check_schedule",
+      "ko": "표를 예약하기 전에 일정을 다시 확인하는 것이 좋습니다.",
+      "en": "You should check the schedule again before booking the ticket.",
+      "sentenceKo": "표를 예약하기 전에 일정을 다시 확인하는 것이 좋습니다",
+      "sentenceEn": "You should check the schedule again before booking the ticket"
+    },
+    "quizIds": [
+      "advanced.quiz.0801",
+      "advanced.quiz.0802",
+      "advanced.quiz.0803",
+      "advanced.quiz.0804",
+      "advanced.quiz.0805",
+      "advanced.quiz.0806",
+      "advanced.quiz.0807",
+      "advanced.quiz.0808",
+      "advanced.quiz.0809",
+      "advanced.quiz.0810"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "advanced.stage.082",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_009",
+    "order": 2,
+    "title": "조언과 제안 02",
+    "description": "파일을 보내기 전에 백업을 저장하는 것이 좋습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.advice_save_backup",
+      "ko": "파일을 보내기 전에 백업을 저장하는 것이 좋습니다.",
+      "en": "You should save a backup before sending the file.",
+      "sentenceKo": "파일을 보내기 전에 백업을 저장하는 것이 좋습니다",
+      "sentenceEn": "You should save a backup before sending the file"
+    },
+    "quizIds": [
+      "advanced.quiz.0811",
+      "advanced.quiz.0812",
+      "advanced.quiz.0813",
+      "advanced.quiz.0814",
+      "advanced.quiz.0815",
+      "advanced.quiz.0816",
+      "advanced.quiz.0817",
+      "advanced.quiz.0818",
+      "advanced.quiz.0819",
+      "advanced.quiz.0820"
+    ],
+    "requiredStageId": "advanced.stage.081"
+  },
+  {
+    "id": "advanced.stage.083",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_009",
+    "order": 3,
+    "title": "조언과 제안 03",
+    "description": "교통이 복잡하면 조금 일찍 출발하는 것이 좋습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.advice_leave_early",
+      "ko": "교통이 복잡하면 조금 일찍 출발하는 것이 좋습니다.",
+      "en": "You should leave a little early if traffic is heavy.",
+      "sentenceKo": "교통이 복잡하면 조금 일찍 출발하는 것이 좋습니다",
+      "sentenceEn": "You should leave a little early if traffic is heavy"
+    },
+    "quizIds": [
+      "advanced.quiz.0821",
+      "advanced.quiz.0822",
+      "advanced.quiz.0823",
+      "advanced.quiz.0824",
+      "advanced.quiz.0825",
+      "advanced.quiz.0826",
+      "advanced.quiz.0827",
+      "advanced.quiz.0828",
+      "advanced.quiz.0829",
+      "advanced.quiz.0830"
+    ],
+    "requiredStageId": "advanced.stage.082"
+  },
+  {
+    "id": "advanced.stage.084",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_009",
+    "order": 4,
+    "title": "조언과 제안 04",
+    "description": "이해가 안 되면 바로 질문하는 것이 좋습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.advice_ask_question",
+      "ko": "이해가 안 되면 바로 질문하는 것이 좋습니다.",
+      "en": "You should ask questions right away if you do not understand.",
+      "sentenceKo": "이해가 안 되면 바로 질문하는 것이 좋습니다",
+      "sentenceEn": "You should ask questions right away if you do not understand"
+    },
+    "quizIds": [
+      "advanced.quiz.0831",
+      "advanced.quiz.0832",
+      "advanced.quiz.0833",
+      "advanced.quiz.0834",
+      "advanced.quiz.0835",
+      "advanced.quiz.0836",
+      "advanced.quiz.0837",
+      "advanced.quiz.0838",
+      "advanced.quiz.0839",
+      "advanced.quiz.0840"
+    ],
+    "requiredStageId": "advanced.stage.083"
+  },
+  {
+    "id": "advanced.stage.085",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_009",
+    "order": 5,
+    "title": "조언과 제안 05",
+    "description": "오래 발표해야 한다면 물을 충분히 마시는 것이 좋습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.advice_drink_water",
+      "ko": "오래 발표해야 한다면 물을 충분히 마시는 것이 좋습니다.",
+      "en": "You should drink enough water if you have a long presentation.",
+      "sentenceKo": "오래 발표해야 한다면 물을 충분히 마시는 것이 좋습니다",
+      "sentenceEn": "You should drink enough water if you have a long presentation"
+    },
+    "quizIds": [
+      "advanced.quiz.0841",
+      "advanced.quiz.0842",
+      "advanced.quiz.0843",
+      "advanced.quiz.0844",
+      "advanced.quiz.0845",
+      "advanced.quiz.0846",
+      "advanced.quiz.0847",
+      "advanced.quiz.0848",
+      "advanced.quiz.0849",
+      "advanced.quiz.0850"
+    ],
+    "requiredStageId": "advanced.stage.084"
+  },
+  {
+    "id": "advanced.stage.086",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_009",
+    "order": 6,
+    "title": "조언과 제안 06",
+    "description": "컴퓨터를 오래 본 후에는 눈을 쉬게 하는 것이 좋습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.advice_rest_eyes",
+      "ko": "컴퓨터를 오래 본 후에는 눈을 쉬게 하는 것이 좋습니다.",
+      "en": "You should rest your eyes after looking at a screen for a long time.",
+      "sentenceKo": "컴퓨터를 오래 본 후에는 눈을 쉬게 하는 것이 좋습니다",
+      "sentenceEn": "You should rest your eyes after looking at a screen for a long time"
+    },
+    "quizIds": [
+      "advanced.quiz.0851",
+      "advanced.quiz.0852",
+      "advanced.quiz.0853",
+      "advanced.quiz.0854",
+      "advanced.quiz.0855",
+      "advanced.quiz.0856",
+      "advanced.quiz.0857",
+      "advanced.quiz.0858",
+      "advanced.quiz.0859",
+      "advanced.quiz.0860"
+    ],
+    "requiredStageId": "advanced.stage.085"
+  },
+  {
+    "id": "advanced.stage.087",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_009",
+    "order": 7,
+    "title": "조언과 제안 07",
+    "description": "서명하기 전에 계약서를 자세히 읽는 것이 좋습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.advice_read_contract",
+      "ko": "서명하기 전에 계약서를 자세히 읽는 것이 좋습니다.",
+      "en": "You should read the contract carefully before signing it.",
+      "sentenceKo": "서명하기 전에 계약서를 자세히 읽는 것이 좋습니다",
+      "sentenceEn": "You should read the contract carefully before signing it"
+    },
+    "quizIds": [
+      "advanced.quiz.0861",
+      "advanced.quiz.0862",
+      "advanced.quiz.0863",
+      "advanced.quiz.0864",
+      "advanced.quiz.0865",
+      "advanced.quiz.0866",
+      "advanced.quiz.0867",
+      "advanced.quiz.0868",
+      "advanced.quiz.0869",
+      "advanced.quiz.0870"
+    ],
+    "requiredStageId": "advanced.stage.086"
+  },
+  {
+    "id": "advanced.stage.088",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_009",
+    "order": 8,
+    "title": "조언과 제안 08",
+    "description": "불만 메시지에도 정중하게 답하는 것이 좋습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.advice_reply_politely",
+      "ko": "불만 메시지에도 정중하게 답하는 것이 좋습니다.",
+      "en": "You should reply politely even to complaint messages.",
+      "sentenceKo": "불만 메시지에도 정중하게 답하는 것이 좋습니다",
+      "sentenceEn": "You should reply politely even to complaint messages"
+    },
+    "quizIds": [
+      "advanced.quiz.0871",
+      "advanced.quiz.0872",
+      "advanced.quiz.0873",
+      "advanced.quiz.0874",
+      "advanced.quiz.0875",
+      "advanced.quiz.0876",
+      "advanced.quiz.0877",
+      "advanced.quiz.0878",
+      "advanced.quiz.0879",
+      "advanced.quiz.0880"
+    ],
+    "requiredStageId": "advanced.stage.087"
+  },
+  {
+    "id": "advanced.stage.089",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_009",
+    "order": 9,
+    "title": "조언과 제안 09",
+    "description": "회의 전에 메모를 준비해 두는 것이 좋습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.advice_prepare_notes",
+      "ko": "회의 전에 메모를 준비해 두는 것이 좋습니다.",
+      "en": "You should prepare your notes before the meeting.",
+      "sentenceKo": "회의 전에 메모를 준비해 두는 것이 좋습니다",
+      "sentenceEn": "You should prepare your notes before the meeting"
+    },
+    "quizIds": [
+      "advanced.quiz.0881",
+      "advanced.quiz.0882",
+      "advanced.quiz.0883",
+      "advanced.quiz.0884",
+      "advanced.quiz.0885",
+      "advanced.quiz.0886",
+      "advanced.quiz.0887",
+      "advanced.quiz.0888",
+      "advanced.quiz.0889",
+      "advanced.quiz.0890"
+    ],
+    "requiredStageId": "advanced.stage.088"
+  },
+  {
+    "id": "advanced.stage.090",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_009",
+    "order": 10,
+    "title": "조언과 제안 10",
+    "description": "집중이 안 되면 잠깐 쉬는 편이 낫습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.advice_take_break",
+      "ko": "집중이 안 되면 잠깐 쉬는 편이 낫습니다.",
+      "en": "You had better take a short break if you cannot focus.",
+      "sentenceKo": "집중이 안 되면 잠깐 쉬는 편이 낫습니다",
+      "sentenceEn": "You had better take a short break if you cannot focus"
+    },
+    "quizIds": [
+      "advanced.quiz.0891",
+      "advanced.quiz.0892",
+      "advanced.quiz.0893",
+      "advanced.quiz.0894",
+      "advanced.quiz.0895",
+      "advanced.quiz.0896",
+      "advanced.quiz.0897",
+      "advanced.quiz.0898",
+      "advanced.quiz.0899",
+      "advanced.quiz.0900"
+    ],
+    "requiredStageId": "advanced.stage.089"
+  },
+  {
+    "id": "advanced.stage.091",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_010",
+    "order": 1,
+    "title": "감정과 결과 01",
+    "description": "발표가 성공적으로 끝났을 때 저는 안도했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.emotion_relieved_presentation",
+      "ko": "발표가 성공적으로 끝났을 때 저는 안도했습니다.",
+      "en": "I was relieved when the presentation ended successfully.",
+      "sentenceKo": "발표가 성공적으로 끝났을 때 저는 안도했습니다",
+      "sentenceEn": "I was relieved when the presentation ended successfully"
+    },
+    "quizIds": [
+      "advanced.quiz.0901",
+      "advanced.quiz.0902",
+      "advanced.quiz.0903",
+      "advanced.quiz.0904",
+      "advanced.quiz.0905",
+      "advanced.quiz.0906",
+      "advanced.quiz.0907",
+      "advanced.quiz.0908",
+      "advanced.quiz.0909",
+      "advanced.quiz.0910"
+    ],
+    "requiredStageId": null
+  },
+  {
+    "id": "advanced.stage.092",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_010",
+    "order": 2,
+    "title": "감정과 결과 02",
+    "description": "프로젝트가 좋은 평가를 받아서 저는 자랑스러웠습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.emotion_proud_project",
+      "ko": "프로젝트가 좋은 평가를 받아서 저는 자랑스러웠습니다.",
+      "en": "I felt proud because the project received positive feedback.",
+      "sentenceKo": "프로젝트가 좋은 평가를 받아서 저는 자랑스러웠습니다",
+      "sentenceEn": "I felt proud because the project received positive feedback"
+    },
+    "quizIds": [
+      "advanced.quiz.0911",
+      "advanced.quiz.0912",
+      "advanced.quiz.0913",
+      "advanced.quiz.0914",
+      "advanced.quiz.0915",
+      "advanced.quiz.0916",
+      "advanced.quiz.0917",
+      "advanced.quiz.0918",
+      "advanced.quiz.0919",
+      "advanced.quiz.0920"
+    ],
+    "requiredStageId": "advanced.stage.091"
+  },
+  {
+    "id": "advanced.stage.093",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_010",
+    "order": 3,
+    "title": "감정과 결과 03",
+    "description": "면접 전에 저는 꽤 긴장했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.emotion_nervous_interview",
+      "ko": "면접 전에 저는 꽤 긴장했습니다.",
+      "en": "I felt quite nervous before the interview.",
+      "sentenceKo": "면접 전에 저는 꽤 긴장했습니다",
+      "sentenceEn": "I felt quite nervous before the interview"
+    },
+    "quizIds": [
+      "advanced.quiz.0921",
+      "advanced.quiz.0922",
+      "advanced.quiz.0923",
+      "advanced.quiz.0924",
+      "advanced.quiz.0925",
+      "advanced.quiz.0926",
+      "advanced.quiz.0927",
+      "advanced.quiz.0928",
+      "advanced.quiz.0929",
+      "advanced.quiz.0930"
+    ],
+    "requiredStageId": "advanced.stage.092"
+  },
+  {
+    "id": "advanced.stage.094",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_010",
+    "order": 4,
+    "title": "감정과 결과 04",
+    "description": "항공편이 취소되어서 저는 실망했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.emotion_disappointed_delay",
+      "ko": "항공편이 취소되어서 저는 실망했습니다.",
+      "en": "I was disappointed when the flight was canceled.",
+      "sentenceKo": "항공편이 취소되어서 저는 실망했습니다",
+      "sentenceEn": "I was disappointed when the flight was canceled"
+    },
+    "quizIds": [
+      "advanced.quiz.0931",
+      "advanced.quiz.0932",
+      "advanced.quiz.0933",
+      "advanced.quiz.0934",
+      "advanced.quiz.0935",
+      "advanced.quiz.0936",
+      "advanced.quiz.0937",
+      "advanced.quiz.0938",
+      "advanced.quiz.0939",
+      "advanced.quiz.0940"
+    ],
+    "requiredStageId": "advanced.stage.093"
+  },
+  {
+    "id": "advanced.stage.095",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_010",
+    "order": 5,
+    "title": "감정과 결과 05",
+    "description": "동료가 도와줘서 저는 정말 고마웠습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.emotion_grateful_help",
+      "ko": "동료가 도와줘서 저는 정말 고마웠습니다.",
+      "en": "I felt truly grateful when my coworker helped me.",
+      "sentenceKo": "동료가 도와줘서 저는 정말 고마웠습니다",
+      "sentenceEn": "I felt truly grateful when my coworker helped me"
+    },
+    "quizIds": [
+      "advanced.quiz.0941",
+      "advanced.quiz.0942",
+      "advanced.quiz.0943",
+      "advanced.quiz.0944",
+      "advanced.quiz.0945",
+      "advanced.quiz.0946",
+      "advanced.quiz.0947",
+      "advanced.quiz.0948",
+      "advanced.quiz.0949",
+      "advanced.quiz.0950"
+    ],
+    "requiredStageId": "advanced.stage.094"
+  },
+  {
+    "id": "advanced.stage.096",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_010",
+    "order": 6,
+    "title": "감정과 결과 06",
+    "description": "결과가 예상보다 좋아서 저는 놀랐습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.emotion_surprised_result",
+      "ko": "결과가 예상보다 좋아서 저는 놀랐습니다.",
+      "en": "I was surprised because the result was better than expected.",
+      "sentenceKo": "결과가 예상보다 좋아서 저는 놀랐습니다",
+      "sentenceEn": "I was surprised because the result was better than expected"
+    },
+    "quizIds": [
+      "advanced.quiz.0951",
+      "advanced.quiz.0952",
+      "advanced.quiz.0953",
+      "advanced.quiz.0954",
+      "advanced.quiz.0955",
+      "advanced.quiz.0956",
+      "advanced.quiz.0957",
+      "advanced.quiz.0958",
+      "advanced.quiz.0959",
+      "advanced.quiz.0960"
+    ],
+    "requiredStageId": "advanced.stage.095"
+  },
+  {
+    "id": "advanced.stage.097",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_010",
+    "order": 7,
+    "title": "감정과 결과 07",
+    "description": "설명이 충분히 명확하지 않아서 저는 혼란스러웠습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.emotion_confused_instructions",
+      "ko": "설명이 충분히 명확하지 않아서 저는 혼란스러웠습니다.",
+      "en": "I felt confused because the instructions were not clear enough.",
+      "sentenceKo": "설명이 충분히 명확하지 않아서 저는 혼란스러웠습니다",
+      "sentenceEn": "I felt confused because the instructions were not clear enough"
+    },
+    "quizIds": [
+      "advanced.quiz.0961",
+      "advanced.quiz.0962",
+      "advanced.quiz.0963",
+      "advanced.quiz.0964",
+      "advanced.quiz.0965",
+      "advanced.quiz.0966",
+      "advanced.quiz.0967",
+      "advanced.quiz.0968",
+      "advanced.quiz.0969",
+      "advanced.quiz.0970"
+    ],
+    "requiredStageId": "advanced.stage.096"
+  },
+  {
+    "id": "advanced.stage.098",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_010",
+    "order": 8,
+    "title": "감정과 결과 08",
+    "description": "오랫동안 기다린 여행이라 저는 무척 신이 났습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.emotion_excited_trip2",
+      "ko": "오랫동안 기다린 여행이라 저는 무척 신이 났습니다.",
+      "en": "I was excited because it was a trip I had waited for for a long time.",
+      "sentenceKo": "오랫동안 기다린 여행이라 저는 무척 신이 났습니다",
+      "sentenceEn": "I was excited because it was a trip I had waited for for a long time"
+    },
+    "quizIds": [
+      "advanced.quiz.0971",
+      "advanced.quiz.0972",
+      "advanced.quiz.0973",
+      "advanced.quiz.0974",
+      "advanced.quiz.0975",
+      "advanced.quiz.0976",
+      "advanced.quiz.0977",
+      "advanced.quiz.0978",
+      "advanced.quiz.0979",
+      "advanced.quiz.0980"
+    ],
+    "requiredStageId": "advanced.stage.097"
+  },
+  {
+    "id": "advanced.stage.099",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_010",
+    "order": 9,
+    "title": "감정과 결과 09",
+    "description": "회의 중에 실수해서 저는 조금 민망했습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.emotion_embarrassed_mistake2",
+      "ko": "회의 중에 실수해서 저는 조금 민망했습니다.",
+      "en": "I felt embarrassed after making a mistake during the meeting.",
+      "sentenceKo": "회의 중에 실수해서 저는 조금 민망했습니다",
+      "sentenceEn": "I felt embarrassed after making a mistake during the meeting"
+    },
+    "quizIds": [
+      "advanced.quiz.0981",
+      "advanced.quiz.0982",
+      "advanced.quiz.0983",
+      "advanced.quiz.0984",
+      "advanced.quiz.0985",
+      "advanced.quiz.0986",
+      "advanced.quiz.0987",
+      "advanced.quiz.0988",
+      "advanced.quiz.0989",
+      "advanced.quiz.0990"
+    ],
+    "requiredStageId": "advanced.stage.098"
+  },
+  {
+    "id": "advanced.stage.100",
+    "difficulty": "advanced",
+    "chapterId": "advanced_chapter_010",
+    "order": 10,
+    "title": "감정과 결과 10",
+    "description": "문제를 해결한 뒤에야 저는 다시 차분해졌습니다 학습 목표를 10문제로 반복 학습한다",
+    "learningTarget": {
+      "id": "advanced.target.emotion_calm_solution",
+      "ko": "문제를 해결한 뒤에야 저는 다시 차분해졌습니다.",
+      "en": "I became calm again only after solving the problem.",
+      "sentenceKo": "문제를 해결한 뒤에야 저는 다시 차분해졌습니다",
+      "sentenceEn": "I became calm again only after solving the problem"
+    },
+    "quizIds": [
+      "advanced.quiz.0991",
+      "advanced.quiz.0992",
+      "advanced.quiz.0993",
+      "advanced.quiz.0994",
+      "advanced.quiz.0995",
+      "advanced.quiz.0996",
+      "advanced.quiz.0997",
+      "advanced.quiz.0998",
+      "advanced.quiz.0999",
+      "advanced.quiz.1000"
+    ],
+    "requiredStageId": "advanced.stage.099"
   }
 ]

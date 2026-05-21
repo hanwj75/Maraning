@@ -3,6 +3,8 @@
 ## Functional Cases
 
 - `Home` 에서 `DifficultySelect` 로 진입 가능해야 한다.
+- 하단 내비게이션의 `마이페이지` 버튼으로 `/mypage` 진입 가능해야 한다.
+- 하단 내비게이션의 `공유하기` 버튼으로 현재 스테이지 공유 모달을 열 수 있어야 한다.
 - 난이도 선택 후 해당 난이도 `ChapterMap` 으로 이동해야 한다.
 - 첫 Chapter 는 `unlocked`, 이후 Chapter 는 기본적으로 `locked` 여야 한다.
 - 한 `Chapter` 를 완료해도 바로 다음 `Chapter` `1`개만 열리고 그 이후 `Chapter` 는 계속 `locked` 여야 한다.
@@ -17,6 +19,10 @@
 - choices 기반 문제는 정답 위치가 바뀌어도 `answer value` 기준으로 정답 판정이 유지되어야 한다.
 - `word_order` 는 display token 카드가 shuffle 되어야 하고 `answerTokens` 원본 순서는 유지되어야 한다.
 - `matching` 은 원본 pair 관계를 유지한 채 왼쪽 한국어 카드와 오른쪽 영어 카드 표시 순서만 각각 shuffle 되어야 한다.
+- `matching` 에서 잘못 연결한 pair 는 제출 전에 다시 해제할 수 있어야 한다.
+- `matching` 에서 왼쪽 카드를 다시 클릭하면 기존 연결이 해제되어야 한다.
+- `matching` 에서 오른쪽 카드를 다시 클릭하면 기존 연결이 해제되어야 한다.
+- `matching` 에서 이미 연결된 카드를 다른 카드와 연결하면 기존 연결이 교체되어야 한다.
 - `blank_fill` 문제는 `question` 만 보고도 무엇을 넣어야 하는지 알 수 있도록 목표 한국어 의미나 문장 뜻을 포함해야 한다.
 - `word_order` 와 `blank_fill` 은 대소문자 무시 옵션을 지원해야 한다.
 - Stage 시작만으로는 `jelly` 감소가 발생하지 않아야 한다.
@@ -29,14 +35,23 @@
 - 실패 애니메이션은 실제 시트 기준으로 `state1 = 5 x 2 / 10프레임`, `state2 = 4 x 2 / 8프레임`을 한 프레임씩 재생해야 하며 이전 또는 다음 프레임이 동시에 보이면 안 된다.
 - `Reward` 후 동일 난이도 `StageMap` 으로 복귀 가능해야 한다.
 - `Reward` 후 방금 플레이한 `Chapter` 의 `StageMap` 으로 복귀 가능해야 한다.
+- `MyPage` 에서 기본 사용자 이름 `말랑이 친구` 가 표시되어야 한다.
+- `MyPage` 에서 현재 진행 중인 스테이지가 `챕터N : N스테이지` 형식으로 표시되어야 한다.
+- 공유 모달에 기본 닉네임과 현재 스테이지가 표시되어야 한다.
+- 공유 모달에는 카카오톡, 인스타그램, 트위터 버튼이 보여야 한다.
+- 카카오톡과 인스타그램 공유는 최소한 공유 문구 복사 fallback 이 동작해야 한다.
+- 트위터 공유는 intent URL 또는 복사 fallback 이 동작해야 한다.
 
 ## Edge Cases
 
 - `jelly = 0` 일 때 제출이 차단되어야 한다.
 - 같은 StageSession 안에서는 오답 후 같은 문제를 다시 풀 때 보기 위치가 바뀌면 안 된다.
+- `matching` 은 제출 전까지 오답 처리되지 않고 제출 시점에만 판정되어야 한다.
 - `blank_fill` 에서 `This is a ___` 같은 prompt 만으로 정답 의미가 드러나지 않으면 `question` 에서 그 의미를 직접 설명해야 한다.
 - `locked Chapter` 는 클릭할 수 없어야 한다.
 - `locked Chapter` 를 직접 URL 로 열어도 `StageMap` 진입이 차단되어야 한다.
+- `MyPage` 조회 시 `currentStageId` 또는 `currentChapterId` 가 유효하지 않아도 앱이 깨지지 않고 fallback 문구를 보여야 한다.
+- 공유 모달에서도 현재 스테이지 정보가 없을 때 앱이 깨지지 않고 fallback 문구를 보여야 한다.
 - 스테이지 클리어 또는 실패로 `Quiz` 화면을 벗어나면 실패 캐릭터 이미지는 기본 `hamster_char` 로 복구되고 진행 중 애니메이션 타이머는 정리되어야 한다.
 - `jelly = 0` 일 때 제출하면 `광고를 보면 젤리5개를 드려요!` 팝업이 떠야 한다.
 - 위 팝업에서 `yes`를 누르면 Quiz 화면을 유지한 채 `jelly` `5` 회복이 발생해야 한다.

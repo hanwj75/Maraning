@@ -13,6 +13,8 @@ import {
   getMatchingDisplayChoicesForQuiz,
   getOrderedQuizzesByIds,
   getQuizProgressLabel,
+  removeMatchingPairByCardId,
+  upsertMatchingPair,
 } from '../features/quiz/quiz.utils'
 import {
   getStageById,
@@ -245,11 +247,14 @@ export function QuizPage() {
     isCorrect: boolean
     status: 'next' | 'finished' | 'retry' | 'failed'
     remainingFailLife: number
+    preserveCurrentResponse?: boolean
   }) => {
-    const { isCorrect, status } = params
+    const { isCorrect, status, preserveCurrentResponse = false } = params
 
     if (!isCorrect) {
-      resetLocalState()
+      if (!preserveCurrentResponse) {
+        resetLocalState()
+      }
 
       if (status === 'failed') {
         resetHamsterState()
@@ -423,6 +428,7 @@ export function QuizPage() {
       isCorrect: answer.isCorrect,
       status: outcome.status,
       remainingFailLife,
+      preserveCurrentResponse: true,
     })
   }
 
@@ -585,11 +591,25 @@ export function QuizPage() {
                     <button
                       key={choice.id}
                       type="button"
-                      disabled={used || isSubmitting}
-                      onClick={() => setPendingLeftChoiceId(choice.id)}
+                      disabled={isSubmitting}
+                      onClick={() => {
+                        if (used) {
+                          setMatchingPairs((prev) =>
+                            removeMatchingPairByCardId(prev, choice.id),
+                          )
+                          setPendingLeftChoiceId((prev) =>
+                            prev === choice.id ? null : choice.id,
+                          )
+                          return
+                        }
+
+                        setPendingLeftChoiceId((prev) =>
+                          prev === choice.id ? null : choice.id,
+                        )
+                      }}
                       className={`w-full rounded-[1.6rem] px-4 py-4 text-left text-base font-black ${
                         used
-                          ? 'bg-[#f2e4d6] text-[#bc9b7f]'
+                          ? 'bg-[#fff0df] text-[#7b4d32] shadow-[inset_0_0_0_2px_rgba(232,157,133,0.55)]'
                           : selected
                             ? 'bg-[#ffd7e1] text-[#7b4d32]'
                             : 'bg-white/82 text-[#7b4d32]'
@@ -609,21 +629,33 @@ export function QuizPage() {
                     <button
                       key={choice.id}
                       type="button"
-                      disabled={used || !pendingLeftChoiceId || isSubmitting}
+                      disabled={isSubmitting}
                       onClick={() => {
+                        if (used && !pendingLeftChoiceId) {
+                          setMatchingPairs((prev) =>
+                            removeMatchingPairByCardId(prev, choice.id),
+                          )
+                          return
+                        }
+
                         if (!pendingLeftChoiceId) {
                           return
                         }
-                        setMatchingPairs((prev) => [
-                          ...prev,
-                          { leftId: choice.id, rightId: pendingLeftChoiceId },
-                        ])
+
+                        setMatchingPairs((prev) =>
+                          upsertMatchingPair(prev, {
+                            leftId: choice.id,
+                            rightId: pendingLeftChoiceId,
+                          }),
+                        )
                         setPendingLeftChoiceId(null)
                       }}
                       className={`w-full rounded-[1.6rem] px-4 py-4 text-left text-base font-black ${
-                        used || !pendingLeftChoiceId
-                          ? 'bg-[#f2e4d6] text-[#bc9b7f]'
-                          : 'bg-white/82 text-[#7b4d32] transition-transform duration-100 active:scale-95'
+                        used
+                          ? 'bg-[#fff0df] text-[#7b4d32] shadow-[inset_0_0_0_2px_rgba(232,157,133,0.55)]'
+                          : !pendingLeftChoiceId
+                            ? 'bg-[#f2e4d6] text-[#bc9b7f]'
+                            : 'bg-white/82 text-[#7b4d32] transition-transform duration-100 active:scale-95'
                       }`}
                     >
                       {choice.text}
