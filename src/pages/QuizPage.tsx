@@ -53,7 +53,9 @@ export function QuizPage() {
   const [matchingPairs, setMatchingPairs] = useState<
     Array<{ leftId: string; rightId: string }>
   >([])
-  const [pendingLeftChoiceId, setPendingLeftChoiceId] = useState<string | null>(null)
+  const [pendingLeftChoiceId, setPendingLeftChoiceId] = useState<string | null>(
+    null,
+  )
   const [showJellyRecoveryDialog, setShowJellyRecoveryDialog] = useState(false)
   const [showCorrectOverlay, setShowCorrectOverlay] = useState(false)
   const [currentHamsterSrc, setCurrentHamsterSrc] = useState<string>(
@@ -76,7 +78,7 @@ export function QuizPage() {
       ? buildStageMapPath(routeDifficulty, chapterId)
       : '/difficulty'
   const failLifeLabel = Array.from({ length: 3 }, (_, index) =>
-    index < (session?.failLife ?? 0) ? '❤️' : '♡',
+    index < (session?.failLife ?? 0) ? '❤️' : '🖤',
   ).join('')
   const quizzes = useMemo(
     () =>
@@ -110,7 +112,10 @@ export function QuizPage() {
   const displayChoices = useMemo(
     () =>
       currentQuiz && session
-        ? getDisplayChoicesForQuiz(currentQuiz, session.displayChoiceIdsByQuizId)
+        ? getDisplayChoicesForQuiz(
+            currentQuiz,
+            session.displayChoiceIdsByQuizId,
+          )
         : [],
     [currentQuiz, session],
   )
@@ -442,7 +447,7 @@ export function QuizPage() {
             variant="plain"
           />
         </div>
-        <JellyBadge count={currentJelly} className="max-w-[8.5rem] shrink-0" />
+        <JellyBadge count={currentJelly} className="shrink-0" />
       </section>
 
       <section className="game-card bg-gradient-to-br from-[#fff2db] to-[#fff9ef] px-5 py-5">
@@ -558,7 +563,8 @@ export function QuizPage() {
               <div className="mt-3 space-y-2">
                 {matchingPairs.length === 0 ? (
                   <span className="text-sm font-semibold text-[#9b6c4a]">
-                    왼쪽 한국어 카드와 오른쪽 영어 카드를 차례대로 눌러 연결하세요.
+                    왼쪽 한국어 카드와 오른쪽 영어 카드를 차례대로 눌러
+                    연결하세요.
                   </span>
                 ) : (
                   matchingPairs.map((pair) => {

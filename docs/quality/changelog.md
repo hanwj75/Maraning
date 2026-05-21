@@ -120,6 +120,7 @@
 - 2026-05-15 | scope: maraning-assets | type: implementation | maraning_assets_final.zip 이미지를 public/assets/maraning으로 등록하고 홈, 난이도 선택, 스테이지맵, 퀴즈, 결과, 보상 화면 및 공용 컴포넌트에 topbar, 햄스터, 발바닥, 하단 내비게이션, 체력 에셋 적용 | docs/tests updated: docs/quality/changelog.md
 - 2026-05-15 | scope: stage-ui-fix | type: fix | topbar 이미지를 StageMap 전용으로 제한하고 광고보기·공유하기 라우팅 제거, 스테이지 노드와 캐릭터 배치를 재조정해 순차 진행 상태가 보이도록 수정 | docs/tests updated: docs/quality/changelog.md
 - 2026-05-15 | scope: stage-map-layout | type: fix | 메뉴 버튼을 독립 토글용 버튼으로 분리하고 StageMap 상단 상태 아이콘, 발판 순서, 햄스터, 보상 상자 위치를 레퍼런스 구도에 맞춰 재배치 | docs/tests updated: docs/quality/changelog.md
+- 2026-05-22 | scope: quiz-jelly-badge-text-spacing | type: fix | Quiz 상단 JellyBadge에서 learning_hp 이미지와 `젤리 {count}` 텍스트 사이 간격을 줄이고 상위 최대폭 제한을 제거해 모바일에서도 텍스트가 잘리지 않도록 조정 | docs/tests updated: docs/quality/changelog.md, src/shared/components/JellyBadge.tsx, src/pages/QuizPage.tsx
 
 ## Pending Notes
 

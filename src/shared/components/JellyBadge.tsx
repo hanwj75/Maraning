@@ -8,7 +8,7 @@ type JellyBadgeProps = {
 export function JellyBadge({ count, className = '' }: JellyBadgeProps) {
   return (
     <div
-      className={`inline-flex max-w-full items-center gap-2 whitespace-nowrap ${className}`}
+      className={`inline-flex max-w-full items-center gap-0 whitespace-nowrap ${className}`}
     >
       <img
         src={maraningAssets.learningHp}
@@ -16,8 +16,8 @@ export function JellyBadge({ count, className = '' }: JellyBadgeProps) {
         aria-hidden="true"
         className="h-7 w-7 object-contain"
       />
-      <span className="game-currency-text min-w-0 overflow-hidden text-ellipsis text-sm font-black tracking-tight">
-        젤리 {count}
+      <span className="game-currency-text whitespace-nowrap text-sm font-black tracking-tight">
+        {count}
       </span>
     </div>
   )
