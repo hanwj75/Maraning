@@ -41,7 +41,7 @@ export function QuizPage() {
   const completeStage = useProgressStore((state) => state.completeStage)
   const currentJelly = useJellyStore((state) => state.current)
   const syncDailyJelly = useJellyStore((state) => state.syncDailyJelly)
-  const mockRewardJelly = useJellyStore((state) => state.mockRewardJelly)
+  const claimAdReward = useJellyStore((state) => state.claimAdReward)
   const tryConsumeForSubmission = useJellyStore(
     (state) => state.tryConsumeForSubmission,
   )
@@ -215,7 +215,7 @@ export function QuizPage() {
   }
 
   useEffect(() => {
-    syncDailyJelly()
+    void syncDailyJelly()
   }, [syncDailyJelly])
 
   useEffect(() => {
@@ -288,16 +288,23 @@ export function QuizPage() {
     }, 700)
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (isSubmitting) {
       return
     }
 
-    const consumeJellyOrFail = () => {
-      const canSubmit = tryConsumeForSubmission()
+    const consumeJellyOrFail = async () => {
+      const consumeResult = await tryConsumeForSubmission({
+        sourceId: `${session.sessionId}:${currentQuiz.id}`,
+      })
 
-      if (canSubmit) {
+      if (consumeResult.consumed) {
         return true
+      }
+
+      if (consumeResult.message && consumeResult.message !== '젤리가 부족해요.') {
+        window.alert(consumeResult.message)
+        return false
       }
 
       setShowJellyRecoveryDialog(true)
@@ -320,7 +327,7 @@ export function QuizPage() {
         return
       }
 
-      if (!consumeJellyOrFail()) {
+      if (!(await consumeJellyOrFail())) {
         return
       }
 
@@ -338,7 +345,19 @@ export function QuizPage() {
       }
 
       if (outcome.status === 'finished') {
-        completeStage(session.difficulty, session.stageId, chapters, allStages)
+        const progressResult = await completeStage(
+          session.difficulty,
+          session.stageId,
+          chapters,
+          allStages,
+        )
+
+        if (!progressResult.synced) {
+          window.alert(
+            progressResult.message ??
+              '스테이지 완료 저장에 실패했어요. 잠시 후 다시 확인해 주세요.',
+          )
+        }
       }
 
       if (!answer.isCorrect) {
@@ -359,7 +378,7 @@ export function QuizPage() {
         return
       }
 
-      if (!consumeJellyOrFail()) {
+      if (!(await consumeJellyOrFail())) {
         return
       }
 
@@ -382,7 +401,19 @@ export function QuizPage() {
       }
 
       if (outcome.status === 'finished') {
-        completeStage(session.difficulty, session.stageId, chapters, allStages)
+        const progressResult = await completeStage(
+          session.difficulty,
+          session.stageId,
+          chapters,
+          allStages,
+        )
+
+        if (!progressResult.synced) {
+          window.alert(
+            progressResult.message ??
+              '스테이지 완료 저장에 실패했어요. 잠시 후 다시 확인해 주세요.',
+          )
+        }
       }
 
       if (!answer.isCorrect) {
@@ -405,7 +436,7 @@ export function QuizPage() {
       return
     }
 
-    if (!consumeJellyOrFail()) {
+    if (!(await consumeJellyOrFail())) {
       return
     }
 
@@ -422,7 +453,19 @@ export function QuizPage() {
     }
 
     if (outcome.status === 'finished') {
-      completeStage(session.difficulty, session.stageId, chapters, allStages)
+      const progressResult = await completeStage(
+        session.difficulty,
+        session.stageId,
+        chapters,
+        allStages,
+      )
+
+      if (!progressResult.synced) {
+        window.alert(
+          progressResult.message ??
+            '스테이지 완료 저장에 실패했어요. 잠시 후 다시 확인해 주세요.',
+        )
+      }
     }
 
     if (!answer.isCorrect) {
@@ -724,8 +767,12 @@ export function QuizPage() {
       <ConfirmDialog
         open={showJellyRecoveryDialog}
         message="광고를 보면 젤리5개를 드려요!"
-        onConfirm={() => {
-          mockRewardJelly(5)
+        onConfirm={async () => {
+          const rewardResult = await claimAdReward()
+
+          if (!rewardResult.granted) {
+            window.alert(rewardResult.message ?? '광고 보상을 받지 못했어요.')
+          }
           setShowJellyRecoveryDialog(false)
         }}
         onCancel={() => {

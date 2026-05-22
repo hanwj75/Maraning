@@ -21,7 +21,7 @@ export function RewardPage() {
   )
 
   useEffect(() => {
-    syncDailyJelly()
+    void syncDailyJelly()
   }, [syncDailyJelly])
 
   useEffect(() => {

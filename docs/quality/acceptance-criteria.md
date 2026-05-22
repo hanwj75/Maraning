@@ -62,10 +62,16 @@
 
 - 상태 관리는 `Zustand` 기반이어야 한다.
 - 핵심 progress 와 `jelly` 상태는 `localStorage fallback` 으로 유지 가능해야 한다.
+- 백엔드 API 는 MVP 기준 `Supabase Edge Functions` 로 동작해야 한다.
+- 별도 Express/Nest/Railway/EC2 서버가 없어도 배포 가능해야 한다.
 - `MyPage` 는 현재 `selectedDifficulty` 의 progress 에서 `currentChapterId`, `currentStageId` 를 안전하게 읽어와야 한다.
 - 공유 payload 도 현재 `selectedDifficulty` 의 progress 에서 `currentChapterId`, `currentStageId` 를 안전하게 읽어와야 한다.
 - React component 에서 SDK 직접 호출이 없어야 한다.
 - SDK 연동은 wrapper layer 를 통해서만 수행되어야 한다.
+- `SUPABASE_SERVICE_ROLE_KEY`, Toss token, 결제 검증 secret 은 프론트에 노출되면 안 된다.
+- 로그인 상태에서는 `wallet/progress` 를 서버 권위 데이터로 사용해야 한다.
+- 비로그인 또는 로컬 개발 mock 환경에서만 local fallback 이 허용되어야 한다.
+- 결제 검증 미구현 상태에서는 젤리 지급이 비활성화되어야 한다.
 
 ## Release Acceptance
 
@@ -73,3 +79,4 @@
 - 테스트 없는 기능은 완료가 아니다.
 - 관련 문서가 최신 상태여야 한다.
 - changelog 에 의미 있는 변경 사항이 기록되어야 한다.
+- Supabase migrations / functions / secrets 배포 순서가 문서화되어 있어야 한다.

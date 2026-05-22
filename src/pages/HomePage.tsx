@@ -10,7 +10,7 @@ export function HomePage() {
   const syncDailyJelly = useJellyStore((state) => state.syncDailyJelly)
 
   useEffect(() => {
-    syncDailyJelly()
+    void syncDailyJelly()
   }, [syncDailyJelly])
 
   return (
@@ -29,9 +29,9 @@ export function HomePage() {
               마라닝 영어 코스
             </p>
             <h1 className="text-3xl font-black leading-tight tracking-tight text-[#7b4d32]">
-              오늘도 영어
+              오늘은 어떤 코스로
               <br />
-              달려달려!
+              할래?
             </h1>
             <p className="text-sm font-semibold leading-6 text-[#96674a]">
               오늘도 달려볼까!

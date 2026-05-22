@@ -23,6 +23,10 @@ export function createQuizSession(params: {
   const displayState = createQuizDisplayState(params.quizzes)
 
   return {
+    sessionId:
+      typeof crypto !== 'undefined' && 'randomUUID' in crypto
+        ? crypto.randomUUID()
+        : `quiz-session-${Date.now()}`,
     chapterId: params.chapterId,
     stageId: params.stageId,
     difficulty: params.difficulty,

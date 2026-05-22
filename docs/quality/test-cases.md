@@ -41,6 +41,10 @@
 - 공유 모달에는 카카오톡, 인스타그램, 트위터 버튼이 보여야 한다.
 - 카카오톡과 인스타그램 공유는 최소한 공유 문구 복사 fallback 이 동작해야 한다.
 - 트위터 공유는 intent URL 또는 복사 fallback 이 동작해야 한다.
+- 로그인 상태에서는 wallet 조회가 Supabase `GET /wallet` 결과로 동기화되어야 한다.
+- 로그인 상태에서는 stage complete 가 Supabase `POST /progress/stage-complete` 성공 후에만 반영되어야 한다.
+- 광고 보상은 Supabase `POST /ad-reward/complete` 성공 후에만 `jelly +5` 가 반영되어야 한다.
+- 결제 검증 미구현 상태에서는 `payments/verify` 가 젤리 지급 없이 disabled 응답을 반환해야 한다.
 
 ## Edge Cases
 
@@ -67,6 +71,10 @@
 - 다른 난이도의 completed state 가 현재 난이도 해금에 영향을 주면 안 된다.
 - SDK 가 없는 환경에서도 로컬 흐름이 유지되어야 한다.
 - `localStorage` 접근 실패 시에도 메모리 상태로 최소 동작이 가능해야 한다.
+- production 로그인 상태에서 local fallback 이 서버 권위 데이터를 우회하면 안 된다.
+- `VITE_` env 로 service role key 나 Toss secret 을 주입하지 않아야 한다.
+- Toss `accessToken` / `refreshToken` 이 프론트 login 응답에 포함되면 안 된다.
+- 광고 보상 중복 `adEventId`, 일일 제한 초과, 쿨다운 중에는 지급이 없어야 한다.
 
 ## Regression Cases
 
@@ -76,6 +84,7 @@
 - 오답 피드백이 결과를 모호하게 만들면 안 된다.
 - SDK wrapper 변경 후 component direct SDK call 이 생기면 안 된다.
 - 문서 규칙 변경 후 관련 acceptance criteria 와 changelog 누락이 없어야 한다.
+- Supabase Edge Functions 전환 후 별도 Express/Nest/Railway/EC2 서버 전제 코드가 생기면 안 된다.
 
 ## Traceability
 

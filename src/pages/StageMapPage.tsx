@@ -70,7 +70,7 @@ export function StageMapPage() {
   const startSession = useQuizStore((state) => state.startSession)
   const currentJelly = useJellyStore((state) => state.current)
   const syncDailyJelly = useJellyStore((state) => state.syncDailyJelly)
-  const mockRewardJelly = useJellyStore((state) => state.mockRewardJelly)
+  const claimAdReward = useJellyStore((state) => state.claimAdReward)
   const resolvedDifficulty =
     difficultyId && isDifficultyKey(difficultyId)
       ? difficultyId
@@ -99,7 +99,7 @@ export function StageMapPage() {
     }
 
     setSelectedDifficulty(resolvedDifficulty)
-    ensureDifficultyProgress(resolvedDifficulty, chapters, allStages)
+    void ensureDifficultyProgress(resolvedDifficulty, chapters, allStages)
   }, [
     allStages,
     chapters,
@@ -110,7 +110,7 @@ export function StageMapPage() {
   ])
 
   useEffect(() => {
-    syncDailyJelly()
+    void syncDailyJelly()
   }, [syncDailyJelly])
 
   if (!isValidRoute || !chapterId) {
@@ -281,10 +281,12 @@ export function StageMapPage() {
         <ConfirmDialog
           open={showAdDialog}
           message="광고를 보시겠습니까?"
-          onConfirm={() => {
-            const rewardResult = mockRewardJelly(5)
+          onConfirm={async () => {
+            const rewardResult = await claimAdReward()
 
-            if (rewardResult.current === rewardResult.previous) {
+            if (!rewardResult.granted) {
+              setJellyMessage(rewardResult.message ?? '광고 보상을 받지 못했어요.')
+            } else if (rewardResult.current === rewardResult.previous) {
               setJellyMessage('젤리가 이미 가득 차 있어요.')
             } else {
               setJellyMessage(`젤리 ${rewardResult.added}개를 받았어요!`)

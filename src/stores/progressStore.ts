@@ -1,7 +1,10 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import type { DifficultyKey } from '../data/difficulties'
+import { completeStageProgress, fetchProgress, type ServerDifficultyProgress } from '../api/progressApi'
+import { getChaptersByDifficulty, getStagesByDifficulty } from '../features/stage/stage.utils'
 import type { Chapter, Stage } from '../features/stage/stage.types'
+import { useSessionStore } from './sessionStore'
 
 export type DifficultyProgress = {
   currentChapterId: string | null
@@ -290,50 +293,158 @@ export function applyStageCompletion(params: {
   }
 }
 
+function mapServerProgressRowToDifficultyProgress(
+  row: ServerDifficultyProgress,
+): DifficultyProgress {
+  return {
+    currentChapterId: row.current_chapter_id,
+    currentStageId: row.current_stage_id,
+    unlockedChapterIds: unique(row.unlocked_chapter_ids),
+    completedChapterIds: unique(row.completed_chapter_ids),
+    unlockedStageIdsByChapter: row.unlocked_stage_ids_by_chapter,
+    completedStageIdsByChapter: row.completed_stage_ids_by_chapter,
+    lastPlayedAt: row.updated_at,
+  }
+}
+
 type ProgressStore = {
   progressByDifficulty: Partial<Record<DifficultyKey, DifficultyProgress>>
-  ensureDifficultyProgress: (difficulty: DifficultyKey, chapters: readonly Chapter[], stages: readonly Stage[]) => void
-  completeStage: (difficulty: DifficultyKey, stageId: string, chapters: readonly Chapter[], stages: readonly Stage[]) => void
+  ensureDifficultyProgress: (
+    difficulty: DifficultyKey,
+    chapters: readonly Chapter[],
+    stages: readonly Stage[],
+  ) => Promise<void>
+  completeStage: (
+    difficulty: DifficultyKey,
+    stageId: string,
+    chapters: readonly Chapter[],
+    stages: readonly Stage[],
+  ) => Promise<{ synced: boolean; message?: string }>
+  setDifficultyProgressFromServer: (
+    difficulty: DifficultyKey,
+    value: ServerDifficultyProgress,
+    chapters: readonly Chapter[],
+    stages: readonly Stage[],
+  ) => void
+  setAllProgressFromServer: (values: ServerDifficultyProgress[]) => void
 }
 
 export const useProgressStore = create<ProgressStore>()(
   persist(
     (set, get) => ({
       progressByDifficulty: {},
-      ensureDifficultyProgress: (difficulty, chapters, stages) => {
+      ensureDifficultyProgress: async (difficulty, chapters, stages) => {
         const existingValue = get().progressByDifficulty[difficulty]
 
-        if (existingValue && isDifficultyProgress(existingValue)) {
+        if (!existingValue || !isDifficultyProgress(existingValue)) {
+          set((state) => ({
+            progressByDifficulty: {
+              ...state.progressByDifficulty,
+              [difficulty]: normalizePersistedDifficultyProgress({
+                value: existingValue,
+                chapters,
+                stages,
+              }),
+            },
+          }))
+        }
+
+        const sessionState = useSessionStore.getState()
+
+        if (!sessionState.serverSyncEnabled || !sessionState.sessionToken) {
           return
         }
 
+        try {
+          const response = await fetchProgress(sessionState.sessionToken)
+          const serverRow = response.progress.find((row) => row.difficulty === difficulty)
+
+          if (!serverRow) {
+            return
+          }
+
+          get().setDifficultyProgressFromServer(difficulty, serverRow, chapters, stages)
+        } catch {
+          return
+        }
+      },
+      completeStage: async (difficulty, stageId, chapters, stages) => {
+        const existingProgress =
+          get().progressByDifficulty[difficulty] ?? createInitialDifficultyProgress(chapters, stages)
+        const currentStage = stages.find((stage) => stage.id === stageId)
+        const sessionState = useSessionStore.getState()
+
+        if (!sessionState.serverSyncEnabled || !sessionState.sessionToken || !currentStage) {
+          set((state) => ({
+            progressByDifficulty: {
+              ...state.progressByDifficulty,
+              [difficulty]: applyStageCompletion({
+                progress: existingProgress,
+                chapters,
+                stages,
+                stageId,
+              }),
+            },
+          }))
+
+          return { synced: true as const }
+        }
+
+        try {
+          const response = await completeStageProgress(sessionState.sessionToken, {
+            difficulty,
+            chapterId: currentStage.chapterId,
+            stageId,
+          })
+
+          get().setDifficultyProgressFromServer(
+            difficulty,
+            response.progress,
+            chapters,
+            stages,
+          )
+
+          return { synced: true as const }
+        } catch (error) {
+          return {
+            synced: false as const,
+            message:
+              error instanceof Error
+                ? error.message
+                : '스테이지 진행도를 저장하지 못했어요.',
+          }
+        }
+      },
+      setDifficultyProgressFromServer: (difficulty, value, chapters, stages) =>
         set((state) => ({
           progressByDifficulty: {
             ...state.progressByDifficulty,
             [difficulty]: normalizePersistedDifficultyProgress({
-              value: existingValue,
+              value: mapServerProgressRowToDifficultyProgress(value),
               chapters,
               stages,
             }),
           },
-        }))
-      },
-      completeStage: (difficulty, stageId, chapters, stages) => {
-        const existingProgress =
-          get().progressByDifficulty[difficulty] ?? createInitialDifficultyProgress(chapters, stages)
-
+        })),
+      setAllProgressFromServer: (values) =>
         set((state) => ({
-          progressByDifficulty: {
-            ...state.progressByDifficulty,
-            [difficulty]: applyStageCompletion({
-              progress: existingProgress,
-              chapters,
-              stages,
-              stageId,
-            }),
-          },
-        }))
-      },
+          progressByDifficulty: values.reduce<Partial<Record<DifficultyKey, DifficultyProgress>>>(
+            (next, value) => {
+              const difficulty = value.difficulty
+              const chapters = getChaptersByDifficulty(difficulty)
+              const stages = getStagesByDifficulty(difficulty)
+
+              next[difficulty] = normalizePersistedDifficultyProgress({
+                value: mapServerProgressRowToDifficultyProgress(value),
+                chapters,
+                stages,
+              })
+
+              return next
+            },
+            { ...state.progressByDifficulty },
+          ),
+        })),
     }),
     {
       name: 'maraning-progress-store',

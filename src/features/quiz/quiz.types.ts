@@ -72,6 +72,7 @@ export type MatchingDisplayOrder = {
 }
 
 export type QuizSession = {
+  sessionId: string
   chapterId: string
   stageId: string
   difficulty: DifficultyKey

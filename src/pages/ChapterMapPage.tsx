@@ -46,7 +46,7 @@ export function ChapterMapPage() {
     }
 
     setSelectedDifficulty(resolvedDifficulty)
-    ensureDifficultyProgress(resolvedDifficulty, chapters, stages)
+    void ensureDifficultyProgress(resolvedDifficulty, chapters, stages)
   }, [
     chapters,
     ensureDifficultyProgress,

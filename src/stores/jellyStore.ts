@@ -1,5 +1,13 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
+import {
+  consumeWallet,
+  fetchWallet,
+  WalletApiError,
+} from '../api/walletApi'
+import { completeAdReward } from '../api/rewardApi'
+import { appintosAds } from '../sdk/appintosAds'
+import { useSessionStore } from './sessionStore'
 
 export const JELLY_MAX = 100
 export const JELLY_DAILY_MIN = 20
@@ -90,37 +98,99 @@ export function getRandomJellyReward(rng: () => number = Math.random): number {
 }
 
 type JellyStore = JellyState & {
-  syncDailyJelly: () => void
-  tryConsumeForSubmission: () => boolean
+  syncDailyJelly: () => Promise<{ synced: boolean; message?: string }>
+  tryConsumeForSubmission: (params: {
+    sourceId: string
+    reason?: string
+  }) => Promise<{ consumed: boolean; message?: string }>
   addJelly: (amount: number) => { previous: number; current: number; added: number }
   mockRewardJelly: (amount: number) => { previous: number; current: number; added: number }
   grantMockAdReward: () => { previous: number; current: number; added: number }
+  claimAdReward: (params?: {
+    adUnitId?: string
+  }) => Promise<{ previous: number; current: number; added: number; granted: boolean; message?: string }>
   grantCleanSolveReward: (rng?: () => number) => { previous: number; current: number; rewarded: number }
+  setFromServerWallet: (wallet: { jelly: number; lastDailyRefillDate?: string | null }) => void
 }
 
 export const useJellyStore = create<JellyStore>()(
   persist(
     (set, get) => ({
       ...createInitialJellyState(),
-      syncDailyJelly: () =>
-        set((state) => syncDailyJellyState(state)),
-      tryConsumeForSubmission: () => {
-        const syncedState = syncDailyJellyState(get())
+      syncDailyJelly: async () => {
+        const sessionState = useSessionStore.getState()
 
-        if (
-          syncedState.lastRefillDateKey !== get().lastRefillDateKey ||
-          syncedState.current !== get().current
-        ) {
-          set(syncedState)
+        if (!sessionState.serverSyncEnabled || !sessionState.sessionToken) {
+          set((state) => syncDailyJellyState(state))
+          return { synced: true as const }
         }
 
-        const { nextState, consumed } = consumeJellyForSubmission(syncedState)
+        try {
+          const response = await fetchWallet(sessionState.sessionToken)
+          get().setFromServerWallet(response.wallet)
+          sessionState.setWallet({ jelly: response.wallet.jelly })
 
-        if (consumed) {
-          set(nextState)
+          return { synced: true as const }
+        } catch (error) {
+          return {
+            synced: false as const,
+            message:
+              error instanceof Error
+                ? error.message
+                : '젤리 정보를 불러오지 못했어요.',
+          }
+        }
+      },
+      tryConsumeForSubmission: async ({ sourceId, reason = 'quiz_submit' }) => {
+        const sessionState = useSessionStore.getState()
+
+        if (!sessionState.serverSyncEnabled || !sessionState.sessionToken) {
+          const syncedState = syncDailyJellyState(get())
+
+          if (
+            syncedState.lastRefillDateKey !== get().lastRefillDateKey ||
+            syncedState.current !== get().current
+          ) {
+            set(syncedState)
+          }
+
+          const { nextState, consumed } = consumeJellyForSubmission(syncedState)
+
+          if (consumed) {
+            set(nextState)
+          }
+
+          return {
+            consumed,
+            message: consumed ? undefined : '젤리가 부족해요.',
+          }
         }
 
-        return consumed
+        try {
+          const response = await consumeWallet(sessionState.sessionToken, {
+            amount: JELLY_SUBMIT_COST,
+            reason,
+            sourceId,
+          })
+          get().setFromServerWallet(response.wallet)
+          sessionState.setWallet({ jelly: response.wallet.jelly })
+
+          return {
+            consumed: response.consumed ?? response.duplicate ?? true,
+          }
+        } catch (error) {
+          if (error instanceof WalletApiError) {
+            return {
+              consumed: false,
+              message: error.message,
+            }
+          }
+
+          return {
+            consumed: false,
+            message: '젤리 차감 중 오류가 발생했어요.',
+          }
+        }
       },
       addJelly: (amount) => {
         const syncedState = syncDailyJellyState(get())
@@ -136,6 +206,59 @@ export const useJellyStore = create<JellyStore>()(
       },
       mockRewardJelly: (amount) => get().addJelly(amount),
       grantMockAdReward: () => get().mockRewardJelly(JELLY_AD_REWARD),
+      claimAdReward: async ({ adUnitId } = {}) => {
+        const adResult = await appintosAds.showRewardAd()
+
+        if (!adResult.awarded) {
+          return {
+            previous: get().current,
+            current: get().current,
+            added: 0,
+            granted: false,
+            message: adResult.message ?? '광고 보상을 받지 못했어요.',
+          }
+        }
+
+        const sessionState = useSessionStore.getState()
+
+        if (!sessionState.serverSyncEnabled || !sessionState.sessionToken) {
+          const rewardResult = get().mockRewardJelly(JELLY_AD_REWARD)
+
+          return {
+            ...rewardResult,
+            granted: rewardResult.added > 0,
+          }
+        }
+
+        const previous = get().current
+
+        try {
+          const response = await completeAdReward(sessionState.sessionToken, {
+            adEventId: adResult.adEventId ?? `ad-${Date.now()}`,
+            adUnitId,
+          })
+          get().setFromServerWallet(response.wallet)
+          sessionState.setWallet({ jelly: response.wallet.jelly })
+
+          return {
+            previous,
+            current: response.wallet.jelly,
+            added: response.wallet.jelly - previous,
+            granted: true,
+          }
+        } catch (error) {
+          return {
+            previous,
+            current: previous,
+            added: 0,
+            granted: false,
+            message:
+              error instanceof Error
+                ? error.message
+                : '광고 보상을 받지 못했어요.',
+          }
+        }
+      },
       grantCleanSolveReward: (rng = Math.random) => {
         const syncedState = syncDailyJellyState(get())
         const rewarded = getRandomJellyReward(rng)
@@ -149,6 +272,13 @@ export const useJellyStore = create<JellyStore>()(
           rewarded: rewardedState.current - syncedState.current,
         }
       },
+      setFromServerWallet: (wallet) =>
+        set((state) => ({
+          ...state,
+          max: JELLY_MAX,
+          current: clampJelly(wallet.jelly, JELLY_MAX),
+          lastRefillDateKey: wallet.lastDailyRefillDate ?? state.lastRefillDateKey,
+        })),
     }),
     {
       name: 'maraning-jelly-store',

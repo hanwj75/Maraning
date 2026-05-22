@@ -16,7 +16,7 @@ export function PageFrame({
   showBottomNav = true,
   children,
 }: PageFrameProps) {
-  const mockRewardJelly = useJellyStore((state) => state.mockRewardJelly)
+  const claimAdReward = useJellyStore((state) => state.claimAdReward)
   const [showAdDialog, setShowAdDialog] = useState(false)
 
   return (
@@ -27,9 +27,13 @@ export function PageFrame({
         <ConfirmDialog
           open={showAdDialog}
           message="광고를 보시겠습니까?"
-          onConfirm={() => {
-            mockRewardJelly(5)
+          onConfirm={async () => {
+            const result = await claimAdReward()
             setShowAdDialog(false)
+
+            if (!result.granted) {
+              window.alert(result.message ?? '광고 보상을 받지 못했어요.')
+            }
           }}
           onCancel={() => setShowAdDialog(false)}
         />
