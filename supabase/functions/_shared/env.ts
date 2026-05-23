@@ -26,6 +26,8 @@ export const env = {
     'https://apps-in-toss-api.toss.im',
   ),
   appSessionJwtSecret: getRequiredEnv('APP_SESSION_JWT_SECRET'),
+  tossClientCert: getOptionalEnv('TOSS_CLIENT_CERT'),
+  tossClientKey: getOptionalEnv('TOSS_CLIENT_KEY'),
   tossClientId: getOptionalEnv('TOSS_CLIENT_ID'),
   tossDecryptionKey: getOptionalEnv('TOSS_DECRYPTION_KEY'),
   tossDecryptionAad: getOptionalEnv('TOSS_DECRYPTION_AAD'),

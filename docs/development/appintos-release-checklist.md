@@ -1,5 +1,24 @@
 # Appintos Release Checklist
 
+## 현재 완료 상태 (2026-05-24 기준)
+
+| 단계 | 항목 | 상태 |
+|------|------|------|
+| Step 1 | Supabase 프로젝트 생성 (`zydetishxxvnrxzqmcuo`) | ✅ 완료 |
+| Step 2 | CLI 로그인 | ✅ 완료 |
+| Step 3 | 프로젝트 link | ✅ 완료 |
+| Step 4 | DB migration 적용 (테이블 8개) | ✅ 완료 |
+| Step 5 | Secrets 설정 (`APP_SESSION_JWT_SECRET`) | ✅ 완료 |
+| Step 6 | Edge Functions 배포 5개 (v3, `--no-verify-jwt`) | ✅ 완료 |
+| Step 7 | Function URL 확인 | ✅ 완료 |
+| Step 8 | `.env.local` + AIT 빌드 env 설정, `npm run build` 통과 | ✅ 완료 |
+| Step 9 | 앱인토스 sandbox 테스트 (실기기 토스앱) | ⬜ 미완료 |
+| Step 10 | 최종 빌드 확인 | ✅ 완료 |
+
+> **다음 단계**: 실기기(토스앱)에서 Step 9 sandbox 테스트만 남음.
+
+---
+
 ## Current Backend Status
 
 - `toss-login`: 구현됨. `authorizationCode/referrer -> generate-token -> login-me -> app sessionToken 반환` 흐름 존재
@@ -117,13 +136,14 @@ supabase secrets set TOSS_API_BASE_URL=https://apps-in-toss-api.toss.im
 ### 6. Edge Functions 배포
 
 ```sh
-supabase functions deploy toss-login
-supabase functions deploy wallet
-supabase functions deploy progress
-supabase functions deploy ad-reward
-supabase functions deploy payments
+npx supabase functions deploy toss-login --no-verify-jwt
+npx supabase functions deploy wallet --no-verify-jwt
+npx supabase functions deploy progress --no-verify-jwt
+npx supabase functions deploy ad-reward --no-verify-jwt
+npx supabase functions deploy payments --no-verify-jwt
 ```
 
+- **중요**: `--no-verify-jwt` 플래그가 반드시 필요하다. 이 앱은 커스텀 `APP_SESSION_JWT_SECRET`으로 서명한 토큰을 사용하므로 Supabase 플랫폼 JWT 검증을 우회해야 한다. 플래그 없이 배포하면 모든 요청이 401로 차단된다.
 - 각 명령 실행 후 `Deployed: <function-name>` 메시지 확인
 - verify: 대시보드 Edge Functions 탭에서 5개 함수가 모두 Active 상태인지 확인
 
@@ -139,17 +159,19 @@ supabase functions list
 
 ### 8. VITE_API_BASE_URL 설정
 
-프론트 `.env` (또는 앱인토스 빌드 환경 변수):
+로컬 빌드용 `.env.local` (이미 생성됨):
 
 ```sh
-VITE_SUPABASE_URL=https://<project-ref>.supabase.co
-# VITE_API_BASE_URL 을 비우면 위 값에서 /functions/v1 을 자동 유도
-# 또는 직접 지정:
-VITE_API_BASE_URL=https://<project-ref>.supabase.co/functions/v1
+VITE_SUPABASE_URL=https://zydetishxxvnrxzqmcuo.supabase.co
+VITE_SUPABASE_ANON_KEY=<anon public key>
+# VITE_API_BASE_URL 은 비워도 됨 — VITE_SUPABASE_URL/functions/v1 로 자동 유도
 ```
 
-- verify: `npm run build` 후 번들에 `service_role` 문자열이 포함되지 않는지 확인
-- verify: `.env` 에 `SERVICE_ROLE_KEY` 또는 `JWT_SECRET` 가 포함되지 않는지 확인
+앱인토스 빌드 환경에서 동일한 값을 설정해야 한다 (앱인토스 대시보드 빌드 환경변수).
+
+- verify: `npm run build` 후 웹 번들에 `zydetishxxvnrxzqmcuo` 문자열이 포함되는지 확인
+- verify: 번들에 `service_role` 문자열이 포함되지 않는지 확인
+- verify: `.env.local` 에 `SERVICE_ROLE_KEY` 또는 `JWT_SECRET` 가 포함되지 않는지 확인
 
 ### 9. 앱인토스 sandbox 테스트
 

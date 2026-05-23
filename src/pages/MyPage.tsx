@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { difficultyLabels, difficultyKeys, type DifficultyKey } from '../data/difficulties'
 import { fetchProgress } from '../api/progressApi'
 import { fetchWallet } from '../api/walletApi'
@@ -15,6 +15,7 @@ import { getChapterById, getStageById } from '../features/stage/stage.utils'
 const DEFAULT_USER_NAME = '말랑이 친구'
 
 export function MyPage() {
+  const navigate = useNavigate()
   const selectedDifficulty = useUiStore((state) => state.selectedDifficulty)
   const sessionToken = useSessionStore((state) => state.sessionToken)
   const sessionUser = useSessionStore((state) => state.user)
@@ -128,7 +129,7 @@ export function MyPage() {
         {isLoggedIn ? (
           <button
             type="button"
-            onClick={logout}
+            onClick={() => { logout(); navigate('/') }}
             className="mt-4 rounded-full bg-[#fff3e4] px-4 py-2 text-sm font-black text-[#9b6c4a] shadow-[0_10px_18px_rgba(194,143,86,0.12)] transition-transform duration-100 active:scale-[0.985]"
           >
             로그아웃

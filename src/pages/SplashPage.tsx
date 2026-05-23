@@ -1,8 +1,11 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { tossLogin } from '../api/authApi'
+import { fetchProgress } from '../api/progressApi'
 import { appintosAuth } from '../sdk/appintosAuth'
 import { PageFrame } from '../shared/components/PageFrame'
+import { useJellyStore } from '../stores/jellyStore'
+import { useProgressStore } from '../stores/progressStore'
 import { useSessionStore } from '../stores/sessionStore'
 
 const startPageAsset = '/assets/maraning/Maraning_start_page.png'
@@ -11,16 +14,14 @@ export function SplashPage() {
   const navigate = useNavigate()
   const setSession = useSessionStore((state) => state.setSession)
   const isLoggedIn = useSessionStore((state) => state.isLoggedIn)
-  const [showAgreementStep, setShowAgreementStep] = useState(false)
+  const setFromServerWallet = useJellyStore((state) => state.setFromServerWallet)
+  const setAllProgressFromServer = useProgressStore((state) => state.setAllProgressFromServer)
   const [isLoggingIn, setIsLoggingIn] = useState(false)
   const [loginError, setLoginError] = useState<string | null>(null)
 
-  const handleStartClick = () => {
-    setShowAgreementStep(true)
-    setLoginError(null)
-  }
-
   const handleAgreeAndStart = async () => {
+    console.log('[SplashPage] 시작하기: clicked')
+
     if (isLoggingIn) {
       return
     }
@@ -34,11 +35,22 @@ export function SplashPage() {
     setLoginError(null)
 
     try {
+      console.log('[SplashPage] appintosAuth.loginWithTossApp: start')
       const loginBridgeResult = await appintosAuth.loginWithTossApp()
+      console.log('[SplashPage] appintosAuth.loginWithTossApp: success, authCode prefix:', loginBridgeResult.authorizationCode.slice(0, 6), '| referrer:', loginBridgeResult.referrer)
+
+      console.log('[SplashPage] tossLogin: start')
       const session = await tossLogin(loginBridgeResult)
+      console.log('[SplashPage] tossLogin: success, userId:', session.user.id)
+
       setSession(session)
+      setFromServerWallet({ jelly: session.wallet.jelly })
+      void fetchProgress()
+        .then((r) => setAllProgressFromServer(r.progress))
+        .catch(() => {})
       navigate('/difficulty')
     } catch (error) {
+      console.error('[SplashPage] login error:', error instanceof Error ? error.message : error)
       setLoginError(
         error instanceof Error
           ? error.message
@@ -60,36 +72,21 @@ export function SplashPage() {
           />
         </div>
 
-        <div className="flex w-full justify-center">
+        <div className="flex w-full max-w-[17rem] flex-col gap-3">
           <button
             type="button"
-            onClick={handleStartClick}
-            className="game-primary-button w-full max-w-[17rem]"
+            onClick={handleAgreeAndStart}
+            disabled={isLoggingIn}
+            className="game-primary-button w-full"
           >
-            시작하기
+            {isLoggingIn ? '로그인 중이야...' : '시작하기'}
           </button>
-        </div>
-
-        {showAgreementStep ? (
-          <div className="flex w-full max-w-[17rem] flex-col gap-3">
-            <p className="rounded-[1.2rem] bg-white/80 px-4 py-3 text-center text-sm font-semibold leading-6 text-[#9b6c4a] shadow-[0_12px_24px_rgba(190,139,98,0.12)]">
-              아래 버튼을 누르면 서비스 이용과 토스 로그인 진행에 동의한 것으로 안내돼요.
+          {loginError ? (
+            <p className="rounded-[1.2rem] bg-white/80 px-4 py-3 text-center text-sm font-black text-[#c46b6b]">
+              {loginError}
             </p>
-            <button
-              type="button"
-              onClick={handleAgreeAndStart}
-              disabled={isLoggingIn}
-              className="game-primary-button"
-            >
-              {isLoggingIn ? '로그인 중이야...' : '동의하고 시작하기'}
-            </button>
-            {loginError ? (
-              <p className="rounded-[1.2rem] bg-white/80 px-4 py-3 text-center text-sm font-black text-[#c46b6b]">
-                {loginError}
-              </p>
-            ) : null}
-          </div>
-        ) : null}
+          ) : null}
+        </div>
       </section>
     </PageFrame>
   )

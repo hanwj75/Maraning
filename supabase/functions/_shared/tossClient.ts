@@ -83,14 +83,42 @@ async function parseTossResponse<T>(response: Response): Promise<T> {
   throw new Error('Toss API error: unknown response')
 }
 
-async function tossRequest<T>(path: string, init: RequestInit): Promise<T> {
-  const response = await fetch(`${env.tossApiBaseUrl}${path}`, {
+function normalizePem(pem: string): string {
+  if (pem.includes('\n')) return pem.replace(/\r\n/g, '\n')
+  if (pem.includes('\\n')) return pem.replace(/\\n/g, '\n')
+  // Supabase Secrets stripped all newlines — reconstruct PEM from single-line value
+  const match = pem.match(/^(-----BEGIN [^-]+-----)([\s\S]*?)(-----END [^-]+-----)$/)
+  if (!match) return pem
+  const body = match[2].replace(/\s+/g, '')
+  const lines = body.match(/.{1,64}/g) ?? []
+  return `${match[1]}\n${lines.join('\n')}\n${match[3]}\n`
+}
+
+function buildTossRequestInit(init: RequestInit): RequestInit {
+  const base: RequestInit & { client?: unknown } = {
     ...init,
     headers: {
       'Content-Type': 'application/json',
       ...(init.headers ?? {}),
     },
-  })
+  }
+
+  if (env.tossClientCert && env.tossClientKey) {
+    // deno-specific: mTLS client certificate for apps-in-toss-api.toss.im
+    const cert = normalizePem(env.tossClientCert)
+    const key = normalizePem(env.tossClientKey)
+    // @ts-ignore
+    base.client = Deno.createHttpClient({ cert, key })
+  }
+
+  return base
+}
+
+async function tossRequest<T>(path: string, init: RequestInit): Promise<T> {
+  const response = await fetch(
+    `${env.tossApiBaseUrl}${path}`,
+    buildTossRequestInit(init),
+  )
 
   return parseTossResponse<T>(response)
 }

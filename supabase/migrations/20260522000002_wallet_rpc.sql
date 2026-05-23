@@ -176,7 +176,7 @@ begin
   end if;
 
   update public.user_wallets
-     set jelly = jelly - p_amount
+     set jelly = user_wallets.jelly - p_amount
    where user_wallets.user_id = p_user_id
    returning * into v_wallet;
 
@@ -289,7 +289,7 @@ begin
   v_delta := least(100, v_wallet.jelly + p_amount) - v_wallet.jelly;
 
   update public.user_wallets
-     set jelly = least(100, jelly + p_amount)
+     set jelly = least(100, user_wallets.jelly + p_amount)
    where user_wallets.user_id = p_user_id
    returning * into v_wallet;
 

@@ -120,10 +120,14 @@ Deno.serve(async (request) => {
   }
 
   const url = new URL(request.url)
+  console.log(`[wallet] ${request.method} ${url.pathname}`)
+  console.log(`[wallet] auth header present: ${request.headers.has('authorization')}`)
 
   try {
     if (request.method === 'GET') {
+      console.log('[wallet] GET: verifying session')
       const userId = await getAuthenticatedUserId(request)
+      console.log(`[wallet] GET: session ok uid=${userId.slice(0, 8)}`)
       const wallet = await syncDailyWallet(userId)
 
       return jsonSuccess({
@@ -137,8 +141,11 @@ Deno.serve(async (request) => {
     }
 
     if (request.method === 'POST' && url.pathname.endsWith('/consume')) {
+      console.log('[wallet] POST /consume: verifying session')
       const userId = await getAuthenticatedUserId(request)
+      console.log(`[wallet] POST /consume: session ok uid=${userId.slice(0, 8)}`)
       const body = (await request.json()) as ConsumeRequest
+      console.log(`[wallet] POST /consume: amount=${body.amount} reason=${body.reason} sourceId=${body.sourceId ?? 'null'}`)
 
       if (!isPositiveInteger(body.amount)) {
         return jsonError('amount must be a positive integer', {
@@ -247,6 +254,8 @@ Deno.serve(async (request) => {
       error instanceof Error
         ? error.message
         : 'Unknown wallet function error'
+
+    console.error(`[wallet] ERROR: ${message}`)
 
     if (
       message.includes('Authorization') ||

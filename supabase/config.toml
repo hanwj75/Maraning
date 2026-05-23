@@ -366,6 +366,21 @@ authorization_url_path = "/oauth/consent"
 # Allow dynamic client registration
 allow_dynamic_registration = false
 
+[functions.toss-login]
+verify_jwt = false
+
+[functions.wallet]
+verify_jwt = false
+
+[functions.progress]
+verify_jwt = false
+
+[functions.ad-reward]
+verify_jwt = false
+
+[functions.payments]
+verify_jwt = false
+
 [edge_runtime]
 enabled = true
 # Supported request policies: `oneshot`, `per_worker`.

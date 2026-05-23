@@ -5,7 +5,6 @@ export type TossLoginApiRequest = {
 
 export type SessionUser = {
   id: string
-  tossUserKey: number
   nickname: string
 }
 
@@ -13,10 +12,16 @@ export type SessionWallet = {
   jelly: number
 }
 
+export type TossLoginProgressSummary = {
+  currentChapterId: string
+  currentStageId: string
+}
+
 export type TossLoginApiResponse = {
   sessionToken: string
   user: SessionUser
   wallet: SessionWallet
+  progress?: TossLoginProgressSummary
 }
 
 export const MOCK_SESSION_TOKEN = 'mock-session-token'
@@ -56,11 +61,14 @@ function createMockLoginResponse(): TossLoginApiResponse {
     sessionToken: MOCK_SESSION_TOKEN,
     user: {
       id: 'mock-user-id',
-      tossUserKey: 0,
       nickname: '말랑이 친구',
     },
     wallet: {
       jelly: 20,
+    },
+    progress: {
+      currentChapterId: 'absolute_beginner_chapter_001',
+      currentStageId: 'absolute_beginner_chapter_001_stage_001',
     },
   }
 }
@@ -69,15 +77,19 @@ export async function tossLogin(
   payload: TossLoginApiRequest,
 ): Promise<TossLoginApiResponse> {
   const baseUrl = getAuthApiBaseUrl()
+  const url = `${baseUrl}/toss-login`
+  console.log('[authApi] tossLogin: url =', url)
 
   try {
-    const response = await fetch(`${baseUrl}/toss-login`, {
+    const response = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(payload),
     })
+
+    console.log('[authApi] tossLogin: response status =', response.status)
 
     const result = (await response.json()) as
       | {
@@ -88,17 +100,21 @@ export async function tossLogin(
           success: false
           error?: {
             message?: string
+            code?: string
+            details?: unknown
           }
         }
 
     if (!response.ok || !result.success) {
-      const failure = result as { success: false; error?: { message?: string } }
+      const failure = result as { success: false; error?: { message?: string; code?: string; details?: unknown } }
+      console.error('[authApi] tossLogin: error code =', failure.error?.code, '| message =', failure.error?.message, '| details =', JSON.stringify(failure.error?.details ?? null))
       throw new Error(failure.error?.message || '토스 로그인에 실패했어요.')
     }
 
     return result.data
   } catch (error) {
     if (isLocalDevEnvironment()) {
+      console.warn('[authApi] tossLogin: local dev fallback to mock response')
       return createMockLoginResponse()
     }
 

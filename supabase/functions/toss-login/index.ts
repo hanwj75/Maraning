@@ -3,6 +3,7 @@ import { createAppSession } from '../_shared/session.ts'
 import { jsonError, jsonSuccess } from '../_shared/response.ts'
 import { getSupabaseAdmin } from '../_shared/supabaseAdmin.ts'
 import { generateToken, loginMe } from '../_shared/tossClient.ts'
+import type { TossLoginMeResponse, TossTokenResponse } from '../_shared/tossClient.ts'
 
 type TossLoginRequest = {
   authorizationCode?: string
@@ -20,6 +21,11 @@ type WalletRow = {
   jelly: number
 }
 
+type ProgressSummary = {
+  currentChapterId: string
+  currentStageId: string
+}
+
 const DEFAULT_NICKNAME = '말랑이 친구'
 const DEFAULT_JELLY = 20
 const DEFAULT_DIFFICULTIES = [
@@ -33,6 +39,21 @@ const DEFAULT_DIFFICULTIES = [
 
 function isNonEmptyString(value: unknown): value is string {
   return typeof value === 'string' && value.trim().length > 0
+}
+
+function isValidTossUserKey(value: unknown): value is number {
+  return typeof value === 'number' && Number.isFinite(value) && value > 0
+}
+
+function getMissingRequiredEnvs(): string[] {
+  const required = [
+    'SUPABASE_URL',
+    'SUPABASE_SERVICE_ROLE_KEY',
+    'APP_SESSION_JWT_SECRET',
+    'TOSS_CLIENT_CERT',
+    'TOSS_CLIENT_KEY',
+  ]
+  return required.filter((k) => !Deno.env.get(k))
 }
 
 function buildDefaultProgressRows(userId: string) {
@@ -211,26 +232,28 @@ async function ensureDefaultProgress(userId: string) {
   }
 }
 
-function isValidTossUserKey(value: unknown): value is number {
-  return typeof value === 'number' && Number.isFinite(value) && value > 0
-}
-
-async function insertAuthAuditLog(params: {
-  userId: string | null
-  event: string
-  referrer?: string | null
-  metadata?: Record<string, unknown>
-}) {
+async function getProgressSummary(userId: string): Promise<ProgressSummary> {
   const supabase = getSupabaseAdmin()
-  const { error } = await supabase.from('auth_audit_logs').insert({
-    user_id: params.userId,
-    event: params.event,
-    referrer: params.referrer ?? null,
-    metadata: params.metadata ?? {},
-  })
+  const primaryDifficulty = DEFAULT_DIFFICULTIES[0]
 
-  if (error) {
-    throw new Error(`Failed to insert auth audit log: ${error.message}`)
+  const { data, error } = await supabase
+    .from('user_progress')
+    .select('current_chapter_id, current_stage_id')
+    .eq('user_id', userId)
+    .eq('difficulty', primaryDifficulty)
+    .single()
+
+  if (error || !data) {
+    throw new Error(
+      `Failed to fetch progress summary: ${error?.message ?? 'unknown error'}`,
+    )
+  }
+
+  return {
+    currentChapterId:
+      data.current_chapter_id ?? `${primaryDifficulty}_chapter_001`,
+    currentStageId:
+      data.current_stage_id ?? `${primaryDifficulty}_chapter_001_stage_001`,
   }
 }
 
@@ -241,7 +264,13 @@ async function insertAuthAuditLogSafely(params: {
   metadata?: Record<string, unknown>
 }) {
   try {
-    await insertAuthAuditLog(params)
+    const supabase = getSupabaseAdmin()
+    await supabase.from('auth_audit_logs').insert({
+      user_id: params.userId,
+      event: params.event,
+      referrer: params.referrer ?? null,
+      metadata: params.metadata ?? {},
+    })
   } catch {
     // audit log failure should not override the original request outcome
   }
@@ -253,6 +282,8 @@ Deno.serve(async (request) => {
     return preflightResponse
   }
 
+  console.log('[toss-login] request received, method:', request.method)
+
   if (request.method !== 'POST') {
     return jsonError('Method not allowed', {
       status: 405,
@@ -260,10 +291,22 @@ Deno.serve(async (request) => {
     })
   }
 
-  let body: TossLoginRequest
+  // Env check
+  const missingEnvs = getMissingRequiredEnvs()
+  if (missingEnvs.length > 0) {
+    console.error('[toss-login] MISSING_ENV:', missingEnvs.join(', '))
+    return jsonError(`Missing required env: ${missingEnvs.join(', ')}`, {
+      status: 500,
+      code: 'MISSING_ENV',
+    })
+  }
+  console.log('[toss-login] env: ok')
 
+  // Body parse
+  let body: TossLoginRequest
   try {
     body = (await request.json()) as TossLoginRequest
+    console.log('[toss-login] body parsed, authCode exists:', isNonEmptyString(body.authorizationCode), 'referrer:', body.referrer ?? '(none)')
   } catch {
     return jsonError('Invalid JSON body', {
       status: 400,
@@ -274,7 +317,7 @@ Deno.serve(async (request) => {
   if (!isNonEmptyString(body.authorizationCode)) {
     return jsonError('authorizationCode is required', {
       status: 400,
-      code: 'invalid_authorization_code',
+      code: 'INVALID_AUTHORIZATION_CODE',
     })
   }
 
@@ -285,121 +328,203 @@ Deno.serve(async (request) => {
     })
   }
 
+  const authCode = body.authorizationCode.trim()
+  const referrer = body.referrer.trim()
+
+  // Step 1: generate-token
+  let tokenResult!: TossTokenResponse
   try {
-    const tokenResult = await generateToken(
-      body.authorizationCode.trim(),
-      body.referrer.trim(),
-    )
-    const loginResult = await loginMe(tokenResult.accessToken)
-
-    if (!isValidTossUserKey(loginResult.userKey)) {
-      await insertAuthAuditLogSafely({
-        userId: null,
-        event: 'toss_login_failed',
-        referrer: body.referrer.trim(),
-        metadata: {
-          reason: 'missing_user_key',
-        },
-      })
-
-      return jsonError('Toss login response missing userKey', {
+    console.log('[toss-login] generate-token: start')
+    tokenResult = await generateToken(authCode, referrer)
+    console.log('[toss-login] generate-token: success')
+  } catch (error) {
+    const message = error instanceof Error ? error.message : 'unknown'
+    console.error('[toss-login] generate-token: failed:', message)
+    await insertAuthAuditLogSafely({
+      userId: null,
+      event: 'toss_login_failed',
+      referrer,
+      metadata: { reason: 'generate_token_failed', message },
+    })
+    if (message.includes('invalid_grant')) {
+      return jsonError('인증 코드가 만료되었어요. 다시 로그인해 주세요.', {
         status: 400,
-        code: 'missing_user_key',
+        code: 'INVALID_AUTHORIZATION_CODE',
       })
     }
+    return jsonError('토스 토큰 발급에 실패했어요.', {
+      status: 502,
+      code: 'TOSS_GENERATE_TOKEN_FAILED',
+      details: { step: 'generate-token' },
+    })
+  }
 
-    const appUser = await upsertAppUser(loginResult.userKey)
+  // Step 2: login-me
+  let loginResult!: TossLoginMeResponse
+  try {
+    console.log('[toss-login] login-me: start')
+    loginResult = await loginMe(tokenResult.accessToken)
+    console.log('[toss-login] login-me: success, userKey exists:', isValidTossUserKey(loginResult.userKey))
+  } catch (error) {
+    const message = error instanceof Error ? error.message : 'unknown'
+    console.error('[toss-login] login-me: failed:', message)
+    await insertAuthAuditLogSafely({
+      userId: null,
+      event: 'toss_login_failed',
+      referrer,
+      metadata: { reason: 'login_me_failed', message },
+    })
+    return jsonError('토스 사용자 정보 조회에 실패했어요.', {
+      status: 502,
+      code: 'TOSS_LOGIN_ME_FAILED',
+      details: { step: 'login-me' },
+    })
+  }
 
+  if (!isValidTossUserKey(loginResult.userKey)) {
+    console.error('[toss-login] missing userKey in login-me response')
+    await insertAuthAuditLogSafely({
+      userId: null,
+      event: 'toss_login_failed',
+      referrer,
+      metadata: { reason: 'missing_user_key' },
+    })
+    return jsonError('토스 사용자 키가 없어요.', {
+      status: 400,
+      code: 'MISSING_USER_KEY',
+    })
+  }
+
+  // Step 3: upsert app_users
+  let appUser!: AppUserRow
+  try {
+    console.log('[toss-login] app_users upsert: start')
+    appUser = await upsertAppUser(loginResult.userKey)
+    console.log('[toss-login] app_users upsert: success, userId:', appUser.id)
+  } catch (error) {
+    const message = error instanceof Error ? error.message : 'unknown'
+    console.error('[toss-login] app_users upsert: failed:', message)
+    await insertAuthAuditLogSafely({
+      userId: null,
+      event: 'toss_login_failed',
+      referrer,
+      metadata: { reason: 'db_user_upsert_failed', message },
+    })
+    return jsonError('사용자 정보 저장에 실패했어요.', {
+      status: 500,
+      code: 'DB_USER_UPSERT_FAILED',
+    })
+  }
+
+  // Step 4: upsert toss_oauth_tokens (non-fatal)
+  try {
+    console.log('[toss-login] toss_oauth_tokens upsert: start')
     await upsertTossOAuthTokens({
       userId: appUser.id,
       accessToken: tokenResult.accessToken,
       refreshToken: tokenResult.refreshToken,
       scope: loginResult.scope || tokenResult.scope,
-      referrer: body.referrer.trim(),
+      referrer,
       expiresIn: tokenResult.expiresIn,
     })
+    console.log('[toss-login] toss_oauth_tokens upsert: success')
+  } catch (error) {
+    console.error('[toss-login] toss_oauth_tokens upsert: failed (non-fatal):', error instanceof Error ? error.message : 'unknown')
+    // non-fatal — continue
+  }
 
-    const wallet = await ensureWallet(appUser.id)
-    await ensureDefaultProgress(appUser.id)
-
+  // Step 5: ensure user_wallets
+  let wallet!: WalletRow
+  try {
+    console.log('[toss-login] user_wallets ensure: start')
+    wallet = await ensureWallet(appUser.id)
+    console.log('[toss-login] user_wallets ensure: success, jelly:', wallet.jelly)
+  } catch (error) {
+    const message = error instanceof Error ? error.message : 'unknown'
+    console.error('[toss-login] user_wallets ensure: failed:', message)
     await insertAuthAuditLogSafely({
       userId: appUser.id,
-      event: 'toss_login_success',
-      referrer: body.referrer.trim(),
-      metadata: {
-        scope: loginResult.scope || tokenResult.scope,
-        agreedTerms: loginResult.agreedTerms ?? [],
-      },
-    })
-
-    const sessionToken = await createAppSession(
-      appUser.id,
-      appUser.toss_user_key,
-    )
-
-    return jsonSuccess({
-      sessionToken,
-      user: {
-        id: appUser.id,
-        tossUserKey: appUser.toss_user_key,
-        nickname: appUser.nickname,
-      },
-      wallet: {
-        jelly: wallet.jelly,
-      },
-    })
-  } catch (error) {
-    const message = error instanceof Error ? error.message : 'Unknown error'
-
-    if (message.includes('invalid_grant')) {
-      await insertAuthAuditLogSafely({
-        userId: null,
-        event: 'toss_login_failed',
-        referrer: body.referrer?.trim() ?? null,
-        metadata: {
-          reason: 'invalid_grant',
-          message,
-        },
-      })
-
-      return jsonError('Invalid authorization grant', {
-        status: 400,
-        code: 'invalid_grant',
-      })
-    }
-
-    if (message.includes('Toss API')) {
-      await insertAuthAuditLogSafely({
-        userId: null,
-        event: 'toss_login_failed',
-        referrer: body.referrer?.trim() ?? null,
-        metadata: {
-          reason: 'toss_api_error',
-          message,
-        },
-      })
-
-      return jsonError('Failed to communicate with Toss API', {
-        status: 502,
-        code: 'toss_api_error',
-        details: { message },
-      })
-    }
-
-    await insertAuthAuditLogSafely({
-      userId: null,
       event: 'toss_login_failed',
-      referrer: body.referrer?.trim() ?? null,
-      metadata: {
-        reason: 'internal_error',
-        message,
-      },
+      referrer,
+      metadata: { reason: 'db_wallet_init_failed', message },
     })
-
-    return jsonError('Failed to complete toss login', {
+    return jsonError('지갑 초기화에 실패했어요.', {
       status: 500,
-      code: 'toss_login_failed',
-      details: { message },
+      code: 'DB_WALLET_INIT_FAILED',
     })
   }
+
+  // Step 6: ensure user_progress
+  try {
+    console.log('[toss-login] user_progress ensure: start')
+    await ensureDefaultProgress(appUser.id)
+    console.log('[toss-login] user_progress ensure: success')
+  } catch (error) {
+    const message = error instanceof Error ? error.message : 'unknown'
+    console.error('[toss-login] user_progress ensure: failed:', message)
+    await insertAuthAuditLogSafely({
+      userId: appUser.id,
+      event: 'toss_login_failed',
+      referrer,
+      metadata: { reason: 'db_progress_init_failed', message },
+    })
+    return jsonError('진행도 초기화에 실패했어요.', {
+      status: 500,
+      code: 'DB_PROGRESS_INIT_FAILED',
+    })
+  }
+
+  // Step 7: fetch progress summary
+  let progressSummary!: ProgressSummary
+  try {
+    console.log('[toss-login] progress summary: start')
+    progressSummary = await getProgressSummary(appUser.id)
+    console.log('[toss-login] progress summary: success')
+  } catch (error) {
+    const message = error instanceof Error ? error.message : 'unknown'
+    console.error('[toss-login] progress summary: failed:', message)
+    return jsonError('진행도 조회에 실패했어요.', {
+      status: 500,
+      code: 'DB_PROGRESS_FETCH_FAILED',
+    })
+  }
+
+  // Audit log: success (non-fatal)
+  await insertAuthAuditLogSafely({
+    userId: appUser.id,
+    event: 'toss_login_success',
+    referrer,
+    metadata: {
+      scope: loginResult.scope || tokenResult.scope,
+      agreedTerms: loginResult.agreedTerms ?? [],
+    },
+  })
+
+  // Step 8: create session
+  let sessionToken!: string
+  try {
+    console.log('[toss-login] createAppSession: start')
+    sessionToken = await createAppSession(appUser.id, appUser.toss_user_key)
+    console.log('[toss-login] createAppSession: success')
+  } catch (error) {
+    const message = error instanceof Error ? error.message : 'unknown'
+    console.error('[toss-login] createAppSession: failed:', message)
+    return jsonError('세션 생성에 실패했어요.', {
+      status: 500,
+      code: 'SESSION_CREATE_FAILED',
+    })
+  }
+
+  console.log('[toss-login] response: success')
+  return jsonSuccess({
+    sessionToken,
+    user: {
+      id: appUser.id,
+      nickname: appUser.nickname,
+    },
+    wallet: {
+      jelly: wallet.jelly,
+    },
+    progress: progressSummary,
+  })
 })
