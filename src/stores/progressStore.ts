@@ -293,16 +293,36 @@ export function applyStageCompletion(params: {
   }
 }
 
+function serverStageIdToFrontendId(serverStageId: string, stages: readonly Stage[]): string {
+  const match = serverStageId.match(/_stage_(\d+)$/)
+  if (!match) return serverStageId
+  const order = parseInt(match[1], 10)
+  const chapterId = serverStageId.slice(0, serverStageId.lastIndexOf('_stage_'))
+  return stages.find((s) => s.chapterId === chapterId && s.order === order)?.id ?? serverStageId
+}
+
 function mapServerProgressRowToDifficultyProgress(
   row: ServerDifficultyProgress,
 ): DifficultyProgress {
+  const stages = getStagesByDifficulty(row.difficulty)
+  const toFrontend = (id: string) => serverStageIdToFrontendId(id, stages)
   return {
     currentChapterId: row.current_chapter_id,
-    currentStageId: row.current_stage_id,
+    currentStageId: row.current_stage_id ? toFrontend(row.current_stage_id) : null,
     unlockedChapterIds: unique(row.unlocked_chapter_ids),
     completedChapterIds: unique(row.completed_chapter_ids),
-    unlockedStageIdsByChapter: row.unlocked_stage_ids_by_chapter,
-    completedStageIdsByChapter: row.completed_stage_ids_by_chapter,
+    unlockedStageIdsByChapter: Object.fromEntries(
+      Object.entries(row.unlocked_stage_ids_by_chapter).map(([chapterId, ids]) => [
+        chapterId,
+        ids.map(toFrontend),
+      ]),
+    ),
+    completedStageIdsByChapter: Object.fromEntries(
+      Object.entries(row.completed_stage_ids_by_chapter).map(([chapterId, ids]) => [
+        chapterId,
+        ids.map(toFrontend),
+      ]),
+    ),
     lastPlayedAt: row.updated_at,
   }
 }
@@ -356,7 +376,7 @@ export const useProgressStore = create<ProgressStore>()(
         }
 
         try {
-          const response = await fetchProgress(sessionState.sessionToken)
+          const response = await fetchProgress()
           const serverRow = response.progress.find((row) => row.difficulty === difficulty)
 
           if (!serverRow) {
@@ -391,10 +411,11 @@ export const useProgressStore = create<ProgressStore>()(
         }
 
         try {
-          const response = await completeStageProgress(sessionState.sessionToken, {
+          const serverStageId = `${currentStage.chapterId}_stage_${String(currentStage.order).padStart(3, '0')}`
+          const response = await completeStageProgress({
             difficulty,
             chapterId: currentStage.chapterId,
-            stageId,
+            stageId: serverStageId,
           })
 
           get().setDifficultyProgressFromServer(

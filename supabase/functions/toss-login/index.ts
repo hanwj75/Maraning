@@ -322,7 +322,7 @@ Deno.serve(async (request) => {
     const wallet = await ensureWallet(appUser.id)
     await ensureDefaultProgress(appUser.id)
 
-    await insertAuthAuditLog({
+    await insertAuthAuditLogSafely({
       userId: appUser.id,
       event: 'toss_login_success',
       referrer: body.referrer.trim(),

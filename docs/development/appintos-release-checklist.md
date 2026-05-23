@@ -16,49 +16,166 @@
 
 ## Frontend Env
 
-- `VITE_SUPABASE_URL` 설정
-- `VITE_SUPABASE_ANON_KEY` 설정
+- `VITE_SUPABASE_URL` 설정 (필수 — Edge Functions URL 자동 유도에 사용)
+- `VITE_SUPABASE_ANON_KEY` 설정 (현재 미사용 — 프론트에서 Supabase 클라이언트를 직접 사용하지 않음)
 - `VITE_API_BASE_URL` 이 비어 있으면 `VITE_SUPABASE_URL/functions/v1` 로 유도되는지 확인
 - `VITE_API_BASE_URL` 을 직접 쓸 경우 실제 Supabase Functions URL 인지 확인
 - production 빌드에서 mock login 경로가 아니라 실제 `toss-login` function 호출 경로를 타는지 확인
 
 ## Supabase Secrets
 
+아래 값들은 프론트 `.env` 가 아니라 Supabase secrets 로만 관리한다.
+배포: Supabase 대시보드 > Project Settings > Edge Functions > Secrets
+로컬: `supabase secrets set KEY=VALUE`
+
+**필수 (현재 Edge Functions 동작에 필요)**
+- `SUPABASE_URL` — 배포 환경에서 자동 주입됨, 로컬에서만 직접 설정 필요
 - `SUPABASE_SERVICE_ROLE_KEY`
-- `TOSS_API_BASE_URL`
-- `TOSS_CLIENT_ID`
-- `TOSS_DECRYPTION_KEY`
-- `TOSS_DECRYPTION_AAD`
 - `APP_SESSION_JWT_SECRET`
 
-위 값들은 프론트 `.env` 가 아니라 Supabase secrets 로만 관리한다.
+**선택 (기본값 있음)**
+- `TOSS_API_BASE_URL` — 기본값: `https://apps-in-toss-api.toss.im`
+
+**미사용 (향후 기능 구현 시 필요)**
+- `TOSS_CLIENT_ID` — IAP 연동 시 필요
+- `TOSS_DECRYPTION_KEY` — 토스 개인정보 복호화 시 필요
+- `TOSS_DECRYPTION_AAD` — 토스 개인정보 복호화 시 필요
 
 ## Missing Env To Fill Before Submission
 
 - 프론트 `.env`
-  - `VITE_SUPABASE_URL`
-  - `VITE_SUPABASE_ANON_KEY`
+  - `VITE_SUPABASE_URL` (필수)
   - `VITE_API_BASE_URL` 또는 `VITE_SUPABASE_URL` 기반 자동 유도 확인
-- Supabase secrets
+- Supabase secrets (필수)
   - `SUPABASE_SERVICE_ROLE_KEY`
-  - `TOSS_API_BASE_URL`
   - `APP_SESSION_JWT_SECRET`
+- Supabase secrets (선택, 기본값 있음)
+  - `TOSS_API_BASE_URL` — 기본값 `https://apps-in-toss-api.toss.im` 으로 동작
 - Toss 개인정보 복호화가 실제로 필요해질 때만 추가
   - `TOSS_DECRYPTION_KEY`
   - `TOSS_DECRYPTION_AAD`
-- 향후 콘솔/앱 식별값 연동 시 확인
+- 향후 IAP 연동 시 확인
   - `TOSS_CLIENT_ID`
 
-## DB / Functions Deploy
+## Supabase 실제 배포 절차
 
-1. `supabase login`
-2. `supabase link --project-ref <project-ref>`
-3. `supabase db push`
-4. `supabase functions deploy toss-login`
-5. `supabase functions deploy wallet`
-6. `supabase functions deploy progress`
-7. `supabase functions deploy ad-reward`
-8. `supabase functions deploy payments`
+순서대로 진행한다. 각 단계마다 verify 항목을 확인한 뒤 다음 단계로 넘어간다.
+
+### 1. Supabase 프로젝트 생성
+
+- Supabase 대시보드(supabase.com)에서 새 프로젝트 생성
+- 프로젝트 이름, 데이터베이스 비밀번호, 리전(Northeast Asia — ap-northeast-1 권장) 설정
+- 생성 완료 후 Project Settings > General 에서 `Reference ID` 메모
+- verify: 대시보드에서 프로젝트 상태가 Active인지 확인
+
+### 2. Supabase CLI 로그인
+
+```sh
+supabase login
+```
+
+- 브라우저가 열리면 Supabase 계정으로 인증
+- verify: `supabase projects list` 로 방금 만든 프로젝트가 목록에 보이는지 확인
+
+### 3. 프로젝트 link
+
+```sh
+supabase link --project-ref <reference-id>
+```
+
+- `<reference-id>` 는 1단계에서 메모한 값으로 교체
+- 데이터베이스 비밀번호 입력 요청 시 1단계에서 설정한 비밀번호 입력
+- verify: `supabase status` 실행 후 linked project 가 올바른 ref 인지 확인
+
+### 4. Migration 적용
+
+```sh
+supabase db push
+```
+
+- `supabase/migrations/` 하위 파일들이 순서대로 실행됨
+- verify: 대시보드 Table Editor 에서 `app_users`, `wallets`, `user_progress`, `payment_orders`, `ad_reward_events` 테이블이 생성되었는지 확인
+
+### 5. Secrets 설정
+
+아래 명령을 한 줄씩 실행한다. 실제 값은 `.env.example` 주석 참고.
+
+```sh
+supabase secrets set SUPABASE_SERVICE_ROLE_KEY=<값>
+supabase secrets set APP_SESSION_JWT_SECRET=<값>
+```
+
+선택 (기본값 있음, 변경 필요 시만):
+
+```sh
+supabase secrets set TOSS_API_BASE_URL=https://apps-in-toss-api.toss.im
+```
+
+- verify: `supabase secrets list` 에서 `SUPABASE_SERVICE_ROLE_KEY`, `APP_SESSION_JWT_SECRET` 이 표시되는지 확인
+- 주의: 값 자체는 list 에 노출되지 않는 것이 정상
+
+### 6. Edge Functions 배포
+
+```sh
+supabase functions deploy toss-login
+supabase functions deploy wallet
+supabase functions deploy progress
+supabase functions deploy ad-reward
+supabase functions deploy payments
+```
+
+- 각 명령 실행 후 `Deployed: <function-name>` 메시지 확인
+- verify: 대시보드 Edge Functions 탭에서 5개 함수가 모두 Active 상태인지 확인
+
+### 7. Function URL 확인
+
+```sh
+supabase functions list
+```
+
+- URL 형식: `https://<project-ref>.supabase.co/functions/v1/<function-name>`
+- 또는 대시보드 Edge Functions 탭에서 각 함수의 엔드포인트 URL 확인
+- verify: `toss-login`, `wallet`, `progress`, `ad-reward`, `payments` 5개 URL이 모두 조회되는지 확인
+
+### 8. VITE_API_BASE_URL 설정
+
+프론트 `.env` (또는 앱인토스 빌드 환경 변수):
+
+```sh
+VITE_SUPABASE_URL=https://<project-ref>.supabase.co
+# VITE_API_BASE_URL 을 비우면 위 값에서 /functions/v1 을 자동 유도
+# 또는 직접 지정:
+VITE_API_BASE_URL=https://<project-ref>.supabase.co/functions/v1
+```
+
+- verify: `npm run build` 후 번들에 `service_role` 문자열이 포함되지 않는지 확인
+- verify: `.env` 에 `SERVICE_ROLE_KEY` 또는 `JWT_SECRET` 가 포함되지 않는지 확인
+
+### 9. 앱인토스 sandbox 테스트
+
+실기기(토스앱) 또는 앱인토스 sandbox 환경에서 아래 흐름을 순서대로 검증한다.
+
+- [ ] 시작하기 → 동의하고 시작하기 → `toss-login` function 호출 성공 및 sessionToken 발급 확인
+- [ ] 로그인 후 `GET /wallet`, `GET /progress` 응답으로 마이페이지 hydrate 확인
+- [ ] Quiz 제출 시 `POST /wallet/consume` 호출 및 jelly 감소 확인
+- [ ] Stage 완료 시 `POST /progress/stage-complete` 호출 및 다음 stage unlock 확인
+- [ ] 광고 시청 완료 후 `POST /ad-reward/complete` 호출 및 jelly +5 확인
+- [ ] `POST /payments/verify` 호출 시 501 + `payment_verification_not_implemented` 응답 확인 (jelly 미지급)
+- [ ] 로그아웃 후 재로그인 시 서버 기준 jelly/progress 가 복원되는지 확인
+
+### 10. Build/Deploy 전 최종 확인
+
+```sh
+npm run build
+```
+
+- [ ] 빌드 오류 없음
+- [ ] `VITE_API_BASE_URL` 이 실제 Supabase Functions URL 로 설정됨
+- [ ] mock login 경로가 아닌 실제 `toss-login` 호출 경로를 타는지 확인
+- [ ] service role key 가 프론트 번들에 포함되지 않음
+- [ ] Toss `accessToken` / `refreshToken` 을 프론트 응답으로 내리지 않음
+- [ ] `payments/verify` 가 여전히 disabled 상태임
+- [ ] changelog 최신화 확인
 
 ## Security Check
 

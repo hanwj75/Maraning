@@ -13,6 +13,11 @@ function getEnvOrDefault(name: string, defaultValue: string): string {
   return value && value.length > 0 ? value : defaultValue
 }
 
+function getOptionalEnv(name: string): string | undefined {
+  const value = Deno.env.get(name)
+  return value && value.length > 0 ? value : undefined
+}
+
 export const env = {
   supabaseUrl: getRequiredEnv('SUPABASE_URL'),
   supabaseServiceRoleKey: getRequiredEnv('SUPABASE_SERVICE_ROLE_KEY'),
@@ -21,4 +26,7 @@ export const env = {
     'https://apps-in-toss-api.toss.im',
   ),
   appSessionJwtSecret: getRequiredEnv('APP_SESSION_JWT_SECRET'),
+  tossClientId: getOptionalEnv('TOSS_CLIENT_ID'),
+  tossDecryptionKey: getOptionalEnv('TOSS_DECRYPTION_KEY'),
+  tossDecryptionAad: getOptionalEnv('TOSS_DECRYPTION_AAD'),
 }

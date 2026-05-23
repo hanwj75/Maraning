@@ -26,22 +26,13 @@ function normalizeProgressList(value: ServerDifficultyProgress[] | ServerDifficu
   return Array.isArray(value) ? value : [value]
 }
 
-export async function fetchProgress(sessionToken: string): Promise<{
-  progress: ServerDifficultyProgress[]
-}> {
+export async function fetchProgress(): Promise<{ progress: ServerDifficultyProgress[] }> {
   let data: { progress: ServerDifficultyProgress[] | ServerDifficultyProgress }
 
   try {
     data = await apiRequest<{
       progress: ServerDifficultyProgress[] | ServerDifficultyProgress
-    }>(
-      {
-        path: '/progress',
-        method: 'GET',
-        sessionToken,
-      },
-      '진행 정보를 불러오지 못했어요.',
-    )
+    }>({ path: '/progress', method: 'GET' }, '진행 정보를 불러오지 못했어요.')
   } catch (error) {
     throw error instanceof ApiClientError
       ? new ProgressApiError(error.message, {
@@ -52,15 +43,10 @@ export async function fetchProgress(sessionToken: string): Promise<{
       : error
   }
 
-  return {
-    progress: normalizeProgressList(data.progress),
-  }
+  return { progress: normalizeProgressList(data.progress) }
 }
 
-export async function completeStageProgress(
-  sessionToken: string,
-  payload: StageCompletePayload,
-): Promise<{
+export async function completeStageProgress(payload: StageCompletePayload): Promise<{
   progress: ServerDifficultyProgress
 }> {
   let data: { progress: ServerDifficultyProgress[] | ServerDifficultyProgress }
@@ -69,12 +55,7 @@ export async function completeStageProgress(
     data = await apiRequest<{
       progress: ServerDifficultyProgress[] | ServerDifficultyProgress
     }>(
-      {
-        path: '/progress/stage-complete',
-        method: 'POST',
-        sessionToken,
-        body: payload,
-      },
+      { path: '/progress/stage-complete', method: 'POST', body: payload },
       '스테이지 진행도를 저장하지 못했어요.',
     )
   } catch (error) {
@@ -87,7 +68,5 @@ export async function completeStageProgress(
       : error
   }
 
-  return {
-    progress: normalizeProgressList(data.progress)[0],
-  }
+  return { progress: normalizeProgressList(data.progress)[0] }
 }

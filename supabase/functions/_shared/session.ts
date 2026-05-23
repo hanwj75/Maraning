@@ -107,7 +107,7 @@ export async function verifyAppSession(authHeader: string | null) {
   ) as AppSessionPayload
 
   if (decodedPayload.exp <= Math.floor(Date.now() / 1000)) {
-    throw new Error('Session token expired')
+    throw new Error('session token expired')
   }
 
   return decodedPayload

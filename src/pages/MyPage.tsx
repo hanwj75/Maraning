@@ -7,6 +7,7 @@ import { CuteTopBar } from '../shared/components/CuteTopBar'
 import { buildStageMapPath } from '../features/stage/stage.routes'
 import { PageFrame } from '../shared/components/PageFrame'
 import { useUiStore } from '../stores/ui-store'
+import { useJellyStore } from '../stores/jellyStore'
 import { useProgressStore } from '../stores/progressStore'
 import { useSessionStore } from '../stores/sessionStore'
 import { getChapterById, getStageById } from '../features/stage/stage.utils'
@@ -17,10 +18,11 @@ export function MyPage() {
   const selectedDifficulty = useUiStore((state) => state.selectedDifficulty)
   const sessionToken = useSessionStore((state) => state.sessionToken)
   const sessionUser = useSessionStore((state) => state.user)
-  const sessionWallet = useSessionStore((state) => state.wallet)
   const isLoggedIn = useSessionStore((state) => state.isLoggedIn)
   const logout = useSessionStore((state) => state.logout)
   const setWallet = useSessionStore((state) => state.setWallet)
+  const currentJelly = useJellyStore((state) => state.current)
+  const setFromServerWallet = useJellyStore((state) => state.setFromServerWallet)
   const progressByDifficulty = useProgressStore((state) => state.progressByDifficulty)
   const setAllProgressFromServer = useProgressStore((state) => state.setAllProgressFromServer)
   const [loadError, setLoadError] = useState<string | null>(null)
@@ -35,14 +37,15 @@ export function MyPage() {
     void (async () => {
       try {
         const [walletResponse, progressResponse] = await Promise.all([
-          fetchWallet(sessionToken),
-          fetchProgress(sessionToken),
+          fetchWallet(),
+          fetchProgress(),
         ])
 
         if (cancelled) {
           return
         }
 
+        setFromServerWallet(walletResponse.wallet)
         setWallet({ jelly: walletResponse.wallet.jelly })
         setAllProgressFromServer(progressResponse.progress)
         setLoadError(null)
@@ -62,7 +65,7 @@ export function MyPage() {
     return () => {
       cancelled = true
     }
-  }, [isLoggedIn, sessionToken, setAllProgressFromServer, setWallet])
+  }, [isLoggedIn, sessionToken, setAllProgressFromServer, setFromServerWallet, setWallet])
 
   const resolvedDifficulty = difficultyKeys.reduce<DifficultyKey>(
     (latestDifficulty, difficulty) => {
@@ -107,11 +110,8 @@ export function MyPage() {
     currentChapter && currentStage
       ? buildStageMapPath(resolvedDifficulty, currentChapter.id)
       : null
-  const displayUserName = sessionUser?.nickname ?? DEFAULT_USER_NAME
-  const jellyLabel =
-    typeof sessionWallet?.jelly === 'number'
-      ? `${sessionWallet.jelly}`
-      : '아직 젤리 정보가 없어요.'
+  const displayUserName = sessionUser?.nickname || DEFAULT_USER_NAME
+  const jellyLabel = isLoggedIn ? String(currentJelly) : '아직 젤리 정보가 없어요.'
 
   return (
     <PageFrame contentClassName="gap-5">

@@ -1,0 +1,3 @@
+-- Intentionally empty.
+-- Seed data is not required for this project.
+-- This file exists to satisfy supabase/config.toml [db.seed] configuration.

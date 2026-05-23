@@ -92,12 +92,15 @@ async function insertAdRewardEvent(params: {
   rewardAmount?: number
 }) {
   const supabase = getSupabaseAdmin()
-  const { error } = await supabase.from('ad_reward_events').insert({
-    user_id: params.userId,
-    ad_event_id: params.adEventId,
-    status: params.status,
-    reward_amount: params.rewardAmount ?? AD_REWARD_AMOUNT,
-  })
+  const { error } = await supabase.from('ad_reward_events').upsert(
+    {
+      user_id: params.userId,
+      ad_event_id: params.adEventId,
+      status: params.status,
+      reward_amount: params.rewardAmount ?? AD_REWARD_AMOUNT,
+    },
+    { onConflict: 'user_id,ad_event_id', ignoreDuplicates: true },
+  )
 
   if (error) {
     throw new Error(`Failed to insert ad reward event: ${error.message}`)

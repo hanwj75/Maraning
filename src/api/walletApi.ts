@@ -22,46 +22,28 @@ export type WalletConsumeResponse = WalletApiResponse & {
 
 export class WalletApiError extends ApiClientError {}
 
-export async function fetchWallet(sessionToken: string): Promise<WalletApiResponse> {
+export async function fetchWallet(): Promise<WalletApiResponse> {
   try {
     return await apiRequest<WalletApiResponse>(
-      {
-        path: '/wallet',
-        method: 'GET',
-        sessionToken,
-      },
+      { path: '/wallet', method: 'GET' },
       '젤리 정보를 불러오지 못했어요.',
     )
   } catch (error) {
     throw error instanceof ApiClientError
-      ? new WalletApiError(error.message, {
-          code: error.code,
-          status: error.status,
-        })
+      ? new WalletApiError(error.message, { code: error.code, status: error.status })
       : error
   }
 }
 
-export async function consumeWallet(
-  sessionToken: string,
-  payload: WalletConsumeRequest,
-): Promise<WalletConsumeResponse> {
+export async function consumeWallet(payload: WalletConsumeRequest): Promise<WalletConsumeResponse> {
   try {
     return await apiRequest<WalletConsumeResponse>(
-      {
-        path: '/wallet/consume',
-        method: 'POST',
-        sessionToken,
-        body: payload,
-      },
+      { path: '/wallet/consume', method: 'POST', body: payload },
       '젤리를 차감하지 못했어요.',
     )
   } catch (error) {
     throw error instanceof ApiClientError
-      ? new WalletApiError(error.message, {
-          code: error.code,
-          status: error.status,
-        })
+      ? new WalletApiError(error.message, { code: error.code, status: error.status })
       : error
   }
 }

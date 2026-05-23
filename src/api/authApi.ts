@@ -25,32 +25,13 @@ function trimTrailingSlash(value: string) {
   return value.endsWith('/') ? value.slice(0, -1) : value
 }
 
-function getViteEnvValue(key: string) {
-  try {
-    const env = (0, eval)('import.meta.env') as Record<string, string | undefined>
-    return env?.[key]
-  } catch {
-    return undefined
-  }
-}
-
 export function getAuthApiBaseUrl() {
-  const explicitApiBaseUrl = getViteEnvValue('VITE_API_BASE_URL')
-  const explicitFunctionsBaseUrl =
-    getViteEnvValue('VITE_SUPABASE_FUNCTIONS_URL') ??
-    getViteEnvValue('VITE_SUPABASE_FUNCTIONS_BASE_URL')
-  const supabaseUrl = getViteEnvValue('VITE_SUPABASE_URL')
-
-  if (explicitApiBaseUrl) {
-    return trimTrailingSlash(explicitApiBaseUrl)
+  if (import.meta.env.VITE_API_BASE_URL) {
+    return trimTrailingSlash(import.meta.env.VITE_API_BASE_URL as string)
   }
 
-  if (explicitFunctionsBaseUrl) {
-    return trimTrailingSlash(explicitFunctionsBaseUrl)
-  }
-
-  if (supabaseUrl) {
-    return `${trimTrailingSlash(supabaseUrl)}/functions/v1`
+  if (import.meta.env.VITE_SUPABASE_URL) {
+    return `${trimTrailingSlash(import.meta.env.VITE_SUPABASE_URL as string)}/functions/v1`
   }
 
   if (isLocalDevEnvironment()) {
@@ -58,7 +39,7 @@ export function getAuthApiBaseUrl() {
   }
 
   throw new Error(
-    'API 주소가 설정되지 않았어요. VITE_API_BASE_URL 또는 VITE_SUPABASE_FUNCTIONS_URL을 확인해 주세요.',
+    'API 주소가 설정되지 않았어요. VITE_SUPABASE_URL 또는 VITE_API_BASE_URL을 확인해 주세요.',
   )
 }
 
@@ -111,9 +92,8 @@ export async function tossLogin(
         }
 
     if (!response.ok || !result.success) {
-      throw new Error(
-        result.success ? '토스 로그인에 실패했어요.' : result.error?.message || '토스 로그인에 실패했어요.',
-      )
+      const failure = result as { success: false; error?: { message?: string } }
+      throw new Error(failure.error?.message || '토스 로그인에 실패했어요.')
     }
 
     return result.data

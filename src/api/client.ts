@@ -47,8 +47,10 @@ function buildHeaders(options: ApiRequestOptions) {
     ...(options.headers ?? {}),
   }
 
-  if (options.sessionToken) {
-    headers.Authorization = `Bearer ${options.sessionToken}`
+  const token = options.sessionToken ?? useSessionStore.getState().sessionToken
+
+  if (token) {
+    headers.Authorization = `Bearer ${token}`
   }
 
   if (options.body !== undefined) {
@@ -77,16 +79,15 @@ async function parseApiEnvelope<T>(
       useSessionStore.getState().expireSession()
     }
 
-    throw new ApiClientError(
-      result && !result.success
-        ? result.error?.message || fallbackMessage
-        : fallbackMessage,
-      {
-        code: result && !result.success ? result.error?.code : null,
-        status: response.status,
-        details: result && !result.success ? result.error?.details : null,
-      },
-    )
+    const failure = result as {
+      success: false
+      error?: { message?: string; code?: string; details?: unknown }
+    }
+    throw new ApiClientError(failure.error?.message || fallbackMessage, {
+      code: failure.error?.code ?? null,
+      status: response.status,
+      details: failure.error?.details ?? null,
+    })
   }
 
   return result.data

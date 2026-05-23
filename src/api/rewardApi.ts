@@ -15,18 +15,10 @@ export type AdRewardResponse = {
 
 export class RewardApiError extends ApiClientError {}
 
-export async function completeAdReward(
-  sessionToken: string,
-  payload: AdRewardRequest,
-): Promise<AdRewardResponse> {
+export async function completeAdReward(payload: AdRewardRequest): Promise<AdRewardResponse> {
   try {
     return await apiRequest<AdRewardResponse>(
-      {
-        path: '/ad-reward/complete',
-        method: 'POST',
-        sessionToken,
-        body: payload,
-      },
+      { path: '/ad-reward/complete', method: 'POST', body: payload },
       '광고 보상을 받지 못했어요.',
     )
   } catch (error) {

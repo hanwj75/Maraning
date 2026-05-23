@@ -126,7 +126,7 @@ export const useJellyStore = create<JellyStore>()(
         }
 
         try {
-          const response = await fetchWallet(sessionState.sessionToken)
+          const response = await fetchWallet()
           get().setFromServerWallet(response.wallet)
           sessionState.setWallet({ jelly: response.wallet.jelly })
 
@@ -167,7 +167,7 @@ export const useJellyStore = create<JellyStore>()(
         }
 
         try {
-          const response = await consumeWallet(sessionState.sessionToken, {
+          const response = await consumeWallet({
             amount: JELLY_SUBMIT_COST,
             reason,
             sourceId,
@@ -176,7 +176,7 @@ export const useJellyStore = create<JellyStore>()(
           sessionState.setWallet({ jelly: response.wallet.jelly })
 
           return {
-            consumed: response.consumed ?? response.duplicate ?? true,
+            consumed: !!(response.consumed || response.duplicate),
           }
         } catch (error) {
           if (error instanceof WalletApiError) {
@@ -233,7 +233,7 @@ export const useJellyStore = create<JellyStore>()(
         const previous = get().current
 
         try {
-          const response = await completeAdReward(sessionState.sessionToken, {
+          const response = await completeAdReward({
             adEventId: adResult.adEventId ?? `ad-${Date.now()}`,
             adUnitId,
           })

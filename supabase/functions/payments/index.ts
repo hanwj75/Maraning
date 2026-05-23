@@ -16,8 +16,6 @@ type VerifyPaymentRequest = {
   paymentKey?: string
 }
 
-const PAYMENTS_VERIFICATION_ENABLED = false
-
 const PRODUCT_CATALOG: Record<
   ProductId,
   { jellyAmount: number; amountKrw: number }
@@ -215,25 +213,14 @@ Deno.serve(async (request) => {
         },
       })
 
-      if (!PAYMENTS_VERIFICATION_ENABLED) {
-        await markOrderAsVerificationDisabled(existingOrder.id)
-
-        return jsonError('결제 검증은 아직 활성화되지 않았어요. 검증 전 젤리는 지급되지 않아요.', {
-          status: 501,
-          code: 'payment_verification_not_implemented',
-          details: {
-            orderId: existingOrder.id,
-            status: 'verification_disabled',
-          },
-        })
-      }
+      await markOrderAsVerificationDisabled(existingOrder.id)
 
       return jsonError('결제 검증은 아직 활성화되지 않았어요. 검증 전 젤리는 지급되지 않아요.', {
         status: 501,
         code: 'payment_verification_not_implemented',
         details: {
           orderId: existingOrder.id,
-          status: existingOrder.status,
+          status: 'verification_disabled',
         },
       })
     }
