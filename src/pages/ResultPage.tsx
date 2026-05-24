@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
-import { buildChapterMapPath, buildStageMapPath } from '../features/stage/stage.routes'
+import {
+  buildChapterMapPath,
+  buildStageMapPath,
+} from '../features/stage/stage.routes'
 import { CuteTopBar } from '../shared/components/CuteTopBar'
 import { PageFrame } from '../shared/components/PageFrame'
 import { StageHamster } from '../shared/components/StageHamster'
@@ -12,7 +15,8 @@ export function ResultPage() {
   const result = useQuizStore((state) => state.result)
   const selectedDifficulty = useUiStore((state) => state.selectedDifficulty)
   const currentChapterId = useProgressStore(
-    (state) => state.progressByDifficulty[selectedDifficulty]?.currentChapterId ?? null,
+    (state) =>
+      state.progressByDifficulty[selectedDifficulty]?.currentChapterId ?? null,
   )
   const [animationToken, setAnimationToken] = useState(0)
   const fallbackPath = currentChapterId
@@ -31,7 +35,9 @@ export function ResultPage() {
 
       <section className="game-card bg-gradient-to-br from-[#ddfff0] to-[#f7ffef] px-5 py-6 text-center">
         <p className="text-sm font-black text-[#55b486]">스테이지 클리어</p>
-        <h1 className="mt-3 text-3xl font-black tracking-tight text-[#4f6f49]">정말 잘했어요!</h1>
+        <h1 className="mt-3 text-3xl font-black tracking-tight text-[#4f6f49]">
+          정말 잘했어요!
+        </h1>
         <p className="mt-3 text-sm font-semibold leading-6 text-[#68825d]">
           {result.correctCount} / {result.totalCount} 문제를 맞혔어요.
         </p>
@@ -52,7 +58,7 @@ export function ResultPage() {
       </button>
 
       <Link to="/reward" className="game-primary-button mt-auto">
-        보상 받기
+        코스로 돌아가기
       </Link>
     </PageFrame>
   )
