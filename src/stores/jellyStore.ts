@@ -207,7 +207,7 @@ export const useJellyStore = create<JellyStore>()(
       mockRewardJelly: (amount) => get().addJelly(amount),
       grantMockAdReward: () => get().mockRewardJelly(JELLY_AD_REWARD),
       claimAdReward: async ({ adUnitId } = {}) => {
-        const adResult = await appintosAds.showRewardAd()
+        const adResult = await appintosAds.showPreloadedRewardAd()
 
         if (!adResult.awarded) {
           return {

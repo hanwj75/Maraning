@@ -9,7 +9,7 @@
 | Step 3 | 프로젝트 link | ✅ 완료 |
 | Step 4 | DB migration 적용 (테이블 8개) | ✅ 완료 |
 | Step 5 | Secrets 설정 (`APP_SESSION_JWT_SECRET`) | ✅ 완료 |
-| Step 6 | Edge Functions 배포 5개 (v3, `--no-verify-jwt`) | ✅ 완료 |
+| Step 6 | Edge Functions 배포 6개 (`--no-verify-jwt`) | ✅ 완료 |
 | Step 7 | Function URL 확인 | ✅ 완료 |
 | Step 8 | `.env.local` + AIT 빌드 env 설정, `npm run build` 통과 | ✅ 완료 |
 | Step 9 | 앱인토스 sandbox 테스트 (실기기 토스앱) | ⬜ 미완료 |
@@ -19,12 +19,54 @@
 
 ---
 
+## 체크리스트 재검증 결과 (2026-05-24 최종)
+
+### 실패 → 해결 완료 항목
+
+| 항목 | 구현 방법 | 상태 |
+|------|-----------|------|
+| 토스 로그인 연결 끊기 후 재접속 | `toss-unlink-callback` v6 ACTIVE. 재접속 시 `verifyActiveAppSession` → `login_status` DB 체크 → 401 → `expireSession()` → 세션+로컬스토리지 초기화 → "로그인 연결이 해제되어..." 안내 | ✅ 해결 |
+| 인앱 광고 사전 로딩 | `preloadRewardAd()` 화면 진입 시 호출, 버튼 클릭 시 `showPreloadedRewardAd()`만 호출. 준비 전 클릭 시 안내 메시지. show 완료 후 다음 preload 자동 시작 | ✅ 해결 |
+
+### 위험 → 환경 플래그로 대응 완료
+
+| 항목 | 구현 방법 | 상태 |
+|------|-----------|------|
+| 토스 네이티브 뒤로가기와 앱 뒤로가기 중복 | `VITE_USE_APPINTOS_NATIVE_NAV=true` (.env.local 설정 완료) → `CuteTopBar` 자체 ← 버튼 빌드 시 제거. 샌드박스에서 토스 네이티브 뒤로가기 확인됨 | ✅ 대응 완료 |
+
+### 기존 통과 항목 이상 없음 확인
+
+| 항목 | 확인 방법 | 상태 |
+|------|-----------|------|
+| CSR 방식 | `index.html` → `<script type="module">` 단독, SSR 없음 | ✅ |
+| eval 미사용 | `src/` 전체 grep — 없음 | ✅ |
+| window.location.replace 미사용 | `src/` 전체 grep — 없음 | ✅ |
+| 자사 로그인 없음 | mock 로그인은 `isLocalDevEnvironment()` (localhost only) 조건부만 동작 | ✅ |
+| 라이트 모드 | `globals.css`·`index.html` 에 `prefers-color-scheme: dark` 없음 | ✅ |
+| 접속 즉시 바텀시트 자동 열림 없음 | 자동 open 코드 없음 | ✅ |
+| 서비스 이용 동의 후 진입 | SplashPage — 버튼 클릭 필수 | ✅ |
+| 인앱 결제 비활성화 | `payments/verify` → 501 + `payment_verification_not_implemented` | ✅ |
+
+### Edge Functions 배포 상태 (MCP 확인)
+
+| Function | Version | Status | verify_jwt |
+|----------|---------|--------|------------|
+| toss-login | v13 | ACTIVE | false |
+| wallet | v10 | ACTIVE | false |
+| progress | v9 | ACTIVE | false |
+| ad-reward | v9 | ACTIVE | false |
+| payments | v9 | ACTIVE | false |
+| toss-unlink-callback | v6 | ACTIVE | false |
+
+---
+
 ## Current Backend Status
 
 - `toss-login`: 구현됨. `authorizationCode/referrer -> generate-token -> login-me -> app sessionToken 반환` 흐름 존재
+- `toss-unlink-callback`: 구현됨. Toss 연결 해제 콜백(GET+POST). `userKey`+`referrer` → `app_users.login_status` 갱신(unlinked/withdrawn), `toss_oauth_tokens` null 처리, 감사 로그 기록. **Toss 콘솔 설정 URL: `https://zydetishxxvnrxzqmcuo.supabase.co/functions/v1/toss-unlink-callback`**
 - `wallet`: 구현됨. `GET /wallet`, `POST /wallet/consume` 동작, 일일 회복과 원장 기록 포함
 - `progress`: 구현됨. `GET /progress`, `POST /progress/stage-complete` 동작
-- `ad-reward`: 구현됨. `adEventId` 중복 방지, 일일 제한, 쿨다운, 성공 시에만 `jelly +5`
+- `ad-reward`: 구현됨. `adEventId` 중복 방지, 일일 제한, 쿨다운, 성공 시에만 `jelly +5`. **프론트 preload 아키텍처 적용**: 화면 진입 시 `preloadRewardAd()`, 클릭 시 `showPreloadedRewardAd()`만 호출. 앱인토스 체크리스트 "인앱 광고는 사전에 로딩돼 있어요" 충족.
 - `payments`: 골격만 구현됨. `create-order` 가능, `verify` 는 disabled/not implemented 상태, 젤리 지급 없음
 
 ## Backend Mode
@@ -137,6 +179,7 @@ supabase secrets set TOSS_API_BASE_URL=https://apps-in-toss-api.toss.im
 
 ```sh
 npx supabase functions deploy toss-login --no-verify-jwt
+npx supabase functions deploy toss-unlink-callback --no-verify-jwt
 npx supabase functions deploy wallet --no-verify-jwt
 npx supabase functions deploy progress --no-verify-jwt
 npx supabase functions deploy ad-reward --no-verify-jwt
@@ -144,8 +187,9 @@ npx supabase functions deploy payments --no-verify-jwt
 ```
 
 - **중요**: `--no-verify-jwt` 플래그가 반드시 필요하다. 이 앱은 커스텀 `APP_SESSION_JWT_SECRET`으로 서명한 토큰을 사용하므로 Supabase 플랫폼 JWT 검증을 우회해야 한다. 플래그 없이 배포하면 모든 요청이 401로 차단된다.
+- `toss-unlink-callback`은 Toss가 직접 호출하므로 `--no-verify-jwt`가 특히 중요하다.
 - 각 명령 실행 후 `Deployed: <function-name>` 메시지 확인
-- verify: 대시보드 Edge Functions 탭에서 5개 함수가 모두 Active 상태인지 확인
+- verify: 대시보드 Edge Functions 탭에서 6개 함수가 모두 Active 상태인지 확인
 
 ### 7. Function URL 확인
 
@@ -155,7 +199,7 @@ supabase functions list
 
 - URL 형식: `https://<project-ref>.supabase.co/functions/v1/<function-name>`
 - 또는 대시보드 Edge Functions 탭에서 각 함수의 엔드포인트 URL 확인
-- verify: `toss-login`, `wallet`, `progress`, `ad-reward`, `payments` 5개 URL이 모두 조회되는지 확인
+- verify: `toss-login`, `toss-unlink-callback`, `wallet`, `progress`, `ad-reward`, `payments` 6개 URL이 모두 조회되는지 확인
 
 ### 8. VITE_API_BASE_URL 설정
 
@@ -184,6 +228,15 @@ VITE_SUPABASE_ANON_KEY=<anon public key>
 - [ ] 광고 시청 완료 후 `POST /ad-reward/complete` 호출 및 jelly +5 확인
 - [ ] `POST /payments/verify` 호출 시 501 + `payment_verification_not_implemented` 응답 확인 (jelly 미지급)
 - [ ] 로그아웃 후 재로그인 시 서버 기준 jelly/progress 가 복원되는지 확인
+- [ ] 토스 앱 설정에서 마라닝 앱 연결 해제 → `toss-unlink-callback` 콜백이 Toss로부터 수신되어 `app_users.login_status = unlinked` 로 변경되는지 확인
+- [ ] 연결 해제 후 미니앱 재접속 → 시작하기 클릭 시 "로그인 연결이 해제되어 다시 로그인이 필요해요." 메시지와 로그인 버튼이 표시되는지 확인
+- [ ] 연결 해제 후 미니앱 재접속 → 앱에 이전 사용자 데이터(jelly/progress)가 남아 있지 않은지 확인
+- [ ] **네이티브 내비게이션 바 확인**: 토스 앱 상단에 네이티브 내비게이션 바(뒤로가기 포함)가 표시되는지 확인
+  - 네이티브 뒤로가기 버튼이 보이면 → 앱인토스 빌드 환경변수에 `VITE_USE_APPINTOS_NATIVE_NAV=true` 추가 후 재빌드
+  - 네이티브 바가 없으면 → `false` 유지 (앱 내부 ← 버튼 사용)
+  - 앱 내부 ← 버튼과 토스 네이티브 뒤로가기가 동시에 보이면 **실패** — `VITE_USE_APPINTOS_NATIVE_NAV=true`로 해결
+
+> **Toss 콘솔 UNLINK 콜백 URL 등록 필요**: `https://zydetishxxvnrxzqmcuo.supabase.co/functions/v1/toss-unlink-callback`
 
 ### 10. Build/Deploy 전 최종 확인
 
@@ -213,7 +266,8 @@ npm run build
 
 - Supabase project 생성 및 migrations 반영
 - Supabase secrets 설정
-- `toss-login`, `wallet`, `progress`, `ad-reward`, `payments` deploy
+- `toss-login`, `toss-unlink-callback`, `wallet`, `progress`, `ad-reward`, `payments` deploy
+- **Toss 콘솔에 UNLINK 콜백 URL 등록**: `https://zydetishxxvnrxzqmcuo.supabase.co/functions/v1/toss-unlink-callback`
 - 토스앱 실기기에서 `시작하기 -> 동의하고 시작하기 -> toss-login` 성공 확인
 - 로그인 후 `GET /wallet`, `GET /progress` 응답으로 프론트 hydrate 확인
 - Quiz 제출 시 `POST /wallet/consume` 호출과 젤리 감소 확인

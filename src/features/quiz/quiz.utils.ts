@@ -285,6 +285,31 @@ export function validateQuizEnglishLearningExposure(quiz: Quiz): QuizValidationE
   return []
 }
 
+export function validateWordOrderTokenCount(quiz: Quiz): QuizValidationError[] {
+  if (quiz.type !== 'word_order') {
+    return []
+  }
+
+  const tokens =
+    typeof quiz.answer === 'object' &&
+    quiz.answer !== null &&
+    'orderedTokens' in quiz.answer &&
+    Array.isArray(quiz.answer.orderedTokens)
+      ? quiz.answer.orderedTokens
+      : []
+
+  if (tokens.length < 4) {
+    return [
+      {
+        quizId: quiz.id,
+        reason: 'word_order quiz must include at least 4 tokens.',
+      },
+    ]
+  }
+
+  return []
+}
+
 export function validateMatchingQuizPairs(quiz: Quiz): QuizValidationError[] {
   if (quiz.type !== 'matching') {
     return []
@@ -346,6 +371,7 @@ export function validateQuizData(quizzes: readonly Quiz[]): QuizValidationError[
     ...validateQuizQuestion(quiz),
     ...validateBlankFillQuestion(quiz),
     ...validateQuizChoiceCount(quiz),
+    ...validateWordOrderTokenCount(quiz),
     ...validateQuizEnglishLearningExposure(quiz),
     ...validateMatchingQuizPairs(quiz),
   ])

@@ -82,6 +82,7 @@
 - 판정은 제출 순서 배열이 정답 순서 배열과 동일한지로 처리한다.
 - `answer.orderedTokens` 원본 순서는 유지해야 하며, display token 순서로 덮어쓰면 안 된다.
 - 대소문자 무시가 활성화되면 비교 전 정규화한다.
+- `answer.orderedTokens.length` 는 최소 `4` 이어야 한다. 3토큰 이하의 문장은 배열 문제로 부적합하다.
 
 ### blank_fill
 

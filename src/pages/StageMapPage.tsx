@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom'
+import { appintosAds } from '../sdk/appintosAds'
 import { BottomNav } from '../shared/components/BottomNav'
 import { ConfirmDialog } from '../shared/components/ConfirmDialog'
 import { JellyBadge } from '../shared/components/JellyBadge'
@@ -110,6 +111,10 @@ export function StageMapPage() {
   ])
 
   useEffect(() => {
+    appintosAds.preloadRewardAd()
+  }, [])
+
+  useEffect(() => {
     void syncDailyJelly()
   }, [syncDailyJelly])
 
@@ -188,7 +193,13 @@ export function StageMapPage() {
 
         <div className="pointer-events-none absolute inset-x-0 bottom-0 z-30 px-4 pb-4">
           <div className="pointer-events-auto">
-            <BottomNav inFlow onAdClick={() => setShowAdDialog(true)} />
+            <BottomNav inFlow onAdClick={() => {
+              if (!appintosAds.isRewardAdReady()) {
+                setJellyMessage('광고를 준비 중이에요. 잠시 후 다시 시도해 주세요.')
+                return
+              }
+              setShowAdDialog(true)
+            }} />
           </div>
         </div>
 

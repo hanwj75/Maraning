@@ -18,6 +18,7 @@
 - 문장 선택형 문제도 display sentence card 순서가 shuffle 되어야 한다.
 - choices 기반 문제는 정답 위치가 바뀌어도 `answer value` 기준으로 정답 판정이 유지되어야 한다.
 - `word_order` 는 display token 카드가 shuffle 되어야 하고 `answerTokens` 원본 순서는 유지되어야 한다.
+- `word_order` 는 토큰이 최소 `4`개여야 하며 `3`개 이하인 문제는 유효하지 않다.
 - `matching` 은 원본 pair 관계를 유지한 채 왼쪽 한국어 카드와 오른쪽 영어 카드 표시 순서만 각각 shuffle 되어야 한다.
 - `matching` 에서 잘못 연결한 pair 는 제출 전에 다시 해제할 수 있어야 한다.
 - `matching` 에서 왼쪽 카드를 다시 클릭하면 기존 연결이 해제되어야 한다.

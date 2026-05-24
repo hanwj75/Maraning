@@ -51,7 +51,13 @@ export const useSessionStore = create<SessionStoreState>()(
           sessionMode: 'guest',
           serverSyncEnabled: false,
         }),
-      expireSession: () =>
+      expireSession: () => {
+        try {
+          localStorage.removeItem('maraning-jelly-store')
+          localStorage.removeItem('maraning-progress-store')
+        } catch {
+          // ignore
+        }
         set({
           sessionToken: null,
           user: null,
@@ -59,7 +65,8 @@ export const useSessionStore = create<SessionStoreState>()(
           isLoggedIn: false,
           sessionMode: 'guest',
           serverSyncEnabled: false,
-        }),
+        })
+      },
       logout: () =>
         set({
           sessionToken: null,

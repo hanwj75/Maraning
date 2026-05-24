@@ -1,4 +1,5 @@
 import { env } from './env.ts'
+import { getSupabaseAdmin } from './supabaseAdmin.ts'
 
 type AppSessionPayload = {
   sub: string
@@ -81,6 +82,27 @@ export async function createAppSession(
   const signature = await sign(unsignedToken)
 
   return `${unsignedToken}.${signature}`
+}
+
+export async function verifyActiveAppSession(authHeader: string | null) {
+  const payload = await verifyAppSession(authHeader)
+
+  const supabase = getSupabaseAdmin()
+  const { data, error } = await supabase
+    .from('app_users')
+    .select('login_status')
+    .eq('id', payload.sub)
+    .single()
+
+  if (error || !data) {
+    throw new Error('SESSION_REVOKED')
+  }
+
+  if ((data as { login_status: string }).login_status !== 'active') {
+    throw new Error('SESSION_REVOKED')
+  }
+
+  return payload
 }
 
 export async function verifyAppSession(authHeader: string | null) {

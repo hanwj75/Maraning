@@ -48,6 +48,7 @@
 - 퀴즈 판정은 `deterministic validation` 이어야 한다.
 - 모든 choices 기반 문제는 화면 표시 전에 shuffle 되더라도 정답 판정이 `answer value` 기준으로 유지되어야 한다.
 - `word_order` 는 display token 카드만 shuffle 하고 `answerTokens` 원본 순서는 유지해야 한다.
+- `word_order` 의 `answer.orderedTokens` 는 최소 `4`개여야 한다.
 - `matching` 문제는 정답 pair 관계를 유지하고 왼쪽 한국어 카드와 오른쪽 영어 카드 표시 순서만 각각 shuffle 해야 한다.
 - `matching` 문제는 제출 전까지 연결을 자유롭게 수정할 수 있어야 하며, 연결된 카드를 다시 누르면 해제되고 다른 카드와 다시 연결하면 기존 pair 가 교체되어야 한다.
 - 같은 `QuizSession` 안에서는 한 번 생성된 shuffle 결과가 유지되어야 한다.

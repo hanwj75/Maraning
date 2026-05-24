@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { tossLogin } from '../api/authApi'
+import { ApiClientError } from '../api/client'
 import { fetchProgress } from '../api/progressApi'
 import { appintosAuth } from '../sdk/appintosAuth'
 import { PageFrame } from '../shared/components/PageFrame'
@@ -27,7 +28,20 @@ export function SplashPage() {
     }
 
     if (isLoggedIn) {
-      navigate('/difficulty')
+      setIsLoggingIn(true)
+      try {
+        const progressResult = await fetchProgress()
+        setAllProgressFromServer(progressResult.progress)
+        navigate('/difficulty')
+      } catch (err) {
+        if (err instanceof ApiClientError && err.status === 401) {
+          setLoginError('로그인 연결이 해제되어 다시 로그인이 필요해요.')
+        } else {
+          navigate('/difficulty')
+        }
+      } finally {
+        setIsLoggingIn(false)
+      }
       return
     }
 

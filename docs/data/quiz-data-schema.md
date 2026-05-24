@@ -195,7 +195,7 @@
 - `Quiz` 는 자기 `stageId` 가 가리키는 `Stage.learningTarget` 과 무관한 답안을 가져서는 안 된다.
 - `question` 은 비어 있을 수 없고, Stage 설명을 그대로 재사용하면 안 된다.
 - `image_select` 와 선택형 `blank_fill` 은 선택지 `4~6`개를 가져야 한다.
-- `word_order` 의 token 목록은 선택지 개수 규칙에서 제외한다.
+- `word_order` 는 최소 `4`개의 token 을 가져야 한다.
 - `matching` 은 최소 `3`쌍의 pair 를 가져야 하며 왼쪽은 영어, 오른쪽은 한국어여야 한다.
 - `blank_fill` 의 영어 문장 템플릿과 영어 선택지 규칙을 깨면 안 된다.
 - 문제와 보기 모두 한국어만 있는 조합은 금지한다.
@@ -212,6 +212,7 @@
 - `image_select.answer.correctOptionId` 는 `content.options.id` 중 하나여야 한다.
 - 선택형 문제의 정답 판정은 `index` 기반이 아니라 `answer` 가 가리키는 값 기준이어야 한다.
 - `word_order` 정답 판정은 display token 위치가 아니라 사용자가 만든 최종 token 배열과 `answer.orderedTokens` 비교 기준이어야 한다.
+- `word_order.choices` 는 최소 `4`개여야 한다 (`answer.orderedTokens.length >= 4`).
 - `matching.answer.pairs` 는 좌우 항목 id 만 참조해야 하며 중복 pair 를 허용하지 않는다.
 - `matching.answer.pairs.length` 는 최소 `3`이어야 한다.
 - `word_order.answer.orderedTokens` 길이는 `content.tokens` 길이와 일치해야 한다.

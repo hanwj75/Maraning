@@ -133,17 +133,32 @@
     "stageId": "conversation.stage.001",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"안녕하세요, 어떻게 지내세요?\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "Hello"
+        "text": "how"
+      },
+      {
+        "id": "t2",
+        "text": "are"
+      },
+      {
+        "id": "t3",
+        "text": "you?"
+      },
+      {
+        "id": "t4",
+        "text": "Hello,"
       }
     ],
     "answer": {
       "orderedTokens": [
-        "Hello"
+        "Hello,",
+        "how",
+        "are",
+        "you?"
       ]
     },
     "explanation": "문장 어순을 반복 연습해요.",
@@ -284,17 +299,32 @@
     "stageId": "conversation.stage.001",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"안녕하세요, 어떻게 지내세요?\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "Hello"
+        "text": "you?"
+      },
+      {
+        "id": "t2",
+        "text": "are"
+      },
+      {
+        "id": "t3",
+        "text": "how"
+      },
+      {
+        "id": "t4",
+        "text": "Hello,"
       }
     ],
     "answer": {
       "orderedTokens": [
-        "Hello"
+        "Hello,",
+        "how",
+        "are",
+        "you?"
       ]
     },
     "explanation": "문장 배열을 한 번 더 연습해요.",
@@ -907,22 +937,32 @@
     "stageId": "conversation.stage.003",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"좋은 아침이에요, 당신도요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "morning"
+        "text": "you"
       },
       {
         "id": "t2",
+        "text": "to"
+      },
+      {
+        "id": "t3",
+        "text": "morning"
+      },
+      {
+        "id": "t4",
         "text": "Good"
       }
     ],
     "answer": {
       "orderedTokens": [
         "Good",
-        "morning"
+        "morning",
+        "to",
+        "you"
       ]
     },
     "explanation": "문장 어순을 반복 연습해요.",
@@ -1063,7 +1103,7 @@
     "stageId": "conversation.stage.003",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"좋은 아침이에요, 당신도요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
@@ -1072,13 +1112,23 @@
       },
       {
         "id": "t2",
+        "text": "to"
+      },
+      {
+        "id": "t3",
+        "text": "you"
+      },
+      {
+        "id": "t4",
         "text": "Good"
       }
     ],
     "answer": {
       "orderedTokens": [
         "Good",
-        "morning"
+        "morning",
+        "to",
+        "you"
       ]
     },
     "explanation": "문장 배열을 한 번 더 연습해요.",
@@ -1289,22 +1339,32 @@
     "stageId": "conversation.stage.004",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"좋은 저녁이에요, 당신도요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "evening"
+        "text": "you"
       },
       {
         "id": "t2",
+        "text": "to"
+      },
+      {
+        "id": "t3",
+        "text": "evening"
+      },
+      {
+        "id": "t4",
         "text": "Good"
       }
     ],
     "answer": {
       "orderedTokens": [
         "Good",
-        "evening"
+        "evening",
+        "to",
+        "you"
       ]
     },
     "explanation": "문장 어순을 반복 연습해요.",
@@ -1445,7 +1505,7 @@
     "stageId": "conversation.stage.004",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"좋은 저녁이에요, 당신도요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
@@ -1454,13 +1514,23 @@
       },
       {
         "id": "t2",
+        "text": "to"
+      },
+      {
+        "id": "t3",
+        "text": "you"
+      },
+      {
+        "id": "t4",
         "text": "Good"
       }
     ],
     "answer": {
       "orderedTokens": [
         "Good",
-        "evening"
+        "evening",
+        "to",
+        "you"
       ]
     },
     "explanation": "문장 배열을 한 번 더 연습해요.",
@@ -2877,27 +2947,32 @@
     "stageId": "conversation.stage.008",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"오늘 당신은 어때요?\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "you"
+        "text": "today"
       },
       {
         "id": "t2",
-        "text": "How"
+        "text": "you"
       },
       {
         "id": "t3",
         "text": "about"
+      },
+      {
+        "id": "t4",
+        "text": "How"
       }
     ],
     "answer": {
       "orderedTokens": [
         "How",
         "about",
-        "you"
+        "you",
+        "today"
       ]
     },
     "explanation": "문장 어순을 반복 연습해요.",
@@ -3038,27 +3113,32 @@
     "stageId": "conversation.stage.008",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"오늘 당신은 어때요?\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "you"
+        "text": "about"
       },
       {
         "id": "t2",
-        "text": "How"
+        "text": "you"
       },
       {
         "id": "t3",
-        "text": "about"
+        "text": "today"
+      },
+      {
+        "id": "t4",
+        "text": "How"
       }
     ],
     "answer": {
       "orderedTokens": [
         "How",
         "about",
-        "you"
+        "you",
+        "today"
       ]
     },
     "explanation": "문장 배열을 한 번 더 연습해요.",
@@ -3269,26 +3349,31 @@
     "stageId": "conversation.stage.009",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"곧 또 봬요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "soon"
+        "text": "you"
       },
       {
         "id": "t2",
-        "text": "See"
+        "text": "very"
       },
       {
         "id": "t3",
-        "text": "you"
+        "text": "soon"
+      },
+      {
+        "id": "t4",
+        "text": "See"
       }
     ],
     "answer": {
       "orderedTokens": [
         "See",
         "you",
+        "very",
         "soon"
       ]
     },
@@ -3430,7 +3515,7 @@
     "stageId": "conversation.stage.009",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"곧 또 봬요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
@@ -3439,17 +3524,22 @@
       },
       {
         "id": "t2",
-        "text": "See"
+        "text": "very"
       },
       {
         "id": "t3",
         "text": "you"
+      },
+      {
+        "id": "t4",
+        "text": "See"
       }
     ],
     "answer": {
       "orderedTokens": [
         "See",
         "you",
+        "very",
         "soon"
       ]
     },
@@ -3661,22 +3751,32 @@
     "stageId": "conversation.stage.010",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"오늘 몸조심하세요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "care"
+        "text": "good"
       },
       {
         "id": "t2",
+        "text": "care"
+      },
+      {
+        "id": "t3",
+        "text": "today"
+      },
+      {
+        "id": "t4",
         "text": "Take"
       }
     ],
     "answer": {
       "orderedTokens": [
         "Take",
-        "care"
+        "good",
+        "care",
+        "today"
       ]
     },
     "explanation": "문장 어순을 반복 연습해요.",
@@ -3817,22 +3917,32 @@
     "stageId": "conversation.stage.010",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"오늘 몸조심하세요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "care"
+        "text": "today"
       },
       {
         "id": "t2",
+        "text": "care"
+      },
+      {
+        "id": "t3",
+        "text": "good"
+      },
+      {
+        "id": "t4",
         "text": "Take"
       }
     ],
     "answer": {
       "orderedTokens": [
         "Take",
-        "care"
+        "good",
+        "care",
+        "today"
       ]
     },
     "explanation": "문장 배열을 한 번 더 연습해요.",
@@ -6505,25 +6615,30 @@
     "stageId": "conversation.stage.017",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"저는 커피를 정말 좋아해요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "coffee"
+        "text": "really"
       },
       {
         "id": "t2",
-        "text": "I"
+        "text": "like"
       },
       {
         "id": "t3",
-        "text": "like"
+        "text": "coffee"
+      },
+      {
+        "id": "t4",
+        "text": "I"
       }
     ],
     "answer": {
       "orderedTokens": [
         "I",
+        "really",
         "like",
         "coffee"
       ]
@@ -6666,7 +6781,7 @@
     "stageId": "conversation.stage.017",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"저는 커피를 정말 좋아해요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
@@ -6675,16 +6790,21 @@
       },
       {
         "id": "t2",
-        "text": "I"
+        "text": "like"
       },
       {
         "id": "t3",
-        "text": "like"
+        "text": "really"
+      },
+      {
+        "id": "t4",
+        "text": "I"
       }
     ],
     "answer": {
       "orderedTokens": [
         "I",
+        "really",
         "like",
         "coffee"
       ]
@@ -9409,27 +9529,32 @@
     "stageId": "conversation.stage.024",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"포장으로 주세요, 감사해요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "please"
+        "text": "thanks"
       },
       {
         "id": "t2",
-        "text": "To"
+        "text": "please,"
       },
       {
         "id": "t3",
         "text": "go,"
+      },
+      {
+        "id": "t4",
+        "text": "To"
       }
     ],
     "answer": {
       "orderedTokens": [
         "To",
         "go,",
-        "please"
+        "please,",
+        "thanks"
       ]
     },
     "explanation": "문장 어순을 반복 연습해요.",
@@ -9570,27 +9695,32 @@
     "stageId": "conversation.stage.024",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"포장으로 주세요, 감사해요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "please"
+        "text": "go,"
       },
       {
         "id": "t2",
-        "text": "To"
+        "text": "please,"
       },
       {
         "id": "t3",
-        "text": "go,"
+        "text": "thanks"
+      },
+      {
+        "id": "t4",
+        "text": "To"
       }
     ],
     "answer": {
       "orderedTokens": [
         "To",
         "go,",
-        "please"
+        "please,",
+        "thanks"
       ]
     },
     "explanation": "문장 배열을 한 번 더 연습해요.",
@@ -18111,27 +18241,32 @@
     "stageId": "conversation.stage.045",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"그냥 앞으로 쭉 가시면 돼요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "straight"
+        "text": "go"
       },
       {
         "id": "t2",
-        "text": "Just"
+        "text": "straight"
       },
       {
         "id": "t3",
-        "text": "go"
+        "text": "ahead"
+      },
+      {
+        "id": "t4",
+        "text": "Just"
       }
     ],
     "answer": {
       "orderedTokens": [
         "Just",
         "go",
-        "straight"
+        "straight",
+        "ahead"
       ]
     },
     "explanation": "문장 어순을 반복 연습해요.",
@@ -18272,27 +18407,32 @@
     "stageId": "conversation.stage.045",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"그냥 앞으로 쭉 가시면 돼요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "straight"
+        "text": "ahead"
       },
       {
         "id": "t2",
-        "text": "Just"
+        "text": "straight"
       },
       {
         "id": "t3",
         "text": "go"
+      },
+      {
+        "id": "t4",
+        "text": "Just"
       }
     ],
     "answer": {
       "orderedTokens": [
         "Just",
         "go",
-        "straight"
+        "straight",
+        "ahead"
       ]
     },
     "explanation": "문장 배열을 한 번 더 연습해요.",
@@ -31475,27 +31615,32 @@
     "stageId": "conversation.stage.077",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"저 방금 도착했어요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "arrived"
+        "text": "just"
       },
       {
         "id": "t2",
-        "text": "I"
+        "text": "arrived"
       },
       {
         "id": "t3",
-        "text": "just"
+        "text": "here"
+      },
+      {
+        "id": "t4",
+        "text": "I"
       }
     ],
     "answer": {
       "orderedTokens": [
         "I",
         "just",
-        "arrived"
+        "arrived",
+        "here"
       ]
     },
     "explanation": "문장 어순을 반복 연습해요.",
@@ -31636,27 +31781,32 @@
     "stageId": "conversation.stage.077",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"저 방금 도착했어요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "arrived"
+        "text": "here"
       },
       {
         "id": "t2",
-        "text": "I"
+        "text": "arrived"
       },
       {
         "id": "t3",
         "text": "just"
+      },
+      {
+        "id": "t4",
+        "text": "I"
       }
     ],
     "answer": {
       "orderedTokens": [
         "I",
         "just",
-        "arrived"
+        "arrived",
+        "here"
       ]
     },
     "explanation": "문장 배열을 한 번 더 연습해요.",
@@ -36529,27 +36679,32 @@
     "stageId": "conversation.stage.089",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"오늘 정말 감사해요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "grateful"
+        "text": "really"
       },
       {
         "id": "t2",
-        "text": "I'm"
+        "text": "grateful"
       },
       {
         "id": "t3",
-        "text": "really"
+        "text": "today"
+      },
+      {
+        "id": "t4",
+        "text": "I'm"
       }
     ],
     "answer": {
       "orderedTokens": [
         "I'm",
         "really",
-        "grateful"
+        "grateful",
+        "today"
       ]
     },
     "explanation": "문장 어순을 반복 연습해요.",
@@ -36690,27 +36845,32 @@
     "stageId": "conversation.stage.089",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"오늘 정말 감사해요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "grateful"
+        "text": "today"
       },
       {
         "id": "t2",
-        "text": "I'm"
+        "text": "grateful"
       },
       {
         "id": "t3",
         "text": "really"
+      },
+      {
+        "id": "t4",
+        "text": "I'm"
       }
     ],
     "answer": {
       "orderedTokens": [
         "I'm",
         "really",
-        "grateful"
+        "grateful",
+        "today"
       ]
     },
     "explanation": "문장 배열을 한 번 더 연습해요.",
@@ -36921,7 +37081,7 @@
     "stageId": "conversation.stage.090",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"전혀 문제없어요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
@@ -36930,13 +37090,23 @@
       },
       {
         "id": "t2",
+        "text": "at"
+      },
+      {
+        "id": "t3",
+        "text": "all"
+      },
+      {
+        "id": "t4",
         "text": "No"
       }
     ],
     "answer": {
       "orderedTokens": [
         "No",
-        "problem"
+        "problem",
+        "at",
+        "all"
       ]
     },
     "explanation": "문장 어순을 반복 연습해요.",
@@ -37077,22 +37247,32 @@
     "stageId": "conversation.stage.090",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"전혀 문제없어요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "problem"
+        "text": "all"
       },
       {
         "id": "t2",
+        "text": "at"
+      },
+      {
+        "id": "t3",
+        "text": "problem"
+      },
+      {
+        "id": "t4",
         "text": "No"
       }
     ],
     "answer": {
       "orderedTokens": [
         "No",
-        "problem"
+        "problem",
+        "at",
+        "all"
       ]
     },
     "explanation": "문장 배열을 한 번 더 연습해요.",
@@ -41161,7 +41341,7 @@
     "stageId": "conversation.stage.100",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"다시 한번 감사해요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
@@ -41170,17 +41350,22 @@
       },
       {
         "id": "t2",
-        "text": "Thank"
+        "text": "once"
       },
       {
         "id": "t3",
         "text": "you"
+      },
+      {
+        "id": "t4",
+        "text": "Thank"
       }
     ],
     "answer": {
       "orderedTokens": [
         "Thank",
         "you",
+        "once",
         "again"
       ]
     },
@@ -41322,26 +41507,31 @@
     "stageId": "conversation.stage.100",
     "difficulty": "conversation",
     "type": "word_order",
-    "question": "단어를 올바른 순서로 배열해 주세요.",
+    "question": "\"다시 한번 감사해요\"라는 뜻이 되도록 단어를 배열해 주세요.",
     "prompt": "문장을 배열해주세요.",
     "choices": [
       {
         "id": "t1",
-        "text": "again"
+        "text": "you"
       },
       {
         "id": "t2",
-        "text": "Thank"
+        "text": "once"
       },
       {
         "id": "t3",
-        "text": "you"
+        "text": "again"
+      },
+      {
+        "id": "t4",
+        "text": "Thank"
       }
     ],
     "answer": {
       "orderedTokens": [
         "Thank",
         "you",
+        "once",
         "again"
       ]
     },

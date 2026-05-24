@@ -1,7 +1,7 @@
 import { env } from '../_shared/env.ts'
 import { handleCorsPreflightRequest } from '../_shared/cors.ts'
 import { jsonError, jsonSuccess } from '../_shared/response.ts'
-import { verifyAppSession } from '../_shared/session.ts'
+import { verifyActiveAppSession } from '../_shared/session.ts'
 import { getSupabaseAdmin } from '../_shared/supabaseAdmin.ts'
 
 type ConsumeRequest = {
@@ -34,7 +34,7 @@ function isPositiveInteger(value: unknown): value is number {
 }
 
 async function getAuthenticatedUserId(request: Request) {
-  const session = await verifyAppSession(request.headers.get('authorization'))
+  const session = await verifyActiveAppSession(request.headers.get('authorization'))
   return session.sub
 }
 
@@ -258,14 +258,19 @@ Deno.serve(async (request) => {
     console.error(`[wallet] ERROR: ${message}`)
 
     if (
+      message.includes('SESSION_REVOKED') ||
       message.includes('Authorization') ||
       message.includes('session token') ||
       message.includes('signature')
     ) {
-      return jsonError('인증이 필요해요.', {
-        status: 401,
-        code: 'unauthorized',
-      })
+      const isRevoked = message.includes('SESSION_REVOKED')
+      return jsonError(
+        isRevoked ? '로그인 연결이 해제되었습니다. 다시 로그인해 주세요.' : '인증이 필요해요.',
+        {
+          status: 401,
+          code: isRevoked ? 'session_revoked' : 'unauthorized',
+        },
+      )
     }
 
     return jsonError('wallet 처리 중 오류가 발생했어요.', {
